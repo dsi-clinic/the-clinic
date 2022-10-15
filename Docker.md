@@ -39,6 +39,29 @@ If you are trying to reach a separate container using `localhost`, you should ch
 Docker by default runs as a root user. When you make a new file in a container it is owned by root. So outside the container in the repository root, you can `sudo chown -R $USER: .` This will briefly elevate your permissions to root (sudo), and change the ownership (chown) to the current user in the current directory ., and all sub directories recursively (-R).
 
 
+#### I am getting token errors trying to run Jupyter notebooks in Docker
+
+Jupyter will append a token to the end of the URL that it creates to open a notebook. Sometimes these tokens cause problems — especially within Docker containers. Here are some things to try to resolve these issues:
+
+- Make sure that you are copying the *entire* URL, including the token at the end: `http://127.0.0.1:8888/lab?token=6887d01c692f993a2171524aba1927ff34b9003c29d5b737
+`
+
+- Docker needs to have permissions to access the folders where any files are mounted. You can find these settings in `Settings » Resources » File Sharing`. If you make changes here, you may need to restart your computer for them to take effect.
+
+- Sometimes Docker processes can hang in the background and cause issues. Restarting helps here, too.
+
+- If you don't have need for the security of tokens and passwords and they are causing issues, you can bypass them in the Jupyter command: `--NotebookApp.token='' --NotebookApp.password=''`
+
+#### I'm having problems that I think are associated with my M1 or M2 chip
+
+Different chip architectures can cause opaque problems when running certain tools in Docker containers. You can use the `--platform` flag with `docker build` or `docker run` commands to specify the platform of the image.
+
+Here's an example running the `broadband` image specifiying the platform:
+
+`docker build . -t broadband --platform=linux/amd64`
+
+`docker run --platform=linux/amd64 -p 8888:8888 -v ${PWD}:/tmp broadband `
+
 
 ### Useful Commands
 
