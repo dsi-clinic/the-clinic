@@ -81,9 +81,8 @@ Go to the repository github page, click the dropdown on the green button that sa
 To install conda:
 
 ```bash
-mkdir -p ~/miniconda3
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
-bash ~/miniconda3/miniconda.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
+bash ~/miniconda.sh
 ```
 You can accept the defaults. re-open and close your terminal.
 
@@ -112,4 +111,3 @@ When we use slurm, we must be respectful to not overuse nodes. Please:
 - Don't run computation heavy jobs on the compute nodes. Submit them as jobs
 - Do not submit many jobs at once
 - To run code you are confident works, submit it to the `cdac-contrib` queue
-To install conda:
