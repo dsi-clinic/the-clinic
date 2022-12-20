@@ -84,7 +84,7 @@ To install conda:
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
 bash ~/miniconda.sh
 ```
-You can accept the defaults. re-open and close your terminal.
+You can accept the defaults. Make sure you select yes when it asks to run conda init. This will ensure conda is activated by default. re-open and close your terminal.
 
 
 Create environment
