@@ -1,75 +1,93 @@
-## Slurm and Computing Clusters
+# Slurm and Computing Clusters
 
-Research institutions often have computing clusters that can be used to perform tasks that are too instensive to be on a typical laptop. Examples are high RAM operations and operations that are much more efficient on GPUs. A computing cluster is a collection of powerful computers or 'nodes' that can be utilized by many people. Users can access the cluster by logging in over [ssh](https://en.wikipedia.org/wiki/Secure_Shell). In the cluster they will have their own private directory for file storage. There are two main types of nodes to be aware of: 
- - login nodes: 
-
-A computing cluster is a collection of computers (also referred to as nodes, machines, or servers) that you are 'in the cloud' (you are not physically at one of them when using them). You are able to log into the head node (also called login node) with an internet connection using [ssh](https://en.wikipedia.org/wiki/Secure_Shell). If you have an account you can use `ssh username_here@address_of_machine` to connect. You will then have to authenticate by proving you have access with either something only you know (a password) or something only you have (a private key -- see [public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) if interested). Once you have successfully authenticated you will see your command prompt change (the text at the bottom left of your terminal that looks something like `username@computer:~/filepath` -- this is [fully customizable](https://www.howtogeek.com/307701/how-to-customize-and-colorize-your-bash-prompt/) if interested) to show the username you logged in with at the hostname of the machine's login node (for ai cluster this will be `fe0n` where n is a digit). From here you will have access to your own directory. The login node should just be used for low computation tasks like file management, writing code, and extremely simple programs. Everyone using the cluster will login to the same set of login nodes so if you try to run a complex program, it will slow it down for everyone. 
+Research institutions often have computing clusters that can be used to perform tasks that are too instensive to be run on a typical laptop. Examples are high RAM operations and operations that are much more efficient on GPUs. A computing cluster is a collection of computers (also referred to as nodes, machines, or servers) that you are 'in the cloud' (you are not physically at one of them when using them). You are able to log into the head node (also called login node) with an internet connection using [ssh](https://en.wikipedia.org/wiki/Secure_Shell). If you have an account you can use `ssh username_here@address_of_machine` to connect. You will then have to authenticate by proving you have access with either something only you know (a password) or something only you have (a private key -- see [public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) if interested). Once you have successfully authenticated you will see your command prompt change (the text at the bottom left of your terminal that looks something like `username@computer:~/filepath` -- this is [fully customizable](https://www.howtogeek.com/307701/how-to-customize-and-colorize-your-bash-prompt/) if interested) to show the username you logged in with at the hostname of the machine's *login node* (or head node) (for the ai or dsi cluster this will be `fe0n` where n is a digit). From here you will have access to your own directory. The login node should just be used for low computation tasks like file management, writing code, and extremely simple programs. Everyone using the cluster will login to the same set of login nodes so if you try to run a complex program, it will slow it down for everyone (and you'll recieve an email asking you to stop). 
 
 Logging in through the command line makes it so all commands you run in that terminal are executed on the remote machine. But command line editors (like vim and emacs) can have a significan learning curve compared to editors like VS Code. For this reason we will use a VS Code extension that allows you to connect your whole VS Code window to the cluster (and utilize all of VS Code's nice features and extensions). Instructions are located below.
 
-To run complicated, compute or memory intensive programs, you must use a compute node. Compute nodes are valuable so their access is managed by Slurm. Queues / Partitions exist that each have different resources available. Users can request to use resources from a particular partition and slurm will put your request in line until it is available (often right away). There are two ways to request resources: batch jobs and interactive jobs. Batch jobs should be used for long running and well tested programs. For these you specify what commands should be run and submit it to the partition. Whenever it gets scheduled it will run even if you log out or turn off your computer. For batch jobs we will use a tool called submitit. Interactive jobs are useful for exploration and debugging. For these you can use the `srun` command. The general format is `srun -p PARTITION_NAME --gres=gpu:1 --pty --mem RAM_IN_MEGABYTES -t TIME /bin/bash` and a good starting version is: `srun -p cdac-contrib --gres=gpu:1 --pty --mem 1000 -t 90:00 /bin/bash`. We will use special instructions below to connect VS Code to the compute node and not just the login node. 
 
-### Getting access
+Get a [CS Account](https://account-request.cs.uchicago.edu/account/requests) if you don't have one already.
 
-Get a [CS Account](https://account-request.cs.uchicago.edu/account/requests) if you don't have one already. Next steps are obsolete. 
+## SSH Keys
 
-### SSH Keys
+It can be annoying / burdensome to type in your passwords constantly to connect to the cluster or push/pull from GitHub. We can switch to authunticating based on *something we have* using ssh keys. 
 
-It can be annoying / burdensome to type in your passwords constantly to connect to the cluster or push/pull from GitHub. We can switch to authorized based on *something we have* using ssh keys. 
+### Windows Specific Instructions
 
-1. In the terminal of your local computer (or WSL if on windows), use `ssh-keygen`, [instructions here](https://www.ssh.com/academy/ssh/keygen). Recommended: use `ssh-keygen -t ecdsa -b 521` or `ssh-keygen -t ed25519` to generate your key. If you have multiple, give it an identifiable name. Otherwise you can click enter to accept the default suggestion. You can optionally add a password to your ssh key. If you do not it may be vulnerable. Adding a password may seem counterintuitive (isn't our whole goal to avoid passwords?), but you can use [ssh-agent](https://www.ssh.com/academy/ssh/agent) and then you will just have to type your password once per session.
+If you are using Windows 10, you can use OpenSSH like Mac and Linux users. To ensure it is set up correctly, complete the following (from [this SO answwer](https://stackoverflow.com/a/40720527)):
+1. Open Manage optional features from the start menu and make sure you have Open SSH Client in the list. If not, you should be able to add it.
+2. Open Services from the start Menu
+3. Scroll down to OpenSSH Authentication Agent > right click > properties
+4. Change the Startup type from Disabled to any of the other 3 options. I have mine set to Automatic (Delayed Start)
+5. Open cmd and type where ssh to confirm that the top listed path is in System32. Mine is installed at C:\Windows\System32\OpenSSH\ssh.exe. If it's not in the list you may need to close and reopen cmd.
+6. You should know be able to access OpenSSH tools from the Windows Command Prompt. Continue to General Instructions. 
 
-2. Add your key to your `authorized_keys` in the cluster: locally, `ssh-copy-id -i ~/.ssh/KEYNAME_HERE USERNAME@fe.ai.cs.uchicago.edu`
+### General Instructions
 
-3. Now, `ssh -i ~/.ssh/KEYNAME_HERE USERNAME@fe.ai.cs.uchicago.edu` should connect without having to type your uchicago password, just your key's passphrase, if any. 
+#### Create / Manage SSH Keys
 
-4. SSH keys are useful for github too. You can add them both locally and on the cluster following these instructions:
+1. In the terminal of your local computer (or if on windows, Command Prompt), use `ssh-keygen`, [instructions here](https://www.ssh.com/academy/ssh/keygen). Recommended: use `ssh-keygen -t ecdsa -b 521` or `ssh-keygen -t ed25519` to generate your key. If you have multiple, give it an identifiable name. Otherwise you can click enter to accept the default suggestion. You can optionally add a password to your ssh key. If you do not it may be vulnerable. Adding a password may seem counterintuitive (isn't our whole goal to avoid passwords?), but you can use [ssh-agent](https://www.ssh.com/academy/ssh/agent) and then you will just have to type your password once per session.
 
-    1. Open a terminal
-    2. Create SSH keys. This will allow you to use them to interact with the remote repository without logging in.
-    - use `ssh-keygen` as before or reuse the same key
-    - To use the default filename, hit enter
-    - hit enter to use no password, or type a password
-    3. Upload keys to github
-    - Go to [github to upload you ssh keys](https://github.com/settings/keys)
-    - back in your terminal `cat ~/.ssh/KEYNAME.pub` (or if you used a different path place it here). Copy the output
-    - Click 'New SSH key'. Give it a name like `ai cluster` if on the ai cluster or `laptop` and paste in the full output to the `cat` command
+2. (assuming you password protect your private key) Add the key to your ssh agent. `ssh-add PATH_TO_KEY`. `PATH_TO_KEY` will start with `~/.ssh/` on Mac/Linux and `C:\Users\YOUR_USERNAME\.ssh\` on Windows. You'll have to type your password in once and it will be saved for a period of time (terminal session or until your computer next reboots), drastically limiting the amount of times you have to type in your password. 
 
-### SSH Config
+#### Use SSH Keys
 
-It can be annoying / tiring to continually remember addresses. We can use a file called `~/.ssh/config` to give aliases to these addresses and switch to using private-public key encryption instead of using passwords. 
+3. For a remote machine: To use your private key to log in to a remote machine, it must have access to your public key. To do this you will have to add it to the `~/.ssh/authorized_keys` file on the remote machine. If on Mac/Linux, you can use `ssh-copy-id -i ~/.ssh/KEYNAME_HERE USERNAME@fe01.ds.uchicago.edu`. If on Windows, you'll have to copy your public key, `ssh USERNAME@fe01.ds.uchicago.edu`, and paste it into `~/.ssh/authorized_keys` with `echo PUBLIC_KEY_HERE >> .ssh/authorized_keys`.
 
-Add the following to your `~/.ssh/config` replacing username with your username:
+4. For GitHub. SSH Keys can also be used for GitHub authentication. You can use the same ssh keys, or follow steps 1-2 again with a new ssh key and name. To give GitHub access to your public keys, go to [GitHub's ssh keys page](https://github.com/settings/keys). Click 'New SSH key'. Give it a name relating to the machine it is storeed on, like "windows laptop", or "linux desktop" and paste in the full contents of the public key. You can access the contents by typing `cat PATH_TO_PUBLIC_KEY` or, on Windows `type PATH_TO_PUBLIC_KEY`.
+
+5. Create / modify your SSH Config. Typing in the full ssh command is now something like `ssh -i PATH_TO_KEY USERNAME@fe01.ds.uchicago.edu` which can be a lot to type and a lot to remember. Using ssh config, we can reduce this to just `ssh fe.ds`. In your `.ssh` file create a `config` file or append the following to the existing file: 
 ```
-Host fe.ai*
-   HostName fe.ai.cs.uchicago.edu
-   User username
-   IdentityFile ~/.ssh/CHANGE_TO_YOUR_KEY
+Host fe.ds*
+  HostName fe01.ds.uchicago.edu
+  IdentityFile INSERT_PATH_TO_PRIVATE_KEY
+  ForwardAgent yes
+  User INSERT_YOUR_CNET
 
-Host *.ai !fe.ai
-   HostName %h.cs.uchicago.edu
-   User username
-   IdentityFile ~/.ssh/CHANGE_TO_YOUR_KEY
-   ProxyJump fe.ai
+Host *.ds !fe.ds
+  HostName %h.uchicago.edu
+  IdentityFile INSERT_PATH_TO_PRIVATE_KEY
+  ForwardAgent yes
+  User INSERT_YOUR_CNET
+  ProxyJump fe.ds
 ```
+This will map `fe.ds` to an ssh command to the listed hostname, with the listed user and private key, and using the listed identity file as your key. `ForwardAgent` set to yes means that any ssh keys added to your local agent will also be added to the remote machines ssh agent (so you can use your local ssh key for GitHub on the cluster, for example). The second block is for connecting directly to compute nodes.
 
-If you are using WSL, please note: VS Code struggles accessing your WSL config. You may have to place this at the end of your `/mnt/c/Users/WINDOWS_USERNAME/.ssh/config` and copy your keys there / generate new ones. 
 
-### VS Code
+## VS Code
 
 `Remote - SSH` is a VS Code extension that allows you to open a connection to a remote machine in VS Code. Traditionally, one would `ssh` in a terminal and be restriced to command-line text editors like Vim. `Remote - SSH` allows us to act like we are developing on our local machine as normal for the most part and has less of a learning curve.
 
 1. Install `Remote - SSH`. Click 'Extensions' on the menu at the left side of VS Code (its icon is four squares with the top right one pulled away). Search for and install `Remote - SSH`
 
-2. Follow the instructions [here](https://code.visualstudio.com/docs/remote/ssh) to set up with the following modifications:
+2. Add useful extensions to always be installed in remote connections. Open the command palette (ctrl+shift+p / command+shift+p / View -> Command Palette...) and search for `Open User Settings`. If it is empty, paste:
+```
+{
+    "remote.SSH.defaultExtensions": [
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-renderers",
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+    ]
+}
+```
+otherwise, make sure to add a comma to the end of the current last item and add the following before the `}`:
+```
+    "remote.SSH.defaultExtensions": [
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-renderers",
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+    ]
+```
 
-- In "Connect to a remote host", try `Remote-SSH: Connect to Host...` and you should see `fe.ai` as an option. Select it.
-- The type of server is Linux.
+2. Follow the instructions [here](https://code.visualstudio.com/docs/remote/ssh) to set up with the following modifications:
+    - In "Connect to a remote host", try `Remote-SSH: Connect to Host...` and you should see `fe.ds` as an option. Select it. Otherwise, you can try typing in `fe.ds`.
+    - The type of server is Linux.
 
 3. Now your VS code window is connected to the login node. If you'd like to connect to a compute node for an interactive session:
-    1. In a terminal, `ssh fe.ai`
-    2. Request an interactive session with something like: `srun -p cdac-contrib --gres=gpu:1 --pty --mem 1000 -t 90:00 /bin/bash`. Once you have been your request has been granted, your command prompt will change to `USERNAME@a00n` where `n` is a digit. 
-    3. Back in VS Code, open the command palette (cntr+shift+p / command+shift+p / View -> Command Palette...), search for `Remote-SSH: Connect to Host...`. Select it and type in as your host `a00n.ai` replacing the n with the digit from step 3.2. 
+    1. In a terminal or command prompt `ssh fe.ds`
+    2. Request an interactive session with something like: `srun -p general --gres=gpu:1 --pty --mem 1000 -t 90:00 /bin/bash`. Once you have been your request has been granted, your command prompt will change to something like `USERNAME@hostname` where hostname is probably like `g004`.
+    3. Back in VS Code, open the command palette (cntr+shift+p / command+shift+p / View -> Command Palette...), search for `Remote-SSH: Connect to Host...`. Select it and type in as your host `hostname.ds` replacing the hostname with the hostname from step 3.2. 
     4. Your VS Code should now be connected to the compute node. You'll have to open the repository folder (see below instructions for cloning). But now you can take advantage of the computational power from the node and the nice features of VS Code (using notebooks, python debugging, etc.)
 
 ### Clone Repository
@@ -101,7 +119,7 @@ We'll use slurm to submit jobs. [Here is uchicago's documentation on slurm](http
 
 The commands to remember are:
 
-`cs-squeue`, `squeue`
+`squeue`, `sinfo`
 
 
 We'll use [submitit](https://github.com/facebookincubator/submitit) to actually submit jobs in python.
@@ -110,4 +128,4 @@ When we use slurm, we must be respectful to not overuse nodes. Please:
 - To test code, submit it to the `dev` queue.
 - Don't run computation heavy jobs on the compute nodes. Submit them as jobs
 - Do not submit many jobs at once
-- To run code you are confident works, submit it to the `cdac-contrib` queue
+- To run code you are confident works, submit it to the `general` queue
