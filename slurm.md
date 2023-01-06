@@ -13,7 +13,7 @@ It can be annoying / burdensome to type in your passwords constantly to connect 
 
 ### Windows Specific Instructions
 
-If you are using Windows 10, you can use OpenSSH like Mac and Linux users. If you use WSL2, please see [specific instructions](#WSL)To ensure it is set up correctly, complete the following (from [this SO answwer](https://stackoverflow.com/a/40720527)):
+If you are using Windows 10, you can use OpenSSH like Mac and Linux users. If you use WSL2, please see [specific instructions](#wsl). To ensure it is set up correctly, complete the following (from [this SO answwer](https://stackoverflow.com/a/40720527)):
 1. Open Manage optional features from the start menu and make sure you have Open SSH Client in the list. If not, you should be able to add it.
 2. Open Services from the start Menu
 3. Scroll down to OpenSSH Authentication Agent > right click > properties
