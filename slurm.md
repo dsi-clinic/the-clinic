@@ -84,17 +84,19 @@ otherwise, make sure to add a comma to the end of the current last item and add 
     - In "Connect to a remote host", try `Remote-SSH: Connect to Host...` and you should see `fe.ds` as an option. Select it. Otherwise, you can try typing in `fe.ds`.
     - The type of server is Linux.
 
+#### Connecting to a compute node in VS Code
+
 3. Now your VS code window is connected to the login node. If you'd like to connect to a compute node for an interactive session:
     1. In a terminal or command prompt `ssh fe.ds`
     2. Request an interactive session with something like: `srun -p general --gres=gpu:1 --pty --mem 1000 -t 90:00 /bin/bash`. Once you have been your request has been granted, your command prompt will change to something like `USERNAME@hostname` where hostname is probably like `g004`.
     3. Back in VS Code, open the command palette (cntr+shift+p / command+shift+p / View -> Command Palette...), search for `Remote-SSH: Connect to Host...`. Select it and type in as your host `hostname.ds` replacing the hostname with the hostname from step 3.2. 
     4. Your VS Code should now be connected to the compute node. You'll have to open the repository folder (see below instructions for cloning). But now you can take advantage of the computational power from the node and the nice features of VS Code (using notebooks, python debugging, etc.)
 
-### Clone Repository
+## Clone Repository
 
 Go to the repository github page, click the dropdown on the green button that says 'Code', select 'SSH' and copy the value. `git clone COPIED_VALUE` will clone the repo. 
 
-### Conda installation
+## Conda installation
 
 To install conda:
 
@@ -113,14 +115,18 @@ pip install -r requirements.txt
 ```
 Now when you log into ai cluster, just make sure you run `conda activate PROJECT_NAME` and select it as your defualt python for vs code. Click the Python version number on the bottom right and select the interpreter for PROJECT_NAME. If it is not listed, the path is: `/home/USERNAME/miniconda3/envs/PROJECT_NAME/bin/python`.
 
-### Using Slurm
+## Using Slurm and Submitit
+
+### Slurm
 
 We'll use slurm to submit jobs. [Here is uchicago's documentation on slurm](https://howto.cs.uchicago.edu/slurm?s[]=slurm).
 
 The commands to remember are:
-
-`squeue`, `sinfo`
-
+- `sinfo` for information about the cluster
+- `squeue` for information about currently running or queued jobs
+- `srun` to run a job interactively
+- `sbatch` to submit a job to the queue (we'll use submitit for this)
+- `scancel` to cancel a job. Use `scancel JOB_NUMBER`
 
 We'll use [submitit](https://github.com/facebookincubator/submitit) to actually submit jobs in python.
 
@@ -129,3 +135,101 @@ When we use slurm, we must be respectful to not overuse nodes. Please:
 - Don't run computation heavy jobs on the compute nodes. Submit them as jobs
 - Do not submit many jobs at once
 - To run code you are confident works, submit it to the `general` queue
+
+### Submitit
+
+Submitit eliminates the need to remember complicated and long configurations and allows us to work only in python. The sample program in `main.py` runs a test version. 
+
+The main ideas are:
+- Any code you wish to execute together should be runnable by calling a python function. Don't do this: 
+```python
+import pandas as pd
+
+df = pd.read_csv("test.csv")
+df = df[df["year"] > 2004]
+average = df["amount"].mean()
+print(average)
+```
+Put the code in a function that is general (hint: if a descriptive name of your function is very long, you may want to make it more general) and return results instead of printing. Do this:
+```python
+import pandas as pd
+
+def get_mean_amount_after_year(path_to_csv: str, earliest_year: int):
+    """ Return mean value of 'amount' column with year > earliest_year """
+    df = pd.read_csv(path_to_csv)
+    df = df[df["year"] > earliest_year]
+    return df["amount"].mean()
+```
+- Put submitit code in a `if __name__ == "__main__":` block so it is executed when you run the file as a script. No submitit code should exist in your actual function. This way we can easily pivot between cluster and local exucution. I like to use `argparse` to submit a path to a query that contains both all slurm configuration and a `cluster` key that maps to a boolean. 
+```python
+from pathlib import Path
+
+if __name__ == "__main__":
+    import argparse
+    import json
+
+    # set up command line arguments
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--query", help="path to json file containing query", default=None
+    )
+    args = parser.parse_args()
+    
+    # read in query
+    if Path(args.query).resolve().exists():
+        query_path = Path(args.query).resolve()
+    else:
+        # throw
+        raise ValueError(
+            f"Could not locate {args.query} in query directory or as absolute path"
+        )
+    with open(query_path) as f:
+        query = json.load(f)
+    # save query parameters to variables. if you want a default, better to put
+    # at the outermost call to a function.
+    path_to_csv = query.get("path_to_csv")
+    default_earliest_year = 2005
+    earliest_year = query.get("earliest_year", default_earliest_year)
+
+    output_directory = Path("results").resolve()
+    executor = submitit.AutoExecutor(folder=output_directory)
+    # here we unpack the query dictionary and pull any slurm commands that 
+    # are in 'slurm' key. For more info on the ** syntax, see:
+    # https://stackoverflow.com/a/36908. The slurm options here are the same
+    # as those you use on the command line but instead of prepending with '--'
+    # we prepend with 'slurm_'
+    executor.update_parameters(**query.get("slurm", {}))
+
+    with executor.batch():
+        if query.get("cluster", False):
+            job = executor.submit(
+                get_mean_amount_after_year,
+                path_to_csv,
+                earliest_year,
+            )
+            average = job.result() # will wait for job to complete
+        else:
+            average = get_mean_amount_after_year(
+                path_to_csv,
+                earliest_year,
+            )
+    print(average)
+```
+Then with a query like this:
+```json
+{
+    "path_to_csv": "test_file.csv",
+    "earliest_year": 1994,
+    "cluster": false,
+    "slurm": {
+        "slurm_array_parallelism": 6,
+        "slurm_partition": "general",
+        "slurm_job_name": "mbio-all",
+        "slurm_nodes": 1,
+        "slurm_time": "240:00",
+        "slurm_gres": "gpu:1",
+        "slurm_mem_per_cpu": 16000
+    }
+}
+```
+you can run `python path/to/script.py --query path/to/query.json` and get your result. 
