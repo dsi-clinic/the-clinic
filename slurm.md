@@ -13,7 +13,7 @@ It can be annoying / burdensome to type in your passwords constantly to connect 
 
 ### Windows Specific Instructions
 
-If you are using Windows 10, you can use OpenSSH like Mac and Linux users. To ensure it is set up correctly, complete the following (from [this SO answwer](https://stackoverflow.com/a/40720527)):
+If you are using Windows 10, you can use OpenSSH like Mac and Linux users. If you use WSL2, please see [specific instructions](#WSL)To ensure it is set up correctly, complete the following (from [this SO answwer](https://stackoverflow.com/a/40720527)):
 1. Open Manage optional features from the start menu and make sure you have Open SSH Client in the list. If not, you should be able to add it.
 2. Open Services from the start Menu
 3. Scroll down to OpenSSH Authentication Agent > right click > properties
@@ -233,3 +233,8 @@ Then with a query like this:
 }
 ```
 you can run `python path/to/script.py --query path/to/query.json` and get your result. 
+
+## Appendix
+### WSL
+
+Using WSL2 on Windows is a great way to have access to a linux system on a Windows OS. The convience of 'pretending' to have two separate operating systems on one, however, can lead to complications. One is with SSH keys. The `.ssh` directory used on your normal Windows system and your WSL will be different from each other. This is fine in most cases, but can lead to headaches when using VS Code. If you wish to connect to a remote SSH machine in VS code, it will use your Windows configuration. So even if you only use WSL2 and the VS Code extension (WSL) to code in WSL2, you must follw the [Windows ssh instructions](#windows-specific-instructions). If you wish use the same keys on each system, you can copy them. See [this article](https://devblogs.microsoft.com/commandline/sharing-ssh-keys-between-windows-and-wsl-2/) for more information.
