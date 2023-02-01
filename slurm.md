@@ -207,20 +207,18 @@ if __name__ == "__main__":
                 path_to_csv,
                 earliest_year,
             )
-            average = job.result() # will wait for job to complete
         else:
             average = get_mean_amount_after_year(
                 path_to_csv,
                 earliest_year,
             )
-    print(average)
 ```
 Then with a query like this:
 ```json
 {
     "path_to_csv": "test_file.csv",
     "earliest_year": 1994,
-    "cluster": false,
+    "cluster": true,
     "slurm": {
         "slurm_array_parallelism": 6,
         "slurm_partition": "general",
@@ -233,6 +231,8 @@ Then with a query like this:
 }
 ```
 you can run `python path/to/script.py --query path/to/query.json` and get your result. 
+
+Make sure you save your results in some way! Otherwise your script might run perfectly but be the results will be completely lost.
 
 ## Appendix
 ### WSL
