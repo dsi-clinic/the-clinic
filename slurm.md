@@ -4,16 +4,24 @@ Research institutions often have computing clusters that can be used to perform 
 
 Logging in through the command line makes it so all commands you run in that terminal are executed on the remote machine. But command line editors (like vim and emacs) can have a significan learning curve compared to editors like VS Code. For this reason we will use a VS Code extension that allows you to connect your whole VS Code window to the cluster (and utilize all of VS Code's nice features and extensions). Instructions are located below.
 
+## Step 1: Prerequisites
 
-Get a [CS Account](https://account-request.cs.uchicago.edu/account/requests) if you don't have one already.
+This guide is specifically tailored to the University of Chicago DSI Cluster, though it should be generally applicable to most slurm clusters. The guide assumes you have:
 
-## SSH Keys
+- A CNET id
+- A CS Account. Get [one here](https://account-request.cs.uchicago.edu/account/requests) if you don't have one already.
+- A reasonably up to date and functioning computer running on Windows (10/11), Mac (10.13+/High Sierra+), or Linux. 
+- An internet connection. You'll need internet to use ssh.
+- VS Code
+- A GitHub account
+
+## Step 2: Set up SSH
 
 It can be annoying / burdensome to type in your passwords constantly to connect to the cluster or push/pull from GitHub. We can switch to authunticating based on *something we have* using ssh keys. 
 
-### Windows Specific Instructions
+### [Windows Users Only] Part I: Enable OpenSSH
 
-If you are using Windows 10, you can use OpenSSH like Mac and Linux users. If you use WSL2, please see [specific instructions](#wsl). To ensure it is set up correctly, complete the following (from [this SO answwer](https://stackoverflow.com/a/40720527)):
+If you are using Windows 10 or 11, you can use OpenSSH like Mac and Linux users. If you use WSL2, please see [specific instructions](#wsl). To ensure it is set up correctly, complete the following (from [this SO answwer](https://stackoverflow.com/a/40720527)):
 1. Open Manage optional features from the start menu and make sure you have Open SSH Client in the list. If not, you should be able to add it.
 2. Open Services from the start Menu
 3. Scroll down to OpenSSH Authentication Agent > right click > properties
@@ -21,21 +29,23 @@ If you are using Windows 10, you can use OpenSSH like Mac and Linux users. If yo
 5. Open cmd and type where ssh to confirm that the top listed path is in System32. Mine is installed at C:\Windows\System32\OpenSSH\ssh.exe. If it's not in the list you may need to close and reopen cmd.
 6. You should know be able to access OpenSSH tools from the Windows Command Prompt. Continue to General Instructions. 
 
-### General Instructions
 
-#### Create / Manage SSH Keys
+### Part II: Create / Manage SSH Keys
 
-1. In the terminal of your local computer (or if on windows, Command Prompt), use `ssh-keygen`, [instructions here](https://www.ssh.com/academy/ssh/keygen). Recommended: use `ssh-keygen -t ecdsa -b 521` or `ssh-keygen -t ed25519` to generate your key. If you have multiple, give it an identifiable name. Otherwise you can click enter to accept the default suggestion. You can optionally add a password to your ssh key. If you do not it may be vulnerable. Adding a password may seem counterintuitive (isn't our whole goal to avoid passwords?), but you can use [ssh-agent](https://www.ssh.com/academy/ssh/agent) and then you will just have to type your password once per session.
+1. In the terminal of your local computer (or if on windows, Command Prompt), use `ssh-keygen`, [instructions here](https://www.ssh.com/academy/ssh/keygen). Recommended: use `ssh-keygen -t ecdsa -b 521` or `ssh-keygen -t ed25519` to generate your key. 
+2. If you have multiple keys, give it an identifiable name but keep it in the `.ssh` directory. Otherwise you can click enter to accept the default suggestion. 
+3. You can optionally add a password to your ssh key. If you do not it may be vulnerable. Adding a password may seem counterintuitive (isn't our whole goal to avoid passwords?), but you can use [ssh-agent](https://www.ssh.com/academy/ssh/agent) (explained below) and then you will just have to type your password once per session (or once ever). As you type the password in, no text will appear on screen to keep your password length private from shoulder surfers. You will be asked to repeat it. Do not forget your password! Write it down, or ideally store it in a password manager. A `KEYNAME` and `KEYNAME.pub` file will be created by this command. The file with the `.pub` extension is your public key and can be shared safely. The file with no extension is your private key and should never be shared. 
+4. (assuming you password protect your private key) Add the key to your ssh agent. `ssh-add PATH_TO_KEY.pub`. `PATH_TO_KEY` will start with `~/.ssh/` on Mac/Linux and `C:\Users\YOUR_USERNAME\.ssh\` on Windows. You'll have to type your password in once and it will be saved for a period of time (terminal session or until your computer next reboots), drastically limiting the amount of times you have to type in your password. 
+5. [Mac Users Only] (optional) To keep the key in your ssh-agent accross sessions, follow [this stack overflow answer](https://stackoverflow.com/questions/18880024/start-ssh-agent-on-login) 
+6. Confirm your key was added. In your terminal/command prompt/powershell, run `ssh-add -l` to list all keys in your ssh agent. Your key should appear here. If this command returns `The agent has no identities.`, step 4 failed. 
 
-2. (assuming you password protect your private key) Add the key to your ssh agent. `ssh-add PATH_TO_KEY`. `PATH_TO_KEY` will start with `~/.ssh/` on Mac/Linux and `C:\Users\YOUR_USERNAME\.ssh\` on Windows. You'll have to type your password in once and it will be saved for a period of time (terminal session or until your computer next reboots), drastically limiting the amount of times you have to type in your password. 
+### Part III: Save SSH Configuration
 
-#### Use SSH Keys
-
-3. For a remote machine: To use your private key to log in to a remote machine, it must have access to your public key. To do this you will have to add it to the `~/.ssh/authorized_keys` file on the remote machine. If on Mac/Linux, you can use `ssh-copy-id -i ~/.ssh/KEYNAME_HERE USERNAME@fe01.ds.uchicago.edu`. If on Windows, you'll have to copy your public key, `ssh USERNAME@fe01.ds.uchicago.edu`, and paste it into `~/.ssh/authorized_keys` with `echo PUBLIC_KEY_HERE >> .ssh/authorized_keys`.
-
-4. For GitHub. SSH Keys can also be used for GitHub authentication. You can use the same ssh keys, or follow steps 1-2 again with a new ssh key and name. To give GitHub access to your public keys, go to [GitHub's ssh keys page](https://github.com/settings/keys). Click 'New SSH key'. Give it a name relating to the machine it is storeed on, like "windows laptop", or "linux desktop" and paste in the full contents of the public key. You can access the contents by typing `cat PATH_TO_PUBLIC_KEY` or, on Windows `type PATH_TO_PUBLIC_KEY`.
-
-5. Create / modify your SSH Config. Typing in the full ssh command is now something like `ssh -i PATH_TO_KEY USERNAME@fe01.ds.uchicago.edu` which can be a lot to type and a lot to remember. Using ssh config, we can reduce this to just `ssh fe.ds`. In your `.ssh` file create a `config` file or append the following to the existing file: 
+1. Create / modify your SSH Config. Typing in the full ssh command is now something like `ssh -i PATH_TO_KEY USERNAME@fe01.ds.uchicago.edu` which can be a lot to type and a lot to remember. Using ssh config, we can reduce this to just `ssh fe.ds`. In your `.ssh` directory create a `config` file if one does not exist. To open:
+    - [Windows] In command prompt: `code C:\Users\USERNAME\.ssh\config` where `USERNAME` is your windows username. 
+    - [Mac] In a terminal: `touch ~/.ssh/config` to create the file if it does not exist and `open ~/.ssh/config` to open it.
+    - [Linux] In a terminal: `code ~/.ssh/config`
+2. You may or may not already have configurations saved. Place this text in the config file, after any other configurations, *except* any block that starts with `Host *` or `Host fe01.ds.uchicago.edu`:
 ```
 Host fe.ds*
   HostName fe01.ds.uchicago.edu
@@ -50,10 +60,34 @@ Host *.ds !fe.ds
   User INSERT_YOUR_CNET
   ProxyJump fe.ds
 ```
-This will map `fe.ds` to an ssh command to the listed hostname, with the listed user and private key, and using the listed identity file as your key. `ForwardAgent` set to yes means that any ssh keys added to your local agent will also be added to the remote machines ssh agent (so you can use your local ssh key for GitHub on the cluster, for example). The second block is for connecting directly to compute nodes.
+Replace `INSERT_YOUR_CNET` with your CNET ID and `INSERT_PATH_TO_PRIVATE_KEY` with the path the key you previously created. This will map `fe.ds` to an ssh command to the listed hostname, with the listed user and private key, and using the listed identity file as your key. `ForwardAgent` set to yes means that any ssh keys added to your local agent will also be added to the remote machines ssh agent (so you can use your local ssh key for GitHub on the cluster, for example). The second block is for connecting directly to compute nodes.
+
+3. Save and close the file.
+
+### Part IV: Enable Authentication with SSH Keys
+
+For a remote machine: To use your private key to log in to a remote machine, it must have access to your public key. To do this you will have to add it to the `~/.ssh/authorized_keys` file on the remote machine. 
+
+1. C
+
+1. Add public key to GitHub. SSH Keys can also be used for GitHub authentication. You can use the same ssh keys, or follow steps 1-2 again with a new ssh key and name. To give GitHub access to your public keys, go to [GitHub's ssh keys page](https://github.com/settings/keys). Click 'New SSH key'. Give it a name relating to the machine it is storeed on, like "windows laptop", or "linux desktop" and paste in the full contents of the public key. You can access the contents by typing `cat PATH_TO_PUBLIC_KEY` or, on Windows `type PATH_TO_PUBLIC_KEY`.
 
 
-## VS Code
+
+#### Mac/Linux Instructions
+1. If on Mac/Linux, you can use `ssh-copy-id -i ~/.ssh/KEYNAME_HERE USERNAME@fe01.ds.uchicago.edu`, replacing `KEYNAME_HERE` with the name of the ssh key you would like to use and `USERNAME` with your CNET ID. 
+2. You will be prompted for `USERNAME@fe01.ds.uchicago.edu`'s password. This will be your CNET password. 
+
+#### Windows Instructions
+1. Copy your public key. Your public key is located in `PATH_TO_KEY.pub` where `PATH_TO_KEY` is the path you selected when you created your keys. If you accepted the defaults, it is in `C:\Users\WINDOWS_USERNAME\.ssh\id_ed25519.pub` where `WINDOWS_USERNAME` is your Windows username. You can print it in command prompt by typing `type C:\Users\WINDOWS_USERNAME\.ssh\id_ed25519.pub`. Copy the entire output. 
+2. Now connect to the server. Do `ssh USERNAME@fe01.ds.uchicago.edu`. You'll have to type in your UChicago password. Your command prompt is now attached to the login node. The bottom left of your screen should say something like `USERNAME@fe01:~$`. 
+3. Ensure there is an `.ssh` directory. Run `mkdir .ssh`. 
+4. Add your public key to the list of authorized keys. Run `echo "PUBLIC_KEY_HERE" >> .ssh/authorized_keys`, replacing `PUBLIC_KEY_HERE` with the copied public key and maintaining the quotations. ctrl+v may not paste in your terminal. Try right clicking, ctrl+shift+v, and shift+insert. 
+
+
+
+
+## Step 3: Set up VS Code
 
 `Remote - SSH` is a VS Code extension that allows you to open a connection to a remote machine in VS Code. Traditionally, one would `ssh` in a terminal and be restriced to command-line text editors like Vim. `Remote - SSH` allows us to act like we are developing on our local machine as normal for the most part and has less of a learning curve.
 
@@ -92,11 +126,11 @@ otherwise, make sure to add a comma to the end of the current last item and add 
     3. Back in VS Code, open the command palette (cntr+shift+p / command+shift+p / View -> Command Palette...), search for `Remote-SSH: Connect to Host...`. Select it and type in as your host `hostname.ds` replacing the hostname with the hostname from step 3.2. 
     4. Your VS Code should now be connected to the compute node. You'll have to open the repository folder (see below instructions for cloning). But now you can take advantage of the computational power from the node and the nice features of VS Code (using notebooks, python debugging, etc.)
 
-## Clone Repository
+## Step 4: Clone Repository
 
 Go to the repository github page, click the dropdown on the green button that says 'Code', select 'SSH' and copy the value. `git clone COPIED_VALUE` will clone the repo. 
 
-## Conda installation
+## Step 5: Install conda for environment management
 
 To install conda:
 
@@ -115,7 +149,7 @@ pip install -r requirements.txt
 ```
 Now when you log into ai cluster, just make sure you run `conda activate PROJECT_NAME` and select it as your defualt python for vs code. Click the Python version number on the bottom right and select the interpreter for PROJECT_NAME. If it is not listed, the path is: `/home/USERNAME/miniconda3/envs/PROJECT_NAME/bin/python`.
 
-## Using Slurm and Submitit
+## Step 6: Using Slurm and Submitit
 
 ### Slurm
 
@@ -148,7 +182,6 @@ import pandas as pd
 df = pd.read_csv("test.csv")
 df = df[df["year"] > 2004]
 average = df["amount"].mean()
-print(average)
 ```
 Put the code in a function that is general (hint: if a descriptive name of your function is very long, you may want to make it more general) and return results instead of printing. Do this:
 ```python
