@@ -78,7 +78,7 @@ For a private key to work for authenticating, the service you are authenticating
 5. Verify your key was added. In terminal / command prompt, try `ssh git@github.com` it should respond with `Hi GITHUB_USERNAME! You've successfully authenticated, but GitHub does not provide shell access.` or something similar. 
 
 #### Mac/Linux Instructions for Remote Authentication
-1. If on Mac/Linux, you can use `ssh-copy-id -i ~/.ssh/KEYNAME_HERE fe.ds`, replacing `KEYNAME_HERE` with the name of the ssh key you would like to use and `USERNAME` with your CNET ID. 
+1. If on Mac/Linux, you can use `ssh-copy-id -i ~/.ssh/KEYNAME_HERE fe.ds`, replacing `KEYNAME_HERE` with the name of the public ssh key you would like to use (it should end with .pub) and `USERNAME` with your CNET ID. 
 2. You will be prompted for `USERNAME@fe01.ds.uchicago.edu`'s password. This will be your CNET password. 
 3. To verify success: In your terminal, `ssh fe.ds` should connect you to the cluster without typing any password.
 
