@@ -40,3 +40,50 @@ One of the most important first steps is verifying that everyone's tech is worki
     TODO
 
 Students are resourceful and will often figure out less than ideal "workarounds" that will come back to bite you/them later. **It's wise to verify that everything is working by literally looking at their computer and checking yourself.**
+
+## Meeting & Communication Logistics
+TODO
+- Which staff are leading the project?
+    - Have a project lead and a backup
+- Slack
+- Weekly team meetings
+- Check-in cadence
+    - Stand-ups?
+- Schedule meetings with external mentors
+- Project management
+    - TODO: Notion? GitHub issues?
+- Troubleshooting SOP
+     - Google your error
+     - ChatGPT
+     - Read the docs for the package you're using
+     - Ask (publicly!) in Slack
+        - Include error message, operating system, and things you've tried so far
+     - Make a reasonable effort to fix your bug (that's how you learn), but don't "stay stuck"
+
+## Hiring
+TODO: What is consistent about the hiring process that is worth documenting?
+- In-person vs remote policy
+    - Are some days/meetings required in person?
+    - Do remote days need to be consistent?
+    - Communication of in-person/remote schedule
+- CPT (Curricular Practical Training) for international students
+    - From summer 2023: `If they are current, UC students, no, CPT authorization is not required. Their active F-1 (I-20) and J-1 (DS-2019) are valid for on-campus employment.`
+- Graduating students
+    - Graduating students need to be hired as "temporary workers." As of summer 2023, this was doable but was an administrative hassle.
+- Logging hours
+    - TODO: Use Workday?
+    - What are the HR gotchas (ie don't log one 15 hour day)
+
+## Summer Programs
+TODO
+- What does orientation look like and what are orientation expectations?
+- Is there an events calendar?
+    - What are the expectations and deliverables at the end of the program?
+- What is the required check-in cadence for students with the program?
+- What is the expected check-in cadence with project mentors?
+- Where are students expected to work during the program?
+    - What spaces will students have access to?
+    - Can students book meeting rooms?
+- Will there be "office hours" or some sort of structured troubleshooting time?
+    - Who is leading this?
+- What is the absence policy?
