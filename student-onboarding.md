@@ -41,6 +41,13 @@ One of the most important first steps is verifying that everyone's tech is worki
 
 Students are resourceful and will often figure out less than ideal "workarounds" that will come back to bite you/them later. **It's wise to verify that everything is working by literally looking at their computer and checking yourself.**
 
+## Project Setup
+TODO
+- Do a clean run of any tutorial Jupyter notebooks
+    - Make sure you download the provided dataset and use that rather than any datasets you already have
+    - Goal is to make sure the students can run the tutorials and setup without issues
+
+
 ## Meeting & Communication Logistics
 TODO
 - Which staff are leading the project?
