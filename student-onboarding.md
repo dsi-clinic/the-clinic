@@ -47,7 +47,6 @@ TODO
     - Make sure you download the provided dataset and use that rather than any datasets you already have
     - Goal is to make sure the students can run the tutorials and setup without issues
 
-
 ## Meeting & Communication Logistics
 TODO
 - Which staff are leading the project?
@@ -94,3 +93,4 @@ TODO
 - Will there be "office hours" or some sort of structured troubleshooting time?
     - Who is leading this?
 - What is the absence policy?
+- Are there any special things that we need to know for non-UChicago students?
