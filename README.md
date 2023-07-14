@@ -1,8 +1,15 @@
+# Repo Information
+
+This Repository contains notes and tooling around implementing coding standards on repositories as part of the data science clinic and related projects. This repository also contains a few scripts which analyze repositories and code using automation. 
+
+Information on the specific tests and automation can be found in the scripts directory README file.
+
+
 # Coding Standards for UChicago DSI
 
 Motivation:
 ---
-Much of the code that is produced here at the DSI is 80% complete and not in a state that it can be easily turned over. The purpsoe of this document is to provide a set of best practices _in checklist form_ so that we can quickly do code reviews and provide expectations on them.
+Much of the code that is produced here at the DSI is 80% complete and not in a state that it can be easily turned over. The purpose of this document is to provide a set of best practices _in checklist form_ so that we can quickly do code reviews and provide expectations on them.
 
 We should always keep the following in mind: Analysis is _useless_ without a good repo.
 
@@ -38,7 +45,9 @@ Level 1: Bare minimum.
     * Doc strings on all functions
     * README files in directories specifying the contents.
     * README file in the root directory describing the purpose of the code, where to look for things and how to run the code. If there are other locations for information regarding this project, links should be provided. 
-1. `.gitignore` should be used to avoid committing data and intermedidate data files which are not appropriate for the repo.
+1. `.gitignore` should be used to avoid committing data and intermediate data files which are not appropriate for the repo.
+    * There should be no `DS_Store` files or `.ipynb_checkpoints` directories
+
 1. Working branches need to be up do date with _main_ upon completion of task/code review and should not stray behind _main_ for more than day.
 
 Level 2: Almost useful.
