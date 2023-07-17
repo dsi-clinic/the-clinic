@@ -1,18 +1,24 @@
+""""
+Utility Functions for running automated code and repo reviews.
+"""
+
+
 import os
 import json
-import git
 import argparse
+import git
 import pyflakes.api
+
 
 def count_functions(cell):
     """Count the number of functions defined in a Jupyter Notebook cell."""
     code = cell['source']
-    return sum([1 for line in code if line.strip().startswith('def ')])
+    return len([1 for line in code if line.strip().startswith('def ')])
 
 def process_notebook(file_path):
     """Process a Jupyter Notebook and count the cells, lines of code and functions."""
-    with open(file_path, 'r', encoding='utf-8') as f:
-        notebook = json.load(f)
+    with open(file_path, 'r', encoding='utf-8') as f_handle:
+        notebook = json.load(f_handle)
         cells = notebook['cells']
         num_cells = len(cells)
         num_lines = 0
@@ -20,7 +26,7 @@ def process_notebook(file_path):
         max_lines_in_cell = 0
         for cell in cells:
             if cell['cell_type'] == 'code':
-                lines_in_cell = sum([1 for line in cell['source'] if line.strip()])
+                lines_in_cell = len([1 for line in cell['source'] if line.strip()])
                 num_lines += lines_in_cell
                 max_lines_in_cell = max(max_lines_in_cell, lines_in_cell)
                 num_functions += count_functions(cell)
@@ -37,9 +43,10 @@ def walk_and_process(dir_path, no_filter_flag):
             file_path = os.path.join(root, file)
 
             if file.endswith('.ipynb'):
-                notebook_count += 1                
+                notebook_count += 1
                 num_cells, num_lines, num_functions, max_lines_in_cell = process_notebook(file_path)
-                if no_filter_flag or (num_cells > 10 or max_lines_in_cell > 15 or num_functions >0 ): 
+                if no_filter_flag or \
+                        (num_cells > 10 or max_lines_in_cell > 15 or num_functions >0):
                     stats_printed += 1
                     print(f'File: {file_path}')
                     print(f'\tNumber of cells: {num_cells}')
@@ -50,7 +57,7 @@ def walk_and_process(dir_path, no_filter_flag):
             elif file.endswith('.py'):
                 python_file_count += 1
                 number_of_messages = run_pyflakes_file(file_path)
-                if number_of_messages > 0: 
+                if number_of_messages > 0:
                     stats_printed += 1
 
     print(f"Files information printed: {stats_printed}")
@@ -58,7 +65,7 @@ def walk_and_process(dir_path, no_filter_flag):
 def run_pyflakes_file(file_path):
     """Run a python file through pyflakes. returns the number of warnings raised."""
 
-    with open(file_path, "r") as file:
+    with open(file_path, "r", encoding="utf-8") as file:
         file_content = file.read()
         number_of_warnings = pyflakes.api.check(file_content, file_path)
 
@@ -72,9 +79,13 @@ def parse_arguments():
     return parser.parse_args()
 
 def is_git_repo(repo_path):
+    """
+    Return a boolean if the directory supplied is a git repo.
+    """
     return git.Repo(repo_path).git_dir is not None
 
 def get_remote_branches_info(repo_path):
+    """This function reutrns the branch information from the remote repository."""
     repo = git.Repo(repo_path)
     remote_branches = repo.remote().refs
 
@@ -86,7 +97,7 @@ def get_remote_branches_info(repo_path):
         commits_diff = repo.git.rev_list('--left-right', '--count', f'origin/main...{branch.name}')
         num_ahead, num_behind = commits_diff.split('\t')
         branch_info.append( [branch.name, num_ahead, num_behind])
-        
+
     for branch, behind, ahead in branch_info:
         print(f"Branch: {branch}")
         print(f"Commits behind main: {behind}")
