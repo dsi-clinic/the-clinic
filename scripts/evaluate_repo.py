@@ -14,3 +14,5 @@ if __name__ == '__main__':
 
     get_remote_branches_info(args.dir_path)
     walk_and_process(args.dir_path, args.no_filter)
+
+### EOF ##

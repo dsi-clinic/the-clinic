@@ -28,13 +28,16 @@ def process_notebook(file_path):
 
 def walk_and_process(dir_path, no_filter_flag):
     """Walk through directory and process all Jupyter Notebooks."""
-    current_notebook_count = 0
+    notebook_count = 0
     stats_printed = 0
+    python_file_count = 0
+
     for root, dirs, files in os.walk(dir_path):
         for file in files:
+            file_path = os.path.join(root, file)
+
             if file.endswith('.ipynb'):
-                current_notebook_count += 1
-                file_path = os.path.join(root, file)
+                notebook_count += 1                
                 num_cells, num_lines, num_functions, max_lines_in_cell = process_notebook(file_path)
                 if no_filter_flag or (num_cells > 10 or max_lines_in_cell > 15 or num_functions >0 ): 
                     stats_printed += 1
@@ -44,20 +47,21 @@ def walk_and_process(dir_path, no_filter_flag):
                     print(f'\tNumber of function definitions: {num_functions}')
                     print(f'\tMax lines in a cell: {max_lines_in_cell}')
                     print('-' * 40)
+            elif file.endswith('.py'):
+                python_file_count += 1
+                run_pyflakes_file(file_path)                
+                stats_printed += 1
+
     print(f"Files information printed: {stats_printed}")
 
-def run_pyflakes(directory):
-    python_files = [filename for filename in os.listdir(directory) if filename.endswith(".py")]
+def run_pyflakes_file(file_path):
+    """Run a python file through pyflakes. returns the number of warnings raised."""
 
-    results = []
-    for filename in python_files:
-        file_path = os.path.join(directory, filename)
-        with open(file_path, "r") as file:
-            file_content = file.read()
-            messages = pyflakes.api.check(file_content, file_path)
-            results.extend(messages)
+    with open(file_path, "r") as file:
+        file_content = file.read()
+        number_of_warnings = pyflakes.api.check(file_content, file_path)
 
-    return results
+    return number_of_warnings
 
 def parse_arguments():
     """Parse command line arguments."""

@@ -4,7 +4,6 @@ This Repository contains notes and tooling around implementing coding standards 
 
 Information on the specific tests and automation can be found in the scripts directory README file.
 
-
 # Coding Standards for UChicago DSI
 
 Motivation:
@@ -12,7 +11,6 @@ Motivation:
 Much of the code that is produced here at the DSI is 80% complete and not in a state that it can be easily turned over. The purpose of this document is to provide a set of best practices _in checklist form_ so that we can quickly do code reviews and provide expectations on them.
 
 We should always keep the following in mind: Analysis is _useless_ without a good repo.
-
 
 Principles:
 ---
