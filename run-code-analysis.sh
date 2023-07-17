@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-if [ -z "$1" ]
+if [[ -z "$1" ]]
   then
     echo "### Error: No argument supplied."
     echo "### Please provide the path to the git repo to be tested, such as"
@@ -18,6 +18,12 @@ then
     exit -1
 fi
 
+echo "$2"
+if [[ -z "$2" ]] && [[ "$2" = "LINT" ]]; then
+    echo "### Running LINT"
+fi 
+
 REPOPATH=`readlink -f $1`
-docker run --platform=linux/amd64 -e "REPOPATH=$REPOPATH" -v $REPOPATH:/container-repo-mount coding-std 
+LINT=$2
+docker run --platform=linux/amd64 -e "REPOPATH=$REPOPATH" -e "LINT=$LINT" -v $REPOPATH:/container-repo-mount coding-std 
 
