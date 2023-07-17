@@ -1,5 +1,8 @@
 import os
-from utils import is_git_repo, get_remote_branches_info, walk_and_process, parse_arguments
+from utils import is_git_repo
+from utils import get_remote_branches_info
+from utils import walk_and_process
+from utils import parse_arguments
 
 if __name__ == '__main__':
     args = parse_arguments()
@@ -12,7 +15,10 @@ if __name__ == '__main__':
         print(f"Error: {args.dir_path} is not a Git repository.")
         exit(1)
 
-    get_remote_branches_info(args.dir_path)
-    walk_and_process(args.dir_path, args.no_filter)
+    if os.getenv("LINT") is not None and len(os.getenv("LINT")) > 0:
+        lint_flag = True
+    else:
+        lint_flag = False
 
-### EOF ##
+    get_remote_branches_info(args.dir_path)
+    walk_and_process(args.dir_path, None, lint_flag=lint_flag)
