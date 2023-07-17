@@ -49,8 +49,9 @@ def walk_and_process(dir_path, no_filter_flag):
                     print('-' * 40)
             elif file.endswith('.py'):
                 python_file_count += 1
-                run_pyflakes_file(file_path)                
-                stats_printed += 1
+                number_of_messages = run_pyflakes_file(file_path)
+                if number_of_messages > 0: 
+                    stats_printed += 1
 
     print(f"Files information printed: {stats_printed}")
 
