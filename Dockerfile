@@ -1,7 +1,3 @@
-### This is a starting point for a dockerfile. 
-### Note that it is only using python 3.8 and expects there to be a 
-### a requirements.txt file
-
 FROM --platform=linux/amd64 python:3.8-buster
 WORKDIR /tmp
 RUN apt update

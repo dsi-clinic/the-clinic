@@ -26,4 +26,3 @@ fi
 REPOPATH=`readlink -f $1`
 LINT=$2
 docker run --platform=linux/amd64 -e "REPOPATH=$REPOPATH" -e "LINT=$LINT" -v $REPOPATH:/container-repo-mount coding-std 
-
