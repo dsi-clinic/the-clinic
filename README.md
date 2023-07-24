@@ -4,6 +4,8 @@ This Repository contains notes and tooling around implementing coding standards 
 
 Information on the specific tests and automation can be found in the scripts directory README file.
 
+There are currently three README files in the `docs` directory, all of 
+
 # Coding Standards for UChicago DSI
 
 Motivation:
