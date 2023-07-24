@@ -60,7 +60,13 @@ Level 1: Bare minimum.
     * If asked why you used library X, there needs to be a good answer.
 1. Code should be organized so that function definition is separate from execution.
 1. All code should pass Pyflakes at 100%
-1. Nearly all code should pass lint.
+1. Bash scripts:
+    * Should be set as executable (`chmod +x`)
+    * Should end with `.sh`
+    * Should begin with ```#!/bin/bash```
+    * Should also have ```set -e```
+1. Nearly all code should pass lint
+
 
 Level 2: Almost useful.
 ---
@@ -145,3 +151,7 @@ There is also a dockerfile that has been used in the past.
 └── documentation/
     └── README.md
 ```
+
+* What if I'm doing work outside of traditional python code?
+
+```If you are doing work outside of python it still requires documentation. There should be zero work that isn't shareable```
