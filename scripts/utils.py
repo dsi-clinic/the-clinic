@@ -5,11 +5,44 @@ Utility Functions for running automated code and repo reviews.
 import os
 import json
 import argparse
+import tempfile
+from io import StringIO
+from nbconvert import PythonExporter
+from termcolor import cprint
 import git
 import pyflakes.api
+from pyflakes.reporter import Reporter
+from pyflakes.api import checkPath
 from pylint.lint import Run
 from pylint.reporters.text import TextReporter
-from io import StringIO
+
+def get_current_branch(repo_path):
+    """
+    Get the name of the current branch in a Git repository.
+
+    Parameters:
+        repo_path (str): The path to the Git repository.
+
+    Returns:
+        str: The name of the current branch, or None if an error occurs.
+
+    Raises:
+        git.InvalidGitRepositoryError: If the repository path is not a valid Git repo
+        git.GitCommandError: If an error occurs while executing a Git command.
+        Exception: For any other unexpected errors.
+    """
+    try:
+        repo = git.Repo(repo_path)
+        current_branch = repo.active_branch.name
+        return current_branch
+    except git.InvalidGitRepositoryError:
+        print("Error: Not a valid Git repository.")
+    except git.GitCommandError:
+        print("Error: Git command error occurred.")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+    return None
+
 
 def count_functions(cell):
     """Count the number of functions defined in a Jupyter Notebook cell."""
@@ -35,6 +68,8 @@ def process_notebook(file_path):
 
 def walk_and_process(dir_path, no_filter_flag, lint_flag):
     """Walk through directory and process all Jupyter Notebooks."""
+
+    cprint( f"Currently analyzing branch {get_current_branch( dir_path)}", color='green')
     notebook_count = 0
     stats_printed = 0
     python_file_count = 0
@@ -56,6 +91,9 @@ def walk_and_process(dir_path, no_filter_flag, lint_flag):
                     print(f'\tNumber of function definitions: {num_functions}')
                     print(f'\tMax lines in a cell: {max_lines_in_cell}')
                     print('-' * 40)
+                pyflake_notebook_results = pyflakes_notebook( file_path)
+                if len(pyflake_notebook_results) > 0:
+                    print(*pyflake_notebook_results, sep='\n')
             elif file.endswith('.py'):
                 python_file_count += 1
                 number_of_messages = run_pyflakes_file(file_path)
@@ -67,7 +105,7 @@ def walk_and_process(dir_path, no_filter_flag, lint_flag):
                 if number_of_messages > 0 or len(pylint_warnings) > 0:
                     stats_printed += 1
 
-    print(f"Files information printed: {stats_printed}")
+    return None
 
 def run_pyflakes_file(file_path):
     """Run a python file through pyflakes. returns the number of warnings raised."""
@@ -122,3 +160,35 @@ def get_pylint_warnings(filepath):
     #warnings = [line for line in output_lines if 'warning' in line.lower()]
     warnings = [line.replace('\n', '') for line in output_lines]
     return warnings
+
+def pyflakes_notebook(path_to_notebook):
+    """
+    Run pyflakes on a Jupyter notebook.
+    :param path_to_notebook: path to the notebook file.
+    :return: list of warnings and errors from pyflakes.
+    """
+    # Convert notebook to Python script
+    exporter = PythonExporter()
+    script, _ = exporter.from_filename(path_to_notebook)
+
+    with tempfile.NamedTemporaryFile(mode="w", delete=False, suffix=".py") as temp:
+        temp_name = temp.name
+        temp.write(script)
+
+    # Prepare StringIO object for capturing pyflakes output
+    error_stream = StringIO()
+    warning_stream = StringIO()
+
+    reporter = Reporter(warning_stream, error_stream)
+
+    # Run pyflakes and capture output
+    checkPath(temp_name, reporter=reporter)
+
+    # Delete temporary file
+    os.remove(temp_name)
+
+    # Get errors and warnings
+    errors = [ ':'.join( [path_to_notebook] + x.split(':')[1:]) for x in error_stream.getvalue().splitlines()]
+    warnings = [ ':'.join( [path_to_notebook] + x.split(':')[1:]) for x in warning_stream.getvalue().splitlines()]
+
+    return errors + warnings
