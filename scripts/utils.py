@@ -69,10 +69,8 @@ def process_notebook(file_path):
 def walk_and_process(dir_path, no_filter_flag, lint_flag):
     """Walk through directory and process all Jupyter Notebooks."""
 
+    paths_to_flag = ['__pycache__', 'DS_Store', 'ipynb_checkpoints']
     cprint( f"Currently analyzing branch {get_current_branch( dir_path)}", color='green')
-    notebook_count = 0
-    stats_printed = 0
-    python_file_count = 0
     pylint_warnings = []
 
     for root, dirs, files in os.walk(dir_path):
@@ -80,7 +78,6 @@ def walk_and_process(dir_path, no_filter_flag, lint_flag):
             file_path = os.path.join(root, file)
 
             if file.endswith('.ipynb'):
-                notebook_count += 1
                 num_cells, num_lines, num_functions, max_lines_in_cell = process_notebook(file_path)
                 if no_filter_flag or \
                         (num_cells > 10 or max_lines_in_cell > 15 or num_functions >0):
@@ -95,15 +92,14 @@ def walk_and_process(dir_path, no_filter_flag, lint_flag):
                 if len(pyflake_notebook_results) > 0:
                     print(*pyflake_notebook_results, sep='\n')
             elif file.endswith('.py'):
-                python_file_count += 1
-                number_of_messages = run_pyflakes_file(file_path)
+                run_pyflakes_file(file_path)
                 if lint_flag:
                     pylint_warnings = get_pylint_warnings(file_path)
                     if len(pylint_warnings) > 0:
                         for warning in pylint_warnings:
                             print(f"{warning}")
-                if number_of_messages > 0 or len(pylint_warnings) > 0:
-                    stats_printed += 1
+            if len( [x for x in paths_to_flag if x in file] ) > 0:
+                print(f"Warning: the file {file} should be filtered via gitignore.")
 
     return None
 

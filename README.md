@@ -25,14 +25,14 @@ Principles:
 1. Data chain of ownership
     -- Data should have an obvious chain from source to result
 
-Level 1: Bare minimum.
+Requirements
 ---
 1. Docker / Dockerfile:
     * There should be a dockerfile and instructions on how to run the code in the main README file.
     * All code should be run via docker.
     * The Dockerfile should use a `requirements.txt` to manage modules and should have versions on all modules.
     * There should be _no_ conda / pyenv etc.
-    * NOTE: in the case that the code is being run on the AI or DSI cluster, docker can be avoided.
+    * NOTE: in the case that the code is being run on the AI or DSI cluster, docker does not need to be used.
 1. Directory structure and naming should be obvious and easy to understand.
 1. There should be no secrets or API Keys in the repo.
 1. There should be no hard-coded paths.
@@ -59,16 +59,15 @@ Level 1: Bare minimum.
 1. All non-standard python libraries need to be justified:
     * If asked why you used library X, there needs to be a good answer.
 1. Code should be organized so that function definition is separate from execution.
-1. All code should pass Pyflakes at 100%
+1. All code should pass Pyflakes
 1. Bash scripts:
     * Should be set as executable (`chmod +x`)
     * Should end with `.sh`
     * Should begin with ```#!/bin/bash```
     * Should also have ```set -e```
-1. Nearly all code should pass lint
 
 
-Level 2: Almost useful.
+Suggested Best Practices:
 ---
 1. Proper use of github:
     * Branches should be merged into main _and then deleted_
@@ -76,14 +75,10 @@ Level 2: Almost useful.
         1. _working branch_ -> _dev_ -> _main_ where each is a PR.
 1. Linting:
     * All code should pass basic linting
-
-Level 3: Actually good practice.
----
 1. Tests
     * Adding unit tests for all functions
 1. Github actions
     * For linting and testing on DEV branch
-
 
 FAQ
 ---
