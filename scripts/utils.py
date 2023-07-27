@@ -81,7 +81,6 @@ def walk_and_process(dir_path, no_filter_flag, lint_flag):
                 num_cells, num_lines, num_functions, max_lines_in_cell = process_notebook(file_path)
                 if no_filter_flag or \
                         (num_cells > 10 or max_lines_in_cell > 15 or num_functions >0):
-                    stats_printed += 1
                     print(f'File: {file_path}')
                     print(f'\tNumber of cells: {num_cells}')
                     print(f'\tLines of code: {num_lines}')
