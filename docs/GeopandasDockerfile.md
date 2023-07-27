@@ -1,6 +1,6 @@
 ### Geopandas and Docker
 
-Currently, installing Geopandas and docker can be a headache because of differences in the underlying operating system (specifically Windows / Unix / Mac). This file contains an example which will install geopandas
+Currently, installing Geopandas and docker can be a headache because of differences in the underlying operating system (specifically Windows / Unix / Mac). This file contains an example which will install geopandas.
 
 
 ### Dockerfile
