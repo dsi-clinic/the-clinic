@@ -27,15 +27,15 @@ Principles:
 
 Requirements
 ---
-1. Docker / Dockerfile:
-    * There should be a dockerfile and instructions on how to run the code in the main README file.
-    * All code should be run via docker.
+1. Repos should contain a Dockerfile:
+    * Clear Instructions on how to run the code (via docker) in the main README.md file.
+    * All code in the repo should be executable via docker.
     * The Dockerfile should use a `requirements.txt` to manage modules and should have versions on all modules.
     * There should be _no_ conda / pyenv etc.
     * NOTE: in the case that the code is being run on the AI or DSI cluster, docker does not need to be used.
 1. Directory structure and naming should be obvious and easy to understand.
-1. There should be no secrets or API Keys in the repo.
-1. There should be no hard-coded paths.
+1. Secrets and API Keys should not be in the repository.
+1. All file paths should be relative.
 1. File names should be useful:
     * There should be no ``v2`` or dates or people's name in filenames.
 1. Notebooks should _not_ contain function definitions.

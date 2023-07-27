@@ -1,6 +1,6 @@
 ### Automated Testing
 
-This directory contains a tool `evaluate_repo` which runs a few code testing libraries against a repository. 
+This directory contains a tool `evaluate_repo` which runs code testing libraries against a repository. 
 
 ### How to run
 
