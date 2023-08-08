@@ -46,6 +46,7 @@ Requirements
 1. Notebooks should _not_ contain function definitions.
 1. Notebooks should have less than 10 cells and all cells should be 15 lines of code or less.
 1. Notebooks should have documentation (preferably markdown) which describes the purpose of them.
+1. There should be no `! pip install XXX` in any notebooks. All environment requirements should be handled using docker and a `requirements.txt` file.
 1. Function names should be descriptive.
 1. Documentation should include (at a _minimum_):
     * Doc strings on all functions
