@@ -86,30 +86,27 @@ Suggested best practices:
 FAQ
 ---
 
-* How will testing of the above be done?
+#### How will testing of the above be done?
 
-```On a code review day, the repo will be cloned, the dockfile built and the notebooks run. The notebooks will be inspected for the practices above. While the main branch will be the focus, each branch will be looked at to determine how far astray of main it is.```
+On a code review day, the repo will be cloned, the dockerfile built, and the notebooks run. The notebooks will be inspected for the practices above. While the main branch will be the focus, each branch will be looked at to determine how far astray of the main it is.
 
-* How do I handle output images or tables?
+#### How do I handle output images or tables?
 
-```Use an \output directory to put in images and other results```
+Use an `\output` directory to put in images and other results.
 
-* If I can't put functions in notebooks, where should they go? 
+#### If I can't put functions in notebooks, where should they go?
 
-```Functions should be put in a utils directory and loaded via import```
+Functions should be put in a `utils` directory and loaded via import.
 
-* How should I document notebooks?
+#### How should I document notebooks?
 
-```Notebooks should be well-documented.  Does the notebook begin with a title, byline, date, and summary/description? Is its content logically organized into sections with headers? Does it walk the viewer through what the code is doing and why using both Markdown and comments, and in clear language?```
+Notebooks should be well-documented. Does the notebook begin with a title, byline, date, and summary/description? Is its content logically organized into sections with headers? Does it walk the viewer through what the code is doing and why using both Markdown and comments, and in clear language? Notebooks should be readable. Is cell output formatted for easier viewing (e.g., to avoid scrolling)? Are there any cells that were obviously used for testing/scratchwork and have not yet been removed? Are Python module imports located together near the top of the notebook, following PEP 8, rather than scattered throughout many cells? Are all cells 15 lines of code or less? Are numbers rounded for display purposes?
 
-```Notebooks should be readable. Has cell output been formatted for easier viewing (e.g., to avoid scrolling)? Are there any cells that were obviously used for testing/scratchwork and have not yet been removed? Are Python module imports located together near the top of the notebook, in accordance with PEP 8, rather than scattered throughout many cells? Are all cells 15 lines of code or less?  Are numbers rounded for display purposes?```
+#### What about Docker README.md information?
 
-* What about Docker README.md information?
+This example is a good starting point. Replace `project-name` with your project name.
 
-This is a great start, where project-name is the project name you are working on. 
-
-```Docker Information
-
+```plaintext
 This repository contains a basic dockerfile that will run a jupyter notebook instance. To build the docker image, please type in:
 
 docker build . -t [project-name]
@@ -122,13 +119,10 @@ docker run -p 8888:8888 -v ${PWD}:/tmp [project-name]
 
 as you can see we are running the [project-name] image.
 ```
+#### What is a good folder structure?
 
-There is also a dockerfile that has been used in the past.
-
-* What is a good folder structure?
-
-```For the simplest projects something like the below should work: 
-
+For the simplest projects something like the below should work:
+```
 .
 ├── README.md
 ├── .gitignore
@@ -150,6 +144,6 @@ There is also a dockerfile that has been used in the past.
     └── README.md
 ```
 
-* What if I'm doing work outside of traditional python code?
+#### What if I'm doing work outside of traditional python code?
 
-```If you are doing work outside of python it still requires documentation. There should be zero work that isn't shareable```
+If you are doing work outside of python it still requires documentation. There should be zero work that isn't shareable.
