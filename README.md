@@ -10,7 +10,7 @@ There are currently three README files in the `docs` directory, all of
 
 Motivation:
 ---
-Much of the code that is produced here at the DSI is 80% complete and not in a state that it can be easily turned over. The purpose of this document is to provide a set of best practices _in checklist form_ so that we can quickly do code reviews and provide expectations on them.
+Much of the code that is produced here at the DSI is 80% complete and not in a state where it can be easily turned over. The purpose of this document is to provide a set of best practices _in checklist form_ so that we can quickly do code reviews and provide expectations on them.
 
 We should always keep the following in mind: Analysis is _useless_ without a good repo.
 
@@ -30,7 +30,7 @@ Requirements
 1. Directory structure and naming should be obvious and easy to understand.
 1. File names and directories should be useful:
     * There should be no ``v2`` or dates or people's name in filenames.
-    * Spaces, punctuation marks and parenthesis should not be in any file or directory names.
+    * Spaces, punctuation marks, and parenthesis should not be in any file or directory names.
 1. `.gitignore` should be used to avoid committing data and intermediate data files which are not appropriate for the repo.
     * There should be no `DS_Store` files or `.ipynb_checkpoints` directories
     * You should start with the default python `.gitignore` from github.
@@ -54,10 +54,10 @@ Requirements
     * README file in the root directory describing the purpose of the code, where to look for things and how to run the code. If there are other locations for information regarding this project, links should be provided. 
     * README file should describe your development process (e.g. how you did branches)
 1. Working branches need to be up do date with _main_ upon completion of task/code review and should not stray behind _main_ for more than day.
-1. No commented out code
+1. No commented-out code
 1. The following are (generally) banned:
     * `subprocess` or `subprocess` like library
-1. Code should never silently break (such as using try/except without raising an errror.)
+1. Code should never silently break (such as using try/except without raising an error.)
 1. All non-standard python libraries need to be justified:
     * If asked why you used library X, there needs to be a good answer.
 1. Code should be organized so that function definition is separate from execution.
