@@ -1,12 +1,12 @@
-# Repo Information
+# Repo information
 
-This Repository contains notes and tooling around implementing coding standards on repositories as part of the data science clinic and related projects. This repository also contains a few scripts which analyze repositories and code using automation. 
+This repository contains notes and tooling around implementing coding standards on repositories as part of the data science clinic and related projects. This repository also includes a few scripts which analyze repositories and code using automation.
 
 Information on the specific tests and automation can be found in the scripts directory README file.
 
 There are currently three README files in the `docs` directory, all of 
 
-# Coding Standards for UChicago DSI
+# Coding standards for UChicago DSI
 
 Motivation:
 ---
@@ -69,7 +69,7 @@ Requirements
     * Should also have ```set -e```
 
 
-Suggested Best Practices:
+Suggested best practices:
 ---
 1. Proper use of github:
     * Branches should be merged into main _and then deleted_
