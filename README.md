@@ -80,8 +80,6 @@ Suggested best practices:
     * Branches should be merged into main and then deleted
 1. Linting
     * All code should pass basic linting
-1. Tests
-    * Adding unit tests for all functions
 1. Github actions
     * For linting and testing
 
