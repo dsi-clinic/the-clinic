@@ -76,16 +76,14 @@ Requirements
 
 Suggested best practices:
 ---
-1. Proper use of github:
-    * Branches should be merged into main _and then deleted_
-    * There should be both a _dev_ and _main_ branch. Code should follow the following path:
-        1. _working branch_ -> _dev_ -> _main_ where each is a PR.
-1. Linting:
+1. Github
+    * Branches should be merged into main and then deleted
+1. Linting
     * All code should pass basic linting
 1. Tests
     * Adding unit tests for all functions
 1. Github actions
-    * For linting and testing on DEV branch
+    * For linting and testing
 
 FAQ
 ---
