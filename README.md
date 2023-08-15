@@ -49,13 +49,14 @@ Requirements
     * README file should describe your development process (e.g., how you did branches)
 1. Working branches need to be up to date with _main_ upon completion of task/code review and should not stray behind _main_ for more than a day.
 1. No commented-out code
-1. The following are (generally) banned:
+1. The following python libraries are banned unless given explicit permission:
     * `subprocess` or `subprocess` like library
 1. Code should never silently break (such as using try/except without raising an error.)
 1. All non-standard python libraries need to be justified:
     * If asked why you used library X, there needs to be a good answer.
 1. Code should be organized so that function definition is separate from execution.
-1. All code should pass Pyflakes
+1. All code should pass Pyflakes.
+1. The code formatter `bloack` should be used for readability.
 1. Bash scripts:
     * Should be set as executable (`chmod +x`)
     * Should end with `.sh`
