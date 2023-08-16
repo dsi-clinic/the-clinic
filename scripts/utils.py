@@ -124,7 +124,7 @@ def walk_and_process(dir_path, no_filter_flag, lint_flag):
                 if black_results:
                     print(f"There were {len(black_results)} changes "
                           f"on file {file_path}. Please run black.")
- 
+
             if len(pyflake_results) > 0:
                 print(*pyflake_results, sep="\n")
 
