@@ -10,9 +10,9 @@ In the root directory run the following commands:
 
 which will install the image in docker. Make sure that no errors occur.
 
-To run the code on a repository located in `\path-to-repo` execute the following command:
+To run the code on a repository located in `/path-to-repo` execute the following command:
 
-```./run-code-analysis.sh \path-to-repo```
+```./run-code-analysis.sh /path-to-repo```
 
 A few important notes:
 
@@ -22,4 +22,4 @@ A few important notes:
 
 If you want to do a full linting, then you can add the argument "LINT" to the `run-code-analysis` command, such as:
 
-```./run-code-analysis.sh \path-to-repo LINT```
+```./run-code-analysis.sh /path-to-repo LINT```
