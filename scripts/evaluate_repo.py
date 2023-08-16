@@ -5,6 +5,10 @@ from utils import walk_and_process
 from utils import parse_arguments
 
 if __name__ == '__main__':
+    '''
+    This is the entry point to running the automated code review
+    It should be called from inside the docker container
+    '''
     args = parse_arguments()
 
     if not os.path.isdir(args.dir_path):

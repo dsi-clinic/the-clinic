@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 python:3.8-buster
+FROM --platform=linux/amd64 python:3.11-buster
 WORKDIR /tmp
 RUN apt update
 RUN apt install -y python3-pip python3-dev
