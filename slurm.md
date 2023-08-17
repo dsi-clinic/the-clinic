@@ -10,6 +10,7 @@ This guide is specifically tailored to the University of Chicago DSI Cluster, th
 
 - A CNET id
 - A CS Account. Get [one here](https://account-request.cs.uchicago.edu/account/requests) if you don't have one already.
+- (for Step 3 onward) Access to a slurm partition. To request, send an email to techstaff@cs.uchicago.edu asking for access to compute nodes on the DSI cluster and cc your mentor (if relevant)
 - A reasonably up to date and functioning computer running on Windows (10/11), Mac (10.13+/High Sierra+), or Linux. 
 - An internet connection. You'll need internet to use ssh.
 - VS Code
@@ -335,6 +336,71 @@ you can run `python path/to/script.py --query path/to/query.json` and get your r
 4. Make sure you save your results in some way! Otherwise your script might run perfectly but be the results will be completely lost. This sample script will compute the mean but not save it anywhere. Save it to a file or log it.
 5. Using submitit. IMPORTANT: you run submitit on a login node to submit to a compute node. You can run your python file from the command line. 
 6. Debugging submitit. Before you submit a long, multi hour job, test on a smaller dataset interactively. For this you can attach to a compute node, and run your script but with the `submitit` flag in your query json set to false. To debug, use the VS Code debugger. Add command line arguments to the debugger by following [these instructions](https://code.visualstudio.com/docs/python/debugging#_set-configuration-options)
+
+## Troubleshooting
+
+There are a lot of steps here and its easy to miss something or discover a gap in the docs. Here are some common errors, and troubleshooting steps you can take. 
+
+### Common Errors
+
+Error:  `srun: error: Unable to allocate resources: Invalid account or account/partition combination specified`
+<br>Cause: You do not have permission to use the partition you requested from. 
+<br>Solution: Most likely you need to email techstaff@cs.uchicago.edu requesting access to compute nodes. Otherwise check that you are requesting the correct partition (currently there is only `dev` and `general`. The default if unspecified is the `dev` partition).
+
+Error: `CUDA out of memory`
+<br>Cause: The GPU you were using ran out of RAM.
+<br>Solution: Could be difficult to solve completely, but there are few things that usually work:
+ - Easy: Simple refactoring. Use less GPU by reducing batch sizes, for example. 
+ - Medium: Try using another GPU with more memory. To see GPU's available, run `sinfo -o %G`. You can look up the models online. You can request a specific GPU with the `--gres=gpu:GPU_NAME:1` flag where `GPU_NAME` is the type of gpu (like `a40`)
+ - Hard: Major refactoring of your code to use less memory.
+
+Error: `Killed` or `Out of Memory` on compute node
+<br>Cause: Most likely, you ran out of CPU memory
+<br>Solution: Request more memory! Use the `--mem` flag on `srun`
+
+Error: `Disk quota exceeded`
+<br>Symptom: VS code fails to connect to login node
+<br>Cause: Each home directory has a quota of disk storage space (~50 GB) and you are above it.
+<br>Solution: You need to move or delete some files. If you are working on a project with a `/net/projects/` directory, move any data files or checkpoints into that directory (and update your code accordingly!). To check you disk usage, run `du -sh ~`
+
+Error: `git@github.com: Permission denied (publickey). fatal: Could not read from remote repository.`
+<br>Cause: GitHub can not access a private key that matches the public key stored on GitHub.
+<br>Solution: If you are on the cluster, make sure that you are forwarding your ssh agent. `ssh-add -l` should return the appropriate key. If no identities are found, your ssh-agent has no identities or is not being forwarded. If `ssh-add -l` locally also returns no identities, you must run `ssh-add PATH_TO_KEY` as specified in step 2, part 2. If the correct identity is found locally, make sure your ssh config matches the one in this document. Finally make sure you have added the appropriate public key to your GitHub account.
+
+### Troubleshooting
+
+Whenever an error comes up, think about all the potential points of failure. Then try to isolate each and see if they work on their own. For example if you are trying to connect to a compute node with VS code using the steps in these instructions, potential points of failure are: VS Code `Remote - SSH` extension, VS Code, your internet connection, ssh config file, ssh keys, slurm, the cluster. Below find some methods to check if different components are working correctly.
+
+Test: run `ssh fe.ds` locally
+<br>Expected Result: successful connection to login node.
+
+Test: run `ssh -v fe.ds` locally for verbose output (add up to 3 v's for more verbosity). 
+<br>Expected Result: Close to the start, you should see something like: 
+```
+debug1: Reading configuration data /home/USERNAME/.ssh/config
+debug1: /home/USERNAME/.ssh/config line 20: Applying options for fe.ds*
+debug1: /home/USERNAME/.ssh/config line 26: Skipping Host block because of negated match for fe.ds
+```
+where `USERNAME` is your username on your computer. Check that the path after `Reading configuration data` is to the config file you expect and that the right Host blocks are being used. Further down you should see something like: 
+```
+debug1: Authentications that can continue: publickey,password
+debug1: Next authentication method: publickey
+debug1: Offering public key: /home/USERNAME/.ssh/id_ed25519 ED25519 SHA256:asdkfh298r9283hkdsjfn23rhdf9284 explicit agent
+debug1: Server accepts key: /home/USERNAME/.ssh/id_ed25519 ED25519 SHA256:a;sldfkj2oiefjowihoweflkdfjslfkjksld0923 explicit agent
+debug1: Authentication succeeded (publickey).
+```
+
+Test: run `ssh-add -l` locally
+<br>Expected Result: You should see something like `256 SHA256:<a bunch of characters> USERNAME@HOSTNAME (KEY_TYPE)`. If you see `The agent has no identities`, you must `ssh-add PATH_TO_KEY`.
+
+Test: run `ssh-add -l` on a login node
+<br>Expected Result: You should see something like `256 SHA256:<a bunch of characters> USERNAME@HOSTNAME (KEY_TYPE)`. If you see `The agent has no identities`, you must `ssh-add PATH_TO_KEY`.
+
+Test: run `ssh git@github.com` locally and on a login node to test GitHub ssh keys
+<br>Expected Result: `Hi GITHUB_USERNAME! You've successfully authenticated, but GitHub does not provide shell access.`
+
+Test: request compute node and `ssh COMPUTE_NODE.ds` where `COMPUTE_NODE` is the node name (like `g004`)
+<br>Expected Result: connection to the compute node
 
 ## Appendix
 ### WSL
