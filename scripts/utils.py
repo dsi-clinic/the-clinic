@@ -78,7 +78,9 @@ def process_notebook(file_path):
 
 
 def walk_and_process(dir_path, no_filter_flag, lint_flag):
-    """Walk through directory and process all Jupyter Notebooks."""
+    """
+    Walk through directory and process all Jupyter Notebooks.
+    """
 
     paths_to_flag = ["__pycache__", "DS_Store", "ipynb_checkpoints"]
     cprint(f"Currently analyzing branch {get_current_branch( dir_path)}",
@@ -186,7 +188,9 @@ def pyflakes_python_file(file_path):
 
 
 def parse_arguments():
-    """Parse command line arguments."""
+    """
+    Parse command line arguments.
+    """
     parser = argparse.ArgumentParser(description="Process Cod Repository.")
     parser.add_argument(
         "dir_path", type=str, help="Directory path to start the search from"

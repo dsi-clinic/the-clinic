@@ -101,7 +101,15 @@ Functions should be put in a `utils` directory and loaded via import.
 
 #### How should I document notebooks?
 
-Notebooks should be well-documented. Does the notebook begin with a title, byline, date, and summary/description? Is its content logically organized into sections with headers? Does it walk the viewer through what the code is doing and why using both Markdown and comments, and in clear language? Notebooks should be readable. Is cell output formatted for easier viewing (e.g., to avoid scrolling)? Are there any cells that were obviously used for testing/scratchwork and have not yet been removed? Are Python module imports located together near the top of the notebook, following PEP 8, rather than scattered throughout many cells? Are all cells 15 lines of code or less? Are numbers rounded for display purposes?
+Notebooks, just like any other piece of code need to be well documented and readable. Some questions that we ask when evaluating:
+* Does the notebook begin with a title, byline, date, and summary/description? 
+* Is its content logically organized into sections with headers? 
+* Does it walk the viewer through what the code is doing and why using both Markdown and comments, and in clear language?  
+* Is cell output formatted for easier viewing (e.g., to avoid scrolling)? Are there any cells that were obviously used for testing/scratchwork and have not yet been removed? Are numbers rounded for display purposes?
+* Are Python module imports located together near the top of the notebook, following PEP 8, rather than scattered throughout many cells? 
+    * Are all cells 15 lines of code or less? 
+    * Do notebooks have less than 10 cells?
+    * Are `pyflakes` and `black` being run on the code for standardization.
 
 #### What about Docker README.md information?
 
