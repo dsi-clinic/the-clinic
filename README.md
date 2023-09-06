@@ -164,3 +164,10 @@ For the simplest projects something like the below should work:
 #### What if I'm doing work outside of traditional python code?
 
 If you are doing work outside of python it still requires documentation. There should be zero work that isn't shareable.
+
+#### What should a docstring look like?
+
+Docstrings should contain, at a minimum:
+- A brief description of what the function does (if you are finding it difficult to breifly describe it, consider whether your function is too big)
+- Requirements of intput parameters. What types are expected? Does your function make any assumptions about the inputs (i.e. that an input dictionary has a 'results' key)? Document it!
+Docstring format should be consistent across a repository. Google has a popular format, described [here](https://google.github.io/styleguide/pyguide.html#383-functions-and-methods). 
