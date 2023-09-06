@@ -50,7 +50,7 @@ Requirements
 1. Code should be organized so that function definition is separate from execution.
 1. Code should never silently break (such as using try/except without raising an error.)
 1. All code should pass Pyflakes.
-1. The code formatter `bloack` should be used for readability.
+1. The code formatter `black` should be used for readability.
 
 ### Notebooks
 1. Notebooks should _not_ contain function definitions.
