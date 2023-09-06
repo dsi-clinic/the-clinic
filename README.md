@@ -2,9 +2,10 @@
 
 This repository contains notes and tooling around implementing coding standards on repositories as part of the data science clinic and related projects. This repository also includes a few scripts which analyze repositories and code using automation.
 
-Information on the specific tests and automation can be found in the scripts directory README file.
+All code produced should follow the requirements listed below. For questions and assistance on completing completing these requirements, please refer to the FAQ at the bottom of this page and the docs of this repository before reaching out to TAs and mentors. 
 
-There are currently three README files in the `docs` directory, all of 
+Information on the specific tests and automation can be found in the scripts directory README file.
+ 
 
 # Coding standards for UChicago DSI
 
