@@ -1,3 +1,4 @@
+#TODO/WIP
 For new projects, we want to make sure we meet some minimum requirements before handing off to students. We also want to make the process of creating project briefs easier. 
 
 Here are minimum requirements for a new project:
