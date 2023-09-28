@@ -50,7 +50,7 @@ Requirements
 1. No commented-out code
 1. Code should be organized so that function definition is separate from execution.
 1. Code should never silently break (such as using try/except without raising an error.)
-1. All code should pass Pyflakes.
+1. All code should pass `Pyflakes`.
 1. The code formatter `black` should be used for readability.
 
 ### Notebooks
