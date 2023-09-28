@@ -59,3 +59,35 @@ On Mac systems, make will also generally be installed, but if it is not then typ
 **Verification:** Open your terminal and type in the following command. If it returns without an error than make is installed:
 
     make --version
+
+## 6. SSH / AI Cluster
+
+If you need to access the cluster then you will need to request an account (which should have already been done for you). You will then need to set up SSH keys and verify that you can SSH into the machine.
+
+You can find instructions for this process [here](https://github.com/uchicago-dsi/core-facility-docs/blob/main/slurm.md#step-4-enable-authentication-with-ssh-keys).
+
+Note that as part of these instructions you will add your SSH key to github. This is a required part of this process.
+
+**Verification:** Open your terminal and type in the following command:
+
+    ssh fe.ds
+
+If you have set this up correctly you should be connected to the AI cluster and see something like `CNET@fe01:~$`. After this, to verify that you have access to the cluster, type in teh following at that prompt:
+
+    srun -p general --pty /bin/bash
+
+If the above command works then you should see something like `CNET@g007:~$` as the prompt. NOTE: you may get the error `srun: error: Lookup failed: Unknown host`, but you can ignore it. If you are NOT properly set up you will see `srun: error: Unable to allocate resources: Invalid account or account/partition combination specified`.
+
+_Make sure to type in `exit` when you are done!_
+
+## 7. SSH / No-AI Cluster
+
+Even if you do not need to access the AI Cluster you will need to authorize command line access. Follow the instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to complete this step.
+
+Note that you may have completed this step for another class or project. If you aren't sure, test the verification step below.
+
+**Verification:** Open your terminal and type in the following:
+
+    ssh -T git@github.com
+
+If this returns your username and something to the effect of `You've Successfully Authenticated` then it has worked. 
