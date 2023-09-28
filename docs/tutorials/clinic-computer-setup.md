@@ -64,7 +64,7 @@ On Mac systems, make will also generally be installed, but if it is not then typ
 
 If you need to access the cluster then you will need to request an account (which should have already been done for you). You will then need to set up SSH keys and verify that you can SSH into the machine.
 
-You can find instructions for this process [here](https://github.com/uchicago-dsi/core-facility-docs/blob/main/slurm.md#step-4-enable-authentication-with-ssh-keys).
+You can find instructions for this process [here](https://github.com/uchicago-dsi/core-facility-docs/blob/main/slurm.md#step-4-enable-authentication-with-ssh-keys). For the purposes of setting up, make sure to get through all of Part 2.
 
 Note that as part of these instructions you will add your SSH key to github. This is a required part of this process.
 
