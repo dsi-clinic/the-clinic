@@ -50,12 +50,12 @@ Requirements
 1. No commented-out code
 1. Code should be organized so that function definition is separate from execution.
 1. Code should never silently break (such as using try/except without raising an error.)
-1. All code should pass Pyflakes.
+1. All code should pass `Pyflakes`.
 1. The code formatter `black` should be used for readability.
 
 ### Notebooks
-1. Notebooks should _not_ contain function definitions.
-1. Notebooks should have less than 10 cells and all cells should be 15 lines of code or less.
+1. Notebooks should generally _not_ contain function definitions.
+1. Notebooks should have less than 20 cells and all cells should be 15 lines of code or less.
 1. Notebooks should have documentation (preferably markdown) which describes the purpose of them.
 1. There should be no `! pip install XXX` in any notebooks. All environment requirements should be handled using a `requirements.txt` file.
 1. Documentation should include (at a _minimum_):
