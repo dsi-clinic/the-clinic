@@ -1,14 +1,26 @@
 Here are a few things that successful Clinic teams tend to do.
 
-## Project Manager
-
-Usually, one student steps up to function as the project manager for the group. This includes making sure that weekly reports are submitted on time (and ideally not minutes before the deadline), making sure that everyone on the team understands their tasks, and communicating between people working on different pieces of the project.
-
 ## Communication Cadence
 
 Successful teams use the Slack channel regularly. This includes asking questions, giving each other updates on work progress ("Heads up that I just finished the function that \<does something\>. I still need to handle some edge cases, but it should be ready to start integrating into the pipeline."), and sharing resources relevant to the project.
 
 For less successful teams, the channel tends to be very quiet.
+
+## Start Each Week's Tasks Early
+
+In most classes, your weekly assignments consists of reading, problem sets, or writing papers. Given the workload of some classes, it's easy to fall into a pattern of starting an assignment the day before a deadline, working until just before the deadline, then submitting what you have.
+
+While stressful, this can _kind of_ work for most classes!
+
+This is an _extremely bad_ strategy for Clinic, though. For Clinic, you will often have a loosely defined task that no one has actually done before. Because of this, you will probably encounter all kinds of unexpected errors. The data may be incorrect, the task you were assigned may not actually make sense with the existing code base, the DSI Cluster may be down, there may be some idiosyncratic issue with your computer and other resources that you need to use, etc.
+
+Because of this, you should at least _start_ your tasks as early as possible so that, when you run into these blockers, you can ask for help quickly. Mentors really, really dislike getting messages at 10:30pm the night before a team meeting with students realizing that they can't build the conda environment they need for this week's task.
+
+Additionally, since the tasks for Clinic often have some ambiguity, starting to think about them as early as possible will give you ample time to come up with different ideas on how to approach your work.
+
+## Project Manager
+
+Usually, one student steps up to function as the project manager for the group. This includes making sure that weekly reports are submitted on time (and ideally not minutes before the deadline), making sure that everyone on the team understands their tasks, and communicating between people working on different pieces of the project.
 
 ## Run Each Other's Code
 
