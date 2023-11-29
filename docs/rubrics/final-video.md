@@ -93,6 +93,22 @@ Assignments submitted after the due date will receive a grade of zero.
 
 The draft and second draft of the presentation are done by the faculty mentor while the final video is graded by the Director and Asst. Director of the Clinic. Students are required to upload the video to Canvas, so make sure to give feedback and grades in Canvas. The Rubric above which describes how many points should be awarded to each section should be followed. An example assessment can be found after this section.
 
+The videos should be graded according to the following point assignment:
+* Slide quality (10 Points)
+    * Do the slides use correct grammar, consistent formatting/style, and are they easy to read?
+    * Are the slides too busy?
+    * Are plots/graphs labeled correctly and easy to read?
+* Presentation quality (15 Points)
+    * Does the presentation achieve the goals above (introducing the problem, your contribution and your results)?
+    * Did the presenters speak loudly, slowly and clearly?
+    * Are the speakers bringing energy? 
+* Organization (5 Points)
+    * Is the presentation well-organized?
+    * Does it follow an obvious pattern that the audience can follow?
+* Feedback changes (10 points, second video only)
+    * Did the students implement changes and correct issues based on feedback?
+
+
 Remember that most of the grade for the presentation is weighted to the "final" deliverable. The goal for grading the drafts is to get the final deliverable into as strong a place as can be. 
 
 Generally the first video will need significant work, so make sure that the grading reflects that. It is not uncommon to give 50% or less of the points in a specific category if the students fail to meet the basic requirements (and specifically the "Dos" and "Don't" section).
