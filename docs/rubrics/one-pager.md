@@ -62,3 +62,19 @@ Draft documents should demonstrate a significant level of both effort and polish
 
 ### Late Policy
 Assignments submitted after the due date will receive a grade of zero.
+
+
+### Grader Notes
+
+When grading the draft one pager, keep in mind that this is not an academic one pager or something that would be sent to a conference.
+
+The intended audience for this is much more general and serves two purposes:
+
+1.	This should force the students to communicate their work in a way commensurate with a job-interview, talking with their family, etc. Many students struggle with stating their work in a non-microfocused way (e.g. “I wrote python functions that took in variables that did this transformation”). 
+2.	These documents are how we publicize the clinic. Donors, potential partners, grants and assessment activities all rely on these. These audiences do not need more than a high-level explanation of the problem and how the student’s work fits in.
+
+Because of this we try to make the style as uniform as possible and the writing to be professional, but informal and not filled with jargon.
+
+When grading the draft presentation, please make sure that the requirements below are followed explicitly and aggressively knock points off for failing to fulfill them. In terms of grading standards, generally speaking we expect that most of the submissions will fall within a band 23-28 points (out of the 30 possible), with occasional really good ones hitting higher marks.
+
+Assuming that a student group follows nearly all the requirements and the Do’s and Don’t below, there are no significant grammar or formatting issues and the writing only needs slight improvement, the grade would be about a 27/30.
