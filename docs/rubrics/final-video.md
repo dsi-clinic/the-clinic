@@ -74,13 +74,9 @@ Assignments submitted after the due date will receive a grade of zero.
 
 ### F.A.Q.
 
-
-
 | Does everyone need to speak?      | 
 | ----------- | 
 | No. We strongly encourage everyone to participate and present at least a part of the final presentation, but we will not be assessing individual contributions. | 
-
-
 
 
 | How should we record the presentation? | 
@@ -90,10 +86,45 @@ Assignments submitted after the due date will receive a grade of zero.
 
 | What if my presentation video isn’t uploading to Canvas? | 
 | ----------- | 
-| If you are struggling to upload your presentation, there are a few solutions that we have found to work:
-* Make the video smaller (you can google different techniques for this depending on if you are on Mac or Windows).
-* You can try to zip your video.
-* Make sure that you are on a high-quality internet connection.
-* Try a different group member's computer. | 
+| If you are struggling to upload your presentation, there are a few solutions that we have found to work: <ul><li>Make the video smaller (you can google different techniques for this depending on if you are on Mac or Windows).</li><li>You can try to zip your video.</li> <li>Make sure that you are on a high-quality internet connection.</li> <li>Try a different group member's computer.</li></ul> | 
 
+
+### Grader Notes
+
+The draft and second draft of the presentation are done by the faculty mentor while the final video is graded by the Director and Asst. Director of the Clinic. Students are required to upload the video to Canvas, so make sure to give feedback and grades in Canvas. The Rubric above which describes how many points should be awarded to each section should be followed. An example assessment can be found after this section.
+
+Remember that most of the grade for the presentation is weighted to the "final" deliverable. The goal for grading the drafts is to get the final deliverable into as strong a place as can be. 
+
+Generally the first video will need significant work, so make sure that the grading reflects that. It is not uncommon to give 50% or less of the points in a specific category if the students fail to meet the basic requirements (and specifically the "Dos" and "Don't" section).
+
+Things that are particularly irksome: if a student says “I’ll fix this next time” in the video recording or otherwise engages in meta-editorializing. This should be penalized harshly. 
+
+Do not be scared to be aggressive with your comments if there is behavior that you see which needs to be avoided. For example, if one of the presenters is being low energy or significantly worse than the other presenters, be clear with your feedback “Sam needs to bring more energy to their presentation” or “The presentation is uneven with some presenters being high energy and others low energy. Please find a level that all presenters can be consistent on.”
+
+We require two drafts because, historically, they get much better each time. By the final video the quality is usually pretty good.
+
+If you have any specific questions feel free to reach out by Slack.
+
+
+### Example Assessment
+
+The following was an assessment provided to students on a specific project a few quarters ago. It is provided as a template. 
+
+Note that this was a good, but not great first effort.
+
+--- 
+
+Overall – very solid. There are a few overarching things that need to be changed and a few specific things that need to be updated. 12/15 Presentation, 4/5 Organization, 8/10 slides: 24/30.
+
+• Remember your target audience! Your language goes deep and then shallow (in terms of complexity, use and expected level of data science sophistication).
+
+* In a presentation of this length and with the intended audience you need to be intentional around the technical language you use. For example: you jump between “recall”, type I errors, type II errors language. This isn’t helping the average audience – pick a single language representation and stick with it.
+* You should think of the following – every time you use special language it costs you a gold coin. In a presentation of this length, you get 3 coins (one every 3 minutes)
+* “Neutrino Event Interactions” – what are these? You state them in the intro. What does this mean? Gold coin!
+* For the model section, a similar set of changes you should consider:
+    * CNN, U-Net, OOP, “run files”, “HDF5”, “CSV”, “weighted loss”, “PyTorch”, “overfitting”, “Percentile Model” all of this language appears in either your slides or verbal description, and all of it is technical and most of it can be avoided. These are all gold coins!
+    * As an example, consider when you describe the data loader. Simply stating “We wrote software which allowed us to load images in parallel using a more efficient format preferred by Fermi, rather than other common images formats” <- is way more useful then ever saying “HDF5” and doesn’t cost a gold coin!
+* The slide organization needs a bit of work, I got confused about the regression model (it’s not a contribution?) vs. the other models. At the start of the presentation when you lay things out you need to be more explicit with what you are doing so the audience can follow along.
+* You repeated the explanation of the image colors on the slide from the 2nd to the 4th speaker. Better coordination! Is there a reason to show the same style of images twice?
+* The format of the slides changed throughout the presentation – create a single style and everyone use it. Every time you switch styles it distracts the audience.
 
