@@ -1,10 +1,10 @@
 # Repo information
 
-This repository contains notes and tooling around implementing coding standards on repositories as part of the data science clinic and related projects. This repository also includes a few scripts which analyze repositories and code using automation.
+This repository contains notes and documents regarding the coding standards expected by DSI projects.
 
 All code produced should follow the requirements listed below. For questions and assistance on completing completing these requirements, please refer to the FAQ at the bottom of this page and the docs of this repository before reaching out to TAs and mentors. 
 
-Information on the specific tests and automation can be found in the scripts directory README file.
+Our automated code test suite can be found in the [dsi-cocoa repo](https://github.com/dsi-clinic/cocoa).
  
 
 # Coding standards for UChicago DSI
@@ -95,10 +95,6 @@ Suggested best practices:
 
 FAQ
 ---
-
-#### How will testing of the above be done?
-
-On a code review day, the repo will be cloned, the dockerfile built, and the notebooks run. The notebooks will be inspected for the practices above. While the main branch will be the focus, each branch will be looked at to determine how far astray of the main it is.
 
 #### How do I handle output images or tables?
 
