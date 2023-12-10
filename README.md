@@ -1,4 +1,25 @@
+To do list:
+1. Rename to "The Clinic"
+1. Remove "docs" directory and move everything up a level
+1. Planning and Progess docs are not in the repo
+1. Org Report Doc (Week #1 Doc)
+1. Reorg last week of class re:TAs + grading "tech"
+1. Syllabus
+1. Add a single location (linkable)
+
+
+
+Disclaimar: All SPECIFIC dates can be found on canvas, this is a framework and guide about ...
+
+| Week # | Student Responsibility | Mentor Responsibility | 
+| ---- | ---- | ---- |
+| 1 | Org Report | Find times to meet, connect with external mentor | 
+| 2 | ... | ... | 
+
+
 # Repo information
+
+This repository contains information and documnetation regarding the Data Science Clinic at the University of Chicago. 
 
 This repository contains notes and documents regarding the coding standards expected by DSI projects.
 
