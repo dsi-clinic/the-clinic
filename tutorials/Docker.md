@@ -1,9 +1,6 @@
 ## Docker
 
-
-
 ### FAQs
-
 
 #### How does Docker relate to git branches? SSH? What about WSL?
 
