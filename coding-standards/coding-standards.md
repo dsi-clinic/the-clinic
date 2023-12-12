@@ -1,8 +1,15 @@
-# Coding standards for UChicago DSI
+# Coding standards for the Data Science Clinic
+
+This repository contains notes and documents regarding the coding standards expected by DSI projects.
+
+All code produced should follow the requirements listed below. For questions and assistance on completing completing these requirements, please refer to the FAQ at the bottom of this page and the docs of this repository before reaching out to TAs and mentors. 
+
+Our automated code test suite can be found in the [dsi-cocoa repo](https://github.com/dsi-clinic/cocoa).
+
 
 Motivation:
 ---
-Much of the code that is produced here at the DSI is 80% complete and not in a state where it can be easily turned over. The purpose of this document is to provide a set of best practices _in checklist form_ so that we can quickly do code reviews and provide expectations on them.
+Much of the code that is produced here at the Data Science Clinic is 80% complete and not in a state where it can be easily turned over. The purpose of this document is to provide a set of best practices _in checklist form_ so that we can quickly do code reviews and provide expectations on them.
 
 We should always keep the following in mind: Analysis is _useless_ without a good repo.
 

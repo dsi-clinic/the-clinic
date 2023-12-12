@@ -1,16 +1,15 @@
-# Repo information
+## Welcome to the Data Science Clinic at the University of Chicago
 
 This repository contains information and documentation regarding the Data Science Clinic at the University of Chicago. 
 
-This repository contains notes and documents regarding the coding standards expected by DSI projects.
+### People
 
-All code produced should follow the requirements listed below. For questions and assistance on completing completing these requirements, please refer to the FAQ at the bottom of this page and the docs of this repository before reaching out to TAs and mentors. 
+The Data Science Clinic is administered by Nick Ross and Tim Hannifan. Questions about the clinic should be addressed to them either over slack or via their UChicago email addresses.
 
-Our automated code test suite can be found in the [dsi-cocoa repo](https://github.com/dsi-clinic/cocoa).
- 
-## Welcome to the Clinic
+### Coding Standards
 
-This repository contains everything you need including grading rubrics, answers to common questions and templates for all assignments. 
+You can find information on Data Science Clinic Coding Standards and expectations [here](/coding-standards/coding-standards.md).
+
 
 ### Weekly Calendar
 
@@ -57,4 +56,20 @@ There is a one pager that also needs to be completed as part of the final submis
 ##### Final Video 
 
 A short video presentation is also required. Two drafts and a final submission are to be completed according to the [rubric](/rubrics/final-video.md).
+
+## Additional Tutorials
+
+We keep a list of frequently asked questions and answers as well as "How-to"'s for specific technologies in this repo:
+
+* [How to set up your computer](/tutorials/clinic-computer-setup.md)
+* [Installing Conda on the Cluster](/tutorials/conda.md)
+* [Docker Common Questions](/tutorials/Docker.md)
+* [Understanding File Systems](/tutorials/filepaths.md)
+* [Using GDAL](/tutorials/geopandas-dockerfile.md)
+* [Using Podman on the Cluster](/tutorials/podman.md)
+* [How to talk about the clinic on your resume and in interviews](/tutorials/resume-interviews.md)
+* [SLURM](/tutorials/slurm.md)
+* [Speaking Code](/tutorials/speaking-code.md)
+* [WSL FAQ](/tutorials/WSL.md)
+* [X11 on the Cluster](/tutorials/X11.md)
 
