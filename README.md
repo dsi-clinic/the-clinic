@@ -23,7 +23,7 @@ The Syllabus, including all course expectations can be found [here](./syllabus/s
 
 Each week you are required to upload a planning and progress doc (due dates are specific to your project and can be found on Canvas). 
 
-The planning doc can be found [here](./templates/planing-doc.md) in markdown format. There is a [rubric](/rubrics/planning-doc-rubric.md).
+The planning doc can be found [here](./templates/planning-doc.md) in markdown format. There is a [rubric](./rubrics/planning-doc-rubric.md).
 
 The progress doc can be found [here](./templates/progress-doc.md) in markdown format. There is a [rubric](./rubrics/progress-doc-rubric.md).
 
@@ -37,7 +37,7 @@ The first week Org report can also be found in the `templates` directory in a MS
 
 In week 6 of the clinic students will be required to complete a short mid-quarter presentation. There is a template for the presentation in the directory `templates`. 
 
-If you want to receive an "A" on this assignment, _make sure to follow the [rubric](/rubrics/mid-quarter-presentation-rubric.md) precisely_.
+If you want to receive an "A" on this assignment, _make sure to follow the [rubric](./rubrics/mid-quarter-presentation-rubric.md) precisely_.
 
 ### Final Deliverables
 
@@ -64,7 +64,7 @@ We keep a list of frequently asked questions and answers as well as "How-to"'s f
 * [How to set up your computer](./tutorials/clinic-computer-setup.md)
 * [Installing Conda on the Cluster](./tutorials/conda.md)
 * [Docker Common Questions](./tutorials/Docker.md)
-* [Understanding File Systems](/tutorials/filepaths.md)
+* [Understanding File Systems](./tutorials/filepaths.md)
 * [Using GDAL](./tutorials/geopandas-dockerfile.md)
 * [Using Podman on the Cluster](./tutorials/podman.md)
 * [How to talk about the clinic on your resume and in interviews](./tutorials/resume-interviews.md)
