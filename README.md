@@ -73,3 +73,8 @@ We keep a list of frequently asked questions and answers as well as "How-to"'s f
 * [WSL FAQ](./tutorials/WSL.md)
 * [X11 on the Cluster](./tutorials/X11.md)
 
+## More Help
+
+The University of Chicago Computer Science Department has an in-depth list of related resources that you can find [here](https://uchicago-cs.github.io/student-resource-guide/). 
+
+If you need help using Unix, docker or any of the tools used in the clinic this is an invaluable resource.
