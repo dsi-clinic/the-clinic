@@ -47,13 +47,12 @@ Draft videos should demonstrate a significant level of effort. Each draft should
 * 15 Points: Presentation
 * 5 Points: Organization
 * 10 Points: Slides
-8 10 Points: Updates, changes and issue correction based on feedback
+* 10 Points: Updates, changes and issue correction based on feedback
 
 <u>Final Video (60 Points)</u>
 * 20 Points: Presentation
-* 10 Points: Organization
+* 20 Points: Organization
 * 20 Points: Slides
-* 10 Points: Updates, changes and issue correction based on feedback
 
 ### Dos and Don'ts 
 * Do not speed up / slow down the presentation using software tools
