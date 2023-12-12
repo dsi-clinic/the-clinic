@@ -4,7 +4,7 @@ This repository contains information and documentation regarding the Data Scienc
 
 ### People
 
-The Data Science Clinic is administered by Nick Ross and Tim Hannifan. Questions about the clinic should be addressed to them either over slack or via their UChicago email addresses.
+The Data Science Clinic is administered by Nick Ross and Tim Hannifan. Questions about the clinic should be addressed to them either over slack or via their UChicago email addresses.  
 
 ### Coding Standards
 
@@ -61,15 +61,15 @@ A short video presentation is also required. Two drafts and a final submission a
 
 We keep a list of frequently asked questions and answers as well as "How-to"'s for specific technologies in this repo:
 
-* [How to set up your computer](/tutorials/clinic-computer-setup.md)
-* [Installing Conda on the Cluster](/tutorials/conda.md)
-* [Docker Common Questions](/tutorials/Docker.md)
+* [How to set up your computer](./tutorials/clinic-computer-setup.md)
+* [Installing Conda on the Cluster](./tutorials/conda.md)
+* [Docker Common Questions](./tutorials/Docker.md)
 * [Understanding File Systems](/tutorials/filepaths.md)
-* [Using GDAL](/tutorials/geopandas-dockerfile.md)
-* [Using Podman on the Cluster](/tutorials/podman.md)
-* [How to talk about the clinic on your resume and in interviews](/tutorials/resume-interviews.md)
-* [SLURM](/tutorials/slurm.md)
-* [Speaking Code](/tutorials/speaking-code.md)
-* [WSL FAQ](/tutorials/WSL.md)
-* [X11 on the Cluster](/tutorials/X11.md)
+* [Using GDAL](./tutorials/geopandas-dockerfile.md)
+* [Using Podman on the Cluster](./tutorials/podman.md)
+* [How to talk about the clinic on your resume and in interviews](./tutorials/resume-interviews.md)
+* [SLURM](./tutorials/slurm.md)
+* [Speaking Code](./tutorials/speaking-code.md)
+* [WSL FAQ](./tutorials/WSL.md)
+* [X11 on the Cluster](./tutorials/X11.md)
 
