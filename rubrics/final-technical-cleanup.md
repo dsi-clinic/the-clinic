@@ -4,7 +4,7 @@ The purpose of this document is to describe the final code clean up steps to be 
 
 These steps are presented in checklist form for ease of evaluation. 
 
-- [ ] Does the code repository conform to all standards laid out in the [Code Repository Standards document](https://github.com/dsi-clinic/coding-standards#requirements) in this repo?
+- [ ] Does the code repository conform to all standards laid out in the [Code Repository Standards document](../coding-standards/coding-standards.md#requirements) in this repo?
 - [ ] Have all work product been put into a single branch (generally `main`)?
 - [ ] Have all, non-main, branches that were created during this project been deleted?
 - [ ] Have all contributors added their names to the appropriate README?
