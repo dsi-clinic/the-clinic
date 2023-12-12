@@ -8,30 +8,30 @@ The Data Science Clinic is administered by Nick Ross and Tim Hannifan. Questions
 
 ### Coding Standards
 
-You can find information on Data Science Clinic Coding Standards and expectations [here](/coding-standards/coding-standards.md).
+You can find information on Data Science Clinic Coding Standards and expectations [here](./coding-standards/coding-standards.md).
 
 
 ### Weekly Calendar
 
-You can find a weekly calendar [here](/syllabus/weekly-plan.md). 
+You can find a weekly calendar [here](./syllabus/weekly-plan.md). 
 
 ### Syllabus
 
-The Syllabus, including all course expectations can be found [here](/syllabus/syllabus.md).
+The Syllabus, including all course expectations can be found [here](./syllabus/syllabus.md).
 
 ### Progress and Planning Docs
 
 Each week you are required to upload a planning and progress doc (due dates are specific to your project and can be found on Canvas). 
 
-The planning doc can be found [here](/templates/planing-doc.md) in markdown format. There is a [rubric](/rubrics/planning-doc-rubric.md).
+The planning doc can be found [here](./templates/planing-doc.md) in markdown format. There is a [rubric](/rubrics/planning-doc-rubric.md).
 
-The progress doc can be found [here](/templates/progress-doc.md) in markdown format. There is a [rubric](/rubrics/progress-doc-rubric.md).
+The progress doc can be found [here](./templates/progress-doc.md) in markdown format. There is a [rubric](./rubrics/progress-doc-rubric.md).
 
 Note that in the directory `templates` directory you can also find MS-word versions of the two documents.
 
 ### First Week Org Report
 
-The first week Org report can also be found in the `templates` directory in a MS-WORD format. There is a markdown version [here](/templates/week-1-org-report.md). Grading for this is simple: if it is turned in on time and complete it receives full credit, otherwise zero.
+The first week Org report can also be found in the `templates` directory in a MS-WORD format. There is a markdown version [here](./templates/week-1-org-report.md). Grading for this is simple: if it is turned in on time and complete it receives full credit, otherwise zero.
 
 ### Mid quarter presentation
 
@@ -47,15 +47,15 @@ There are three sets of final deliverables for each project:
 
 At the end of the quarter you will need to turn over the code that you completed during the quarter. 
 
-For the final code submission you will need to fill out the worksheet [here](/templates/final-technical-submission.md).
+For the final code submission you will need to fill out the worksheet [here](./templates/final-technical-submission.md).
 
 ##### One Pager
 
-There is a one pager that also needs to be completed as part of the final submission. One draft of the one pager is also required. Grading rubrics for both can be found [here](/rubrics/one-pager.md).
+There is a one pager that also needs to be completed as part of the final submission. One draft of the one pager is also required. Grading rubrics for both can be found [here](./rubrics/one-pager.md).
 
 ##### Final Video 
 
-A short video presentation is also required. Two drafts and a final submission are to be completed according to the [rubric](/rubrics/final-video.md).
+A short video presentation is also required. Two drafts and a final submission are to be completed according to the [rubric](./rubrics/final-video.md).
 
 ## Additional Tutorials
 
