@@ -75,15 +75,6 @@ Requirements
 1. Include a conda recipe to manage the environment.
 
 
-Suggested best practices:
----
-1. Github
-    * Branches should be merged into main and then deleted
-1. Linting
-    * All code should pass basic linting
-1. Github actions
-    * For linting and testing
-
 FAQ
 ---
 
