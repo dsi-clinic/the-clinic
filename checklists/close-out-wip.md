@@ -5,7 +5,6 @@ This checklist should be completed and submitted by the date on canvas
 1. What branch contains the merged work product from your group from this quarter (aka what branch should we be grading)?
 1. The coding standards repository contains a checklist of expectations for your repository. Are there any pieces of this that you did not follow and, if so, why not?
 
-
 Open question:
 
 If we use docker using a volume mount -- how do we handle the grading with that?
