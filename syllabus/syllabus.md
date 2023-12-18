@@ -57,19 +57,7 @@ The Data Science Clinic cannot be taken as a pass/fail course. All students enro
 
 ### Important Dates 
 
-## WE SHOULD REPLACE THIS WITH A LINK SO WE ONLY NEED TO UPDATE ONCE
-9/26/23	Quarter begins
-10/15/23 at 11:59pm	First peer evaluation
-10/31/23 or 11/2/23	Midterm presentations
-11/5/23 at 11:59pm	Second peer evaluation
-11/29/23 at 1pm	Video 1st draft
-12/1/23 at 1pm	Video 2nd draft
-One-pager 1st draft
-12/7/23 at 5pm	Final Video 
-Final One-pager 
-Third Peer Review 
-All Client Deliverables turned over
-
+A list of important dates for the current quarter can be found [here](./dates.md). 
 
 ### Accommodation Policy 
 
