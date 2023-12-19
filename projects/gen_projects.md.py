@@ -4,8 +4,20 @@
 ### To do:
 # 1. automate 400 no-400 for has repo
 
-
 # Format: Name (which matches below) and a link to _something_ either github or LinkedIn?
+
+PREAMBLE_TEXT = """### Previous Projects
+
+This page contains a list of projects organized by quarter with the list of students who worked on the project and the faculty mentor. Note that the dates listed below are by _calendar year_ not academic year.
+
+A few important notes:
+* Not all projects have complete information. Some of the projects are under NDAs or other specifications (such as UChicago not hosting the repo).
+* The requirements for the project have changed year over year and are sometimes project specific.
+
+---
+"""
+
+
 ALL_PEOPLE = {
     "James Turk": ["James Turk", "https://github.com/jamesturk/"],
     "Nick": ["Nick Ross", "https://www.linkedin.com/in/drdata/"],
@@ -13,11 +25,11 @@ ALL_PEOPLE = {
     "Rahim": ["Rahim Rasool", "https://github.com/rahimrasool"],
     "David U.": [
         "David Uminsky",
-        "https://www.linkedin.com/in/david-uminsky-5153b1a8/",
+        "https://cs.uchicago.edu/people/david-uminsky/",
     ],
     "Dan N.": [
         "Dan Nicolae",
-        "https://www.linkedin.com/in/dan-nicolae-221991a/",
+        "https://www.stat.uchicago.edu/~nicolae/",
     ],
     "Tim": ["Tim Hannifan", "https://github.com/timhannifan"],
     "Ali": ["Ali Klemencic", "https://github.com/aliklemencic"],
@@ -26,7 +38,7 @@ ALL_PEOPLE = {
     "Kenia": ["Kenia Godinez Nogueda", "https://github.com/gnogueda"],
     "Patricia": [
         "Patricia Chiril",
-        "https://www.linkedin.com/in/patricia-chiril-27062298",
+        "https://scholar.google.com/citations?user=AzsyeyIAAAAJ&hl=en",
     ],
     "Peter": ["Peter Lu", "https://github.com/peterparity"],
     "Anna": [
@@ -51,7 +63,7 @@ SPRING_23_PROJECT = [
         "https://github.com/dsi-clinic/2023-clinic-Argonne",
         0,
         1,
-        "[Matthew Dearing](https://www.linkedin.com/in/matthewtdearing/)",
+        "[Matthew Dearing](https://scholar.google.com/citations?user=HUQIELDxZkgJ&hl=en)",
     ],
     [
         "Blue Ocean Gear",
@@ -233,66 +245,112 @@ def create_link_for_student(student_info):
     return create_link_for_mentor(student_info[1:3])
 
 
-#### --- ###
-name_map = SPRING_23_NAME_MAP
-one_pager_location = SPRING_23_ONE_PAGER_LOCATION
-student_info_list = SPRING_23_STUDENT
-all_results = "\n| Project Name | Repository | One-Pager | Mentors | Students | \
-    External Mentor | TA | \n | --- |  --- | --- | --- | --- | --- | --- |\n"
+def create_single_quarter_table(
+    name_map,
+    project_map,
+    one_pager_location,
+    student_info_list,
+    quarter_name=None,  #noqa
+):
+    """
+    This returns a single table of information.
+    """
 
-for project_info in SPRING_23_PROJECT:
-    [
-        project_link,
-        project_url,
-        mentor_link,
-        ta_link,
-        github_link,
-        is_private_repo,
-        has_one_pager,
-        external_mentor_info,
-    ] = project_info
+    all_results = "\n| Project Name | Repository | One-Pager | Mentors | Students | \
+        External Mentor | TA | \n | --- |  --- | --- | --- | --- | --- | --- |\n"
 
-    project_name = name_map.get(project_link, project_link)
+    for project_info in project_map:
+        [
+            project_link,
+            project_url,
+            mentor_link,
+            ta_link,
+            github_link,
+            is_private_repo,
+            has_one_pager,
+            external_mentor_info,
+        ] = project_info
 
-    if is_private_repo:
-        if github_link:
-            repo_info = f"<!-- markdown-link-check-disable --> [Private Repo]({github_link}) <!-- markdown-link-check-enable -->"
+        project_name = name_map.get(project_link, project_link)
+
+        if is_private_repo:
+            if github_link:
+                repo_info = f"<!-- markdown-link-check-disable --> [Private Repo]({github_link}) <!-- markdown-link-check-enable -->"
+            else:
+                repo_info = "No Repository"
         else:
-            repo_info = "No Repository"
-    else:
-        repo_info = f"[DSI Repo]({github_link})"
+            repo_info = f"[DSI Repo]({github_link})"
 
-    if has_one_pager:
-        file_info = one_pager_location + project_link + '.pdf'
-        one_pager_info = f"[One-Pager]({file_info.replace(' ', '%20')})"
-    else:
-        one_pager_info = ""
+        if has_one_pager:
+            file_info = one_pager_location + project_link + ".pdf"
+            one_pager_info = f"[One-Pager]({file_info.replace(' ', '%20')})"
+        else:
+            one_pager_info = ""
 
-    mentor_list = [mentor.strip() for mentor in mentor_link.split("&")]
+        mentor_list = [mentor.strip() for mentor in mentor_link.split("&")]
 
-    if len(mentor_list) == 1:
-        mentor_info = create_link_for_mentor(ALL_PEOPLE[mentor_list[0]])
+        if len(mentor_list) == 1:
+            mentor_info = create_link_for_mentor(ALL_PEOPLE[mentor_list[0]])
 
-    else:
-        mentor_info = "<ul>"
-        for mentor in mentor_list:
-            mentor_info += (
-                f"<li>{create_link_for_mentor(ALL_PEOPLE[mentor])}</li>"
+        else:
+            mentor_info = "<ul>"
+            for mentor in mentor_list:
+                mentor_info += (
+                    f"<li>{create_link_for_mentor(ALL_PEOPLE[mentor])}</li>"
+                )
+            mentor_info += "</ul>"
+
+        student_info = "<ul>"
+        for student in [x for x in student_info_list if x[0] == project_link]:
+            student_info += f"<li>{create_link_for_student(student)}</li>"
+        student_info += "</ul>"
+
+        TA_info = ALL_PEOPLE.get(ta_link, None)
+        if TA_info:
+            TA_info = create_link_for_mentor(TA_info)
+        else:
+            TA_info = ""
+
+        project_line = " | ".join(
+            [
+                project_name,
+                repo_info,
+                one_pager_info,
+                mentor_info,
+                student_info,
+                external_mentor_info,
+                TA_info,
+            ]
+        )
+        all_results += " | " + project_line + "\n"
+
+    return all_results
+
+
+if __name__ == "__main__":
+    name_map = SPRING_23_NAME_MAP
+    one_pager_location = SPRING_23_ONE_PAGER_LOCATION
+    student_info_list = SPRING_23_STUDENT
+
+    all_quarter_info_list = [
+        {
+            "quarter_name": "Spring 2023",
+            "name_map": SPRING_23_NAME_MAP,
+            "one_pager_location": "SPRING_23_ONE_PAGER_LOCATION",
+            "student_info_list": SPRING_23_STUDENT,
+            "project_map": SPRING_23_PROJECT,
+        }
+    ]
+
+    with open("projects.md", "w") as f_handle:
+        f_handle.write(PREAMBLE_TEXT)
+        f_handle.write("\n")
+
+        for quarter in all_quarter_info_list:
+            f_handle.write("\n<details>\n\n")
+            f_handle.write(
+                f"<summary><h2>{quarter['quarter_name']}</h2></summary>\n\n"
             )
-        mentor_info += "</ul>"
+            f_handle.write(create_single_quarter_table(**quarter))
+            f_handle.write("\n</details>")
 
-    student_info = "<ul>"
-    for student in [x for x in student_info_list if x[0] == project_link]:
-        student_info += f"<li>{create_link_for_student(student)}</li>"
-    student_info += "</ul>"
-
-    TA_info = ALL_PEOPLE.get(ta_link, None)
-    if TA_info:
-        TA_info = create_link_for_mentor(TA_info)
-    else:
-        TA_info = ''        
-
-    project_line = ' | ' .join([project_name, repo_info, one_pager_info, mentor_info, student_info, external_mentor_info, TA_info])
-    all_results += ' | ' + project_line + '\n'
-
-print(all_results)
