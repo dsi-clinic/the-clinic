@@ -37,7 +37,7 @@ It is expected that graduate students will work a minimum of 15 hours each week 
 
 We will have multiple means of communication for this course: Github, Canvas, Slack and Email. Email will be used sparingly for communication and periodically for updates regarding grades as well as communication with external mentors. Each team will have their own individual project channel on Slack where we expect the vast majority of communication for this project to be done. Progress on the project and technical updates will be communicated through Github and Canvas.
 
-###  On Grading
+### On Grading
 
 The Data Science Clinic cannot be taken as a pass/fail course. All students enrolled will receive a letter grade. The breakdown of your grade for this course is summarized below. Note that the source of the grading is put in parentheses before the description.
 
@@ -52,24 +52,12 @@ The Data Science Clinic cannot be taken as a pass/fail course. All students enro
 * __20% Professionalism__ - [Project Mentors & TAs] Clinic leadership will evaluate each individual student’s demonstrated professionalism. This evaluation is drawn primarily from student written and verbal communication, student meeting the expectations set forth for the course, including 15 hours a week of work, general participation, attendance, engagement with clients and other professional behavior exhibited by each student. There are two specific areas of professionalism that I want to call out which will be graded:
     * __Client Communication__: During client communication are students prepared, ready and able? Are they asking good questions? Is the client sitting there in silence while people stare down? 
     * __Attendance__: You will be expected to attend and be on time for all meetings, unless prior arrangements have been made. If you show up late, points will be deducted from your grade.
-    * __10% Mid-quarter Group Presentation__ [Clinic Director/Assc. Director] During the middle of the quarter you will be required to do a short presentation which describes your project to your peers. A complete rubric will be provided before the presentation.
-    * __30% Final Deliverables__ [Project Mentors/Clinic Director/Assc. Director] - Your final deliverables will be due during the week of finals with the exact date TBD. These deliverables represent the culmination of the team’s work on the project. Each group will prepare a one-page written executive summary and a video presentation. In addition, each group will submit their project outputs including but not limited to a code repository, final report, Jupyter notebooks, websites, etc. Project outputs will be determined in consultation with the project mentors and the client.
+* __10% Mid-quarter Group Presentation__ [Clinic Director/Assc. Director] During the middle of the quarter you will be required to do a short presentation which describes your project to your peers. A complete rubric will be provided before the presentation.
+* __30% Final Deliverables__ [Project Mentors/Clinic Director/Assc. Director] - Your final deliverables will be due during the week of finals with the exact date TBD. These deliverables represent the culmination of the team’s work on the project. Each group will prepare a one-page written executive summary and a video presentation. In addition, each group will submit their project outputs including but not limited to a code repository, final report, Jupyter notebooks, websites, etc. Project outputs will be determined in consultation with the project mentors and the client.
 
 ### Important Dates 
 
-## WE SHOULD REPLACE THIS WITH A LINK SO WE ONLY NEED TO UPDATE ONCE
-9/26/23	Quarter begins
-10/15/23 at 11:59pm	First peer evaluation
-10/31/23 or 11/2/23	Midterm presentations
-11/5/23 at 11:59pm	Second peer evaluation
-11/29/23 at 1pm	Video 1st draft
-12/1/23 at 1pm	Video 2nd draft
-One-pager 1st draft
-12/7/23 at 5pm	Final Video 
-Final One-pager 
-Third Peer Review 
-All Client Deliverables turned over
-
+A list of important dates for the current quarter can be found [here](./dates.md). 
 
 ### Accommodation Policy 
 
