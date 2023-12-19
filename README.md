@@ -78,3 +78,7 @@ We keep a list of frequently asked questions and answers as well as "How-to"'s f
 The University of Chicago Computer Science Department has an in-depth list of related resources that you can find [here](https://uchicago-cs.github.io/student-resource-guide/). 
 
 If you need help using Unix, docker or any of the tools used in the clinic this is an invaluable resource.
+
+## Previous Quarter Projects
+
+We keep information on all of our previous projects [here](./projects/projects.md).

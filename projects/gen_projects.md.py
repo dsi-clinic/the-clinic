@@ -4,8 +4,6 @@
 ### To do:
 # 1. automate 400 no-400 for has repo
 
-# Format: Name (which matches below) and a link to _something_ either github or LinkedIn?
-
 PREAMBLE_TEXT = """### Previous Projects
 
 This page contains a list of projects organized by quarter with the list of students who worked on the project and the faculty mentor. Note that the dates listed below are by _calendar year_ not academic year.
@@ -18,9 +16,10 @@ A few important notes:
 """
 
 
+### Format: Name which links : [Name to display, github link] -- don't use LI as it breaks.
 ALL_PEOPLE = {
     "James Turk": ["James Turk", "https://github.com/jamesturk/"],
-    "Nick": ["Nick Ross", "https://www.linkedin.com/in/drdata/"],
+    "Nick": ["Nick Ross", "https://www.nickross.site/"],
     "Launa": ["Launa Greer", "https://github.com/LaunaG"],
     "Rahim": ["Rahim Rasool", "https://github.com/rahimrasool"],
     "David U.": [
@@ -61,7 +60,7 @@ SPRING_23_PROJECT = [
         "Rahim",
         "Christian",
         "https://github.com/dsi-clinic/2023-clinic-Argonne",
-        0,
+        1,
         1,
         "[Matthew Dearing](https://scholar.google.com/citations?user=HUQIELDxZkgJ&hl=en)",
     ],
@@ -97,7 +96,7 @@ SPRING_23_PROJECT = [
     ],
     [
         "Fermi",
-        "https://www.fnal.gov/",
+        "https://computing.fnal.gov/michael-kirby/",
         "Peter",
         "Ali",
         "https://github.com/dsi-clinic/2023-clinic-fermi-tag",
@@ -191,7 +190,7 @@ SPRING_23_STUDENT = [
     ["DRW", "Mahnoor Khan", "https://github.com/Mfk-han"],
     ["DRW", "Jasmeet Singh Sandhu", "https://github.com/jasmeeetSingh"],
     ["DRW", "Yulun Han", "https://github.com/YLHan97"],
-    ["Fermi", "Richard Zhang", "https://github.com/chihavertz"],
+    ["Fermi", "Richard Zhang", None],
     ["Fermi", "Manuel Martinez", "https://github.com/manmartgarc"],
     ["Fermi", "Mingyan Wang", "https://github.com/wmingyan"],
     ["Fermi", "Tarun Arora", "https://github.com/tarun2k"],
@@ -238,7 +237,10 @@ SPRING_23_ONE_PAGER_LOCATION = "./one-pagers/2023-spring/"
 
 
 def create_link_for_mentor(mentor_info):
-    return f"[{mentor_info[0]}]({mentor_info[1]})"
+    if mentor_info[1]:
+        return f"[{mentor_info[0]}]({mentor_info[1]})"
+    else:
+        return f"{mentor_info[0]}"
 
 
 def create_link_for_student(student_info):
@@ -272,6 +274,8 @@ def create_single_quarter_table(
         ] = project_info
 
         project_name = name_map.get(project_link, project_link)
+
+        project_name_info = f"[{project_name}]({project_url})"
 
         if is_private_repo:
             if github_link:
@@ -313,7 +317,7 @@ def create_single_quarter_table(
 
         project_line = " | ".join(
             [
-                project_name,
+                project_name_info,
                 repo_info,
                 one_pager_info,
                 mentor_info,
@@ -328,15 +332,12 @@ def create_single_quarter_table(
 
 
 if __name__ == "__main__":
-    name_map = SPRING_23_NAME_MAP
-    one_pager_location = SPRING_23_ONE_PAGER_LOCATION
-    student_info_list = SPRING_23_STUDENT
 
     all_quarter_info_list = [
         {
             "quarter_name": "Spring 2023",
             "name_map": SPRING_23_NAME_MAP,
-            "one_pager_location": "SPRING_23_ONE_PAGER_LOCATION",
+            "one_pager_location": SPRING_23_ONE_PAGER_LOCATION,
             "student_info_list": SPRING_23_STUDENT,
             "project_map": SPRING_23_PROJECT,
         }
