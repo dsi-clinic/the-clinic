@@ -8,7 +8,7 @@
 # Format: Name (which matches below) and a link to _something_ either github or LinkedIn?
 ALL_PEOPLE = {
     "James Turk": ["James Turk", "https://github.com/jamesturk/"],
-    "Nick": ["Nick Ross", "https://www.linkedin.com/in/dan-nicolae-221991a/"],
+    "Nick": ["Nick Ross", "https://www.linkedin.com/in/drdata/"],
     "Launa": ["Launa Greer", "https://github.com/LaunaG"],
     "Rahim": ["Rahim Rasool", "https://github.com/rahimrasool"],
     "David U.": [
