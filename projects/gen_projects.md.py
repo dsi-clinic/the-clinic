@@ -116,7 +116,7 @@ SPRING_23_PROJECT = [
     ],
     [
         "Hawaii",
-        "https://11thhourproject.org/",
+        "https://tsffoundation.org/",
         "Launa",
         "Ali",
         "https://github.com/chicago-cdac/hawaii-pesticides",
