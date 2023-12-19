@@ -37,7 +37,7 @@ It is expected that graduate students will work a minimum of 15 hours each week 
 
 We will have multiple means of communication for this course: Github, Canvas, Slack and Email. Email will be used sparingly for communication and periodically for updates regarding grades as well as communication with external mentors. Each team will have their own individual project channel on Slack where we expect the vast majority of communication for this project to be done. Progress on the project and technical updates will be communicated through Github and Canvas.
 
-### On Grading
+### On Grading
 
 The Data Science Clinic cannot be taken as a pass/fail course. All students enrolled will receive a letter grade. The breakdown of your grade for this course is summarized below. Note that the source of the grading is put in parentheses before the description.
 

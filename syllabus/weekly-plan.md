@@ -12,4 +12,4 @@ The following is a general guide to the weekly responsibilities of students and 
 | 7 | <ul><li>Peer review #2</li><li>Planning/Progress documents</li></ul> | Grade planning/progress documents | 
 | 8 | <ul><li>Planning/Progress documents</li></ul> | Grade planning/progress documents | 
 | 9 | <ul><li>Video draft #1 and #2</li><li>One-pager draft #1</li><li>Planning/Progress documents</li></ul> | Grade planning/progress documents. Provide feedback on video and one-pager drafts. | 
-| 10 | <ul><li>Progress doc</li><li>Peer review #3</li><li>Final video</li><li>Final one-pager</li><li>Turn over code</li></ul> | Grade progress document. | 
+| 10 | <ul><li>Progress doc</li><li>Peer review #3</li><li>Final video</li><li>Final one-pager</li><li>Final technical submission</li></ul> | Grade progress document | 
