@@ -52,7 +52,7 @@ ALL_PEOPLE = {
     "Sunvid": ["Sunvid Aneja", "https://github.com/sunvidaneja"],
 }
 
-# Structure: name / url/ mentor / TA / github / private repo 1/0, has_one_pager 1/0
+# Structure: name / url/ mentor / TA / github / private repo 1/0, has_one_pager 1/0, url passes testing 1/0
 SPRING_23_PROJECT = [
     [
         "Argonne",
@@ -63,6 +63,7 @@ SPRING_23_PROJECT = [
         1,
         1,
         "[Matthew Dearing](https://scholar.google.com/citations?user=HUQIELDxZkgJ&hl=en)",
+        1,
     ],
     [
         "Blue Ocean Gear",
@@ -73,6 +74,7 @@ SPRING_23_PROJECT = [
         1,
         1,
         "XX?",
+        1,
     ],
     [
         "CRI-SET",
@@ -83,6 +85,7 @@ SPRING_23_PROJECT = [
         1,
         1,
         "Dr. Henry David",
+        1,
     ],
     [
         "DRW",
@@ -93,6 +96,7 @@ SPRING_23_PROJECT = [
         1,
         0,
         "Ian Adam",
+        1,
     ],
     [
         "Fermi",
@@ -103,6 +107,7 @@ SPRING_23_PROJECT = [
         1,
         1,
         "<ul><li>Michael Kirby</li><li>Meghna Bhattacharya</li></ul>",
+        1,
     ],
     [
         "FRB",
@@ -113,6 +118,7 @@ SPRING_23_PROJECT = [
         1,
         0,
         "<ul><li>Chris Csiszar</li><li>Mark Woodworth</li></ul>",
+        1,
     ],
     [
         "Hawaii",
@@ -123,6 +129,7 @@ SPRING_23_PROJECT = [
         1,
         1,
         "XXX",
+        0,
     ],
     [
         "IE",
@@ -133,6 +140,7 @@ SPRING_23_PROJECT = [
         0,
         1,
         "Dr. Nicole Marwell",
+        1,
     ],
     [
         "Morningstar",
@@ -143,6 +151,7 @@ SPRING_23_PROJECT = [
         1,
         0,
         "<ul><li>Josh Charney</li><li>Jazmin Melchor</li></ul>",
+        1,
     ],
     [
         "Neurocritical Care",
@@ -153,6 +162,7 @@ SPRING_23_PROJECT = [
         1,
         1,
         "Dr. Ali Mansour",
+        1,
     ],
     [
         "Perpetual",
@@ -163,6 +173,7 @@ SPRING_23_PROJECT = [
         0,
         1,
         "Ellie Moss",
+        1,
     ],
     [
         "Prudential",
@@ -173,6 +184,7 @@ SPRING_23_PROJECT = [
         1,
         0,
         "Amol Tembe",
+        1,
     ],
 ]
 
@@ -271,11 +283,15 @@ def create_single_quarter_table(
             is_private_repo,
             has_one_pager,
             external_mentor_info,
+            project_url_valid,
         ] = project_info
 
         project_name = name_map.get(project_link, project_link)
 
-        project_name_info = f"[{project_name}]({project_url})"
+        if project_url_valid:
+            project_name_info = f"[{project_name}]({project_url})"
+        else:
+            project_name_info = f"<!-- markdown-link-check-disable -->[{project_name}]({project_url})<!-- markdown-link-check-enable -->"
 
         if is_private_repo:
             if github_link:
