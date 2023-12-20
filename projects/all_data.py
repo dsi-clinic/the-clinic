@@ -22,11 +22,6 @@
 # This is an override for the name. It replaces what is used internally with
 # something readable. It is a dictionary with the name link to the new name
 
-empty_23_PROJECT = []
-
-empty_23_STUDENT = []
-
-empty_23_NAME_MAP = {}
 
 AUTUMN_23_PROJECT = [
     [
