@@ -181,7 +181,7 @@ AUTUMN_23_PROJECT = [
         0,
         1,
         "XXX",
-        1,
+        0,
     ],
     [
         "UNI",
