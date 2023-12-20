@@ -104,7 +104,7 @@ AUTUMN_23_PROJECT = [
     [
         "HAPA",
         "https://www.hapahi.org/",
-        "Rahim",
+        "Rahim & Trevor",
         "Victor",
         "https://github.com/dsi-clinic/2023-fall-clinic-hawaii-pesticides",
         1,
@@ -286,7 +286,7 @@ WINTER_23_PROJECT = [
     [
         "BankTrack",
         "https://www.banktrack.org/",
-        "Trevor",
+        "Trevor & Patricia",
         None,
         "https://github.com/chicago-cdac/banktrack-loan-pipeline/",
         1,
@@ -346,7 +346,7 @@ WINTER_23_PROJECT = [
         "https://github.com/dsi-clinic/2023-clinic-first-republic-bank",
         1,
         0,
-        '<ul><li>Chris Csiszar</li><li>Mark Woodworth</li></ul>',
+        "<ul><li>Chris Csiszar</li><li>Mark Woodworth</li></ul>",
         1,
     ],
     [
