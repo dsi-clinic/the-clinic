@@ -70,7 +70,7 @@ AUTUMN_23_PROJECT = [
         "https://github.com/dsi-clinic/2023-fall-clinic-climate-cabinet",
         0,
         1,
-        "XXX",
+        "Caleb Braun",
         1,
     ],
     [
@@ -136,7 +136,7 @@ AUTUMN_23_PROJECT = [
         "https://github.com/dsi-clinic/2023-autumn-irc",
         1,
         1,
-        "XXX",
+        "Atish Gonsalves",
         1,
     ],
     [
@@ -180,7 +180,7 @@ AUTUMN_23_PROJECT = [
         "https://github.com/uchicago-dsi/rafi-poultry",
         0,
         1,
-        "XXX",
+        "Aaron Johnson",
         0,
     ],
     [
@@ -351,7 +351,7 @@ WINTER_23_PROJECT = [
         "https://github.com/dsi-clinic/2023-clinic-first-republic-bank",
         1,
         0,
-        '"<ul><li>Chris Csiszar</li><li>Mark Woodworth</li></ul>"',
+        '<ul><li>Chris Csiszar</li><li>Mark Woodworth</li></ul>',
         1,
     ],
     [
@@ -551,7 +551,7 @@ SPRING_23_PROJECT = [
         "https://github.com/chicago-cdac/bog-anomaly-mapping/",
         1,
         1,
-        "XX?",
+        "<ul><li>Kortney Opshaug</li><li>Peter Macy</li><li>Will Morton</li></ul>",
         1,
     ],
     [
