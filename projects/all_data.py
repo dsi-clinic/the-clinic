@@ -114,7 +114,7 @@ AUTUMN_23_PROJECT = [
         "https://github.com/dsi-clinic/2023-fall-clinic-hawaii-pesticides",
         1,
         1,
-        "XXX",
+        "<ul><li>Fern Ānuenue Holland</li><li>Anne Frederick</li><li>Emily Marquez</li></ul>",
         1,
     ],
     [
@@ -296,7 +296,7 @@ WINTER_23_PROJECT = [
         "https://github.com/chicago-cdac/banktrack-loan-pipeline/",
         1,
         1,
-        "XXX",
+        "<ul><li>Ryan Brightwell</li><li>Dustin Roasa</li></ul>",
         1,
     ],
     [
@@ -307,7 +307,7 @@ WINTER_23_PROJECT = [
         "https://github.com/chicago-cdac/bog-anomaly-mapping",
         1,
         1,
-        "XXX",
+        "<ul><li>Kortney Opshaug</li><li>Peter Macy</li><li>Will Morton</li></ul>",
         1,
     ],
     [
@@ -362,7 +362,7 @@ WINTER_23_PROJECT = [
         "https://github.com/dsi-clinic/2023-clinic-greenwave",
         1,
         1,
-        "XXX",
+        "Kendall Barbery",
         1,
     ],
     [
@@ -606,7 +606,7 @@ SPRING_23_PROJECT = [
         "https://github.com/chicago-cdac/hawaii-pesticides",
         1,
         1,
-        "XXX",
+        "<ul><li>Fern Ānuenue Holland</li><li>Anne Frederick</li><li>Emily Marquez</li></ul>",
         0,
     ],
     [
@@ -717,7 +717,7 @@ SPRING_23_STUDENT = [
 SPRING_23_NAME_MAP = {
     "Argonne": "Argonne Knowledge Graph",
     "Fermi": "Fermi: Kirby Lab",
-    "Hawaii": "Hawaii Pesticides",
+    "Hawaii": " Hawaii Alliance for Progressive Action",
     "IE": "Internet Equity",
     "FRB": "First Republic Bank",
 }
