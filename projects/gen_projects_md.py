@@ -1,8 +1,4 @@
-# Checklist:
-# 1. Remove access to named students when going through repos
-# 2. For repos in the dsi-clinic org: add the "all-nda" group to repos
-# 3. For complex 11th hour repos
-
+# This code generates the projects.md markdown file in this repository.
 # To do:
 # 1. automate 400 no-400 for has repo
 
@@ -10,19 +6,28 @@ from all_data import SPRING_23_NAME_MAP, SPRING_23_PROJECT, SPRING_23_STUDENT
 from all_data import WINTER_23_NAME_MAP, WINTER_23_PROJECT, WINTER_23_STUDENT
 from all_data import AUTUMN_23_NAME_MAP, AUTUMN_23_PROJECT, AUTUMN_23_STUDENT
 
+
 PREAMBLE_TEXT = """### Previous Projects
 
-This page contains a list of projects organized by quarter with the list of students who worked on the project and the faculty mentor. Note that the dates listed below are by _calendar year_ not academic year.
+This page contains a list of projects organized by quarter with the list of \
+    students who worked on the project and the faculty mentor. Note that the \
+        dates listed below are by _calendar year_ not academic year.
 
 A few important notes:
-* Not all projects have complete information. Some of the projects are under NDAs or other specifications (such as UChicago not hosting the repo).
-* The requirements for the project have changed year over year and are sometimes project specific.
+* Not all projects have complete information. Some of the projects are under \
+    NDAs or other specifications (such as UChicago not hosting the repo).
+* The requirements for the project have changed year over year and are \
+    sometimes project specific.
 
 ---
 """
 
+# Format: Name which links : [Name to display, github link]
+# DON'T USE LinkedIn as it breaks b/c the github runner does not
+# have an account
 
-# Format: Name which links : [Name to display, github link] -- don't use LI as it breaks.
+# This should be for people who appear more than once
+# Specifically TAs and Mentors.
 ALL_PEOPLE = {
     "Bill Trok": [
         "Bill Trok",
@@ -97,6 +102,8 @@ ALL_PEOPLE = {
 
 
 def create_link_for_mentor(mentor_info):
+    # Takes in a mentor blob (what is in ALL_PEOPLE)
+    # and returns a string markdown link
     if mentor_info[1]:
         return f"[{mentor_info[0]}]({mentor_info[1]})"
     else:
@@ -105,6 +112,7 @@ def create_link_for_mentor(mentor_info):
 
 def create_link_for_student(student_info):
     # If the github username is only the username preprend the github url.
+    # has additional logic 'cause student info more complicated.
     if student_info[2] == None or student_info[2][0:8] == "https://":
         return create_link_for_mentor(student_info[1:3])
     else:
@@ -122,13 +130,18 @@ def create_single_quarter_table(
 ):
     """
     This returns a single table of information.
+    A Table should be considered a single quarter
     """
 
-    all_results = "\n| Project Name | Repository | One-Pager | Mentors | Students | \
-        External Mentor | TA | \n | --- |  --- | --- | --- | --- | --- | --- |\n"
+    all_results = "\n| Project Name | Repository | One-Pager | Mentor(s) | \
+        Students | External Mentor(s) | TA | \n | --- |  --- | --- | --- | \
+            --- | --- | --- |\n"
 
     for project_info in project_map:
         # Loop over each project in project_map as the main loop
+        # If a project does not appear in the project map then
+        # it will not appear in the table.
+
         [
             project_link,
             project_url,
@@ -149,13 +162,16 @@ def create_single_quarter_table(
         if project_url_valid:
             project_name_info = f"[{project_name}]({project_url})"
         else:
-            project_name_info = f"<!-- markdown-link-check-disable -->[{project_name}]({project_url})<!-- markdown-link-check-enable -->"
+            project_name_info = f"<!-- markdown-link-check-disable \
+                -->[{project_name}]({project_url})<!-- \
+                    markdown-link-check-enable -->"
 
         # If the repo is private than the markdown link checker will fail, so
         # add an exclusion for it in the case of a private repo
         if is_private_repo:
             if github_link:
-                repo_info = f"<!-- markdown-link-check-disable --> [Private Repo]({github_link}) <!-- markdown-link-check-enable -->"
+                repo_info = f"<!-- markdown-link-check-disable --> [Private \
+                    Repo]({github_link}) <!-- markdown-link-check-enable -->"
             else:
                 repo_info = "No Repository"
         else:
@@ -168,7 +184,8 @@ def create_single_quarter_table(
         else:
             one_pager_info = ""
 
-        # Mentor list. split by "&". If there are more than one then make a bullet point list
+        # Mentor list. split by "&". If there are more than one then make a
+        # bullet point list
         mentor_list = [mentor.strip() for mentor in mentor_link.split("&")]
 
         if len(mentor_list) == 1:
@@ -217,6 +234,8 @@ def create_single_quarter_table(
 
 
 if __name__ == "__main__":
+    # The creation of this should be automated
+    # this is pretty lazy.
     all_quarter_info_list = [
         {
             "quarter_name": "Autumn 2023",
@@ -239,6 +258,7 @@ if __name__ == "__main__":
             "student_info_list": WINTER_23_STUDENT,
             "project_map": WINTER_23_PROJECT,
         },
+
     ]
 
     with open("projects.md", "w") as f_handle:
@@ -251,4 +271,15 @@ if __name__ == "__main__":
                 f"<summary><h2>{quarter['quarter_name']}</h2></summary>\n\n"
             )
             f_handle.write(create_single_quarter_table(**quarter))
+            f_handle.write("\n</details>")
+
+        # Append the information from the autumn_2022.md file
+        
+        with open("autumn_2022.md", "r") as aut_f_handle:
+            #t = aut_f_handle.readlines()
+            f_handle.write("\n<details>\n\n")
+            f_handle.write(
+                "<summary><h2>Autumn 2022</h2></summary>\n\n"
+            )
+            f_handle.write(''.join(aut_f_handle.readlines()))
             f_handle.write("\n</details>")
