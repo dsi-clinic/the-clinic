@@ -8,6 +8,7 @@
 
 from all_data import SPRING_23_NAME_MAP, SPRING_23_PROJECT, SPRING_23_STUDENT
 from all_data import WINTER_23_NAME_MAP, WINTER_23_PROJECT, WINTER_23_STUDENT
+from all_data import AUTUMN_23_NAME_MAP, AUTUMN_23_PROJECT, AUTUMN_23_STUDENT
 
 PREAMBLE_TEXT = """### Previous Projects
 
@@ -23,6 +24,33 @@ A few important notes:
 
 # Format: Name which links : [Name to display, github link] -- don't use LI as it breaks.
 ALL_PEOPLE = {
+    "Bill Trok": [
+        "Bill Trok",
+        "https://datascience.uchicago.edu/people/bill-trok/",
+    ],
+    "YJ Choe": ["YJ Choe", "https://yjchoe.github.io/"],
+    "Isaac": ["Isaac Mehlhaff", "http://imehlhaff.net/"],
+    "Rituparno Mandal": [
+        "Rituparno Mandal",
+        "https://scholar.google.co.in/citations?user=ObZopO8AAAAJ&hl=en",
+    ],
+    "Chong Liu": ["Chong Liu", "https://chong-l.github.io/"],
+    "Jonatas Marques": ["Jonatas Marques", "https://jonatasamarques.com/"],
+    "Chris": [
+        "Chris Redmond",
+        "https://datascience.uchicago.edu/people/chris-redmond/",
+    ],
+    "Satadisha Saha Bhowmick": [
+        "Satadisha Saha Bhowmick",
+        "https://datascience.uchicago.edu/people/satadisha-saha-bhowmick/",
+    ],
+    "Eddie": [
+        "Ming-Chieh (Eddie) Liu",
+        "https://datascience.uchicago.edu/people/ming-chieh-eddie-liu/",
+    ],
+    "Jessica J": ["Yuxin Ji (Jessica)", "https://github.com/Yuxin-Ji"],
+    "Yiran": ["Yiran Hao", "https://github.com/chiertu"],
+    "Soham": ["Soham Gurjar", "https://github.com/soham239"],
     "James Turk": ["James Turk", "https://github.com/jamesturk/"],
     "Nick": ["Nick Ross", "https://www.nickross.site/"],
     "Launa": ["Launa Greer", "https://github.com/LaunaG"],
@@ -55,9 +83,16 @@ ALL_PEOPLE = {
     "UT": ["Utkarsh Tripathi", "https://github.com/redgene"],
     "Avery": ["Avery Schoen", "https://github.com/averyschoen"],
     "Sunvid": ["Sunvid Aneja", "https://github.com/sunvidaneja"],
-    "Trevor" : ["Trevor Spreadbury", "https://github.com/trevorspreadbury"],
-    "Riley" : ["Riley Tucker", "https://scholar.google.com/citations?user=j8TVqU8AAAAJ&hl=en"],
-    "Jeffrey" : ["Jeffrey Negrea", "https://scholar.google.ca/citations?user=woSzLBMAAAAJ&hl=en"],
+    "Trevor": ["Trevor Spreadbury", "https://github.com/trevorspreadbury"],
+    "Riley": [
+        "Riley Tucker",
+        "https://scholar.google.com/citations?user=j8TVqU8AAAAJ&hl=en",
+    ],
+    "Jeffrey": [
+        "Jeffrey Negrea",
+        "https://scholar.google.ca/citations?user=woSzLBMAAAAJ&hl=en",
+    ],
+    "Yu-Wei Chen": ["Yu-Wei Chen", "https://github.com/ywchen814"],
 }
 
 
@@ -149,7 +184,9 @@ def create_single_quarter_table(
 
         # Student info. Assume that there is more than one and make a list.
         student_info = "<ul>"
-        student_project_list = [x for x in student_info_list if x[0] == project_link]
+        student_project_list = [
+            x for x in student_info_list if x[0] == project_link
+        ]
         if len(student_project_list) == 0:
             raise Exception(f"No Students found for project {project_link}")
         for student in student_project_list:
@@ -182,6 +219,13 @@ def create_single_quarter_table(
 if __name__ == "__main__":
     all_quarter_info_list = [
         {
+            "quarter_name": "Autumn 2023",
+            "name_map": AUTUMN_23_NAME_MAP,
+            "one_pager_location": "./one-pagers/2023-autumn/",
+            "student_info_list": AUTUMN_23_STUDENT,
+            "project_map": AUTUMN_23_PROJECT,
+        },
+        {
             "quarter_name": "Spring 2023",
             "name_map": SPRING_23_NAME_MAP,
             "one_pager_location": "./one-pagers/2023-spring/",
@@ -194,8 +238,7 @@ if __name__ == "__main__":
             "one_pager_location": "./one-pagers/2023-winter/",
             "student_info_list": WINTER_23_STUDENT,
             "project_map": WINTER_23_PROJECT,
-        }
-
+        },
     ]
 
     with open("projects.md", "w") as f_handle:
