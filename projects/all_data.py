@@ -123,7 +123,7 @@ AUTUMN_23_PROJECT = [
         "Tim & Jonatas Marques",
         "Soham",
         "https://github.com/dsi-clinic/2023-autumn-internet-equity",
-        0,
+        1,
         1,
         "Alexis Schrubbe",
         1,
