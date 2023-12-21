@@ -270,7 +270,7 @@ if __name__ == "__main__":
             f_handle.write(
                 f"<summary><h2>{quarter['quarter']} {quarter['year']}</h2>"
                 f"</summary>\n\n"
-                f"This quarter's pitchbook, which contains the basic project"
+                f"This quarter's pitchbook, which contains the basic project "
                 f"specification can be found "
                 f"[here](./pitchbooks/"
                 f"{quarter['year']}-{quarter['quarter'].lower()}"
