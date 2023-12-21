@@ -89,6 +89,8 @@ This quarter's pitchbook, which contains the basic projectspecification can be f
 
 <summary><h2>Autumn 2022</h2></summary>
 
+This quarter's pitchbook, which contains the basic projectspecification can be found [here](./pitchbooks/2022-autumn-pitchbook.pdf).
+
 
 | Project Name | Students | Mentors | TA | 
 | --- | --- | --- | --- | 

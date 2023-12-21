@@ -247,7 +247,7 @@ if __name__ == "__main__":
         },
         {
             "quarter": "Spring",
-            "year": "2023",      
+            "year": "2023",
             "name_map": SPRING_23_NAME_MAP,
             "student_info_list": SPRING_23_STUDENT,
             "project_map": SPRING_23_PROJECT,
@@ -259,7 +259,6 @@ if __name__ == "__main__":
             "student_info_list": WINTER_23_STUDENT,
             "project_map": WINTER_23_PROJECT,
         },
-
     ]
 
     with open("projects.md", "w") as f_handle:
@@ -286,6 +285,10 @@ if __name__ == "__main__":
             f_handle.write("\n<details>\n\n")
             f_handle.write(
                 "<summary><h2>Autumn 2022</h2></summary>\n\n"
+                "This quarter's pitchbook, which contains the basic project"
+                "specification can be found "
+                "[here](./pitchbooks/"
+                "2022-autumn-pitchbook.pdf).\n\n"
             )
-            f_handle.write(''.join(aut_f_handle.readlines()))
+            f_handle.write("".join(aut_f_handle.readlines()))
             f_handle.write("\n</details>")
