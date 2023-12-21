@@ -122,11 +122,11 @@ def create_link_for_student(student_info):
 
 
 def create_single_quarter_table(
+    quarter,
+    year,
     name_map,
     project_map,
-    one_pager_location,
     student_info_list,
-    quarter_name=None,  # noqa
 ):
     """
     This returns a single table of information.
@@ -179,6 +179,7 @@ def create_single_quarter_table(
 
         # If there is a one pager than add a link to it.
         if has_one_pager:
+            one_pager_location = f"./one-pagers/{year}-{quarter.lower()}/"
             file_info = one_pager_location + project_link + ".pdf"
             one_pager_info = f"[One-Pager]({file_info.replace(' ', '%20')})"
         else:
@@ -238,23 +239,23 @@ if __name__ == "__main__":
     # this is pretty lazy.
     all_quarter_info_list = [
         {
-            "quarter_name": "Autumn 2023",
+            "quarter": "Autumn",
+            "year": "2023",
             "name_map": AUTUMN_23_NAME_MAP,
-            "one_pager_location": "./one-pagers/2023-autumn/",
             "student_info_list": AUTUMN_23_STUDENT,
             "project_map": AUTUMN_23_PROJECT,
         },
         {
-            "quarter_name": "Spring 2023",
+            "quarter": "Spring",
+            "year": "2023",      
             "name_map": SPRING_23_NAME_MAP,
-            "one_pager_location": "./one-pagers/2023-spring/",
             "student_info_list": SPRING_23_STUDENT,
             "project_map": SPRING_23_PROJECT,
         },
         {
-            "quarter_name": "Winter 2023",
+            "quarter": "Winter",
+            "year": "2023",
             "name_map": WINTER_23_NAME_MAP,
-            "one_pager_location": "./one-pagers/2023-winter/",
             "student_info_list": WINTER_23_STUDENT,
             "project_map": WINTER_23_PROJECT,
         },
@@ -268,15 +269,20 @@ if __name__ == "__main__":
         for quarter in all_quarter_info_list:
             f_handle.write("\n<details>\n\n")
             f_handle.write(
-                f"<summary><h2>{quarter['quarter_name']}</h2></summary>\n\n"
+                f"<summary><h2>{quarter['quarter']} {quarter['year']}</h2>"
+                f"</summary>\n\n"
+                f"This quarter's pitchbook, which contains the basic project"
+                f"specification can be found "
+                f"[here](./pitchbooks/"
+                f"{quarter['year']}-{quarter['quarter'].lower()}"
+                f"-pitchbook.pdf).\n\n"
             )
             f_handle.write(create_single_quarter_table(**quarter))
             f_handle.write("\n</details>")
 
         # Append the information from the autumn_2022.md file
-        
+
         with open("autumn_2022.md", "r") as aut_f_handle:
-            #t = aut_f_handle.readlines()
             f_handle.write("\n<details>\n\n")
             f_handle.write(
                 "<summary><h2>Autumn 2022</h2></summary>\n\n"
