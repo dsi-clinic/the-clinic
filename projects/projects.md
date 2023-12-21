@@ -13,6 +13,8 @@ A few important notes:
 
 <summary><h2>Autumn 2023</h2></summary>
 
+This quarter's pitchbook, which contains the basic projectspecification can be found [here](./pitchbooks/2023-autumn-pitchbook.pdf).
+
 
 | Project Name | Repository | One-Pager | Mentor(s) |         Students | External Mentor(s) | TA | 
  | --- |  --- | --- | --- |             --- | --- | --- |
@@ -37,6 +39,8 @@ A few important notes:
 
 <summary><h2>Spring 2023</h2></summary>
 
+This quarter's pitchbook, which contains the basic projectspecification can be found [here](./pitchbooks/2023-spring-pitchbook.pdf).
+
 
 | Project Name | Repository | One-Pager | Mentor(s) |         Students | External Mentor(s) | TA | 
  | --- |  --- | --- | --- |             --- | --- | --- |
@@ -57,6 +61,8 @@ A few important notes:
 <details>
 
 <summary><h2>Winter 2023</h2></summary>
+
+This quarter's pitchbook, which contains the basic projectspecification can be found [here](./pitchbooks/2023-winter-pitchbook.pdf).
 
 
 | Project Name | Repository | One-Pager | Mentor(s) |         Students | External Mentor(s) | TA | 
