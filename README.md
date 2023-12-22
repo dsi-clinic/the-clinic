@@ -5,6 +5,8 @@ This repository contains information and documentation regarding the Data Scienc
 ### Table of Contents
 
 <!-- do not change TOC, generated from script -->
+<!-- `npx markdown-toc -i README.md` --> 
+<!-- tried automating but ran afoul of branch protections.>
 <!-- toc -->
 
   * [People](#people)
