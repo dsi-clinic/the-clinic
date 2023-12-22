@@ -764,14 +764,14 @@ AUTUMN_22_PROJECT = [
     ],
     [
         "Citizen Data",
-        "https://citizendata.com/",
+        "",
         "Jeffrey & Riley",
         "Todd",
         "https://github.com/dsi-clinic/2022-citizendata-clinic",
         1,
         0,
         "",
-        1,
+        0,
     ],
     [
         "Internet Equity",
