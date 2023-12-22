@@ -41,7 +41,7 @@ If you want to receive an "A" on this assignment, _make sure to follow the [rubr
 
 ### Final Deliverables
 
-There are three sets of final deliverables for each project:
+The final deliverables for each project include:
 
 ##### Code 
 
@@ -56,6 +56,11 @@ There is a one pager that also needs to be completed as part of the final submis
 ##### Final Video 
 
 A short video presentation is also required. Two drafts and a final submission are to be completed according to the [rubric](./rubrics/final-video.md).
+
+##### External Partner Email
+
+Each team should designate one person to send a final email to the external partner with the video, one-pager and link to the code they developed.
+
 
 ## Additional Tutorials
 
