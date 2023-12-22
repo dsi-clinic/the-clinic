@@ -23,9 +23,9 @@ The Syllabus, including all course expectations can be found [here](./syllabus/s
 
 Each week you are required to upload a planning and progress doc (due dates are specific to your project and can be found on Canvas). 
 
-The planning doc can be found [here](./templates/planning-doc.md) in markdown format. There is a [rubric](./rubrics/planning-doc-rubric.md).
+The planning doc can be found [here](./templates/planning-doc.md) in markdown format. There is a rubric [here](./rubrics/planning-doc-rubric.md).
 
-The progress doc can be found [here](./templates/progress-doc.md) in markdown format. There is a [rubric](./rubrics/progress-doc-rubric.md).
+The progress doc can be found [here](./templates/progress-doc.md) in markdown format. There is a rubric [here](./rubrics/progress-doc-rubric.md).
 
 Note that in the directory `templates` directory you can also find MS-word versions of the two documents.
 
@@ -51,7 +51,7 @@ For the final code submission you will need to fill out the worksheet [here](./t
 
 ##### One Pager
 
-There is a one pager that also needs to be completed as part of the final submission. One draft of the one pager is also required. Grading rubrics for both can be found [here](./rubrics/one-pager.md).
+There is a one pager that also needs to be completed as part of the final submission. One draft of the one pager is required. Grading rubrics can be found [here](./rubrics/one-pager.md) and a template can be found [here](./templates/one-pager-template.docx).
 
 ##### Final Video 
 
