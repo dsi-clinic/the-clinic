@@ -5,6 +5,7 @@
 from all_data import SPRING_23_NAME_MAP, SPRING_23_PROJECT, SPRING_23_STUDENT
 from all_data import WINTER_23_NAME_MAP, WINTER_23_PROJECT, WINTER_23_STUDENT
 from all_data import AUTUMN_23_NAME_MAP, AUTUMN_23_PROJECT, AUTUMN_23_STUDENT
+from all_data import AUTUMN_22_NAME_MAP, AUTUMN_22_PROJECT, AUTUMN_22_STUDENT
 
 
 PREAMBLE_TEXT = """<!--- This file is generated from a script DO NOT EDIT \
@@ -100,6 +101,10 @@ ALL_PEOPLE = {
         "https://scholar.google.ca/citations?user=woSzLBMAAAAJ&hl=en",
     ],
     "Yu-Wei Chen": ["Yu-Wei Chen", "https://github.com/ywchen814"],
+    "Amanda": ["Amanda Kube", "https://github.com/amandakube"],
+    "Evelyn": ["Evelyn Campbell", "https://github.com/campbelle1"],
+    "Utkarsh": ["Utkarsh Tripathi", "https://github.com/redgene"],
+    "Susanna": ["Susanna Lange", "https://github.com/SusannaLange"],
 }
 
 
@@ -261,6 +266,13 @@ if __name__ == "__main__":
             "student_info_list": WINTER_23_STUDENT,
             "project_map": WINTER_23_PROJECT,
         },
+        {
+            "quarter": "Autumn",
+            "year": "2022",
+            "name_map": AUTUMN_22_NAME_MAP,
+            "student_info_list": AUTUMN_22_STUDENT,
+            "project_map": AUTUMN_22_PROJECT,
+        },
     ]
 
     with open("projects.md", "w") as f_handle:
@@ -279,18 +291,4 @@ if __name__ == "__main__":
                 f"-pitchbook.pdf).\n\n"
             )
             f_handle.write(create_single_quarter_table(**quarter))
-            f_handle.write("\n</details>")
-
-        # Append the information from the autumn_2022.md file
-
-        with open("autumn_2022.md", "r") as aut_f_handle:
-            f_handle.write("\n<details>\n\n")
-            f_handle.write(
-                "<summary><h2>Autumn 2022</h2></summary>\n\n"
-                "This quarter's pitchbook, which contains the basic project"
-                "specification can be found "
-                "[here](./pitchbooks/"
-                "2022-autumn-pitchbook.pdf).\n\n"
-            )
-            f_handle.write("".join(aut_f_handle.readlines()))
             f_handle.write("\n</details>")
