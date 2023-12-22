@@ -2,7 +2,7 @@
 
 This document contains a short form that you need to fill out and submit on canvas. 
 
-There is a MS-WORD also in this repository if you wish to use that instead.
+There is a [MS-WORD](./final-technical-submission.docx) in this repository if you wish to use that instead.
 
 | Name of Project | | 
 | --- | --- | 
