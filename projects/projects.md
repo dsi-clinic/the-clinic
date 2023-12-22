@@ -1,10 +1,11 @@
+<!--- This file is generated from a script DO NOT EDIT DIRECTLY -->
 ### Previous Projects
 
-This page contains a list of projects organized by quarter with the list of     students who worked on the project and the faculty mentor. Note that the         dates listed below are by _calendar year_ not academic year.
+This page contains a list of projects organized by quarter with the list of students who worked on the project and the faculty mentor. Note that the dates listed below are by _calendar year_ not academic year.
 
 A few important notes:
-* Not all projects have complete information. Some of the projects are under     NDAs or other specifications (such as UChicago not hosting the repo).
-* The requirements for the project have changed year over year and are     sometimes project specific.
+* Not all projects have complete information. Some of the projects are under NDAs or other specifications (such as UChicago not hosting the repo).
+* The requirements for the project have changed year over year and are sometimes project specific.
 
 ---
 
