@@ -28,7 +28,6 @@ The Data Science Clinic is administered by [Nick Ross](https://nickross.site) an
 
 You can find information on Data Science Clinic Coding Standards and expectations [here](./coding-standards/coding-standards.md).
 
-
 ### Weekly Calendar
 
 You can find a weekly calendar [here](./syllabus/weekly-plan.md). 
@@ -51,7 +50,7 @@ Note that in the `templates` directory you can also find MS-word versions of the
 
 The first week org report can also be found in the `templates` directory in a MS-WORD format. There is a markdown version [here](./templates/week-1-org-report.md). Grading for this is simple: if it is turned in on time and complete it receives full credit, otherwise zero.
 
-### Mid quarter presentation
+### Mid-quarter presentation
 
 In week 6 of the clinic students will be required to complete a short mid-quarter presentation. There is a template for the presentation in the directory `templates`. 
 
