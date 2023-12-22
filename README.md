@@ -2,43 +2,50 @@
 
 This repository contains information and documentation regarding the Data Science Clinic at the University of Chicago.
 
-### Table of Contents
+# Table of Contents
 
 <!-- do not change TOC, generated from script -->
 <!-- `npx markdown-toc -i README.md` --> 
 <!-- tried automating but ran afoul of branch protections.>
+
 <!-- toc -->
 
+- [Logistics](#logistics)
   * [People](#people)
-  * [Coding Standards](#coding-standards)
   * [Weekly Calendar](#weekly-calendar)
+- [Documents](#documents)
   * [Syllabus](#syllabus)
   * [Progress and Planning Docs](#progress-and-planning-docs)
   * [First Week Org Report](#first-week-org-report)
-  * [Mid quarter presentation](#mid-quarter-presentation)
-  * [Finals Week Deliverables](#finals-week-deliverables)
+  * [Mid-quarter presentation](#mid-quarter-presentation)
+- [Finals Week Deliverables](#finals-week-deliverables)
 - [Additional Tutorials and Assistance](#additional-tutorials-and-assistance)
-- [Previous Quarter Projects](#previous-quarter-projects)
+- [Previous Projects](#previous-projects)
+- [Coding Standards](#coding-standards)
 
 <!-- tocstop -->
 
-### People
+# Logistics 
+
+This section contains information on important logistics and contact information for the clinic.
+
+## People
 
 The Data Science Clinic is administered by [Nick Ross](https://nickross.site) and [Tim Hannifan](https://www.linkedin.com/in/tim-hannifan/). Questions about the clinic should be addressed to them either over slack or via their UChicago email addresses.  
 
-### Coding Standards
-
-You can find information on Data Science Clinic Coding Standards and expectations [here](./coding-standards/coding-standards.md).
-
-### Weekly Calendar
+## Weekly Calendar
 
 You can find a weekly calendar [here](./syllabus/weekly-plan.md). 
 
-### Syllabus
+# Documents 
+
+This section contains links to many of the important documents used in the clinic. 
+
+## Syllabus
 
 The Syllabus, including all course expectations can be found [here](./syllabus/syllabus.md).
 
-### Progress and Planning Docs
+## Progress and Planning Docs
 
 Each week you are required to upload a planning and progress doc (due dates are specific to your project and can be found on Canvas). 
 
@@ -48,17 +55,17 @@ The progress doc can be found [here](./templates/progress-doc.md) in markdown fo
 
 Note that in the `templates` directory you can also find MS-word versions of the two documents.
 
-### First Week Org Report
+## First Week Org Report
 
 The first week org report can also be found in the `templates` directory in a MS-WORD format. There is a markdown version [here](./templates/week-1-org-report.md). Grading for this is simple: if it is turned in on time and complete it receives full credit, otherwise zero.
 
-### Mid-quarter presentation
+## Mid-quarter presentation
 
 In week 6 of the clinic students will be required to complete a short mid-quarter presentation. There is a template for the presentation in the directory `templates`. 
 
 If you want to receive an "A" on this assignment, _make sure to follow the [rubric](./rubrics/mid-quarter-presentation-rubric.md) precisely_.
 
-### Finals Week Deliverables
+# Finals Week Deliverables
 
 As this is a projects based course most of the work is designed around a set of final deliverables. There are four set of requirements, each with their own rubric that you can find in the table below. These are to be completed during the last week of the quarter and finals week.
 
@@ -71,7 +78,7 @@ As this is a projects based course most of the work is designed around a set of 
 | Partner Email | Each team should designate one person to send a final email to the external partner with the video, one-pager and link to the code they developed. | Information on requirements for this email can be found [here](./rubrics/final-email.md). | 
 
 
-## Additional Tutorials and Assistance
+# Additional Tutorials and Assistance
 
 We keep a list of frequently asked questions and answers as well as "How-to"'s for specific technologies in this repo:
 
@@ -91,6 +98,10 @@ Finally, The University of Chicago's Computer Science Department has an in-depth
 
 If you need help using Unix, docker or any of the tools used in the clinic this is an invaluable resource.
 
-## Previous Quarter Projects
+# Previous Projects
 
 We keep information on all of our previous projects [here](./projects/projects.md).
+
+# Coding Standards
+
+You can find information on Data Science Clinic Coding Standards and expectations [here](./coding-standards/coding-standards.md).
