@@ -13,6 +13,7 @@ Please, before submitting, make sure that your document follows the dos and donâ
 * 200-300 words written in the 3rd person (preferred) or 1st person plural and in past tense.
 * One or two interesting / exciting images or tables. 
 * All images and words need to fit on a single page.
+* Use the template found [here](../templates/one-pager-template.docx)
 
 ### Logistics and Timing 
 A draft is due before the final submission. Both submission dates and times can be found on Canvas. After your draft is submitted, you will receive feedback from your mentor on specific improvements that need to be made.
