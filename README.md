@@ -47,7 +47,7 @@ We expect all TA sessions and mentor meetings (unless the mentor chooses otherwi
 
 ## People
 
-The Data Science Clinic is administered by [Nick Ross](https://nickross.site) and [Tim Hannifan](https://www.linkedin.com/in/tim-hannifan/). Questions about the clinic should be addressed to them either over slack or via their UChicago email addresses.  
+The Data Science Clinic is administered by [Nick Ross](https://nickross.site) and [Tim Hannifan](https://github.com/timhannifan). Questions about the clinic should be addressed to them either over slack or via their UChicago email addresses.  
 
 ## Weekly Calendar
 
