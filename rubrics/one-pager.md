@@ -10,15 +10,17 @@ Please, before submitting, make sure that your document follows the dos and don�
 
 ### Requirements 
 * One page PDF document submitted to Canvas. **No Word docs, Google Drive links, etc.**
-* 200-300 words written in the 3rd person (preferred) or 1st person plural and in past tense.
+* 150-200 words written in the 3rd person (preferred) or 1st person plural and in past tense.
 * One or two interesting / exciting images or tables. 
 * All images and words need to fit on a single page.
-* Use the template found [here](../templates/one-pager-template.docx)
+* Use the template found [here](../templates/one-pager-template.docx).
 
 ### Logistics and Timing 
 A draft is due before the final submission. Both submission dates and times can be found on Canvas. After your draft is submitted, you will receive feedback from your mentor on specific improvements that need to be made.
 
 Mentors will provide feedback and grading on the draft. However final grades will be applied by the data science clinic staff and faculty.
+
+There is a short example write-up at the end of this document to give you a sense of the expectations of the level of formality and detail we are expecting.
 
 ### Grading 
 You will receive a separate grade for the draft and the final version. Each team member will receive the same grade. You will be graded on the following factors:
@@ -64,7 +66,6 @@ Draft documents should demonstrate a significant level of both effort and polish
 ### Late Policy
 Assignments submitted after the due date will receive a grade of zero.
 
-
 ### Grader Notes
 
 When grading the draft one pager, keep in mind that this is not an academic one pager or something that would be sent to a conference.
@@ -79,3 +80,11 @@ Because of this we try to make the style as uniform as possible and the writing 
 When grading the draft presentation, please make sure that the requirements below are followed explicitly and aggressively knock points off for failing to fulfill them. In terms of grading standards, generally speaking we expect that most of the submissions will fall within a band 23-28 points (out of the 30 possible), with occasional really good ones hitting higher marks.
 
 Assuming that a student group follows nearly all the requirements and the Do’s and Don’t below, there are no significant grammar or formatting issues and the writing only needs slight improvement, the grade would be about a 27/30.
+
+### Example 
+
+The following is an example of the level of writing we are expecting. Note that the below is less than 200 words and is only the text. For the one pager we would expect two or three interesting images as well as the use of DSI Letterhead.
+
+| Example Write-up | 
+| --- | 
+| <p>American Family Insurance is a Fortune 500 private insurance company based in the Midwest. As part of their risk assessment activities, they asked the University of Chicago’s Data Science clinic to develop a model which classifies a house’s architectural style based on an image. This is important to AmFam since the architectural style has a significant impact on the costs of reconstruction in the case of an insurance claim.<br><br>The team developed multiple deep learning models to classify the images but ran into a problem with unbalanced data. Specifically, there were architectural styles that didn’t have enough data to build an accurate classifier.  The team decided to leverage state of the art generative models to create fake images that could be used to train the main classifier.<br><br>While the quality of these generated images requires improvement for use as artificial data, this initiative laid the groundwork for reducing the time and resources required for data balancing. At the end of the quarter, the precision of our classifiers was stable across models but varied widely from 14% to 83% across architectural styles. Future work could include improving the quality of generated images to increase the precision across different styles.  </p>| 
