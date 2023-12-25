@@ -11,6 +11,8 @@ This repository contains information and documentation regarding the Data Scienc
 <!-- toc -->
 
 - [Logistics](#logistics)
+  * [Meeting times / Simultaneous Enrollment](#meeting-times--simultaneous-enrollment)
+  * [In-person requirements](#in-person-requirements)
   * [People](#people)
   * [Weekly Calendar](#weekly-calendar)
 - [Documents](#documents)
@@ -28,6 +30,20 @@ This repository contains information and documentation regarding the Data Scienc
 # Logistics 
 
 This section contains information on important logistics and contact information for the clinic.
+
+## Meeting times / Simultaneous Enrollment
+
+During the first week of clinic students are expected to meet at the time specified in the schedule, commonly TuTh 5-6:20, for orientation and introduction activities. 
+
+During the first week, each project will identify meeting times specific to their project (two TA sessions and one mentor sessions). These meeting times are dependent on the TA, Mentor(s) and students schedule. These meeting times will be used for the rest of the quarter.
+
+During the sixth week of the quarter there are a set of mid-quarter presentations. These presentations are not required for all team members -- though failing to support your team is a bad signal. The mid-quarter presentations are in-person and in the room scheduled for the class.
+
+Since outside the times listed above we do not meet during the scheduled time it is not uncommon for students to enroll in a class with some overlap. If you do have a course which has some overlap or conflict with the scheduled time you may need to fill out a "Simultaneous Enrollment" form with your advisor. If this is the case please send an email to the clinic director stating that you will be doing this.
+
+## In-person requirements
+
+We expect all TA sessions and mentor meetings (unless the mentor chooses otherwise) to be done _in-person_ during normal business hours. If your schedule makes it difficult to be on the Hyde Park Campus during normal business hours, such as being in a program based down town or another commitment which takes you off campus for significant time then we recommend _not_ taking this course.
 
 ## People
 
