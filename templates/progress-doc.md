@@ -2,7 +2,7 @@
 
 The progress document should summarize the work that each team member completed in the previous week. 
 
-Note that this report can be filled out either in Markdown or using the Microsoft word template in this same directory.
+This report can be filled out either in Markdown or using the [Microsoft Word Template](./progress-doc.docx). In either case please make sure to submit the document via Canvas by the assigned date and time.
 
 
 ## Requirements 
