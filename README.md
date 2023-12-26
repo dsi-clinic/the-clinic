@@ -11,6 +11,7 @@ This repository contains information and documentation regarding the Data Scienc
 <!-- toc -->
 
 - [Logistics](#logistics)
+  * [Application Information](#application-information)
   * [Meeting times / Simultaneous Enrollment](#meeting-times--simultaneous-enrollment)
   * [In-person requirements](#in-person-requirements)
   * [People](#people)
@@ -26,7 +27,6 @@ This repository contains information and documentation regarding the Data Scienc
 - [Coding Standards](#coding-standards)
 
 <!-- tocstop -->
-
 
 # Logistics 
 
