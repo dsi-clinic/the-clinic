@@ -27,9 +27,16 @@ This repository contains information and documentation regarding the Data Scienc
 
 <!-- tocstop -->
 
+
 # Logistics 
 
 This section contains information on important logistics and contact information for the clinic.
+
+## Application Information
+
+Students must apply to take the Data Science Clinic. An information session is held a few weeks before the start of each quarter which describes the application process as well as the available projects.
+
+For more information on the application process including dates for upcoming information sessions, please go [here](https://sites.google.com/uchicago.edu/dsclinic).
 
 ## Meeting times / Simultaneous Enrollment
 
