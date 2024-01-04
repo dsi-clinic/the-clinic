@@ -1,7 +1,7 @@
 ## Week #1 Report
 To receive full credit for this week’s report, please fill out the following information as a group. 
 
-Note that this report can be filled out either in Markdown or using the Microsoft word template in this same directory.
+Note that this report can be filled out either in Markdown or using the Microsoft word template [in this same directory](./week-1-org-report.docx).
 
 Note that if there are any issues filling this out with unresponsive group mates, TA or mentor, please DM either Nick Ross or Tim Hannifan. 
 
