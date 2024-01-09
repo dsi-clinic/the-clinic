@@ -25,6 +25,7 @@ This repository contains information and documentation regarding the Data Scienc
 - [Additional Tutorials and Assistance](#additional-tutorials-and-assistance)
 - [Previous Projects](#previous-projects)
 - [Coding Standards](#coding-standards)
+- [TA and Mentor Information](#ta-and-mentor-information)
 
 <!-- tocstop -->
 
