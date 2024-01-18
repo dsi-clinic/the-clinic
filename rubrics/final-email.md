@@ -6,9 +6,9 @@ This is a professionally written email thanking them for the opportunity to work
 
 This email should contain the following links and documents:
 
-1. A link your final presentation. Generally it is okay to share via a good drive link. **However**, if you are working on an industry project or one with an NDA, please make sure that whatever sharing method you use targets the sharing to only the intended recipients. 
+1. A link your final presentation. Generally it is okay to share via a google drive link. **However**, if you are working on an industry project or one with an NDA, please make sure that whatever sharing method you use targets the sharing to only the intended recipients. 
 2. A copy of the final one pager (in pdf form).
-3. A link to the github repository and code produced. You should also verify that the external mentors have access to the github repository. If they do not please contact the clinic director to update their access.
+3. A link to the github repository and code produced. You should also verify that the external mentors have access to the github repository. 
 
 The email should also contain a short summary which:
 1. Thanks the external mentors for their time during and before the quarter.

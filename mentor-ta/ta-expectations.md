@@ -9,6 +9,7 @@ TAs are expected to:
 - Assist with git operations, including evaluating and merging pull requests.
 - Meet with external mentors as needed.
 - Provide support for various assessment mechanisms.
+- Evaluate, during finals week, up to two repositories using the checklist found [here](../rubrics/final-technical-cleanup.md).
 
 ### Conducting TA Sessions
 
