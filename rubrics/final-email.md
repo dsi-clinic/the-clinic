@@ -1,6 +1,8 @@
 # Final Email
 
-Upon finishing the video, one-pager and code requirements, all groups need to send a summary email to their external mentors.
+Upon finishing the video, one-pager and code requirements, all groups need to send a summary email to their external mentors, TAs, students and clinic administrators.
+
+This is a professionally written email thanking them for the opportunity to work on the project as well as information on the final results.
 
 This email should contain the following links and documents:
 
@@ -12,18 +14,30 @@ The email should also contain a short summary which:
 1. Thanks the external mentors for their time during and before the quarter.
 1. States that this is the final deliverable for this quarter and if there are any additional questions they should contact the clinic director directly.
 
-The email should include the following parties:
-1. All of the external mentors.
-1. All of the students.
-1. The internal mentor(s) and TA.
-1. The clinic director and assistant clinic director (Nick Ross and Tim Hannifan).
-
 ## Grading Rubric
-- [ ] Does the email contain (1) links to final video, (2) One pager in PDF Form and (3) link to the github repository.
-- [ ] Does the external mentor have access to the github repository
-- [ ] Are the sharing rules set up appropriately for any information sent via google drive/dropbox/etc.
-- [ ] Are all students included on the email?
-- [ ] Is the TA and the internal mentor(s) included on the email?
-- [ ] Is the clinic director and assistant clinic director included on the email?
-- [ ] Is the email written in a professional manner? 
+- [ ] Does the email contain:
+    1. A link to final video
+    2. The one pager in PDF Form
+    3. A link to the github repository
+- [ ] Does the external mentor have access to the github repository?
+    - If not, please ask them in the final email what their github ID is so they can be added if they would like.
+- [ ] Are the sharing rules set up appropriately for any information sent via google drive/dropbox/etc?
+- [ ] Are the correct email addresses on the email:
+    1. All students
+    2. TA and Internal Mentor
+    3. All external mentors you have worked with
+    4. Clinic Director and Asst. Clinic Director
+- [ ] Is the email written in a professional manner?
 - [ ] Are there grammar or formatting errors in the email?
+
+
+### F.A.Q.
+
+
+| We only met with our external mentor once during the quarter, do we still need to send them an email?    |
+| ----------- |
+| Yes. Each external mentor chooses their level of clinic participation differently. Please remember that the external mentor is human, they are not getting paid to provide their time and the quarters are short. Mentors may want to meet more frequently, but there may be higher priorities or life things that may occur which prevent that from happening. |
+
+| We aren't sure who to include on the email. We had some mentors that were in every meeting, but some who only showed up occasionally. |
+| --- |
+| This is not uncommon! In this case use your best judgement and ask your internal mentor their thoughts. One option if you aren't sure is to mention, in the email that you were not sure if they should be included or not. |
