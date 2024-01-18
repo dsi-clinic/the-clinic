@@ -2,10 +2,7 @@
 
 The purpose of this document is to describe the final code clean up steps to be completed at the end of a data science institute project. This checklist should be considered a set of requirements and while it is possible that some of the items below should not be done, there should be a significant and obvious reason why they are not completed. If a project is not following the below that information needs to be sent to the clinic director and assistant director by email.
 
-- [ ] Does the code repository conform to all standards laid out in the [Code Repository Standards document](../coding-standards/coding-standards.md#requirements) in this repo?
-
-
-These steps are presented in checklist form for ease of evaluation. 
+While we want all code to follow the [Code Repository Standards document](../coding-standards/coding-standards.md#requirements), we use the checklist below to focus on specific items which we will grade.
 
 ## Grading Rubric
 
