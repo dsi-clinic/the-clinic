@@ -77,7 +77,7 @@ AUTUMN_23_PROJECT = [
         1,
         "Caleb Braun",
         1,
-        1,    
+        1,
     ],
     [
         "CPL",
