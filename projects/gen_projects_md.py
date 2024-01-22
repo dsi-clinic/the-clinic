@@ -21,8 +21,9 @@ A few important notes:
 NDAs or other specifications (such as UChicago not hosting the repo).
 * The requirements for the project have changed year over year and are \
 sometimes project specific.
-* Projects designated by a "&#8224;" were funded by [The 11th hour foundation](https://11thhourproject.org/).
-
+* Projects designated by a "&#8224;" were funded by <!-- \
+markdown-link-check-disable -->[The 11th hour foundation]\
+    (https://11thhourproject.org/)<!-- markdown-link-check-enable -->.
 ---
 """
 

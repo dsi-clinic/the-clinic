@@ -6,8 +6,7 @@ This page contains a list of projects organized by quarter with the list of stud
 A few important notes:
 * Not all projects have complete information. Some of the projects are under NDAs or other specifications (such as UChicago not hosting the repo).
 * The requirements for the project have changed year over year and are sometimes project specific.
-* Projects designated by a "&#8224;" were funded by [The 11th hour foundation](https://11thhourproject.org/).
-
+* Projects designated by a "&#8224;" were funded by <!-- markdown-link-check-disable -->[The 11th hour foundation]    (https://11thhourproject.org/)<!-- markdown-link-check-enable -->.
 ---
 
 
