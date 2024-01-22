@@ -140,8 +140,8 @@ def create_single_quarter_table(
     A Table should be considered a single quarter
     """
 
-    all_results = "\n| Project Name | Repository | One-Pager | Mentor(s) | \
-        Students | External Mentor(s) | TA | \n | --- |  --- | --- | --- | \
+    all_results = "\n| Org. Name | Project Desc. | Repository | One-Pager | Mentor(s) | \
+        Students | External Mentor(s) | TA | \n | --- | --- |  --- | --- | --- | \
             --- | --- | --- |\n"
 
     for project_info in project_map:
@@ -151,6 +151,7 @@ def create_single_quarter_table(
 
         [
             project_link,
+            project_description,
             project_url,
             mentor_link,
             ta_link,
@@ -228,6 +229,7 @@ def create_single_quarter_table(
         project_line = " | ".join(
             [
                 project_name_info,
+                project_description,
                 repo_info,
                 one_pager_info,
                 mentor_info,
