@@ -1,15 +1,16 @@
 # There are 3 structures required for a quarter:
 # XXX_YEAR_PROJECT: This is a list of lists
 #   items should be:
-#        1. name
-#        2. url
-#        3. mentor
-#        4. TA
-#        5. github location
-#        6. flag 1/0 for if repo is private or not
-#        7. if there is a one-pager 1/0
-#        8. External Mentor Info
-#        9. if the URL (item 2) can pass the github link test
+#        1. org name
+#        2. project description
+#        3. url
+#        4. mentor
+#        5. TA
+#        6. github location
+#        7. flag 1/0 for if repo is private or not
+#        8. if there is a one-pager 1/0
+#        9. External Mentor Info
+#        10. if the URL (item 2) can pass the github link test
 
 # XXX_YEAR_STUDENT is a list of lists
 #   items should be:
@@ -26,6 +27,7 @@
 AUTUMN_23_PROJECT = [
     [
         "AmFam",
+        "Generative Models for housing images",
         "https://www.amfam.com/",
         "Anna",
         "Eddie",
@@ -37,6 +39,8 @@ AUTUMN_23_PROJECT = [
     ],
     [
         "Argonne",
+        'Operational requirement management using graph based knowledge\
+            networks',
         "https://www.anl.gov/",
         "Bill Trok & YJ Choe",
         "Yu-Wei Chen",
@@ -48,6 +52,7 @@ AUTUMN_23_PROJECT = [
     ],
     [
         "Argonne-Fermi",
+        'NLP to identify "lessons learned" in project documents',
         "https://www.anl.gov/",
         "Isaac",
         "Jessica J",
@@ -59,6 +64,7 @@ AUTUMN_23_PROJECT = [
     ],
     [
         "Climate Cabinet",
+        "Creation of a searchable database of campaign contributions",
         "https://climatecabinet.org/",
         "Trevor",
         "Avery",
@@ -70,6 +76,7 @@ AUTUMN_23_PROJECT = [
     ],
     [
         "CPL",
+        "Determinants of library branch usage",
         "https://www.chipublib.org/",
         "Tim",
         "Yiran",
@@ -81,6 +88,7 @@ AUTUMN_23_PROJECT = [
     ],
     [
         "Fermi-simulations",
+        "project description",
         "https://computing.fnal.gov/kevin-pedro/",
         "Rituparno Mandal & Peter",
         "Eddie",
@@ -92,6 +100,7 @@ AUTUMN_23_PROJECT = [
     ],
     [
         "Fermi-gnn",
+        "project description",
         "https://computing.fnal.gov/giuseppe-cerati/",
         "Chong Liu",
         "Jessica J",
@@ -103,6 +112,7 @@ AUTUMN_23_PROJECT = [
     ],
     [
         "HAPA",
+        "project description",
         "https://www.hapahi.org/",
         "Rahim & Trevor",
         "Victor",
@@ -114,6 +124,7 @@ AUTUMN_23_PROJECT = [
     ],
     [
         "Internet Equity",
+        "project description",
         "https://internetequity.uchicago.edu/",
         "Tim & Jonatas Marques",
         "Soham",
@@ -125,6 +136,7 @@ AUTUMN_23_PROJECT = [
     ],
     [
         "IRC",
+        "project description",
         "https://www.rescue.org/",
         "Rahim",
         "Avery",
@@ -136,6 +148,7 @@ AUTUMN_23_PROJECT = [
     ],
     [
         "Morningstar",
+        "project description",
         "https://www.morningstar.com/",
         "Patricia & David U.",
         "Soham",
@@ -147,6 +160,7 @@ AUTUMN_23_PROJECT = [
     ],
     [
         "Perpetual",
+        "project description",
         "https://www.perpetualuse.org/",
         "Rahim",
         "Yiran",
@@ -158,6 +172,7 @@ AUTUMN_23_PROJECT = [
     ],
     [
         "Prudential",
+        "project description",
         "https://www.prudential.com/",
         "Nick",
         "Sunvid",
@@ -169,6 +184,7 @@ AUTUMN_23_PROJECT = [
     ],
     [
         "RAFI",
+        "project description",
         "https://www.rafiusa.org/",
         "Todd & Chris",
         "Sunvid",
@@ -180,6 +196,7 @@ AUTUMN_23_PROJECT = [
     ],
     [
         "UNI",
+        "project description",
         "https://coe.uni.edu/curriculum-instruction/directory/taraneh-matloob-haghanikar-phd",
         "Satadisha Saha Bhowmick",
         "Victor",
@@ -274,6 +291,7 @@ WINTER_23_NAME_MAP = {"PCDC": "Pediatric Cancer Data Commons"}
 WINTER_23_PROJECT = [
     [
         "Argonne",
+        "project description",
         "https://www.anl.gov/",
         "Rahim & Trevor",
         None,
@@ -285,6 +303,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "BankTrack",
+        "project description",
         "https://www.banktrack.org/",
         "Trevor & Patricia",
         None,
@@ -296,6 +315,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "Blue Ocean Gear",
+        "project description",
         "https://www.blueoceangear.com/",
         "Trevor",
         "Todd",
@@ -307,6 +327,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "BPI",
+        "project description",
         "https://www.impactforequity.org/",
         "Riley",
         "Kenia",
@@ -318,6 +339,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "DRW",
+        "project description",
         "https://drw.com/",
         "Nick",
         None,
@@ -329,6 +351,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "Fermi",
+        "project description",
         "https://computing.fnal.gov/michael-kirby/",
         "Peter",
         "Todd",
@@ -340,6 +363,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "First Republic Bank",
+        "project description",
         "https://www.firstrepublic.com/",
         "Nick",
         None,
@@ -351,6 +375,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "GreenWave",
+        "project description",
         "https://www.greenwave.org/",
         "Trevor",
         None,
@@ -362,6 +387,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "Invenergy",
+        "project description",
         "https://invenergy.com/",
         "Anna",
         "UT",
@@ -373,6 +399,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "Morningstar",
+        "project description",
         "https://www.morningstar.com/",
         "David U. & Patricia",
         "UT",
@@ -384,6 +411,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "PCDC",
+        "project description",
         "https://commons.cri.uchicago.edu/pcdc/",
         "Tim",
         None,
@@ -395,6 +423,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "Perpetual",
+        "project description",
         "https://www.perpetualuse.org/",
         "Rahim",
         None,
@@ -406,6 +435,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "Prudential",
+        "project description",
         "https://www.prudential.com/",
         "Nick",
         None,
@@ -417,6 +447,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "RISC",
+        "project description",
         "https://risc.uchicago.edu/",
         "Jeffrey",
         "Anthony",
@@ -428,6 +459,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "Neurocritical Care",
+        "project description",
         "https://profiles.uchicago.edu/profiles/display/17338286",
         "Yuetian",
         "Anthony",
@@ -439,6 +471,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "Internet Equity",
+        "project description",
         "https://internetequity.uchicago.edu/",
         "James Turk",
         "Kenia",
@@ -529,6 +562,7 @@ WINTER_23_STUDENT = [
 SPRING_23_PROJECT = [
     [
         "Argonne",
+        "project description",
         "https://www.anl.gov/",
         "Rahim",
         "Christian",
@@ -540,6 +574,7 @@ SPRING_23_PROJECT = [
     ],
     [
         "Blue Ocean Gear",
+        "project description",
         "https://www.blueoceangear.com/",
         "Launa",
         None,
@@ -551,6 +586,7 @@ SPRING_23_PROJECT = [
     ],
     [
         "CRI-SET",
+        "project description",
         "https://pediatrics.uchicago.edu/research/set",
         "Anna & Dan N.",
         "Anthony K",
@@ -562,6 +598,7 @@ SPRING_23_PROJECT = [
     ],
     [
         "DRW",
+        "project description",
         "https://drw.com/",
         "Tim",
         None,
@@ -573,6 +610,7 @@ SPRING_23_PROJECT = [
     ],
     [
         "Fermi",
+        "project description",
         "https://computing.fnal.gov/michael-kirby/",
         "Peter",
         "Ali",
@@ -584,6 +622,7 @@ SPRING_23_PROJECT = [
     ],
     [
         "FRB",
+        "project description",
         "https://www.firstrepublic.com/",
         "Nick",
         None,
@@ -595,6 +634,7 @@ SPRING_23_PROJECT = [
     ],
     [
         "Hawaii",
+        "project description",
         "https://tsffoundation.org/",
         "Launa",
         "Ali",
@@ -606,6 +646,7 @@ SPRING_23_PROJECT = [
     ],
     [
         "IE",
+        "project description",
         "https://internetequity.uchicago.edu/",
         "James Turk",
         "Kenia",
@@ -617,6 +658,7 @@ SPRING_23_PROJECT = [
     ],
     [
         "Morningstar",
+        "project description",
         "https://www.morningstar.com/",
         "Patricia & David U.",
         "Christian",
@@ -628,6 +670,7 @@ SPRING_23_PROJECT = [
     ],
     [
         "Neurocritical Care",
+        "project description",
         "https://scholar.google.com/citations?user=cs_tgvwAAAAJ&hl=en",
         "Yuetian",
         "Anthony",
@@ -639,6 +682,7 @@ SPRING_23_PROJECT = [
     ],
     [
         "Perpetual",
+        "project description",
         "https://www.perpetualuse.org/",
         "Rahim",
         None,
@@ -650,6 +694,7 @@ SPRING_23_PROJECT = [
     ],
     [
         "Prudential",
+        "project description",
         "https://www.prudential.com/",
         "Nick",
         "Kenia",
@@ -720,6 +765,7 @@ SPRING_23_NAME_MAP = {
 AUTUMN_22_PROJECT = [
     [
         "AmFam",
+        "project description",
         "https://www.amfam.com/",
         "Tim & Rahim & Yuetian",
         "Anthony K",
@@ -731,6 +777,7 @@ AUTUMN_22_PROJECT = [
     ],
     [
         "BankTrack",
+        "project description",
         "",
         "Launa",
         "Anthony K",
@@ -742,6 +789,7 @@ AUTUMN_22_PROJECT = [
     ],    
     [
         "Blue Ocean Gear",
+        "project description",
         "https://www.blueoceangear.com/",
         "Launa & Susanna",
         "Todd",
@@ -753,6 +801,7 @@ AUTUMN_22_PROJECT = [
     ],
     [
         "BPI",
+        "project description",
         "https://www.impactforequity.org/",
         "Amanda",
         "Kenia",
@@ -764,6 +813,7 @@ AUTUMN_22_PROJECT = [
     ],
     [
         "Citizen Data",
+        "project description",
         "",
         "Jeffrey & Riley",
         "Todd",
@@ -775,6 +825,7 @@ AUTUMN_22_PROJECT = [
     ],
     [
         "Internet Equity",
+        "project description",
         "https://github.com/uchicago-dsi/broadbandequity",
         "Nick & Evelyn",
         "Utkarsh",
@@ -786,6 +837,7 @@ AUTUMN_22_PROJECT = [
     ],
     [
         "Invenergy",
+        "project description",
         "https://invenergy.com/",
         "Anna & Trevor & Peter",
         "Utkarsh",
@@ -797,6 +849,7 @@ AUTUMN_22_PROJECT = [
     ],
     [
         "mBio",
+        "project description",
         "",
         "Trevor & Patricia",
         "Kenia",
@@ -808,6 +861,7 @@ AUTUMN_22_PROJECT = [
     ],
     [
         "Prudential",
+        "project description",
         "https://www.prudential.com/",
         "Nick",
         "Utkarsh",
