@@ -21,6 +21,7 @@ A few important notes:
 NDAs or other specifications (such as UChicago not hosting the repo).
 * The requirements for the project have changed year over year and are \
 sometimes project specific.
+* Projects designated by a "&#8224;" were funded by [The 11th hour foundation](https://11thhourproject.org/).
 
 ---
 """
@@ -160,6 +161,7 @@ def create_single_quarter_table(
             has_one_pager,
             external_mentor_info,
             project_url_valid,
+            is_11th_hour,
         ] = project_info
 
         # Project name -- replace with what is in name map if it exists
@@ -167,6 +169,10 @@ def create_single_quarter_table(
 
         # Add url to the name. If the invalid flag is 1, add flag to not check
         # link via the markdown link checker
+
+        if is_11th_hour:
+            project_name = f"{project_name}&#8224;"
+
         if project_url_valid:
             project_name_info = f"[{project_name}]({project_url})"
         else:

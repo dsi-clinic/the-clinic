@@ -11,6 +11,7 @@
 #        8. if there is a one-pager 1/0
 #        9. External Mentor Info
 #        10. if the URL (item 2) can pass the github link test
+#        11. Is 11th hour 1/0 for adding additional tag
 
 # XXX_YEAR_STUDENT is a list of lists
 #   items should be:
@@ -36,6 +37,7 @@ AUTUMN_23_PROJECT = [
         0,
         "<ul><li>Tim Rouse</li><li>Jessie Zhu</li></ul>",
         1,
+        0,
     ],
     [
         "Argonne",
@@ -49,6 +51,7 @@ AUTUMN_23_PROJECT = [
         1,
         "[Matthew Dearing](https://scholar.google.com/citations?user=HUQIELDxZkgJ&hl=en)",
         1,
+        0,
     ],
     [
         "Argonne-Fermi",
@@ -61,6 +64,7 @@ AUTUMN_23_PROJECT = [
         1,
         "[Matthew Dearing](https://scholar.google.com/citations?user=HUQIELDxZkgJ&hl=en)",
         1,
+        0,
     ],
     [
         "Climate Cabinet",
@@ -73,6 +77,7 @@ AUTUMN_23_PROJECT = [
         1,
         "Caleb Braun",
         1,
+        1,    
     ],
     [
         "CPL",
@@ -85,6 +90,7 @@ AUTUMN_23_PROJECT = [
         1,
         "Abigail Sullivan",
         1,
+        0,
     ],
     [
         "Fermi-simulations",
@@ -97,6 +103,7 @@ AUTUMN_23_PROJECT = [
         1,
         "<ul><li>Oz Amram</li><li>Kevin Pedro</li></ul>",
         1,
+        0,
     ],
     [
         "Fermi-gnn",
@@ -109,6 +116,7 @@ AUTUMN_23_PROJECT = [
         1,
         "Giuseppe Cerati",
         1,
+        0,
     ],
     [
         "HAPA",
@@ -120,6 +128,7 @@ AUTUMN_23_PROJECT = [
         1,
         1,
         "<ul><li>Fern Ānuenue Holland</li><li>Anne Frederick</li><li>Emily Marquez</li></ul>",
+        1,
         1,
     ],
     [
@@ -133,6 +142,7 @@ AUTUMN_23_PROJECT = [
         1,
         "Alexis Schrubbe",
         1,
+        0,
     ],
     [
         "IRC",
@@ -145,6 +155,7 @@ AUTUMN_23_PROJECT = [
         1,
         "Atish Gonsalves",
         1,
+        0,
     ],
     [
         "Morningstar",
@@ -157,6 +168,7 @@ AUTUMN_23_PROJECT = [
         0,
         "<ul><li>Josh Charney</li><li>Jazmin Melchor</li></ul>",
         1,
+        0,
     ],
     [
         "Perpetual",
@@ -168,6 +180,7 @@ AUTUMN_23_PROJECT = [
         1,
         1,
         "Ellie Moss",
+        1,
         1,
     ],
     [
@@ -181,6 +194,7 @@ AUTUMN_23_PROJECT = [
         0,
         "<ul><li>Jyoti Singh</li><li>Dr. Mitchell Stern</li><li>Gavin Smith</li><li>William Liang</li><li>Leo Shen</li></ul>",
         1,
+        0,
     ],
     [
         "RAFI",
@@ -193,6 +207,7 @@ AUTUMN_23_PROJECT = [
         1,
         "Aaron Johnson",
         0,
+        1,
     ],
     [
         "UNI",
@@ -205,6 +220,7 @@ AUTUMN_23_PROJECT = [
         1,
         "Taraneh Matloob",
         1,
+        0,
     ],
 ]
 
@@ -300,6 +316,7 @@ WINTER_23_PROJECT = [
         1,
         "[Matthew Dearing](https://scholar.google.com/citations?user=HUQIELDxZkgJ&hl=en)",
         1,
+        0,
     ],
     [
         "BankTrack",
@@ -311,6 +328,7 @@ WINTER_23_PROJECT = [
         1,
         1,
         "<ul><li>Ryan Brightwell</li><li>Dustin Roasa</li></ul>",
+        1,
         1,
     ],
     [
@@ -324,6 +342,7 @@ WINTER_23_PROJECT = [
         1,
         "<ul><li>Kortney Opshaug</li><li>Peter Macy</li><li>Will Morton</li></ul>",
         1,
+        1,
     ],
     [
         "BPI",
@@ -336,6 +355,7 @@ WINTER_23_PROJECT = [
         1,
         "<ul><li>Amy Thompson</li><li>Loren Jones</li></ul>",
         1,
+        0,
     ],
     [
         "DRW",
@@ -348,6 +368,7 @@ WINTER_23_PROJECT = [
         0,
         "Ian Adam",
         1,
+        0,
     ],
     [
         "Fermi",
@@ -360,6 +381,7 @@ WINTER_23_PROJECT = [
         1,
         "<ul><li>Michael Kirby</li><li>Meghna Bhattacharya</li></ul>",
         1,
+        0,
     ],
     [
         "First Republic Bank",
@@ -372,6 +394,7 @@ WINTER_23_PROJECT = [
         0,
         "<ul><li>Chris Csiszar</li><li>Mark Woodworth</li></ul>",
         1,
+        0,
     ],
     [
         "GreenWave",
@@ -383,6 +406,7 @@ WINTER_23_PROJECT = [
         1,
         1,
         "Kendall Barbery",
+        1,
         1,
     ],
     [
@@ -396,6 +420,7 @@ WINTER_23_PROJECT = [
         0,
         "<ul><li>Zoë Kimpel</li><li>Kenneth Parkhill</li></ul>",
         1,
+        0,
     ],
     [
         "Morningstar",
@@ -408,6 +433,7 @@ WINTER_23_PROJECT = [
         0,
         "<ul><li>Josh Charney</li><li>Jazmin Melchor</li></ul>",
         1,
+        0,
     ],
     [
         "PCDC",
@@ -420,6 +446,7 @@ WINTER_23_PROJECT = [
         1,
         "Michael Watkins",
         1,
+        0,
     ],
     [
         "Perpetual",
@@ -431,6 +458,7 @@ WINTER_23_PROJECT = [
         0,
         1,
         "Ellie Moss",
+        1,
         1,
     ],
     [
@@ -444,6 +472,7 @@ WINTER_23_PROJECT = [
         0,
         "Amol Tembe",
         1,
+        0,
     ],
     [
         "RISC",
@@ -456,6 +485,7 @@ WINTER_23_PROJECT = [
         1,
         "Noah Duncan",
         1,
+        0,
     ],
     [
         "Neurocritical Care",
@@ -468,6 +498,7 @@ WINTER_23_PROJECT = [
         1,
         "Dr. Ali Mansour",
         1,
+        0,
     ],
     [
         "Internet Equity",
@@ -480,6 +511,7 @@ WINTER_23_PROJECT = [
         1,
         "Nicole Marwell",
         1,
+        0,
     ],
 ]
 
@@ -571,6 +603,7 @@ SPRING_23_PROJECT = [
         1,
         "[Matthew Dearing](https://scholar.google.com/citations?user=HUQIELDxZkgJ&hl=en)",
         1,
+        0,
     ],
     [
         "Blue Ocean Gear",
@@ -582,6 +615,7 @@ SPRING_23_PROJECT = [
         1,
         1,
         "<ul><li>Kortney Opshaug</li><li>Peter Macy</li><li>Will Morton</li></ul>",
+        1,
         1,
     ],
     [
@@ -595,6 +629,7 @@ SPRING_23_PROJECT = [
         1,
         "Dr. Henry David",
         1,
+        0,
     ],
     [
         "DRW",
@@ -607,6 +642,7 @@ SPRING_23_PROJECT = [
         0,
         "Ian Adam",
         1,
+        0,
     ],
     [
         "Fermi",
@@ -619,6 +655,7 @@ SPRING_23_PROJECT = [
         1,
         "<ul><li>Michael Kirby</li><li>Meghna Bhattacharya</li></ul>",
         1,
+        0,
     ],
     [
         "FRB",
@@ -631,6 +668,7 @@ SPRING_23_PROJECT = [
         0,
         "<ul><li>Chris Csiszar</li><li>Mark Woodworth</li></ul>",
         1,
+        0,
     ],
     [
         "Hawaii",
@@ -643,6 +681,7 @@ SPRING_23_PROJECT = [
         1,
         "<ul><li>Fern Ānuenue Holland</li><li>Anne Frederick</li><li>Emily Marquez</li></ul>",
         0,
+        1,
     ],
     [
         "IE",
@@ -655,6 +694,7 @@ SPRING_23_PROJECT = [
         1,
         "Dr. Nicole Marwell",
         1,
+        0,
     ],
     [
         "Morningstar",
@@ -667,6 +707,7 @@ SPRING_23_PROJECT = [
         0,
         "<ul><li>Josh Charney</li><li>Jazmin Melchor</li></ul>",
         1,
+        0,
     ],
     [
         "Neurocritical Care",
@@ -679,6 +720,7 @@ SPRING_23_PROJECT = [
         1,
         "Dr. Ali Mansour",
         1,
+        0,
     ],
     [
         "Perpetual",
@@ -690,6 +732,7 @@ SPRING_23_PROJECT = [
         0,
         1,
         "Ellie Moss",
+        1,
         1,
     ],
     [
@@ -703,6 +746,7 @@ SPRING_23_PROJECT = [
         0,
         "Dave Powers",
         1,
+        0,
     ],
 ]
 
@@ -774,6 +818,7 @@ AUTUMN_22_PROJECT = [
         0,
         "",
         1,
+        0,
     ],
     [
         "BankTrack",
@@ -786,6 +831,7 @@ AUTUMN_22_PROJECT = [
         0,
         "",
         0,
+        1,
     ],
     [
         "Blue Ocean Gear",
@@ -797,6 +843,7 @@ AUTUMN_22_PROJECT = [
         1,
         0,
         "",
+        1,
         1,
     ],
     [
@@ -810,6 +857,7 @@ AUTUMN_22_PROJECT = [
         0,
         "",
         1,
+        0,
     ],
     [
         "Citizen Data",
@@ -821,6 +869,7 @@ AUTUMN_22_PROJECT = [
         1,
         0,
         "",
+        0,
         0,
     ],
     [
@@ -834,6 +883,7 @@ AUTUMN_22_PROJECT = [
         0,
         "",
         1,
+        0,
     ],
     [
         "Invenergy",
@@ -846,6 +896,7 @@ AUTUMN_22_PROJECT = [
         0,
         "",
         1,
+        0,
     ],
     [
         "mBio",
@@ -858,6 +909,7 @@ AUTUMN_22_PROJECT = [
         0,
         "",
         0,
+        1,
     ],
     [
         "Prudential",
@@ -870,6 +922,7 @@ AUTUMN_22_PROJECT = [
         0,
         "",
         1,
+        0,
     ],
 ]
 
