@@ -333,7 +333,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "Blue Ocean Gear",
-        "Anomoly detection of fishing gear to detect lost equipment",
+        "Anomaly detection of fishing gear to detect lost equipment",
         "https://www.blueoceangear.com/",
         "Trevor",
         "Todd",
@@ -372,7 +372,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "Fermi",
-        "Real-time Tagging with Deep Learning AI for particle imagingdetectors",
+        "Real-time Tagging with Deep Learning AI for particle imaging detectors",
         "https://computing.fnal.gov/michael-kirby/",
         "Peter",
         "Todd",
@@ -385,7 +385,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "First Republic Bank",
-        "Determinents of non-interest bearing deposit",
+        "Determinants of non-interest bearing deposit",
         "https://www.firstrepublic.com/",
         "Nick",
         None,
@@ -437,7 +437,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "PCDC",
-        "Design and implmentation of disease taxonomies",
+        "Design and implementation of disease taxonomies",
         "https://commons.cri.uchicago.edu/pcdc/",
         "Tim",
         None,
@@ -489,7 +489,7 @@ WINTER_23_PROJECT = [
     ],
     [
         "Neurocritical Care",
-        "Determinents of traumatic brain injury outcomes",
+        "Determinants of traumatic brain injury outcomes",
         "https://profiles.uchicago.edu/profiles/display/17338286",
         "Yuetian",
         "Anthony",
@@ -607,7 +607,7 @@ SPRING_23_PROJECT = [
     ],
     [
         "Blue Ocean Gear",
-        "Anomoly detection of fishing gear to detect lost equipment",
+        "Anomaly detection of fishing gear to detect lost equipment",
         "https://www.blueoceangear.com/",
         "Launa",
         None,
@@ -660,7 +660,7 @@ detectors",
     ],
     [
         "FRB",
-        "Determinents of non-interest bearing deposit",
+        "Determinants of non-interest bearing deposit",
         "https://www.firstrepublic.com/",
         "Nick",
         None,
@@ -712,7 +712,7 @@ detectors",
     ],
     [
         "Neurocritical Care",
-        "Determinents of traumatic brain injury outcomes",
+        "Determinants of traumatic brain injury outcomes",
         "https://scholar.google.com/citations?user=cs_tgvwAAAAJ&hl=en",
         "Yuetian",
         "Anthony",
@@ -836,7 +836,7 @@ AUTUMN_22_PROJECT = [
     ],
     [
         "Blue Ocean Gear",
-        "Anomoly detection of fishing gear to detect lost equipment",
+        "Anomaly detection of fishing gear to detect lost equipment",
         "https://www.blueoceangear.com/",
         "Launa & Susanna",
         "Todd",
@@ -901,7 +901,7 @@ AUTUMN_22_PROJECT = [
     ],
     [
         "mBio",
-        "NLP for identifaction of GMO related information in public documents",
+        "NLP for identification of GMO related information in public documents",
         "",
         "Trevor & Patricia",
         "Kenia",
