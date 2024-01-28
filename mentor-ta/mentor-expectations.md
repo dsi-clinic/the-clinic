@@ -29,7 +29,9 @@ All grades are submitted via [Canvas](https://courses.uchicago.edu/). You should
 
 To grade I strongly recommend using the grade book (accessed by clicking "Grades" on the main sidebar) and the speed grader (accessed through each individual assignment) . On the grade book page you can filter to your group by clicking "Apply Filters" -> "Student Groups" and selecting your group.
 
-The SpeedGrader allows you to quickly go through the members of your team quickly if you have it filtered from the grade book.
+The speed grader allows you to quickly go through the members of your team quickly if you have it filtered from the grade book.
+
+I strongly recommend making sure to not fall behind on grading and establish good habits early.
 
 ## Minimum Expectations for Mentors
 
