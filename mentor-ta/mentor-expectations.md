@@ -7,6 +7,9 @@ This document contains a rough outline of the expectations for the mentor. At th
     * Guide overall project direction and objectives
     * Ensure timely completion of client deliverables and documentation
     * Provide technical project guidance and direction based on your own expertise
+2. **Assessment**
+    * Grade weekly reports, draft videos and one-pager
+    * More information on grading can be found [below](#grading-requirements-and-how-to-grade).
 2. **Communication**
     * Be responsive to student and TA needs, making sure to communicate regularly via slack.
     * Act as a liaison between the external mentor and the students 
@@ -15,9 +18,18 @@ This document contains a rough outline of the expectations for the mentor. At th
     * Work with TAs to guide student learning
 4. **Project Guardrail**
     * Act as a guardrail on the project and raise concerns based on your understanding of people, group dynamics and generally "being a responsible adult" 
-5. **Assessment**
-    * Providing grade guidance and assessment
 
+## Grading Requirements and how to grade
+
+To keep projects moving we use a set of weekly deliverables: A _progress_ report and a _planning_ report. Each student is given a 0/5 score on each, with full rubrics available [planning rubric](../rubrics/planning-doc-rubric.md) and [progress rubric](../rubrics/progress-doc-rubric.md).
+
+During the final weeks of the quarter there are also deliverables around the video and one-pager. Information on the specific deliverables can be found [here](../README.md#finals-week-deliverables).
+
+All grades are submitted via [Canvas](https://courses.uchicago.edu/). You should have received an invite at the start of the quarter.
+
+To grade I strongly recommend using the grade book (accessed by clicking "Grades" on the main sidebar) and the speed grader (accessed through each individual assignment) . On the grade book page you can filter to your group by clicking "Apply Filters" -> "Student Groups" and selecting your group.
+
+The SpeedGrader allows you to quickly go through the members of your team quickly if you have it filtered from the grade book.
 
 ## Minimum Expectations for Mentors
 
