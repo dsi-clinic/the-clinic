@@ -29,7 +29,7 @@ TAs are expected to:
 
 ### Final week grading
 
-- **Technical Assessment:** At the end of the quarter each TA will be given a checklist to evaluate the repository. This checklist mirrors [this doc](../coding-standards/coding-standards.md). The final rubric is TBD.
+- **Technical Assessment:** At the end of the quarter, each TA will evaluate two repositories using a checklist. This checklist can be found [here](../rubrics/final-technical-cleanup.md).
 
 ### Handling Student Inquiries
 
