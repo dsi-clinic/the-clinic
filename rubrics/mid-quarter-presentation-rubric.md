@@ -13,8 +13,8 @@ The presentation will be conducted live during a specific week of the quarter at
 ### Requirements 
 
 * The presentation should be 3-5 minutes. This is a hard limit and your grade will be negatively impacted if you go outside this limit.
-* Use the provided template for the presentation slides. Do not add more than three additional slides.
-* The template has three options to define your project problem: Analytics, Data Science, or Engineering. Choose one. For some projects, the problem type might span more than one – use your best judgment.
+* Use the provided [template](../templates/midquarter-presentation-template.pptx) for the presentation slides. Do not add more than three additional slides.
+* The [template](../templates/midquarter-presentation-template.pptx) has three options to define your project problem: Analytics, Data Science, or Engineering. Choose one. For some projects, the problem type might span more than one – use your best judgment.
 
 ### Grading
 
@@ -44,7 +44,7 @@ All students in a group will receive the same grade in the presentation. Not all
 ### How to get an "A"
 
 In two easy steps!
-1. Read this rubric and the template carefully, making sure to follow _all_ instructions.
+1. Read this rubric and the [template](../templates/midquarter-presentation-template.pptx) carefully, making sure to follow _all_ instructions.
 2. Rehearse your presentation 2-3 times, making sure that you stay within the allotted time. These are lightning talks with a template already created to minimize the amount of work required. Do not deviate from the template format.
 
 ### Late Policy
