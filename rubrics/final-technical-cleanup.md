@@ -39,14 +39,14 @@ Please identify three random files edited by students during the last quarter (m
     - [ ] All code is in functions.
     - [ ] All functions have doc strings.
     - [ ] Function names are descriptive.
-    - [ ] Black and flake8 pass.
-    - [ ] There are no hard-coded paths.
-    - [ ] There is no commented-out code.
-    - [ ] There are no API Keys or Secrets.    
+    - [ ] `black` and `flake8` pass.
+    - [ ] All paths are relative (no hard-coded paths).
+    - [ ] Comments are human readable and descriptive (there is no commented-out code or commented out code blocks).
+    - [ ] Code is free of API Keys or secrets.
 - [ ] Is this a notebook (*.ipynb file)?:
     - [ ] There are less than 20 cells.
     - [ ] Every cell has less than 10 lines of code.
-    - [ ] There are no `! pip install` lines.
-    - [ ] There are no functions defined inside the notebook.
-    - [ ] There is no commented out code.
-    - [ ] There are no API Keys or Secrets.
+    - [ ] Code is free of environment management (no `! pip install` / `! conda install` lines).
+    - [ ] All functions are defined in helper files (there are no `def` or `class` in notebooks).
+    - [ ] Comments are human readable and descriptive (there is no commented-out code or commented out code blocks).
+    - [ ] Code is free of API Keys or secrets.
