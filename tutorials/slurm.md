@@ -54,7 +54,7 @@ It can be annoying / burdensome to type in your passwords constantly to connect 
 
 ### [Windows Users Only] Step 1: Enable OpenSSH
 
-If you are using Windows 10 or 11, you can use OpenSSH like Mac and Linux users. If you use WSL2, please see [specific instructions](#wsl). To ensure it is set up correctly, complete the following (from [this SO answwer](https://stackoverflow.com/a/40720527)):
+If you are using Windows 10 or 11, you can use OpenSSH like Mac and Linux users. If you use WSL2, please see [specific instructions](#wsl). <!-- markdown-link-check-disable -->To ensure it is set up correctly, complete the following (from [this SO answwer](https://stackoverflow.com/a/40720527)):<!-- markdown-link-check-enable -->
 1. Open Manage optional features from the start menu and make sure you have Open SSH Client in the list. If not, you should be able to add it.
 2. Open Services from the start Menu
 3. Scroll down to OpenSSH Authentication Agent > right click > properties
@@ -69,7 +69,7 @@ If you are using Windows 10 or 11, you can use OpenSSH like Mac and Linux users.
 2. If you have multiple keys, give it an identifiable name but keep it in the `.ssh` directory. Otherwise you can click enter to accept the default suggestion. 
 3. You can optionally add a password to your ssh key. If you do not it may be vulnerable. Adding a password may seem counterintuitive (isn't our whole goal to avoid passwords?), but you can use [ssh-agent](https://www.ssh.com/academy/ssh/agent) (explained below) and then you will just have to type your password once per session (or once ever). As you type the password in, no text will appear on screen to keep your password length private from shoulder surfers. You will be asked to repeat it. Do not forget your password! Write it down, or ideally store it in a password manager. A `KEYNAME` and `KEYNAME.pub` file will be created by this command. The file with the `.pub` extension is your public key and can be shared safely. The file with no extension is your private key and should never be shared. 
 4. (assuming you password protect your private key) Add the *private* key to your ssh agent. `ssh-add PATH_TO_KEY`. `PATH_TO_KEY` will start with `~/.ssh/` on Mac/Linux and `C:\Users\YOUR_USERNAME\.ssh\` on Windows. You'll have to type your password in once and it will be saved for a period of time (terminal session or until your computer next reboots), drastically limiting the amount of times you have to type in your password. 
-5. [Mac Users Only] (optional) To keep the key in your ssh-agent accross sessions, follow [this stack overflow answer](https://stackoverflow.com/questions/18880024/start-ssh-agent-on-login) 
+5. <!-- markdown-link-check-disable -->[Mac Users Only] (optional) To keep the key in your ssh-agent accross sessions, follow [this stack overflow answer](https://stackoverflow.com/questions/18880024/start-ssh-agent-on-login). <!-- markdown-link-check-enable --> 
 6. Confirm your key was added. In your terminal/command prompt/powershell, run `ssh-add -l` to list all keys in your ssh agent. Your key should appear here. If this command returns `The agent has no identities.`, step 4 failed. 
 
 ### Step 3: Save SSH Configuration
