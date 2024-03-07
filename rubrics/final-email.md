@@ -14,8 +14,10 @@ The email should also contain a short summary which:
 1. Thanks the external mentors for their time during and before the quarter.
 1. States that this is the final deliverable for this quarter and if there are any additional questions they should contact the clinic director directly.
 
+Finally, make sure _not_ to include additional materials unless they are specified by either the external or internal mentors. For example, do not include the technical submission report or mid-quarter presentation.
+
 ## Grading Rubric
-- [ ] Does the email contain:
+- [ ] Does the email contain the appropriate contents:
     1. A link to final video
     2. The one pager in PDF Form
     3. A link to the github repository
