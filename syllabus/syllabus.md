@@ -41,7 +41,7 @@ We will have multiple means of communication for this course: Github, Canvas, Sl
 
 The Data Science Clinic cannot be taken as a pass/fail course. All students enrolled will receive a letter grade. The breakdown of your grade for this course is summarized below. Note that the source of the grading is put in parentheses before the description.
 
-* __10% Peer Evaluation__ - [Google Form via Canvas] We will solicit feedback from the client on their experience with the team throughout the quarter and the final deliverables.  We will also solicit feedback from the student teams over the course of the project. Students will be required to evaluate the contributions of all team members to the project. 
+* __10% Peer Evaluation__ - [Google Form via Canvas] We will solicit feedback from the student teams over the course of the project. Students will be required to evaluate the contributions of all team members to the project.
 * __2% Initial Computer Set-up__
 * __3% Initial Org Report__
 * __20% Weekly Reports/Work Product__ –  [Project Mentors & TAs]  Each week there are weekly reports which are due. Project mentors will score these reports on a scale of 0-5. The weekly reports are measures of a students effort and output for that particular week and may include the following dimensions:
