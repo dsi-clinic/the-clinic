@@ -8,6 +8,10 @@ Your objective is to introduce your classmates to your project. You should assum
 * Has a grounding, but isn’t an expert in statistics / programming / machine learning techniques, etc.
 * Isn’t that interested in the nitty-gritty details, derivations, etc.
 
+There is a strict time limit on the presentation (3-5 minutes). Historically the _best_ presentations tends to be about 4 minutes long because they focus the project down to a manageable level. Presentations that go the entire five minutes (usually) are too long, not specific enough and are more poorly received, grade-wise. 
+
+When planning your talk keep focused on the core of your project. This presentation is not a catalog, but a high-level map of the project.
+
 The presentation will be conducted live during a specific week of the quarter at the time of the normal class. It is strongly recommended that you go to lecture that week in order to see what everyone is up to!
 
 ### Requirements 
@@ -36,9 +40,9 @@ All students in a group will receive the same grade in the presentation. Not all
 * Every project has interesting and unexpected aspects – you want to highlight those. Are there any cool visualizations? What about results?
 * Do not violate any NDA/share any special sauce.
 * Do not read lists of numbers from the slides.
-* No screenshots of tables or code.
+* No screenshots of tables or code. There should be no code 
 * Specific descriptions of technology tend to be boring. It’s okay to have a system diagram if the project has a large engineering component.
-* Do not try to teach concepts. Examples include: explaining how a neural network or deep learning works, mathematically defining multiple accuracy measures, etc.
+* Do not try to _teach_. Explaining how a neural network or deep learning works, mathematically defining multiple accuracy measures, etc. are beyond the scope of this presentation. You are trying to meet the audience where they are, not teach.
  
 
 ### How to get an "A"

@@ -56,16 +56,23 @@ Draft videos should demonstrate a significant level of effort. Each draft should
 
 ### Dos and Don'ts 
 * Do not speed up / slow down the presentation using software tools
+* Presentations which are stitched together from multiple videos in obvious ways will be heavily penalized. It is distracting to the audience when things like resolution, screen focus, etc. change.
+* Before submitting make sure that all plot axis are labelled and formatted properly for a high-level presentation. For example if you are using a percent turn it into a percent, rather than leaving as a decimal. Make sure that when presenting large numbers your plot doesn't say "1e6" or the like at the top.
+* The _size_ of all axis labels and titles should all be large enough to read and understand. 
+* Make sure that plots have titles and that they are easy to read.
+* You should not try to be comprehensive of your activities. The goal of this presentation is NOT to cover everything, but to provide a short introduction to and results of your work. In general shorter presentations are usually stronger.
 * Use a microphone. The presentation audio needs to be well recorded. There should be no background noise, difficult to understand speakers, audio that goes in and out, etc.
 * Avoid using terms which are specific to your project or technical jargon.
 * The presentation should not contain screenshots of Jupyter Notebooks or other code. 
-Do not attempt to teach advanced concepts. If a core part of your project is a novel or unfamiliar concept then you should explain, but at a high level. 
+* Do not attempt to teach advanced concepts. If a core part of your project is a novel or unfamiliar concept then you should explain, but at a high level. 
 * Make sure to spend time framing the problem, describing why it’s important and how what you are doing links to it.
 * Every project has interesting and unexpected aspects – you want to highlight those. Are there any cool visualizations? What about results?
 * Do not violate any NDA/share any special sauce.
 * Do not read lists of numbers from the slides.
 * Specific descriptions of technology tend to be boring. It’s okay to have a system diagram if the project has a large engineering component.
 * No meta-editorializing like “Hmmm.. Let's fix this next time” or “ummm… I think we should change the order of the slides in the next draft”. Each video should be treated as a final version.
+* Keep the mouse icon steady, do not block text or graphics or move it around the screen. It is distracting.
+* Make sure that all presentation materials are visible in the window being used. 
 
 ### Late Policy
 Assignments submitted after the due date will receive a grade of zero.

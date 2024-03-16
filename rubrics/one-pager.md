@@ -10,7 +10,7 @@ Please, before submitting, make sure that your document follows the dos and don�
 
 ### Requirements 
 * One page PDF document submitted to Canvas. **No Word docs, Google Drive links, etc.**
-* 150-200 words written in the 3rd person (preferred) or 1st person plural and in past tense.
+* 150-200 words written in the 3rd person (preferred) or 1st person plural and in past tense. (Figure Titles and axis labels do not count _unless_ descriptions are placed therein.)
 * One or two interesting / exciting images or tables. 
 * All images and words need to fit on a single page.
 * Use the template found [here](../templates/one-pager-template.docx).
@@ -49,12 +49,15 @@ Draft documents should demonstrate a significant level of both effort and polish
 * Do NOT put your name on the doc. We will know who wrote it from the canvas submission information.
 * It should be written as a single narrative. There shouldn’t be sections or headers.
 * The document should look professional. While we do not expect you and your team to be design or graphics wizards, we do expect you to apply some rudimentary level of formatting and design.
+* The document needs to be easy to read. If you need help with this one place to start is the [Hemingway app](https://hemingwayapp.com/) which presents a measure of complexity for each sentence. It isn't perfect, but a great place to start if you are not sure. 
+* If you want to mention last quarter's work
 * Things that should be in the one-pager:
     * Description of the problem, suitable for a lay person to understand (e.g., think explaining the problem to a family member or friend who is not in data science).
     * An explanation of your team’s contribution to solving the problem. 
     * Results and impact, but keep in mind that both need to be framed to be understood by someone who is not a data science expert.
     * Interesting charts / plots or images that help explain either the impact or the results.
-    * Plot axes should be labeled and readable.
+    * Plot axes should be labeled and readable. This includes making them size appropriate.
+    * All figures need to be explained.
 * Things that should _not_ be in the one-pager:
     * Logistics of the project (“The team met 3 times a week”)
     * Thanking the partners.
