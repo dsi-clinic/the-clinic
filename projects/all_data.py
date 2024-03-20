@@ -85,7 +85,7 @@ WINTER_24_PROJECT = [
         "Anna & Tim",
         "Victor",
         "https://github.com/dsi-clinic/2024-winter-cmap",
-        0,
+        1,
         1,
         "Holly Hudson",
         0,
@@ -124,7 +124,7 @@ WINTER_24_PROJECT = [
         "Todd",
         "Rita",
         "https://github.com/dsi-clinic/2024-winter-compostable",
-        0,
+        1,
         1,
         "Emily McGill",
         0,
@@ -210,8 +210,8 @@ WINTER_24_PROJECT = [
     ],    
     [
         "Prudential",
-        "NLP for stock market prediction",
-        "https://prudential.com",
+        "Sentiment Analysis in Stock Prediction",
+        "https://www.prudential.com",
         "Nick",
         "Yiran",
         "",
@@ -224,7 +224,7 @@ WINTER_24_PROJECT = [
     [
         "RAFI",
         "Poultry Packaging Consolidation",
-        "https://www.rafiusa.org/",
+        "https://www.rafiusa.org",
         "Todd",
         "Rita",
         "https://github.com/dsi-clinic/2024-winter-rafi-poultry-cafos",
@@ -333,6 +333,10 @@ WINTER_24_NAME_MAP = {
     "IRC": "International Rescue Committee",
     "Fermi-simulations": "Fermilab Simulations",
     "Fermi-gnn": "Fermilab Graph Neural Networks",    
+    "CREF": "Compost Research & Education Foundation",
+    "CTC": "Chicago Trading Company",
+    "RAFI": "Rural Advancement Foundation International",
+
 }
 
 AUTUMN_23_PROJECT = [
