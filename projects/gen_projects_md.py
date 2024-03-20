@@ -113,9 +113,15 @@ ALL_PEOPLE = {
     "Grant": ["Yuwei (Grant) Chen", "https://github.com/ywchen814"],
     "Rita": ["Rita Xu", "https://github.com/catalystxu"],
     "Sarah": ["Sarah Walker", "https://github.com/sarahwalker10"],
-    "Vasileios": ["Vasileios Charisopoulos", ""],
+    "Vasileios": [
+        "Vasileios Charisopoulos", 
+        "https://scholar.google.com/citations?user=X3V6rM8AAAAJ&hl=el"
+    ],
     "Ridhi": ["Ridhi Purohit", "https://github.com/ridhi96"],
-    "Cristina": ["Cristina Garbacea", ""]
+    "Cristina": [
+        "Cristina Garbacea",
+        "https://scholar.google.com/citations?user=302eGI0AAAAJ&hl=en"
+    ]
 }
 
 
