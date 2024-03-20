@@ -114,14 +114,14 @@ ALL_PEOPLE = {
     "Rita": ["Rita Xu", "https://github.com/catalystxu"],
     "Sarah": ["Sarah Walker", "https://github.com/sarahwalker10"],
     "Vasileios": [
-        "Vasileios Charisopoulos", 
-        "https://scholar.google.com/citations?user=X3V6rM8AAAAJ&hl=el"
+        "Vasileios Charisopoulos",
+        "https://scholar.google.com/citations?user=X3V6rM8AAAAJ&hl=el",
     ],
     "Ridhi": ["Ridhi Purohit", "https://github.com/ridhi96"],
     "Cristina": [
         "Cristina Garbacea",
-        "https://scholar.google.com/citations?user=302eGI0AAAAJ&hl=en"
-    ]
+        "https://scholar.google.com/citations?user=302eGI0AAAAJ&hl=en",
+    ],
 }
 
 
@@ -225,16 +225,12 @@ def create_single_quarter_table(
         else:
             mentor_info = "<ul>"
             for mentor in mentor_list:
-                mentor_info += (
-                    f"<li>{create_link_for_mentor(ALL_PEOPLE[mentor])}</li>"
-                )
+                mentor_info += f"<li>{create_link_for_mentor(ALL_PEOPLE[mentor])}</li>"
             mentor_info += "</ul>"
 
         # Student info. Assume that there is more than one and make a list.
         student_info = "<ul>"
-        student_project_list = [
-            x for x in student_info_list if x[0] == project_link
-        ]
+        student_project_list = [x for x in student_info_list if x[0] == project_link]
         if len(student_project_list) == 0:
             raise Exception(f"No Students found for project {project_link}")
         for student in student_project_list:

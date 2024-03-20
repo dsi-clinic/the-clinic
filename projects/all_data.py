@@ -76,7 +76,7 @@ WINTER_24_PROJECT = [
         1,
         "Ryan Brightwell",
         0,
-        1
+        1,
     ],
     [
         "CMAP",
@@ -89,7 +89,7 @@ WINTER_24_PROJECT = [
         1,
         "Holly Hudson",
         0,
-        0
+        0,
     ],
     [
         "CTC",
@@ -102,7 +102,7 @@ WINTER_24_PROJECT = [
         1,
         "Natasha Pekelis",
         1,
-        0
+        0,
     ],
     [
         "Climate Cabinet",
@@ -115,7 +115,7 @@ WINTER_24_PROJECT = [
         1,
         "Caleb Braun",
         0,
-        1
+        1,
     ],
     [
         "CREF",
@@ -128,9 +128,9 @@ WINTER_24_PROJECT = [
         1,
         "Emily McGill",
         0,
-        1
+        1,
     ],
-   [
+    [
         "Fermi-simulations",
         "Diffusion models for simulating particle physics experiments",
         "https://computing.fnal.gov/kevin-pedro/",
@@ -207,7 +207,7 @@ WINTER_24_PROJECT = [
         "Ellie Moss",
         0,
         1,
-    ],    
+    ],
     [
         "Prudential",
         "Sentiment Analysis in Stock Prediction",
@@ -259,7 +259,7 @@ WINTER_24_PROJECT = [
         "Taraneh Matloob",
         1,
         0,
-    ]
+    ],
 ]
 WINTER_24_STUDENT = [
     ["AmFam", "Grace Wang", "graceannwang"],
@@ -332,11 +332,10 @@ WINTER_24_NAME_MAP = {
     "UNI": "Taraneh Matloob Literature Lab",
     "IRC": "International Rescue Committee",
     "Fermi-simulations": "Fermilab Simulations",
-    "Fermi-gnn": "Fermilab Graph Neural Networks",    
+    "Fermi-gnn": "Fermilab Graph Neural Networks",
     "CREF": "Compost Research & Education Foundation",
     "CTC": "Chicago Trading Company",
     "RAFI": "Rural Advancement Foundation International",
-
 }
 
 AUTUMN_23_PROJECT = [
