@@ -153,7 +153,7 @@ WINTER_24_PROJECT = [
         0,
         1,
         "Giuseppe Cerati",
-        1,
+        0,
         0,
     ],
     [
@@ -231,7 +231,7 @@ WINTER_24_PROJECT = [
         0,
         1,
         "Aaron Johnson",
-        1,
+        0,
         1,
     ],
     [
@@ -281,7 +281,7 @@ WINTER_24_STUDENT = [
     ["CMAP", "Tamami Tamura", "tamamitamura"],
     ["CMAP", "Matthew Rubenstein", "Rubemat20"],
     ["CTC", "Richard Huang", "rrhuang"],
-    ["CTC", "Xinyu Liu", "lucien386"],
+    ["CTC", "Xinyu Liu", ""],
     ["CTC", "Kekun Han", "KekunH"],
     ["Climate Cabinet", "Nicolas Posner", "nrposner"],
     ["Climate Cabinet", "Alan Mburu Kagiri", "alankagiri"],
@@ -429,7 +429,7 @@ AUTUMN_23_PROJECT = [
         0,
         1,
         "Giuseppe Cerati",
-        1,
+        0,
         0,
     ],
     [
@@ -694,7 +694,7 @@ WINTER_23_PROJECT = [
         1,
         1,
         "<ul><li>Michael Kirby</li><li>Meghna Bhattacharya</li></ul>",
-        1,
+        0,
         0,
     ],
     [
@@ -969,7 +969,7 @@ detectors",
         1,
         1,
         "<ul><li>Michael Kirby</li><li>Meghna Bhattacharya</li></ul>",
-        1,
+        0,
         0,
     ],
     [
