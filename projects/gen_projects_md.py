@@ -6,6 +6,7 @@ from all_data import SPRING_23_NAME_MAP, SPRING_23_PROJECT, SPRING_23_STUDENT
 from all_data import WINTER_23_NAME_MAP, WINTER_23_PROJECT, WINTER_23_STUDENT
 from all_data import AUTUMN_23_NAME_MAP, AUTUMN_23_PROJECT, AUTUMN_23_STUDENT
 from all_data import AUTUMN_22_NAME_MAP, AUTUMN_22_PROJECT, AUTUMN_22_STUDENT
+from all_data import WINTER_24_NAME_MAP, WINTER_24_PROJECT, WINTER_24_STUDENT
 
 
 PREAMBLE_TEXT = """<!--- This file is generated from a script DO NOT EDIT \
@@ -108,6 +109,9 @@ ALL_PEOPLE = {
     "Evelyn": ["Evelyn Campbell", "https://github.com/campbelle1"],
     "Utkarsh": ["Utkarsh Tripathi", "https://github.com/redgene"],
     "Susanna": ["Susanna Lange", "https://github.com/SusannaLange"],
+    "Fei": ["Fei Wang", "https://github.com/chenhuifei01"],
+    "Grant": ["Yuwei (Grant) Chen", "https://github.com/ywchen814"],
+    
 }
 
 
@@ -255,6 +259,13 @@ if __name__ == "__main__":
     # The creation of this should be automated
     # this is pretty lazy.
     all_quarter_info_list = [
+        {
+            "quarter": "Winter",
+            "year": "2024",
+            "name_map": WINTER_24_NAME_MAP,
+            "student_info_list": WINTER_24_STUDENT,
+            "project_map": WINTER_24_PROJECT,
+        },
         {
             "quarter": "Autumn",
             "year": "2023",
