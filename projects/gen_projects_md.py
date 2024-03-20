@@ -111,7 +111,11 @@ ALL_PEOPLE = {
     "Susanna": ["Susanna Lange", "https://github.com/SusannaLange"],
     "Fei": ["Fei Wang", "https://github.com/chenhuifei01"],
     "Grant": ["Yuwei (Grant) Chen", "https://github.com/ywchen814"],
-    
+    "Rita": ["Rita Xu", "https://github.com/catalystxu"],
+    "Sarah": ["Sarah Walker", "https://github.com/sarahwalker10"],
+    "Vasileios": ["Vasileios Charisopoulos", ""],
+    "Ridhi": ["Ridhi Purohit", "https://github.com/ridhi96"],
+    "Cristina": ["Cristina Garbacea", ""]
 }
 
 
