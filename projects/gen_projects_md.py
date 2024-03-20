@@ -6,6 +6,7 @@ from all_data import SPRING_23_NAME_MAP, SPRING_23_PROJECT, SPRING_23_STUDENT
 from all_data import WINTER_23_NAME_MAP, WINTER_23_PROJECT, WINTER_23_STUDENT
 from all_data import AUTUMN_23_NAME_MAP, AUTUMN_23_PROJECT, AUTUMN_23_STUDENT
 from all_data import AUTUMN_22_NAME_MAP, AUTUMN_22_PROJECT, AUTUMN_22_STUDENT
+from all_data import WINTER_24_NAME_MAP, WINTER_24_PROJECT, WINTER_24_STUDENT
 
 
 PREAMBLE_TEXT = """<!--- This file is generated from a script DO NOT EDIT \
@@ -108,6 +109,19 @@ ALL_PEOPLE = {
     "Evelyn": ["Evelyn Campbell", "https://github.com/campbelle1"],
     "Utkarsh": ["Utkarsh Tripathi", "https://github.com/redgene"],
     "Susanna": ["Susanna Lange", "https://github.com/SusannaLange"],
+    "Fei": ["Fei Wang", "https://github.com/chenhuifei01"],
+    "Grant": ["Yuwei (Grant) Chen", "https://github.com/ywchen814"],
+    "Rita": ["Rita Xu", "https://github.com/catalystxu"],
+    "Sarah": ["Sarah Walker", "https://github.com/sarahwalker10"],
+    "Vasileios": [
+        "Vasileios Charisopoulos",
+        "https://scholar.google.com/citations?user=X3V6rM8AAAAJ&hl=el",
+    ],
+    "Ridhi": ["Ridhi Purohit", "https://github.com/ridhi96"],
+    "Cristina": [
+        "Cristina Garbacea",
+        "https://scholar.google.com/citations?user=302eGI0AAAAJ&hl=en",
+    ],
 }
 
 
@@ -211,16 +225,12 @@ def create_single_quarter_table(
         else:
             mentor_info = "<ul>"
             for mentor in mentor_list:
-                mentor_info += (
-                    f"<li>{create_link_for_mentor(ALL_PEOPLE[mentor])}</li>"
-                )
+                mentor_info += f"<li>{create_link_for_mentor(ALL_PEOPLE[mentor])}</li>"
             mentor_info += "</ul>"
 
         # Student info. Assume that there is more than one and make a list.
         student_info = "<ul>"
-        student_project_list = [
-            x for x in student_info_list if x[0] == project_link
-        ]
+        student_project_list = [x for x in student_info_list if x[0] == project_link]
         if len(student_project_list) == 0:
             raise Exception(f"No Students found for project {project_link}")
         for student in student_project_list:
@@ -255,6 +265,13 @@ if __name__ == "__main__":
     # The creation of this should be automated
     # this is pretty lazy.
     all_quarter_info_list = [
+        {
+            "quarter": "Winter",
+            "year": "2024",
+            "name_map": WINTER_24_NAME_MAP,
+            "student_info_list": WINTER_24_STUDENT,
+            "project_map": WINTER_24_PROJECT,
+        },
         {
             "quarter": "Autumn",
             "year": "2023",
