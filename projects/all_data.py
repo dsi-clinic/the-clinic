@@ -27,7 +27,7 @@
 WINTER_24_PROJECT = [
     [
         "AmFam",
-        "Generative Models for housing images",
+        "Generative AI Models for housing images",
         "https://www.amfam.com/",
         "Anna",
         "Jessica J",
@@ -54,7 +54,7 @@ WINTER_24_PROJECT = [
     ],
     [
         "Argonne-Fermi",
-        'NLP to identify "lessons learned" in project documents',
+        'AI to identify "lessons learned" in project documents',
         "https://www.anl.gov/",
         "Isaac",
         "Jessica J",
@@ -80,7 +80,7 @@ WINTER_24_PROJECT = [
     ],
     [
         "CMAP",
-        "Computer vision to recognize stormwater detention features",
+        "AI to recognize stormwater detention features",
         "",
         "Anna & Tim",
         "Victor",
@@ -132,7 +132,7 @@ WINTER_24_PROJECT = [
     ],
     [
         "Fermi-simulations",
-        "Diffusion models for simulating particle physics experiments",
+        "AI Diffusion models for simulating particle physics experiments",
         "https://computing.fnal.gov/kevin-pedro/",
         "Rituparno Mandal & Peter",
         "Grant",
@@ -171,7 +171,7 @@ WINTER_24_PROJECT = [
     ],
     [
         "Invenergy",
-        "DSI-cing",
+        "Modeling wind energy production using AI",
         "https://invenergy.com/",
         "Vasileios",
         "Avery",
@@ -236,7 +236,7 @@ WINTER_24_PROJECT = [
     ],
     [
         "UNI",
-        "Using NLP to quantify the emotional journal of protagonists in children's literature",
+        "Using AI to quantify the emotional journey of protagonists in children's literature",
         "https://coe.uni.edu/curriculum-instruction/directory/taraneh-matloob-haghanikar-phd",
         "Satadisha Saha Bhowmick",
         "Ridhi",
@@ -249,7 +249,7 @@ WINTER_24_PROJECT = [
     ],
     [
         "WBEZ",
-        "Illinois Traffic Stops",
+        "Demographic effects on traffic stops in Illinois",
         "https://www.wbez.org/",
         "Susanna",
         "Sarah",
@@ -341,7 +341,7 @@ WINTER_24_NAME_MAP = {
 AUTUMN_23_PROJECT = [
     [
         "AmFam",
-        "Generative Models for housing images",
+        "Generative AI Models for housing images",
         "https://www.amfam.com/",
         "Anna",
         "Eddie",
@@ -368,7 +368,7 @@ AUTUMN_23_PROJECT = [
     ],
     [
         "Argonne-Fermi",
-        'NLP to identify "lessons learned" in project documents',
+        'AI to identify "lessons learned" in project documents',
         "https://www.anl.gov/",
         "Isaac",
         "Jessica J",
@@ -407,7 +407,7 @@ AUTUMN_23_PROJECT = [
     ],
     [
         "Fermi-simulations",
-        "Diffusion models for simulating particle physics experiments",
+        "AI Diffusion models for simulating particle physics experiments",
         "https://computing.fnal.gov/kevin-pedro/",
         "Rituparno Mandal & Peter",
         "Eddie",
@@ -524,7 +524,7 @@ AUTUMN_23_PROJECT = [
     ],
     [
         "UNI",
-        "Using NLP to quantify the emotional journal of protagonists in children's literature",
+        "Using AI to quantify the emotional journey of protagonists in children's literature",
         "https://coe.uni.edu/curriculum-instruction/directory/taraneh-matloob-haghanikar-phd",
         "Satadisha Saha Bhowmick",
         "Victor",
