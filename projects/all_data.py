@@ -225,7 +225,7 @@ SPRING_24_STUDENT = [
     ["Fermi-simulations", "Aaron Zhang", "dcm9"],
     ["Fermi-gnn", "Mathias Davila", "mdavila68"],
     ["Fermi-gnn", "Aarman Pannu", "aarmanpannu"],
-    ["Fermi-gnn", "Ya-Wei Tsai", "jJeremytsai6987"],
+    ["Fermi-gnn", "Ya-Wei Tsai", "Jeremytsai6987"],
     ["Fermi-gnn", "Yufei Fan", "phfan"],
     ["Internet Equity", "Damian Dhillon", "damiandhillon"],
     ["Internet Equity", "Shwetha Srinivasan", "shwetha-srinivasan"],
