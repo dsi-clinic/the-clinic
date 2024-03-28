@@ -206,7 +206,6 @@ SPRING_24_STUDENT = [
     ["Argonne-Fermi", "Andrew Dunn", "andrewjtdunn"],
     ["Argonne-Fermi", "Jinnan Li", "sadjv"],
     ["CIR", "Edouard Gouilliard", "egouilliard"],
-    ["CIR", "Shiqian Xu", "shiqian77"],
     ["CIR", "Harper Schwab", "hwschwab"],
     ["CMAP", "Tamami Tamura", "tamamitamura"],
     ["CMAP", "Mingyan Wang", "wmingyan"],
