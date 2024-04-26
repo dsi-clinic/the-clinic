@@ -827,7 +827,7 @@ AUTUMN_23_STUDENT = [
     ["Perpetual", "Yifan Wu", "https://github.com/genieugod"],
     ["Prudential", "Sirivanth Paladugu", "https://github.com/Sirivanth16"],
     ["Prudential", "Connie Chen", "https://github.com/kangyic"],
-    ["Prudential", "Jiayan Li", "https://github.com/jiayanaddsalt"],
+    ["Prudential", "Jiayan Li", None],
     ["Prudential", "Qichang Zheng", "https://github.com/QichangZheng"],
     ["RAFI", "Colin McLuckie", "https://github.com/ColinMcLuckie"],
     ["RAFI", "Shishira Bhavimane", "https://github.com/sbhavimane-22"],
