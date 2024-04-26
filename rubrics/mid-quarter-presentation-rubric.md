@@ -40,7 +40,8 @@ All students in a group will receive the same grade in the presentation. Not all
 * Every project has interesting and unexpected aspects – you want to highlight those. Are there any cool visualizations? What about results?
 * Do not violate any NDA/share any special sauce.
 * Do not read lists of numbers from the slides.
-* No screenshots of tables or code. There should be no code 
+* No screenshots of tables or code. There should be no code.
+* No videos. To ease the logistics all presentations will be done from a single laptop that may not be able to display it correctly. Assume that the presentation will be static.
 * Specific descriptions of technology tend to be boring. It’s okay to have a system diagram if the project has a large engineering component.
 * Do not try to _teach_. Explaining how a neural network or deep learning works, mathematically defining multiple accuracy measures, etc. are beyond the scope of this presentation. You are trying to meet the audience where they are, not teach.
  
