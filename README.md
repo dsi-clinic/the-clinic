@@ -106,6 +106,7 @@ As this is a projects based course most of the work is designed around a set of 
 
 We keep a list of frequently asked questions and answers as well as "How-to"'s for specific technologies in this repo:
 
+* [Web scraping](./tutorials/web_scraping.md)
 * [How to set up your computer](./tutorials/clinic-computer-setup.md)
 * [Installing Conda on the Cluster](./tutorials/conda.md)
 * [Docker Common Questions](./tutorials/Docker.md)
