@@ -28,6 +28,8 @@ Your group will receive a separate grade for each draft and the final video. Eac
     * Do the slides use correct grammar, consistent formatting/style, and are they easy to read?
     * Are the slides too busy?
     * Are plots/graphs labeled correctly and easy to read?
+    * Are all images and graphics, including DSI and UChicago logos, in the appropriate aspect ratios (not stretched).
+    * If you are using a DSI or UChicago logo in the slide it should not be blocked by text or graphics.
 * Presentation quality
     * Does the presentation achieve the goals above (introducing the problem, your contribution and your results)?
     * Did the presenters speak loudly, slowly and clearly?
@@ -77,6 +79,21 @@ Draft videos should demonstrate a significant level of effort. Each draft should
 ### Late Policy
 Assignments submitted after the due date will receive a grade of zero.
 
+### Best Practices
+
+The following are a list of best practices that improve the quality of the video. Since these videos are shared via social media we strongly encourage following these practices if you have the necessary equipment.
+
+* Use a real webcam, rather than your computer.
+* Do not blur your background. If you wish to block out what is behind you, please use a background image.
+* Frame yourself in the center of the web camera, rather than having your face be off to one side or another.
+* Consider the lightning in your recording area:
+    1. Do not have a window in the background as it will shadow your face.
+    2. Use a bright light in front of you.
+* When using Zoom:
+    * Check "Record video during screen recording" to make sure your webcam video is included,
+    * Check "Place video next to the shared screen in the recording" so as not to block the presentation
+* Record your video in 1920x1080.
+* We recommend using _text_ animations to avoid having an entire slide of text show up at once.
 
 ### F.A.Q.
 
