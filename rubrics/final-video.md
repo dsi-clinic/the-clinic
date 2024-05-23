@@ -10,7 +10,7 @@ You can find [example presentations here.](https://drive.google.com/drive/folder
 
 ## Requirements 
 
-* The video presentation should be between 8-12 minutes in length.
+* The video presentation should be between 8-12 minutes in length. This is a hard limit and the best presentations tend to clock in around 9-10 minutes.
 * The video must be uploaded to Canvas. No links to YouTube, Google Drive, Dropbox, etc. 
     * Canvas submissions are limited to < 75MB. Reduce the quality of the video to reduce the file size. Leave time to upload to Canvas before the deadline. Failing to meet the deadline or not uploading due to file size problems will negatively impact your grade.
 * The presentation needs to convey: 
