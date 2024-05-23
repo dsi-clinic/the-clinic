@@ -1,11 +1,13 @@
-Here is an example of a well-documented script.
+## Code Example
+
+Here is an example of a well-documented script. 
 
 Key things to notice:
 - Docstring for the script at the top of the file
 - Imports organized: standard library, general imports, custom imports
 - Each function has type hints and docstrings
-- The "sample usage" section in the docstring has [doctests](https://docs.python.org/3/library/doctest.html)
 - Most of the function explanation is in the docstring with inline comments added for further clarification
+- The "sample usage" section in the docstring has [doctests](https://docs.python.org/3/library/doctest.html). While we do not require doctests for the clinic this type of testing is standard in practice.
 
 ```python
 """Module for performing record linkage on state campaign finance dataset"""
