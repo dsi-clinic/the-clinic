@@ -6,6 +6,7 @@ All code produced should follow the requirements listed below. For questions and
 
 Our automated code test suite can be found in the [dsi-cocoa repo](https://github.com/dsi-clinic/cocoa).
 
+If you are looking for an example of a well-documented piece of code from a previous clinic we have put an example [here](../coding-standards/code-example.md)
 
 Motivation:
 ---
