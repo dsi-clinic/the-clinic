@@ -109,6 +109,7 @@ We keep a list of frequently asked questions and answers as well as "How-to"'s f
 * [Web scraping](./tutorials/web_scraping.md)
 * [How to set up your computer](./tutorials/clinic-computer-setup.md)
 * [Installing Conda on the Cluster](./tutorials/conda.md)
+* [Writing well documented code](./coding-standards/code-example.md)
 * [Docker Common Questions](./tutorials/Docker.md)
 * [Understanding File Systems](./tutorials/filepaths.md)
 * [Using GDAL](./tutorials/geopandas-dockerfile.md)
