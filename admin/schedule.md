@@ -1,11 +1,12 @@
 # Clinic Administration
 
-The purpose of this document is to centralize resources and outline weekly administrative tasks involved in running the clinic.
+The purpose of this document is to centralize resources and create a timeline of administrative tasks involved in running the clinic.
 
 ## Weekly Calendar
 
 ### Week -6
-- Share information session registration information with the following list of people [LINK]()
+- Create a registration link by creating a new Zoom meeting with registration required
+- Share information session registration information with the following [list of people](https://docs.google.com/spreadsheets/d/1w_XWoo1csw0A916N6rif86VoGKuOdS3f5U7s59Ym8Yk/edit#gid=0)
 
 ### Week -5
 Everything below depends upon having a list of projects.
@@ -35,10 +36,10 @@ Applications close on Friday of this week. After the deadline:
 - Remove the "Apply Now" button from the website
 
 ### Week -2
+- Clinic Director should open up the registration button on my.uchicago.edu
 - Review applications and match students to projects
 - Notify matched students by Friday of this week
 - Send mass rejection email to students that did not match
-- Clinic Director should open up the registration button on my.uchicago.edu
 
 ### Week -1
 The following tasks depend upon having a list of confirmed students and projects:
@@ -50,8 +51,8 @@ The following tasks depend upon having a list of confirmed students and projects
 - Set up badge access for the clinic rooms by sending a list of registered student names, emails, and ChicagoID numbers to DSI operations.
 - Create when2meet links and put them in the project Slack channels
 - Notify the groups that will need to complete step 6 of the computer setup (SSH/Cluster)
-
-Monday Slack message:
+- After org reports have been submitted, setup Canvas using these [instructions](https://github.com/dsi-clinic/clinic-automation)
+Monday student Slack message:
 ```
 @here Welcome to the Clinic. A few quick notes:
 - The org report is due Friday at 5pm. This needs to be submitted via Canvas.
@@ -59,6 +60,13 @@ Monday Slack message:
 - You should also have received an invitation to Canvas. Make sure you can access the page.
 - Today's class from 5-6:20 in Eckhart 133 is a quick introduction to the clinic and first week logistics.
 - All information, grading rubrics, etc. can be found here: https://github.com/dsi-clinic/the-clinic
+```
+Monday TA/Mentor message:
+```
+A few quick notes on the first week:
+- Students have class TuTh of this week. You should expect a bunch of slack and other orgnaizational stuff today through Friday. By Friday students are expected to coordinate with you about meeting times which start next week. 
+- Please keep an eye on slack.
+- Thursday students will be required to verify the set up of their computer during the lecture time. TAS: If you do not have a conflict it would be great if you could attend.
 ```
 Wednesday (or pre-computer setup) Slack message:
 ```
@@ -88,6 +96,9 @@ Monday message:
 ```
 
 ### Week 8
+- Remind students of upcoming deadlines and technical evaluation
+- Remind TAs/Mentors of their responsibilities for final deliverables
+
 Monday message:
 ```
 All – Part of the grade of the clinic is a technical assessment of your code. You can find more information in the links below, including a grading rubric.
@@ -119,10 +130,44 @@ Rubrics can be found here:
 Please read the rubrics carefully in order to receive full credit.
 ```
 
+Mentor/TA message:
+```
+@channel Just a reminder about everyone's responsibilities as we head into the final weeks of the quarter.
+Mentors: provide written feedback within 24 hours on student draft videos and one-pagers. For example assessments and more information about the requirements of these assignments, please refer to the rubric for the video and one-pager. You will need to give feedback three times:
+1. May 15 at 1pm (video draft 1)
+2. May 17 at 1pm (video draft 2)
+3. May 17 at 1pm (one-pager draft)
+TAs: complete the technical rubric for three files in two repositories. You will be assigned two repositories to grade next week. Please fill out a markdown file for each file you grade and submit them by 5/26.
+```
+### Week 9
+- Turn on peer review
+### Week 10
+- Assign TAs to repositories for the final technical evaluation
+
+TA swap message:
+```
+Hello TAs, today at 5pm is the cutoff for students to submit code. After the deadline, you should start the technical review process for the two repos that you are assigned. The details of the repo assignments and links can be found here.
+For each repo you are assigned, you should:
+- identify three random python files or notebooks that have been touched this quarter
+- create a md file for each repository and complete this checklist for each file: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-technical-cleanup.md
+- run `cocoa <dir> --lint --date 2024-03-18` on the cloned repo and copy/paste the output into a md file
+By Friday at 5pm, you should return to me two md files for each repository you've been assigned. Thank you for your help!
+```
+
+### Week 11
+- Remove all students and TAs from GitHub repositories
+
+
 
 ### TODO:
 - info about hiring TAs
 - notification of mentors?
+- ta swap
+- peer review
+- canvas setup
+
+
+
 
 
 ## Resources
