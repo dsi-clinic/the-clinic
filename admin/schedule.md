@@ -2,11 +2,15 @@
 
 The purpose of this document is to centralize resources and create a timeline of administrative tasks involved in running the clinic.
 
+## Resources
+- [Website admin link](https://sites.google.com/d/1aQ3atv5lfN5LBf-0Dwh3awZRpyYd2XuL/p/1YjmIMqKZj_FhdESZs-FvhzTzgPfSl8UQ/edit)
+- [Application admin link](https://docs.google.com/forms/d/1OAgTju72wNeLYeNbp3xsqxgAGqARuYvTwdYcFrTALus/edit)
+
 ## Weekly Calendar
 
 ### Week -6
-- Create a registration link by creating a new Zoom meeting with registration required
-- Share information session registration information with the following [list of people](https://docs.google.com/spreadsheets/d/1w_XWoo1csw0A916N6rif86VoGKuOdS3f5U7s59Ym8Yk/edit#gid=0)
+- Create a registration link for the information session via [Zoom](https://uchicago.zoom.us/meeting#/upcoming) website
+- Share the information session registration link with this [list of people](https://docs.google.com/spreadsheets/d/1w_XWoo1csw0A916N6rif86VoGKuOdS3f5U7s59Ym8Yk/edit#gid=0)
 
 ### Week -5
 Everything below depends upon having a list of projects.
@@ -14,15 +18,14 @@ Everything below depends upon having a list of projects.
 - Upload a pdf of the pitchbook to Google Drive. Change the permissions of the file to allow anyone to view it
 - In the "Project Descriptions" section of the website, update the link using the link from Google Drive
 - Insert the project names into section 3 of the application. Tip: create one version of the question and then replicate it
-- Update the information session template with the project names
 
 ### Week -4
 Before the information session:
+- Update the [information session template](https://drive.google.com/drive/u/0/folders/1hPbbp9HTE1DwTkWRc_BMfEkbNoqXElFi)
 - On the course website, create an "Apply Now" buttow in the application section. This button should point to [this link](https://docs.google.com/forms/d/1OAgTju72wNeLYeNbp3xsqxgAGqARuYvTwdYcFrTALus/)
 - Turn on the application. Go to the Responses tab and switch the "accepting responses" toggle
 
 During the information session:
-- Use the [information session template](https://drive.google.com/drive/u/0/folders/1hPbbp9HTE1DwTkWRc_BMfEkbNoqXElFi)
 - Record the session
 - Record the number of registrations in the [Clinic Census](https://docs.google.com/spreadsheets/d/1cjh8Nii2IoAxG8nynYUlc9nOkVl3kGgWw2pihY98J6Q/edit#gid=0)
 
@@ -51,7 +54,8 @@ The following tasks depend upon having a list of confirmed students and projects
 - Set up badge access for the clinic rooms by sending a list of registered student names, emails, and ChicagoID numbers to DSI operations.
 - Create when2meet links and put them in the project Slack channels
 - Notify the groups that will need to complete step 6 of the computer setup (SSH/Cluster)
-- After org reports have been submitted, setup Canvas using these [instructions](https://github.com/dsi-clinic/clinic-automation)
+- After org reports have been submitted, set up Canvas using these [instructions](https://github.com/dsi-clinic/clinic-automation)
+
 Monday student Slack message:
 ```
 @here Welcome to the Clinic. A few quick notes:
@@ -88,12 +92,24 @@ Room notification message:
 ```
 @here Your room assignments are below. All rooms are located in the Ryerson Annex which is located north of the main Ryerson building. The Annex can be accessed through a set of double doors on the first floor of Ryerson.
 ```
+### Week 3
+- Turn on the [peer review form](https://docs.google.com/forms/d/1Ls_YnQQ72J83WqE-7XPMPbC6TtrpXJcdArA0wmdSIOA/edit). Notify students via Canvas that the peer review is available
+
+### Week 4
+- Turn off the peer review
 
 ### Week 5
 Monday message:
 ```
 @here Quick reminder that next week is the mid quarter presentations! The date of your presentation can be found on canvas. A template, grading rubric and more information can be found on our github. Please read the rubric. https://github.com/dsi-clinic/the-clinic
 ```
+
+### Week 6
+- Turn on the [peer review form](https://docs.google.com/forms/d/1Ls_YnQQ72J83WqE-7XPMPbC6TtrpXJcdArA0wmdSIOA/edit). Notify students via Canvas that the peer review is available
+
+### Week 7
+- Turn off the peer review
+
 
 ### Week 8
 - Remind students of upcoming deadlines and technical evaluation
@@ -139,9 +155,9 @@ Mentors: provide written feedback within 24 hours on student draft videos and on
 3. May 17 at 1pm (one-pager draft)
 TAs: complete the technical rubric for three files in two repositories. You will be assigned two repositories to grade next week. Please fill out a markdown file for each file you grade and submit them by 5/26.
 ```
-### Week 9
-- Turn on peer review
+
 ### Week 10
+- Turn on the [peer review form](https://docs.google.com/forms/d/1Ls_YnQQ72J83WqE-7XPMPbC6TtrpXJcdArA0wmdSIOA/edit). Notify students via Canvas that the peer review is available
 - Assign TAs to repositories for the final technical evaluation
 
 TA swap message:
@@ -155,21 +171,14 @@ By Friday at 5pm, you should return to me two md files for each repository you'v
 ```
 
 ### Week 11
+- Turn off the peer review
 - Remove all students and TAs from GitHub repositories
 
 
 
 ### TODO:
 - info about hiring TAs
-- notification of mentors?
-- ta swap
-- peer review
-- canvas setup
 
 
 
 
-
-## Resources
-- [Website admin link](https://sites.google.com/d/1aQ3atv5lfN5LBf-0Dwh3awZRpyYd2XuL/p/1YjmIMqKZj_FhdESZs-FvhzTzgPfSl8UQ/edit)
-- [Application admin link](https://docs.google.com/forms/d/1OAgTju72wNeLYeNbp3xsqxgAGqARuYvTwdYcFrTALus/edit)
