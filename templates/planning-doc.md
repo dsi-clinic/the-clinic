@@ -2,7 +2,7 @@
 
 The planning document should outline each team member's assigned tasks for the next week.
 
-Note that this report can be filled out either in Markdown or using the [Microsoft Word Template](./planning-doc.docx). In either case please make sure to submit the document via Canvas by the assigned date and time.
+This report can be filled out using the [Microsoft Word Template](./planning-doc.docx). Submit the document in pdf format via Canvas by the assigned date and time.
 
 ## Requirements 
 A completed template submitted to Canvas by the required date and time.
