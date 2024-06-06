@@ -1,4 +1,4 @@
-# Clinic Administration
+# Clinic Administrative Schedule
 
 The purpose of this document is to centralize resources and create a timeline of administrative tasks involved in running the clinic.
 
@@ -68,7 +68,7 @@ Monday student Slack message:
 Monday TA/Mentor message:
 ```
 A few quick notes on the first week:
-- Students have class TuTh of this week. You should expect a bunch of slack and other orgnaizational stuff today through Friday. By Friday students are expected to coordinate with you about meeting times which start next week. 
+- Students have class TuTh of this week. You should expect a bunch of slack and other organizational stuff today through Friday. By Friday students are expected to coordinate with you about meeting times which start next week. 
 - Please keep an eye on slack.
 - Thursday students will be required to verify the set up of their computer during the lecture time. TAS: If you do not have a conflict it would be great if you could attend.
 ```
