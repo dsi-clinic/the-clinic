@@ -4,7 +4,7 @@ The purpose of this document is to centralize resources and create a timeline of
 
 ## Resources
 - [Website admin link](https://sites.google.com/d/1aQ3atv5lfN5LBf-0Dwh3awZRpyYd2XuL/p/1YjmIMqKZj_FhdESZs-FvhzTzgPfSl8UQ/edit)
-- [Application admin link](https://docs.google.com/forms/d/1OAgTju72wNeLYeNbp3xsqxgAGqARuYvTwdYcFrTALus/edit)
+- [Application admin link](https://docs.google.com/forms/d/1OAgTju72wNeLYeNbp3xsqxgAGqARuYvTwdYcFrTALus/edit) Best Practice: re-use this form, clearing out the historical responses and changing the date and project names.
 
 ## Weekly Calendar
 
@@ -39,7 +39,7 @@ Applications close on Friday of this week. After the deadline:
 - Remove the "Apply Now" button from the website
 
 ### Week -2
-- Clinic Director should open up the registration button on my.uchicago.edu
+- Clinic Director should open up the registration button on my.uchicago.edu. Verify that undergrads can enroll with electronic consent for all courses. 
 - Review applications and match students to projects
 - Notify matched students by Friday of this week
 - Send mass rejection email to students that did not match
@@ -95,7 +95,7 @@ Room notification message:
 ### Week 3
 - Turn on the [peer review form](https://docs.google.com/forms/d/1Ls_YnQQ72J83WqE-7XPMPbC6TtrpXJcdArA0wmdSIOA/edit). Notify students via Canvas that the peer review is available
 
-### Week 4
+### Week 4 (Note this is Week -6 for the forthcoming quarter)
 - Turn off the peer review
 
 ### Week 5
