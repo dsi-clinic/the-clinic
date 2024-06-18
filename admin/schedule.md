@@ -5,12 +5,13 @@ The purpose of this document is to centralize resources and create a timeline of
 ## Resources
 - [Website admin link](https://sites.google.com/d/1aQ3atv5lfN5LBf-0Dwh3awZRpyYd2XuL/p/1YjmIMqKZj_FhdESZs-FvhzTzgPfSl8UQ/edit)
 - [Application admin link](https://docs.google.com/forms/d/1OAgTju72wNeLYeNbp3xsqxgAGqARuYvTwdYcFrTALus/edit) Best Practice: re-use this form, clearing out the historical responses and changing the date and project names.
+- [Matching template](https://docs.google.com/spreadsheets/d/1tCdb3AzCP_ukSw_oa4oKwTBuqgX3vyGb6n0yVDx6my4/edit)
 
 ## Weekly Calendar
 
 ### Week -6
 - Create a registration link for the information session via [Zoom](https://uchicago.zoom.us/meeting#/upcoming) website
-- Share the information session registration link with this [list of people](https://docs.google.com/spreadsheets/d/1w_XWoo1csw0A916N6rif86VoGKuOdS3f5U7s59Ym8Yk/edit#gid=0)
+- Share the information session registration link with this [list of people](https://docs.google.com/spreadsheets/d/1w_XWoo1csw0A916N6rif86VoGKuOdS3f5U7s59Ym8Yk/edit#gid=0) using this [email template](./emails.md#info-session-outreach)
 
 ### Week -5
 Everything below depends upon having a list of projects.
@@ -34,15 +35,18 @@ After the information session:
 - Remove the "Register Now" text from the website
 
 ### Week -3
-Applications close on Friday of this week. After the deadline:
+- Applications close on Friday of this week. Send a reminder email to the information session list from Zoom using this [email template](./emails.md#info-session-reminder)
+
+
+After the deadline:
 - Turn off the toggle in the application to stop accepting responses
 - Remove the "Apply Now" button from the website
 
 ### Week -2
 - Clinic Director should open up the registration button on my.uchicago.edu. Verify that undergrads can enroll with electronic consent for all courses. 
-- Review applications and match students to projects
-- Notify matched students by Friday of this week
-- Send mass rejection email to students that did not match
+- Review applications and match students to projects using the [matching template](https://docs.google.com/spreadsheets/d/1tCdb3AzCP_ukSw_oa4oKwTBuqgX3vyGb6n0yVDx6my4/edit)
+- Notify matched students by Friday of this week using this [email template](./emails.md#accept-response)
+- Send mass rejection email to students that did not match using this [email template](./emails.md#reject-response)
 
 ### Week -1
 The following tasks depend upon having a list of confirmed students and projects:
@@ -173,12 +177,4 @@ By Friday at 5pm, you should return to me two md files for each repository you'v
 ### Week 11
 - Turn off the peer review
 - Remove all students and TAs from GitHub repositories
-
-
-
-### TODO:
-- info about hiring TAs
-
-
-
 
