@@ -140,3 +140,15 @@ In addition to the information above, this section contains best practices for m
 * [TA Expectations](./mentor-ta/ta-expectations.md)
 * [How to run a Mentor Meeting](./mentor-ta/how-to-run-a-meeting.md)
 * [How to run a TA Session](./mentor-ta/how-to-run-a-ta-session.md)
+
+# FAQ
+
+In this section you can find a list of frequently asked questions about the clinic.
+
+### I am doing an internship/research experience/project in data science, can I waive out of the clinic? 
+
+Unfortunately these classes are required for the major and there is no method of substituting them. Internships, Research experiences and projects come in all shapes and sizes and it isn't possible to guarantee any specific learning outcome, supervision or experience with them.
+
+### As a Data Science Major, can I take the clinic over two non-consecutive quarters? 
+
+It is strongly recommended to take the clinic in consecutive quarters. If you take it over non-consecutive quarters you will likely end up on two different projects which will significantly diminish the experience. At the individual level the most important learning experience occurs after you have internalized the domain and background of the project which frequently occurs in the second quarter. 
