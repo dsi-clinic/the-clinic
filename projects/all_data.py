@@ -36,7 +36,7 @@ SPRING_24_PROJECT = [
         1,
         1,
         "[Matthew Dearing](https://scholar.google.com/citations?user=HUQIELDxZkgJ&hl=en)",
-        1,
+        0,
         0,
     ],
     [
@@ -49,7 +49,7 @@ SPRING_24_PROJECT = [
         1,
         1,
         "[Matthew Dearing](https://scholar.google.com/citations?user=HUQIELDxZkgJ&hl=en)",
-        1,
+        0,
         0,
     ],
     [
@@ -279,7 +279,7 @@ WINTER_24_PROJECT = [
         1,
         1,
         "[Matthew Dearing](https://scholar.google.com/citations?user=HUQIELDxZkgJ&hl=en)",
-        1,
+        0,
         0,
     ],
     [
@@ -292,7 +292,7 @@ WINTER_24_PROJECT = [
         1,
         1,
         "[Matthew Dearing](https://scholar.google.com/citations?user=HUQIELDxZkgJ&hl=en)",
-        1,
+        0,
         0,
     ],
     [
@@ -595,7 +595,7 @@ AUTUMN_23_PROJECT = [
         1,
         1,
         "[Matthew Dearing](https://scholar.google.com/citations?user=HUQIELDxZkgJ&hl=en)",
-        1,
+        0,
         0,
     ],
     [
@@ -608,7 +608,7 @@ AUTUMN_23_PROJECT = [
         1,
         1,
         "[Matthew Dearing](https://scholar.google.com/citations?user=HUQIELDxZkgJ&hl=en)",
-        1,
+        0,
         0,
     ],
     [
@@ -860,7 +860,7 @@ WINTER_23_PROJECT = [
         1,
         1,
         "[Matthew Dearing](https://scholar.google.com/citations?user=HUQIELDxZkgJ&hl=en)",
-        1,
+        0,
         0,
     ],
     [
@@ -1147,7 +1147,7 @@ SPRING_23_PROJECT = [
         1,
         1,
         "[Matthew Dearing](https://scholar.google.com/citations?user=HUQIELDxZkgJ&hl=en)",
-        1,
+        0,
         0,
     ],
     [

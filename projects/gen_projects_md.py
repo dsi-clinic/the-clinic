@@ -201,6 +201,9 @@ def create_single_quarter_table(
             project_name_info = f"<!-- markdown-link-check-disable \
                 -->[{project_name}]({project_url})<!-- \
                     markdown-link-check-enable -->"
+            project_name_info = ("<!-- markdown-link-check-disable -->["
+                                 f"{project_name}]({project_url})"
+                                 "<!-- markdown-link-check-enable -->")
 
         # If the repo is private than the markdown link checker will fail, so
         # add an exclusion for it in the case of a private repo

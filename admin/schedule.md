@@ -54,9 +54,9 @@ The following tasks depend upon having a list of confirmed students and projects
 - Set up badge access for the clinic rooms by sending a list of registered student names, emails, and ChicagoID numbers to DSI operations.
 - Create when2meet links and put them in the project Slack channels
 - Notify the groups that will need to complete step 6 of the computer setup (SSH/Cluster)
-- After org reports have been submitted, set up Canvas using these [instructions](https://github.com/dsi-clinic/clinic-automation)
+- After org reports have been submitted, set up Canvas using these <!-- markdown-link-check-disable -->[instructions](https://github.com/dsi-clinic/clinic-automation)<!-- markdown-link-check-enable-->.
+ 
 
-Monday student Slack message:
 ```
 @here Welcome to the Clinic. A few quick notes:
 - The org report is due Friday at 5pm. This needs to be submitted via Canvas.
