@@ -159,7 +159,7 @@ SPRING_24_PROJECT = [
     [
         "Morningstar",
         "Codebase optimization with LLMs",
-        "https://morningstar.com/",
+        "https://www.morningstar.com/",
         "Satadisha",
         "Rishabh",
         "https://github.com/dsi-clinic/2024-spring-morningstar",
