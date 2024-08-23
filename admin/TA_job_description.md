@@ -18,6 +18,10 @@ Over the course of the quarter the TA will work closely with the mentor and clin
 
 The TA will also be required to assist in additional grading during the last week of the quarter. Specifically there are technical hurdles that each project is required to complete by the end of the quarter. TAs are provided a short checklist to verify that those hurdles have been met.
 
+### Requirements
+
+TAs are expected to have a knowledge of Python, Data Science Techniques and Git/Github. We do our best to match TAs to projects that align best with their previous experiences, though we do expect TAs to be able to come up to speed on additional tools and technologies as required.
+
 ### Expected Hours
 
 This is an _in person_ position during the school year. If you are planning on traveling or unable to be on campus during the entire quarter (including reading period) please consider alternative positions.
