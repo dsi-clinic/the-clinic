@@ -22,7 +22,8 @@ Everything below depends upon having a list of projects.
 
 ### Week -4
 Before the information session:
-- Update the [information session template](https://drive.google.com/drive/u/0/folders/1hPbbp9HTE1DwTkWRc_BMfEkbNoqXElFi)
+- Update the [information session template](https://drive.google.com/drive/u/0/folders/1hPbbp9HTE1DwTkWRc_BMfEkbNoqXElFi).
+- Update the Info Session Presentation, which can be found [in this folder](https://drive.google.com/drive/folders/1hPbbp9HTE1DwTkWRc_BMfEkbNoqXElFi).
 - On the course website, create an "Apply Now" buttow in the application section. This button should point to [this link](https://docs.google.com/forms/d/1OAgTju72wNeLYeNbp3xsqxgAGqARuYvTwdYcFrTALus/)
 - Turn on the application. Go to the Responses tab and switch the "accepting responses" toggle
 
