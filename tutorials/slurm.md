@@ -93,7 +93,7 @@ Host *.ds !fe.ds
   User INSERT_YOUR_CNET
   ProxyJump fe.ds
 ```
-Replace `INSERT_YOUR_CNET` with your CNET ID and `INSERT_PATH_TO_PRIVATE_KEY` with the path the key you previously created. This will map `fe.ds` to an ssh command to the listed hostname, with the listed user and private key, and using the listed identity file as your key. `ForwardAgent` set to yes means that any ssh keys added to your local agent will also be added to the remote machines ssh agent (so you can use your local ssh key for GitHub on the cluster, for example). The second block is for connecting directly to compute nodes.
+Replace `INSERT_YOUR_CNET` with your CNET ID and `INSERT_PATH_TO_PRIVATE_KEY` with the path the key you previously created. [Windows: `INSERT_PATH_TO_PRIVATE_KEY` will be `/Users/USERNAME/.ssh/KEYNAME` where `USERNAME` is your windows username and `KEYNAME` is the name of the key you created. Starting with the root directory `/` is not standard for windows and will not typically work in other situations.] This will map `fe.ds` to an ssh command to the listed hostname, with the listed user and private key, and using the listed identity file as your key. `ForwardAgent` set to yes means that any ssh keys added to your local agent will also be added to the remote machines ssh agent (so you can use your local ssh key for GitHub on the cluster, for example). The second block is for connecting directly to compute nodes.
 
 3. Save and close the file.
 
