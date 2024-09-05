@@ -55,7 +55,7 @@ It can be annoying / burdensome to type in your passwords constantly to connect 
 ### [Windows Users Only] Step 1: Enable OpenSSH
 
 If you are using Windows 10 or 11, you can use OpenSSH like Mac and Linux users. If you use WSL2, please see [specific instructions](#wsl). <!-- markdown-link-check-disable -->To ensure it is set up correctly, complete the following (from [this SO answwer](https://stackoverflow.com/a/40720527)):<!-- markdown-link-check-enable -->
-1. Open Manage optional features from the start menu and make sure you have Open SSH Client in the list. If not, you should be able to add it.
+1. Open "Manage optional features" or "Optional features" from the start menu and make sure you have Open SSH Client in the list. If not, you should be able to add it.
 2. Open Services from the start Menu
 3. Scroll down to OpenSSH Authentication Agent > right click > properties
 4. Change the Startup type from Disabled to any of the other 3 options. I have mine set to Automatic (Delayed Start)
