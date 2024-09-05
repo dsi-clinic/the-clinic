@@ -399,6 +399,9 @@ Error: `git@github.com: Permission denied (publickey). fatal: Could not read fro
 <br>Cause: GitHub can not access a private key that matches the public key stored on GitHub.
 <br>Solution: If you are on the cluster, make sure that you are forwarding your ssh agent. `ssh-add -l` should return the appropriate key. If no identities are found, your ssh-agent has no identities or is not being forwarded. If `ssh-add -l` locally also returns no identities, you must run `ssh-add PATH_TO_KEY` as specified in Part II, [Step 2](#step-2-create--manage-ssh-keys). If the correct identity is found locally, make sure your ssh config matches the one in this document. Finally make sure you have added the appropriate public key to your GitHub account.
 
+Error: `Could not open a connection to your authentication agent.`
+<br>Solution: Run "eval `ssh-agent -s`"
+
 ### Troubleshooting Tests
 
 Whenever an error comes up, think about all the potential points of failure. Then try to isolate each and see if they work on their own. For example if you are trying to connect to a compute node with VS code using the steps in these instructions, potential points of failure are: VS Code `Remote - SSH` extension, VS Code, your internet connection, ssh config file, ssh keys, slurm, the cluster. Below find some methods to check if different components are working correctly.
