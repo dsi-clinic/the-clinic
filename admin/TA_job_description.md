@@ -5,7 +5,7 @@ Teaching assistants for the Data Science Clinic are entrusted with both direct s
 Duties include:
 
 * Leading bi-weekly in-person working sessions
-* Answering questions via Slack and E-mail
+* Answering questions via Slack and e-mail
 * Reviewing code
 * Taking attendance 
 * Assisting in additional grading 
