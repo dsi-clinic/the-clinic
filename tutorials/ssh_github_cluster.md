@@ -32,7 +32,7 @@ If there is a section which is unclear or needs updating, please open an issue o
       - [\[CLUSTER\] Enabling access to the cluster](#cluster-enabling-access-to-the-cluster)
         - [Mac/Linux Instructions for Remote Authentication](#maclinux-instructions-for-remote-authentication)
         - [Windows Instructions for Remote Authentication](#windows-instructions-for-remote-authentication)
-      - [Verification](#verification)
+  - [Verification](#verification)
 
 ## Part 0: Do I (already) have access?
 
@@ -233,5 +233,8 @@ For a private key to work for authenticating, the service you are authenticating
 5. Type `exit` to exit the cluster and return to your windows command prompt.
 6. To verify success: In your command prompt, `ssh fe.ds` should connect you to the cluster without typing any password.
 
-#### Verification 
+## Verification 
+
+Reboot your machine. 
+
 **At this point you should have access to both github and, optionally, the cluster. [Verify you access before preceding](#part-0-do-i-already-have-access).**
