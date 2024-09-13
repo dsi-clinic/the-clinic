@@ -94,7 +94,12 @@ This guide is specifically tailored to the University of Chicago DSI Cluster, th
 - VS Code Installed
 - A GitHub account
 
-**Do NOT go past this until you have verified that all of the above are working**
+<div align="center">
+
+| **Do NOT go past this until you have completed the above.** |
+|-----------------------------|
+
+</div>
 
 ## Part II: Set up SSH
 
@@ -118,7 +123,14 @@ If you use WSL2, please see the above caveat. To ensure it is set up correctly, 
 | --- | 
 | Trevor: XXX |
 
-**If you are using Windows do not pass unless all tests are completed.**
+
+<div align="center">
+
+| **If you are using Windows do not pass unless all tests are completed.** |
+|-----------------------------|
+
+</div>
+
 
 ### Step 1: Verify/Install ssh-agent
 
@@ -129,7 +141,12 @@ If you use WSL2, please see the above caveat. To ensure it is set up correctly, 
 
 If ssh-agent was not running, please reboot and verify that it loads on start. 
 
-**Do not continue until you have verified that ssh-agent runs _after_ rebooting.**
+<div align="center">
+
+| **Do not continue until you have verified that ssh-agent runs _after_ rebooting.** |
+|-----------------------------|
+
+</div>
 
 ### Step 2: Create / Manage SSH Keys
 
@@ -141,7 +158,12 @@ If ssh-agent was not running, please reboot and verify that it loads on start.
 4. You can _optionally_ add a password to your SSH key, though it is not required. As you type the password in, no text will appear on screen to keep your password length private from shoulder surfers. You will be asked to repeat it. Do not forget your password! Write it down, or ideally store it in a password manager.
 5. After running this there should be two files in the `.ssh` directory. A `KEYNAME` and `KEYNAME.pub` file will be created by this command. The file with the `.pub` extension is your public key and can be shared safely. The file with no extension is your private key and should never be shared. `KEYNAME` will either be the name you specified above or the the encryption type. 
 
-**Do not continue until you have verified that both files mentioned above exist in the .ssh directory.**
+<div align="center">
+
+| **Do not continue until you have verified that both files mentioned above exist in the .ssh directory.** |
+|-----------------------------|
+
+</div>
 
 ### Step 3: Add your keys to ssh-agent
 
@@ -149,7 +171,12 @@ If ssh-agent was not running, please reboot and verify that it loads on start.
 <!-- 2. markdown-link-check-disable[Mac Users Only] (optional) To keep the key in your `ssh-agent` across sessions, follow [this stack overflow answer](https://stackoverflow.com/questions/18880024/start-ssh-agent-on-login). markdown-link-check-enable  -->
 2. Confirm your key was added. In your terminal/command prompt/powershell, run `ssh-add -l` to list all keys in your ssh agent. Your key should appear here. If this command returns `The agent has no identities.`, step 4 failed. 
 
-**Do not continue until you have verified that your key file appears when you run `ssh-add -l`**
+<div align="center">
+
+| **Do not continue until you have verified that your key file appears when you run `ssh-add -l`** |
+|-----------------------------|
+
+</div>
 
 ### Step 3: [CLUSTER] Save SSH Configuration
 
