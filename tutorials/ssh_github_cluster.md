@@ -29,9 +29,8 @@ If there is a section which is unclear or needs updating, please open an issue o
     - [Step 3: \[CLUSTER\] Save SSH Configuration](#step-3-cluster-save-ssh-configuration)
     - [Step 3: Enable Authentication with SSH Keys](#step-3-enable-authentication-with-ssh-keys)
       - [Enabling access to github](#enabling-access-to-github)
-      - [\[CLUSTER\] Enabling access to the cluster](#cluster-enabling-access-to-the-cluster)
-        - [Mac/Linux Instructions for Remote Authentication](#maclinux-instructions-for-remote-authentication)
-        - [Windows Instructions for Remote Authentication](#windows-instructions-for-remote-authentication)
+      - [\[CLUSTER\] Mac/Linux Instructions for Remote Authentication](#cluster-maclinux-instructions-for-remote-authentication)
+      - [\[CLUSTER\] Windows Instructions for Remote Authentication](#cluster-windows-instructions-for-remote-authentication)
   - [Verification](#verification)
 
 ## Part 0: Do I (already) have access?
@@ -218,14 +217,12 @@ For a private key to work for authenticating, the service you are authenticating
 4. Click 'New SSH key'. Give it a name relating to the machine it is stored on, like "windows laptop", or "linux desktop" and paste in the full contents of the public key.
 5. Verify your key was added. In terminal / command prompt, try `ssh git@github.com` it should respond with `Hi GITHUB_USERNAME! You've successfully authenticated, but GitHub does not provide shell access.` or something similar. 
 
-#### [CLUSTER] Enabling access to the cluster
-
-##### Mac/Linux Instructions for Remote Authentication
+#### [CLUSTER] Mac/Linux Instructions for Remote Authentication 
 1. If on Mac/Linux, you can use `ssh-copy-id -i ~/.ssh/KEYNAME_HERE.pub fe.ds`, replacing `KEYNAME_HERE` with the name of the public ssh key you would like to use (it should end with .pub). 
 2. You will be prompted for `USERNAME@fe01.ds.uchicago.edu`'s password. This will be your CNET password. 
 3. To verify success: In your terminal, `ssh fe.ds` should connect you to the cluster without typing any password.
 
-##### Windows Instructions for Remote Authentication
+#### [CLUSTER] Windows Instructions for Remote Authentication
 1. Copy your public key as in step 1 of [enabling access to github](#enabling-access-to-github).
 2. Now connect to the server. Do `ssh fe.ds`. You'll have to type in your UChicago password. Your command prompt is now attached to the login node. The bottom left of your screen should say something like `USERNAME@fe01:~$`. 
 3. Ensure there is an `.ssh` directory. If there is not, run `mkdir .ssh`. 
