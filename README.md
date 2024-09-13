@@ -109,19 +109,21 @@ As this is a projects based course most of the work is designed around a set of 
 
 We keep a list of frequently asked questions and answers as well as "How-to"'s for specific technologies in this repo:
 
-* [Web scraping](./tutorials/web_scraping.md)
 * [How to set up your computer](./tutorials/clinic-computer-setup.md)
+* [SSH to Github and the Cluster](./tutorials/ssh_github_cluster.md)
+* [SLURM](./tutorials/slurm.md)
 * [Installing Conda on the Cluster](./tutorials/conda.md)
+* [Using Submmitit on the cluster](./tutorials/submit-it.md)
 * [Writing well documented code](./coding-standards/code-example.md)
 * [Docker Common Questions](./tutorials/Docker.md)
 * [Understanding File Systems](./tutorials/filepaths.md)
 * [Using GDAL](./tutorials/geopandas-dockerfile.md)
 * [Using Podman on the Cluster](./tutorials/podman.md)
-* [How to talk about the clinic on your resume and in interviews](./tutorials/resume-interviews.md)
-* [SLURM](./tutorials/slurm.md)
 * [Speaking Code](./tutorials/speaking-code.md)
 * [WSL FAQ](./tutorials/WSL.md)
+* [Web scraping](./tutorials/web_scraping.md)
 * [X11 on the Cluster](./tutorials/X11.md)
+* [How to talk about the clinic on your resume and in interviews](./tutorials/resume-interviews.md)
 
 Finally, The University of Chicago's Computer Science Department has an in-depth list of related resources that you can find [here](https://uchicago-cs.github.io/student-resource-guide/). 
 
