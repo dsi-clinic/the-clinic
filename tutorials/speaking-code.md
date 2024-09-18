@@ -1,10 +1,10 @@
 # Speaking Code
 
-When we code, we come accross a lot of characters that are rarely spoken which can lead to common miscommunication. 
+When we code, we come across a lot of characters that are rarely spoken which can lead to common miscommunication. 
 
 ## Character Names
 
-Here are names of characters that we might com accross while coding. You should be familiar with the primary names. This is a simplified version of [this post](https://blog.codinghorror.com/ascii-pronunciation-rules-for-programmers/).
+You should be familiar with the primary names. This is a simplified version of [this post](https://blog.codinghorror.com/ascii-pronunciation-rules-for-programmers/).
 
 | Character | Primary Name  | Other Names|
 | --------- | ------------  | --------------- |
