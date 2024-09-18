@@ -1,6 +1,6 @@
 ## Using Submitit for Long Jobs
 
-For some projects we use [submitit](https://github.com/facebookincubator/submitit) to submit jobs in python.
+For some projects we use [submitit](https://github.com/facebookincubator/submitit) to submit jobs in Python. Another option that is sometimes used is directly writing `sbatch` commands. Each method has its positive and negative aspects. This document details using submitit.
 
 When we use slurm, we must be respectful to not overuse nodes. Please:
 - To test code, submit it to the `dev` queue or test them with less data in an interactive session

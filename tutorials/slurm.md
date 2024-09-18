@@ -64,8 +64,9 @@ conda install -n PROJECT_NAME ipykernel --update-deps --force-reinstall
 ```
 With a Jupyter notebook open, click the Python version number in the upper right and select the kernel for `PROJECT_NAME`. You may need to refresh the list of available kernels using the icon in the upper right of the menu.
 
-1. You should now be at a point where you can easily connect to the cluster with VS Code, use jupyter notebooks, and attach to compute nodes for more intensive jobs. This is enough for a lot of tasks, but if you become bothered by long running jobs crashing due to internet connection outages or running out of time on the compute node you will need to leverage `sbatch`.
+6. You should now be at a point where you can easily connect to the cluster with VS Code, use jupyter notebooks, and attach to compute nodes for more intensive jobs. This is enough for a lot of tasks, but if you become bothered by long running jobs crashing due to internet connection outages or running out of time on the compute node you will need to leverage `sbatch`.
 
+If you are installing a very large conda environment on the cluster (as evidenced by very slow times to build the environment) look at the section about [using large conda environments](#installing-large-conda-environments-on-the-dsi-cluster).
 
 ## Set up VS Code to use the cluster
 
@@ -127,7 +128,9 @@ Otherwise, make sure to add a comma to the end of the current last item and add 
 4. Back in VS Code, open the command palette (ctrl+shift+p / command+shift+p / View -> Command Palette...), search for `Remote-SSH: Connect to Host...`. Select it and type in as your host `HOSTNAME.ds` replacing the `HOSTNAME` with the hostname from above. 
 4. Your VS Code should now be connected to the compute node. To verify the  You'll have to open the repository folder (see below instructions for cloning). But now you can take advantage of the computational power from the node and the nice features of VS Code (using notebooks, python debugging, etc.)
 
-## Common Errors
+## Appendix
+
+### Common Errors
 
 Error:  `srun: error: Unable to allocate resources: Invalid account or account/partition combination specified`
 <br>Cause: You do not have permission to use the partition you requested from. 
@@ -151,9 +154,29 @@ Error: `Disk quota exceeded`
 
 Error: `git@github.com: Permission denied (publickey). fatal: Could not read from remote repository.`
 <br>Cause: GitHub can not access a private key that matches the public key stored on GitHub.
-<br>Solution: If you are on the cluster, make sure that you are forwarding your ssh agent. `ssh-add -l` should return the appropriate key. If no identities are found, your ssh-agent has no identities or is not being forwarded. If `ssh-add -l` locally also returns no identities, you must run `ssh-add PATH_TO_KEY` as specified in Part II, [Step 2](#step-2-create--manage-ssh-keys). If the correct identity is found locally, make sure your ssh config matches the one in this document. Finally make sure you have added the appropriate public key to your GitHub account.
+<br>Solution: If you are on the cluster, make sure that you are forwarding your ssh agent. `ssh-add -l` should return the appropriate key. If no identities are found, your ssh-agent has no identities or is not being forwarded. If `ssh-add -l` locally also returns no identities, you must run `ssh-add PATH_TO_KEY` as specified in the [ssh github cluster doc](./ssh_github_cluster.md). If the correct identity is found locally, make sure your ssh config matches the one in this document. Finally make sure you have added the appropriate public key to your GitHub account.
 
-## Troubleshooting Tests
+### Installing Large Conda Environments on the DSI Cluster
+
+The DSI Cluster limits each user to 50GB of space in their home directory. This is enough space for most purposes, but sometimes installing large Conda environments (especially for machine learning projects) takes up more space than this during the installation process - even if the final environment is only a few gigabytes.
+
+In order to work around this, you can change the `TMPDIR` environment variable to use the `/net/scratch` directory for temporary files created while building the environment.
+
+To temporarily change `TMPDIR`, run the following command:
+```
+export TMPDIR=/net/scratch/<your_username>/tmp
+```
+
+If you want to set `TMPDIR` permanently, you can add the above command to your `.bashrc` file in your home directory. (You can add it anywhere in the file).
+
+To check that `TMPDIR` was set correctly, run the following command:
+```
+echo $TMPDIR
+```
+
+You should see the path to the temporary directory that you specified.
+
+### Troubleshooting Tests
 
 Whenever an error comes up, think about all the potential points of failure. Then try to isolate each and see if they work on their own. For example if you are trying to connect to a compute node with VS code using the steps in these instructions, potential points of failure are: VS Code `Remote - SSH` extension, VS Code, your internet connection, ssh config file, ssh keys, slurm, the cluster. Below find some methods to check if different components are working correctly.
 
