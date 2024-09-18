@@ -22,7 +22,7 @@ If there is a section which is unclear or needs updating, please open an issue o
   - [Part 0: Do I (already) have access?](#part-0-do-i-already-have-access)
   - [Part 1: SSH Background \& Prerequisites](#part-1-ssh-background--prerequisites)
   - [Part II: Set up SSH](#part-ii-set-up-ssh)
-    - [\[Windows Users Only\] Step 0: Install WSL2 \& Enable OpenSSH](#windows-users-only-step-0-install-wsl2--enable-openssh)
+    - [\[Windows Users Only\] Step 0: Install WSL \& Enable OpenSSH](#windows-users-only-step-0-install-wsl--enable-openssh)
     - [Step 1: Verify/Install ssh-agent](#step-1-verifyinstall-ssh-agent)
     - [Step 2: Create / Manage SSH Keys](#step-2-create--manage-ssh-keys)
     - [Step 3: Add your keys to ssh-agent](#step-3-add-your-keys-to-ssh-agent)
@@ -104,11 +104,11 @@ This guide is specifically tailored to the University of Chicago DSI Cluster, th
 
 It can be annoying / burdensome to type in your passwords constantly to connect to the cluster or push/pull from GitHub. We can switch to authenticating based on *something we have* using ssh keys. 
 
-### [Windows Users Only] Step 0: Install WSL2 & Enable OpenSSH
+### [Windows Users Only] Step 0: Install WSL & Enable OpenSSH
 
-If you are using Windows you need to install WSL2 ("Windows Subsystem for Linux, Version 2") on your machine. Installing this allows Windows users access to core Unix based functionality. The convenience of 'pretending' to have two separate operating systems on one, however, can lead to complications. One is with SSH keys, which is the core method we use to authenticate to the DSI Cluster. 
+If you are using Windows you need to install WSL ("Windows Subsystem for Linux") on your machine. Installing this allows Windows users access to core Unix based functionality. The convenience of 'pretending' to have two separate operating systems on one, however, can lead to complications. One is with SSH keys, which is the core method we use to authenticate to the DSI Cluster. 
 
-The `.ssh` directory used on your normal Windows system and your WSL will be different from each other. This is fine in most cases, but can lead to headaches when using VS Code. If you wish to connect to a remote SSH machine in VS code, it will use your Windows configuration. So even if you only use WSL2 and the VS Code extension (WSL) to code in WSL2, you must follow the [Windows ssh instructions](#windows-specific-instructions). If you wish use the same keys on each system, you can copy them. See [this article](https://devblogs.microsoft.com/commandline/sharing-ssh-keys-between-windows-and-wsl-2/) for more information.
+The `.ssh` directory used on your normal Windows system and your WSL will be different from each other. This is fine in most cases, but can lead to headaches when using VS Code. If you wish to connect to a remote SSH machine in VS code, it will use your Windows configuration. So even if you only use WSL and the VS Code extension (WSL) to code in WSL2, you must follow the [Windows ssh instructions](#windows-specific-instructions). If you wish use the same keys on each system, you can copy them. See [this article](https://devblogs.microsoft.com/commandline/sharing-ssh-keys-between-windows-and-wsl-2/) for more information.
 
 If you use WSL2, please see the above caveat. To ensure it is set up correctly, complete the following (from [this SO answer](https://stackoverflow.com/a/40720527)):<!-- markdown-link-check-enable -->
 1. Open Manage optional features from the start menu and make sure you have Open SSH Client in the list. If not, you should be able to add it.
