@@ -1,5 +1,24 @@
-    * This is located at `/home/USERNAME` where `USERNAME` is your CNET ID and shortened to `~`. Run the command `pwd` to print your current working directory. The computer you are logged into runs on linux and the filesystem is similar to Mac and other linux filesystems. `ls /` will show you the contents of the root directory and it will look similar to that of a personal computer. This system however might be spread across many physical machines and is shared by many users. `ls /home` will list all users home directories. You only have permission to view or modify files in yours. The home directory is where you will store all repositories and data you do not want to share. 
-  * 4. Run the command `htop`. This shows you the memory usage, cpu utilization, and processes running on the login node. As you can see, many users are on here concurrently. So if one tries doing something too intensive, it will slow it down for everyone (and they will know who did it). Be courteous. Press q to exit.  
+# Unix Command Line
 
+Being comfortable on the command line is an incredibly important skill to have for any data scientist or software engineer. 
 
-4.  Run `ls /net/projects` to view a list of _shared_ project directories. These are folders for sharing large data and often have storage of hundreds of GBs. To have access to one of these folders, you must be a member of its unix group. `ls -l /net/projects/` will list all of the content directories, this time with more information. The first column looks like `drwxrwxr-x` and refers to the permissions for the file/directory. Then there is a number, then the user that owns the file. Then the group the file belongs to. To see what groups you are a member of, run `id USERNAME` where `USERNAME` is your CNET ID.  
+For the purpose of clinic there are a few very important concepts to know. Below you will find resources for each:
+
+- [How to navigate a file system](https://people.ischool.berkeley.edu/~kevin/unix-tutorial/section3.html): How to move around a file system.
+- [Moving, Deleting, Copying files and directories](https://linuxcommand.org/lc3_lts0050.php): How to manipulate the file system.
+- [File permissions](https://www.redhat.com/sysadmin/linux-file-permissions-explained): How do I know what files and directories I can access?
+
+There are also an incredible array of videos and tools discussing these topics. In general you will want to be familiar with the following commands:
+
+| command | name | 
+| --- | --- |
+| ls | list files |
+| pwd | get current directory | 
+| cd | change directory | 
+| mv | move file or directory | 
+| cp | copy file or directory |
+| rm | remove file |
+| rmdir | remove directory |
+| cat | list contents of a file |
+| more / less | list contents of a file in a page-able manner | 
+| touch | change date (or create) a file | 
