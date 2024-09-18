@@ -38,6 +38,6 @@ Establishing a consistent process for the meetings is crucial. The most successf
 
 ### Lessons Learned
 
-- **Note-Taking**: Students often forget their assignments post-meeting. Taking notes and sharing them in the Slack channel can be very helpful for both you and the students. I have gotten in the habit of just taking notes myself and sharing them rather than relying on students to do it. Even after cajoling, students fail to priortize note-taking.
+- **Note-Taking**: Students often forget their assignments post-meeting. Taking notes and sharing them in the Slack channel can be very helpful for both you and the students. I have gotten in the habit of just taking notes myself and sharing them rather than relying on students to do it. Even after cajoling, students fail to prioritize note-taking.
 - **Task Assignment**: Assign tasks to _only one student_. If a task is large, break it into smaller, distinct parts.
 - **Logistical Follow-ups**: Address logistical matters during the meeting. Be cautious about relying on students who say, "I'll get back to you." They almost never do.
