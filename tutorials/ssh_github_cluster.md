@@ -12,6 +12,8 @@ Depending on what you are working on you may need to do both or just have access
 
 Please read all portions carefully and only skip if you really know what you are doing. If you come across an issue, check that it isn't addressed in [Troubleshooting](#troubleshooting) before asking. 
 
+If you are looking for instructions on using slurm to submit compute jobs, please refer to [the clinic's SLURM documentation](slurm.md)
+
 If there is a section which is unclear or needs updating, please open an issue or pull request!
 
 ## Table of Contents
@@ -77,8 +79,8 @@ We will focus on installing and verifying a number of different pieces of this s
 
 | Component Name | What it does / why is it important | What do I need to do? |
 | --- | --- | --- | 
-| `wsl2` (Windows only) | This is required to be installed on windows machines to access `bash` and a unix terminal | If using windows, you will need to [install it](#windows-users-only-step-0-install-wsl2--enable-openssh). |
-| `OpenSSH` | This is the | If using windows you will need to [enable it](#windows-users-only-step-0-install-wsl2--enable-openssh) |
+| `wsl2` (Windows only) | This is required to be installed on windows machines to access `bash` and a unix terminal | If using windows, you will need to [install it](#windows-users-only-step-0-install-wsl--enable-openssh). |
+| `OpenSSH` | This is the | If using windows you will need to [enable it](##windows-users-only-step-0-install-wsl--enable-openssh) |
 | `ssh-agent` | This is a key manager for `ssh` which runs in the background. In this course there are two things which `ssh-agent` does: (1) it allows you to avoid entering in your `ssh` password every time you login and (2) it allows for forwarding of `ssh` keys, so that if you are logged into the cluster you can continue to use the keys that are on your machine. | On Mac you will need to enable it on start-up XXXX | 
 | _Public_ `ssh` key | When you create an `ssh` key there are two files created, one of which is a _public_ key. This is _shareable_ and will usually be a file that ends in `.pub` | You will need to create it XXX |
 | _Private_ `ssh` key | When you create an `ssh` key the other file that is created is a `private` key. A private key _should never be shared_ as it is the key that allows you to enter other systems | You will need to create it XXX |
