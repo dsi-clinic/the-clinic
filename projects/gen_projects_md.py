@@ -225,7 +225,8 @@ def create_single_quarter_table(
         if has_one_pager:
             one_pager_location = f"./one-pagers/{year}-{quarter.lower()}/"
             file_info = one_pager_location + project_link + ".pdf"
-            one_pager_info = f'<a href="{file_info.replace(" ", "%20")}">One-Pager</a>'
+            one_pager_info = (
+                f'<a href="{file_info.replace(" ", "%20")}">One-Pager</a>')
         else:
             one_pager_info = ""
 
@@ -238,12 +239,14 @@ def create_single_quarter_table(
         else:
             mentor_info = "<ul>"
             for mentor in mentor_list:
-                mentor_info += f"<li>{create_link_for_mentor(ALL_PEOPLE[mentor])}</li>"
+                mentor_info += (
+                    f"<li>{create_link_for_mentor(ALL_PEOPLE[mentor])}</li>")
             mentor_info += "</ul>"
 
         # Student info. Assume that there is more than one and make a list.
         student_info = "<ul>"
-        student_project_list = [x for x in student_info_list if x[0] == project_link]
+        student_project_list = [x for x in student_info_list if x[0]
+                                == project_link]
         if len(student_project_list) == 0:
             raise Exception(f"No Students found for project {project_link}")
         for student in student_project_list:
