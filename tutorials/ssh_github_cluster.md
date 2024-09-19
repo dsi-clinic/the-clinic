@@ -37,7 +37,7 @@ If there is a section which is unclear or needs updating, please open an issue o
 
 Some students may already have access to the cluster and github and may not need to follow the below instructions. To verify both your github and cluster access, type in the following in a _terminal window_:
 
-1. ```ssh git@github.com``` which, if set up properly should generate:
+1. ```ssh -T git@github.com``` which, if set up properly should generate:
   
   ```PTY allocation request failed on channel 0
   Hi NickRoss! You've successfully authenticated, but GitHub does not provide shell access.
