@@ -108,11 +108,6 @@ This guide is specifically tailored to the University of Chicago DSI Cluster, th
 It can be annoying / burdensome to constantly type in your passwords (*something only you know*) to connect to the cluster or push/pull from GitHub. We can switch to authenticating based on *something only you have* using ssh keys and greatly reduce the friction of developing. 
 
 ### [Windows Users Only] Step 0: Install WSL & Enable OpenSSH
-
-If you are using Windows you need to install WSL ("Windows Subsystem for Linux") on your machine. Installing this allows Windows users access to core Unix based functionality. The convenience of 'pretending' to have two separate operating systems on one, however, can lead to complications. One is with SSH keys, which is the core method we use to authenticate to GitHub and the DSI Cluster. 
-
-The `.ssh` directory used on your normal Windows system and your WSL will be different from each other. This is fine in most cases, but can lead to headaches when using VS Code. If you wish to connect to a remote SSH machine in VS code, it will use your Windows configuration. So even if you only use WSL and the VS Code extension (WSL) to code in WSL2, you must follow the [Windows ssh instructions](#windows-specific-instructions). If you wish use the same keys on each system, you can copy them. See [this article](https://devblogs.microsoft.com/commandline/sharing-ssh-keys-between-windows-and-wsl-2/) for more information.
-
 If you use WSL2, please see the above caveat. To ensure it is set up correctly, complete the following (from [this SO answer](https://stackoverflow.com/a/40720527)):<!-- markdown-link-check-enable -->
 1. Open Manage optional features from the start menu and make sure you have Open SSH Client in the list. If not, you should be able to add it.
 2. Open Services from the start Menu
@@ -159,6 +154,18 @@ If ssh-agent was not running, please reboot and verify that it loads on start.
 3. You will be prompted to enter a file name for the key. Give it an identifiable name, such as `dsi_cluster` and verify the file is in the  directory listed above. Otherwise you can click enter to accept the default suggestion. 
 4. You can _optionally_ add a password to your SSH key, though it is not required. As you type the password in, no text will appear on screen to keep your password length private from shoulder surfers. You will be asked to repeat it. Do not forget your password! Write it down, or ideally store it in a password manager.
 5. After running this there should be two files in the `.ssh` directory. A `KEYNAME` and `KEYNAME.pub` file will be created by this command. The file with the `.pub` extension is your public key and can be shared safely. The file with no extension is your private key and should never be shared. `KEYNAME` will either be the name you specified above or the the encryption type. 
+
+
+#### [Windows Users Only] Manage SSH Keys with WSL2
+WSL ("Windows Subsystem for Linux") allows Windows users access to core Unix based functionality. The convenience of 'pretending' to have two separate operating systems on one, however, can lead to complications. One is with SSH keys, which is the core method we use to authenticate to GitHub and the DSI Cluster. 
+
+The `.ssh` directory used on your normal Windows system and your WSL will be different from each other. This is fine in most cases, but can lead to headaches when using VS Code. If you wish to connect to a remote SSH machine in VS code, it will use your Windows configuration. So even if you only use WSL and the VS Code extension (WSL) to code in WSL2, you must follow the [Windows ssh instructions](#windows-specific-instructions). To use the same keys on each system, you can copy them. Following these instructions adapted from [this article](https://devblogs.microsoft.com/commandline/sharing-ssh-keys-between-windows-and-wsl-2/):
+
+1. Open a terminal in WSL.
+1. Make sure you have an .ssh folder in WSL: `mkdir -p ~/.ssh`. The `-p` means to ignore if the directory already exists.
+1. Copy keys from Windows to WSL with `cp -r /mnt/c/Users/YOUR_USERNAME/.ssh ~/.ssh`
+1. SSH keys should have special permissions (on a shared computer you wouldn't want other users to be able to read your private key!). Run `chmod 600 ~/.ssh/KEYNAME` and `chmod 644 ~/.ssh/KEYNAME.pub` for all the `KEYNAME`s you wish to use in WSL. 
+1. Run `chmod 700 ~/.ssh`. 
 
 <div align="center">
 
