@@ -27,6 +27,7 @@ sometimes project specific.
 markdown-link-check-disable -->\
 [The 11th hour foundation](https://11thhourproject.org/)\
 <!-- markdown-link-check-enable -->.
+
 ---
 """
 
@@ -149,6 +150,7 @@ def create_link_for_student(student_info):
         return create_link_for_mentor(
             [student_info[1], f"https://www.github.com/{student_info[2]}"]
         )
+
 
 def create_single_quarter_table(
     quarter,
