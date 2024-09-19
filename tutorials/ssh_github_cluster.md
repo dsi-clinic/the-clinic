@@ -89,11 +89,12 @@ This guide is specifically tailored to the University of Chicago DSI Cluster, th
 
 - A CNET id
 - [CLUSTER] A CS Account. Get [one here](https://account-request.cs.uchicago.edu/account/requests) if you don't have one already.
-- (for Part 3 onward) Access to a Slurm partition. To request, send an email to techstaff@cs.uchicago.edu asking for access to compute nodes on the DSI cluster and CC your mentor (if relevant). If you are getting access through the Data Science Clinic course you should have already gone through this process.
 - A reasonably up to date and functioning computer running on Windows (10/11), Mac (10.13+/High Sierra+), or Linux. 
 - An internet connection. You'll need internet to use SSH.
 - VS Code Installed
 - A GitHub account
+
+[CLUSTER] To submit jobs and use the cluster, you will need access to a Slurm partition. To request, send an email to techstaff@cs.uchicago.edu asking for access to compute nodes on the DSI cluster and CC your mentor (if relevant). If you are getting access through the Data Science Clinic course you should have already gone through this process. You do not need access to a slurm partition to continue and set up *access* to the cluster, but you will need it to *use* the cluster. 
 
 <div align="center">
 
