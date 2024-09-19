@@ -448,7 +448,7 @@ WINTER_24_PROJECT = [
         1,
         0,
         "",
-        1,
+        0,
         0,
     ],
     [
@@ -738,7 +738,7 @@ AUTUMN_23_PROJECT = [
         1,
         0,
         "<ul><li>Jyoti Singh</li><li>Dr. Mitchell Stern</li><li>Gavin Smith</li><li>William Liang</li><li>Leo Shen</li></ul>",
-        1,
+        0,
         0,
     ],
     [
@@ -1016,7 +1016,7 @@ WINTER_23_PROJECT = [
         1,
         0,
         "Amol Tembe",
-        1,
+        0,
         0,
     ],
     [
@@ -1291,7 +1291,7 @@ detectors",
         1,
         0,
         "Dave Powers",
-        1,
+        0,
         0,
     ],
 ]
@@ -1467,7 +1467,7 @@ AUTUMN_22_PROJECT = [
         1,
         0,
         "",
-        1,
+        0,
         0,
     ],
 ]
