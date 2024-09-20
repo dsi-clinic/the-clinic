@@ -108,11 +108,14 @@ This guide is specifically tailored to the University of Chicago DSI Cluster, th
 It can be annoying / burdensome to constantly type in your passwords (*something only you know*) to connect to the cluster or push/pull from GitHub. We can switch to authenticating based on *something only you have* using ssh keys and greatly reduce the friction of developing. 
 
 ### [Windows Users Only] Step 0: Install WSL & Enable OpenSSH
-If you use WSL2, please see the above caveat. To ensure it is set up correctly, complete the following (from [this SO answer](https://stackoverflow.com/a/40720527)):<!-- markdown-link-check-enable -->
+WSL ("Windows Subsystem for Linux") allows Windows users access to core Unix based functionality. The convenience of 'pretending' to have two separate operating systems on one, however, can lead to complications. One 
+
+
+To set up Windows to use ssh like linux complete the following (from [this SO answer](https://stackoverflow.com/a/40720527)):<!-- markdown-link-check-enable -->
 1. Open Manage optional features from the start menu and make sure you have Open SSH Client in the list. If not, you should be able to add it.
 2. Open Services from the start Menu
 3. Scroll down to OpenSSH Authentication Agent > right click > properties.
-4. Change the Startup type from Disabled to any of the other 3 options. I have mine set to Automatic (Delayed Start)
+4. Change the Startup type from Disabled to "Automatic (Delayed Start)"
 5. Open cmd and type `where ssh` to confirm that the top listed path is in System32. Mine is installed at `C:\Windows\System32\OpenSSH\ssh.exe`. If it's not in the list you may need to close and reopen cmd.
 6. You should now be able to access OpenSSH tools from the Windows Command Prompt. Continue to General Instructions. 
 
@@ -154,12 +157,30 @@ If ssh-agent was not running, please reboot and verify that it loads on start.
 3. You will be prompted to enter a file name for the key. Give it an identifiable name, such as `dsi_cluster` and verify the file is in the  directory listed above. Otherwise you can click enter to accept the default suggestion. 
 4. You can _optionally_ add a password to your SSH key, though it is not required. As you type the password in, no text will appear on screen to keep your password length private from shoulder surfers. You will be asked to repeat it. Do not forget your password! Write it down, or ideally store it in a password manager.
 5. After running this there should be two files in the `.ssh` directory. A `KEYNAME` and `KEYNAME.pub` file will be created by this command. The file with the `.pub` extension is your public key and can be shared safely. The file with no extension is your private key and should never be shared. `KEYNAME` will either be the name you specified above or the the encryption type. 
+<div align="center">
 
+| **Do not continue until you have verified that both files mentioned above exist in the .ssh directory.** |
+|-----------------------------|
+
+</div>
 
 #### [Windows Users Only] Manage SSH Keys with WSL2
-WSL ("Windows Subsystem for Linux") allows Windows users access to core Unix based functionality. The convenience of 'pretending' to have two separate operating systems on one, however, can lead to complications. One is with SSH keys, which is the core method we use to authenticate to GitHub and the DSI Cluster. 
+If you are using Windows you need to [install WSL ("Windows Subsystem for Linux")](https://learn.microsoft.com/en-us/windows/wsl/install) on your machine. Installing this allows Windows users access to core Unix based functionality. If you are doing local developement on your Windows machine, you should do it in WSL. TODO
 
-The `.ssh` directory used on your normal Windows system and your WSL will be different from each other. This is fine in most cases, but can lead to headaches when using VS Code. If you wish to connect to a remote SSH machine in VS code, it will use your Windows configuration. So even if you only use WSL and the VS Code extension (WSL) to code in WSL2, you must follow the [Windows ssh instructions](#windows-specific-instructions). To use the same keys on each system, you can copy them. Following these instructions adapted from [this article](https://devblogs.microsoft.com/commandline/sharing-ssh-keys-between-windows-and-wsl-2/):
+To confirm proper installation:
+`wsl printf 'Default shell: $0\nUsername: $USER\nHome Directory: $(cd ~ && pwd)'`
+This should return:
+```
+Default shell: /bin/bash
+Username: YOUR_WSL_USERNAME
+Home Directory: /home/YOUR_WSL_USERNAME
+```
+Where `YOUR_WSL_USERNAME` is the username you picked when setting up WSL. It <b>should not be `root`</b> If one of these is incorrect, please go to [troubleshooting instructions](TODO)
+
+
+The convenience of 'pretending' to have two separate operating systems on one can lead to complications. One is with SSH keys, which is the core method we use to authenticate to the DSI Cluster.
+
+The .ssh directory used on your normal Windows system and your WSL will be different from each other. This is fine in most cases, but can lead to headaches when using VS Code. If you wish to connect to a remote SSH machine in VS code, it will use your Windows configuration. So even if you only use WSL and the VS Code extension (WSL) to code in WSL2, you must follow the [Windows ssh instructions](#windows-specific-instructions). To use the same keys on each system, you can copy them. Following these instructions adapted from [this article](https://devblogs.microsoft.com/commandline/sharing-ssh-keys-between-windows-and-wsl-2/):
 
 1. Open a terminal in WSL.
 1. Make sure you have an .ssh folder in WSL: `mkdir -p ~/.ssh`. The `-p` means to ignore if the directory already exists.
@@ -169,7 +190,7 @@ The `.ssh` directory used on your normal Windows system and your WSL will be dif
 
 <div align="center">
 
-| **Do not continue until you have verified that both files mentioned above exist in the .ssh directory.** |
+| **Do not continue until you have verified correct installation of WSL and can find your SSH key in both Windows and WSL** |
 |-----------------------------|
 
 </div>
@@ -213,7 +234,7 @@ Replace `YOUR_CNET` with your CNET ID and `PATH_TO_PRIVATE_KEY` with the path th
 
 3. Save and close the file.
 
-### Step 3: Enable Authentication with SSH Keys
+### Step 4: Enable Authentication with SSH Keys
 
 For a private key to work for authenticating, the service you are authenticating with must have access to your public key. We will set this up for github and the cluster.
 
