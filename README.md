@@ -142,7 +142,9 @@ You can find information on Data Science Clinic Coding Standards and expectation
 
 In addition to the information above, this section contains best practices for mentors and TAs. 
 
+* [Mentor Intro Presentation](./presentations/2024-Autumn-Clinic-Mentor-Info.pptx)
 * [General Mentor Expectations](./mentor-ta/mentor-expectations.md)
+* [Weekly Calendar](./syllabus/weekly-plan.md)
 * [TA Expectations](./mentor-ta/ta-expectations.md)
 * [How to run a Mentor Meeting](./mentor-ta/how-to-run-a-meeting.md)
 * [How to run a TA Session](./mentor-ta/how-to-run-a-ta-session.md)
