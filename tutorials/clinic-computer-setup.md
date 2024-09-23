@@ -16,6 +16,19 @@ On Windows machines you will need to install _Windows Subsystem for Linux_ ("WSL
 
     /bin/bash --version
 
+**Additional Windows Verification:** Make sure that you can complete the above _and_ open PowerShell in your terminal app and run:
+
+```wsl printf 'Default shell: $0\nUsername: $USER\nHome Directory: $(cd ~ && pwd)'```
+
+This should generate a return of:
+```
+Default shell: /bin/bash
+Username: YOUR_WSL_USERNAME
+Home Directory: /home/YOUR_WSL_USERNAME
+```
+Where `YOUR_WSL_USERNAME` is the username you picked when setting up WSL. It <b>should not be `root`</b> If one of these is incorrect, please go to [troubleshooting instructions](./troubleshooting.md#troubleshooting-wsl)
+
+
 
 ## 2. Visual Studio Code
 
