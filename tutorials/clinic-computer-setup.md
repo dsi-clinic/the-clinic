@@ -94,7 +94,15 @@ Note that as part of these instructions you will add your SSH key to github. Thi
 
     ssh fe.ds
 
-If you have set this up correctly you should be connected to the AI cluster and see something like `CNET@fe01:~$`. After this, to verify that you have access to the cluster, type in teh following at that prompt:
+If you have set this up correctly you should be connected to the AI cluster and see something like `CNET@fe01:~$`. After this, verify you set up ssh keys correctly:
+
+    ssh-add -l
+    ssh -T git@github.com
+
+These commands should return something like `256 SHA256:sdlfjkwljflsdfkjs;flkjs;lfj user@host (ED25519)` and `Hi USERNAME! You've successfully authenticated ...`
+
+
+After this, to verify that you have access to the cluster, type in the following at that prompt:
 
     srun -p general --pty /bin/bash
 
