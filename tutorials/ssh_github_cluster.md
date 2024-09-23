@@ -113,7 +113,7 @@ There are different steps for Windows users and Mac/Linux users. Follow the belo
 #### [Windows] Enable OpenSSH
 
 To set up Windows to use ssh like linux complete the following (from [this SO answer](https://stackoverflow.com/a/40720527)):<!-- markdown-link-check-enable -->
-1. Open Manage optional features from the start menu and make sure you have Open SSH Client in the list. If not, you should be able to add it.
+1. Open "Manage optional features" or "Optional features" from the start menu and make sure you have Open SSH Client in the list. If not, you should be able to add it.
 2. Open Services from the start Menu
 3. Scroll down to OpenSSH Authentication Agent > right click > properties.
 4. Change the Startup type from Disabled to "Automatic (Delayed Start)"
@@ -170,7 +170,7 @@ Default shell: /bin/bash
 Username: YOUR_WSL_USERNAME
 Home Directory: /home/YOUR_WSL_USERNAME
 ```
-Where `YOUR_WSL_USERNAME` is the username you picked when setting up WSL. It <b>should not be `root`</b> If one of these is incorrect, please go to [troubleshooting instructions](./troubleshooting.md#WSL)
+Where `YOUR_WSL_USERNAME` is the username you picked when setting up WSL. It <b>should not be `root`</b> If one of these is incorrect, please go to [troubleshooting instructions](./troubleshooting.md#troubleshooting-wsl)
 
 
 The convenience of 'pretending' to have two separate operating systems on one can lead to complications. One is with SSH keys, which is the core method we use to authenticate to the DSI Cluster.
@@ -211,6 +211,7 @@ We have now created an ssh key file that will allow us to login to the cluster. 
     - [Windows] In command prompt: `code C:\Users\USERNAME\.ssh\config` where `USERNAME` is your windows username. 
     - [Mac] In a terminal: `touch ~/.ssh/config` to create the file if it does not exist and `open ~/.ssh/config` to open it.
 2. You may or may not already have configurations saved. Place the text below in the config file, after any other configurations, *except* any block that starts with `Host *` or `Host fe01.ds.uchicago.edu`. If you have a block that has the host information then you probably already had access to the cluster and will need to redo it based on the new keys you created.  
+[Mac/Linux]:
 ```
 Host fe.ds*
   HostName fe01.ds.uchicago.edu
@@ -225,7 +226,24 @@ Host *.ds !fe.ds
   User YOUR_CNET
   ProxyJump fe.ds
 ```
-Replace `YOUR_CNET` with your CNET ID and `PATH_TO_PRIVATE_KEY` with the path the key you previously created. This will map `fe.ds` to an ssh command to the listed hostname, with the listed user and private key, and using the listed identity file as your key. `ForwardAgent` set to yes means that any ssh keys added to your local agent will also be added to the remote machines ssh agent (so you can use your local ssh key for GitHub on the cluster, for example). The second block is for connecting directly to compute nodes.
+[Windows]
+```
+Host fe.ds*
+  HostName fe01.ds.uchicago.edu
+  IdentityFile PATH_TO_PRIVATE_KEY
+  ForwardAgent yes
+  User YOUR_CNET
+  MACs hmac-sha2-512
+
+Host *.ds !fe.ds
+  HostName %h.uchicago.edu
+  IdentityFile PATH_TO_PRIVATE_KEY
+  ForwardAgent yes
+  User YOUR_CNET
+  ProxyJump fe.ds
+  MACs hmac-sha2-512
+```
+Replace `YOUR_CNET` with your CNET ID and `PATH_TO_PRIVATE_KEY` with the path the key you previously created. [Windows: `PATH_TO_PRIVATE_KEY` will be `/Users/USERNAME/.ssh/KEYNAME` where `USERNAME` is your windows username and `KEYNAME` is the name of the key you created. Starting with the root directory `/` is not standard for windows and will not typically work in other situations.] This will map `fe.ds` to an ssh command to the listed hostname, with the listed user and private key, and using the listed identity file as your key. `ForwardAgent` set to yes means that any ssh keys added to your local agent will also be added to the remote machines ssh agent (so you can use your local ssh key for GitHub on the cluster, for example). The second block is for connecting directly to compute nodes.
 
 3. Save and close the file.
 
@@ -269,4 +287,4 @@ Reboot your machine.
 
 **At this point you should have access to both github and, optionally, the cluster. [Verify you access before preceding](#part-0-do-i-already-have-access).**
 
-To learn more about using the cluster, see the [slurm documentation](slurm.md)
+To learn more about using the cluster, see the [slurm documentation](./slurm.md)

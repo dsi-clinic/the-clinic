@@ -46,6 +46,9 @@ Symptom: VS code fails to connect to login node
 Cause: GitHub can not access a private key that matches the public key stored on GitHub.
 <br>Solution: If you are on the cluster, make sure that you are forwarding your ssh agent. `ssh-add -l` should return the appropriate key. If no identities are found, your ssh-agent has no identities or is not being forwarded. If `ssh-add -l` locally also returns no identities, you must run `ssh-add PATH_TO_KEY` as specified in the [ssh github cluster doc](./ssh_github_cluster.md). If the correct identity is found locally, make sure your ssh config matches the one in this document. Finally make sure you have added the appropriate public key to your GitHub account.
 
+#### Error: `Could not open a connection to your authentication agent.`
+<br>Solution: Run "eval `ssh-agent -s`"
+
 ### Guides and Tips
 #### Installing Large Conda Environments on the DSI Cluster
 
