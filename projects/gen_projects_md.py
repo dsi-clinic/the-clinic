@@ -27,6 +27,7 @@ sometimes project specific.
 markdown-link-check-disable -->\
 [The 11th hour foundation](https://11thhourproject.org/)\
 <!-- markdown-link-check-enable -->.
+
 ---
 """
 
@@ -133,17 +134,17 @@ ALL_PEOPLE = {
 
 def create_link_for_mentor(mentor_info):
     # Takes in a mentor blob (what is in ALL_PEOPLE)
-    # and returns a string markdown link
+    # and returns a string HTML link
     if mentor_info[1]:
-        return f"[{mentor_info[0]}]({mentor_info[1]})"
+        return f'<a href="{mentor_info[1]}">{mentor_info[0]}</a>'
     else:
         return f"{mentor_info[0]}"
 
 
 def create_link_for_student(student_info):
-    # If the github username is only the username preprend the github url.
-    # has additional logic 'cause student info more complicated.
-    if student_info[2] == None or student_info[2][0:8] == "https://":
+    # If the github username is only the username, prepend the GitHub URL.
+    # Additional logic as student info is more complicated.
+    if student_info[2] is None or student_info[2].startswith("https://"):
         return create_link_for_mentor(student_info[1:3])
     else:
         return create_link_for_mentor(
@@ -160,12 +161,24 @@ def create_single_quarter_table(
 ):
     """
     This returns a single table of information.
-    A Table should be considered a single quarter
+    A Table should be considered a single quarter.
     """
 
-    all_results = "\n| Org. Name | Project Desc. | Repository | One-Pager | Mentor(s) | \
-        Students | External Mentor(s) | TA | \n | --- | --- |  --- | --- | --- | \
-            --- | --- | --- |\n"
+    all_results = """<table>
+        <thead>
+            <tr>
+                <th>Org. Name</th>
+                <th>Project Desc.</th>
+                <th>Repository</th>
+                <th>One-Pager</th>
+                <th>Mentor(s)</th>
+                <th>Students</th>
+                <th>External Mentor(s)</th>
+                <th>TA</th>
+            </tr>
+        </thead>
+        <tbody>
+    """
 
     for project_info in project_map:
         # Loop over each project in project_map as the main loop
@@ -191,36 +204,29 @@ def create_single_quarter_table(
 
         # Add url to the name. If the invalid flag is 1, add flag to not check
         # link via the markdown link checker
-
         if is_11th_hour:
             project_name = f"{project_name}&#8224;"
 
         if project_url_valid:
-            project_name_info = f"[{project_name}]({project_url})"
+            project_name_info = f'<a href="{project_url}">{project_name}</a>'
         else:
-            project_name_info = f"<!-- markdown-link-check-disable \
-                -->[{project_name}]({project_url})<!-- \
-                    markdown-link-check-enable -->"
-            project_name_info = ("<!-- markdown-link-check-disable -->["
-                                 f"{project_name}]({project_url})"
-                                 "<!-- markdown-link-check-enable -->")
+            project_name_info = f'<a href="{project_url}">{project_name}</a>'
 
-        # If the repo is private than the markdown link checker will fail, so
-        # add an exclusion for it in the case of a private repo
+        # If the repo is private then mark it as such
         if is_private_repo:
             if github_link:
-                repo_info = f"<!-- markdown-link-check-disable --> [Private \
-                    Repo]({github_link}) <!-- markdown-link-check-enable -->"
+                repo_info = f'<a href="{github_link}">Private Repo</a>'
             else:
                 repo_info = "No Repository"
         else:
-            repo_info = f"[DSI Repo]({github_link})"
+            repo_info = f'<a href="{github_link}">DSI Repo</a>'
 
-        # If there is a one pager than add a link to it.
+        # If there is a one-pager, then add a link to it.
         if has_one_pager:
             one_pager_location = f"./one-pagers/{year}-{quarter.lower()}/"
             file_info = one_pager_location + project_link + ".pdf"
-            one_pager_info = f"[One-Pager]({file_info.replace(' ', '%20')})"
+            one_pager_info = (
+                f'<a href="{file_info.replace(" ", "%20")}">One-Pager</a>')
         else:
             one_pager_info = ""
 
@@ -230,16 +236,17 @@ def create_single_quarter_table(
 
         if len(mentor_list) == 1:
             mentor_info = create_link_for_mentor(ALL_PEOPLE[mentor_list[0]])
-
         else:
             mentor_info = "<ul>"
             for mentor in mentor_list:
-                mentor_info += f"<li>{create_link_for_mentor(ALL_PEOPLE[mentor])}</li>"
+                mentor_info += (
+                    f"<li>{create_link_for_mentor(ALL_PEOPLE[mentor])}</li>")
             mentor_info += "</ul>"
 
         # Student info. Assume that there is more than one and make a list.
         student_info = "<ul>"
-        student_project_list = [x for x in student_info_list if x[0] == project_link]
+        student_project_list = [x for x in student_info_list if x[0]
+                                == project_link]
         if len(student_project_list) == 0:
             raise Exception(f"No Students found for project {project_link}")
         for student in student_project_list:
@@ -253,19 +260,21 @@ def create_single_quarter_table(
         else:
             TA_info = ""
 
-        project_line = " | ".join(
+        project_line = "".join(
             [
-                project_name_info,
-                project_description,
-                repo_info,
-                one_pager_info,
-                mentor_info,
-                student_info,
-                external_mentor_info,
-                TA_info,
+                f"<td>{project_name_info}</td>",
+                f"<td>{project_description}</td>",
+                f"<td>{repo_info}</td>",
+                f"<td>{one_pager_info}</td>",
+                f"<td>{mentor_info}</td>",
+                f"<td>{student_info}</td>",
+                f"<td>{external_mentor_info}</td>",
+                f"<td>{TA_info}</td>",
             ]
         )
-        all_results += " | " + project_line + "\n"
+        all_results += f"<tr>{project_line}</tr>\n"
+
+    all_results += "</tbody></table>"
 
     return all_results
 
