@@ -107,9 +107,10 @@ This guide is specifically tailored to the University of Chicago DSI Cluster, th
 
 It can be annoying / burdensome to constantly type in your passwords (*something only you know*) to connect to the cluster or push/pull from GitHub. We can switch to authenticating based on *something only you have* using ssh keys and greatly reduce the friction of developing. 
 
-### [Windows Users Only] Step 0: Install WSL & Enable OpenSSH
-WSL ("Windows Subsystem for Linux") allows Windows users access to core Unix based functionality. The convenience of 'pretending' to have two separate operating systems on one, however, can lead to complications. One 
+### Step 1: Verify/Install ssh-agent
+There are different steps for Windows users and Mac/Linux users. Follow the below steps. 
 
+#### [Windows] Enable OpenSSH
 
 To set up Windows to use ssh like linux complete the following (from [this SO answer](https://stackoverflow.com/a/40720527)):<!-- markdown-link-check-enable -->
 1. Open Manage optional features from the start menu and make sure you have Open SSH Client in the list. If not, you should be able to add it.
@@ -119,31 +120,25 @@ To set up Windows to use ssh like linux complete the following (from [this SO an
 5. Open cmd and type `where ssh` to confirm that the top listed path is in System32. Mine is installed at `C:\Windows\System32\OpenSSH\ssh.exe`. If it's not in the list you may need to close and reopen cmd.
 6. You should now be able to access OpenSSH tools from the Windows Command Prompt. Continue to General Instructions. 
 
-| How to test if this is working | 
-| --- | 
-| Trevor: XXX |
-
-
 <div align="center">
 
-| **If you are using Windows do not pass unless all tests are completed.** |
+| **Windows: Do NOT continue until in PowerShell, `Get-Service ssh-agent` returns with a 'Running' Status _after_ rebooting.** |
 |-----------------------------|
 
 </div>
 
 
-### Step 1: Verify/Install ssh-agent
+#### [Mac/Linux] Verify ssh-agent
 
-1. In the terminal (Command Prompt in Windows), type in `echo $SSH_AUTH_SOCK` 
+1. Mac/Linux: In the terminal, type in `echo $SSH_AUTH_SOCK` 
    - If this returns _nothing_ then you need to install `ssh-agent`
-     - On Windows: Trevor XXX
-     - On Mac: You will need to add the command `eval $(ssh-agent)` to your shell configuration (`.zshrc/.bashrc`) file. 
+     - You will need to add the command `eval $(ssh-agent)` to your shell configuration (`.zshrc/.bashrc`) file. 
 
 If ssh-agent was not running, please reboot and verify that it loads on start. 
 
 <div align="center">
 
-| **Do not continue until you have verified that ssh-agent runs _after_ rebooting.** |
+| **Mac/Linux: Do NOT continue until you have verified that ssh-agent runs _after_ rebooting.** |
 |-----------------------------|
 
 </div>
@@ -175,7 +170,7 @@ Default shell: /bin/bash
 Username: YOUR_WSL_USERNAME
 Home Directory: /home/YOUR_WSL_USERNAME
 ```
-Where `YOUR_WSL_USERNAME` is the username you picked when setting up WSL. It <b>should not be `root`</b> If one of these is incorrect, please go to [troubleshooting instructions](TODO)
+Where `YOUR_WSL_USERNAME` is the username you picked when setting up WSL. It <b>should not be `root`</b> If one of these is incorrect, please go to [troubleshooting instructions](./troubleshooting.md#WSL)
 
 
 The convenience of 'pretending' to have two separate operating systems on one can lead to complications. One is with SSH keys, which is the core method we use to authenticate to the DSI Cluster.
@@ -199,7 +194,7 @@ The .ssh directory used on your normal Windows system and your WSL will be diffe
 
 1. Add your key to the `ssh-agent`. To do this type in `ssh-add PATH_TO_PRIVATE_KEY`. `PATH_TO_PRIVATE_KEY` should be the _full path_ to the private file. You'll have to type your password in once and it will be saved for a period of time (terminal session or until your computer next reboots), drastically limiting the amount of times you have to type in your password. 
 <!-- 2. markdown-link-check-disable[Mac Users Only] (optional) To keep the key in your `ssh-agent` across sessions, follow [this stack overflow answer](https://stackoverflow.com/questions/18880024/start-ssh-agent-on-login). markdown-link-check-enable  -->
-2. Confirm your key was added. In your terminal/command prompt/powershell, run `ssh-add -l` to list all keys in your ssh agent. Your key should appear here. If this command returns `The agent has no identities.`, step 4 failed. 
+2. Confirm your key was added. In your terminal/command prompt/powershell, run `ssh-add -l` to list all keys in your ssh agent. Your key should appear here. If this command returns `The agent has no identities.`, step 3 failed. 
 
 <div align="center">
 
@@ -208,9 +203,9 @@ The .ssh directory used on your normal Windows system and your WSL will be diffe
 
 </div>
 
-### Step 3: [CLUSTER] Save SSH Configuration
+### Step 4: [CLUSTER] Save SSH Configuration
 
-While we have now created an ssh file key that will allow us to login to the cluster. However, to login we will need to provide the path to key file as well as the username each time we want to login (something like `ssh -i PATH_TO_KEY USERNAME@fe01.ds.uchicago.edu`) which is annoying and error-prone. We will use a config file, in our `.ssh` directory to simplify this process. Instead we will be able to login using just `ssh fe.ds` after completing this process.
+We have now created an ssh key file that will allow us to login to the cluster. However, to login we will need to provide the path to key file as well as the username each time we want to login (something like `ssh -i PATH_TO_KEY USERNAME@fe01.ds.uchicago.edu`) which is annoying and error-prone. We will use a config file, in our `.ssh` directory to simplify this process. Instead we will be able to login using just `ssh fe.ds` after completing this process.
 
 1. Create / modify your SSH config file. To open:
     - [Windows] In command prompt: `code C:\Users\USERNAME\.ssh\config` where `USERNAME` is your windows username. 
@@ -234,7 +229,7 @@ Replace `YOUR_CNET` with your CNET ID and `PATH_TO_PRIVATE_KEY` with the path th
 
 3. Save and close the file.
 
-### Step 4: Enable Authentication with SSH Keys
+### Step 5: Enable Authentication with SSH Keys
 
 For a private key to work for authenticating, the service you are authenticating with must have access to your public key. We will set this up for github and the cluster.
 
@@ -246,7 +241,14 @@ For a private key to work for authenticating, the service you are authenticating
 2. Copy your public key. Highlight and copy *the entire output*. `ctrl+c` may not work in terminal. `ctrl+shift+c` or right click may work. 
 3. Add the public key to GitHub. To give GitHub access to your public keys, go to [GitHub's ssh keys page](https://github.com/settings/keys). 
 4. Click 'New SSH key'. Give it a name relating to the machine it is stored on, like "windows laptop", or "linux desktop" and paste in the full contents of the public key.
-5. Verify your key was added. In terminal / command prompt, try `ssh git@github.com` it should respond with `Hi GITHUB_USERNAME! You've successfully authenticated, but GitHub does not provide shell access.` or something similar. 
+5. Verify your key was added. In terminal / command prompt, try `ssh -T git@github.com` it should respond with `Hi GITHUB_USERNAME! You've successfully authenticated, but GitHub does not provide shell access.` or something similar. 
+
+<div align="center">
+
+| **Do not continue until you have verified a success message when you run `ssh -T git@github.com`** |
+|-----------------------------|
+
+</div>
 
 #### [CLUSTER] Mac/Linux Instructions for Remote Authentication 
 1. If on Mac/Linux, you can use `ssh-copy-id -i ~/.ssh/KEYNAME_HERE.pub fe.ds`, replacing `KEYNAME_HERE` with the name of the public ssh key you would like to use (it should end with .pub). 
@@ -266,3 +268,5 @@ For a private key to work for authenticating, the service you are authenticating
 Reboot your machine. 
 
 **At this point you should have access to both github and, optionally, the cluster. [Verify you access before preceding](#part-0-do-i-already-have-access).**
+
+To learn more about using the cluster, see the [slurm documentation](slurm.md)
