@@ -18,16 +18,17 @@ On Windows machines you will need to install _Windows Subsystem for Linux_ ("WSL
 
 **Additional Windows Verification:** Make sure that you can complete the above _and_ open PowerShell in your terminal app and run:
 
-```wsl printf 'Default shell: $0\nUsername: $USER\nHome Directory: $(cd ~ && pwd)'```
+    wsl printf 'Default shell: $0\nUsername: $USER\nHome Directory: $(cd ~ && pwd)'
 
 This should generate a return of:
-```
-Default shell: /bin/bash
-Username: YOUR_WSL_USERNAME
-Home Directory: /home/YOUR_WSL_USERNAME
-```
+
+    Default shell: /bin/bash
+    Username: YOUR_WSL_USERNAME
+    Home Directory: /home/YOUR_WSL_USERNAME
+
 Where `YOUR_WSL_USERNAME` is the username you picked when setting up WSL. It <b>should not be `root`</b> If one of these is incorrect, please go to [troubleshooting instructions](./troubleshooting.md#troubleshooting-wsl)
 
+Additionally, open File Explorer, scroll to the bottom left, select 'Linux', 'Ubuntu', 'home', then right click on your username and select 'Pin to Quick Access'. Now your ubuntu home directory should appear in the top/middle left of file explorer.
 
 
 ## 2. Visual Studio Code
