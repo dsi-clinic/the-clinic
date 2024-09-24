@@ -24,12 +24,14 @@ If there is a section which is unclear or needs updating, please open an issue o
   - [Part 0: Do I (already) have access?](#part-0-do-i-already-have-access)
   - [Part 1: SSH Background \& Prerequisites](#part-1-ssh-background--prerequisites)
   - [Part II: Set up SSH](#part-ii-set-up-ssh)
-    - [\[Windows Users Only\] Step 0: Install WSL \& Enable OpenSSH](#windows-users-only-step-0-install-wsl--enable-openssh)
     - [Step 1: Verify/Install ssh-agent](#step-1-verifyinstall-ssh-agent)
+      - [\[Windows\] Enable OpenSSH](#windows-enable-openssh)
+      - [\[Mac/Linux\] Verify ssh-agent](#maclinux-verify-ssh-agent)
     - [Step 2: Create / Manage SSH Keys](#step-2-create--manage-ssh-keys)
+      - [\[Windows Users Only\] Manage SSH Keys with WSL2](#windows-users-only-manage-ssh-keys-with-wsl2)
     - [Step 3: Add your keys to ssh-agent](#step-3-add-your-keys-to-ssh-agent)
-    - [Step 3: \[CLUSTER\] Save SSH Configuration](#step-3-cluster-save-ssh-configuration)
-    - [Step 3: Enable Authentication with SSH Keys](#step-3-enable-authentication-with-ssh-keys)
+    - [Step 4: \[CLUSTER\] Save SSH Configuration](#step-4-cluster-save-ssh-configuration)
+    - [Step 5: Enable Authentication with SSH Keys](#step-5-enable-authentication-with-ssh-keys)
       - [Enabling access to github](#enabling-access-to-github)
       - [\[CLUSTER\] Mac/Linux Instructions for Remote Authentication](#cluster-maclinux-instructions-for-remote-authentication)
       - [\[CLUSTER\] Windows Instructions for Remote Authentication](#cluster-windows-instructions-for-remote-authentication)
@@ -75,26 +77,29 @@ To be able to connect to the DSI's cluster you will need an internet connection 
 
 SSH is a command line tool which has a steeper learning curve than GUI-based systems such as VS Code. As such the instructions below will also install an extension to the VS Code IDE which allows you to connect your entire VS Code window to the cluster, allowing you to utilize all of VS Code's features and extensions.
 
-We will focus on installing and verifying a number of different pieces of this software:
+We will focus on installing and verifying a number of different pieces of this software that will be installed or used in the manual below. The table below contains a brief glossary of some of the components that will be used.
 
-| Component Name | What it does / why is it important | What do I need to do? |
-| --- | --- | --- | 
-| `wsl2` (Windows only) | This is required to be installed on windows machines to access `bash` and a unix terminal | If using windows, you will need to [install it](#windows-users-only-step-0-install-wsl--enable-openssh). |
-| `OpenSSH` | This is a common implementation of the SSH protocol. | If using windows you will need to [enable it](##windows-users-only-step-0-install-wsl--enable-openssh). |
-| `ssh-agent` | This is a key manager for `ssh` which runs in the background. In this course there are two things which `ssh-agent` does: (1) it allows you to avoid entering in your `ssh` password every time you login and (2) it allows for forwarding of `ssh` keys, so that if you are logged into the cluster you can continue to use the keys that are on your machine. | On both Mac and Windwows you will need to enable it at startup, as in the instructions below. | 
-| _Public_ `ssh` key | When you create an `ssh` key there are two files created, one of which is a _public_ key. This is _shareable_ and will usually be a file that ends in `.pub` | You will need to create one as we do in the [steps below]((#step-2-create--manage-ssh-keys). |
-| _Private_ `ssh` key | When you create an `ssh` key the other file that is created is a `private` key. A private key _should never be shared_ as it is the key that allows you to enter other systems | You will need to create one by following the [steps below]((#step-2-create--manage-ssh-keys). |
+| Component Name | What it does / why is it important | 
+| --- | --- |
+| `wsl2` (Windows only) | This is required to be installed on windows machines to access `bash` and a unix terminal | 
+| `OpenSSH` | This is a common implementation of the SSH protocol, depending on your operating system
+| `ssh-agent` | This is a key manager for `ssh` which runs in the background. In this course there are two things which `ssh-agent` does: (1) it allows you to avoid entering in your `ssh` password every time you login and (2) it allows for forwarding of `ssh` keys, so that if you are logged into the cluster you can continue to use the keys that are on your machine. 
+| _Public_ `ssh` key | When you create an `ssh` key there are two files created, one of which is a _public_ key. This is _shareable_ and will usually be a file that ends in `.pub` 
+| _Private_ `ssh` key | When you create an `ssh` key the other file that is created is a `private` key. A private key _should never be shared_ as it is the key that allows you to enter other systems 
 
-This guide is specifically tailored to the University of Chicago DSI Cluster, though it should be generally applicable to most Slurm clusters. The guide assumes you have:
+This guide is specifically tailored to the University of Chicago DSI Cluster, though it should be generally applicable to most Slurm clusters.
+
+_Before continuing, make sure that you have the following completed:_
 
 - A CNET id
 - [CLUSTER] A CS Account. Get [one here](https://account-request.cs.uchicago.edu/account/requests) if you don't have one already.
+- [CLUSTER] Access to a Slurm partition. If you are getting access through the Data Science Clinic course the clinic administration will have handled this once you have signed up for a CS account.
 - A reasonably up to date and functioning computer running on Windows (10/11), Mac (10.13+/High Sierra+), or Linux. 
 - An internet connection. You'll need internet to use SSH.
 - VS Code Installed
 - A GitHub account
 
-[CLUSTER] To submit jobs and use the cluster, you will need access to a Slurm partition. To request, send an email to techstaff@cs.uchicago.edu asking for access to compute nodes on the DSI cluster and CC your mentor (if relevant). If you are getting access through the Data Science Clinic course you should have already gone through this process. You do not need access to a slurm partition to continue and set up *access* to the cluster, but you will need it to *use* the cluster. 
+[CLUSTER] Notes: To submit jobs and use the cluster, you will need access to two things:  a CS account and a Slurm partition. You can click on the link above to request a CS account. To request access toa  Slurm partition, send an email to techstaff@cs.uchicago.edu asking for access to compute nodes on the DSI cluster and CC your mentor (if relevant). _If you are getting access through the Data Science Clinic course the clinic administrators will handle providing you access to the Slurm partition but you must sign up for a CS account yourself_. You do not need access to a Slurm partition to continue and set up *access* to the cluster, but you will need it to *use* the cluster. 
 
 <div align="center">
 
@@ -171,7 +176,6 @@ Username: YOUR_WSL_USERNAME
 Home Directory: /home/YOUR_WSL_USERNAME
 ```
 Where `YOUR_WSL_USERNAME` is the username you picked when setting up WSL. It <b>should not be `root`</b> If one of these is incorrect, please go to [troubleshooting instructions](./troubleshooting.md#troubleshooting-wsl)
-
 
 The convenience of 'pretending' to have two separate operating systems on one can lead to complications. One is with SSH keys, which is the core method we use to authenticate to the DSI Cluster.
 
