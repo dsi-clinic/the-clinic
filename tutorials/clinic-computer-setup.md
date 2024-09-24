@@ -16,6 +16,20 @@ On Windows machines you will need to install _Windows Subsystem for Linux_ ("WSL
 
     /bin/bash --version
 
+**Additional Windows Verification:** Make sure that you can complete the above _and_ open PowerShell in your terminal app and run:
+
+    wsl printf 'Default shell: $0\nUsername: $USER\nHome Directory: $(cd ~ && pwd)'
+
+This should generate a return of:
+
+    Default shell: /bin/bash
+    Username: YOUR_WSL_USERNAME
+    Home Directory: /home/YOUR_WSL_USERNAME
+
+Where `YOUR_WSL_USERNAME` is the username you picked when setting up WSL. It <b>should not be `root`</b> If one of these is incorrect, please go to [troubleshooting instructions](./troubleshooting.md#troubleshooting-wsl)
+
+Additionally, open File Explorer, scroll to the bottom left, select 'Linux', 'Ubuntu', 'home', then right click on your username and select 'Pin to Quick Access'. Now your ubuntu home directory should appear in the top/middle left of file explorer.
+
 
 ## 2. Visual Studio Code
 
@@ -60,11 +74,19 @@ On Mac systems, make will also generally be installed, but if it is not then typ
 
     make --version
 
-## 6. SSH / AI Cluster
+## 6. SSH Keys
+
+We will use SSH keys to authenticate to github and (if applicable) the DSI Cluster. Please see [these instructions](./ssh_github_cluster.md). 
+
+**Verification:** Open your terminal and type the following command:
+
+    ssh -T git@github.com
+
+If this returns your username and something to the effect of `You've Successfully Authenticated` then it has worked. 
+
+## 7. DSI Cluster
 
 If you need to access the cluster then you will need to request an account (which should have already been done for you). You will then need to set up SSH keys and verify that you can SSH into the machine.
-
-You can find instructions for this process [here](https://github.com/uchicago-dsi/core-facility-docs/blob/main/slurm.md#step-4-enable-authentication-with-ssh-keys). For the purposes of setting up, make sure to get through all of Part 2.
 
 Note that as part of these instructions you will add your SSH key to github. This is a required part of this process.
 
@@ -72,7 +94,15 @@ Note that as part of these instructions you will add your SSH key to github. Thi
 
     ssh fe.ds
 
-If you have set this up correctly you should be connected to the AI cluster and see something like `CNET@fe01:~$`. After this, to verify that you have access to the cluster, type in teh following at that prompt:
+If you have set this up correctly you should be connected to the AI cluster and see something like `CNET@fe01:~$`. After this, verify you set up ssh keys correctly:
+
+    ssh-add -l
+    ssh -T git@github.com
+
+These commands should return something like `256 SHA256:sdlfjkwljflsdfkjs;flkjs;lfj user@host (ED25519)` and `Hi USERNAME! You've successfully authenticated ...`
+
+
+After this, to verify that you have access to the cluster, type in the following at that prompt:
 
     srun -p general --pty /bin/bash
 
@@ -80,14 +110,11 @@ If the above command works then you should see something like `CNET@g007:~$` as 
 
 _Make sure to type in `exit` when you are done!_
 
-## 7. SSH / No-AI Cluster
+## 8. GitHub Repository Cloned
 
-Even if you do not need to access the AI Cluster you will need to authorize command line access. Follow the instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to complete this step.
+You should have your GitHub repository cloned to the correct location(s).
 
-Note that you may have completed this step for another class or project. If you aren't sure, test the verification step below.
-
-**Verification:** Open your terminal and type in the following:
-
-    ssh -T git@github.com
-
-If this returns your username and something to the effect of `You've Successfully Authenticated` then it has worked. 
+**Verification:** Open your GitHub repository in VS Code. 
+- If your project uses a devcontainer for Docker, it should be in the devcontainer extension. 
+- If you use Windows, your project should be located in the WSL filesystem.
+- If you are using the cluster, your repository should be cloned on the cluster. 
