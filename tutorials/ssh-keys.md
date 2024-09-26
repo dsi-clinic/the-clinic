@@ -1,6 +1,6 @@
 # Creating SSH and Using SSH Keys
 
-It can be annoying / burdensome to type in your passwords constantly to connect to the cluster or push/pull from GitHub. We can switch to authunticating based on *something we have* using ssh keys. 
+It can be annoying / burdensome to type in your passwords constantly to connect to the cluster or push/pull from GitHub. We can switch to authenticating based on *something we have* using ssh keys.
 
 ## [Windows Users Only] Step 1: Enable OpenSSH
 
