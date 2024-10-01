@@ -92,14 +92,14 @@ This guide is specifically tailored to the University of Chicago DSI Cluster, th
 _Before continuing, make sure that you have the following completed:_
 
 - A CNET id
-- [CLUSTER] A CS Account. Get [one here](https://account-request.cs.uchicago.edu/account/requests) if you don't have one already.
-- [CLUSTER] Access to a Slurm partition. If you are getting access through the Data Science Clinic course the clinic administration will have handled this once you have signed up for a CS account.
+- [CLUSTER] A CS Account. If you are getting access through the Data Science Clinic, an account will be created for you. Otherwise you can get [one here](https://account-request.cs.uchicago.edu/account/requests).
+- [CLUSTER] Access to a Slurm partition. If you are getting access through the Data Science Clinic, this will be provided for you. Otherwise send an email to techstaff@cs.uchicago.edu asking for access to compute nodes on the DSI cluster.
 - A reasonably up to date and functioning computer running on Windows (10/11), Mac (10.13+/High Sierra+), or Linux. 
 - An internet connection. You'll need internet to use SSH.
 - VS Code Installed
 - A GitHub account
 
-[CLUSTER] Notes: To submit jobs and use the cluster, you will need access to two things:  a CS account and a Slurm partition. You can click on the link above to request a CS account. To request access toa  Slurm partition, send an email to techstaff@cs.uchicago.edu asking for access to compute nodes on the DSI cluster and CC your mentor (if relevant). _If you are getting access through the Data Science Clinic course the clinic administrators will handle providing you access to the Slurm partition but you must sign up for a CS account yourself_. You do not need access to a Slurm partition to continue and set up *access* to the cluster, but you will need it to *use* the cluster. 
+[CLUSTER] Notes: You do not need access to a Slurm partition to continue and set up *access* to the cluster, but you will need it to *use* the cluster. 
 
 <div align="center">
 
