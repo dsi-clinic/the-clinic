@@ -22,6 +22,7 @@ This repository contains information and documentation regarding the Data Scienc
   - [Syllabus](#syllabus)
   - [Progress and Planning Docs](#progress-and-planning-docs)
   - [First Week Org Report](#first-week-org-report)
+  - [Meeting with External Mentors](#meeting-with-external-mentors)
   - [Mid-quarter presentation](#mid-quarter-presentation)
 - [Finals Week Deliverables](#finals-week-deliverables)
 - [Additional Tutorials and Assistance](#additional-tutorials-and-assistance)
@@ -88,6 +89,12 @@ Note that in the `templates` directory you can also find MS-word versions of the
 
 The first week org report can also be found in the `templates` directory in a MS-WORD format. There is a markdown version [here](./templates/week-1-org-report.md). Grading for this is simple: if it is turned in on time and complete it receives full credit, otherwise zero.
 
+## Meeting with External Mentors
+
+Each time you meet with your external mentors you need to designate someone to be the note-taker. This person will write up the notes during the meeting making sure to include the information in the [mentor meeting template](./templates/mentor-meeting.md).
+
+Mentor meeting notes needs to be committed to the repo in either a `docs` or `meetings` directory.
+
 ## Mid-quarter presentation
 
 In week 6 of the clinic students will be required to complete a short mid-quarter presentation. There is a template for the presentation in the directory `templates`. 
@@ -97,7 +104,6 @@ If you want to receive an "A" on this assignment, _make sure to follow the [rubr
 # Finals Week Deliverables
 
 As this is a projects based course most of the work is designed around a set of final deliverables. There are four set of requirements, each with their own rubric that you can find in the table below. These are to be completed during the last week of the quarter and finals week.
-
 
 | Item | Requirement Information | Submission information and Rubric | 
 | --- | --- | --- |
