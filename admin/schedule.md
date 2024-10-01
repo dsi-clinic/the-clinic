@@ -54,6 +54,24 @@ The following tasks depend upon having a list of confirmed students and projects
 - Create Slack channels. Add students, mentors, and TAs
 - Create GitHub repositories. Add students, mentors, and TAs
 - Send the DSI cluster admin a list of CNET user IDs and associated projects to grant them access to the cluster.
+- Slack message for mentors & TAs:
+```
+Notes for next week:
+- Class is TuTh from 5-6:30. You do not need to attend. It would be nice if you were available on slack during the tuesday 5-6:30. We do intros and start scheduling then.
+- Each of you has been given access to a repository (students will be added next week). In that repository is a list of "initial tasks". This is what the students should work on before they meet their mentors.
+- The students are required, by Friday to submit their "Org Report" which contains basic information about when they are meeting. Please assist them in finding available times. Students frequently misrepresent their availability. If you are having any problems scheduling or need me to stomp around please don't hesitate to ask.
+- You should also all be connected to the external mentor via email. Please work with them (and the students) on scheduling a time to meet during week 2. Try to have everyone attend, but if it isn't possible do your best.
+```
+
+- Slack message for just TAs:
+```
+While it is not required to come to Tuesday's lecture, if you do not have a conflict you are expected to be there on Thursday between 5-6 to help students set up and verify computers.
+
+This usually lasts about an hour!
+
+Our lecture is in: Eckhart Hall 133
+```
+
 
 ### Week 1
 - Set up badge access for the clinic rooms by sending a list of registered student names, emails, and ChicagoID numbers to DSI operations.
