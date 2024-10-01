@@ -50,6 +50,7 @@ Applications close on Friday of this week. After the deadline:
 - Send mass rejection email to students that did not match
 
 ### Week -1
+- Mark Week -6 on the calendar for the upcoming quarter.
 The following tasks depend upon having a list of confirmed students and projects:
 - Create Slack channels. Add students, mentors, and TAs
 - Create GitHub repositories. Add students, mentors, and TAs
