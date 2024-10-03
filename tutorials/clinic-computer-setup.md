@@ -86,7 +86,7 @@ If this returns your username and something to the effect of `You've Successfull
 
 ## 7. DSI Cluster
 
-If you need to access the cluster then you will need to request an account (which should have already been done for you). You will then need to set up SSH keys and verify that you can SSH into the machine.
+If you need to access the cluster then you will need to request an account (which should have already been done for you). You will then need to set up SSH keys and verify that you can SSH into the machine. Note that the step-by-step instructions for how to do this are included in the [same SSH Keys docs as in section 6](./ssh_github_cluster.md). 
 
 Note that as part of these instructions you will add your SSH key to github. This is a required part of this process.
 
