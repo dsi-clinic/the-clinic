@@ -51,7 +51,10 @@ Applications close on Friday of this week. After the deadline:
 
 ### Week -1
 - Mark Week -6 on the calendar for the upcoming quarter.
+- Make sure that the Canvas page is set up.
+- Add Org Report and Computer Set up Assignment to Canvas with correct dates.
 The following tasks depend upon having a list of confirmed students and projects:
+- Add all students, mentors and TAs so the canvas page.
 - Create Slack channels. Add students, mentors, and TAs
 - Create GitHub repositories. Add students, mentors, and TAs
 - Send the DSI cluster admin a list of CNET user IDs and associated projects to grant them access to the cluster.
