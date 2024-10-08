@@ -83,7 +83,7 @@ After running way too many of these, here are some random pieces of useful advic
 * Break down tasks into smaller components then you think will be required.
 * Be wary of creating an “Us (students/TA/mentors) vs. Them (partner)” dynamic
 * Students do not take notes. 
-* Once again – do not have students work on the same task. &* Break tasks up into items small enough to define responsibilities around them.
+* Once again – do not have students work on the same task: **Break tasks up into items small enough to define responsibilities around them.**
 
 
 ## Common questions and Issues:
