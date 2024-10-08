@@ -155,6 +155,15 @@ In addition to the information above, this section contains best practices for m
 * [TA Expectations](./mentor-ta/ta-expectations.md)
 * [How to run a Mentor Meeting](./mentor-ta/how-to-run-a-meeting.md)
 * [How to run a TA Session](./mentor-ta/how-to-run-a-ta-session.md)
+* [Rubrics](./rubrics/)
+  * [Progress Report](./rubrics/progress-doc-rubric.md)
+  * [Planning Report](./rubrics/planning-doc-rubric.md)
+  * [Final Email](./rubrics/final-email.md)
+  * [Mid-quarter presentation](./rubrics/mid-quarter-presentation-rubric.md) 
+  * [Draft/Final Videos](./rubrics/final-video.md)
+  * [Draft/Final One-pager](./rubrics/one-pager.md)
+  * [Final Technical Deliverable](./rubrics/final-technical-cleanup.md)
+
 
 # FAQ
 
