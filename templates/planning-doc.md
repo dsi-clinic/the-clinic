@@ -43,6 +43,8 @@ Late submissions made within 24 hours of the deadline will automatically be dock
 |  |  | 
 
 Are there any plans to meet with the external mentor? If so, please provide the logistics of the meeting (meeting start and end time, in-person? Zoom? Who on both sides will be attending – to the best of your knowledge).
+
+As a reminder that if you meet with an external mentor you need to fill out the external mentor meeting notes template that can be found on the DSI clinic web site. This information should then be put in the repo.
  
 
 | External Mentor Meeting | Write information here | 
