@@ -119,6 +119,20 @@ Room notification message:
 ```
 @here Your room assignments are below. All rooms are located in the Ryerson Annex which is located north of the main Ryerson building. The Annex can be accessed through a set of double doors on the first floor of Ryerson.
 ```
+
+Mentors-TA Slack Message:
+```
+@here Welcome to week 2! A few notes:
+- By now rooms have been assigned for TA and mentor sessions.
+- You should be in contact (and hopefully meeting with) your external mentor this week.
+- Students are required to submit their planning document this week after their meeting with you. Please make sure to follow the best project practices outlined in in the "How to run a mentor meeting" and " Mentor Expectations" docs linked to below. 
+	- Planning docs are due midnight of the day of the meeting.
+- There is quite a bit of documentation in the TA and Mentor Section of the github repo. If you have any questions, or want a review, I recommend scanning it.
+
+https://github.com/dsi-clinic/the-clinic?tab=readme-ov-file#ta-and-mentor-information
+
+```
+
 ### Week 3
 - Turn on the [peer review form](https://docs.google.com/forms/d/1Ls_YnQQ72J83WqE-7XPMPbC6TtrpXJcdArA0wmdSIOA/edit). Notify students via Canvas that the peer review is available
 
