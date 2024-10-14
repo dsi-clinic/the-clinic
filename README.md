@@ -40,10 +40,18 @@ This repository contains information and documentation regarding the Data Scienc
 This section contains information on important logistics and contact information for the clinic.
 
 ## Application Information
+In order to enroll in the class, students must first submit an application and be matched with a project. The application requires a resume or CV, short statement of interest, and self-assessment of technical skills. Students are asked to rank their preferences for project placement.
 
-Students must apply to take the Data Science Clinic. An information session is held a few weeks before the start of each quarter which describes the application process as well as the available projects.
+Applications for Winter 2025 will open on November 21, 2024 at 2pm and will close on December 1, 2024 at 11:59pm. A link to the application will be posted here when the application opens.
 
-For more information on the application process including dates for upcoming information sessions, please go [here](https://sites.google.com/uchicago.edu/dsclinic).
+## Information Session
+An information session for Winter 2025 will be held on November 21, 2024 at 2pm on Zoom. During this session, clinic leadership will discuss the logistics of the class and upcoming projects for Winter 2025.
+
+Register for the information session [here](https://uchicago.zoom.us/meeting/register/tJEqcuqqrzoiE9LHKXPFVBl9JH_kF7_BUUUM).
+
+## Project Information
+Project descriptions for Winter 2025 will be released at the upcoming information session. 
+
 
 ## Meeting times / Simultaneous Enrollment
 
