@@ -10,40 +10,63 @@ This repository contains information and documentation regarding the Data Scienc
 
 <!-- toc -->
 
-- [Welcome to the Data Science Clinic at the University of Chicago](#welcome-to-the-data-science-clinic-at-the-university-of-chicago)
-- [Table of Contents](#table-of-contents)
-- [Logistics](#logistics)
-  - [Application Information](#application-information)
-  - [Meeting times / Simultaneous Enrollment](#meeting-times--simultaneous-enrollment)
-  - [In-person requirements](#in-person-requirements)
-  - [People](#people)
-  - [Weekly Calendar](#weekly-calendar)
+- [Prospective students](#prospective-students)
+  * [Application Information](#application-information)
+  * [Information Session](#information-session)
+  * [Project Information](#project-information)
+- [Course Logistics](#course-logistics)
+  * [Meeting times / Simultaneous Enrollment](#meeting-times--simultaneous-enrollment)
+  * [In-person requirements](#in-person-requirements)
+  * [People](#people)
+  * [Weekly Calendar](#weekly-calendar)
 - [Documents](#documents)
-  - [Syllabus](#syllabus)
-  - [Progress and Planning Docs](#progress-and-planning-docs)
-  - [First Week Org Report](#first-week-org-report)
-  - [Meeting with External Mentors](#meeting-with-external-mentors)
-  - [Mid-quarter presentation](#mid-quarter-presentation)
+  * [Syllabus](#syllabus)
+  * [Progress and Planning Docs](#progress-and-planning-docs)
+  * [First Week Org Report](#first-week-org-report)
+  * [Meeting with External Mentors](#meeting-with-external-mentors)
+  * [Mid-quarter presentation](#mid-quarter-presentation)
 - [Finals Week Deliverables](#finals-week-deliverables)
 - [Additional Tutorials and Assistance](#additional-tutorials-and-assistance)
 - [Previous Projects](#previous-projects)
 - [Coding Standards](#coding-standards)
 - [TA and Mentor Information](#ta-and-mentor-information)
 - [FAQ](#faq)
-    - [I am doing an internship/research experience/project in data science, can I waive out of the clinic?](#i-am-doing-an-internshipresearch-experienceproject-in-data-science-can-i-waive-out-of-the-clinic)
-    - [As a Data Science Major, can I take the clinic over two non-consecutive quarters?](#as-a-data-science-major-can-i-take-the-clinic-over-two-non-consecutive-quarters)
+    + [I am doing an internship/research experience/project in data science, can I waive out of the clinic?](#i-am-doing-an-internshipresearch-experienceproject-in-data-science-can-i-waive-out-of-the-clinic)
+    + [As a Data Science Major, can I take the clinic over two non-consecutive quarters?](#as-a-data-science-major-can-i-take-the-clinic-over-two-non-consecutive-quarters)
+    + [What are the prerequisites?](#what-are-the-prerequisites)
+    + [What if I miss the application deadline?](#what-if-i-miss-the-application-deadline)
+    + [What if I can't attend the information session?](#what-if-i-cant-attend-the-information-session)
+    + [Does the Clinic qualify as an elective for my program?](#does-the-clinic-qualify-as-an-elective-for-my-program)
+    + [Can I take Clinic twice in one quarter?](#can-i-take-clinic-twice-in-one-quarter)
+    + [Should I pre-register for the course?](#should-i-pre-register-for-the-course)
+    + [How do I register once I've been admitted?](#how-do-i-register-once-ive-been-admitted)
+    + [What if I'm missing a prerequisite?](#what-if-im-missing-a-prerequisite)
+    + [Who can I contact about the Data Science Clinic?](#who-can-i-contact-about-the-data-science-clinic)
+    + [What if I have time conflicts with the scheduled time?](#what-if-i-have-time-conflicts-with-the-scheduled-time)
+    + [Is the Data Science Clinic a two quarter class?](#is-the-data-science-clinic-a-two-quarter-class)
+    + [When will I be notified of my placement?](#when-will-i-be-notified-of-my-placement)
+    + [Will I be notified if I am not placed?](#will-i-be-notified-if-i-am-not-placed)
 
 <!-- tocstop -->
 
-# Logistics 
+# Prospective students
+## Application Information
+In order to enroll in the class, students must first submit an application and be matched with a project. The application requires a resume or CV, short statement of interest, and self-assessment of technical skills. Students are asked to rank their preferences for project placement.
+
+Applications for Winter 2025 will open on November 21, 2024 at 2pm and will close on December 1, 2024 at 11:59pm. A link to the application will be posted here when the application opens.
+
+## Information Session
+An information session for Winter 2025 will be held on November 21, 2024 at 2pm on Zoom. During this session, clinic leadership will discuss the logistics of the class and upcoming projects for Winter 2025.
+
+Register for the information session [here](https://uchicago.zoom.us/meeting/register/tJEqcuqqrzoiE9LHKXPFVBl9JH_kF7_BUUUM).
+
+## Project Information
+Project descriptions for Winter 2025 will be released at the upcoming information session. 
+
+# Course Logistics 
 
 This section contains information on important logistics and contact information for the clinic.
 
-## Application Information
-
-Students must apply to take the Data Science Clinic. An information session is held a few weeks before the start of each quarter which describes the application process as well as the available projects.
-
-For more information on the application process including dates for upcoming information sessions, please go [here](https://sites.google.com/uchicago.edu/dsclinic).
 
 ## Meeting times / Simultaneous Enrollment
 
@@ -176,3 +199,73 @@ Unfortunately these classes are required for the major and there is no method of
 ### As a Data Science Major, can I take the clinic over two non-consecutive quarters? 
 
 It is strongly recommended to take the clinic in consecutive quarters. If you take it over non-consecutive quarters you will likely end up on two different projects which will significantly diminish the experience. At the individual level the most important learning experience occurs after you have internalized the domain and background of the project which frequently occurs in the second quarter.
+
+### What are the prerequisites?
+
+See the official course catalog [here](http://collegecatalog.uchicago.edu/thecollege/datascience/#datascienceclinic).
+
+Prerequisites:
+
+* DATA/CMSC 13600: Data Engineering
+* DATA 12000: Computer Science for Data Science
+* DATA 21100/21200: Mathematical Methods for Data Science I/II
+* DATA 22100:  Introduction to Machine Learning
+* Alternatively, by permission of the instructor.
+
+### What if I miss the application deadline?
+
+Apply next quarter. The Clinic runs during autumn, winter, and spring quarters.
+
+### What if I can't attend the information session?
+
+The information session will be recorded. Find recordings of past sessions [here](https://uchicago.box.com/s/35irwnktfazm8sjpdz82z8x6ssnimpcy).
+
+### Does the Clinic qualify as an elective for my program?
+
+Please consult with your academic advisor.
+
+### Can I take Clinic twice in one quarter?
+
+No. Students may only work on one project per quarter.
+
+### Should I pre-register for the course?
+
+No. Register for the course only when you've been matched with a project.
+
+### How do I register once I've been admitted?
+
+Undergraduates should add the class via my.uchicago. Graduate students need to contact their advisors to be added to the course manually.
+
+### What if I'm missing a prerequisite?
+
+For undergraduate students it is strongly recommended that students complete all prerequisites before enrolling in Clinic, but exceptions are considered on a case-by-case basis. Priority in project placement is given to students that have completed all prerequisites. If you are an undergraduate data science major taking the clinic in your senior year and are still taking some of the prereqs during the year you will be admitted, but you may not receive your preferred project.
+
+For graduate students applying to the data science clinic we do our best to evaluate each application to ensure that the applicant has sufficient experience to be successful in the curriculum. This evaluation occurs during the application process and the strongest indicator of application success is completion of multiple computer science courses. For graduate students, our minimum requirements are two quarters of Python based computer science classwork or equivalent work experience.  
+
+### Who can I contact about the Data Science Clinic?
+
+Inquiries can be sent to Nick Ross, Director of the Data Science Clinic.
+
+### What if I have time conflicts with the scheduled time?
+
+During the first week of clinic students are expected to meet at the time specified in the schedule, commonly TuTh 5-6:20, for orientation and introduction activities.
+
+During the first week, each project will identify meeting times specific to their project (two TA sessions and one mentor sessions). These meeting times are dependent on the TA, Mentor(s) and students schedule. These meeting times will be used for the rest of the quarter.
+
+During the sixth week of the quarter there are a set of mid-quarter presentations. These presentations are not required for all team members -- though failing to support your team is a bad signal. The mid-quarter presentations are in-person and in the room scheduled for the class.
+
+Since outside the times listed above we do not meet during the scheduled time it is not uncommon for students to enroll in a class with some overlap. If you do have a course which has some overlap or conflict with the scheduled time you may need to fill out a "Simultaneous Enrollment" form with your advisor. If this is the case please send an email to the clinic director stating that you will be doing this.
+
+### Is the Data Science Clinic a two quarter class?
+
+Undergraduate Data Science majors are required to take two quarters of the Data Science Clinic to fulfill their graduation requirements. 
+
+For students who are not Data Science majors, we strongly encourage planning to take the clinic for two quarters or more. Most of our projects have a steep learning curve before a student can contribute; participating for only a single quarter significantly limits the learning experience.
+
+### When will I be notified of my placement?
+
+Nearly all notification of placements occurs during the week after the applications are due. However the process takes some time and is usually not fully complete until the week before the quarter starts.
+
+### Will I be notified if I am not placed?
+
+Yes. Once placements are settled, all students not placed will be sent an notification via email.
