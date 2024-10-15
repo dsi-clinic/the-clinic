@@ -10,35 +10,46 @@ This repository contains information and documentation regarding the Data Scienc
 
 <!-- toc -->
 
-- [Welcome to the Data Science Clinic at the University of Chicago](#welcome-to-the-data-science-clinic-at-the-university-of-chicago)
-- [Table of Contents](#table-of-contents)
-- [Logistics](#logistics)
-  - [Application Information](#application-information)
-  - [Meeting times / Simultaneous Enrollment](#meeting-times--simultaneous-enrollment)
-  - [In-person requirements](#in-person-requirements)
-  - [People](#people)
-  - [Weekly Calendar](#weekly-calendar)
+- [Prospective students](#prospective-students)
+  * [Application Information](#application-information)
+  * [Information Session](#information-session)
+  * [Project Information](#project-information)
+- [Course Logistics](#course-logistics)
+  * [Meeting times / Simultaneous Enrollment](#meeting-times--simultaneous-enrollment)
+  * [In-person requirements](#in-person-requirements)
+  * [People](#people)
+  * [Weekly Calendar](#weekly-calendar)
 - [Documents](#documents)
-  - [Syllabus](#syllabus)
-  - [Progress and Planning Docs](#progress-and-planning-docs)
-  - [First Week Org Report](#first-week-org-report)
-  - [Meeting with External Mentors](#meeting-with-external-mentors)
-  - [Mid-quarter presentation](#mid-quarter-presentation)
+  * [Syllabus](#syllabus)
+  * [Progress and Planning Docs](#progress-and-planning-docs)
+  * [First Week Org Report](#first-week-org-report)
+  * [Meeting with External Mentors](#meeting-with-external-mentors)
+  * [Mid-quarter presentation](#mid-quarter-presentation)
 - [Finals Week Deliverables](#finals-week-deliverables)
 - [Additional Tutorials and Assistance](#additional-tutorials-and-assistance)
 - [Previous Projects](#previous-projects)
 - [Coding Standards](#coding-standards)
 - [TA and Mentor Information](#ta-and-mentor-information)
 - [FAQ](#faq)
-    - [I am doing an internship/research experience/project in data science, can I waive out of the clinic?](#i-am-doing-an-internshipresearch-experienceproject-in-data-science-can-i-waive-out-of-the-clinic)
-    - [As a Data Science Major, can I take the clinic over two non-consecutive quarters?](#as-a-data-science-major-can-i-take-the-clinic-over-two-non-consecutive-quarters)
+    + [I am doing an internship/research experience/project in data science, can I waive out of the clinic?](#i-am-doing-an-internshipresearch-experienceproject-in-data-science-can-i-waive-out-of-the-clinic)
+    + [As a Data Science Major, can I take the clinic over two non-consecutive quarters?](#as-a-data-science-major-can-i-take-the-clinic-over-two-non-consecutive-quarters)
+    + [What are the prerequisites?](#what-are-the-prerequisites)
+    + [What if I miss the application deadline?](#what-if-i-miss-the-application-deadline)
+    + [What if I can't attend the information session?](#what-if-i-cant-attend-the-information-session)
+    + [Does the Clinic qualify as an elective for my program?](#does-the-clinic-qualify-as-an-elective-for-my-program)
+    + [Can I take Clinic twice in one quarter?](#can-i-take-clinic-twice-in-one-quarter)
+    + [Should I pre-register for the course?](#should-i-pre-register-for-the-course)
+    + [How do I register once I've been admitted?](#how-do-i-register-once-ive-been-admitted)
+    + [What if I'm missing a prerequisite?](#what-if-im-missing-a-prerequisite)
+    + [Who can I contact about the Data Science Clinic?](#who-can-i-contact-about-the-data-science-clinic)
+    + [What if I have time conflicts with the scheduled time?](#what-if-i-have-time-conflicts-with-the-scheduled-time)
+    + [Is the Data Science Clinic a two quarter class?](#is-the-data-science-clinic-a-two-quarter-class)
+    + [When will I be notified of my placement?](#when-will-i-be-notified-of-my-placement)
+    + [Will I be notified if I am not placed?](#will-i-be-notified-if-i-am-not-placed)
 
 <!-- tocstop -->
 
-# Logistics 
-
-This section contains information on important logistics and contact information for the clinic.
-
+# Prospective students
 ## Application Information
 In order to enroll in the class, students must first submit an application and be matched with a project. The application requires a resume or CV, short statement of interest, and self-assessment of technical skills. Students are asked to rank their preferences for project placement.
 
@@ -51,6 +62,10 @@ Register for the information session [here](https://uchicago.zoom.us/meeting/reg
 
 ## Project Information
 Project descriptions for Winter 2025 will be released at the upcoming information session. 
+
+# Course Logistics 
+
+This section contains information on important logistics and contact information for the clinic.
 
 
 ## Meeting times / Simultaneous Enrollment
