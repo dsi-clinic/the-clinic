@@ -48,6 +48,14 @@ This repository contains information and documentation regarding the Data Scienc
     + [Will I be notified if I am not placed?](#will-i-be-notified-if-i-am-not-placed)
 
 <!-- tocstop -->
+# About
+The Clinic is an experiential project-based course where students work in teams as data scientists with real-world clients under the supervision of instructors. Students will be tasked with producing key deliverables such as data analysis, open source software, as well as final client presentations and reports.
+
+The Clinic partners with public interest organizations, industry, and research labs to leverage data science research and technology to address pressing social, environmental, industrial, and academic challenges. The Clinic also provides students with exposure to real-world projects and problems that transcend the conventional classroom experience including: (1) working with imperfect datasets, applying models and algorithms to real-world data, and navigating security and privacy issues, (2) communicating results to a diverse set of stakeholders (e.g., industry, public interest, government agencies), and translating information into actionable insights, policy briefs and software prototypes.
+
+The Data Science Clinic is cross-listed in the catalog under the following codes: DATA 27100/27200, CAPP 30300, PPHA 30581, MACS 30300, MPCS 57300.
+
+Find out more about the Data Science Clinic at the Data Science Institute's [website](https://datascience.uchicago.edu/education/data-science-clinic/) or the [course catalog](http://collegecatalog.uchicago.edu/thecollege/datascience/#datascienceclinic).
 
 # Prospective students
 ## Application Information
