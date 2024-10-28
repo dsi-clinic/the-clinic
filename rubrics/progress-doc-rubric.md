@@ -12,9 +12,10 @@ The progress report is due at midnight on the day before the mentor meeting.
 Grades are assigned on a scale of 0-5 points individually to each student. In Canvas this is set as a _group_ assignment, but with individual grades. I strongly recommend using the Canvas SpeedGrader and filtering by project group on the grade book page.
 
 
-Two points of emphasis:
+Three points of emphasis:
    1. Don't fall behind on grading!
    2. Make sure to establish standards early. Giving everyone a 5 for everything is going to encourage people to slack; make sure that the high performers are rewarded and people who are slacking know that you are aware of their lack-of-effort.
+   3. Make sure to establish a "no new issues raised during the mentor meeting" mindset. Students will use getting stuck as an excuse to not finish their work. Students having issues should raise those issues ahead of time.
 
 
 Mentors may apply additional grading standards to the rubrics below.
@@ -23,7 +24,7 @@ Mentors may apply additional grading standards to the rubrics below.
 | ----------- | ----------- |
 | 5 | <ul><li>All information filled out, task information is descriptive, complete, and easy to follow. The write-up is readable and understandable with consistent formatting and style across all write-ups. Student demonstrated significant effort over the course of the week and did not procrastinate or reach out for assistance in an untimely manner.</li><li>Any code produced is conveniently shared (proper PR attached to it and complies with any project standards around coding and reporting) and can be run / reproduced with little effort. </li></ul>| 
 | 4 | <ul><li>All information filled out, task information is descriptive, mostly complete, and relatively easy to follow.  Write-ups may have minor presentation issues (grammar / inconsistent style or formatting) which only mildly affects its readability. Student demonstrated significant effort over the course of the week and did not procrastinate their work or reach out for assistance in an untimely manner.</li><li>Any code produced is conveniently shared (proper PR attached to it and complies with any project standards around coding and reporting) and can be run / reproduced, but requires changing a few lines. </li></ul> | 
-| 3 | <ul><li>All information present, but the task description has presentation issues which affect its readability (grammar / inconsistent style or formatting). Student did not complete their work due to planning (procrastination) or not getting in touch with the TA or Mentor in a timely manner.</li> <li>Any code produced requires back-and-forth with student in order to obtain or reproduce.</li></ul> | 
+| 3 | <ul><li>All information present, but the task description has presentation issues which affect its readability (grammar / inconsistent style or formatting). Student did not complete their work due to planning (procrastination) or not getting in touch with the TA or Mentor in a timely manner.</li><li>Any code produced requires back-and-forth with student in order to obtain or reproduce.</li><li><strong>Student got "stuck" on an area and raised the concern during the mentor meeting, rather than beforehand.</strong></li></ul> | 
 | 2 | Missing information, significant presentation, and content issues. Work incomplete. |
 | 1 | Incomplete and demonstrates a lack of effort. | 
 |0 | Zero effort / not submitted|
