@@ -12,6 +12,7 @@ The purpose of this document is to centralize resources and create a timeline of
 - Create a registration link for the information session via [Zoom](https://uchicago.zoom.us/meeting#/upcoming) website
 - Share the information session registration link with this [list of people](https://docs.google.com/spreadsheets/d/1w_XWoo1csw0A916N6rif86VoGKuOdS3f5U7s59Ym8Yk/edit#gid=0). You can find an email template [here](email_templates.md#registration-initial-outreach).
 - Share [TA job description](TA_job_description.md) with appropriate list including DSI Operations team to post on website.
+- Ask TAs about continuining into next quarter.
 
 ### Week -5
 Everything below depends upon having a list of projects.
