@@ -3,7 +3,6 @@
 The purpose of this document is to centralize resources and create a timeline of administrative tasks involved in running the clinic.
 
 ## Resources
-- [Website admin link](https://sites.google.com/d/1aQ3atv5lfN5LBf-0Dwh3awZRpyYd2XuL/p/1YjmIMqKZj_FhdESZs-FvhzTzgPfSl8UQ/edit)
 - [Application admin link](https://docs.google.com/forms/d/1OAgTju72wNeLYeNbp3xsqxgAGqARuYvTwdYcFrTALus/edit) Best Practice: re-use this form, clearing out the historical responses and changing the date and project names.
 
 ## Weekly Calendar
