@@ -338,9 +338,9 @@ if __name__ == "__main__":
                 f"</summary>\n\n"
                 f"This quarter's pitchbook, which contains the basic project "
                 f"specification can be found "
-                f"[here](./pitchbooks/"
+                f"<a href=\"./pitchbooks/"
                 f"{quarter['year']}-{quarter['quarter'].lower()}"
-                f"-pitchbook.pdf).\n\n"
+                f"-pitchbook.pdf\">here</a>.\n\n"
             )
             f_handle.write(create_single_quarter_table(**quarter))
             f_handle.write("\n</details>")
