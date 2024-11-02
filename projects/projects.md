@@ -15,7 +15,7 @@ A few important notes:
 
 <summary><h2>Spring 2024</h2></summary>
 
-This quarter's pitchbook, which contains the basic project specification can be found [here](./pitchbooks/2024-spring-pitchbook.pdf).
+This quarter's pitchbook, which contains the basic project specification can be found <a href="./pitchbooks/2024-spring-pitchbook.pdf">here</a>.
 
 <table>
         <thead>
@@ -50,7 +50,7 @@ This quarter's pitchbook, which contains the basic project specification can be 
 
 <summary><h2>Winter 2024</h2></summary>
 
-This quarter's pitchbook, which contains the basic project specification can be found [here](./pitchbooks/2024-winter-pitchbook.pdf).
+This quarter's pitchbook, which contains the basic project specification can be found <a href="./pitchbooks/2024-winter-pitchbook.pdf">here</a>.
 
 <table>
         <thead>
@@ -90,7 +90,7 @@ This quarter's pitchbook, which contains the basic project specification can be 
 
 <summary><h2>Autumn 2023</h2></summary>
 
-This quarter's pitchbook, which contains the basic project specification can be found [here](./pitchbooks/2023-autumn-pitchbook.pdf).
+This quarter's pitchbook, which contains the basic project specification can be found <a href="./pitchbooks/2023-autumn-pitchbook.pdf">here</a>.
 
 <table>
         <thead>
@@ -127,7 +127,7 @@ This quarter's pitchbook, which contains the basic project specification can be 
 
 <summary><h2>Spring 2023</h2></summary>
 
-This quarter's pitchbook, which contains the basic project specification can be found [here](./pitchbooks/2023-spring-pitchbook.pdf).
+This quarter's pitchbook, which contains the basic project specification can be found <a href="./pitchbooks/2023-spring-pitchbook.pdf">here</a>.
 
 <table>
         <thead>
@@ -161,7 +161,7 @@ This quarter's pitchbook, which contains the basic project specification can be 
 
 <summary><h2>Winter 2023</h2></summary>
 
-This quarter's pitchbook, which contains the basic project specification can be found [here](./pitchbooks/2023-winter-pitchbook.pdf).
+This quarter's pitchbook, which contains the basic project specification can be found <a href="./pitchbooks/2023-winter-pitchbook.pdf">here</a>.
 
 <table>
         <thead>
@@ -199,7 +199,7 @@ This quarter's pitchbook, which contains the basic project specification can be 
 
 <summary><h2>Autumn 2022</h2></summary>
 
-This quarter's pitchbook, which contains the basic project specification can be found [here](./pitchbooks/2022-autumn-pitchbook.pdf).
+This quarter's pitchbook, which contains the basic project specification can be found <a href="./pitchbooks/2022-autumn-pitchbook.pdf">here</a>.
 
 <table>
         <thead>
