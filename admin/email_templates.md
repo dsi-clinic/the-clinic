@@ -4,9 +4,9 @@
 
 All --
 
-We are rapidly approaching the fall quarter and I was hoping you could share the following information with your students regarding registration information for the data science clinic program!
+I was hoping you could share the following snippet with your students about registering for an information session for the data science clinic.
 
-As always please let me know if you have any questions!
+As always, please let me know if you have any questions!
 
 Thanks,
 
@@ -15,12 +15,14 @@ Thanks,
 ----
 
 ### Information Session Template
-Autumn 2024 Data Science Clinic Information Session
-September 4th, 3-4pm Central
+Winter 2025 Data Science Clinic Information Session
+November 21, 2024
+2:00 – 3:00pm CST
+[Register Here]()
 
 Join us for an information session about the Data Science Clinic, a hands-on, project-based course. In this course, students collaborate on real-world projects with industry partners, public interest organizations, and research labs. Students in the Data Science Clinic gain valuable data science experience while being guided by experienced mentors.
 
-At the info session, clinic leadership will discuss the application process, the course, and upcoming projects. [This event will take place via Zoom. Please find registration and other information here](https://sites.google.com/uchicago.edu/dsclinic/).
+At the info session, clinic leadership will discuss the application process, the course, and upcoming projects. This event will take place via Zoom. Find more information on our [website](https://dsi-clinic.github.io/the-clinic/).
 
 --- 
 
