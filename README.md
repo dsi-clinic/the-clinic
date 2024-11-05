@@ -17,8 +17,6 @@ This repository contains information and documentation regarding the Data Scienc
   * [Project Information](#project-information)
 - [Current Students](#current-students)
 - [TA and Mentor Information](#ta-and-mentor-information)
-- [Coding Standards](#coding-standards)
-- [Additional Tutorials and Assistance](#additional-tutorials-and-assistance)
 - [Previous Projects](#previous-projects)
 - [FAQ](#faq)
     + [I am doing an internship/research experience/project in data science, can I waive out of the clinic?](#i-am-doing-an-internshipresearch-experienceproject-in-data-science-can-i-waive-out-of-the-clinic)
@@ -64,40 +62,9 @@ Project descriptions for Winter 2025 will be released at the upcoming informatio
 
 # Current Students 
 Important information for current students can be found [here](./students/current-student-info.md).
-* [Syllabus](./syllabus/syllabus.md)
-* [Weekly Calendar](./syllabus/weekly-plan.md)
-* [Documents](./students/current-student-info.md#documents)
-* [Finals Week Deliverables](./students/current-student-info.md#finals-week-deliverables)
 
 # TA and Mentor Information
 Information and best practices for mentors and TAs can be found [here](./mentor-ta/mentor-ta-info.md).
-
-# Coding Standards
-You can find information on Data Science Clinic Coding Standards and expectations [here](./coding-standards/coding-standards.md).
-
-
-# Additional Tutorials and Assistance
-We keep a list of frequently asked questions and answers as well as "How-to"'s for specific technologies in this repo:
-
-* [How to set up your computer](./tutorials/clinic-computer-setup.md)
-* [SSH to Github and the Cluster](./tutorials/ssh_github_cluster.md)
-* [Slurm](./tutorials/slurm.md)
-* [Using Submitit on the cluster](./tutorials/submit-it.md)
-* [Writing well-documented code](./coding-standards/code-example.md)
-* [Docker Common Questions](./tutorials/Docker.md)
-* [Understanding File Systems](./tutorials/filepaths.md)
-* [Using GDAL](./tutorials/geopandas-dockerfile.md)
-* [Using Podman on the Cluster](./tutorials/podman.md)
-* [Speaking Code](./tutorials/speaking-code.md)
-* [WSL FAQ](./tutorials/WSL.md)
-* [Web scraping](./tutorials/web_scraping.md)
-* [X11 on the Cluster](./tutorials/X11.md)
-* [How to talk about the clinic on your resume and in interviews](./tutorials/resume-interviews.md)
-* [Removing Sensitive Data from Git](./tutorials/remove_data_git.md)
-
-Finally, The University of Chicago's Computer Science Department has an in-depth list of related resources that you can find [here](https://uchicago-cs.github.io/student-resource-guide/). 
-
-If you need help using Unix, docker or any of the tools used in the clinic this is an invaluable resource.
 
 # Previous Projects
 
