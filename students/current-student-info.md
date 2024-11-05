@@ -1,4 +1,27 @@
 # Information for Current Students
+## Table of Contents
+<!-- do not change TOC, generated from script -->
+<!-- `npx markdown-toc -i students/current-student-info.md` --> 
+
+<!-- toc -->
+
+- [Syllabus](#syllabus)
+- [Weekly Calendar](#weekly-calendar)
+- [Logistics](#logistics)
+  * [Meeting times / Simultaneous Enrollment](#meeting-times--simultaneous-enrollment)
+  * [In-person requirements](#in-person-requirements)
+- [People](#people)
+- [Documents](#documents)
+  * [Progress and Planning Docs](#progress-and-planning-docs)
+  * [First Week Org Report](#first-week-org-report)
+  * [Meeting with External Mentors](#meeting-with-external-mentors)
+  * [Mid-quarter presentation](#mid-quarter-presentation)
+- [Finals Week Deliverables](#finals-week-deliverables)
+- [Coding Standards](#coding-standards)
+- [Additional Tutorials and Assistance](#additional-tutorials-and-assistance)
+
+<!-- tocstop -->
+
 ## Syllabus
 The Syllabus, including all course expectations can be found [here](../syllabus/syllabus.md).
 
