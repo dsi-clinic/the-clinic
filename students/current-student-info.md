@@ -26,11 +26,9 @@ We expect all TA sessions and mentor meetings (unless the mentor chooses otherwi
 The Data Science Clinic is administered by [Nick Ross](https://nickross.site) and [Tim Hannifan](https://github.com/timhannifan). Questions about the clinic should be addressed to them either over slack or via their UChicago email addresses.  
 
 
-
 ## Documents 
 
 This section contains links to many of the important documents used in the clinic. 
-
 
 
 ### Progress and Planning Docs
@@ -70,3 +68,29 @@ As this is a projects based course most of the work is designed around a set of 
 | Final Video | A short, recorded, video presentation is also required to be created. This includes two drafts and a final version. | Grading will be done according to the [rubric](../rubrics/final-video.md) and submission will be completed via Canvas. |
 | Partner Email | Each team should designate one person to send a final email to the external partner with the video, one-pager and link to the code they developed. | Information on requirements for this email can be found [here](../rubrics/final-email.md). | 
 
+## Coding Standards
+You can find information on Data Science Clinic Coding Standards and expectations [here](../coding-standards/coding-standards.md).
+
+
+## Additional Tutorials and Assistance
+We keep a list of frequently asked questions and answers as well as "How-to"'s for specific technologies in this repo:
+
+* [How to set up your computer](../tutorials/clinic-computer-setup.md)
+* [SSH to Github and the Cluster](../tutorials/ssh_github_cluster.md)
+* [Slurm](../tutorials/slurm.md)
+* [Using Submitit on the cluster](../tutorials/submit-it.md)
+* [Writing well-documented code](../coding-standards/code-example.md)
+* [Docker Common Questions](../tutorials/Docker.md)
+* [Understanding File Systems](../tutorials/filepaths.md)
+* [Using GDAL](../tutorials/geopandas-dockerfile.md)
+* [Using Podman on the Cluster](../tutorials/podman.md)
+* [Speaking Code](../tutorials/speaking-code.md)
+* [WSL FAQ](../tutorials/WSL.md)
+* [Web scraping](../tutorials/web_scraping.md)
+* [X11 on the Cluster](../tutorials/X11.md)
+* [How to talk about the clinic on your resume and in interviews](../tutorials/resume-interviews.md)
+* [Removing Sensitive Data from Git](../tutorials/remove_data_git.md)
+
+Finally, The University of Chicago's Computer Science Department has an in-depth list of related resources that you can find [here](https://uchicago-cs.github.io/student-resource-guide/). 
+
+If you need help using Unix, docker or any of the tools used in the clinic this is an invaluable resource.
