@@ -8,7 +8,8 @@ The purpose of this document is to centralize resources and create a timeline of
 ## Weekly Calendar
 
 ### Week -6
-- Create a registration link for the information session via [Zoom](https://uchicago.zoom.us/meeting#/upcoming) website
+- Create a registration link for the information session via [Zoom](https://uchicago.zoom.us/meeting#/upcoming) website.
+- Create a Matching Spreadsheet.
 - Share the information session registration link with this [list of people](https://docs.google.com/spreadsheets/d/1w_XWoo1csw0A916N6rif86VoGKuOdS3f5U7s59Ym8Yk/edit#gid=0). You can find an email template [here](email_templates.md#registration-initial-outreach).
 - Share [TA job description](TA_job_description.md) with appropriate list including DSI Operations team to post on website.
 - Ask TAs about continuining into next quarter.
@@ -17,9 +18,9 @@ The purpose of this document is to centralize resources and create a timeline of
 Everything below depends upon having a list of projects.
 - Create pitchbook using this [template](https://docs.google.com/document/d/1AINocE0DzRl-1ykH7DF3kfhMMo2u0SQC/edit)
   - 9/24: Add a NOTE about not contacting the mentors to both this and the info session presentation.
-- Upload a pdf of the pitchbook to Google Drive. Change the permissions of the file to allow anyone to view it
-- In the "Project Descriptions" section of the website, update the link using the link from Google Drive
-- Insert the project names into section 3 of the application. Tip: create one version of the question and then replicate it
+- Upload a pdf of the pitchbook to Google Drive. Change the permissions of the file to allow anyone to view it.
+- In the "Project Descriptions" section of the website, update the link using the link from Google Drive.
+- Insert the project names into section 3 of the application. Tip: create one version of the question and then replicate it.
 
 ### Week -4
 Before the information session:
