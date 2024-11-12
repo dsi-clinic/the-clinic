@@ -4,8 +4,6 @@ This repository contains notes and documents regarding the coding standards expe
 
 All code produced should follow the requirements listed below. For questions and assistance on completing completing these requirements, please refer to the FAQ at the bottom of this page and the docs of this repository before reaching out to TAs and mentors. 
 
-Our automated code test suite can be found in the [dsi-cocoa repo](https://github.com/dsi-clinic/cocoa).
-
 If you are looking for an example of a well-documented piece of code from a previous clinic we have put an example [here](../coding-standards/code-example.md)
 
 Motivation:
@@ -49,8 +47,7 @@ Requirements
 1. No commented-out code
 1. Code should be organized so that function definition is separate from execution. There should be `__main__` blocks on files that are expected to be executed and files intended to be imported should not contain code execution.
 1. Code should never silently break (such as using try/except without raising an error.)
-1. All code should pass `Pyflakes`.
-1. The code formatter `black` should be used for readability.
+1. A code formatter should be used for readability. All code should pass the checks in `pre-commit run --all-files`.
 
 ### Notebooks
 1. Notebooks should generally _not_ contain function definitions.
@@ -80,7 +77,7 @@ Requirements
     * There should be _no_ conda / pyenv etc.
 
 ### DSI Cluster
-1. Include a conda recipe to manage the environment.
+1. Include a conda recipe or micromamba to manage the environment.
 
 
 FAQ
