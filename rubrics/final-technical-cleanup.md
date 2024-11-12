@@ -8,9 +8,9 @@ Remember that the core purpose of the technical clean up is to verify that the r
 
 ## Students
 
-For each repository associated with your work, a TA will be grading the repository. There are repository wide grading standards as well as specific file grading. TAs will be provided three python or jupyter notebooks from your repository that have commits from this last quarter (the clinic director will look at the git history of files that were changed during this time to select the files).
+For each repository associated with your work, a TA will be grading the repository. TAs will apply repository-wide standards as well as grade specific files. TAs will be provided three Python files or Jupyter notebooks from your repository that have commits from this last quarter (the clinic director will look at the git history of files that were changed during this time to select the files).
 
-There are two assessments that are done on each repo: [COCOA](https://github.com/dsi-clinic/cocoa) is run against the repository (with the `--lint` option enabled) and three, randomly selected individual files are also graded.  Those three files will be opened, verified and evaluated against the rubric below.
+There are two assessments that are done on each repo: `ruff check` is run against the repository and three, randomly selected files are graded.  Those three files will be opened, verified and evaluated against the rubric below.
 
 ## Grading Rubric
 
@@ -25,8 +25,8 @@ For TAs, please fill out the following form (one per repository):
 For each of the items below, please fill in the checkmark [X] if it is satisfied. Leave the checkmark blank [ ] if it is not.
 
 #### General Repo Hygiene
-- [ ] All work has been merged to the `dev` or `main` branch and other branches have been deleted (COCOA).
-- [ ] There are no `DS_Store` files or `.ipynb_checkpoints` directories (COCOA).
+- [ ] All work has been merged to the `dev` or `main` branch and other branches have been deleted.
+- [ ] There are no `DS_Store` files, `.ipynb_checkpoints`, or other extraneous files.
      
 #### Documentation 
 - [ ] The repo has a main README.md file which contains information on how to run the code.
@@ -46,17 +46,17 @@ For each file copy the checklist below and complete it.
 
 - [ ] File name: The file should be named appropriately and align with what is contained in it.
 - [ ] Is this a script (*.py files)?: 
-    - [ ] All code is in functions (COCOA).
-    - [ ] All functions have doc strings (COCOA).
+    - [ ] All code is in functions.
+    - [ ] All functions have doc strings.
     - [ ] Function names are descriptive.
-    - [ ] `black` and `flake8` pass (COCOA).
+    - [ ] `ruff` or `pre-commit` passes.
     - [ ] All paths are relative (no hard-coded paths).
     - [ ] Comments are human readable and descriptive (there is no commented-out code or commented out code blocks).
     - [ ] Code is free of API Keys or secrets.
 - [ ] Is this a notebook (*.ipynb file)?:
-    - [ ] There are less than 20 cells (COCOA).
-    - [ ] Every cell has less than 10 lines of code (COCOA).
-    - [ ] Code is free of environment management (no `! pip install` / `! conda install` lines) (COCOA).
-    - [ ] All functions are defined in helper files (there are no `def` or `class` in notebooks) (COCOA).
+    - [ ] There are less than 20 cells.
+    - [ ] Every cell has less than 10 lines of code.
+    - [ ] Code is free of environment management (no `! pip install` / `! conda install` lines).
+    - [ ] All functions are defined in helper files (there are no `def` or `class` in notebooks).
     - [ ] Comments are human readable and descriptive (there is no commented-out code or commented out code blocks).
     - [ ] Code is free of API Keys or secrets.

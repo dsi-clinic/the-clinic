@@ -152,20 +152,19 @@ Monday message:
 ### Week 7
 - Turn off the peer review
 
+Wednesday message:
+```
+All – Part of the grade of the clinic is a technical assessment of your code. You can find more information in the links below, including a grading rubric. If you want to receive full credit your code needs to follow the conventions outlined in the rubric.
+
+As you head into the last few weeks of the quarter, please make sure that you add time to apply the changes expected.
+Grading Rubric: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-technical-cleanup.md
+Coding standards documentation: https://github.com/dsi-clinic/the-clinic/blob/main/coding-standards/coding-standards.md
+```
 
 ### Week 8
 - Remind students of upcoming deadlines and technical evaluation
 - Remind TAs/Mentors of their responsibilities for final deliverables
 
-Monday message:
-```
-All – Part of the grade of the clinic is a technical assessment of your code. You can find more information in the links below, including a grading rubric.
-If you want to receive full credit your code needs to follow the conventions outlined in the rubric. In this thread we started running COCOA (w/o the lint option, make sure to turn that on for your final grade) to give you a sense of some of the work that needs to be completed.
-As you start into the last two weeks of the quarter, please make sure that you add time to apply the changes expected.
-Package to evaluate code: https://github.com/dsi-clinic/cocoa
-Coding standards documentation: https://github.com/dsi-clinic/the-clinic/blob/main/coding-standards/coding-standards.md
-Grading Rubric: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-technical-cleanup.md
-```
 Wednesday message:
 ```
 @here As this is week 8, you should start focusing on closing the current quarter and getting ready for the final deliverables. You can find all information about the final deliverables on canvas and the clinic github repo. Additional information is provided as a preview below, but refer to those locations for full details including the time that submissions are due.
