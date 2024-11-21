@@ -24,9 +24,8 @@ Everything below depends upon having a list of projects.
 
 ### Week -4
 Before the information session:
-- Update the [information session template](https://drive.google.com/drive/u/0/folders/1hPbbp9HTE1DwTkWRc_BMfEkbNoqXElFi).
 - Update the Info Session Presentation, which can be found [in this folder](https://drive.google.com/drive/folders/1hPbbp9HTE1DwTkWRc_BMfEkbNoqXElFi).
-- On the course website, create an "Apply Now" button in the application section. This button should point to [this link](https://docs.google.com/forms/d/1OAgTju72wNeLYeNbp3xsqxgAGqARuYvTwdYcFrTALus/)
+- On the course website, create an "Apply Now" link pointing to [the application](https://docs.google.com/forms/d/1OAgTju72wNeLYeNbp3xsqxgAGqARuYvTwdYcFrTALus/)
 - Turn on the application. Go to the Responses tab and switch the "accepting responses" toggle
 
 During the information session:
@@ -35,13 +34,11 @@ During the information session:
 
 After the information session:
 - Upload the recorded Zoom video to this [Box folder](https://uchicago.app.box.com/folder/178277527504?s=35irwnktfazm8sjpdz82z8x6ssnimpcy)
-- Remove the "Register Now" text from the website.
-- Send the 
 
 ### Week -3
 Applications close on Friday of this week. After the deadline:
 - Turn off the toggle in the application to stop accepting responses.
-- Remove the "Apply Now" button from the website.
+- Remove the "Apply Now" link from the website.
 
 ### Week -2
 - Clinic Director should open up the registration button on my.uchicago.edu. Verify that undergrads can enroll with electronic consent for all courses. 
