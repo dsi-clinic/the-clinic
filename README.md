@@ -13,7 +13,6 @@ This repository contains information and documentation regarding the Data Scienc
 - [About](#about)
 - [Prospective Students](#prospective-students)
   * [Application Information](#application-information)
-  * [Information Session](#information-session)
   * [Project Information](#project-information)
 - [Current Students](#current-students)
 - [TA and Mentor Information](#ta-and-mentor-information)
@@ -48,17 +47,12 @@ Find out more about the Data Science Clinic at the Data Science Institute's [web
 
 # Prospective Students
 ## Application Information
-In order to enroll in the class, students must first submit an application and be matched with a project. The application requires a resume or CV, short statement of interest, and self-assessment of technical skills. Students are asked to rank their preferences for project placement.
+In order to enroll in the class, students must first submit an application and be matched with a project. The application requires a resume or CV, history of related courses, and self-assessment of technical skills. Students are asked to rank their preferences for project placement.
 
-Applications for Winter 2025 will open on November 21, 2024 at 2pm and will close on December 1, 2024 at 11:59pm. A link to the application will be posted here when the application opens.
-
-## Information Session
-An information session for Winter 2025 will be held on November 21, 2024 at 2pm on Zoom. During this session, clinic leadership will discuss the logistics of the class and upcoming projects for Winter 2025.
-
-Register for the information session [here](https://uchicago.zoom.us/meeting/register/tJEqcuqqrzoiE9LHKXPFVBl9JH_kF7_BUUUM).
+[Apply for Winter 2025](https://docs.google.com/forms/d/e/1FAIpQLSfFNH527gZb5Vw18mc9-baAIXJEwknZwcEUaR3X6hNcO1lLoQ/viewform)
 
 ## Project Information
-Project descriptions for Winter 2025 will be released at the upcoming information session. 
+[Project descriptions for Winter 2025](https://drive.google.com/file/d/1xJD3ddAL1JD1b8nmybz0C2hAByNFafIV/view?usp=sharing)
 
 # Current Students 
 Important information for current students can be found [here](./students/current-student-info.md).
