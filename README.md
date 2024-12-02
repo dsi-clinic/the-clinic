@@ -49,7 +49,7 @@ Find out more about the Data Science Clinic at the Data Science Institute's [web
 ## Application Information
 In order to enroll in the class, students must first submit an application and be matched with a project. The application requires a resume or CV, history of related courses, and self-assessment of technical skills. Students are asked to rank their preferences for project placement.
 
-[Apply for Winter 2025](https://docs.google.com/forms/d/e/1FAIpQLSfFNH527gZb5Vw18mc9-baAIXJEwknZwcEUaR3X6hNcO1lLoQ/viewform)
+Applications for Winter 2025 are no longer being acccepted.
 
 ## Project Information
 [Project descriptions for Winter 2025](https://drive.google.com/file/d/1xJD3ddAL1JD1b8nmybz0C2hAByNFafIV/view?usp=sharing)
