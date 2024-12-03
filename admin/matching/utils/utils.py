@@ -3,9 +3,7 @@ from IPython.display import display
 import pulp
 
 
-def generate_data(application_df, technical_project_list, priority_lc_map):
-    # application_df = pd.read_excel(file_name, sheet_name="Applications")
-
+def generate_data(application_df, technical_project_list):
     assert application_df[
         "Email Address"
     ].is_unique, "The 'Email Address' column contains duplicate values."
@@ -28,6 +26,7 @@ def generate_data(application_df, technical_project_list, priority_lc_map):
     application_df["Priority"] = application_df["Priority"].str.lower()
 
     # Replace the priority values based on the mapping
+    priority_lc_map = {'high': 1, 'med-high': 2, 'med': 3, 'low': 4}
     application_df["Priority"] = (application_df["Priority"]
                                   .map(priority_lc_map)
                                   )
@@ -508,3 +507,97 @@ def student_assignment(
     ]
 
     return assignment_df
+
+
+def process_applications(file_location, deprioritized_students):
+    application_df = pd.read_excel(file_location, sheet_name="Application Before Editing")
+
+    # Clean up project columns
+    prev_proj_col = "If you are currently enrolled or have taken the clinic in a previous quarter, on which project did you work?"
+    def strip_chars(df):
+        cols = ['Project 1', 'Project 2', 'Project 3', 'Project 4', 'Project 5', prev_proj_col]
+        for col in cols:
+            df[col] = df[col].str.replace('*', '')
+        return df
+
+    application_df = strip_chars(application_df)
+
+    # Generate Priority column
+    def generate_priorities(df):
+        # Default everyone to low priority
+        df["Priority"] = "low"
+
+        def adj_priority(filter, priority):
+            df.loc[filter, 'Priority'] = priority
+
+        # Adjust priority for third year data science majors
+        adj_priority(
+            (df["Current Degree Program"] == "Undergrad: 3rd year") &
+            (df['Academic Program / Concentration'].str.contains(r'data science', na=False, case=False)),
+            "med"
+        )
+
+        # Adjust priority for general fourth years (non-DS majors)
+        adj_priority(
+            (df["Current Degree Program"] == "Undergrad: 4th year"),
+            "med"
+        )
+
+        # Adjust priority for second year masters students
+        adj_priority(
+            (df["Current Degree Program"] == "MA or MS 2nd year"),
+            "med-high"
+        )
+
+        # Adjust priority for fourth year data science majors
+        adj_priority(
+            (df["Current Degree Program"] == "Undergrad: 4th year") &
+            (df['Academic Program / Concentration'].str.contains(r'data science', na=False, case=False)),
+            "high"
+        )
+
+        # Adjust priority for fifth year data science majors
+        adj_priority(
+            (df["Current Degree Program"] == "Undergrad: 5th year") &
+            (df['Academic Program / Concentration'].str.contains(r'data science', na=False, case=False)),
+            "high"
+        )
+
+        return df
+
+    application_df = generate_priorities(application_df)
+
+    # Generate Strong CS column
+    cscol1 = 'If you have taken an introduction to computer science / "Computer Science 1" course (such as CMSC 141, 151 or 161), please list that course here. DATA courses do not count.'
+    cscol2 = 'If you have taken a course that would be considered the equivalent of "Computer Science 2" (such as CMSC 142, 152 or 162), please list that course here. DATA courses do not count.'
+
+    def generate_cs_column(df):
+        df["Strong CS"] = "No"
+
+        def adjust_col(filter, column, newvalue):
+            df.loc[filter, column] = newvalue
+
+        # Adjust CS strength
+        adjust_col(
+            (df[cscol1].notna() & df[cscol2].notna()),
+            'Strong CS',
+            "Yes"
+        )
+        return df
+
+    application_df = generate_cs_column(application_df)
+
+    # Generate forced assignments for returning students
+    prev_col = "Are you currently enrolled in the Data Science Clinic or have you taken the clinic in a previous quarter?"
+
+    returning_students = application_df[application_df[prev_col] == "Yes"][['Email Address', prev_proj_col]].values
+
+    forced_assignments = {el[0]: el[1] for el in returning_students}
+
+    # Remove deprioritized students from forced assignments
+    for student in deprioritized_students:
+        if student in forced_assignments:
+            del forced_assignments[student]
+
+    
+    return application_df, forced_assignments
