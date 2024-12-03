@@ -326,7 +326,7 @@ def student_assignment(
             (i, j)
             for j in projects
             for i in students
-            # if i not in preassigned_projects.get(j, [])
+            if i not in preassigned_students
         ],
         cat="Binary",
     )
@@ -352,38 +352,30 @@ def student_assignment(
         * x[(i, j)]
         for j in projects
         for i in students
-        # if i not in preassigned_projects.get(j, [])
+        if i not in preassigned_students
     )
 
-    # Add constraints to prevent students from being assigned to projects with
-    # a ranking of 100
+    # Constraint: Prevent students from being assigned to projects with
+    # a ranking of 100 or 5
+    MAX_ALLOWED_RANK = 4
     for j in projects:
         for i in students:
-            # if i not in preassigned_projects.get(j, []):
-            student_ranking = ranking.loc[
-                (ranking["Email Address"] == i)
-                & (ranking["Project Name"] == j),
-                "Ranking",
-            ].values[0]
-            if student_ranking == 100 or student_ranking >= 4:
-                problem += x[(i, j)] == 0
-
-    # Add constraints for forced assignments
-    for student, project in preassigned_students.items():
-        # Ensure the student is assigned to the specified project
-        problem += x[(student, project)] == 1
-
-        # Prevent the student from being assigned to any other project
-        for other_project in projects:
-            if other_project != project:
-                problem += x[(student, other_project)] == 0
+            if i not in preassigned_students:
+                student_ranking = ranking.loc[
+                    (ranking["Email Address"] == i)
+                    & (ranking["Project Name"] == j),
+                    "Ranking",
+                ].values[0]
+                if student_ranking == 100 or student_ranking > MAX_ALLOWED_RANK:
+                    problem += x[(i, j)] == 0
 
     # Constraints: Priority 1 students must be assigned to a project
     priority_1_students = student_characteristics.loc[
         student_characteristics["Priority"] == 1, "Email Address"
     ]
     for i in priority_1_students:
-        problem += pulp.lpSum(x[(i, j)] for j in projects) == 1
+        if i not in preassigned_students:
+            problem += pulp.lpSum(x[(i, j)] for j in projects) == 1
 
     # Maximum number of students per project
     for j in projects:
@@ -396,7 +388,7 @@ def student_assignment(
             pulp.lpSum(
                 x[(i, j)]
                 for i in students
-                # if i not in preassigned_projects.get(j, [])
+                if i not in preassigned_students
             )
             == max_allowed
         )
@@ -408,7 +400,7 @@ def student_assignment(
             pulp.lpSum(
                 x[(i, j)]
                 for i in students
-                # if i not in preassigned_projects.get(j, [])
+                if i not in preassigned_students
             )
             <= 4 * y[j]
         )  # If y[j] = 0, no students can be assigned
@@ -421,34 +413,37 @@ def student_assignment(
             pulp.lpSum(
                 x[(i, j)]
                 for i in students
-                # if i not in preassigned_projects.get(j, [])
+                if i not in preassigned_students
             )
             + preassigned_count
             >= 3 * y[j]
         )
 
+    
     # Technical projects must have at least 2 experienced students
     # (including preassigned)
-    for j in technical_projects:
-        preassigned_exp_count = sum(
-            1
-            for i in preassigned_projects.get(j, [])
-            if i
-            in student_characteristics.loc[
-                (student_characteristics["Experienced"]), "Email Address"
-            ]
-        )
-        problem += (
-            pulp.lpSum(
-                x[(i, j)]
-                for i in student_characteristics.loc[
-                    student_characteristics["Experienced"], "Email Address"
+    keep_technical_constraint = False
+    if keep_technical_constraint:
+        for j in technical_projects:
+            preassigned_exp_count = sum(
+                1
+                for i in preassigned_projects.get(j, [])
+                if i
+                in student_characteristics.loc[
+                    (student_characteristics["Experienced"]), "Email Address"
                 ]
-                # if i not in preassigned_projects.get(j, [])
             )
-            + preassigned_exp_count
-            >= 2
-        )
+            problem += (
+                pulp.lpSum(
+                    x[(i, j)]
+                    for i in student_characteristics.loc[
+                        student_characteristics["Experienced"], "Email Address"
+                    ]
+                    if i not in preassigned_students
+                )
+                + preassigned_exp_count
+                >= 1
+            )
 
     # Ensure that the exact number of projects are running:
     if number_of_projects_to_run is not None:
@@ -458,7 +453,7 @@ def student_assignment(
 
     # Each student can be assigned to at most one project (if not pre-assigned) 
     for i in students:
-        if not any(i in preassigned_projects.get(j, []) for j in projects):
+        if i not in preassigned_students:
             problem += pulp.lpSum(x[(i, j)] for j in projects) <= 1
 
     # Solve the problem using the default solver
@@ -471,19 +466,20 @@ def student_assignment(
 
     # Update assignments for non-preassigned students
     for i in students:
-        for j in projects:
-            if pulp.value(x[(i, j)]) == 1:
-                student_ranking = ranking.loc[
-                    (ranking["Email Address"] == i)
-                    & (ranking["Project Name"] == j),
-                    "Ranking",
-                ].values[0]
-                assignment_df.loc[
-                    assignment_df["Email Address"] == i, "Project Assigned"
-                ] = j
-                assignment_df.loc[
-                    assignment_df["Email Address"] == i, "Ranking"
-                ] = student_ranking
+        if i not in preassigned_students:
+            for j in projects:
+                if pulp.value(x[(i, j)]) == 1:
+                    student_ranking = ranking.loc[
+                        (ranking["Email Address"] == i)
+                        & (ranking["Project Name"] == j),
+                        "Ranking",
+                    ].values[0]
+                    assignment_df.loc[
+                        assignment_df["Email Address"] == i, "Project Assigned"
+                    ] = j
+                    assignment_df.loc[
+                        assignment_df["Email Address"] == i, "Ranking"
+                    ] = student_ranking
 
     # Handle pre-assigned students
     for project, assigned_students in preassigned_projects.items():
