@@ -3,8 +3,8 @@ from IPython.display import display
 import pulp
 
 
-def generate_data(file_name, technical_project_list, priority_lc_map):
-    application_df = pd.read_excel(file_name, sheet_name="Applications")
+def generate_data(application_df, technical_project_list, priority_lc_map):
+    # application_df = pd.read_excel(file_name, sheet_name="Applications")
 
     assert application_df[
         "Email Address"
@@ -54,20 +54,6 @@ def generate_data(file_name, technical_project_list, priority_lc_map):
         )
     )
     application_df = application_df.loc[~drop_list_no_comp, :]
-
-    # Filter applicants based on taking next quarter
-    next_quarter_column_name = (
-        "Are you planning to take the clinic next " "quarter?"
-    )
-    no_continue = application_df[next_quarter_column_name].str.lower() == "no"
-    drop_list_no_cont = no_continue & not_high_priority
-    print(
-        (
-            f"Dropping {sum(drop_list_no_cont == True)} students because they"
-            " are not high priority and not continue"
-        )
-    )
-    application_df = application_df.loc[~drop_list_no_cont, :]
 
     print(f"Total Students available for matching: {application_df.shape[0]}")
 
@@ -314,6 +300,14 @@ def student_assignment(
     # Handle pre-assigned (immutable) students
     if preassigned_students is None:
         preassigned_students = {}
+        preassigned_projects = {}
+    else:
+        preassigned_projects = {}
+        for student, project in preassigned_students.items():
+            if project not in preassigned_projects:
+                preassigned_projects[project] = []
+            preassigned_projects[project].append(student)
+
 
     # Verify preassigned students are in the student characteristics:
     preassigned_student_email_list = list(preassigned_students.keys())
@@ -332,7 +326,7 @@ def student_assignment(
             (i, j)
             for j in projects
             for i in students
-            if i not in preassigned_students.get(j, [])
+            # if i not in preassigned_projects.get(j, [])
         ],
         cat="Binary",
     )
@@ -358,19 +352,20 @@ def student_assignment(
         * x[(i, j)]
         for j in projects
         for i in students
-        if i not in preassigned_students.get(j, [])
+        # if i not in preassigned_projects.get(j, [])
     )
 
     # Add constraints to prevent students from being assigned to projects with
     # a ranking of 100
     for j in projects:
         for i in students:
+            # if i not in preassigned_projects.get(j, []):
             student_ranking = ranking.loc[
                 (ranking["Email Address"] == i)
                 & (ranking["Project Name"] == j),
                 "Ranking",
             ].values[0]
-            if student_ranking == 100 or student_ranking > 3:
+            if student_ranking == 100 or student_ranking >= 4:
                 problem += x[(i, j)] == 0
 
     # Add constraints for forced assignments
@@ -392,7 +387,8 @@ def student_assignment(
 
     # Maximum number of students per project
     for j in projects:
-        preassigned_count = len(preassigned_students.get(j, []))
+        preassigned_count = len(preassigned_projects.get(j, []))
+        
         max_allowed = (
             max_students_dict.get(j, 4) - preassigned_count
         )  # Adjust max based on pre-assigned students
@@ -400,7 +396,7 @@ def student_assignment(
             pulp.lpSum(
                 x[(i, j)]
                 for i in students
-                if i not in preassigned_students.get(j, [])
+                # if i not in preassigned_projects.get(j, [])
             )
             == max_allowed
         )
@@ -412,7 +408,7 @@ def student_assignment(
             pulp.lpSum(
                 x[(i, j)]
                 for i in students
-                if i not in preassigned_students.get(j, [])
+                # if i not in preassigned_projects.get(j, [])
             )
             <= 4 * y[j]
         )  # If y[j] = 0, no students can be assigned
@@ -420,12 +416,12 @@ def student_assignment(
     # Conditional minimum number of students:
     # If a project is running (y[j] = 1), it must have at least 3 students
     for j in projects:
-        preassigned_count = len(preassigned_students.get(j, []))
+        preassigned_count = len(preassigned_projects.get(j, []))
         problem += (
             pulp.lpSum(
                 x[(i, j)]
                 for i in students
-                if i not in preassigned_students.get(j, [])
+                # if i not in preassigned_projects.get(j, [])
             )
             + preassigned_count
             >= 3 * y[j]
@@ -436,7 +432,7 @@ def student_assignment(
     for j in technical_projects:
         preassigned_exp_count = sum(
             1
-            for i in preassigned_students.get(j, [])
+            for i in preassigned_projects.get(j, [])
             if i
             in student_characteristics.loc[
                 (student_characteristics["Experienced"]), "Email Address"
@@ -448,7 +444,7 @@ def student_assignment(
                 for i in student_characteristics.loc[
                     student_characteristics["Experienced"], "Email Address"
                 ]
-                if i not in preassigned_students.get(j, [])
+                # if i not in preassigned_projects.get(j, [])
             )
             + preassigned_exp_count
             >= 2
@@ -460,33 +456,13 @@ def student_assignment(
             pulp.lpSum(y[j] for j in projects) == number_of_projects_to_run
         )
 
-    # Each student can be assigned to at most one project (if not pre-assigned)
+    # Each student can be assigned to at most one project (if not pre-assigned) 
     for i in students:
-        if not any(i in preassigned_students.get(j, []) for j in projects):
+        if not any(i in preassigned_projects.get(j, []) for j in projects):
             problem += pulp.lpSum(x[(i, j)] for j in projects) <= 1
 
-    # Solve the problem
-    # These parameters are all gu
-    problem.solve(
-        pulp.GUROBI_CMD(
-            msg=verbose,
-            timeLimit=None,
-            options=[
-                ("MIPgap", 0.0001),  # Tighten the optimality gap
-                ("MIPFocus", 2),  # Focus on proving optimality
-                (
-                    "ImproveStartTime",
-                    60,
-                ),  # Spend time improving the current solution
-                ("Cuts", 2),  # Increase the aggressiveness of cuts
-                ("Threads", 4),  # Use 4 threads
-                ("Heuristics", 0.01),  # Reduce heuristic focus
-                ("Symmetry", 2),  # Increase symmetry detection
-            ],
-        )
-    )
-
-    print(pulp.value(problem.objective))
+    # Solve the problem using the default solver
+    problem.solve()
 
     # Create DataFrame for assignments
     assignment_df = pd.DataFrame(
@@ -510,7 +486,7 @@ def student_assignment(
                 ] = student_ranking
 
     # Handle pre-assigned students
-    for project, assigned_students in preassigned_students.items():
+    for project, assigned_students in preassigned_projects.items():
         for student in assigned_students:
             assignment_df.loc[
                 assignment_df["Email Address"] == student, "Project Assigned"
