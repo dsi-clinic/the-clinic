@@ -651,9 +651,7 @@ def generate_roster(application_df, assignment_df):
     assignment_df = assignment_df[assignment_df["Project Assigned"].notna()]
 
     # Merge application and assignment data
-    merged_df = assignment_df.merge(
-        application_df, on="Email Address", how="left"
-    )
+    merged_df = assignment_df.merge(application_df, on="Email Address", how="left")
 
     # Select columns
     merged_df = merged_df[
@@ -664,7 +662,7 @@ def generate_roster(application_df, assignment_df):
             "Email Address",
             "ChicagoID from the back of your ID card (8 numbers + letter). This is NOT the same as your student ID number.",
             "Current Degree Program",
-            "Academic Program / Concentration"
+            "Academic Program / Concentration",
         ]
     ]
 
@@ -676,7 +674,7 @@ def generate_roster(application_df, assignment_df):
         "Email",
         "Chicago ID",
         "Degree Program",
-        "Concentration"
+        "Concentration",
     ]
 
     # Sort by project and name
@@ -684,19 +682,6 @@ def generate_roster(application_df, assignment_df):
         by=["Project", "Name"],
         ascending=[True, True],
     )
-
-    # Reorder columns
-    merged_df = merged_df[
-        [
-            "Project",
-            "Name",
-            "GitHub",
-            "Email",
-            "Chicago ID",
-            "Degree Program",
-            "Concentration"
-        ]
-    ]
 
     merged_df = merged_df.reset_index(drop=True)
 
