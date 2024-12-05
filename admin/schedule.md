@@ -162,7 +162,7 @@ Coding standards documentation: https://github.com/dsi-clinic/the-clinic/blob/ma
 - Remind students of upcoming deadlines and technical evaluation
 - Remind TAs/Mentors of their responsibilities for final deliverables
 
-Wednesday message:
+Student message:
 ```
 @here As this is week 8, you should start focusing on closing the current quarter and getting ready for the final deliverables. You can find all information about the final deliverables on canvas and the clinic github repo. Additional information is provided as a preview below, but refer to those locations for full details including the time that submissions are due.
 There are four final deliverables:
@@ -184,14 +184,26 @@ Rubrics can be found here:
 Please read the rubrics carefully in order to receive full credit.
 ```
 
+After the application opens:
+```
+@here The application for Winter 2025 is now open. If you are enrolled in DATA 271 and will be taking DATA 272 next quarter, you must reapply to get into our matching system. The deadline for submission is Dec 1 at 11:59pm. 
+
+Apply here: https://dsi-clinic.github.io/the-clinic/#application-information
+```
+
 Mentor/TA message:
 ```
-@channel Just a reminder about everyone's responsibilities as we head into the final weeks of the quarter.
-Mentors: provide written feedback within 24 hours on student draft videos and one-pagers. For example assessments and more information about the requirements of these assignments, please refer to the rubric for the video and one-pager. You will need to give feedback three times:
-1. May 15 at 1pm (video draft 1)
-2. May 17 at 1pm (video draft 2)
-3. May 17 at 1pm (one-pager draft)
-TAs: complete the technical rubric for three files in two repositories. You will be assigned two repositories to grade next week. Please fill out a markdown file for each file you grade and submit them by 5/26.
+@here Just a reminder about mentor and TA responsibilities as we head into the final weeks of the quarter.
+
+Mentors: Provide written feedback on student drafts within 24 hours of submission. For examples, please see the rubrics below. Students will submit drafts at the following times:
+1. Dec 4 at 1pm (video draft 1)
+2. Dec 6 at 1pm (video draft 2 and one-pager)
+
+TAs: complete the technical rubric checklist for three files in two repositories. You will be assigned two repositories to grade during ninth week. Please fill out a markdown file for each file you grade and email them to me by Dec 12 at 5pm.
+
+Video rubric: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-video.md
+One-pager rubric: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/one-pager.md
+Technical rubric: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-technical-cleanup.md
 ```
 
 ### Week 10

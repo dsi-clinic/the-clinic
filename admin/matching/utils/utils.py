@@ -1,11 +1,33 @@
+"""Utilities for matching."""
+
 import pandas as pd
-from IPython.display import display
 import pulp
+from IPython.display import display
 
 
-def generate_data(file_name, technical_project_list, priority_lc_map):
-    application_df = pd.read_excel(file_name, sheet_name="Applications")
+def generate_data(application_df, technical_project_list):
+    """Generate processed data for student-project matching from application data.
 
+    This function processes the application dataframe, extracts relevant information,
+    and prepares the data for the student-project matching algorithm.
+
+    Parameters:
+    application_df (pandas.DataFrame): A dataframe containing student application data.
+        Must include columns: 'Email Address', 'Project 1' through 'Project 5',
+        'Priority', 'Strong CS', and a column asking about computer access.
+    technical_project_list (list): A list of projects that are considered technical.
+
+    Returns:
+    dict: A dictionary containing the following keys:
+        - 'ranking': A dataframe with student rankings for each project.
+        - 'student_characteristics': A dataframe with student priorities and experience.
+        - 'technical_projects': The list of technical projects.
+        - 'all_project_list': A list of all available projects.
+
+    Raises:
+    AssertionError: If 'Email Address' column contains duplicates, if priority values
+        are invalid, or if technical projects are not correctly mapped.
+    """
     assert application_df[
         "Email Address"
     ].is_unique, "The 'Email Address' column contains duplicate values."
@@ -28,9 +50,8 @@ def generate_data(file_name, technical_project_list, priority_lc_map):
     application_df["Priority"] = application_df["Priority"].str.lower()
 
     # Replace the priority values based on the mapping
-    application_df["Priority"] = (application_df["Priority"]
-                                  .map(priority_lc_map)
-                                  )
+    priority_lc_map = {"high": 1, "med-high": 2, "med": 3, "low": 4}
+    application_df["Priority"] = application_df["Priority"].map(priority_lc_map)
 
     # Assert that all values in the 'Priority' column are valid integers
     assert (
@@ -48,26 +69,10 @@ def generate_data(file_name, technical_project_list, priority_lc_map):
     not_high_priority = ~(application_df["Priority"] == 1)
     drop_list_no_comp = no_computer & not_high_priority
     print(
-        (
-            f"Dropping {sum(drop_list_no_comp == True)} students because they "
-            f"do not have a computer and not required"
-        )
+        f"Dropping {sum(drop_list_no_comp)} students because they "
+        f"do not have a computer and not required"
     )
     application_df = application_df.loc[~drop_list_no_comp, :]
-
-    # Filter applicants based on taking next quarter
-    next_quarter_column_name = (
-        "Are you planning to take the clinic next " "quarter?"
-    )
-    no_continue = application_df[next_quarter_column_name].str.lower() == "no"
-    drop_list_no_cont = no_continue & not_high_priority
-    print(
-        (
-            f"Dropping {sum(drop_list_no_cont == True)} students because they"
-            " are not high priority and not continue"
-        )
-    )
-    application_df = application_df.loc[~drop_list_no_cont, :]
 
     print(f"Total Students available for matching: {application_df.shape[0]}")
 
@@ -88,7 +93,7 @@ def generate_data(file_name, technical_project_list, priority_lc_map):
 
     # Extract the ranking (1 to 5) from the "Ranking" column
     df_long["Ranking"] = (
-        df_long["Ranking"].str.extract("(\d)").astype(int) # noqa W605
+        df_long["Ranking"].str.extract("(\d)").astype(int)  # noqa W605
     )
 
     # Merge all project assignments with rankings
@@ -112,9 +117,7 @@ def generate_data(file_name, technical_project_list, priority_lc_map):
     df_merged["Ranking"] = df_merged["Ranking"].fillna(100)
     df_merged = df_merged.sort_values(by=["Email Address", "Ranking"])
 
-    missnamed_projs = [
-        x for x in technical_project_list if x not in all_projects
-    ]
+    missnamed_projs = [x for x in technical_project_list if x not in all_projects]
 
     assert len(missnamed_projs) == 0, "Technical Projects not mapped correctly"
 
@@ -127,9 +130,9 @@ def generate_data(file_name, technical_project_list, priority_lc_map):
         :, ["Email Address", "Priority"]
     ].copy()
 
-    student_characteristics["Experienced"] = application_df[
-        "Email Address"
-    ].isin(exp_students)
+    student_characteristics["Experienced"] = application_df["Email Address"].isin(
+        exp_students
+    )
 
     result_dict = {
         "ranking": df_merged,
@@ -142,6 +145,20 @@ def generate_data(file_name, technical_project_list, priority_lc_map):
 
 
 def print_project_summary(assignment_df, all_projects):
+    """Generate and print a summary of project assignments.
+
+    This function creates a summary table for all projects, calculates various statistics
+    for each project based on student assignments, and displays the results.
+
+    Parameters:
+    assignment_df (pandas.DataFrame): A DataFrame containing student assignment information.
+        It should have columns for 'Project Assigned', 'Priority', 'Experienced', and 'Ranking'.
+    all_projects (list): A list of all project names to be included in the summary.
+
+    Returns:
+    None. The function prints the summary information to the console and displays
+    a DataFrame with project statistics.
+    """
     # Create summary table for all projects, initializing with zero values
     project_summary = pd.DataFrame(
         {
@@ -187,35 +204,23 @@ def print_project_summary(assignment_df, all_projects):
 
         current_project_rows = project_summary["Project Name"] == project
 
-        project_summary.loc[
-            current_project_rows, "Number"
-        ] = n_students_in_project
+        project_summary.loc[current_project_rows, "Number"] = n_students_in_project
 
-        project_summary.loc[
-            current_project_rows, "High Priority"
-        ] = n_high_priority
+        project_summary.loc[current_project_rows, "High Priority"] = n_high_priority
 
-        project_summary.loc[
-            current_project_rows, "High-Med Priority"
-        ] = n_med_high_priority
+        project_summary.loc[current_project_rows, "High-Med Priority"] = (
+            n_med_high_priority
+        )
 
-        project_summary.loc[
-            current_project_rows, "Med Priority"
-        ] = n_med_priority
+        project_summary.loc[current_project_rows, "Med Priority"] = n_med_priority
 
-        project_summary.loc[
-            current_project_rows, "Low Priority"
-        ] = n_low_priority
+        project_summary.loc[current_project_rows, "Low Priority"] = n_low_priority
 
-        project_summary.loc[
-            current_project_rows, "Experienced"
-        ] = n_exp_students
+        project_summary.loc[current_project_rows, "Experienced"] = n_exp_students
 
         project_summary.loc[current_project_rows, "Rankings"] = rankings_str
 
-        project_summary.loc[
-            current_project_rows, "Average Ranking"
-        ] = avg_ranking
+        project_summary.loc[current_project_rows, "Average Ranking"] = avg_ranking
 
     # Sort projects so that projects with no students are at the bottom
     project_summary = project_summary.sort_values(
@@ -245,31 +250,26 @@ def student_assignment(
     drop_projects=[],
     verbose=False,
 ):
+    """Assign students to projects based on rankings and various constraints.
+
+    This function uses linear programming to optimize student-project assignments
+    while considering student preferences, project requirements, and other constraints.
+
+    Parameters:
+    ranking (pandas.DataFrame): DataFrame containing student rankings for each project.
+    student_characteristics (pandas.DataFrame): DataFrame with student information including priority and experience.
+    technical_projects (list): List of projects considered technical.
+    priority_weights (list): Weights for different priority levels.
+    max_students_dict (dict, optional): Maximum number of students per project. Defaults to None.
+    preassigned_students (dict, optional): Dictionary of pre-assigned students to projects. Defaults to None.
+    number_of_projects_to_run (int, optional): Exact number of projects to run. Defaults to None.
+    drop_projects (list, optional): List of projects to exclude from assignment. Defaults to empty list.
+    verbose (bool, optional): If True, print additional information during execution. Defaults to False.
+
+    Returns:
+    pandas.DataFrame: DataFrame containing the final student-project assignments,
+                      including student email, priority, experience, assigned project, and ranking.
     """
-    ranking, student_characteristics, technical_projects are all as described
-    from generate data
-
-    * priority weights describes how to weight the different priorities.
-    Priorities are 1,2,3,4 (or however many) with lower being more important
-    * the algorithim currently assigns everyone a project who is high priority
-    * med-high should be 2nd year masters students ad no one below that really
-    gets assigned to a project.
-
-    max_students_dict: If a project needs a number less than 4 on a project
-    use this to override that number.
-
-    preassigned_students: this hard codes specific students onto projects. This
-    will be used for 2nd quarter students.
-
-    number_of_project_to_run: If you want to only do X projects
-    use this override
-
-    drop_projects: A list of projects to not place students in.
-
-    verbose: When set to true it outputs additional info from the fitting algo.
-
-    """
-
     # Determine which projects to run
     all_projects = ranking["Project Name"].unique()
     assert (
@@ -277,23 +277,17 @@ def student_assignment(
     ), "A project to drop is not in the project list"
 
     projects = [x for x in all_projects if x not in drop_projects]
-    technical_projects = [
-        x for x in technical_projects if x not in drop_projects
-    ]
+    technical_projects = [x for x in technical_projects if x not in drop_projects]
     assert (
         len([x for x in technical_projects if x not in projects]) == 0
     ), "A technical project is not in the list"
 
     if number_of_projects_to_run is not None:
-        assert number_of_projects_to_run <= len(
-            projects
-        ), "Not enough projects to run"
+        assert number_of_projects_to_run <= len(projects), "Not enough projects to run"
 
     # Update Rankings based on projects to drop
     # The logic is to set the
-    ranking.loc[
-        ~(ranking.loc[:, "Project Name"].isin(projects)), "Ranking"
-    ] = 100
+    ranking.loc[~(ranking.loc[:, "Project Name"].isin(projects)), "Ranking"] = 100
 
     # Define the problem
     problem = pulp.LpProblem("Student_Project_Assignment", pulp.LpMinimize)
@@ -314,6 +308,13 @@ def student_assignment(
     # Handle pre-assigned (immutable) students
     if preassigned_students is None:
         preassigned_students = {}
+        preassigned_projects = {}
+    else:
+        preassigned_projects = {}
+        for student, project in preassigned_students.items():
+            if project not in preassigned_projects:
+                preassigned_projects[project] = []
+            preassigned_projects[project].append(student)
 
     # Verify preassigned students are in the student characteristics:
     preassigned_student_email_list = list(preassigned_students.keys())
@@ -328,80 +329,64 @@ def student_assignment(
     # Create binary decision variables only for students not preassigned
     x = pulp.LpVariable.dicts(
         "x",
-        [
-            (i, j)
-            for j in projects
-            for i in students
-            if i not in preassigned_students.get(j, [])
-        ],
+        [(i, j) for j in projects for i in students if i not in preassigned_students],
         cat="Binary",
     )
 
     # Create binary decision variables to track if a project is running
     # (i.e., has any students)
-    y = pulp.LpVariable.dicts("y", [j for j in projects], cat="Binary")
+    y = pulp.LpVariable.dicts("y", list(projects), cat="Binary")
 
     # Objective: Minimize ranking cost with weighted priorities
     problem += pulp.lpSum(
         ranking.loc[
             (ranking["Email Address"] == i) & (ranking["Project Name"] == j),
             "Ranking",
-        ].values[0]
+        ].to_numpy()[0]
         * priority_weights[
             int(
                 student_characteristics.loc[
                     student_characteristics["Email Address"] == i, "Priority"
-                ].values[0]
+                ].to_numpy()[0]
                 - 1
             )
         ]
         * x[(i, j)]
         for j in projects
         for i in students
-        if i not in preassigned_students.get(j, [])
+        if i not in preassigned_students
     )
 
-    # Add constraints to prevent students from being assigned to projects with
-    # a ranking of 100
+    # Constraint: Prevent students from being assigned to projects with
+    # a max ranking
+    MAX_ALLOWED_RANK = 4
     for j in projects:
         for i in students:
-            student_ranking = ranking.loc[
-                (ranking["Email Address"] == i)
-                & (ranking["Project Name"] == j),
-                "Ranking",
-            ].values[0]
-            if student_ranking == 100 or student_ranking > 3:
-                problem += x[(i, j)] == 0
-
-    # Add constraints for forced assignments
-    for student, project in preassigned_students.items():
-        # Ensure the student is assigned to the specified project
-        problem += x[(student, project)] == 1
-
-        # Prevent the student from being assigned to any other project
-        for other_project in projects:
-            if other_project != project:
-                problem += x[(student, other_project)] == 0
+            if i not in preassigned_students:
+                student_ranking = ranking.loc[
+                    (ranking["Email Address"] == i) & (ranking["Project Name"] == j),
+                    "Ranking",
+                ].to_numpy()[0]
+                if student_ranking > MAX_ALLOWED_RANK:
+                    problem += x[(i, j)] == 0
 
     # Constraints: Priority 1 students must be assigned to a project
     priority_1_students = student_characteristics.loc[
         student_characteristics["Priority"] == 1, "Email Address"
     ]
     for i in priority_1_students:
-        problem += pulp.lpSum(x[(i, j)] for j in projects) == 1
+        if i not in preassigned_students:
+            problem += pulp.lpSum(x[(i, j)] for j in projects) == 1
 
     # Maximum number of students per project
     for j in projects:
-        preassigned_count = len(preassigned_students.get(j, []))
+        preassigned_count = len(preassigned_projects.get(j, []))
+
         max_allowed = (
             max_students_dict.get(j, 4) - preassigned_count
         )  # Adjust max based on pre-assigned students
         problem += (
-            pulp.lpSum(
-                x[(i, j)]
-                for i in students
-                if i not in preassigned_students.get(j, [])
-            )
+            pulp.lpSum(x[(i, j)] for i in students if i not in preassigned_students)
             == max_allowed
         )
 
@@ -409,84 +394,56 @@ def student_assignment(
     # j, y[j] must be 1
     for j in projects:
         problem += (
-            pulp.lpSum(
-                x[(i, j)]
-                for i in students
-                if i not in preassigned_students.get(j, [])
-            )
+            pulp.lpSum(x[(i, j)] for i in students if i not in preassigned_students)
             <= 4 * y[j]
         )  # If y[j] = 0, no students can be assigned
 
     # Conditional minimum number of students:
     # If a project is running (y[j] = 1), it must have at least 3 students
     for j in projects:
-        preassigned_count = len(preassigned_students.get(j, []))
+        preassigned_count = len(preassigned_projects.get(j, []))
         problem += (
-            pulp.lpSum(
-                x[(i, j)]
-                for i in students
-                if i not in preassigned_students.get(j, [])
-            )
+            pulp.lpSum(x[(i, j)] for i in students if i not in preassigned_students)
             + preassigned_count
             >= 3 * y[j]
         )
 
-    # Technical projects must have at least 2 experienced students
+    # Technical projects must have at least 1 experienced students
     # (including preassigned)
-    for j in technical_projects:
-        preassigned_exp_count = sum(
-            1
-            for i in preassigned_students.get(j, [])
-            if i
-            in student_characteristics.loc[
-                (student_characteristics["Experienced"]), "Email Address"
-            ]
-        )
-        problem += (
-            pulp.lpSum(
-                x[(i, j)]
-                for i in student_characteristics.loc[
-                    student_characteristics["Experienced"], "Email Address"
+    keep_technical_constraint = False
+    if keep_technical_constraint:
+        for j in technical_projects:
+            preassigned_exp_count = sum(
+                1
+                for i in preassigned_projects.get(j, [])
+                if i
+                in student_characteristics.loc[
+                    (student_characteristics["Experienced"]), "Email Address"
                 ]
-                if i not in preassigned_students.get(j, [])
             )
-            + preassigned_exp_count
-            >= 2
-        )
+            problem += (
+                pulp.lpSum(
+                    x[(i, j)]
+                    for i in student_characteristics.loc[
+                        student_characteristics["Experienced"], "Email Address"
+                    ]
+                    if i not in preassigned_students
+                )
+                + preassigned_exp_count
+                >= 1
+            )
 
     # Ensure that the exact number of projects are running:
     if number_of_projects_to_run is not None:
-        problem += (
-            pulp.lpSum(y[j] for j in projects) == number_of_projects_to_run
-        )
+        problem += pulp.lpSum(y[j] for j in projects) == number_of_projects_to_run
 
     # Each student can be assigned to at most one project (if not pre-assigned)
     for i in students:
-        if not any(i in preassigned_students.get(j, []) for j in projects):
+        if i not in preassigned_students:
             problem += pulp.lpSum(x[(i, j)] for j in projects) <= 1
 
-    # Solve the problem
-    # These parameters are all gu
-    problem.solve(
-        pulp.GUROBI_CMD(
-            msg=verbose,
-            timeLimit=None,
-            options=[
-                ("MIPgap", 0.0001),  # Tighten the optimality gap
-                ("MIPFocus", 2),  # Focus on proving optimality
-                (
-                    "ImproveStartTime",
-                    60,
-                ),  # Spend time improving the current solution
-                ("Cuts", 2),  # Increase the aggressiveness of cuts
-                ("Threads", 4),  # Use 4 threads
-                ("Heuristics", 0.01),  # Reduce heuristic focus
-                ("Symmetry", 2),  # Increase symmetry detection
-            ],
-        )
-    )
-
-    print(pulp.value(problem.objective))
+    # Solve the problem using the default solver
+    problem.solve()
 
     # Create DataFrame for assignments
     assignment_df = pd.DataFrame(
@@ -495,29 +452,30 @@ def student_assignment(
 
     # Update assignments for non-preassigned students
     for i in students:
-        for j in projects:
-            if pulp.value(x[(i, j)]) == 1:
-                student_ranking = ranking.loc[
-                    (ranking["Email Address"] == i)
-                    & (ranking["Project Name"] == j),
-                    "Ranking",
-                ].values[0]
-                assignment_df.loc[
-                    assignment_df["Email Address"] == i, "Project Assigned"
-                ] = j
-                assignment_df.loc[
-                    assignment_df["Email Address"] == i, "Ranking"
-                ] = student_ranking
+        if i not in preassigned_students:
+            for j in projects:
+                if pulp.value(x[(i, j)]) == 1:
+                    student_ranking = ranking.loc[
+                        (ranking["Email Address"] == i)
+                        & (ranking["Project Name"] == j),
+                        "Ranking",
+                    ].to_numpy()[0]
+                    assignment_df.loc[
+                        assignment_df["Email Address"] == i, "Project Assigned"
+                    ] = j
+                    assignment_df.loc[
+                        assignment_df["Email Address"] == i, "Ranking"
+                    ] = student_ranking
 
     # Handle pre-assigned students
-    for project, assigned_students in preassigned_students.items():
+    for project, assigned_students in preassigned_projects.items():
         for student in assigned_students:
             assignment_df.loc[
                 assignment_df["Email Address"] == student, "Project Assigned"
             ] = project
-            assignment_df.loc[
-                assignment_df["Email Address"] == student, "Ranking"
-            ] = 0  # Pre-assigned students have no ranking cost
+            assignment_df.loc[assignment_df["Email Address"] == student, "Ranking"] = (
+                0  # Pre-assigned students have no ranking cost
+            )
 
     # Merge priority and experience info
     assignment_df = assignment_df.merge(
@@ -536,3 +494,195 @@ def student_assignment(
     ]
 
     return assignment_df
+
+
+def process_applications(file_location, deprioritized_students, prioritized_students):
+    """Process student applications for project assignments.
+
+    This function reads an Excel file containing student applications,
+    cleans the data, generates priority and CS strength columns,
+    and creates forced assignments for returning students.
+
+    Parameters:
+    file_location (str): The file path of the Excel spreadsheet containing
+                         student application data.
+    deprioritized_students (list): A list of student email addresses to be
+                                   deprioritized in the assignment process.
+    prioritized_students (list): A list of student email addresses to be
+                                   prioritized in the assignment process.
+
+    Returns:
+    tuple: A tuple containing two elements:
+        - application_df (pandas.DataFrame): Processed application data with
+          additional columns for priority and CS strength.
+        - forced_assignments (dict): A dictionary of forced project assignments
+          for returning students, with student email as key and project name
+          as value.
+    """
+    application_df = pd.read_excel(
+        file_location, sheet_name="Application Before Editing"
+    )
+
+    # Clean up project columns
+    prev_proj_col = "If you are currently enrolled or have taken the clinic in a previous quarter, on which project did you work?"
+
+    def strip_chars(df):
+        cols = [
+            "Project 1",
+            "Project 2",
+            "Project 3",
+            "Project 4",
+            "Project 5",
+            prev_proj_col,
+        ]
+        for col in cols:
+            df[col] = df[col].str.replace("*", "")
+        return df
+
+    application_df = strip_chars(application_df)
+
+    # Generate Priority column
+    def generate_priorities(df, prioritized_students):
+        # Default everyone to low priority
+        df["Priority"] = "low"
+
+        def adj_priority(filter, priority):
+            df.loc[filter, "Priority"] = priority
+
+        # Adjust priority for third year data science majors
+        adj_priority(
+            (df["Current Degree Program"] == "Undergrad: 3rd year")
+            & (
+                df["Academic Program / Concentration"].str.contains(
+                    r"data science", na=False, case=False
+                )
+            ),
+            "med",
+        )
+
+        # Adjust priority for general fourth years (non-DS majors)
+        adj_priority((df["Current Degree Program"] == "Undergrad: 4th year"), "med")
+
+        # Adjust priority for second year masters students
+        adj_priority((df["Current Degree Program"] == "MA or MS 2nd year"), "med-high")
+
+        # Adjust priority for fourth year data science majors
+        adj_priority(
+            (df["Current Degree Program"] == "Undergrad: 4th year")
+            & (
+                df["Academic Program / Concentration"].str.contains(
+                    r"data science", na=False, case=False
+                )
+            ),
+            "high",
+        )
+
+        # Adjust priority for fifth year data science majors
+        adj_priority(
+            (df["Current Degree Program"] == "Undergrad: 5th year")
+            & (
+                df["Academic Program / Concentration"].str.contains(
+                    r"data science", na=False, case=False
+                )
+            ),
+            "high",
+        )
+
+        # Adjust priority for prioritized students
+        for email in prioritized_students:
+            adj_priority(df["Email Address"] == email, "high")
+
+        return df
+
+    application_df = generate_priorities(application_df, prioritized_students)
+
+    # Generate Strong CS column
+    cscol1 = 'If you have taken an introduction to computer science / "Computer Science 1" course (such as CMSC 141, 151 or 161), please list that course here. DATA courses do not count.'
+    cscol2 = 'If you have taken a course that would be considered the equivalent of "Computer Science 2" (such as CMSC 142, 152 or 162), please list that course here. DATA courses do not count.'
+
+    def generate_cs_column(df):
+        df["Strong CS"] = "No"
+
+        def adjust_col(filter, column, newvalue):
+            df.loc[filter, column] = newvalue
+
+        # Adjust CS strength
+        adjust_col((df[cscol1].notna() & df[cscol2].notna()), "Strong CS", "Yes")
+        return df
+
+    application_df = generate_cs_column(application_df)
+
+    # Generate forced assignments for returning students
+    prev_col = "Are you currently enrolled in the Data Science Clinic or have you taken the clinic in a previous quarter?"
+
+    returning_students = application_df[application_df[prev_col] == "Yes"][
+        ["Email Address", prev_proj_col]
+    ].to_numpy()
+
+    forced_assignments = {el[0]: el[1] for el in returning_students}
+
+    # Remove deprioritized students from forced assignments
+    for student in deprioritized_students:
+        if student in forced_assignments:
+            del forced_assignments[student]
+
+    return application_df, forced_assignments
+
+
+def generate_roster(application_df, assignment_df):
+    """Generate a roster of students assigned to projects by merging application and assignment data.
+
+    This function filters out unassigned students, merges application and assignment data,
+    selects relevant columns, renames them for clarity, sorts the data, and reorders columns
+    to create a final roster.
+
+    Parameters:
+    application_df (pandas.DataFrame): DataFrame containing student application information.
+        Must include columns for student details such as name, GitHub username, email, etc.
+    assignment_df (pandas.DataFrame): DataFrame containing project assignments for students.
+        Must include columns 'Email Address' and 'Project Assigned'.
+
+    Returns:
+    pandas.DataFrame: A DataFrame representing the final roster, containing columns for
+        Project, Name, GitHub, Email, Chicago ID, Degree Program, and Concentration.
+        The DataFrame is sorted by Project and Name, with the index reset.
+    """
+    # Filter out students not assigned to a project
+    assignment_df = assignment_df[assignment_df["Project Assigned"].notna()]
+
+    # Merge application and assignment data
+    merged_df = assignment_df.merge(application_df, on="Email Address", how="left")
+
+    # Select columns
+    merged_df = merged_df[
+        [
+            "Project Assigned",
+            "Full Name",
+            "GitHub Username",
+            "Email Address",
+            "ChicagoID from the back of your ID card (8 numbers + letter). This is NOT the same as your student ID number.",
+            "Current Degree Program",
+            "Academic Program / Concentration",
+        ]
+    ]
+
+    # Rename columns for better readability
+    merged_df.columns = [
+        "Project",
+        "Name",
+        "GitHub",
+        "Email",
+        "Chicago ID",
+        "Degree Program",
+        "Concentration",
+    ]
+
+    # Sort by project and name
+    merged_df = merged_df.sort_values(
+        by=["Project", "Name"],
+        ascending=[True, True],
+    )
+
+    merged_df = merged_df.reset_index(drop=True)
+
+    return merged_df
