@@ -358,7 +358,7 @@ def student_assignment(
     )
 
     # Constraint: Prevent students from being assigned to projects with
-    # a ranking of 100 or 5
+    # a max ranking
     MAX_ALLOWED_RANK = 4
     for j in projects:
         for i in students:
@@ -408,7 +408,7 @@ def student_assignment(
             >= 3 * y[j]
         )
 
-    # Technical projects must have at least 2 experienced students
+    # Technical projects must have at least 1 experienced students
     # (including preassigned)
     keep_technical_constraint = False
     if keep_technical_constraint:
@@ -496,7 +496,7 @@ def student_assignment(
     return assignment_df
 
 
-def process_applications(file_location, deprioritized_students):
+def process_applications(file_location, deprioritized_students, prioritized_students):
     """Process student applications for project assignments.
 
     This function reads an Excel file containing student applications,
@@ -508,6 +508,8 @@ def process_applications(file_location, deprioritized_students):
                          student application data.
     deprioritized_students (list): A list of student email addresses to be
                                    deprioritized in the assignment process.
+    prioritized_students (list): A list of student email addresses to be
+                                   prioritized in the assignment process.
 
     Returns:
     tuple: A tuple containing two elements:
@@ -540,7 +542,7 @@ def process_applications(file_location, deprioritized_students):
     application_df = strip_chars(application_df)
 
     # Generate Priority column
-    def generate_priorities(df):
+    def generate_priorities(df, prioritized_students):
         # Default everyone to low priority
         df["Priority"] = "low"
 
@@ -586,9 +588,13 @@ def process_applications(file_location, deprioritized_students):
             "high",
         )
 
+        # Adjust priority for prioritized students
+        for email in prioritized_students:
+            adj_priority(df["Email Address"] == email, "high")
+
         return df
 
-    application_df = generate_priorities(application_df)
+    application_df = generate_priorities(application_df, prioritized_students)
 
     # Generate Strong CS column
     cscol1 = 'If you have taken an introduction to computer science / "Computer Science 1" course (such as CMSC 141, 151 or 161), please list that course here. DATA courses do not count.'
@@ -621,3 +627,77 @@ def process_applications(file_location, deprioritized_students):
             del forced_assignments[student]
 
     return application_df, forced_assignments
+
+
+def generate_roster(application_df, assignment_df):
+    """Generate a roster of students assigned to projects by merging application and assignment data.
+
+    This function filters out unassigned students, merges application and assignment data,
+    selects relevant columns, renames them for clarity, sorts the data, and reorders columns
+    to create a final roster.
+
+    Parameters:
+    application_df (pandas.DataFrame): DataFrame containing student application information.
+        Must include columns for student details such as name, GitHub username, email, etc.
+    assignment_df (pandas.DataFrame): DataFrame containing project assignments for students.
+        Must include columns 'Email Address' and 'Project Assigned'.
+
+    Returns:
+    pandas.DataFrame: A DataFrame representing the final roster, containing columns for
+        Project, Name, GitHub, Email, Chicago ID, Degree Program, and Concentration.
+        The DataFrame is sorted by Project and Name, with the index reset.
+    """
+    # Filter out students not assigned to a project
+    assignment_df = assignment_df[assignment_df["Project Assigned"].notna()]
+
+    # Merge application and assignment data
+    merged_df = assignment_df.merge(
+        application_df, on="Email Address", how="left"
+    )
+
+    # Select columns
+    merged_df = merged_df[
+        [
+            "Project Assigned",
+            "Full Name",
+            "GitHub Username",
+            "Email Address",
+            "ChicagoID from the back of your ID card (8 numbers + letter). This is NOT the same as your student ID number.",
+            "Current Degree Program",
+            "Academic Program / Concentration"
+        ]
+    ]
+
+    # Rename columns for better readability
+    merged_df.columns = [
+        "Project",
+        "Name",
+        "GitHub",
+        "Email",
+        "Chicago ID",
+        "Degree Program",
+        "Concentration"
+    ]
+
+    # Sort by project and name
+    merged_df = merged_df.sort_values(
+        by=["Project", "Name"],
+        ascending=[True, True],
+    )
+
+    # Reorder columns
+    merged_df = merged_df[
+        [
+            "Project",
+            "Name",
+            "GitHub",
+            "Email",
+            "Chicago ID",
+            "Degree Program",
+            "Concentration"
+        ]
+    ]
+
+    merged_df = merged_df.reset_index(drop=True)
+
+    return merged_df
