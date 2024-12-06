@@ -216,8 +216,8 @@ Hello TAs, today at 5pm is the cutoff for students to submit code. After the dea
 For each repo you are assigned, you should:
 - identify three random python files or notebooks that have been touched this quarter
 - create a md file for each repository and complete this checklist for each file: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-technical-cleanup.md
-- run `cocoa <dir> --lint --date 2024-03-18` on the cloned repo and copy/paste the output into a md file
-By Friday at 5pm, you should return to me two md files for each repository you've been assigned. Thank you for your help!
+
+By Friday at 5pm, you should email me one md file for each repository you've been assigned. Thank you for your help!
 ```
 
 ### Week 11
@@ -227,7 +227,11 @@ By Friday at 5pm, you should return to me two md files for each repository you'v
 
 
 ### TODO:
-- info about hiring TAs
+- Create a TA Application form with Google Forms. This should accept the following fields: Name, Email, Github ID, Resume upload. Embed the link for this form in the [TA job description](TA_job_description.md).
+- Send the TA job description to Kayleigh in DSI Operations. 
+- Interview TA applicants. Previous technical evaluation has included asking applicants to describe a "good" piece of Python code that they have written.
+- Send TA acceptance and rejection emails. You can find a rejection template [here](email_templates.md#ta-position-rejection).
+- Submit hiring worksheet to Kayleigh in DSI Operations
 
 
 
