@@ -48,3 +48,16 @@ Thank you for your interest in the Data Science Clinic for the XXX quarter. We r
 We encourage you to apply again in the future, and wish you the best of luck in the upcoming quarter.
 
 -nick
+
+
+###  TA position rejection
+Dear [CANDIDATE],
+ 
+I am writing to inform you that we have decided not to move forward with your application for the TA position. We received many qualified candidates for this position and after careful review, we decided to go with another candidate whose skills and experience better fit our needs.
+ 
+We appreciate your interest in joining our team and would like to thank you for your time and effort in applying for this role.
+ 
+Best regards,
+ 
+[SIGNED]
+
