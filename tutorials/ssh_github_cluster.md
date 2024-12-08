@@ -289,6 +289,6 @@ For a private key to work for authenticating, the service you are authenticating
 
 Reboot your machine. 
 
-**At this point you should have access to both github and, optionally, the cluster. [Verify you access before preceding](#part-0-do-i-already-have-access).**
+**At this point you should have access to both github and, optionally, the cluster. [Verify you access before proceeding](#part-0-do-i-already-have-access).**
 
 To learn more about using the cluster, see the [slurm documentation](./slurm.md)
