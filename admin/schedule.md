@@ -8,7 +8,8 @@ The purpose of this document is to centralize resources and create a timeline of
 ## Weekly Calendar
 
 ### Week -6
-- Create a registration link for the information session via [Zoom](https://uchicago.zoom.us/meeting#/upcoming) website
+- Create a registration link for the information session via [Zoom](https://uchicago.zoom.us/meeting#/upcoming) website.
+- Create a Matching Spreadsheet.
 - Share the information session registration link with this [list of people](https://docs.google.com/spreadsheets/d/1w_XWoo1csw0A916N6rif86VoGKuOdS3f5U7s59Ym8Yk/edit#gid=0). You can find an email template [here](email_templates.md#registration-initial-outreach).
 - Share [TA job description](TA_job_description.md) with appropriate list including DSI Operations team to post on website.
 - Ask TAs about continuining into next quarter.
@@ -17,15 +18,14 @@ The purpose of this document is to centralize resources and create a timeline of
 Everything below depends upon having a list of projects.
 - Create pitchbook using this [template](https://docs.google.com/document/d/1AINocE0DzRl-1ykH7DF3kfhMMo2u0SQC/edit)
   - 9/24: Add a NOTE about not contacting the mentors to both this and the info session presentation.
-- Upload a pdf of the pitchbook to Google Drive. Change the permissions of the file to allow anyone to view it
-- In the "Project Descriptions" section of the website, update the link using the link from Google Drive
-- Insert the project names into section 3 of the application. Tip: create one version of the question and then replicate it
+- Upload a pdf of the pitchbook to Google Drive. Change the permissions of the file to allow anyone to view it.
+- In the "Project Descriptions" section of the website, update the link using the link from Google Drive.
+- Insert the project names into section 3 of the application. Tip: create one version of the question and then replicate it.
 
 ### Week -4
 Before the information session:
-- Update the [information session template](https://drive.google.com/drive/u/0/folders/1hPbbp9HTE1DwTkWRc_BMfEkbNoqXElFi).
 - Update the Info Session Presentation, which can be found [in this folder](https://drive.google.com/drive/folders/1hPbbp9HTE1DwTkWRc_BMfEkbNoqXElFi).
-- On the course website, create an "Apply Now" button in the application section. This button should point to [this link](https://docs.google.com/forms/d/1OAgTju72wNeLYeNbp3xsqxgAGqARuYvTwdYcFrTALus/)
+- On the course website, create an "Apply Now" link pointing to [the application](https://docs.google.com/forms/d/1OAgTju72wNeLYeNbp3xsqxgAGqARuYvTwdYcFrTALus/)
 - Turn on the application. Go to the Responses tab and switch the "accepting responses" toggle
 
 During the information session:
@@ -34,13 +34,11 @@ During the information session:
 
 After the information session:
 - Upload the recorded Zoom video to this [Box folder](https://uchicago.app.box.com/folder/178277527504?s=35irwnktfazm8sjpdz82z8x6ssnimpcy)
-- Remove the "Register Now" text from the website.
-- Send the 
 
 ### Week -3
 Applications close on Friday of this week. After the deadline:
 - Turn off the toggle in the application to stop accepting responses.
-- Remove the "Apply Now" button from the website.
+- Remove the "Apply Now" link from the website.
 
 ### Week -2
 - Clinic Director should open up the registration button on my.uchicago.edu. Verify that undergrads can enroll with electronic consent for all courses. 
@@ -151,21 +149,20 @@ Monday message:
 ### Week 7
 - Turn off the peer review
 
+Wednesday message:
+```
+All – Part of the grade of the clinic is a technical assessment of your code. You can find more information in the links below, including a grading rubric. If you want to receive full credit your code needs to follow the conventions outlined in the rubric.
+
+As you head into the last few weeks of the quarter, please make sure that you add time to apply the changes expected.
+Grading Rubric: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-technical-cleanup.md
+Coding standards documentation: https://github.com/dsi-clinic/the-clinic/blob/main/coding-standards/coding-standards.md
+```
 
 ### Week 8
 - Remind students of upcoming deadlines and technical evaluation
 - Remind TAs/Mentors of their responsibilities for final deliverables
 
-Monday message:
-```
-All – Part of the grade of the clinic is a technical assessment of your code. You can find more information in the links below, including a grading rubric.
-If you want to receive full credit your code needs to follow the conventions outlined in the rubric. In this thread we started running COCOA (w/o the lint option, make sure to turn that on for your final grade) to give you a sense of some of the work that needs to be completed.
-As you start into the last two weeks of the quarter, please make sure that you add time to apply the changes expected.
-Package to evaluate code: https://github.com/dsi-clinic/cocoa
-Coding standards documentation: https://github.com/dsi-clinic/the-clinic/blob/main/coding-standards/coding-standards.md
-Grading Rubric: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-technical-cleanup.md
-```
-Wednesday message:
+Student message:
 ```
 @here As this is week 8, you should start focusing on closing the current quarter and getting ready for the final deliverables. You can find all information about the final deliverables on canvas and the clinic github repo. Additional information is provided as a preview below, but refer to those locations for full details including the time that submissions are due.
 There are four final deliverables:
@@ -187,14 +184,26 @@ Rubrics can be found here:
 Please read the rubrics carefully in order to receive full credit.
 ```
 
+After the application opens:
+```
+@here The application for Winter 2025 is now open. If you are enrolled in DATA 271 and will be taking DATA 272 next quarter, you must reapply to get into our matching system. The deadline for submission is Dec 1 at 11:59pm. 
+
+Apply here: https://dsi-clinic.github.io/the-clinic/#application-information
+```
+
 Mentor/TA message:
 ```
-@channel Just a reminder about everyone's responsibilities as we head into the final weeks of the quarter.
-Mentors: provide written feedback within 24 hours on student draft videos and one-pagers. For example assessments and more information about the requirements of these assignments, please refer to the rubric for the video and one-pager. You will need to give feedback three times:
-1. May 15 at 1pm (video draft 1)
-2. May 17 at 1pm (video draft 2)
-3. May 17 at 1pm (one-pager draft)
-TAs: complete the technical rubric for three files in two repositories. You will be assigned two repositories to grade next week. Please fill out a markdown file for each file you grade and submit them by 5/26.
+@here Just a reminder about mentor and TA responsibilities as we head into the final weeks of the quarter.
+
+Mentors: Provide written feedback on student drafts within 24 hours of submission. For examples, please see the rubrics below. Students will submit drafts at the following times:
+1. Dec 4 at 1pm (video draft 1)
+2. Dec 6 at 1pm (video draft 2 and one-pager)
+
+TAs: complete the technical rubric checklist for three files in two repositories. You will be assigned two repositories to grade during ninth week. Please fill out a markdown file for each file you grade and email them to me by Dec 12 at 5pm.
+
+Video rubric: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-video.md
+One-pager rubric: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/one-pager.md
+Technical rubric: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-technical-cleanup.md
 ```
 
 ### Week 10
