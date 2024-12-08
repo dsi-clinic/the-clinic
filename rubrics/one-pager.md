@@ -4,7 +4,7 @@ This document outlines the requirements for the one page deliverable for the Dat
 
 The purpose of the one pager is to summarize the work that you did over the course of the quarter in a way that is easily digestible and shareable to others who may be interested in it. This is a useful exercise to think about how you will frame this experience when talking or writing about it in professional settings.
 
-Make sure to frame the problem and then link your contribution to that solution. In your write up you want the link between the high-level problem and your work to be obvious to the reader. The one-pager should also be interesting. Boring images and figures will be penalized.
+Make sure to frame the problem and then link your contribution to that solution. In your write up you want the link between the high-level problem and your work to be obvious to the reader. The one-pager should also be interesting and informative. Images and figures which are low information, there without context or provide obvious content should be avoided.
 
 Please, before submitting, make sure that your document follows the dos and don’ts outlined below. 
 
@@ -50,7 +50,8 @@ Draft documents should demonstrate a significant level of both effort and polish
 * It should be written as a single narrative. There shouldn’t be sections or headers.
 * The document should look professional. While we do not expect you and your team to be design or graphics wizards, we do expect you to apply some rudimentary level of formatting and design.
 * The document needs to be easy to read. If you need help with this one place to start is the [Hemingway app](https://hemingwayapp.com/) which presents a measure of complexity for each sentence. It isn't perfect, but a great place to start if you are not sure. 
-* If you want to mention last quarter's work
+* Avoid mentioning specific quarters (e.g. "Last quarter the team did ...."). The purpose of this one-pager is to create a stand alone document and additional context on _when_ something was completed is less important than focusing on what your team did this quarter.
+* Figures should be interesting and useful. Low information figures, such as heat maps/other plots with limited variance, figures that demonstrate a well-known correlation ("As the figure shows, high-wealth counties have longer life spans"), or unexplained exploratory data analysis will be penalized.
 * Things that should be in the one-pager:
     * Description of the problem, suitable for a lay person to understand (e.g., think explaining the problem to a family member or friend who is not in data science).
     * An explanation of your team’s contribution to solving the problem. 
