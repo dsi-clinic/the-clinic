@@ -101,7 +101,7 @@ For a private key to work for authenticating, the service you are authenticating
 3. To verify success: In your terminal, `ssh fe.ds` should connect you to the cluster without typing any password.
 
 #### Windows Instructions for Remote Authentication
-1. Copy your public key. Follow [Step 4: Enable Authentication with SSH Keys](#step-4-enable-authentication-with-ssh-keys) steps 1 and 2 again.  
+1. Copy your public key. Follow [Step 4: Enable Authentication with SSH Keys](#enabling-authentication-with-ssh-keys) steps 1 and 2 again.  
 2. Now connect to the server. Do `ssh fe.ds`. You'll have to type in your UChicago password. Your command prompt is now attached to the login node. The bottom left of your screen should say something like `USERNAME@fe01:~$`. 
 3. Ensure there is an `.ssh` directory. Run `mkdir .ssh`. 
 4. Add your public key to the list of authorized keys. Run `echo "PUBLIC_KEY_HERE" >> .ssh/authorized_keys`, replacing `PUBLIC_KEY_HERE` with the copied public key and maintaining the quotations. ctrl+v may not paste in your terminal. Try right clicking, ctrl+shift+v, and shift+insert. 
