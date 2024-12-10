@@ -10,7 +10,7 @@ This document has sections for different tools used in the DSI clinic. Each one 
     - [Common Errors](#common-errors)
     - [Tips and Guides](#guides-and-tips)
     - [Troubleshooting](#troubleshooting-cluster)
-- [WSL](#WSL)
+- [WSL](#wsl)
     - [Tips and Guides](#guides-and-tips-1)
     - [Troubleshooting](#troubleshooting-wsl)
 
