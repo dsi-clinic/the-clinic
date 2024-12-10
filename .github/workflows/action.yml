@@ -1,5 +1,5 @@
 name: Linkspector
-on: [push]
+on: [pull_request]
 jobs:
   check-links:
     name: runner / linkspector
@@ -9,5 +9,6 @@ jobs:
       - name: Run linkspector
         uses: umbrelladocs/action-linkspector@v1
         with:
-          reporter: github-pr-check
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review
           fail_on_error: true
