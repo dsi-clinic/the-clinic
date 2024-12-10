@@ -1,0 +1,5 @@
+dirs:
+  - ./
+ignorePatterns:
+  - pattern: '^https://github.com/dsi-clinic/.*$'
+useGitIgnore: true
