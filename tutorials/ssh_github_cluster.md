@@ -10,7 +10,7 @@ Depending on what you are working on you may need to do both or just have access
 
 <!-- Research institutions often have computing clusters that can be used to perform tasks that are too intensive to be run on a typical laptop, such as training an LLM or analyzing large amounts of data. A computing cluster is a collection of computers (also referred to as nodes, machines, or servers) that are 'in the cloud' (you are not physically at one of them when using them).  -->
 
-Please read all portions carefully and only skip if you really know what you are doing. If you come across an issue, check that it isn't addressed in [Troubleshooting](#troubleshooting) before asking. 
+Please read all portions carefully and only skip if you really know what you are doing. If you come across an issue, check that it isn't addressed in [Troubleshooting](troubleshooting.md) before asking. 
 
 If you are looking for instructions on using slurm to submit compute jobs, please refer to [the clinic's SLURM documentation](slurm.md)
 
@@ -179,7 +179,7 @@ Where `YOUR_WSL_USERNAME` is the username you picked when setting up WSL. It <b>
 
 The convenience of 'pretending' to have two separate operating systems on one can lead to complications. One is with SSH keys, which is the core method we use to authenticate to the DSI Cluster.
 
-The .ssh directory used on your normal Windows system and your WSL will be different from each other. This is fine in most cases, but can lead to headaches when using VS Code. If you wish to connect to a remote SSH machine in VS code, it will use your Windows configuration. So even if you only use WSL and the VS Code extension (WSL) to code in WSL2, you must follow the [Windows ssh instructions](#windows-specific-instructions). To use the same keys on each system, you can copy them. Following these instructions adapted from [this article](https://devblogs.microsoft.com/commandline/sharing-ssh-keys-between-windows-and-wsl-2/):
+The .ssh directory used on your normal Windows system and your WSL will be different from each other. This is fine in most cases, but can lead to headaches when using VS Code. If you wish to connect to a remote SSH machine in VS code, it will use your Windows configuration. So even if you only use WSL and the VS Code extension (WSL) to code in WSL2, you must follow the [Windows ssh instructions](#windows-users-only-manage-ssh-keys-with-wsl2). To use the same keys on each system, you can copy them. Following these instructions adapted from [this article](https://devblogs.microsoft.com/commandline/sharing-ssh-keys-between-windows-and-wsl-2/):
 
 1. Open a terminal in WSL.
 1. Make sure you have an .ssh folder in WSL: `mkdir -p ~/.ssh`. The `-p` means to ignore if the directory already exists.
