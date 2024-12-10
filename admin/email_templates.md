@@ -28,15 +28,18 @@ At the info session, clinic leadership will discuss the application process, the
 
 ### Project Placement
 
-[FOR THIS USE THE GMAIL MAIL MERGE. IT IS SUPER EASY.]
+Hi,
+ 
+I’m pleased to inform you that you have been matched with a project for the Winter 2025 Data Science Clinic. Based on your preferences, you have been selected for {{ project }}.
 
-
-I’m pleased to inform you that you have been matched with a project for the Autumn 2024 Data Science Clinic. Based on your experience and preferences, you have been selected for Project Name.
-
-If you would like to confirm your seat on the project, please let me know by responding to this email by Thursday, September 19th at 5pm. This course is over-subscribed. If you are unsure or cannot commit to taking this course next quarter, please let me know so that I can give the spot to one of the students on the waiting list. If we do not hear from you confirming your acceptance by this time you may lose your spot.
+If you would like to confirm your seat on the project, please let me know by responding to this email by Friday, December 13 at 5pm. This course is over-subscribed. If you are unsure or cannot commit to taking this course next quarter, please let me know so that I can give the spot to one of the students on the waiting list. If we do not hear from you confirming your acceptance by this time you may lose your spot.
 
 During add/drop period, you should register for the course. Undergraduates should request the course via my.uchicago.edu. Graduate students should contact their advisor and use this email as proof of instructor consent to enroll in the course.
 
+Looking forward to working with you in the upcoming quarter.
+
+Best,
+[NAME]
 ---
 
 ### Rejection Email
@@ -48,3 +51,16 @@ Thank you for your interest in the Data Science Clinic for the XXX quarter. We r
 We encourage you to apply again in the future, and wish you the best of luck in the upcoming quarter.
 
 -nick
+
+
+###  TA position rejection
+Dear [CANDIDATE],
+ 
+I am writing to inform you that we have decided not to move forward with your application for the TA position. We received many qualified candidates for this position and after careful review, we decided to go with another candidate whose skills and experience better fit our needs.
+ 
+We appreciate your interest in joining our team and would like to thank you for your time and effort in applying for this role.
+ 
+Best regards,
+ 
+[SIGNED]
+
