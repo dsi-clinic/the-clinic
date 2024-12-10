@@ -71,7 +71,7 @@ Draft videos should demonstrate a significant level of effort. Each draft should
 * Every project has interesting and unexpected aspects – you want to highlight those. Are there any cool visualizations? What about results?
 * Do not violate any NDA/share any special sauce.
 * Do not read lists of numbers from the slides.
-* Specific descriptions of technology tend to be boring. It’s okay to have a system diagram if the project has a large engineering component.
+* Specific descriptions of technology tend to be low information and should be avoided. It’s okay to have a system diagram if the project has a large engineering component and the presentation of that system diagram is key to understanding the work. Simply stating "Here is the system we built" and walking through the diagram without additional context is not useful for this presentation.
 * No meta-editorializing like “Hmmm.. Let's fix this next time” or “ummm… I think we should change the order of the slides in the next draft”. Each video should be treated as a final version.
 * Keep the mouse icon steady, do not block text or graphics or move it around the screen. It is distracting.
 * Make sure that all presentation materials are visible in the window being used. 
