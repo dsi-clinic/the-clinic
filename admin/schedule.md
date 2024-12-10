@@ -212,12 +212,9 @@ Technical rubric: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/fin
 
 TA swap message:
 ```
-Hello TAs, today at 5pm is the cutoff for students to submit code. After the deadline, you should start the technical review process for the two repos that you are assigned. The details of the repo assignments and links can be found here.
-For each repo you are assigned, you should:
-- identify three random python files or notebooks that have been touched this quarter
-- create a md file for each repository and complete this checklist for each file: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-technical-cleanup.md
+As a reminder, you are responsible for grading two repositories this week after the students submit their final code on Wednesday at 5pm. Take a look at this spreadsheet to find out which repositories you should grade.
 
-By Friday at 5pm, you should email me one md file for each repository you've been assigned. Thank you for your help!
+For each repo send me one readme file using the technical grading rubric by Friday at 5pm. This should contain an evaluation of the overall repo condition as well as assessments of three files that have been edited by the team in this quarter. If you have questions about the repository or the correct files to grade, please reach out to the "Original TA" listed in the spreadsheet above
 ```
 
 ### Week 11
@@ -227,6 +224,8 @@ By Friday at 5pm, you should email me one md file for each repository you've bee
 
 
 ### TODO:
+
+TA Hiring notes:
 - Create a TA Application form with Google Forms. This should accept the following fields: Name, Email, Github ID, Resume upload. Embed the link for this form in the [TA job description](TA_job_description.md).
 - Send the TA job description to Kayleigh in DSI Operations. 
 - Interview TA applicants. Previous technical evaluation has included asking applicants to describe a "good" piece of Python code that they have written.
