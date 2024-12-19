@@ -542,7 +542,7 @@ def process_applications(file_location, deprioritized_students, prioritized_stud
     application_df = strip_chars(application_df)
 
     # Generate Priority column
-    def generate_priorities(df, prioritized_students):
+    def generate_priorities(df, deprioritized_students, prioritized_students):
         # Default everyone to low priority
         df["Priority"] = "low"
 
@@ -592,9 +592,13 @@ def process_applications(file_location, deprioritized_students, prioritized_stud
         for email in prioritized_students:
             adj_priority(df["Email Address"] == email, "high")
 
+        # Adjust priority for deprioritized students
+        for email in deprioritized_students:
+            adj_priority(df["Email Address"] == email, "low")
+
         return df
 
-    application_df = generate_priorities(application_df, prioritized_students)
+    application_df = generate_priorities(application_df, deprioritized_students, prioritized_students)
 
     # Generate Strong CS column
     cscol1 = 'If you have taken an introduction to computer science / "Computer Science 1" course (such as CMSC 141, 151 or 161), please list that course here. DATA courses do not count.'
@@ -663,8 +667,14 @@ def generate_roster(application_df, assignment_df):
             "ChicagoID from the back of your ID card (8 numbers + letter). This is NOT the same as your student ID number.",
             "Current Degree Program",
             "Academic Program / Concentration",
+            "Ranking"
         ]
     ]
+
+    # Create Returning column
+    merged_df["Returning"] = 0
+    merged_df.loc[merged_df["Ranking"] == 0, "Returning"] = 1
+    merged_df = merged_df.drop(columns="Ranking")
 
     # Rename columns for better readability
     merged_df.columns = [
@@ -675,6 +685,7 @@ def generate_roster(application_df, assignment_df):
         "Chicago ID",
         "Degree Program",
         "Concentration",
+        "Returning"
     ]
 
     # Sort by project and name
@@ -686,3 +697,31 @@ def generate_roster(application_df, assignment_df):
     merged_df = merged_df.reset_index(drop=True)
 
     return merged_df
+
+def generate_rejections(assignment_df):
+    """Generate a list of students who were not assigned to a project.
+
+    This function filters out students assigned to a project, selects relevant columns,
+    and renames them for clarity.
+
+    Parameters:
+    assignment_df (pandas.DataFrame): DataFrame containing project assignments for students.
+        Must include columns 'Email Address' and 'Project Assigned'.
+
+    Returns:
+    pandas.DataFrame: A DataFrame representing the list of students who were not assigned to a project,
+        containing columns for Email Address.
+    """
+    # Filter out students assigned to a project
+    rejections_df = assignment_df[assignment_df["Project Assigned"].isna()]
+
+    # Select columns
+    rejections_df = rejections_df[["Email Address"]]
+
+    # Rename columns for better readability
+    rejections_df.columns = ["Email"]
+
+    # Drop index
+    rejections_df = rejections_df.reset_index(drop=True)
+
+    return rejections_df
