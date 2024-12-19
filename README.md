@@ -124,13 +124,13 @@ Inquiries can be sent to Nick Ross, Director of the Data Science Clinic.
 
 ### What if I have time conflicts with the scheduled time?
 
-During the first week of clinic students are expected to meet at the time specified in the schedule, commonly TuTh 5-6:20, for orientation and introduction activities.
-
-During the first week, each project will identify meeting times specific to their project (two TA sessions and one mentor sessions). These meeting times are dependent on the TA, Mentor(s) and students schedule. These meeting times will be used for the rest of the quarter.
+During the first week of clinic students are expected to meet at the time specified in the schedule, commonly TuTh 5-6:20, for orientation and introduction activities. At this time each project will identify meeting times specific to their project (two TA sessions and one mentor sessions). These meeting times are dependent on the TA, Mentor(s) and students schedule. These meeting times will be used for the rest of the quarter.
 
 During the sixth week of the quarter there are a set of mid-quarter presentations. These presentations are not required for all team members -- though failing to support your team is a bad signal. The mid-quarter presentations are in-person and in the room scheduled for the class.
 
-Since outside the times listed above we do not meet during the scheduled time it is not uncommon for students to enroll in a class with some overlap. If you do have a course which has some overlap or conflict with the scheduled time you may need to fill out a "Simultaneous Enrollment" form with your advisor. If this is the case please send an email to the clinic director stating that you will be doing this.
+Since outside the times listed above we do not meet during the scheduled time it is not uncommon for students to enroll in a class with overlap. If you have a course which has some overlap or conflict with the scheduled time you may need to fill out a "Simultaneous Enrollment" form with your advisor. 
+
+From the clinic's perspective this is not a significant issue. Please inform the clinic administration (Director and Asst. Director) if you are doing this so that we can keep track, but otherwise proceed with sending submitting a simultaneous enrollment petition.
 
 ### Is the Data Science Clinic a two quarter class?
 
