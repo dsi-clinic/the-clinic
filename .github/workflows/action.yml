@@ -1,12 +1,14 @@
-name: Check Markdown links
-
-on: push
-
+name: Linkspector
+on: [pull_request]
 jobs:
-  markdown-link-check:
+  check-links:
+    name: runner / linkspector
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - uses: gaurav-nelson/github-action-markdown-link-check@v1
-      with:
-          config-file: 'mlc_config.json'
+      - uses: actions/checkout@v4
+      - name: Run linkspector
+        uses: umbrelladocs/action-linkspector@v1
+        with:
+          reporter: github-check
+          fail_on_error: true
+          filter_mode: nofilter

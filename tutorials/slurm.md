@@ -66,8 +66,6 @@ With a Jupyter notebook open, click the Python version number in the upper right
 
 6. You should now be at a point where you can easily connect to the cluster with VS Code, use jupyter notebooks, and attach to compute nodes for more intensive jobs. This is enough for a lot of tasks, but if you become bothered by long running jobs crashing due to internet connection outages or running out of time on the compute node you will need to leverage `sbatch`.
 
-If you are installing a very large conda environment on the cluster (as evidenced by very slow times to build the environment) look at the section about [using large conda environments](#installing-large-conda-environments-on-the-dsi-cluster).
-
 ## Set up VS Code to use the cluster
 
 The instructions below provide specific instructions for setting up [VS Code](https://code.visualstudio.com/). Before preceding, please make sure that it is installed.
@@ -111,7 +109,7 @@ Otherwise, make sure to add a comma to the end of the current last item and add 
   <img src="SSHConnection.png" width="600" style="border: 2px solid black;">
 </div>
 
-3. Assuming you have correctly [cloned the repo on the cluster](#part-iv-clone-your-repository-on-the-cluster) you can you click `File` then `Open Folder` and select your repository folder. 
+3. Assuming you have correctly [cloned the repo on the cluster](#cloning-a-repository-on-the-cluster) you can you click `File` then `Open Folder` and select your repository folder. 
 4. Close the window. Now if you open a new VS Code window and select from recent, the one called `REPOSITORY_NAME [SSH: fe.ds] will take you right to the login node of the cluster with your previous configuration. 
 
 <div align="center">
