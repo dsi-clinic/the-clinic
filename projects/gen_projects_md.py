@@ -8,6 +8,7 @@ from all_data import AUTUMN_23_NAME_MAP, AUTUMN_23_PROJECT, AUTUMN_23_STUDENT
 from all_data import AUTUMN_22_NAME_MAP, AUTUMN_22_PROJECT, AUTUMN_22_STUDENT
 from all_data import WINTER_24_NAME_MAP, WINTER_24_PROJECT, WINTER_24_STUDENT
 from all_data import SPRING_24_NAME_MAP, SPRING_24_PROJECT, SPRING_24_STUDENT
+from all_data import AUTUMN_24_NAME_MAP, AUTUMN_24_PROJECT, AUTUMN_24_STUDENT
 
 
 PREAMBLE_TEXT = """<!--- This file is generated from a script DO NOT EDIT \
@@ -129,6 +130,26 @@ ALL_PEOPLE = {
         "Satadisha Saha Bhowmick",
         "https://scholar.google.com.hk/citations?user=B-cTWkEAAAAJ",
     ],
+    "Owen": ["Owen Melina", ""],
+    "Alexander": ["Alexander Bogatskiy", "https://datascience.uchicago.edu/people/alexander-bogatskiy/"],
+    "Jie Jian": ["Jie Jian", "https://datascience.uchicago.edu/people/jie-jian/"],
+    "Jonatas": ["Jonatas Marques", "https://datascience.uchicago.edu/people/jonatas-marques/"],
+    "Liya": ["Liya Ding", "https://datascience.uchicago.edu/people/liya-ding/"],
+    "Julia": ["Julia Mendelsohn", "https://scholar.google.com/citations?user=-RVWgYUAAAAJ&hl=en"],
+    "Meghan": ["Meghan Hutch", "https://datascience.uchicago.edu/people/meghan-hutch-she-her/"],
+    "Seyed": ["Seyed Esmaeili", "https://datascience.uchicago.edu/people/seyed-a-esmaeili/"],
+    "Susan": ["Susan Paykin", "https://datascience.uchicago.edu/people/susan-paykin/"],
+    "Kelly": ["Kelly Smalenberger", "https://datascience.uchicago.edu/people/kelly-smalenberger/"],
+    "Kriti": ["Kriti Sehgal", "https://datascience.uchicago.edu/people/kriti-sehgal/"],
+    "Jingchao": ["Jingchao Fang", "https://jc-fang.github.io/"],
+    "Ganghua": ["Ganghua Wang", "https://scholar.google.com/citations?user=GpbeNCsAAAAJ&hl=en"],
+    "Cassie": ["Cassie Tang", "https://github.com/cassietang717"],
+    "Ian": ["Ian Joffe", "https://github.com/IanJoffe"],
+    "Justin": ["Justin Wang", "https://github.com/jiazheng-wang-yes"],
+    "Stella": ["Stella Chen", "https://github.com/stellaaachen"],
+    "Grace": ["Grace Shao", "https://github.com/graceshaoy"],
+    "Yukai": ["Yukai Yang", "https://github.com/YukaiYang0803"],
+    "Austin": ["Austin Steinhart", "https://github.com/asteinhart"],
 }
 
 
@@ -283,6 +304,13 @@ if __name__ == "__main__":
     # The creation of this should be automated
     # this is pretty lazy.
     all_quarter_info_list = [
+        {
+            "quarter": "Autumn",
+            "year": "2024",
+            "name_map": AUTUMN_24_NAME_MAP,
+            "student_info_list": AUTUMN_24_STUDENT,
+            "project_map": AUTUMN_24_PROJECT,
+        },
         {
             "quarter": "Spring",
             "year": "2024",
