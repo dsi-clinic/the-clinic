@@ -236,7 +236,3 @@ TA Hiring notes:
 - Interview TA applicants. Previous technical evaluation has included asking applicants to describe a "good" piece of Python code that they have written.
 - Send TA acceptance and rejection emails. You can find a rejection template [here](email_templates.md#ta-position-rejection).
 - Submit hiring worksheet to Kayleigh in DSI Operations
-
-
-
-
