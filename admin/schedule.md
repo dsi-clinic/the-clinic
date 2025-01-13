@@ -52,7 +52,7 @@ Applications close on Friday of this week. After the deadline:
 - Make sure that the Canvas page is set up.
 - Add Org Report and Computer Set up Assignment to Canvas with correct dates.
 The following tasks depend upon having a list of confirmed students and projects:
-- Add all students, mentors and TAs so the canvas page.
+- Add all students, mentors and TAs to the canvas page.
 - Create Slack channels. Add students, mentors, and TAs
 - Create GitHub repositories. Add students, mentors, and TAs
 - Send the DSI cluster admin a list of CNET user IDs and associated projects to grant them access to the cluster.
@@ -81,25 +81,30 @@ Our lecture is in: Eckhart Hall 133
 - Notify the groups that will need to complete step 6 of the computer setup (SSH/Cluster)
 - After org reports have been submitted, set up Canvas using these <!-- markdown-link-check-disable -->[instructions](https://github.com/dsi-clinic/clinic-automation)<!-- markdown-link-check-enable-->.
  
-
+Monday student message:
 ```
 @here Welcome to the Clinic. A few quick notes:
-- The org report is due Friday at 5pm. This needs to be submitted via Canvas.
+- Today's class from 5-6:20 in Eckhart 133 is a quick introduction to the clinic, first week logistics, and a chance to meet your team.
 - You should all have received an invite to the github repo. Please accept this invitation.
 - You should also have received an invitation to Canvas. Make sure you can access the page.
-- Today's class from 5-6:20 in Eckhart 133 is a quick introduction to the clinic and first week logistics.
-- All information, grading rubrics, etc. can be found here: https://github.com/dsi-clinic/the-clinic
+- The org report is due Friday at 5pm. This needs to be submitted via Canvas.
+- All information, syllabus, grading rubrics, etc. can be found here: https://github.com/dsi-clinic/the-clinic
 ```
+
 Monday TA/Mentor message:
 ```
-A few quick notes on the first week:
-- Students have class TuTh of this week. You should expect a bunch of slack and other organizational stuff today through Friday. By Friday students are expected to coordinate with you about meeting times which start next week. 
-- Please keep an eye on slack.
-- Thursday students will be required to verify the set up of their computer during the lecture time. TAS: If you do not have a conflict it would be great if you could attend.
+@here Welcome to week 1! A few notes:
+- Class is Tuesday and Thursday from 5-6:30pm in Eckhart 133. You do not need to attend in person. It would be nice if you were available on Slack during the Tuesday session. We do introductions and start scheduling then.
+- On Thursday, students will be required to verify the set up of their computer during the lecture time. TAs: If you do not have a conflict, it would be great if some of you could attend.
+- On Friday, the students are required to submit their "Org Report" which contains basic information about when they are meeting. Please assist them in finding available times. If you are having any problems scheduling or need us to help mediate, please don't hesitate to ask.
+- You should all be connected to the external mentor via email. Please work with them (and the students) on scheduling a time to meet during week 2. Try to have everyone attend, but if it isn't possible do your best.
 ```
-Wednesday (or pre-computer setup) Slack message:
+
+Wednesday student message:
 ```
-@here Tomorrow we will be checking installation of needed software for the clinic. If you are returning to the clinic from last quarter you do not have to attend. The link below has necessary set up information. Please come with the software 1-5 from the doc installed. I will be doing checks during this time. The way checks work is you show me your computer and do the verification step listed for each in the document. Note that your mentor may change the required software depending on the project. https://github.com/dsi-clinic/the-clinic/blob/main/tutorials/clinic-computer-setup.md
+@here Tomorrow we will be checking installation of needed software for the clinic. If you are returning to the clinic from last quarter you do not have to attend. The link below has necessary set up information. Please come with the steps 1-6 and 8 from the doc completed. This project [WILL NOT] be using the cluster.
+
+We will be doing checks during tomorrow's session. The way the check works is you show us your computer and do the verification step listed for each in the document. Note that your mentor may change the required software depending on the project. https://github.com/dsi-clinic/the-clinic/blob/main/tutorials/clinic-computer-setup.md
 ```
 
 ### Week 2
@@ -121,13 +126,13 @@ Room notification message:
 Mentors-TA Slack Message:
 ```
 @here Welcome to week 2! A few notes:
-- By now rooms have been assigned for TA and mentor sessions.
-- You should be in contact (and hopefully meeting with) your external mentor this week.
-- Students are required to submit their planning document this week after their meeting with you. Please make sure to follow the best project practices outlined in in the "How to run a mentor meeting" and " Mentor Expectations" docs linked to below. 
-	- Planning docs are due midnight of the day of the meeting.
-- There is quite a bit of documentation in the TA and Mentor Section of the github repo. If you have any questions, or want a review, I recommend scanning it.
-
-https://github.com/dsi-clinic/the-clinic?tab=readme-ov-file#ta-and-mentor-information
+- Rooms have been assigned for TA and mentor sessions.
+- All assignments have been created in Canvas with relevant due dates.
+- You should be in contact (and hopefully meeting) with your external mentor this week.
+- Students are required to submit their planning document this week after meeting with you.
+- Please make sure to follow the best practices outlined in in the "How to run a mentor meeting" and "Mentor Expectations" docs linked below.
+- There is quite a bit of documentation in the TA and Mentor Section of the GitHub repo. If you have any questions, please let us know.
+https://github.com/dsi-clinic/the-clinic/blob/main/mentor-ta/mentor-ta-info.md
 
 ```
 
