@@ -239,5 +239,4 @@ TA Hiring notes:
 
 
 
-[bad.md](bad_link.md)
 [bad link](https://github.com/dsi-clinic/the-clinic/tree/main/fake)
