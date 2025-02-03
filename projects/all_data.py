@@ -191,7 +191,7 @@ AUTUMN_24_PROJECT = [
         1,
         "",
         1,
-        1,
+        0,
     ],
     [
         "RAFI -- Demographic Overlay",
