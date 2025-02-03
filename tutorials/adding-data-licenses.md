@@ -21,7 +21,7 @@ An appropriate attribution must accompany this data wherever it is used or publi
 
 Bibtex for citation managers such as Zotero:
 
-@misc{halpern2024pur,
+@misc{dataCitationName,
   author       = {<list authors>},
   title        = {<title>},
   year         = {2023--2024},
