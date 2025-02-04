@@ -1,3 +1,5 @@
+# This is used, in conjunction with the makefile
+# for previewing changes locally
 FROM ruby:3.2-slim
 
 RUN apt-get update && apt-get install -y \
