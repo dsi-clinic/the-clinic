@@ -1,3 +1,5 @@
+# This is used for building and previewing locally
+
 .PHONY: build serve clean
 
 build:
