@@ -1,4 +1,4 @@
-# Welcome to the Data Science Clinic at the University of Chicago
+# Welcome to the Clinic!
 
 This repository contains information and documentation regarding the Data Science Clinic at the University of Chicago.
 
