@@ -251,18 +251,14 @@ def create_single_quarter_table(
         else:
             one_pager_info = ""
 
-        # Mentor list. split by "&". If there are more than one then make a
-        # bullet point list
+        # Mentor list. split by "&". Make a bullet point list
         mentor_list = [mentor.strip() for mentor in mentor_link.split("&")]
 
-        if len(mentor_list) == 1:
-            mentor_info = create_link_for_mentor(ALL_PEOPLE[mentor_list[0]])
-        else:
-            mentor_info = "<ul>"
-            for mentor in mentor_list:
-                mentor_info += (
-                    f"<li>{create_link_for_mentor(ALL_PEOPLE[mentor])}</li>")
-            mentor_info += "</ul>"
+        mentor_info = "<ul>"
+        for mentor in mentor_list:
+            mentor_info += (
+                f"<li>{create_link_for_mentor(ALL_PEOPLE[mentor])}</li>")
+        mentor_info += "</ul>"
 
         # Student info. Assume that there is more than one and make a list.
         student_info = "<ul>"
@@ -277,9 +273,20 @@ def create_single_quarter_table(
         # TA -- same logic as above, but handle the case with no TA
         TA_info = ALL_PEOPLE.get(ta_link, None)
         if TA_info:
-            TA_info = create_link_for_mentor(TA_info)
+            ta_str = "<ul>"
+            ta_str += f"<li>{create_link_for_mentor(TA_info)}</li>"
+            ta_str += "</ul>"
         else:
-            TA_info = ""
+            ta_str = ""
+
+        # External mentor info. Assume more than one and make a list.
+        external_mentor_str = ""
+        if external_mentor_info:
+            external_mentor_str = "<ul>"
+            for mentor in external_mentor_info.split("&"):
+                external_mentor_str += (
+                    f"<li>{mentor}</li>")
+            external_mentor_str += "</ul>"
 
         project_line = "".join(
             [
@@ -289,8 +296,8 @@ def create_single_quarter_table(
                 f"<td>{one_pager_info}</td>",
                 f"<td>{mentor_info}</td>",
                 f"<td>{student_info}</td>",
-                f"<td>{external_mentor_info}</td>",
-                f"<td>{TA_info}</td>",
+                f"<td>{external_mentor_str}</td>",
+                f"<td>{ta_str}</td>",
             ]
         )
         all_results += f"<tr>{project_line}</tr>\n"
