@@ -189,7 +189,7 @@ AUTUMN_24_PROJECT = [
         "https://github.com/dsi-clinic/2024-autumn-uchicago-library",
         1,
         1,
-        "",
+        "David Bottorff",
         1,
         0,
     ],
