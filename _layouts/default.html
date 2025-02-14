@@ -15,13 +15,22 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+        <!-- <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1> -->
 
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
+        
+        <img src="{{ "/assets/images/clinic.png" | relative_url }}" alt="Image 1" class="sidebar-img">
+        
+        <p></p>
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
+                <!-- Add images here -->
+        <div class="sidebar-images">
+          
+          <!-- <img src="{{ "/assets/images/image2.png" | relative_url }}" alt="Image 2" class="sidebar-img"> -->
+        </div>
+
+        <p></p>
+
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
 
         {% if site.github.is_user_page %}
