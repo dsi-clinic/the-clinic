@@ -113,6 +113,7 @@ We keep a list of frequently asked questions and answers as well as "How-to"'s f
 * [X11 on the Cluster](../tutorials/X11.md)
 * [How to talk about the clinic on your resume and in interviews](../tutorials/resume-interviews.md)
 * [Removing Sensitive Data from Git](../tutorials/remove_data_git.md)
+* [Large file storage](../tutorials/file_storage.md)
 
 Finally, The University of Chicago's Computer Science Department has an in-depth list of related resources that you can find [here](https://uchicago-cs.github.io/student-resource-guide/). 
 
