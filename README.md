@@ -52,7 +52,7 @@ In order to enroll in the class, students must first submit an application and b
 [Apply here](https://docs.google.com/forms/d/e/1FAIpQLSfFNH527gZb5Vw18mc9-baAIXJEwknZwcEUaR3X6hNcO1lLoQ/viewform). The deadline for Spring 2025 is February 28 at 5pm. 
 
 ## Project Information
-[Project descriptions for Winter 2025](https://drive.google.com/file/d/1xJD3ddAL1JD1b8nmybz0C2hAByNFafIV/view?usp=sharing)
+[Project descriptions for Spring 2025](https://drive.google.com/file/d/15AdXaOeqYDXMZ-__fxG9_TaDcGFRld4l/view)
 
 # Current Students 
 Important information for current students can be found [here](./students/current-student-info.md).
