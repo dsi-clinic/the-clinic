@@ -1,6 +1,6 @@
 # Final Email
 
-Upon finishing the video, one-pager and code requirements, all groups need to send a summary email to their external mentors, TAs, students and clinic administrators.
+Upon finishing the video, one-pager and code requirements, all groups need to send a summary email to their external mentors, TAs, students and clinic administrators. Each project should send a single email (as a group).
 
 This is a professionally written email thanking them for the opportunity to work on the project as well as information on the final results.
 
