@@ -357,18 +357,18 @@ def student_assignment(
         if i not in preassigned_students
     )
 
-    # # Constraint: Prevent students from being assigned to projects with
-    # # a max ranking
-    # MAX_ALLOWED_RANK = 5
-    # for j in projects:
-    #     for i in students:
-    #         if i not in preassigned_students:
-    #             student_ranking = ranking.loc[
-    #                 (ranking["Email Address"] == i) & (ranking["Project Name"] == j),
-    #                 "Ranking",
-    #             ].to_numpy()[0]
-    #             if student_ranking > MAX_ALLOWED_RANK:
-    #                 problem += x[(i, j)] == 0
+    # Constraint: Prevent students from being assigned to projects with
+    # a max ranking
+    MAX_ALLOWED_RANK = 4
+    for j in projects:
+        for i in students:
+            if i not in preassigned_students:
+                student_ranking = ranking.loc[
+                    (ranking["Email Address"] == i) & (ranking["Project Name"] == j),
+                    "Ranking",
+                ].to_numpy()[0]
+                if student_ranking > MAX_ALLOWED_RANK:
+                    problem += x[(i, j)] == 0
 
     # Constraints: Priority 1 students must be assigned to a project
     priority_1_students = student_characteristics.loc[
@@ -386,9 +386,6 @@ def student_assignment(
             max_students_dict.get(j, 4) - preassigned_count
         )  # Adjust max based on pre-assigned students
 
-        # for i in students:
-        #     if i not in preassigned_students:
-        #         problem += x[(i, j)] <= max_allowed
         problem += (
             pulp.lpSum(x[(i, j)] for i in students if i not in preassigned_students)
             == max_allowed
@@ -414,32 +411,32 @@ def student_assignment(
 
     # Technical projects must have at least 1 experienced students
     # (including preassigned)
-    # keep_technical_constraint = False
-    # if keep_technical_constraint:
-    #     for j in technical_projects:
-    #         preassigned_exp_count = sum(
-    #             1
-    #             for i in preassigned_projects.get(j, [])
-    #             if i
-    #             in student_characteristics.loc[
-    #                 (student_characteristics["Experienced"]), "Email Address"
-    #             ]
-    #         )
-    #         problem += (
-    #             pulp.lpSum(
-    #                 x[(i, j)]
-    #                 for i in student_characteristics.loc[
-    #                     student_characteristics["Experienced"], "Email Address"
-    #                 ]
-    #                 if i not in preassigned_students
-    #             )
-    #             + preassigned_exp_count
-    #             >= 1
-    #         )
+    keep_technical_constraint = True
+    if keep_technical_constraint:
+        for j in technical_projects:
+            preassigned_exp_count = sum(
+                1
+                for i in preassigned_projects.get(j, [])
+                if i
+                in student_characteristics.loc[
+                    (student_characteristics["Experienced"]), "Email Address"
+                ]
+            )
+            problem += (
+                pulp.lpSum(
+                    x[(i, j)]
+                    for i in student_characteristics.loc[
+                        student_characteristics["Experienced"], "Email Address"
+                    ]
+                    if i not in preassigned_students
+                )
+                + preassigned_exp_count
+                >= 1
+            )
 
     # Ensure that the exact number of projects are running:
-    # if number_of_projects_to_run is not None:
-        # problem += pulp.lpSum(y[j] for j in projects) == number_of_projects_to_run
+    if number_of_projects_to_run is not None:
+        problem += pulp.lpSum(y[j] for j in projects) == number_of_projects_to_run
 
     # Each student can be assigned to at most one project (if not pre-assigned)
     for i in students:
@@ -504,7 +501,7 @@ def student_assignment(
     return assignment_df
 
 
-def process_applications(file_location, deprioritized_students, prioritized_students):
+def process_applications(file_location, deprioritized_students, prioritized_students, projects_to_drop):
     """Process student applications for project assignments.
 
     This function reads an Excel file containing student applications,
@@ -518,7 +515,8 @@ def process_applications(file_location, deprioritized_students, prioritized_stud
                                    deprioritized in the assignment process.
     prioritized_students (list): A list of student email addresses to be
                                    prioritized in the assignment process.
-
+    projects_to_drop (list): A list of projects that will not run.
+                                   
     Returns:
     tuple: A tuple containing two elements:
         - application_df (pandas.DataFrame): Processed application data with
@@ -604,6 +602,11 @@ def process_applications(file_location, deprioritized_students, prioritized_stud
         for email in deprioritized_students:
             adj_priority(df["Email Address"] == email, "low")
 
+        # Adjust priority for specific programs
+        adj_priority((df["Academic Program / Concentration"] == "MA Public Policy (MPP)"), "low")
+        adj_priority((df["Academic Program / Concentration"] == "MA Computational Social Science (MACSS)"), "med-high")
+        adj_priority((df["Academic Program / Concentration"] == "MS Computational Analysis and Public Policy (MSCAPP)"), "med-high")
+
         return df
 
     application_df = generate_priorities(application_df, deprioritized_students, prioritized_students)
@@ -631,14 +634,17 @@ def process_applications(file_location, deprioritized_students, prioritized_stud
         ["Email Address", prev_proj_col]
     ].to_numpy()
 
-    forced_assignments = {el[0]: el[1] for el in returning_students}
+    forced_assingments = {}
+    for student, project in returning_students:
+        if project not in projects_to_drop:
+            forced_assingments[student] = project
 
     # Remove deprioritized students from forced assignments
     for student in deprioritized_students:
-        if student in forced_assignments:
-            del forced_assignments[student]
+        if student in forced_assingments:
+            del forced_assingments[student]
 
-    return application_df, forced_assignments
+    return application_df, forced_assingments
 
 
 def generate_roster(application_df, assignment_df):
