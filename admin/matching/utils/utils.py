@@ -357,18 +357,18 @@ def student_assignment(
         if i not in preassigned_students
     )
 
-    # Constraint: Prevent students from being assigned to projects with
-    # a max ranking
-    MAX_ALLOWED_RANK = 4
-    for j in projects:
-        for i in students:
-            if i not in preassigned_students:
-                student_ranking = ranking.loc[
-                    (ranking["Email Address"] == i) & (ranking["Project Name"] == j),
-                    "Ranking",
-                ].to_numpy()[0]
-                if student_ranking > MAX_ALLOWED_RANK:
-                    problem += x[(i, j)] == 0
+    # # Constraint: Prevent students from being assigned to projects with
+    # # a max ranking
+    # MAX_ALLOWED_RANK = 5
+    # for j in projects:
+    #     for i in students:
+    #         if i not in preassigned_students:
+    #             student_ranking = ranking.loc[
+    #                 (ranking["Email Address"] == i) & (ranking["Project Name"] == j),
+    #                 "Ranking",
+    #             ].to_numpy()[0]
+    #             if student_ranking > MAX_ALLOWED_RANK:
+    #                 problem += x[(i, j)] == 0
 
     # Constraints: Priority 1 students must be assigned to a project
     priority_1_students = student_characteristics.loc[
@@ -385,6 +385,10 @@ def student_assignment(
         max_allowed = (
             max_students_dict.get(j, 4) - preassigned_count
         )  # Adjust max based on pre-assigned students
+
+        # for i in students:
+        #     if i not in preassigned_students:
+        #         problem += x[(i, j)] <= max_allowed
         problem += (
             pulp.lpSum(x[(i, j)] for i in students if i not in preassigned_students)
             == max_allowed
@@ -410,40 +414,44 @@ def student_assignment(
 
     # Technical projects must have at least 1 experienced students
     # (including preassigned)
-    keep_technical_constraint = False
-    if keep_technical_constraint:
-        for j in technical_projects:
-            preassigned_exp_count = sum(
-                1
-                for i in preassigned_projects.get(j, [])
-                if i
-                in student_characteristics.loc[
-                    (student_characteristics["Experienced"]), "Email Address"
-                ]
-            )
-            problem += (
-                pulp.lpSum(
-                    x[(i, j)]
-                    for i in student_characteristics.loc[
-                        student_characteristics["Experienced"], "Email Address"
-                    ]
-                    if i not in preassigned_students
-                )
-                + preassigned_exp_count
-                >= 1
-            )
+    # keep_technical_constraint = False
+    # if keep_technical_constraint:
+    #     for j in technical_projects:
+    #         preassigned_exp_count = sum(
+    #             1
+    #             for i in preassigned_projects.get(j, [])
+    #             if i
+    #             in student_characteristics.loc[
+    #                 (student_characteristics["Experienced"]), "Email Address"
+    #             ]
+    #         )
+    #         problem += (
+    #             pulp.lpSum(
+    #                 x[(i, j)]
+    #                 for i in student_characteristics.loc[
+    #                     student_characteristics["Experienced"], "Email Address"
+    #                 ]
+    #                 if i not in preassigned_students
+    #             )
+    #             + preassigned_exp_count
+    #             >= 1
+    #         )
 
     # Ensure that the exact number of projects are running:
-    if number_of_projects_to_run is not None:
-        problem += pulp.lpSum(y[j] for j in projects) == number_of_projects_to_run
+    # if number_of_projects_to_run is not None:
+        # problem += pulp.lpSum(y[j] for j in projects) == number_of_projects_to_run
 
     # Each student can be assigned to at most one project (if not pre-assigned)
     for i in students:
         if i not in preassigned_students:
             problem += pulp.lpSum(x[(i, j)] for j in projects) <= 1
 
+    
     # Solve the problem using the default solver
+    problem.writeLP('problem')
+    
     problem.solve()
+    
 
     # Create DataFrame for assignments
     assignment_df = pd.DataFrame(
