@@ -385,6 +385,7 @@ def student_assignment(
         max_allowed = (
             max_students_dict.get(j, 4) - preassigned_count
         )  # Adjust max based on pre-assigned students
+
         problem += (
             pulp.lpSum(x[(i, j)] for i in students if i not in preassigned_students)
             == max_allowed
@@ -410,7 +411,7 @@ def student_assignment(
 
     # Technical projects must have at least 1 experienced students
     # (including preassigned)
-    keep_technical_constraint = False
+    keep_technical_constraint = True
     if keep_technical_constraint:
         for j in technical_projects:
             preassigned_exp_count = sum(
@@ -496,7 +497,9 @@ def student_assignment(
     return assignment_df
 
 
-def process_applications(file_location, deprioritized_students, prioritized_students):
+def process_applications(
+    file_location, deprioritized_students, prioritized_students, projects_to_drop
+):
     """Process student applications for project assignments.
 
     This function reads an Excel file containing student applications,
@@ -510,6 +513,7 @@ def process_applications(file_location, deprioritized_students, prioritized_stud
                                    deprioritized in the assignment process.
     prioritized_students (list): A list of student email addresses to be
                                    prioritized in the assignment process.
+    projects_to_drop (list): A list of projects that will not run.
 
     Returns:
     tuple: A tuple containing two elements:
@@ -596,9 +600,30 @@ def process_applications(file_location, deprioritized_students, prioritized_stud
         for email in deprioritized_students:
             adj_priority(df["Email Address"] == email, "low")
 
+        # Adjust priority for specific programs
+        adj_priority(
+            (df["Academic Program / Concentration"] == "MA Public Policy (MPP)"), "low"
+        )
+        adj_priority(
+            (
+                df["Academic Program / Concentration"]
+                == "MA Computational Social Science (MACSS)"
+            ),
+            "med-high",
+        )
+        adj_priority(
+            (
+                df["Academic Program / Concentration"]
+                == "MS Computational Analysis and Public Policy (MSCAPP)"
+            ),
+            "med-high",
+        )
+
         return df
 
-    application_df = generate_priorities(application_df, deprioritized_students, prioritized_students)
+    application_df = generate_priorities(
+        application_df, deprioritized_students, prioritized_students
+    )
 
     # Generate Strong CS column
     cscol1 = 'If you have taken an introduction to computer science / "Computer Science 1" course (such as CMSC 141, 151 or 161), please list that course here. DATA courses do not count.'
@@ -623,14 +648,17 @@ def process_applications(file_location, deprioritized_students, prioritized_stud
         ["Email Address", prev_proj_col]
     ].to_numpy()
 
-    forced_assignments = {el[0]: el[1] for el in returning_students}
+    forced_assingments = {}
+    for student, project in returning_students:
+        if project not in projects_to_drop:
+            forced_assingments[student] = project
 
     # Remove deprioritized students from forced assignments
     for student in deprioritized_students:
-        if student in forced_assignments:
-            del forced_assignments[student]
+        if student in forced_assingments:
+            del forced_assingments[student]
 
-    return application_df, forced_assignments
+    return application_df, forced_assingments
 
 
 def generate_roster(application_df, assignment_df):
@@ -667,7 +695,7 @@ def generate_roster(application_df, assignment_df):
             "ChicagoID from the back of your ID card (8 numbers + letter). This is NOT the same as your student ID number.",
             "Current Degree Program",
             "Academic Program / Concentration",
-            "Ranking"
+            "Ranking",
         ]
     ]
 
@@ -685,7 +713,7 @@ def generate_roster(application_df, assignment_df):
         "Chicago ID",
         "Degree Program",
         "Concentration",
-        "Returning"
+        "Returning",
     ]
 
     # Sort by project and name
@@ -697,6 +725,7 @@ def generate_roster(application_df, assignment_df):
     merged_df = merged_df.reset_index(drop=True)
 
     return merged_df
+
 
 def generate_rejections(assignment_df):
     """Generate a list of students who were not assigned to a project.
