@@ -443,12 +443,10 @@ def student_assignment(
         if i not in preassigned_students:
             problem += pulp.lpSum(x[(i, j)] for j in projects) <= 1
 
-    
     # Solve the problem using the default solver
-    problem.writeLP('problem')
-    
+    problem.writeLP("problem")
+
     problem.solve()
-    
 
     # Create DataFrame for assignments
     assignment_df = pd.DataFrame(
@@ -501,7 +499,9 @@ def student_assignment(
     return assignment_df
 
 
-def process_applications(file_location, deprioritized_students, prioritized_students, projects_to_drop):
+def process_applications(
+    file_location, deprioritized_students, prioritized_students, projects_to_drop
+):
     """Process student applications for project assignments.
 
     This function reads an Excel file containing student applications,
@@ -516,7 +516,7 @@ def process_applications(file_location, deprioritized_students, prioritized_stud
     prioritized_students (list): A list of student email addresses to be
                                    prioritized in the assignment process.
     projects_to_drop (list): A list of projects that will not run.
-                                   
+
     Returns:
     tuple: A tuple containing two elements:
         - application_df (pandas.DataFrame): Processed application data with
@@ -603,13 +603,29 @@ def process_applications(file_location, deprioritized_students, prioritized_stud
             adj_priority(df["Email Address"] == email, "low")
 
         # Adjust priority for specific programs
-        adj_priority((df["Academic Program / Concentration"] == "MA Public Policy (MPP)"), "low")
-        adj_priority((df["Academic Program / Concentration"] == "MA Computational Social Science (MACSS)"), "med-high")
-        adj_priority((df["Academic Program / Concentration"] == "MS Computational Analysis and Public Policy (MSCAPP)"), "med-high")
+        adj_priority(
+            (df["Academic Program / Concentration"] == "MA Public Policy (MPP)"), "low"
+        )
+        adj_priority(
+            (
+                df["Academic Program / Concentration"]
+                == "MA Computational Social Science (MACSS)"
+            ),
+            "med-high",
+        )
+        adj_priority(
+            (
+                df["Academic Program / Concentration"]
+                == "MS Computational Analysis and Public Policy (MSCAPP)"
+            ),
+            "med-high",
+        )
 
         return df
 
-    application_df = generate_priorities(application_df, deprioritized_students, prioritized_students)
+    application_df = generate_priorities(
+        application_df, deprioritized_students, prioritized_students
+    )
 
     # Generate Strong CS column
     cscol1 = 'If you have taken an introduction to computer science / "Computer Science 1" course (such as CMSC 141, 151 or 161), please list that course here. DATA courses do not count.'
@@ -681,7 +697,7 @@ def generate_roster(application_df, assignment_df):
             "ChicagoID from the back of your ID card (8 numbers + letter). This is NOT the same as your student ID number.",
             "Current Degree Program",
             "Academic Program / Concentration",
-            "Ranking"
+            "Ranking",
         ]
     ]
 
@@ -699,7 +715,7 @@ def generate_roster(application_df, assignment_df):
         "Chicago ID",
         "Degree Program",
         "Concentration",
-        "Returning"
+        "Returning",
     ]
 
     # Sort by project and name
@@ -711,6 +727,7 @@ def generate_roster(application_df, assignment_df):
     merged_df = merged_df.reset_index(drop=True)
 
     return merged_df
+
 
 def generate_rejections(assignment_df):
     """Generate a list of students who were not assigned to a project.
