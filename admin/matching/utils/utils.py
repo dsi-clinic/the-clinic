@@ -444,8 +444,6 @@ def student_assignment(
             problem += pulp.lpSum(x[(i, j)] for j in projects) <= 1
 
     # Solve the problem using the default solver
-    problem.writeLP("problem")
-
     problem.solve()
 
     # Create DataFrame for assignments
