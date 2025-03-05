@@ -50,8 +50,16 @@ def generate_data(application_df, technical_project_list):
     application_df["Priority"] = application_df["Priority"].str.lower()
 
     # Replace the priority values based on the mapping
-    priority_lc_map = {"high": 1, "med-high": 2, "med": 3, "low": 4, "exclude": 5}
-    application_df["Priority"] = application_df["Priority"].map(priority_lc_map)
+    priority_lc_map = {
+        "high": 1,
+        "med-high": 2,
+        "med": 3,
+        "low": 4,
+        "exclude": 5,
+    }
+    application_df["Priority"] = application_df["Priority"].map(
+        priority_lc_map
+    )
 
     # Assert that all values in the 'Priority' column are valid integers
     assert (
@@ -116,7 +124,9 @@ def generate_data(application_df, technical_project_list):
     df_merged["Ranking"] = df_merged["Ranking"].fillna(100)
     df_merged = df_merged.sort_values(by=["Email Address", "Ranking"])
 
-    missnamed_projs = [x for x in technical_project_list if x not in all_projects]
+    missnamed_projs = [
+        x for x in technical_project_list if x not in all_projects
+    ]
 
     assert len(missnamed_projs) == 0, "Technical Projects not mapped correctly"
 
@@ -129,9 +139,9 @@ def generate_data(application_df, technical_project_list):
         :, ["Email Address", "Priority"]
     ].copy()
 
-    student_characteristics["Experienced"] = application_df["Email Address"].isin(
-        exp_students
-    )
+    student_characteristics["Experienced"] = application_df[
+        "Email Address"
+    ].isin(exp_students)
 
     result_dict = {
         "ranking": df_merged,
@@ -203,23 +213,35 @@ def print_project_summary(assignment_df, all_projects):
 
         current_project_rows = project_summary["Project Name"] == project
 
-        project_summary.loc[current_project_rows, "Number"] = n_students_in_project
+        project_summary.loc[current_project_rows, "Number"] = (
+            n_students_in_project
+        )
 
-        project_summary.loc[current_project_rows, "High Priority"] = n_high_priority
+        project_summary.loc[current_project_rows, "High Priority"] = (
+            n_high_priority
+        )
 
         project_summary.loc[current_project_rows, "High-Med Priority"] = (
             n_med_high_priority
         )
 
-        project_summary.loc[current_project_rows, "Med Priority"] = n_med_priority
+        project_summary.loc[current_project_rows, "Med Priority"] = (
+            n_med_priority
+        )
 
-        project_summary.loc[current_project_rows, "Low Priority"] = n_low_priority
+        project_summary.loc[current_project_rows, "Low Priority"] = (
+            n_low_priority
+        )
 
-        project_summary.loc[current_project_rows, "Experienced"] = n_exp_students
+        project_summary.loc[current_project_rows, "Experienced"] = (
+            n_exp_students
+        )
 
         project_summary.loc[current_project_rows, "Rankings"] = rankings_str
 
-        project_summary.loc[current_project_rows, "Average Ranking"] = avg_ranking
+        project_summary.loc[current_project_rows, "Average Ranking"] = (
+            avg_ranking
+        )
 
     # Sort projects so that projects with no students are at the bottom
     project_summary = project_summary.sort_values(
@@ -279,17 +301,23 @@ def student_assignment(
     ), "A project to drop is not in the project list"
 
     projects = [x for x in all_projects if x not in drop_projects]
-    technical_projects = [x for x in technical_projects if x not in drop_projects]
+    technical_projects = [
+        x for x in technical_projects if x not in drop_projects
+    ]
     assert (
         len([x for x in technical_projects if x not in projects]) == 0
     ), "A technical project is not in the list"
 
     if number_of_projects_to_run is not None:
-        assert number_of_projects_to_run <= len(projects), "Not enough projects to run"
+        assert number_of_projects_to_run <= len(
+            projects
+        ), "Not enough projects to run"
 
     # Update Rankings based on projects to drop
     # The logic is to set the
-    ranking.loc[~(ranking.loc[:, "Project Name"].isin(projects)), "Ranking"] = 100
+    ranking.loc[
+        ~(ranking.loc[:, "Project Name"].isin(projects)), "Ranking"
+    ] = 100
 
     # Define the problem
     problem = pulp.LpProblem("Student_Project_Assignment", pulp.LpMinimize)
@@ -331,7 +359,12 @@ def student_assignment(
     # Create binary decision variables only for students not preassigned
     x = pulp.LpVariable.dicts(
         "x",
-        [(i, j) for j in projects for i in students if i not in preassigned_students],
+        [
+            (i, j)
+            for j in projects
+            for i in students
+            if i not in preassigned_students
+        ],
         cat="Binary",
     )
 
@@ -366,7 +399,8 @@ def student_assignment(
         for i in students:
             if i not in preassigned_students:
                 student_ranking = ranking.loc[
-                    (ranking["Email Address"] == i) & (ranking["Project Name"] == j),
+                    (ranking["Email Address"] == i)
+                    & (ranking["Project Name"] == j),
                     "Ranking",
                 ].to_numpy()[0]
                 if student_ranking > MAX_ALLOWED_RANK:
@@ -397,7 +431,9 @@ def student_assignment(
         )  # Adjust max based on pre-assigned students
 
         problem += (
-            pulp.lpSum(x[(i, j)] for i in students if i not in preassigned_students)
+            pulp.lpSum(
+                x[(i, j)] for i in students if i not in preassigned_students
+            )
             == max_allowed
         )
 
@@ -405,7 +441,9 @@ def student_assignment(
     # j, y[j] must be 1
     for j in projects:
         problem += (
-            pulp.lpSum(x[(i, j)] for i in students if i not in preassigned_students)
+            pulp.lpSum(
+                x[(i, j)] for i in students if i not in preassigned_students
+            )
             <= 4 * y[j]
         )  # If y[j] = 0, no students can be assigned
 
@@ -414,7 +452,9 @@ def student_assignment(
     for j in projects:
         preassigned_count = len(preassigned_projects.get(j, []))
         problem += (
-            pulp.lpSum(x[(i, j)] for i in students if i not in preassigned_students)
+            pulp.lpSum(
+                x[(i, j)] for i in students if i not in preassigned_students
+            )
             + preassigned_count
             >= 3 * y[j]
         )
@@ -446,7 +486,9 @@ def student_assignment(
 
     # Ensure that the exact number of projects are running:
     if number_of_projects_to_run is not None:
-        problem += pulp.lpSum(y[j] for j in projects) == number_of_projects_to_run
+        problem += (
+            pulp.lpSum(y[j] for j in projects) == number_of_projects_to_run
+        )
 
     # Each student can be assigned to at most one project (if not pre-assigned)
     for i in students:
@@ -484,9 +526,9 @@ def student_assignment(
             assignment_df.loc[
                 assignment_df["Email Address"] == student, "Project Assigned"
             ] = project
-            assignment_df.loc[assignment_df["Email Address"] == student, "Ranking"] = (
-                0  # Pre-assigned students have no ranking cost
-            )
+            assignment_df.loc[
+                assignment_df["Email Address"] == student, "Ranking"
+            ] = 0  # Pre-assigned students have no ranking cost
 
     # Merge priority and experience info
     assignment_df = assignment_df.merge(
@@ -580,10 +622,14 @@ def process_applications(
         )
 
         # Adjust priority for general fourth years (non-DS majors)
-        adj_priority((df["Current Degree Program"] == "Undergrad: 4th year"), "med")
+        adj_priority(
+            (df["Current Degree Program"] == "Undergrad: 4th year"), "med"
+        )
 
         # Adjust priority for second year masters students
-        adj_priority((df["Current Degree Program"] == "MA or MS 2nd year"), "med")
+        adj_priority(
+            (df["Current Degree Program"] == "MA or MS 2nd year"), "med"
+        )
 
         # Adjust priority for fourth year data science majors
         adj_priority(
@@ -609,7 +655,11 @@ def process_applications(
 
         # Adjust priority for specific programs
         adj_priority(
-            (df["Academic Program / Concentration"] == "MA Public Policy (MPP)"), "low"
+            (
+                df["Academic Program / Concentration"]
+                == "MA Public Policy (MPP)"
+            ),
+            "low",
         )
         adj_priority(
             (df["Current Degree Program"] == "MA or MS 2nd year")
@@ -628,7 +678,10 @@ def process_applications(
             "med-high",
         )
         adj_priority(
-            (df["Academic Program / Concentration"] == "MS Computer Science (MPCS)"),
+            (
+                df["Academic Program / Concentration"]
+                == "MS Computer Science (MPCS)"
+            ),
             "med-high",
         )
 
@@ -657,7 +710,9 @@ def process_applications(
             df.loc[filter, column] = newvalue
 
         # Adjust CS strength
-        adjust_col((df[cscol1].notna() & df[cscol2].notna()), "Strong CS", "Yes")
+        adjust_col(
+            (df[cscol1].notna() & df[cscol2].notna()), "Strong CS", "Yes"
+        )
         return df
 
     application_df = generate_cs_column(application_df)
@@ -708,7 +763,9 @@ def generate_roster(application_df, assignment_df):
     assignment_df = assignment_df[assignment_df["Project Assigned"].notna()]
 
     # Merge application and assignment data
-    merged_df = assignment_df.merge(application_df, on="Email Address", how="left")
+    merged_df = assignment_df.merge(
+        application_df, on="Email Address", how="left"
+    )
 
     # Select columns
     merged_df = merged_df[
