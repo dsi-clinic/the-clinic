@@ -50,7 +50,7 @@ def generate_data(application_df, technical_project_list):
     application_df["Priority"] = application_df["Priority"].str.lower()
 
     # Replace the priority values based on the mapping
-    priority_lc_map = {"high": 1, "med-high": 2, "med": 3, "low": 4}
+    priority_lc_map = {"high": 1, "med-high": 2, "med": 3, "low": 4, "exclude": 5}
     application_df["Priority"] = application_df["Priority"].map(priority_lc_map)
 
     # Assert that all values in the 'Priority' column are valid integers
@@ -108,8 +108,7 @@ def generate_data(application_df, technical_project_list):
     )
 
     # Merge rankings with all projects for each student
-    df_merged = pd.merge(
-        df_all_projects,
+    df_merged = df_all_projects.merge(
         df_long,
         on=["Email Address", "Project Name"],
         how="left",
@@ -190,9 +189,9 @@ def print_project_summary(assignment_df, all_projects):
 
         n_students_in_project = assigned_students.shape[0]
         n_high_priority = (assigned_students["Priority"] == 1).sum()
-        n_med_high_priority = (assigned_students["Priority"] == 2).sum()
-        n_med_priority = (assigned_students["Priority"] == 3).sum()
-        n_low_priority = (assigned_students["Priority"] == 4).sum()
+        n_med_high_priority = (assigned_students["Priority"] == 2).sum()  # noqa: PLR2004
+        n_med_priority = (assigned_students["Priority"] == 3).sum()  # noqa: PLR2004
+        n_low_priority = (assigned_students["Priority"] == 4).sum()  # noqa: PLR2004
         n_exp_students = assigned_students["Experienced"].sum()
         rank_list = sorted(assigned_students["Ranking"].astype(int).tolist())
         rankings_str = ",".join(map(str, rank_list))
@@ -247,7 +246,7 @@ def student_assignment(
     max_students_dict=None,
     preassigned_students=None,
     number_of_projects_to_run=None,
-    drop_projects=[],
+    drop_projects=None,
     verbose=False,
 ):
     """Assign students to projects based on rankings and various constraints.
@@ -270,6 +269,9 @@ def student_assignment(
     pandas.DataFrame: DataFrame containing the final student-project assignments,
                       including student email, priority, experience, assigned project, and ranking.
     """
+    if drop_projects is None:
+        drop_projects = []
+
     # Determine which projects to run
     all_projects = ranking["Project Name"].unique()
     assert (
@@ -377,6 +379,14 @@ def student_assignment(
     for i in priority_1_students:
         if i not in preassigned_students:
             problem += pulp.lpSum(x[(i, j)] for j in projects) == 1
+
+    # Constraints: Deprioritized students must NOT be assigned
+    EXCLUDE_NUMBER = 5
+    remove_students = student_characteristics.loc[
+        student_characteristics["Priority"] == EXCLUDE_NUMBER, "Email Address"
+    ]
+    for i in remove_students:
+        problem += pulp.lpSum(x[(i, j)] for j in projects) == 0
 
     # Maximum number of students per project
     for j in projects:
@@ -498,7 +508,11 @@ def student_assignment(
 
 
 def process_applications(
-    file_location, deprioritized_students, prioritized_students, projects_to_drop
+    file_location,
+    deprioritized_students,
+    prioritized_students,
+    projects_to_drop,
+    override_assignments,
 ):
     """Process student applications for project assignments.
 
@@ -514,6 +528,7 @@ def process_applications(
     prioritized_students (list): A list of student email addresses to be
                                    prioritized in the assignment process.
     projects_to_drop (list): A list of projects that will not run.
+    override_assignments (dict): A dictionary of forced project assignments
 
     Returns:
     tuple: A tuple containing two elements:
@@ -568,7 +583,7 @@ def process_applications(
         adj_priority((df["Current Degree Program"] == "Undergrad: 4th year"), "med")
 
         # Adjust priority for second year masters students
-        adj_priority((df["Current Degree Program"] == "MA or MS 2nd year"), "med-high")
+        adj_priority((df["Current Degree Program"] == "MA or MS 2nd year"), "med")
 
         # Adjust priority for fourth year data science majors
         adj_priority(
@@ -592,32 +607,38 @@ def process_applications(
             "high",
         )
 
-        # Adjust priority for prioritized students
-        for email in prioritized_students:
-            adj_priority(df["Email Address"] == email, "high")
-
-        # Adjust priority for deprioritized students
-        for email in deprioritized_students:
-            adj_priority(df["Email Address"] == email, "low")
-
         # Adjust priority for specific programs
         adj_priority(
             (df["Academic Program / Concentration"] == "MA Public Policy (MPP)"), "low"
         )
         adj_priority(
-            (
+            (df["Current Degree Program"] == "MA or MS 2nd year")
+            & (
                 df["Academic Program / Concentration"]
                 == "MA Computational Social Science (MACSS)"
             ),
             "med-high",
         )
         adj_priority(
-            (
+            (df["Current Degree Program"] == "MA or MS 2nd year")
+            & (
                 df["Academic Program / Concentration"]
                 == "MS Computational Analysis and Public Policy (MSCAPP)"
             ),
             "med-high",
         )
+        adj_priority(
+            (df["Academic Program / Concentration"] == "MS Computer Science (MPCS)"),
+            "med-high",
+        )
+
+        # Adjust priority for prioritized students
+        for email in prioritized_students:
+            adj_priority(df["Email Address"] == email, "high")
+
+        # Adjust priority for deprioritized students
+        for email in deprioritized_students:
+            adj_priority(df["Email Address"] == email, "exclude")
 
         return df
 
@@ -657,6 +678,10 @@ def process_applications(
     for student in deprioritized_students:
         if student in forced_assingments:
             del forced_assingments[student]
+
+    # Add student/project override
+    for student in override_assignments:
+        forced_assingments[student] = override_assignments[student]
 
     return application_df, forced_assingments
 
