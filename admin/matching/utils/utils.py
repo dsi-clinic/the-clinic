@@ -271,7 +271,7 @@ def student_assignment(
     """
     if drop_projects is None:
         drop_projects = []
-    
+
     # Determine which projects to run
     all_projects = ranking["Project Name"].unique()
     assert (
