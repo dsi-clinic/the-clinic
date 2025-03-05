@@ -506,7 +506,11 @@ def student_assignment(
 
 
 def process_applications(
-    file_location, deprioritized_students, prioritized_students, projects_to_drop, override_assignments
+    file_location,
+    deprioritized_students,
+    prioritized_students,
+    projects_to_drop,
+    override_assignments,
 ):
     """Process student applications for project assignments.
 
@@ -622,10 +626,7 @@ def process_applications(
             "med-high",
         )
         adj_priority(
-            (
-                df["Academic Program / Concentration"]
-                == "MS Computer Science (MPCS)"
-            ),
+            (df["Academic Program / Concentration"] == "MS Computer Science (MPCS)"),
             "med-high",
         )
 
