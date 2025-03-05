@@ -618,6 +618,14 @@ def process_applications(
             ),
             "med-high",
         )
+        adj_priority(
+            (
+                df["Academic Program / Concentration"]
+                == "MS Computer Science (MPCS)"
+            ),
+            "med-high",
+        )
+
 
         return df
 
