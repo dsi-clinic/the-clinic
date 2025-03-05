@@ -50,7 +50,7 @@ def generate_data(application_df, technical_project_list):
     application_df["Priority"] = application_df["Priority"].str.lower()
 
     # Replace the priority values based on the mapping
-    priority_lc_map = {"high": 1, "med-high": 2, "med": 3, "low": 4}
+    priority_lc_map = {"high": 1, "med-high": 2, "med": 3, "low": 4, "exclude": 5}
     application_df["Priority"] = application_df["Priority"].map(priority_lc_map)
 
     # Assert that all values in the 'Priority' column are valid integers
@@ -378,6 +378,14 @@ def student_assignment(
         if i not in preassigned_students:
             problem += pulp.lpSum(x[(i, j)] for j in projects) == 1
 
+    # Constraints: Deprioritized students must NOT be assigned
+    EXCLUDE_NUMBER = 5
+    remove_students = student_characteristics.loc[
+        student_characteristics["Priority"] == EXCLUDE_NUMBER, "Email Address"
+    ]
+    for i in remove_students:
+        problem += pulp.lpSum(x[(i, j)] for j in projects) == 0
+
     # Maximum number of students per project
     for j in projects:
         preassigned_count = len(preassigned_projects.get(j, []))
@@ -593,14 +601,6 @@ def process_applications(
             "high",
         )
 
-        # Adjust priority for prioritized students
-        for email in prioritized_students:
-            adj_priority(df["Email Address"] == email, "high")
-
-        # Adjust priority for deprioritized students
-        for email in deprioritized_students:
-            adj_priority(df["Email Address"] == email, "low")
-
         # Adjust priority for specific programs
         adj_priority(
             (df["Academic Program / Concentration"] == "MA Public Policy (MPP)"), "low"
@@ -629,6 +629,13 @@ def process_applications(
             "med-high",
         )
 
+        # Adjust priority for prioritized students
+        for email in prioritized_students:
+            adj_priority(df["Email Address"] == email, "high")
+
+        # Adjust priority for deprioritized students
+        for email in deprioritized_students:
+            adj_priority(df["Email Address"] == email, "exclude")
 
         return df
 
