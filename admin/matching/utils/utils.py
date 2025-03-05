@@ -498,7 +498,7 @@ def student_assignment(
 
 
 def process_applications(
-    file_location, deprioritized_students, prioritized_students, projects_to_drop
+    file_location, deprioritized_students, prioritized_students, projects_to_drop, override_assignments
 ):
     """Process student applications for project assignments.
 
@@ -514,6 +514,7 @@ def process_applications(
     prioritized_students (list): A list of student email addresses to be
                                    prioritized in the assignment process.
     projects_to_drop (list): A list of projects that will not run.
+    override_assignments (dict): A dictionary of forced project assignments
 
     Returns:
     tuple: A tuple containing two elements:
@@ -568,7 +569,7 @@ def process_applications(
         adj_priority((df["Current Degree Program"] == "Undergrad: 4th year"), "med")
 
         # Adjust priority for second year masters students
-        adj_priority((df["Current Degree Program"] == "MA or MS 2nd year"), "med-high")
+        adj_priority((df["Current Degree Program"] == "MA or MS 2nd year"), "med")
 
         # Adjust priority for fourth year data science majors
         adj_priority(
@@ -605,14 +606,16 @@ def process_applications(
             (df["Academic Program / Concentration"] == "MA Public Policy (MPP)"), "low"
         )
         adj_priority(
-            (
+            (df["Current Degree Program"] == "MA or MS 2nd year")
+            & (
                 df["Academic Program / Concentration"]
                 == "MA Computational Social Science (MACSS)"
             ),
             "med-high",
         )
         adj_priority(
-            (
+            (df["Current Degree Program"] == "MA or MS 2nd year")
+            & (
                 df["Academic Program / Concentration"]
                 == "MS Computational Analysis and Public Policy (MSCAPP)"
             ),
@@ -665,6 +668,10 @@ def process_applications(
     for student in deprioritized_students:
         if student in forced_assingments:
             del forced_assingments[student]
+
+    # Add student/project override
+    for student in override_assignments:
+        forced_assingments[student] = override_assignments[student]
 
     return application_df, forced_assingments
 
