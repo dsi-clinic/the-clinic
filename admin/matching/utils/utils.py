@@ -108,8 +108,7 @@ def generate_data(application_df, technical_project_list):
     )
 
     # Merge rankings with all projects for each student
-    df_merged = pd.merge(
-        df_all_projects,
+    df_merged = df_all_projects.merge(
         df_long,
         on=["Email Address", "Project Name"],
         how="left",
@@ -190,9 +189,9 @@ def print_project_summary(assignment_df, all_projects):
 
         n_students_in_project = assigned_students.shape[0]
         n_high_priority = (assigned_students["Priority"] == 1).sum()
-        n_med_high_priority = (assigned_students["Priority"] == 2).sum()
-        n_med_priority = (assigned_students["Priority"] == 3).sum()
-        n_low_priority = (assigned_students["Priority"] == 4).sum()
+        n_med_high_priority = (assigned_students["Priority"] == 2).sum()  # noqa: PLR2004
+        n_med_priority = (assigned_students["Priority"] == 3).sum()  # noqa: PLR2004
+        n_low_priority = (assigned_students["Priority"] == 4).sum()  # noqa: PLR2004
         n_exp_students = assigned_students["Experienced"].sum()
         rank_list = sorted(assigned_students["Ranking"].astype(int).tolist())
         rankings_str = ",".join(map(str, rank_list))
@@ -247,7 +246,7 @@ def student_assignment(
     max_students_dict=None,
     preassigned_students=None,
     number_of_projects_to_run=None,
-    drop_projects=[],
+    drop_projects=None,
     verbose=False,
 ):
     """Assign students to projects based on rankings and various constraints.
@@ -270,6 +269,9 @@ def student_assignment(
     pandas.DataFrame: DataFrame containing the final student-project assignments,
                       including student email, priority, experience, assigned project, and ranking.
     """
+    if drop_projects is None:
+        drop_projects = []
+    
     # Determine which projects to run
     all_projects = ranking["Project Name"].unique()
     assert (
