@@ -47,7 +47,8 @@ Some students may already have access to the cluster and github and may not need
   Hi NickRoss! You've successfully authenticated, but GitHub does not provide shell access.
   Connection to github.com closed.
   ```
-2. [CLUSTER] ```ssh fe.ds``` which, if set up properly should generate:
+
+1. [CLUSTER] ```ssh fe.ds``` which, if set up properly should generate:
    
   ```~ ssh fe.ds
     ###############################################################################
