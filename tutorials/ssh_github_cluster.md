@@ -48,27 +48,27 @@ Some students may already have access to the cluster and github and may not need
   Connection to github.com closed.
   ```
 
-1. [CLUSTER] ```ssh fe.ds``` which, if set up properly should generate:
+2. [CLUSTER] ```ssh fe.ds``` which, if set up properly should generate:
    
-  ```~ ssh fe.ds
-    ###############################################################################
-    #                                                                             #
-    #   *****  IMPORTANT NOTICE: DO NOT RUN COMPUTE JOBS ON LOGIN NODE  *****     #
-    #                                                                             #
-    #  The login node is for connecting, editing, and submitting jobs only!       #
-    #                                                                             #
-    #  High-intensive compute jobs must be submitted through the SLURM scheduler. #
-    #  Use interactive sessions or submit batch jobs as appropriate.              #
-    #                                                                             #
-    #       Failure to comply may result in job termination without notice.       #
-    #                                                                             #
-    #                 For help, contact techstaff@cs.uchicago.edu                 #
-    #                                                                             #
-    ###############################################################################
+```~ ssh fe.ds
+  ###############################################################################
+  #                                                                             #
+  #   *****  IMPORTANT NOTICE: DO NOT RUN COMPUTE JOBS ON LOGIN NODE  *****     #
+  #                                                                             #
+  #  The login node is for connecting, editing, and submitting jobs only!       #
+  #                                                                             #
+  #  High-intensive compute jobs must be submitted through the SLURM scheduler. #
+  #  Use interactive sessions or submit batch jobs as appropriate.              #
+  #                                                                             #
+  #       Failure to comply may result in job termination without notice.       #
+  #                                                                             #
+  #                 For help, contact techstaff@cs.uchicago.edu                 #
+  #                                                                             #
+  ###############################################################################
 
-  Last login: Fri Sep 13 15:06:37 2024 from 10.150.1.240
-  (base) nickross@fe01:~$
-  ```
+Last login: Fri Sep 13 15:06:37 2024 from 10.150.1.240
+(base) nickross@fe01:~$
+```
 
 The above is also how we demonstrate access to the required resources. If you already have access to the resources that are required you do not need to complete this document.
 
