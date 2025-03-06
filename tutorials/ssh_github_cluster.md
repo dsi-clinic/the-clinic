@@ -43,14 +43,15 @@ Some students may already have access to the cluster and github and may not need
 
 1. ```ssh -T git@github.com``` which, if set up properly should generate:
   
-  ```
-  Hi NickRoss! You've successfully authenticated, but GitHub does not provide shell access.
-  Connection to github.com closed.
-  ```
+```
+Hi NickRoss! You've successfully authenticated, but GitHub does not provide shell access.
+Connection to github.com closed.
+```
 
 2. [CLUSTER] ```ssh fe.ds``` which, if set up properly should generate:
    
-```~ ssh fe.ds
+```
+~ ssh fe.ds
   ###############################################################################
   #                                                                             #
   #   *****  IMPORTANT NOTICE: DO NOT RUN COMPUTE JOBS ON LOGIN NODE  *****     #
