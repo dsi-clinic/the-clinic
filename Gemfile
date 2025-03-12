@@ -1,5 +1,18 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-# gem "jekyll", "4.3.3"
-gem "github-pages", "~> 232", group: :jekyll_plugins
-gem "jekyll-relative-links", "0.6.1"
+# Use the github-pages gem to ensure compatibility with GitHub Pages
+gem 'github-pages', group: :jekyll_plugins
+
+# Additional plugins that GitHub Pages supports
+group :jekyll_plugins do
+  gem 'jekyll-gist'
+  gem 'jekyll-paginate'
+  gem 'jekyll-sitemap'
+  gem 'jekyll-feed'
+  gem 'jekyll-remote-theme'
+  gem 'jekyll-seo-tag'
+  gem 'jekyll-relative-links'
+end
+
+# Required for Ruby 3.0+
+gem 'webrick', '~> 1.8.1'
