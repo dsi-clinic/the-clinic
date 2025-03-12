@@ -461,7 +461,7 @@ def student_assignment(
 
     # Technical projects must have at least 1 experienced students
     # (including preassigned)
-    keep_technical_constraint = True
+    keep_technical_constraint = False
     if keep_technical_constraint:
         for j in technical_projects:
             preassigned_exp_count = sum(
