@@ -72,9 +72,17 @@ The instructions below provide specific instructions for setting up [VS Code](ht
 
 ### Step 1: Connect to the Login Node with VS Code
 
+<div align="center">
+  <img src="remote-ssh-rationale.svg" width="600">
+</div>
+
 Traditionally, one would `ssh` in a terminal and be restricted to command-line text editors like Vim. We can use the extension, `Remote - SSH` allows us to act like we are developing on our local machine as normal for the most part and has less of a learning curve. Information on the extension can be found [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh).
 
 1. Install `Remote - SSH`. Click 'Extensions' on the menu at the left side of VS Code (its icon is four squares with the top right one pulled away). Search for and install `Remote - SSH`. 
+
+<div align="center">
+  <img src="VSCode-extensions.png" width="600" style="border: 2px solid black;">
+</div>
 
 2. We want to allow common extensions to be used on the cluster. Open the command palette (ctrl+shift+p / command+shift+p / View -> Command Palette...) and search for `Open User Settings (JSON)`. If it is empty, paste the following:
 3. 
@@ -89,7 +97,7 @@ Traditionally, one would `ssh` in a terminal and be restricted to command-line t
 }
 ```
 
-Otherwise, make sure to add a comma to the end of the current last item and add the following before the `}`:
+Otherwise, make sure to add a comma to the end of the current last item and add the following before the `}` (to make the following a new item in the list):
 
 ```
     "remote.SSH.defaultExtensions": [
@@ -100,17 +108,16 @@ Otherwise, make sure to add a comma to the end of the current last item and add 
     ]
 ```
 
-1. Follow the instructions [here](https://code.visualstudio.com/docs/remote/ssh#_connect-to-a-remote-host) to set up with the following modifications: 
-    - In "Connect to a remote host", try `Remote-SSH: Connect to Host...` and you should see `fe.ds` as an option. Select it. Otherwise, you can try typing in `fe.ds`.
+3. Follow [these general instructions](https://code.visualstudio.com/docs/remote/ssh#_connect-to-a-remote-host) with the following specializations for our cluster:
+    - When you run `Remote-SSH: Connect to Host...`, you should see `fe.ds` as an option. Select it. Otherwise, you can just type in `fe.ds`.
     - (If you are asked, though sometimes this will be detected by VS Code) The type of server is Linux.
-2. The (usually green) box at the bottom left of your VS Code window should now say `SSH: fe.ds` to signify you are using the SSH extension and connected to the host `fe.ds` as in the image here:
+4. This opens a new VSCode window that is connected to the server. When you use the Open Folder dialog in this window, it will show you files and [cloned repos](#cloning-a-repository-on-the-cluster) on the cluster, rather than your own computer. You can distinguish local windows from remote windows by the `SSH: fe.ds` in the bottom-left corner of the window (green is active, blue is standby).
 
 <div align="center">
   <img src="SSHConnection.png" width="600" style="border: 2px solid black;">
 </div>
 
-3. Assuming you have correctly [cloned the repo on the cluster](#cloning-a-repository-on-the-cluster) you can you click `File` then `Open Folder` and select your repository folder. 
-4. Close the window. Now if you open a new VS Code window and select from recent, the one called `REPOSITORY_NAME [SSH: fe.ds] will take you right to the login node of the cluster with your previous configuration. 
+5. Close the window. Now if you open a new VS Code window and select from recent, the one called `REPOSITORY_NAME [SSH: fe.ds] will take you right to the login node of the cluster with your previous configuration. 
 
 <div align="center">
 <table>
