@@ -110,7 +110,7 @@ No. Register for the course only when you've been matched with a project.
 
 ### How do I register once I've been admitted?
 
-Undergraduates should add the class via my.uchicago. Graduate students need to contact their advisors to be added to the course manually.
+Undergraduates should add the class via `my.uchicago.edu`. Graduate students need to contact their advisors to be added to the course manually.
 
 ### What if I'm missing a prerequisite?
 
@@ -146,3 +146,10 @@ Nearly all notification of placements occurs during the week after the applicati
 
 Yes. Once placements are settled, all students not placed will be sent an notification via email.
 
+### I am a Master's student and I was not selected, can I get a specific reason for why?
+
+The Data Science Clinic at the University of Chicago is committed to providing as many students as possible with meaningful, hands-on experience in real-world data science projects. Due to high demand, we carefully consider each application but cannot guarantee placement for all applicants.
+
+  * We do **not** discuss individual applications or placement decisions. All applicants are reviewed holistically based on project needs, skill alignment and project choice.
+  * Our goal is to match as many students as possible while ensuring a balanced and effective project team structure.
+  * Our priority is to serve data science majors, who are required to take this for graduation, followed by as many 2nd year masters students as we can reasonably accommodate. 
