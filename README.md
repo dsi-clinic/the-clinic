@@ -33,6 +33,7 @@ This repository contains information and documentation regarding the Data Scienc
     + [Is the Data Science Clinic a two quarter class?](#is-the-data-science-clinic-a-two-quarter-class)
     + [When will I be notified of my placement?](#when-will-i-be-notified-of-my-placement)
     + [Will I be notified if I am not placed?](#will-i-be-notified-if-i-am-not-placed)
+    + [I am a Master's student and I was not selected, can I get a specific reason for why?](#i-am-a-masters-student-and-i-was-not-selected-can-i-get-a-specific-reason-for-why)
 
 <!-- tocstop -->
 
@@ -152,4 +153,4 @@ The Data Science Clinic at the University of Chicago is committed to providing a
 
   * We do **not** discuss individual applications or placement decisions. All applicants are reviewed holistically based on project needs, skill alignment and project choice.
   * Our goal is to match as many students as possible while ensuring a balanced and effective project team structure.
-  * Our priority is to serve data science majors, who are required to take this for graduation, followed by as many 2nd year masters students as we can reasonably accommodate. 
+  * Our priority is to serve data science majors, who are required to take this for graduation, followed by as many 2nd year masters students as we can reasonably accommodate.
