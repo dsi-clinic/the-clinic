@@ -2,14 +2,32 @@
 # To do:
 # 1. automate 400 no-400 for has repo
 
-from all_data import SPRING_23_NAME_MAP, SPRING_23_PROJECT, SPRING_23_STUDENT
-from all_data import WINTER_23_NAME_MAP, WINTER_23_PROJECT, WINTER_23_STUDENT
-from all_data import AUTUMN_23_NAME_MAP, AUTUMN_23_PROJECT, AUTUMN_23_STUDENT
-from all_data import AUTUMN_22_NAME_MAP, AUTUMN_22_PROJECT, AUTUMN_22_STUDENT
-from all_data import WINTER_24_NAME_MAP, WINTER_24_PROJECT, WINTER_24_STUDENT
-from all_data import SPRING_24_NAME_MAP, SPRING_24_PROJECT, SPRING_24_STUDENT
-from all_data import AUTUMN_24_NAME_MAP, AUTUMN_24_PROJECT, AUTUMN_24_STUDENT
-
+from all_data import (
+    AUTUMN_22_NAME_MAP,
+    AUTUMN_22_PROJECT,
+    AUTUMN_22_STUDENT,
+    AUTUMN_23_NAME_MAP,
+    AUTUMN_23_PROJECT,
+    AUTUMN_23_STUDENT,
+    AUTUMN_24_NAME_MAP,
+    AUTUMN_24_PROJECT,
+    AUTUMN_24_STUDENT,
+    SPRING_23_NAME_MAP,
+    SPRING_23_PROJECT,
+    SPRING_23_STUDENT,
+    SPRING_24_NAME_MAP,
+    SPRING_24_PROJECT,
+    SPRING_24_STUDENT,
+    WINTER_23_NAME_MAP,
+    WINTER_23_PROJECT,
+    WINTER_23_STUDENT,
+    WINTER_24_NAME_MAP,
+    WINTER_24_PROJECT,
+    WINTER_24_STUDENT,
+    WINTER_25_NAME_MAP,
+    WINTER_25_PROJECT,
+    WINTER_25_STUDENT,
+)
 
 PREAMBLE_TEXT = """<!--- This file is generated from a script DO NOT EDIT \
 DIRECTLY -->
@@ -131,18 +149,51 @@ ALL_PEOPLE = {
         "https://scholar.google.com.hk/citations?user=B-cTWkEAAAAJ",
     ],
     "Owen": ["Owen Melina", ""],
-    "Alexander": ["Alexander Bogatskiy", "https://datascience.uchicago.edu/people/alexander-bogatskiy/"],
-    "Jie Jian": ["Jie Jian", "https://datascience.uchicago.edu/people/jie-jian/"],
-    "Jonatas": ["Jonatas Marques", "https://datascience.uchicago.edu/people/jonatas-marques/"],
-    "Liya": ["Liya Ding", "https://datascience.uchicago.edu/people/liya-ding/"],
-    "Julia": ["Julia Mendelsohn", "https://scholar.google.com/citations?user=-RVWgYUAAAAJ&hl=en"],
-    "Meghan": ["Meghan Hutch", "https://datascience.uchicago.edu/people/meghan-hutch-she-her/"],
-    "Seyed": ["Seyed Esmaeili", "https://datascience.uchicago.edu/people/seyed-a-esmaeili/"],
-    "Susan": ["Susan Paykin", "https://datascience.uchicago.edu/people/susan-paykin/"],
-    "Kelly": ["Kelly Smalenberger", "https://datascience.uchicago.edu/people/kelly-smalenberger/"],
-    "Kriti": ["Kriti Sehgal", "https://datascience.uchicago.edu/people/kriti-sehgal/"],
+    "Alexander": [
+        "Alexander Bogatskiy",
+        "https://datascience.uchicago.edu/people/alexander-bogatskiy/",
+    ],
+    "Jie Jian": [
+        "Jie Jian",
+        "https://datascience.uchicago.edu/people/jie-jian/",
+    ],
+    "Jonatas": [
+        "Jonatas Marques",
+        "https://datascience.uchicago.edu/people/jonatas-marques/",
+    ],
+    "Liya": [
+        "Liya Ding",
+        "https://datascience.uchicago.edu/people/liya-ding/",
+    ],
+    "Julia": [
+        "Julia Mendelsohn",
+        "https://scholar.google.com/citations?user=-RVWgYUAAAAJ&hl=en",
+    ],
+    "Meghan": [
+        "Meghan Hutch",
+        "https://datascience.uchicago.edu/people/meghan-hutch-she-her/",
+    ],
+    "Seyed": [
+        "Seyed Esmaeili",
+        "https://datascience.uchicago.edu/people/seyed-a-esmaeili/",
+    ],
+    "Susan": [
+        "Susan Paykin",
+        "https://datascience.uchicago.edu/people/susan-paykin/",
+    ],
+    "Kelly": [
+        "Kelly Smalenberger",
+        "https://datascience.uchicago.edu/people/kelly-smalenberger/",
+    ],
+    "Kriti": [
+        "Kriti Sehgal",
+        "https://datascience.uchicago.edu/people/kriti-sehgal/",
+    ],
     "Jingchao": ["Jingchao Fang", "https://jc-fang.github.io/"],
-    "Ganghua": ["Ganghua Wang", "https://scholar.google.com/citations?user=GpbeNCsAAAAJ&hl=en"],
+    "Ganghua": [
+        "Ganghua Wang",
+        "https://scholar.google.com/citations?user=GpbeNCsAAAAJ&hl=en",
+    ],
     "Cassie": ["Cassie Tang", "https://github.com/cassietang717"],
     "Ian": ["Ian Joffe", "https://github.com/IanJoffe"],
     "Justin": ["Justin Wang", "https://github.com/jiazheng-wang-yes"],
@@ -150,6 +201,18 @@ ALL_PEOPLE = {
     "Grace": ["Grace Shao", "https://github.com/graceshaoy"],
     "Yukai": ["Yukai Yang", "https://github.com/YukaiYang0803"],
     "Austin": ["Austin Steinhart", "https://github.com/asteinhart"],
+    "Francesco Pinto": [
+        "Francesco Pinto",
+        "https://datascience.uchicago.edu/people/francesco-pinto/",
+    ],
+    "Harper": ["Harper Lyu", "https://github.com/dwlyu"],
+    "Harper Schwab": ["Harper Schwab", "https://github.com/hwschwab"],
+    "Gayathri Jayaraman": [
+        "Gayathri Jayaraman",
+        "https://github.com/gayathrij-hub",
+    ],
+    "Jack Sanderson": ["Jack Sanderson", "https://github.com/jcksanderson"],
+    "Polly Ren": ["Polly Ren", "https://github.com/pollyren"],
 }
 
 
@@ -180,11 +243,9 @@ def create_single_quarter_table(
     project_map,
     student_info_list,
 ):
-    """
-    This returns a single table of information.
+    """This returns a single table of information.
     A Table should be considered a single quarter.
     """
-
     all_results = """<table>
         <thead>
             <tr>
@@ -247,7 +308,8 @@ def create_single_quarter_table(
             one_pager_location = f"./one-pagers/{year}-{quarter.lower()}/"
             file_info = one_pager_location + project_link + ".pdf"
             one_pager_info = (
-                f'<a href="{file_info.replace(" ", "%20")}">One-Pager</a>')
+                f'<a href="{file_info.replace(" ", "%20")}">One-Pager</a>'
+            )
         else:
             one_pager_info = ""
 
@@ -257,13 +319,15 @@ def create_single_quarter_table(
         mentor_info = "<ul>"
         for mentor in mentor_list:
             mentor_info += (
-                f"<li>{create_link_for_mentor(ALL_PEOPLE[mentor])}</li>")
+                f"<li>{create_link_for_mentor(ALL_PEOPLE[mentor])}</li>"
+            )
         mentor_info += "</ul>"
 
         # Student info. Assume that there is more than one and make a list.
         student_info = "<ul>"
-        student_project_list = [x for x in student_info_list if x[0]
-                                == project_link]
+        student_project_list = [
+            x for x in student_info_list if x[0] == project_link
+        ]
         if len(student_project_list) == 0:
             raise Exception(f"No Students found for project {project_link}")
         for student in student_project_list:
@@ -284,8 +348,7 @@ def create_single_quarter_table(
         if external_mentor_info:
             external_mentor_str = "<ul>"
             for mentor in external_mentor_info.split("&"):
-                external_mentor_str += (
-                    f"<li>{mentor}</li>")
+                external_mentor_str += f"<li>{mentor}</li>"
             external_mentor_str += "</ul>"
 
         project_line = "".join(
@@ -311,6 +374,13 @@ if __name__ == "__main__":
     # The creation of this should be automated
     # this is pretty lazy.
     all_quarter_info_list = [
+        {
+            "quarter": "Winter",
+            "year": "2025",
+            "name_map": WINTER_25_NAME_MAP,
+            "student_info_list": WINTER_25_STUDENT,
+            "project_map": WINTER_25_PROJECT,
+        },
         {
             "quarter": "Autumn",
             "year": "2024",
@@ -373,9 +443,9 @@ if __name__ == "__main__":
                 f"</summary>\n\n"
                 f"This quarter's pitchbook, which contains the basic project "
                 f"specification can be found "
-                f"<a href=\"./pitchbooks/"
+                f'<a href="./pitchbooks/'
                 f"{quarter['year']}-{quarter['quarter'].lower()}"
-                f"-pitchbook.pdf\">here</a>.\n\n"
+                f'-pitchbook.pdf">here</a>.\n\n'
             )
             f_handle.write(create_single_quarter_table(**quarter))
             f_handle.write("\n</details>")
