@@ -104,8 +104,11 @@ _Before continuing, make sure that you have the following completed:_
 [CLUSTER] Notes: You do not need access to a Slurm partition to continue and set up *access* to the cluster, but you will need it to *use* the cluster. 
 
 
-| **Do NOT go past this until you have completed the above.** |
-|-----------------------------|
+<table>
+  <tr>
+    <td><strong>Do NOT go past this until you have completed the above.</strong></td>
+  </tr>
+</table>
 
 ## Part II: Set up SSH
 
@@ -124,10 +127,11 @@ To set up Windows to use ssh like linux complete the following (from [this SO an
 5. Open cmd and type `where ssh` to confirm that the top listed path is in System32. Mine is installed at `C:\Windows\System32\OpenSSH\ssh.exe`. If it's not in the list you may need to close and reopen cmd.
 6. You should now be able to access OpenSSH tools from the Windows Command Prompt. Continue to General Instructions. 
 
-
-| **Windows: Do NOT continue until in PowerShell, `Get-Service ssh-agent` returns with a 'Running' Status _after_ rebooting.** |
-|-----------------------------|
-
+<table>
+ <tr>
+   <td><strong>Windows: Do NOT continue until in PowerShell, `Get-Service ssh-agent` returns with a 'Running' Status <em>after</em> rebooting.</strong></td>
+ </tr>
+</table>
 
 #### [Mac/Linux] Verify ssh-agent
 
@@ -137,8 +141,11 @@ To set up Windows to use ssh like linux complete the following (from [this SO an
 
 If ssh-agent was not running, please reboot and verify that it loads on start. 
 
-| **Mac/Linux: Do NOT continue until you have verified that ssh-agent runs _after_ rebooting.** |
-|-----------------------------|
+<table>
+ <tr>
+   <td><strong>Mac/Linux: Do NOT continue until you have verified that ssh-agent runs <em>after</em> rebooting.</strong></td>
+ </tr>
+</table>
 
 
 ### Step 2: Create / Manage SSH Keys
@@ -152,10 +159,11 @@ If ssh-agent was not running, please reboot and verify that it loads on start.
 5. After running this there should be two files in the `.ssh` directory. A `KEYNAME` and `KEYNAME.pub` file will be created by this command. The file with the `.pub` extension is your public key and can be shared safely. The file with no extension is your private key and should never be shared. `KEYNAME` will either be the name you specified above or the the encryption type. 
   
 
-
-| **Do not continue until you have verified that both files mentioned above exist in the .ssh directory.** |
-|-----------------------------|
-
+<table>
+ <tr>
+   <td><strong>Do not continue until you have verified that both files mentioned above exist in the .ssh directory.</strong></td>
+ </tr>
+</table>
 
 #### [Windows Users Only] Manage SSH Keys with WSL2
 If you are using Windows you need to [install WSL ("Windows Subsystem for Linux")](https://learn.microsoft.com/en-us/windows/wsl/install) on your machine. Installing this allows Windows users access to core Unix based functionality. If you are doing local developement on your Windows machine, you should do it in WSL. TODO
@@ -180,9 +188,11 @@ The .ssh directory used on your normal Windows system and your WSL will be diffe
 1. SSH keys should have special permissions (on a shared computer you wouldn't want other users to be able to read your private key!). Run `chmod 600 ~/.ssh/KEYNAME` and `chmod 644 ~/.ssh/KEYNAME.pub` for all the `KEYNAME`s you wish to use in WSL. 
 1. Run `chmod 700 ~/.ssh`. 
 
-| **Do not continue until you have verified correct installation of WSL and can find your SSH key in both Windows and WSL** |
-|-----------------------------|
-
+<table>
+ <tr>
+   <td><strong>Do not continue until you have verified correct installation of WSL and can find your SSH key in both Windows and WSL</strong></td>
+ </tr>
+</table>
 
 
 ### Step 3: Add your keys to ssh-agent
@@ -191,9 +201,11 @@ The .ssh directory used on your normal Windows system and your WSL will be diffe
 <!-- 2. markdown-link-check-disable[Mac Users Only] (optional) To keep the key in your `ssh-agent` across sessions, follow [this stack overflow answer](https://stackoverflow.com/questions/18880024/start-ssh-agent-on-login). markdown-link-check-enable  -->
 2. Confirm your key was added. In your terminal/command prompt/powershell, run `ssh-add -l` to list all keys in your ssh agent. Your key should appear here. If this command returns `The agent has no identities.`, step 3 failed. 
 
-| **Do not continue until you have verified that your key file appears when you run `ssh-add -l`** |
-|-----------------------------|
-
+<table>
+ <tr>
+   <td><strong>Do not continue until you have verified that your key file appears when you run <code>ssh-add -l</code></strong></td>
+ </tr>
+</table>
 
 ### Step 4: [CLUSTER] Save SSH Configuration
 
@@ -204,6 +216,7 @@ We have now created an ssh key file that will allow us to login to the cluster. 
     - [Mac] In a terminal: `touch ~/.ssh/config` to create the file if it does not exist and `open ~/.ssh/config` to open it.
 2. You may or may not already have configurations saved. Place the text below in the config file, after any other configurations, *except* any block that starts with `Host *` or `Host fe01.ds.uchicago.edu`. If you have a block that has the host information then you probably already had access to the cluster and will need to redo it based on the new keys you created.  
 [Mac/Linux]:
+
 ```
 Host fe.ds*
   HostName fe01.ds.uchicago.edu
@@ -218,7 +231,9 @@ Host *.ds !fe.ds
   User YOUR_CNET
   ProxyJump fe.ds
 ```
+
 [Windows]
+
 ```
 Host fe.ds*
   HostName fe01.ds.uchicago.edu
@@ -235,6 +250,7 @@ Host *.ds !fe.ds
   ProxyJump fe.ds
   MACs hmac-sha2-512
 ```
+
 Replace `YOUR_CNET` with your CNET ID and `PATH_TO_PRIVATE_KEY` with the path the key you previously created. [Windows: `PATH_TO_PRIVATE_KEY` will be `/Users/USERNAME/.ssh/KEYNAME` where `USERNAME` is your windows username and `KEYNAME` is the name of the key you created. Starting with the root directory `/` is not standard for windows and will not typically work in other situations.] This will map `fe.ds` to an ssh command to the listed hostname, with the listed user and private key, and using the listed identity file as your key. `ForwardAgent` set to yes means that any ssh keys added to your local agent will also be added to the remote machines ssh agent (so you can use your local ssh key for GitHub on the cluster, for example). The second block is for connecting directly to compute nodes.
 
 3. Save and close the file.
@@ -253,9 +269,11 @@ For a private key to work for authenticating, the service you are authenticating
 4. Click 'New SSH key'. Give it a name relating to the machine it is stored on, like "windows laptop", or "linux desktop" and paste in the full contents of the public key.
 5. Verify your key was added. In terminal / command prompt, try `ssh -T git@github.com` it should respond with `Hi GITHUB_USERNAME! You've successfully authenticated, but GitHub does not provide shell access.` or something similar. 
 
-| **Do not continue until you have verified a success message when you run `ssh -T git@github.com`** |
-|-----------------------------|
-
+<table>
+  <tr>
+    <td><strong>Do not continue until you have verified a success message when you run <code>ssh -T git@github.com</code></strong></td>
+  </tr>
+</table>
 
 #### [CLUSTER] Mac/Linux Instructions for Remote Authentication 
 1. If on Mac/Linux, you can use `ssh-copy-id -i ~/.ssh/KEYNAME_HERE.pub fe.ds`, replacing `KEYNAME_HERE` with the name of the public ssh key you would like to use (it should end with .pub). 
