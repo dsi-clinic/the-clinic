@@ -50,10 +50,11 @@ Find out more about the Data Science Clinic at the Data Science Institute's [web
 ## Application Information
 In order to enroll in the class, students must first submit an application and be matched with a project. The application requires a resume or CV, history of related courses, and self-assessment of technical skills. Students are asked to rank their preferences for project placement.
 
-[Apply here](https://docs.google.com/forms/d/e/1FAIpQLSfFNH527gZb5Vw18mc9-baAIXJEwknZwcEUaR3X6hNcO1lLoQ/viewform). The deadline for Spring 2025 is February 28 at 5pm. 
+The application for Autumn 2025 will open on September 4, 2025 at 3pm and will be available [here](https://docs.google.com/forms/d/e/1FAIpQLSfFNH527gZb5Vw18mc9-baAIXJEwknZwcEUaR3X6hNcO1lLoQ/viewform). The application deadline is September 11, 2025 at 5pm.
 
-## Project Information
-[Project descriptions for Spring 2025](https://drive.google.com/file/d/15AdXaOeqYDXMZ-__fxG9_TaDcGFRld4l/view)
+## Autumn 2025 Information Session
+There will be an information session for prospective students on September 4, 2025 at 3pm. Register for the information session [here](https://uchicago.zoom.us/meeting/register/fobN17cmRlGy2j2DeE63BQ).
+
 
 # Current Students 
 Important information for current students can be found [here](./students/current-student-info.md).
