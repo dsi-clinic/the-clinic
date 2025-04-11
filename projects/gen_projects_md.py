@@ -439,8 +439,7 @@ if __name__ == "__main__":
         for quarter in all_quarter_info_list:
             f_handle.write("\n<details>\n\n")
             f_handle.write(
-                f"<summary><h2>{quarter['quarter']} {quarter['year']}</h2>"
-                f"</summary>\n\n"
+                f"<summary style=\"cursor: pointer; font-weight: bold; font-size: 1.5em; margin-bottom: 10px;\">{quarter['quarter']} {quarter['year']}</summary>\n\n"
                 f"This quarter's pitchbook, which contains the basic project "
                 f"specification can be found "
                 f'<a href="./pitchbooks/'

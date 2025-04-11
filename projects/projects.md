@@ -13,7 +13,7 @@ A few important notes:
 
 <details>
 
-<summary><h2>Winter 2025</h2></summary>
+<summary style="cursor: pointer; font-weight: bold; font-size: 1.5em; margin-bottom: 10px;">Winter 2025</summary>
 
 This quarter's pitchbook, which contains the basic project specification can be found <a href="./pitchbooks/2025-winter-pitchbook.pdf">here</a>.
 
@@ -54,7 +54,7 @@ This quarter's pitchbook, which contains the basic project specification can be 
 </details>
 <details>
 
-<summary><h2>Autumn 2024</h2></summary>
+<summary style="cursor: pointer; font-weight: bold; font-size: 1.5em; margin-bottom: 10px;">Autumn 2024</summary>
 
 This quarter's pitchbook, which contains the basic project specification can be found <a href="./pitchbooks/2024-autumn-pitchbook.pdf">here</a>.
 
@@ -92,7 +92,7 @@ This quarter's pitchbook, which contains the basic project specification can be 
 </details>
 <details>
 
-<summary><h2>Spring 2024</h2></summary>
+<summary style="cursor: pointer; font-weight: bold; font-size: 1.5em; margin-bottom: 10px;">Spring 2024</summary>
 
 This quarter's pitchbook, which contains the basic project specification can be found <a href="./pitchbooks/2024-spring-pitchbook.pdf">here</a>.
 
@@ -127,7 +127,7 @@ This quarter's pitchbook, which contains the basic project specification can be 
 </details>
 <details>
 
-<summary><h2>Winter 2024</h2></summary>
+<summary style="cursor: pointer; font-weight: bold; font-size: 1.5em; margin-bottom: 10px;">Winter 2024</summary>
 
 This quarter's pitchbook, which contains the basic project specification can be found <a href="./pitchbooks/2024-winter-pitchbook.pdf">here</a>.
 
@@ -167,7 +167,7 @@ This quarter's pitchbook, which contains the basic project specification can be 
 </details>
 <details>
 
-<summary><h2>Autumn 2023</h2></summary>
+<summary style="cursor: pointer; font-weight: bold; font-size: 1.5em; margin-bottom: 10px;">Autumn 2023</summary>
 
 This quarter's pitchbook, which contains the basic project specification can be found <a href="./pitchbooks/2023-autumn-pitchbook.pdf">here</a>.
 
@@ -204,7 +204,7 @@ This quarter's pitchbook, which contains the basic project specification can be 
 </details>
 <details>
 
-<summary><h2>Spring 2023</h2></summary>
+<summary style="cursor: pointer; font-weight: bold; font-size: 1.5em; margin-bottom: 10px;">Spring 2023</summary>
 
 This quarter's pitchbook, which contains the basic project specification can be found <a href="./pitchbooks/2023-spring-pitchbook.pdf">here</a>.
 
@@ -238,7 +238,7 @@ This quarter's pitchbook, which contains the basic project specification can be 
 </details>
 <details>
 
-<summary><h2>Winter 2023</h2></summary>
+<summary style="cursor: pointer; font-weight: bold; font-size: 1.5em; margin-bottom: 10px;">Winter 2023</summary>
 
 This quarter's pitchbook, which contains the basic project specification can be found <a href="./pitchbooks/2023-winter-pitchbook.pdf">here</a>.
 
@@ -276,7 +276,7 @@ This quarter's pitchbook, which contains the basic project specification can be 
 </details>
 <details>
 
-<summary><h2>Autumn 2022</h2></summary>
+<summary style="cursor: pointer; font-weight: bold; font-size: 1.5em; margin-bottom: 10px;">Autumn 2022</summary>
 
 This quarter's pitchbook, which contains the basic project specification can be found <a href="./pitchbooks/2022-autumn-pitchbook.pdf">here</a>.
 
