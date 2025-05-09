@@ -16,11 +16,32 @@ There are two assessments that are done on each repo: `ruff check` is run agains
 
 For TAs, please fill out the following form (one per repository):
 
-| Project Name | | 
-| --- | --- | 
-| TA Name | | 
-| Repo Location (url) | | 
-| Three files graded (full path) | <ul><li>File 1</li><li>File 2</li><li>File 3</li></ul>| 
+<table>
+  <tbody>
+    <tr>
+      <td>Project Name</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TA Name</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Repo Location (url)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Three files graded (full path)</td>
+      <td>
+        <ul>
+          <li>File 1</li>
+          <li>File 2</li>
+          <li>File 3</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 For each of the items below, please fill in the checkmark [X] if it is satisfied. Leave the checkmark blank [ ] if it is not.
 
