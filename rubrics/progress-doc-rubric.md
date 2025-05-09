@@ -13,9 +13,9 @@ Grades are assigned on a scale of 0-5 points individually to each student. In Ca
 
 
 Three points of emphasis:
-   1. Don't fall behind on grading!
-   2. Make sure to establish standards early. Giving everyone a 5 for everything is going to encourage people to slack; make sure that the high performers are rewarded and people who are slacking know that you are aware of their lack-of-effort.
-   3. Make sure to establish a "no new issues raised during the mentor meeting" mindset. Students will use getting stuck as an excuse to not finish their work. Students having issues should raise those issues ahead of time.
+  1. Don't fall behind on grading!
+  2. Make sure to establish standards early. Giving everyone a 5 for everything is going to encourage people to slack; make sure that the high performers are rewarded and people who are slacking know that you are aware of their lack-of-effort.
+  3. Make sure to establish a "no new issues raised during the mentor meeting" mindset. Students will use getting stuck as an excuse to not finish their work. Students having issues should raise those issues ahead of time.
 
 
 Mentors may apply additional grading standards to the rubrics below.
