@@ -17,20 +17,20 @@ The email should also contain a short summary which:
 Finally, make sure _not_ to include additional materials unless they are specified by either the external or internal mentors. For example, do not include the technical submission report or mid-quarter presentation.
 
 ## Grading Rubric
-- [ ] Does the email contain the appropriate contents:
+- Does the email contain the appropriate contents:
     1. A link to final video
     2. The one pager in PDF Form
     3. A link to the github repository
-- [ ] Does the external mentor have access to the github repository?
+- Does the external mentor have access to the github repository?
     - If not, please ask them in the final email what their github ID is so they can be added if they would like.
-- [ ] Are the sharing rules set up appropriately for any information sent via google drive/dropbox/etc?
-- [ ] Are the correct email addresses on the email:
+- Are the sharing rules set up appropriately for any information sent via google drive/dropbox/etc?
+- Are the correct email addresses on the email:
     1. All students
     2. TA and Internal Mentor
     3. All external mentors you have worked with
     4. Clinic Director and Asst. Clinic Director
-- [ ] Is the email written in a professional manner?
-- [ ] Are there grammar or formatting errors in the email?
+- Is the email written in a professional manner?
+- Are there grammar or formatting errors in the email?
 
 
 ### F.A.Q.
