@@ -170,23 +170,24 @@ Coding standards documentation: https://github.com/dsi-clinic/the-clinic/blob/ma
 
 Student message:
 ```
-@here As this is week 8, you should start focusing on closing the current quarter and getting ready for the final deliverables. You can find all information about the final deliverables on canvas and the clinic github repo. Additional information is provided as a preview below, but refer to those locations for full details including the time that submissions are due.
+@here As this is 8th week, you should start focusing on closing the current quarter and getting ready for the final deliverables. You can find all information about the final deliverables on Canvas and the Clinic Github repo. Additional information is provided as a preview below, but refer to those locations for full details including the time that submissions are due.
 There are four final deliverables:
-	(1) Final Video (with 2 drafts)
-		a. Draft #1: Due 5/15
-		b. Draft #2: Due 5/17		
-	(2) Final one-pager (with 1 draft)
-		a. Draft due 5/17
-		b. Final due 5/23
-	(3) Final email to external partner
-		a. Due 5/23
-	(4) Code deliverable
-		b. Due 5/22
+	(1) Video
+		a. Draft #1 due 5/21
+		b. Draft #2 due 5/23
+		c. Final Video due 5/29
+	(2) One-pager
+		a. Draft due 5/23
+		b. Final due 5/29
+	(3) Email to external partner due 5/29
+	(4) Technical Submission due 5/28
+
 Rubrics can be found here:
-	a. Final Video https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-video.md
-	b. Final Technical Cleanup: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-technical-cleanup.md
-	c. One Pager: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/one-pager.md
-	d. Final Email: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-email.md
+	a. Video https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-video.md
+	b. One Pager: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/one-pager.md
+	c. Email: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-email.md
+	d. Technical Submission: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-technical-cleanup.md
+
 Please read the rubrics carefully in order to receive full credit.
 ```
 
