@@ -200,13 +200,12 @@ Apply here: https://dsi-clinic.github.io/the-clinic/#application-information
 
 Mentor/TA message:
 ```
-@here Just a reminder about mentor and TA responsibilities as we head into the final weeks of the quarter.
-
+@here Just a reminder about your responsibilities as we head into the final weeks of the quarter.
 Mentors: Provide written feedback on student drafts within 24 hours of submission. For examples, please see the rubrics below. Students will submit drafts at the following times:
-1. Dec 4 at 1pm (video draft 1)
-2. Dec 6 at 1pm (video draft 2 and one-pager)
+1. 5/21 at 1pm (video draft 1)
+2. 5/23 at 1pm (video draft 2 and one-pager)
 
-TAs: complete the technical rubric checklist for three files in two repositories. You will be assigned two repositories to grade during ninth week. Please fill out a markdown file for each file you grade and email them to me by Dec 12 at 5pm.
+TAs: Complete the technical rubric checklist for three files in two repositories within 24 hours of submission. You will be assigned two repositories to grade during tenth week. Students will submit their repositories on 5/28 at 5pm.
 
 Video rubric: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-video.md
 One-pager rubric: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/one-pager.md
