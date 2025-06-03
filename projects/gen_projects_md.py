@@ -27,6 +27,9 @@ from all_data import (
     WINTER_25_NAME_MAP,
     WINTER_25_PROJECT,
     WINTER_25_STUDENT,
+    SPRING_25_NAME_MAP,
+    SPRING_25_PROJECT,
+    SPRING_25_STUDENT,
 )
 
 PREAMBLE_TEXT = """<!--- This file is generated from a script DO NOT EDIT \
@@ -213,6 +216,7 @@ ALL_PEOPLE = {
     ],
     "Jack Sanderson": ["Jack Sanderson", "https://github.com/jcksanderson"],
     "Polly Ren": ["Polly Ren", "https://github.com/pollyren"],
+    "Cissy Choy": ["Cissy Choy", "https://github.com/chychoy"],
 }
 
 
@@ -374,6 +378,13 @@ if __name__ == "__main__":
     # The creation of this should be automated
     # this is pretty lazy.
     all_quarter_info_list = [
+        {
+            "quarter": "Spring",
+            "year": "2025",
+            "name_map": SPRING_25_NAME_MAP,
+            "student_info_list": SPRING_25_STUDENT,
+            "project_map": SPRING_25_PROJECT,
+        },
         {
             "quarter": "Winter",
             "year": "2025",
