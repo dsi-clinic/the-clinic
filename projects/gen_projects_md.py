@@ -3,6 +3,7 @@
 # 1. automate 400 no-400 for has repo
 
 from all_data import (
+    ALL_PEOPLE,
     AUTUMN_22_NAME_MAP,
     AUTUMN_22_PROJECT,
     AUTUMN_22_STUDENT,
@@ -18,6 +19,9 @@ from all_data import (
     SPRING_24_NAME_MAP,
     SPRING_24_PROJECT,
     SPRING_24_STUDENT,
+    SPRING_25_NAME_MAP,
+    SPRING_25_PROJECT,
+    SPRING_25_STUDENT,
     WINTER_23_NAME_MAP,
     WINTER_23_PROJECT,
     WINTER_23_STUDENT,
@@ -27,9 +31,6 @@ from all_data import (
     WINTER_25_NAME_MAP,
     WINTER_25_PROJECT,
     WINTER_25_STUDENT,
-    SPRING_25_NAME_MAP,
-    SPRING_25_PROJECT,
-    SPRING_25_STUDENT,
 )
 
 PREAMBLE_TEXT = """<!--- This file is generated from a script DO NOT EDIT \
@@ -53,171 +54,6 @@ markdown-link-check-disable -->\
 ---
 """
 
-# Format: Name which links : [Name to display, github link]
-# DON'T USE LinkedIn as it breaks b/c the github runner does not
-# have an account
-
-# This should be for people who appear more than once
-# Specifically TAs and Mentors.
-ALL_PEOPLE = {
-    "Bill Trok": [
-        "Bill Trok",
-        "https://datascience.uchicago.edu/people/bill-trok/",
-    ],
-    "YJ Choe": ["YJ Choe", "https://yjchoe.github.io/"],
-    "Isaac": ["Isaac Mehlhaff", "http://imehlhaff.net/"],
-    "Rituparno Mandal": [
-        "Rituparno Mandal",
-        "https://scholar.google.co.in/citations?user=ObZopO8AAAAJ&hl=en",
-    ],
-    "Chong Liu": ["Chong Liu", "https://chong-l.github.io/"],
-    "Jonatas Marques": ["Jonatas Marques", "https://jonatasamarques.com/"],
-    "Chris": [
-        "Chris Redmond",
-        "https://datascience.uchicago.edu/people/chris-redmond/",
-    ],
-    "Satadisha Saha Bhowmick": [
-        "Satadisha Saha Bhowmick",
-        "https://datascience.uchicago.edu/people/satadisha-saha-bhowmick/",
-    ],
-    "Eddie": [
-        "Ming-Chieh (Eddie) Liu",
-        "https://datascience.uchicago.edu/people/ming-chieh-eddie-liu/",
-    ],
-    "Jessica J": ["Yuxin Ji (Jessica)", "https://github.com/Yuxin-Ji"],
-    "Yiran": ["Yiran Hao", "https://github.com/chiertu"],
-    "Soham": ["Soham Gurjar", "https://github.com/soham239"],
-    "James Turk": ["James Turk", "https://github.com/jamesturk/"],
-    "Nick": ["Nick Ross", "https://www.nickross.site/"],
-    "Launa": ["Launa Greer", "https://github.com/LaunaG"],
-    "Rahim": ["Rahim Rasool", "https://github.com/rahimrasool"],
-    "David U.": [
-        "David Uminsky",
-        "https://cs.uchicago.edu/people/david-uminsky/",
-    ],
-    "Dan N.": [
-        "Dan Nicolae",
-        "https://www.stat.uchicago.edu/~nicolae/",
-    ],
-    "Tim": ["Tim Hannifan", "https://github.com/timhannifan"],
-    "Ali": ["Ali Klemencic", "https://github.com/aliklemencic"],
-    "Christian": ["Christian Jordan", "https://github.com/chrjor"],
-    "Anthony K": ["Anthony Kanellopoulos", "https://github.com/kanello"],
-    "Kenia": ["Kenia Godinez Nogueda", "https://github.com/gnogueda"],
-    "Patricia": [
-        "Patricia Chiril",
-        "https://scholar.google.com/citations?user=AzsyeyIAAAAJ&hl=en",
-    ],
-    "Peter": ["Peter Lu", "https://github.com/peterparity"],
-    "Anna": [
-        "Anna Woodard",
-        "https://scholar.google.com/citations?user=1Gs8kcYAAAAJ&hl=en",
-    ],
-    "Todd": ["Todd Nief", "https://github.com/toddnief"],
-    "Yuetian": ["Yuetian Luo", "https://yuetianluo.github.io/"],
-    "Victor": ["Victor Perez Martin", "https://github.com/vperezmartin"],
-    "UT": ["Utkarsh Tripathi", "https://github.com/redgene"],
-    "Avery": ["Avery Schoen", "https://github.com/averyschoen"],
-    "Sunvid": ["Sunvid Aneja", "https://github.com/sunvidaneja"],
-    "Trevor": ["Trevor Spreadbury", "https://github.com/trevorspreadbury"],
-    "Riley": [
-        "Riley Tucker",
-        "https://scholar.google.com/citations?user=j8TVqU8AAAAJ&hl=en",
-    ],
-    "Jeffrey": [
-        "Jeffrey Negrea",
-        "https://scholar.google.ca/citations?user=woSzLBMAAAAJ&hl=en",
-    ],
-    "Yu-Wei Chen": ["Yu-Wei Chen", "https://github.com/ywchen814"],
-    "Amanda": ["Amanda Kube", "https://github.com/amandakube"],
-    "Evelyn": ["Evelyn Campbell", "https://github.com/campbelle1"],
-    "Utkarsh": ["Utkarsh Tripathi", "https://github.com/redgene"],
-    "Susanna": ["Susanna Lange", "https://github.com/SusannaLange"],
-    "Fei": ["Fei Wang", "https://github.com/chenhuifei01"],
-    "Grant": ["Yuwei (Grant) Chen", "https://github.com/ywchen814"],
-    "Rita": ["Rita Xu", "https://github.com/catalystxu"],
-    "Sarah": ["Sarah Walker", "https://github.com/sarahwalker10"],
-    "Vasileios": [
-        "Vasileios Charisopoulos",
-        "https://scholar.google.com/citations?user=X3V6rM8AAAAJ&hl=el",
-    ],
-    "Ridhi": ["Ridhi Purohit", "https://github.com/ridhi96"],
-    "Cristina": [
-        "Cristina Garbacea",
-        "https://scholar.google.com/citations?user=302eGI0AAAAJ&hl=en",
-    ],
-    "Rishabh": ["Rishabh Shastry", ""],
-    "Satadisha": [
-        "Satadisha Saha Bhowmick",
-        "https://scholar.google.com.hk/citations?user=B-cTWkEAAAAJ",
-    ],
-    "Owen": ["Owen Melina", ""],
-    "Alexander": [
-        "Alexander Bogatskiy",
-        "https://datascience.uchicago.edu/people/alexander-bogatskiy/",
-    ],
-    "Jie Jian": [
-        "Jie Jian",
-        "https://datascience.uchicago.edu/people/jie-jian/",
-    ],
-    "Jonatas": [
-        "Jonatas Marques",
-        "https://datascience.uchicago.edu/people/jonatas-marques/",
-    ],
-    "Liya": [
-        "Liya Ding",
-        "https://datascience.uchicago.edu/people/liya-ding/",
-    ],
-    "Julia": [
-        "Julia Mendelsohn",
-        "https://scholar.google.com/citations?user=-RVWgYUAAAAJ&hl=en",
-    ],
-    "Meghan": [
-        "Meghan Hutch",
-        "https://datascience.uchicago.edu/people/meghan-hutch-she-her/",
-    ],
-    "Seyed": [
-        "Seyed Esmaeili",
-        "https://datascience.uchicago.edu/people/seyed-a-esmaeili/",
-    ],
-    "Susan": [
-        "Susan Paykin",
-        "https://datascience.uchicago.edu/people/susan-paykin/",
-    ],
-    "Kelly": [
-        "Kelly Smalenberger",
-        "https://datascience.uchicago.edu/people/kelly-smalenberger/",
-    ],
-    "Kriti": [
-        "Kriti Sehgal",
-        "https://datascience.uchicago.edu/people/kriti-sehgal/",
-    ],
-    "Jingchao": ["Jingchao Fang", "https://jc-fang.github.io/"],
-    "Ganghua": [
-        "Ganghua Wang",
-        "https://scholar.google.com/citations?user=GpbeNCsAAAAJ&hl=en",
-    ],
-    "Cassie": ["Cassie Tang", "https://github.com/cassietang717"],
-    "Ian": ["Ian Joffe", "https://github.com/IanJoffe"],
-    "Justin": ["Justin Wang", "https://github.com/jiazheng-wang-yes"],
-    "Stella": ["Stella Chen", "https://github.com/stellaaachen"],
-    "Grace": ["Grace Shao", "https://github.com/graceshaoy"],
-    "Yukai": ["Yukai Yang", "https://github.com/YukaiYang0803"],
-    "Austin": ["Austin Steinhart", "https://github.com/asteinhart"],
-    "Francesco Pinto": [
-        "Francesco Pinto",
-        "https://datascience.uchicago.edu/people/francesco-pinto/",
-    ],
-    "Harper": ["Harper Lyu", "https://github.com/dwlyu"],
-    "Harper Schwab": ["Harper Schwab", "https://github.com/hwschwab"],
-    "Gayathri Jayaraman": [
-        "Gayathri Jayaraman",
-        "https://github.com/gayathrij-hub",
-    ],
-    "Jack Sanderson": ["Jack Sanderson", "https://github.com/jcksanderson"],
-    "Polly Ren": ["Polly Ren", "https://github.com/pollyren"],
-    "Cissy Choy": ["Cissy Choy", "https://github.com/chychoy"],
-}
 
 
 def create_link_for_mentor(mentor_info):
