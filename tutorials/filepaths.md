@@ -1,3 +1,7 @@
+---
+title: "File Paths Tutorial"
+---
+
 ## File Systems
 
 A core component of operating systems is the file system. The file system determines the structure that data is stored and the methods used to access data. The most common type of data is a `file`. These can be many things, like PDFs, Jupyter Notebooks, music, images, code, etc. Files are stored in a directory structure. You can think of the file system as storing files in a [tree structure](https://en.wikipedia.org/wiki/Tree_(data_structure)). Each file is a leaf and each directory is a branch node. 

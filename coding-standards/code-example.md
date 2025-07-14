@@ -1,3 +1,7 @@
+---
+title: "Code Example"
+---
+
 ## Code Example
 
 Here is an example of a well-documented script. 

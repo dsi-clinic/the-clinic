@@ -1,3 +1,7 @@
+---
+title: "Speaking Code Tutorial"
+---
+
 # Speaking Code
 
 When we code, we come across a lot of characters that are rarely spoken which can lead to common miscommunication. 

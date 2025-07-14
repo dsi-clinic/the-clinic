@@ -1,3 +1,7 @@
+---
+title: "Data Science Clinic Syllabus"
+---
+
 <h2 align=center>Data Science Clinic Syllabus</h2>
 <h3 align=center>DATA 271/27200, CAPP 30300, PPHA 30581, MACS 30300, MPCS 57300</h3>
 <h3 align=center>Class Time: Tu/Th 5-6:20pm | Location: Eckhart 133</h3>

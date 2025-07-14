@@ -2,6 +2,7 @@ remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-relative-links
   - jekyll-remote-theme
+  - jekyll-sitemap
 relative_links:
   enabled: true
   collections: true
@@ -10,3 +11,13 @@ include:
   - LICENSE.md
 title: University of Chicago Data Science Clinic
 description: Webpage for the University of Chicago Data Science Clinic
+url: "https://dsi-clinic.github.io"
+baseurl: ""
+
+# Sitemap configuration
+sitemap:
+  changefreq: weekly
+  priority: 0.8
+  exclude:
+    - /_site/
+    - .venv/

@@ -55,7 +55,6 @@ markdown-link-check-disable -->\
 """
 
 
-
 def create_link_for_mentor(mentor_info):
     # Takes in a mentor blob (what is in ALL_PEOPLE)
     # and returns a string HTML link

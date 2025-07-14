@@ -1,3 +1,19 @@
+[project]
+name = "the-clinic"
+version = "0.1.0"
+description = "University of Chicago Data Science Clinic website"
+dependencies = [
+    "PyYAML>=6.0",
+    "graphviz>=0.20.1",
+    "networkx>=3.0",
+    "matplotlib>=3.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.1.0",
+]
+
 [tool.ruff]
 line-length = 79
 

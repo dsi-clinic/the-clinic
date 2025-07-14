@@ -1,3 +1,7 @@
+---
+title: "Computer Setup for Data Science Clinic"
+---
+
 # Computer set up for Data Science Clinic
 
 ## Intro

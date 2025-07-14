@@ -1,3 +1,7 @@
+---
+title: "Slurm Tutorial"
+---
+
 # Slurm
 
 This document contains a basic introduction to how to use Slurm on the cluster. This should not be considered a complete reference and if you are looking for additional references take a look at UChicago's Slurm set up can be found at the [UChicago CS Slurm How To Page](https://howto.cs.uchicago.edu/slurm?s[]=slurm). Note that this reference is for a slightly different cluster than the DSI cluster, but nearly all the information should be the same.

@@ -1,3 +1,7 @@
+---
+title: "Week 1 Organization Report Template"
+---
+
 ## Week #1 Report
 To receive full credit for this week’s report, please fill out the following information as a group. 
 

@@ -1,3 +1,7 @@
+---
+title: "Teaching Assistant Job Description"
+---
+
 ## Teaching Assistant Job Description
 
 Teaching assistants for the Data Science Clinic are entrusted with both direct student contact as well as assisting on specific projects. Over the course of the quarter, the TA will work closely with the mentor and clinic administration to ensure the success of their teams' projects.

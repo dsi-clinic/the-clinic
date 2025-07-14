@@ -1,3 +1,7 @@
+---
+title: "Resume and Interview Guidelines"
+---
+
 # How to write and talk about your project
 
 This document contains the general rules and themes around what you are and not allowed to communicate on a resume and in an interview about a previous job or project.

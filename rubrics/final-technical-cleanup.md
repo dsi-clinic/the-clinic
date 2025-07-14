@@ -1,3 +1,7 @@
+---
+title: "Final Technical Cleanup"
+---
+
 ### Final Cleanup and Technical Review
 
 The purpose of this document is to describe the final code clean up steps to be completed at the end of a Data Science Institute project. This checklist should be considered a set of requirements and while it is possible that some of the items below should not be done, there should be a significant and obvious reason why they are not completed. If a project is not following the below that information needs to be sent to the clinic director and assistant director by email.

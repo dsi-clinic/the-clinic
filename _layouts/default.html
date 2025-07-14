@@ -12,13 +12,18 @@
     <![endif]-->
     {% include head-custom.html %}
     <script defer src="https://core-facility-umami.vercel.app/script.js" data-website-id="9bce78c8-91e7-442a-b455-90c5a9906b52"></script>    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
   </head>
   <body>
     <div class="wrapper">
       <header>
         <!-- <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1> -->
         
-        <img src="{{ "/assets/images/clinic.png" | relative_url }}" alt="Image 1" class="sidebar-img">
+        <a href="{{ "/" | relative_url }}" title="Return to Home Page">
+          <img src="{{ "/assets/images/clinic.png" | relative_url }}" alt="University of Chicago Data Science Clinic" class="sidebar-img">
+        </a>
                 
         <p></p>
 

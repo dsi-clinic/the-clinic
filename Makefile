@@ -4,7 +4,7 @@ COMMON_DOCKER_ARGS := -v $(PWD):/site -v github_pages_bundle_cache:/usr/local/bu
 COMMON_PORT := -p 4000:4000
 JEKYLL_CMD := bundle exec jekyll serve --safe --livereload --host 0.0.0.0
 
-.PHONY: build serve trace clean rebuild interactive
+.PHONY: build serve trace clean rebuild interactive sitemap sitemap-check
 
 # Build the Docker image
 build: 
@@ -32,6 +32,8 @@ clean:
 rebuild: clean build serve
 	@echo "Rebuild complete"
 
-# For GitHub Pages emulation - check what plugins/features are available
-plugins:
-	docker run --rm $(COMMON_DOCKER_ARGS) $(IMAGE_NAME) bundle exec github-pages versions
+# Generate site map using Graphviz
+sitemap: build
+	@echo "Generating site map..."
+	docker run --rm $(COMMON_DOCKER_ARGS) $(IMAGE_NAME) uv run python3 generate_sitemap.py --format graphviz --output assets/images/sitemap
+	@echo "✅ Site map generated as assets/images/sitemap.png and assets/images/sitemap.svg"

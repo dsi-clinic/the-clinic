@@ -1,3 +1,7 @@
+---
+title: "Technical Close Out Checklist"
+---
+
 Technical Close out checklist
 
 This checklist should be completed and submitted by the date on canvas

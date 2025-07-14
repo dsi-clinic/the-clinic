@@ -1,3 +1,7 @@
+---
+title: "TA Expectations"
+---
+
 ## TA Responsibilities in the Data Science Clinic
 
 ### Overview

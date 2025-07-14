@@ -1,3 +1,7 @@
+---
+title: "Adding Data Licenses"
+---
+
 # Data Licenses
 
 Software repositories often have licenses that cover the code itself, but often neglect any data stored in the repository. You can use the following cases as a guide for deciding what type of data license to add, if any*.
