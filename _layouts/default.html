@@ -60,5 +60,25 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script>
+      // Add anchor links to all headers with IDs
+      document.addEventListener('DOMContentLoaded', function() {
+          // Find all headers (h1-h6) that have an id attribute
+          const headers = document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]');
+          
+          headers.forEach(function(header) {
+              // Create the anchor link element
+              const anchorLink = document.createElement('a');
+              anchorLink.href = '#' + header.id;
+              anchorLink.className = 'anchor-link';
+              anchorLink.innerHTML = '¶';  // Paragraph symbol
+              anchorLink.setAttribute('aria-label', 'Link to this section');
+              anchorLink.setAttribute('title', 'Link to this section');
+              
+              // Add the anchor link to the header
+              header.appendChild(anchorLink);
+          });
+      });
+    </script>
   </body>
 </html>
