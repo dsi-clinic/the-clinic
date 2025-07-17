@@ -1,3 +1,7 @@
+---
+title: "Teaching Assistant Job Description"
+---
+
 ## Teaching Assistant Job Description
 
 Teaching assistants for the Data Science Clinic are entrusted with both direct student contact as well as assisting on specific projects. Over the course of the quarter, the TA will work closely with the mentor and clinic administration to ensure the success of their teams' projects.
@@ -24,10 +28,10 @@ This is an _in person_ position during the school year. If you are planning on t
 
 TAs are expected to work 10 hours per week during all weeks of the quarter including reading period and final weeks.
 
-### Compensation
+<!-- ### Compensation -->
 
-Total compensation is $4,500 per course.
+<!-- Total compensation is $4,500 per course (as of 2025). -->
 
-### To Apply
+<!-- ### To Apply -->
 
-Submit your resume at https://docs.google.com/forms/d/e/1FAIpQLScX7og7uQ1gKPtspIf4HTiLo9uF0i_RUT5MfZXnJxVCWJLV_w/viewform.
+<!-- Submit your resume at https://docs.google.com/forms/d/e/1FAIpQLScX7og7uQ1gKPtspIf4HTiLo9uF0i_RUT5MfZXnJxVCWJLV_w/viewform. -->

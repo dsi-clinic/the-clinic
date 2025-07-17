@@ -1,3 +1,7 @@
+---
+title: "Jupyter Cluster Tutorial"
+---
+
 Many students prefer to run notebooks on the DSI cluster using VS Code, but there are many times that you might prefer to access a notebook outside of an IDE. This is a guide on how to run a Jupyter notebook on the DSI cluster and access it through a browser on your local machine.
 
 ### Starting a Jupyter Server

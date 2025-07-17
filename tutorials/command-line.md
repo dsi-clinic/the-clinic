@@ -1,3 +1,7 @@
+---
+title: "Unix Command Line Tutorial"
+---
+
 # Unix Command Line
 
 Being comfortable on the command line is an incredibly important skill to have for any data scientist or software engineer. 

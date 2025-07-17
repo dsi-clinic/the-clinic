@@ -1,3 +1,7 @@
+---
+title: "Weekly Planning Document Template"
+---
+
 # Weekly Planning Doc
 
 The planning document should outline each team member's assigned tasks for the next week.

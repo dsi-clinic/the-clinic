@@ -1,3 +1,7 @@
+---
+title: "SSH and GitHub Cluster Connection"
+---
+
 # SSH / Connecting to the Computing Cluster
 
 ## Background

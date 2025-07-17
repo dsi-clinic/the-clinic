@@ -1,3 +1,7 @@
+---
+title: "Code Example"
+---
+
 ## Code Example
 
 Here is an example of a well-documented script. 
@@ -9,7 +13,7 @@ Key things to notice:
 - Most of the function explanation is in the docstring with inline comments added for further clarification
 - The "sample usage" section in the docstring has [doctests](https://docs.python.org/3/library/doctest.html). While we do not require doctests for the clinic this type of testing is standard in practice.
 
-```python
+~~~python
 """Module for performing record linkage on state campaign finance dataset"""
 
 import re
@@ -618,3 +622,5 @@ def splink_dedupe(df: pd.DataFrame, settings: dict, blocking: list) -> pd.DataFr
     deduped_df = deduped_df.drop(columns=["duplicated"])
 
     return deduped_df
+
+~~~

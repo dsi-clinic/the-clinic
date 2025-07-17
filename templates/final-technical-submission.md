@@ -1,3 +1,7 @@
+---
+title: "Final Technical Submission Template"
+---
+
 # Final Technical Submission
 
 This document contains a short form that you need to fill out and submit on canvas. 

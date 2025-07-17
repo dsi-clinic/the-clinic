@@ -1,8 +1,6 @@
 # Weekly Plan
 The following is a general guide to the weekly responsibilities of students and mentors. All specific dates can be found on Canvas.
 
-
-
 <table border="1" cellpadding="5" cellspacing="0">
     <thead>
         <tr>

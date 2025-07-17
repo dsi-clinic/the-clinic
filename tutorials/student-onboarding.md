@@ -1,3 +1,7 @@
+---
+title: "Student Onboarding Guide"
+---
+
 This document contains checklists and resources for onboarding students. There are many general onboarding steps that apply to all students (Clinic students, summer program students, RAs) as well as some more sepecific guidelines for each of these types of student engagements.
 
 ## Technical Setup

@@ -1,3 +1,7 @@
+---
+title: "Clinic Administrative Schedule"
+---
+
 # Clinic Administrative Schedule
 
 The purpose of this document is to centralize resources and create a timeline of administrative tasks involved in running the clinic.

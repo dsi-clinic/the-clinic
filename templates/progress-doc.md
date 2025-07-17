@@ -1,3 +1,7 @@
+---
+title: "Progress Document Template"
+---
+
 # Progress Document Grading Rubric
 
 The progress document should summarize the work that each team member completed in the previous week. 

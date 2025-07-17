@@ -1,3 +1,7 @@
+---
+title: "Using Submitit for Long Jobs"
+---
+
 ## Using Submitit for Long Jobs
 
 For some projects we use [submitit](https://github.com/facebookincubator/submitit) to submit jobs in Python. Another option that is sometimes used is directly writing `sbatch` commands. Each method has its positive and negative aspects. This document details using submitit.

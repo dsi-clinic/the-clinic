@@ -1,3 +1,7 @@
+---
+title: "Email Templates"
+---
+
 ## Email Templates
 
 ### Registration Initial Outreach

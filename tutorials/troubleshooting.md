@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting Common Errors"
+---
+
 # Troubleshooting Common Errors
 
 If you are having an error or issue come up, please search for it here before consulting a mentor or TA. This document contains sections for troubleshooting multiple tools because it can sometimes be hard to diagnose which tool is causing an error. 

@@ -1,3 +1,7 @@
+---
+title: "How to Run a TA Session"
+---
+
 ## How to run a TA Session
 
 This document contains a short checklist that can be used to assist in organizing the TA session.

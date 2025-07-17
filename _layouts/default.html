@@ -12,13 +12,18 @@
     <![endif]-->
     {% include head-custom.html %}
     <script defer src="https://core-facility-umami.vercel.app/script.js" data-website-id="9bce78c8-91e7-442a-b455-90c5a9906b52"></script>    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
   </head>
   <body>
     <div class="wrapper">
       <header>
         <!-- <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1> -->
         
-        <img src="{{ "/assets/images/clinic.png" | relative_url }}" alt="Image 1" class="sidebar-img">
+        <a href="{{ "/" | relative_url }}" title="Return to Home Page">
+          <img src="{{ "/assets/images/clinic.png" | relative_url }}" alt="University of Chicago Data Science Clinic" class="sidebar-img">
+        </a>
                 
         <p></p>
 
@@ -55,5 +60,25 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script>
+      // Add anchor links to all headers with IDs
+      document.addEventListener('DOMContentLoaded', function() {
+          // Find all headers (h1-h6) that have an id attribute
+          const headers = document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]');
+          
+          headers.forEach(function(header) {
+              // Create the anchor link element
+              const anchorLink = document.createElement('a');
+              anchorLink.href = '#' + header.id;
+              anchorLink.className = 'anchor-link';
+              anchorLink.innerHTML = '¶';  // Paragraph symbol
+              anchorLink.setAttribute('aria-label', 'Link to this section');
+              anchorLink.setAttribute('title', 'Link to this section');
+              
+              // Add the anchor link to the header
+              header.appendChild(anchorLink);
+          });
+      });
+    </script>
   </body>
 </html>

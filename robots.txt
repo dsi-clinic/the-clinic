@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nickross.github.io/the-clinic/sitemap.xml 

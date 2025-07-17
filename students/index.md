@@ -1,7 +1,7 @@
 # Information for Current Students
 ## Table of Contents
 <!-- do not change TOC, generated from script -->
-<!-- `npx markdown-toc -i students/current-student-info.md` --> 
+<!-- `npx markdown-toc -i students/index.md` --> 
 
 <!-- toc -->
 

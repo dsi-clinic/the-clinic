@@ -1,3 +1,7 @@
+---
+title: "Mentor Expectations"
+---
+
 ## Mentor Expectations
 
 This document contains a rough outline of the expectations for the mentor. At the highest level there are five core responsibilities:
@@ -26,7 +30,7 @@ This document contains a rough outline of the expectations for the mentor. At th
 
 To keep projects moving we use a set of weekly deliverables: A _progress_ report and a _planning_ report. Each student is given a 0/5 score on each, with full rubrics available [planning rubric](../rubrics/planning-doc-rubric.md) and [progress rubric](../rubrics/progress-doc-rubric.md).
 
-During the final weeks of the quarter there are also deliverables around the video and one-pager. Information on the specific deliverables can be found [here](../students/current-student-info.md#finals-week-deliverables).
+During the final weeks of the quarter there are also deliverables around the video and one-pager. Information on the specific deliverables can be found [here](../students/#finals-week-deliverables).
 
 All grades are submitted via [Canvas](https://courses.uchicago.edu/). You should have received an invite at the start of the quarter.
 

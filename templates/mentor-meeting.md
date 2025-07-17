@@ -1,3 +1,7 @@
+---
+title: "Mentor Meeting Template"
+---
+
 # Mentor Meeting Template
 
 This template represents the minimum information that needs to be collected each time you meet with your external mentors.

@@ -1,3 +1,7 @@
+---
+title: "Web Scraping Guidelines"
+---
+
 # Web Scraping
 
 Data Science clinic projects may require downloading or "scraping" information from a website. Examples may include using Yelp to identify restaurants and businesses in a specific area or downloading prices from Amazon. While downloading publicly available data from a website is not illegal in and of itself, there are some things that need to be considered before starting a project. The purpose of this document is to present a checklist of items to be considered before starting.

@@ -1,3 +1,7 @@
+---
+title: "Removing Sensitive Data from Git"
+---
+
 ## Removing sensitive data from git
 
 **This doc is a WIP and needs to be cleaned up**
