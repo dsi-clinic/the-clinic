@@ -4,7 +4,7 @@ COMMON_DOCKER_ARGS := -v $(PWD):/site -v github_pages_bundle_cache:/usr/local/bu
 COMMON_PORT := -p 4000:4000
 JEKYLL_CMD := bundle exec jekyll serve --safe --livereload --host 0.0.0.0
 
-.PHONY: build serve trace clean rebuild interactive sitemap sitemap-check
+.PHONY: build serve trace clean rebuild interactive sitemap sitemap-check projects
 
 # Build the Docker image
 build: 
@@ -37,3 +37,11 @@ sitemap: build
 	@echo "Generating site map..."
 	docker run --rm $(COMMON_DOCKER_ARGS) $(IMAGE_NAME) uv run python3 generate_sitemap.py --format graphviz --output assets/images/sitemap
 	@echo "✅ Site map generated as assets/images/sitemap.png and assets/images/sitemap.svg"
+
+# Generate projects markdown files
+projects: build
+	@echo "Generating projects markdown files..."
+	docker run --rm $(COMMON_DOCKER_ARGS) $(IMAGE_NAME) bash -c "cd projects && uv run python3 gen_projects_md.py"
+	@echo "Generating quarterly markdown files..."
+	docker run --rm $(COMMON_DOCKER_ARGS) $(IMAGE_NAME) bash -c "cd projects && uv run python3 gen_quarterly_md.py"
+	@echo "✅ Projects and quarterly markdown files generated"

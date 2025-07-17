@@ -9,11 +9,11 @@ The Data Science Clinic is cross-listed in the catalog under the following codes
 This webpage contains everything there is to know about the clinic:
 
 
-- **[Prospective Students Information](prospective-students.md)** - Application information, prerequisites, and answers to other questions about how to get started in the clinic
-- **[Current Students Information](current-students.md)** - Resources and information for enrolled students, including rubrics, guides and the syllabus
-- **[Mentors Resources](mentors.md)** - Information and resources for mentors and TAs with a focus on grading and how to run a project
+- **[Prospective Students Information](prospective-students/)** - Application information, prerequisites, and answers to other questions about how to get started in the clinic
+- **[Current Students Information](students/)** - Resources and information for enrolled students, including rubrics, guides and the syllabus
+- **[Mentors Resources](mentor-ta/)** - Information and resources for mentors and TAs with a focus on grading and how to run a project
 - **[Previous Projects](previous-projects.md)** - Showcase of completed clinic projects
-- **[FAQ](faq.html)** - A list of frequently asked questions. Please start here if you do not find the answer to your question.
+- **[FAQ](faq/)** - A list of frequently asked questions. Please start here if you do not find the answer to your question.
 
 {% include info_session.html %}
 

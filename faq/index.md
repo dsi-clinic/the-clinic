@@ -1,5 +1,35 @@
 # Frequently Asked Questions
 
+## Table of Contents {#toc-table-of-contents}
+
+### General Questions
+- [I am doing an internship/research experience/project in data science, can I waive out of the clinic?](#waive-out-of-clinic)
+- [As a Data Science Major, can I take the clinic over two non-consecutive quarters?](#non-consecutive-quarters)
+- [Is the Data Science Clinic a two quarter class?](#two-quarter-class)
+- [Can I take Clinic twice in one quarter?](#twice-in-one-quarter)
+
+### Prerequisites and Registration
+- [What are the prerequisites?](#prerequisites)
+- [What if I'm missing a prerequisite?](#missing-prerequisite)
+- [Should I pre-register for the course?](#pre-register)
+- [How do I register once I've been admitted?](#register-after-admission)
+- [Does the Clinic qualify as an elective for my program?](#elective-qualification)
+
+### Application Process
+- [What if I miss the application deadline?](#miss-application-deadline)
+- [What if I can't attend the information session?](#cant-attend-info-session)
+- [When will I be notified of my placement?](#placement-notification)
+- [Will I be notified if I am not placed?](#not-placed-notification)
+- [I am a Master's student and I was not selected, can I get a specific reason for why?](#masters-rejection-reason)
+
+### Scheduling and Attendance
+- [What if I have time conflicts with the scheduled time?](#time-conflicts)
+
+### Contact Information
+- [Who can I contact about the Data Science Clinic?](#contact)
+
+---
+
 ## General Questions {#general-questions}
 
 ### I am doing an internship/research experience/project in data science, can I waive out of the clinic? {#waive-out-of-clinic}

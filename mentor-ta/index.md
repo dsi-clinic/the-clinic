@@ -3,20 +3,23 @@
 Welcome mentors! This page contains information and resources for mentors working with Data Science Clinic teams.
 
 ## Mentor Information
-Information and best practices for mentors and TAs can be found [here](./mentor-ta/mentor-ta-info.md).
+Information and best practices for mentors and TAs can be found [here](./mentor-ta-info.md).
 
 ## Key Resources
-- [How to Run a Meeting](./mentor-ta/how-to-run-a-meeting.md)
-- [How to Run a TA Session](./mentor-ta/how-to-run-a-ta-session.md)
-- [Mentor Expectations](./mentor-ta/mentor-expectations.md)
-- [TA Expectations](./mentor-ta/ta-expectations.md)
+- [How to Run a Meeting](./how-to-run-a-meeting.md)
+- [How to Run a TA Session](./how-to-run-a-ta-session.md)
+- [Mentor Expectations](./mentor-expectations.md)
+- [TA Expectations](./ta-expectations.md)
+
+## Grading and Evaluation
+- [Rubrics](../rubrics/) - All grading rubrics for student deliverables
 
 ## Meeting Templates
-- [Mentor Meeting Template](./templates/mentor-meeting.md)
+- [Mentor Meeting Template](../templates/mentor-meeting.md)
 
 ## Project Management
-- [Student Onboarding](./tutorials/student-onboarding.md)
-- [Troubleshooting Guide](./tutorials/troubleshooting.md)
+- [Student Onboarding](../tutorials/student-onboarding.md)
+- [Troubleshooting Guide](../tutorials/troubleshooting.md)
 
 ## Course Structure
 - **Week 1**: Orientation and introduction activities
