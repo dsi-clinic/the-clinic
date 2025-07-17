@@ -278,7 +278,7 @@ if __name__ == "__main__":
         },
     ]
 
-    with open("projects.md", "w") as f_handle:
+    with open("index.md", "w") as f_handle:
         f_handle.write(PREAMBLE_TEXT)
         f_handle.write("\n")
 
