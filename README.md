@@ -1,8 +1,3 @@
----
-layout: default
-title: Welcome to the Data Science Clinic
----
-
 # Welcome to the Data Science Clinic!
 
 The Clinic is an experiential project-based course where students work in teams as data scientists with real-world clients under the supervision of instructors. Students will be tasked with producing key deliverables such as data analysis, open source software, as well as final client presentations and reports.
