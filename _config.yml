@@ -12,7 +12,7 @@ include:
 title: University of Chicago Data Science Clinic
 description: Webpage for the University of Chicago Data Science Clinic
 url: "https://dsi-clinic.github.io"
-baseurl: ""
+baseurl: "/the-clinic"
 
 
 # Sitemap configuration
