@@ -16,4 +16,3 @@ end
 
 # Required for Ruby 3.0+
 gem 'webrick', '~> 1.8.1'
-gem 'ffi', '1.17.2'
