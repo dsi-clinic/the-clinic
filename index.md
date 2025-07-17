@@ -20,6 +20,4 @@ This webpage contains everything there is to know about the clinic:
 - **[Previous Projects](previous-projects.md)** - Showcase of completed clinic projects
 - **[FAQ](faq/)** - A list of frequently asked questions. Please start here if you do not find the answer to your question.
 
-{% include info_session.html %}
-
-
+{% include info_session.html %} 
