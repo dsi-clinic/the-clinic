@@ -11,8 +11,8 @@ include:
   - LICENSE.md
 title: University of Chicago Data Science Clinic
 description: Webpage for the University of Chicago Data Science Clinic
-url: "https://dsi-clinic.github.io"
-baseurl: "/the-clinic"
+url: "https://clinic.ds.uchicago.edu"
+baseurl: ""
 
 
 # Sitemap configuration

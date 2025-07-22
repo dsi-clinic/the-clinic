@@ -1,159 +1,257 @@
-digraph sitemap {
-    node [shape=box, style=filled];
-    "README.md" [label="Welcome to the Data Science Clinic!\nREADME.md", fillcolor="#e1f5fe"];
-    "coding-standards/code-example.md" [label="Code Example\ncoding-standards/code-example.md", fillcolor="#f3e5f5"];
-    "coding-standards/coding-standards.md" [label="Coding standards for the Data Science Clinic\ncoding-standards/coding-standards.md", fillcolor="#f3e5f5"];
-    "faq/index.md" [label="Frequently Asked Questions\nfaq/index.md", fillcolor="#f3e5f5"];
-    "projects/index.md" [label="Untitled\nprojects/index.md", fillcolor="#f3e5f5"];
-    "projects/past/2023_Spring_projects.md" [label="Spring 2023 Projects\nprojects/past/2023_Spring_projects.md", fillcolor="#f3e5f5"];
-    "projects/past/2022_Autumn_projects.md" [label="Autumn 2022 Projects\nprojects/past/2022_Autumn_projects.md", fillcolor="#f3e5f5"];
-    "projects/past/2024_Winter_projects.md" [label="Winter 2024 Projects\nprojects/past/2024_Winter_projects.md", fillcolor="#f3e5f5"];
-    "projects/past/2024_Autumn_projects.md" [label="Autumn 2024 Projects\nprojects/past/2024_Autumn_projects.md", fillcolor="#f3e5f5"];
-    "projects/past/2025_Spring_projects.md" [label="Spring 2025 Projects\nprojects/past/2025_Spring_projects.md", fillcolor="#f3e5f5"];
-    "projects/past/2025_Winter_projects.md" [label="Winter 2025 Projects\nprojects/past/2025_Winter_projects.md", fillcolor="#f3e5f5"];
-    "projects/past/2024_Spring_projects.md" [label="Spring 2024 Projects\nprojects/past/2024_Spring_projects.md", fillcolor="#f3e5f5"];
-    "projects/past/2023_Autumn_projects.md" [label="Autumn 2023 Projects\nprojects/past/2023_Autumn_projects.md", fillcolor="#f3e5f5"];
-    "projects/past/2023_Winter_projects.md" [label="Winter 2023 Projects\nprojects/past/2023_Winter_projects.md", fillcolor="#f3e5f5"];
-    "admin/schedule.md" [label="Clinic Administrative Schedule\nadmin/schedule.md", fillcolor="#f3e5f5"];
-    "admin/email_templates.md" [label="Email Templates\nadmin/email_templates.md", fillcolor="#f3e5f5"];
-    "admin/TA_job_description.md" [label="Teaching Assistant Job Description\nadmin/TA_job_description.md", fillcolor="#f3e5f5"];
-    "prospective-students/index.md" [label="Prospective Students\nprospective-students/index.md", fillcolor="#f3e5f5"];
-    "syllabus/weekly-plan.md" [label="Weekly Plan\nsyllabus/weekly-plan.md", fillcolor="#f3e5f5"];
-    "syllabus/dates.md" [label="Important Dates\nsyllabus/dates.md", fillcolor="#f3e5f5"];
-    "syllabus/syllabus.md" [label="Data Science Clinic Syllabus\nsyllabus/syllabus.md", fillcolor="#f3e5f5"];
-    "students/index.md" [label="Information for Current Students\nstudents/index.md", fillcolor="#f3e5f5"];
-    "rubrics/planning-doc-rubric.md" [label="Planning Document Grading Rubric\nrubrics/planning-doc-rubric.md", fillcolor="#f3e5f5"];
-    "rubrics/one-pager.md" [label="One Pager Grading Rubric\nrubrics/one-pager.md", fillcolor="#f3e5f5"];
-    "rubrics/final-video.md" [label="Final Video Presentation Grading Rubric\nrubrics/final-video.md", fillcolor="#f3e5f5"];
-    "rubrics/index.md" [label="Rubrics\nrubrics/index.md", fillcolor="#f3e5f5"];
-    "rubrics/progress-doc-rubric.md" [label="Progress Document Grading Rubric\nrubrics/progress-doc-rubric.md", fillcolor="#f3e5f5"];
-    "rubrics/final-email.md" [label="Final Email\nrubrics/final-email.md", fillcolor="#f3e5f5"];
-    "rubrics/final-technical-cleanup.md" [label="Final Technical Cleanup\nrubrics/final-technical-cleanup.md", fillcolor="#f3e5f5"];
-    "rubrics/mid-quarter-presentation-rubric.md" [label="Mid-Quarter Presentation Grading Rubric\nrubrics/mid-quarter-presentation-rubric.md", fillcolor="#f3e5f5"];
-    "mentor-ta/mentor-expectations.md" [label="Mentor Expectations\nmentor-ta/mentor-expectations.md", fillcolor="#f3e5f5"];
-    "mentor-ta/how-to-run-a-ta-session.md" [label="How to Run a TA Session\nmentor-ta/how-to-run-a-ta-session.md", fillcolor="#f3e5f5"];
-    "mentor-ta/index.md" [label="Mentors\nmentor-ta/index.md", fillcolor="#f3e5f5"];
-    "mentor-ta/mentor-ta-info.md" [label="Mentor and TA Information\nmentor-ta/mentor-ta-info.md", fillcolor="#f3e5f5"];
-    "mentor-ta/ta-expectations.md" [label="TA Expectations\nmentor-ta/ta-expectations.md", fillcolor="#f3e5f5"];
-    "mentor-ta/how-to-run-a-meeting.md" [label="How to Run an Update Meeting\nmentor-ta/how-to-run-a-meeting.md", fillcolor="#f3e5f5"];
-    "templates/week-1-org-report.md" [label="Week 1 Organization Report Template\ntemplates/week-1-org-report.md", fillcolor="#f3e5f5"];
-    "templates/mentor-meeting.md" [label="Mentor Meeting Template\ntemplates/mentor-meeting.md", fillcolor="#f3e5f5"];
-    "templates/planning-doc.md" [label="Weekly Planning Document Template\ntemplates/planning-doc.md", fillcolor="#f3e5f5"];
-    "templates/progress-doc.md" [label="Progress Document Template\ntemplates/progress-doc.md", fillcolor="#f3e5f5"];
-    "templates/final-technical-submission.md" [label="Final Technical Submission Template\ntemplates/final-technical-submission.md", fillcolor="#f3e5f5"];
-    "tutorials/web_scraping.md" [label="Web Scraping Guidelines\ntutorials/web_scraping.md", fillcolor="#f3e5f5"];
-    "tutorials/jupyter-cluster.md" [label="Jupyter Cluster Tutorial\ntutorials/jupyter-cluster.md", fillcolor="#f3e5f5"];
-    "tutorials/resume-interviews.md" [label="Resume and Interview Guidelines\ntutorials/resume-interviews.md", fillcolor="#f3e5f5"];
-    "tutorials/troubleshooting.md" [label="Troubleshooting Common Errors\ntutorials/troubleshooting.md", fillcolor="#f3e5f5"];
-    "tutorials/X11.md" [label="X11 Forwarding Tutorial\ntutorials/X11.md", fillcolor="#f3e5f5"];
-    "tutorials/filepaths.md" [label="File Paths Tutorial\ntutorials/filepaths.md", fillcolor="#f3e5f5"];
-    "tutorials/submit-it.md" [label="Using Submitit for Long Jobs\ntutorials/submit-it.md", fillcolor="#f3e5f5"];
-    "tutorials/slurm.md" [label="Slurm Tutorial\ntutorials/slurm.md", fillcolor="#f3e5f5"];
-    "tutorials/command-line.md" [label="Unix Command Line Tutorial\ntutorials/command-line.md", fillcolor="#f3e5f5"];
-    "tutorials/clinic-computer-setup.md" [label="Computer Setup for Data Science Clinic\ntutorials/clinic-computer-setup.md", fillcolor="#f3e5f5"];
-    "tutorials/geopandas-dockerfile.md" [label="Geopandas and Docker\ntutorials/geopandas-dockerfile.md", fillcolor="#f3e5f5"];
-    "tutorials/remove_data_git.md" [label="Removing Sensitive Data from Git\ntutorials/remove_data_git.md", fillcolor="#f3e5f5"];
-    "tutorials/ssh_github_cluster.md" [label="SSH and GitHub Cluster Connection\ntutorials/ssh_github_cluster.md", fillcolor="#f3e5f5"];
-    "tutorials/student-onboarding.md" [label="Student Onboarding Guide\ntutorials/student-onboarding.md", fillcolor="#f3e5f5"];
-    "tutorials/Docker.md" [label="Docker Tutorial\ntutorials/Docker.md", fillcolor="#f3e5f5"];
-    "tutorials/adding-data-licenses.md" [label="Adding Data Licenses\ntutorials/adding-data-licenses.md", fillcolor="#f3e5f5"];
-    "tutorials/podman.md" [label="Podman Tutorial\ntutorials/podman.md", fillcolor="#f3e5f5"];
-    "tutorials/WSL.md" [label="WSL Tutorial\ntutorials/WSL.md", fillcolor="#f3e5f5"];
-    "tutorials/ssh-keys.md" [label="Creating SSH and Using SSH Keys\ntutorials/ssh-keys.md", fillcolor="#f3e5f5"];
-    "tutorials/large_file_storage.md" [label="Large File Storage\ntutorials/large_file_storage.md", fillcolor="#f3e5f5"];
-    "tutorials/speaking-code.md" [label="Speaking Code Tutorial\ntutorials/speaking-code.md", fillcolor="#f3e5f5"];
-    "tutorials/close-out-wip.md" [label="Technical Close Out Checklist\ntutorials/close-out-wip.md", fillcolor="#f3e5f5"];
-    "README.md" -> "prospective-students/index.md";
-    "README.md" -> "students/index.md";
-    "README.md" -> "mentor-ta/index.md";
-    "README.md" -> "projects/index.md";
-    "README.md" -> "faq/index.md";
-    "coding-standards/coding-standards.md" -> "coding-standards/code-example.md";
-    "admin/schedule.md" -> "admin/email_templates.md";
-    "admin/schedule.md" -> "admin/TA_job_description.md";
-    "admin/schedule.md" -> "admin/TA_job_description.md";
-    "admin/schedule.md" -> "admin/email_templates.md";
-    "prospective-students/index.md" -> "faq/index.md";
-    "prospective-students/index.md" -> "faq/index.md";
-    "syllabus/syllabus.md" -> "syllabus/dates.md";
-    "students/index.md" -> "syllabus/syllabus.md";
-    "students/index.md" -> "syllabus/weekly-plan.md";
-    "students/index.md" -> "templates/planning-doc.md";
-    "students/index.md" -> "rubrics/planning-doc-rubric.md";
-    "students/index.md" -> "templates/progress-doc.md";
-    "students/index.md" -> "rubrics/progress-doc-rubric.md";
-    "students/index.md" -> "templates/week-1-org-report.md";
-    "students/index.md" -> "templates/mentor-meeting.md";
-    "students/index.md" -> "rubrics/mid-quarter-presentation-rubric.md";
-    "students/index.md" -> "coding-standards/coding-standards.md";
-    "students/index.md" -> "templates/final-technical-submission.md";
-    "students/index.md" -> "rubrics/final-technical-cleanup.md";
-    "students/index.md" -> "rubrics/one-pager.md";
-    "students/index.md" -> "rubrics/final-video.md";
-    "students/index.md" -> "rubrics/final-email.md";
-    "students/index.md" -> "coding-standards/coding-standards.md";
-    "students/index.md" -> "tutorials/clinic-computer-setup.md";
-    "students/index.md" -> "tutorials/ssh_github_cluster.md";
-    "students/index.md" -> "tutorials/slurm.md";
-    "students/index.md" -> "tutorials/submit-it.md";
-    "students/index.md" -> "coding-standards/code-example.md";
-    "students/index.md" -> "tutorials/Docker.md";
-    "students/index.md" -> "tutorials/filepaths.md";
-    "students/index.md" -> "tutorials/geopandas-dockerfile.md";
-    "students/index.md" -> "tutorials/podman.md";
-    "students/index.md" -> "tutorials/speaking-code.md";
-    "students/index.md" -> "tutorials/WSL.md";
-    "students/index.md" -> "tutorials/web_scraping.md";
-    "students/index.md" -> "tutorials/X11.md";
-    "students/index.md" -> "tutorials/resume-interviews.md";
-    "students/index.md" -> "tutorials/remove_data_git.md";
-    "students/index.md" -> "tutorials/large_file_storage.md";
-    "rubrics/index.md" -> "rubrics/planning-doc-rubric.md";
-    "rubrics/index.md" -> "rubrics/progress-doc-rubric.md";
-    "rubrics/index.md" -> "rubrics/mid-quarter-presentation-rubric.md";
-    "rubrics/index.md" -> "rubrics/one-pager.md";
-    "rubrics/index.md" -> "rubrics/final-video.md";
-    "rubrics/index.md" -> "rubrics/final-email.md";
-    "rubrics/index.md" -> "rubrics/final-technical-cleanup.md";
-    "rubrics/final-technical-cleanup.md" -> "coding-standards/coding-standards.md";
-    "mentor-ta/mentor-expectations.md" -> "rubrics/planning-doc-rubric.md";
-    "mentor-ta/mentor-expectations.md" -> "rubrics/progress-doc-rubric.md";
-    "mentor-ta/mentor-expectations.md" -> "students/index.md";
-    "mentor-ta/how-to-run-a-ta-session.md" -> "syllabus/weekly-plan.md";
-    "mentor-ta/index.md" -> "mentor-ta/mentor-ta-info.md";
-    "mentor-ta/index.md" -> "mentor-ta/how-to-run-a-meeting.md";
-    "mentor-ta/index.md" -> "mentor-ta/how-to-run-a-ta-session.md";
-    "mentor-ta/index.md" -> "mentor-ta/mentor-expectations.md";
-    "mentor-ta/index.md" -> "mentor-ta/ta-expectations.md";
-    "mentor-ta/index.md" -> "rubrics/index.md";
-    "mentor-ta/index.md" -> "templates/mentor-meeting.md";
-    "mentor-ta/index.md" -> "tutorials/student-onboarding.md";
-    "mentor-ta/index.md" -> "tutorials/troubleshooting.md";
-    "mentor-ta/mentor-ta-info.md" -> "mentor-ta/mentor-expectations.md";
-    "mentor-ta/mentor-ta-info.md" -> "mentor-ta/ta-expectations.md";
-    "mentor-ta/mentor-ta-info.md" -> "syllabus/weekly-plan.md";
-    "mentor-ta/mentor-ta-info.md" -> "mentor-ta/how-to-run-a-meeting.md";
-    "mentor-ta/mentor-ta-info.md" -> "mentor-ta/how-to-run-a-ta-session.md";
-    "mentor-ta/mentor-ta-info.md" -> "rubrics/progress-doc-rubric.md";
-    "mentor-ta/mentor-ta-info.md" -> "rubrics/planning-doc-rubric.md";
-    "mentor-ta/mentor-ta-info.md" -> "rubrics/final-email.md";
-    "mentor-ta/mentor-ta-info.md" -> "rubrics/mid-quarter-presentation-rubric.md";
-    "mentor-ta/mentor-ta-info.md" -> "rubrics/final-video.md";
-    "mentor-ta/mentor-ta-info.md" -> "rubrics/one-pager.md";
-    "mentor-ta/mentor-ta-info.md" -> "rubrics/final-technical-cleanup.md";
-    "mentor-ta/ta-expectations.md" -> "rubrics/final-technical-cleanup.md";
-    "mentor-ta/ta-expectations.md" -> "rubrics/final-technical-cleanup.md";
-    "templates/final-technical-submission.md" -> "coding-standards/coding-standards.md";
-    "tutorials/troubleshooting.md" -> "tutorials/ssh_github_cluster.md";
-    "tutorials/slurm.md" -> "tutorials/command-line.md";
-    "tutorials/slurm.md" -> "tutorials/ssh_github_cluster.md";
-    "tutorials/slurm.md" -> "tutorials/ssh_github_cluster.md";
-    "tutorials/slurm.md" -> "tutorials/troubleshooting.md";
-    "tutorials/clinic-computer-setup.md" -> "tutorials/troubleshooting.md";
-    "tutorials/clinic-computer-setup.md" -> "tutorials/ssh_github_cluster.md";
-    "tutorials/clinic-computer-setup.md" -> "tutorials/ssh_github_cluster.md";
-    "tutorials/ssh_github_cluster.md" -> "tutorials/troubleshooting.md";
-    "tutorials/ssh_github_cluster.md" -> "tutorials/slurm.md";
-    "tutorials/ssh_github_cluster.md" -> "tutorials/troubleshooting.md";
-    "tutorials/ssh_github_cluster.md" -> "tutorials/slurm.md";
+// Jekyll Site Map
+digraph {
+	dpi=300 rankdir=TB size="12,16"
+	node [fontname=Arial fontsize=10 shape=box style=filled]
+	"README.md" [label="Welcome to the Data Science Clinic!
+(README.md)" color="#01579b" fillcolor="#e1f5fe" penwidth=3]
+	"coding-standards/code-example.md" [label="Code Example
+(code-example.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"coding-standards/coding-standards.md" [label="Coding standards for the Data ...
+(coding-standards.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"faq/index.md" [label="Frequently Asked Questions
+(index.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"projects/index.md" [label="Untitled
+(index.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"projects/past/2023_Spring_projects.md" [label="Spring 2023 Projects
+(2023_Spring_projects.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"projects/past/2022_Autumn_projects.md" [label="Autumn 2022 Projects
+(2022_Autumn_projects.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"projects/past/2024_Winter_projects.md" [label="Winter 2024 Projects
+(2024_Winter_projects.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"projects/past/2024_Autumn_projects.md" [label="Autumn 2024 Projects
+(2024_Autumn_projects.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"projects/past/2025_Spring_projects.md" [label="Spring 2025 Projects
+(2025_Spring_projects.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"projects/past/2025_Winter_projects.md" [label="Winter 2025 Projects
+(2025_Winter_projects.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"projects/past/2024_Spring_projects.md" [label="Spring 2024 Projects
+(2024_Spring_projects.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"projects/past/2023_Autumn_projects.md" [label="Autumn 2023 Projects
+(2023_Autumn_projects.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"projects/past/2023_Winter_projects.md" [label="Winter 2023 Projects
+(2023_Winter_projects.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"admin/schedule.md" [label="Clinic Administrative Schedule
+(schedule.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"admin/email_templates.md" [label="Email Templates
+(email_templates.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"admin/TA_job_description.md" [label="Teaching Assistant Job Descrip...
+(TA_job_description.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"prospective-students/index.md" [label="Prospective Students
+(index.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"syllabus/weekly-plan.md" [label="Weekly Plan
+(weekly-plan.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"syllabus/dates.md" [label="Important Dates
+(dates.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"syllabus/syllabus.md" [label="Data Science Clinic Syllabus
+(syllabus.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"students/index.md" [label="Information for Current Studen...
+(index.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"rubrics/planning-doc-rubric.md" [label="Planning Document Grading Rubr...
+(planning-doc-rubric.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"rubrics/one-pager.md" [label="One Pager Grading Rubric
+(one-pager.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"rubrics/final-video.md" [label="Final Video Presentation Gradi...
+(final-video.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"rubrics/index.md" [label="Rubrics
+(index.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"rubrics/progress-doc-rubric.md" [label="Progress Document Grading Rubr...
+(progress-doc-rubric.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"rubrics/final-email.md" [label="Final Email
+(final-email.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"rubrics/final-technical-cleanup.md" [label="Final Technical Cleanup
+(final-technical-cleanup.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"rubrics/mid-quarter-presentation-rubric.md" [label="Mid-Quarter Presentation Gradi...
+(mid-quarter-presentation-rubric.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"mentor-ta/mentor-expectations.md" [label="Mentor Expectations
+(mentor-expectations.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"mentor-ta/how-to-run-a-ta-session.md" [label="How to Run a TA Session
+(how-to-run-a-ta-session.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"mentor-ta/index.md" [label="Mentors
+(index.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"mentor-ta/mentor-ta-info.md" [label="Mentor and TA Information
+(mentor-ta-info.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"mentor-ta/ta-expectations.md" [label="TA Expectations
+(ta-expectations.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"mentor-ta/how-to-run-a-meeting.md" [label="How to Run an Update Meeting
+(how-to-run-a-meeting.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"templates/week-1-org-report.md" [label="Week 1 Organization Report Tem...
+(week-1-org-report.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"templates/mentor-meeting.md" [label="Mentor Meeting Template
+(mentor-meeting.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"templates/planning-doc.md" [label="Weekly Planning Document Templ...
+(planning-doc.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"templates/progress-doc.md" [label="Progress Document Template
+(progress-doc.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"templates/final-technical-submission.md" [label="Final Technical Submission Tem...
+(final-technical-submission.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/web_scraping.md" [label="Web Scraping Guidelines
+(web_scraping.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/jupyter-cluster.md" [label="Jupyter Cluster Tutorial
+(jupyter-cluster.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/resume-interviews.md" [label="Resume and Interview Guideline...
+(resume-interviews.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/troubleshooting.md" [label="Troubleshooting Common Errors
+(troubleshooting.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/X11.md" [label="X11 Forwarding Tutorial
+(X11.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/filepaths.md" [label="File Paths Tutorial
+(filepaths.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/submit-it.md" [label="Using Submitit for Long Jobs
+(submit-it.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/slurm.md" [label="Slurm Tutorial
+(slurm.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/command-line.md" [label="Unix Command Line Tutorial
+(command-line.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/clinic-computer-setup.md" [label="Computer Setup for Data Scienc...
+(clinic-computer-setup.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/geopandas-dockerfile.md" [label="Geopandas and Docker
+(geopandas-dockerfile.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/remove_data_git.md" [label="Removing Sensitive Data from G...
+(remove_data_git.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/ssh_github_cluster.md" [label="SSH and GitHub Cluster Connect...
+(ssh_github_cluster.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/student-onboarding.md" [label="Student Onboarding Guide
+(student-onboarding.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/Docker.md" [label="Docker Tutorial
+(Docker.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/adding-data-licenses.md" [label="Adding Data Licenses
+(adding-data-licenses.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/podman.md" [label="Podman Tutorial
+(podman.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/WSL.md" [label="WSL Tutorial
+(WSL.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/ssh-keys.md" [label="Creating SSH and Using SSH Key...
+(ssh-keys.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/large_file_storage.md" [label="Large File Storage
+(large_file_storage.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/speaking-code.md" [label="Speaking Code Tutorial
+(speaking-code.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"tutorials/close-out-wip.md" [label="Technical Close Out Checklist
+(close-out-wip.md)" color="#1b5e20" fillcolor="#e8f5e8" penwidth=1]
+	"README.md" -> "prospective-students/index.md" [color=blue penwidth=2]
+	"README.md" -> "students/index.md" [color=blue penwidth=2]
+	"README.md" -> "mentor-ta/index.md" [color=blue penwidth=2]
+	"README.md" -> "projects/index.md" [color=blue penwidth=2]
+	"README.md" -> "faq/index.md" [color=blue penwidth=2]
+	"coding-standards/coding-standards.md" -> "coding-standards/code-example.md" [color=gray penwidth=1]
+	"admin/schedule.md" -> "admin/email_templates.md" [color=gray penwidth=1]
+	"admin/schedule.md" -> "admin/TA_job_description.md" [color=gray penwidth=1]
+	"admin/schedule.md" -> "admin/TA_job_description.md" [color=gray penwidth=1]
+	"admin/schedule.md" -> "admin/email_templates.md" [color=gray penwidth=1]
+	"prospective-students/index.md" -> "faq/index.md" [color=gray penwidth=1]
+	"prospective-students/index.md" -> "faq/index.md" [color=gray penwidth=1]
+	"syllabus/syllabus.md" -> "syllabus/dates.md" [color=gray penwidth=1]
+	"students/index.md" -> "syllabus/syllabus.md" [color=gray penwidth=1]
+	"students/index.md" -> "syllabus/weekly-plan.md" [color=gray penwidth=1]
+	"students/index.md" -> "templates/planning-doc.md" [color=gray penwidth=1]
+	"students/index.md" -> "rubrics/planning-doc-rubric.md" [color=gray penwidth=1]
+	"students/index.md" -> "templates/progress-doc.md" [color=gray penwidth=1]
+	"students/index.md" -> "rubrics/progress-doc-rubric.md" [color=gray penwidth=1]
+	"students/index.md" -> "templates/week-1-org-report.md" [color=gray penwidth=1]
+	"students/index.md" -> "templates/mentor-meeting.md" [color=gray penwidth=1]
+	"students/index.md" -> "rubrics/mid-quarter-presentation-rubric.md" [color=gray penwidth=1]
+	"students/index.md" -> "coding-standards/coding-standards.md" [color=gray penwidth=1]
+	"students/index.md" -> "templates/final-technical-submission.md" [color=gray penwidth=1]
+	"students/index.md" -> "rubrics/final-technical-cleanup.md" [color=gray penwidth=1]
+	"students/index.md" -> "rubrics/one-pager.md" [color=gray penwidth=1]
+	"students/index.md" -> "rubrics/final-video.md" [color=gray penwidth=1]
+	"students/index.md" -> "rubrics/final-email.md" [color=gray penwidth=1]
+	"students/index.md" -> "coding-standards/coding-standards.md" [color=gray penwidth=1]
+	"students/index.md" -> "tutorials/clinic-computer-setup.md" [color=gray penwidth=1]
+	"students/index.md" -> "tutorials/ssh_github_cluster.md" [color=gray penwidth=1]
+	"students/index.md" -> "tutorials/slurm.md" [color=gray penwidth=1]
+	"students/index.md" -> "tutorials/submit-it.md" [color=gray penwidth=1]
+	"students/index.md" -> "coding-standards/code-example.md" [color=gray penwidth=1]
+	"students/index.md" -> "tutorials/Docker.md" [color=gray penwidth=1]
+	"students/index.md" -> "tutorials/filepaths.md" [color=gray penwidth=1]
+	"students/index.md" -> "tutorials/geopandas-dockerfile.md" [color=gray penwidth=1]
+	"students/index.md" -> "tutorials/podman.md" [color=gray penwidth=1]
+	"students/index.md" -> "tutorials/speaking-code.md" [color=gray penwidth=1]
+	"students/index.md" -> "tutorials/WSL.md" [color=gray penwidth=1]
+	"students/index.md" -> "tutorials/web_scraping.md" [color=gray penwidth=1]
+	"students/index.md" -> "tutorials/X11.md" [color=gray penwidth=1]
+	"students/index.md" -> "tutorials/resume-interviews.md" [color=gray penwidth=1]
+	"students/index.md" -> "tutorials/remove_data_git.md" [color=gray penwidth=1]
+	"students/index.md" -> "tutorials/large_file_storage.md" [color=gray penwidth=1]
+	"rubrics/index.md" -> "rubrics/planning-doc-rubric.md" [color=gray penwidth=1]
+	"rubrics/index.md" -> "rubrics/progress-doc-rubric.md" [color=gray penwidth=1]
+	"rubrics/index.md" -> "rubrics/mid-quarter-presentation-rubric.md" [color=gray penwidth=1]
+	"rubrics/index.md" -> "rubrics/one-pager.md" [color=gray penwidth=1]
+	"rubrics/index.md" -> "rubrics/final-video.md" [color=gray penwidth=1]
+	"rubrics/index.md" -> "rubrics/final-email.md" [color=gray penwidth=1]
+	"rubrics/index.md" -> "rubrics/final-technical-cleanup.md" [color=gray penwidth=1]
+	"rubrics/final-technical-cleanup.md" -> "coding-standards/coding-standards.md" [color=gray penwidth=1]
+	"mentor-ta/mentor-expectations.md" -> "rubrics/planning-doc-rubric.md" [color=gray penwidth=1]
+	"mentor-ta/mentor-expectations.md" -> "rubrics/progress-doc-rubric.md" [color=gray penwidth=1]
+	"mentor-ta/mentor-expectations.md" -> "students/index.md" [color=gray penwidth=1]
+	"mentor-ta/how-to-run-a-ta-session.md" -> "syllabus/weekly-plan.md" [color=gray penwidth=1]
+	"mentor-ta/index.md" -> "mentor-ta/mentor-ta-info.md" [color=gray penwidth=1]
+	"mentor-ta/index.md" -> "mentor-ta/how-to-run-a-meeting.md" [color=gray penwidth=1]
+	"mentor-ta/index.md" -> "mentor-ta/how-to-run-a-ta-session.md" [color=gray penwidth=1]
+	"mentor-ta/index.md" -> "mentor-ta/mentor-expectations.md" [color=gray penwidth=1]
+	"mentor-ta/index.md" -> "mentor-ta/ta-expectations.md" [color=gray penwidth=1]
+	"mentor-ta/index.md" -> "rubrics/index.md" [color=gray penwidth=1]
+	"mentor-ta/index.md" -> "templates/mentor-meeting.md" [color=gray penwidth=1]
+	"mentor-ta/index.md" -> "tutorials/student-onboarding.md" [color=gray penwidth=1]
+	"mentor-ta/index.md" -> "tutorials/troubleshooting.md" [color=gray penwidth=1]
+	"mentor-ta/mentor-ta-info.md" -> "mentor-ta/mentor-expectations.md" [color=gray penwidth=1]
+	"mentor-ta/mentor-ta-info.md" -> "mentor-ta/ta-expectations.md" [color=gray penwidth=1]
+	"mentor-ta/mentor-ta-info.md" -> "syllabus/weekly-plan.md" [color=gray penwidth=1]
+	"mentor-ta/mentor-ta-info.md" -> "mentor-ta/how-to-run-a-meeting.md" [color=gray penwidth=1]
+	"mentor-ta/mentor-ta-info.md" -> "mentor-ta/how-to-run-a-ta-session.md" [color=gray penwidth=1]
+	"mentor-ta/mentor-ta-info.md" -> "rubrics/progress-doc-rubric.md" [color=gray penwidth=1]
+	"mentor-ta/mentor-ta-info.md" -> "rubrics/planning-doc-rubric.md" [color=gray penwidth=1]
+	"mentor-ta/mentor-ta-info.md" -> "rubrics/final-email.md" [color=gray penwidth=1]
+	"mentor-ta/mentor-ta-info.md" -> "rubrics/mid-quarter-presentation-rubric.md" [color=gray penwidth=1]
+	"mentor-ta/mentor-ta-info.md" -> "rubrics/final-video.md" [color=gray penwidth=1]
+	"mentor-ta/mentor-ta-info.md" -> "rubrics/one-pager.md" [color=gray penwidth=1]
+	"mentor-ta/mentor-ta-info.md" -> "rubrics/final-technical-cleanup.md" [color=gray penwidth=1]
+	"mentor-ta/ta-expectations.md" -> "rubrics/final-technical-cleanup.md" [color=gray penwidth=1]
+	"mentor-ta/ta-expectations.md" -> "rubrics/final-technical-cleanup.md" [color=gray penwidth=1]
+	"templates/final-technical-submission.md" -> "coding-standards/coding-standards.md" [color=gray penwidth=1]
+	"tutorials/troubleshooting.md" -> "tutorials/ssh_github_cluster.md" [color=gray penwidth=1]
+	"tutorials/slurm.md" -> "tutorials/command-line.md" [color=gray penwidth=1]
+	"tutorials/slurm.md" -> "tutorials/ssh_github_cluster.md" [color=gray penwidth=1]
+	"tutorials/slurm.md" -> "tutorials/ssh_github_cluster.md" [color=gray penwidth=1]
+	"tutorials/slurm.md" -> "tutorials/troubleshooting.md" [color=gray penwidth=1]
+	"tutorials/clinic-computer-setup.md" -> "tutorials/troubleshooting.md" [color=gray penwidth=1]
+	"tutorials/clinic-computer-setup.md" -> "tutorials/ssh_github_cluster.md" [color=gray penwidth=1]
+	"tutorials/clinic-computer-setup.md" -> "tutorials/ssh_github_cluster.md" [color=gray penwidth=1]
+	"tutorials/ssh_github_cluster.md" -> "tutorials/troubleshooting.md" [color=gray penwidth=1]
+	"tutorials/ssh_github_cluster.md" -> "tutorials/slurm.md" [color=gray penwidth=1]
+	"tutorials/ssh_github_cluster.md" -> "tutorials/troubleshooting.md" [color=gray penwidth=1]
+	"tutorials/ssh_github_cluster.md" -> "tutorials/slurm.md" [color=gray penwidth=1]
+	subgraph "cluster_coding-standards" {
+		fillcolor=lightgray fontname="Arial Bold" fontsize=12 label="Coding-Standards" style="rounded,filled"
+	}
+	subgraph cluster_faq {
+		fillcolor=lightgray fontname="Arial Bold" fontsize=12 label=Faq style="rounded,filled"
+	}
+	subgraph cluster_projects {
+		fillcolor=lightgray fontname="Arial Bold" fontsize=12 label=Projects style="rounded,filled"
+	}
+	subgraph cluster_admin {
+		fillcolor=lightgray fontname="Arial Bold" fontsize=12 label=Admin style="rounded,filled"
+	}
+	subgraph "cluster_prospective-students" {
+		fillcolor=lightgray fontname="Arial Bold" fontsize=12 label="Prospective-Students" style="rounded,filled"
+	}
+	subgraph cluster_syllabus {
+		fillcolor=lightgray fontname="Arial Bold" fontsize=12 label=Syllabus style="rounded,filled"
+	}
+	subgraph cluster_students {
+		fillcolor=lightgray fontname="Arial Bold" fontsize=12 label=Students style="rounded,filled"
+	}
+	subgraph cluster_rubrics {
+		fillcolor=lightgray fontname="Arial Bold" fontsize=12 label=Rubrics style="rounded,filled"
+	}
+	subgraph "cluster_mentor-ta" {
+		fillcolor=lightgray fontname="Arial Bold" fontsize=12 label="Mentor-Ta" style="rounded,filled"
+	}
+	subgraph cluster_templates {
+		fillcolor=lightgray fontname="Arial Bold" fontsize=12 label=Templates style="rounded,filled"
+	}
+	subgraph cluster_tutorials {
+		fillcolor=lightgray fontname="Arial Bold" fontsize=12 label=Tutorials style="rounded,filled"
+	}
 }
