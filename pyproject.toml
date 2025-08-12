@@ -2,6 +2,7 @@
 name = "the-clinic"
 version = "0.1.0"
 description = "University of Chicago Data Science Clinic website"
+requires-python = ">=3.11"
 dependencies = [
     "PyYAML>=6.0",
     "graphviz>=0.20.1",
