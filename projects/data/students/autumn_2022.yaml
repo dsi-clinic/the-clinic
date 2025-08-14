@@ -1,0 +1,126 @@
+quarter: Autumn
+year: 2022
+students:
+- project_name: AmFam
+  student_name: Ruiquan Chang
+  github_info: rqchang
+- project_name: AmFam
+  student_name: Yulun Han
+  github_info: YLHan97
+- project_name: AmFam
+  student_name: Yuhan Sun
+  github_info: yuhan0616
+- project_name: AmFam
+  student_name: Serena Huang
+  github_info: SerenaGongHuang
+- project_name: BankTrack
+  student_name: Yutai Li
+  github_info: yutaili
+- project_name: BankTrack
+  student_name: Xin Tang
+  github_info: XTang685
+- project_name: BankTrack
+  student_name: Jiawei Xie
+  github_info: jiaweix22
+- project_name: BankTrack
+  student_name: Cesar Anzola
+  github_info: cesaranzola945
+- project_name: BankTrack
+  student_name: Grishma Bhattarai
+  github_info: grishmab
+- project_name: Blue Ocean Gear
+  student_name: Hazel Chui
+  github_info: hazelchc
+- project_name: Blue Ocean Gear
+  student_name: Jiyi Peng
+  github_info: AuroraPeng
+- project_name: Blue Ocean Gear
+  student_name: 'Jieyu Jiao '
+  github_info: zoeyjiao1104
+- project_name: Blue Ocean Gear
+  student_name: Brinda Sapra
+  github_info: brinda1410
+- project_name: BPI
+  student_name: Gabrielle Meyers
+  github_info: gmeyers405
+- project_name: BPI
+  student_name: Vincent Liu
+  github_info: jcvincentliu
+- project_name: BPI
+  student_name: Yu-Hsuan Chou
+  github_info: null
+- project_name: BPI
+  student_name: Emily Yeh
+  github_info: Emily-fyeh
+- project_name: BPI
+  student_name: Justin Kim
+  github_info: jykim21
+- project_name: Citizen Data
+  student_name: Gabriel Nicholson
+  github_info: Gabenicholson
+- project_name: Citizen Data
+  student_name: Nicholas Simon
+  github_info: nicksimon7524
+- project_name: Citizen Data
+  student_name: Jason Jia
+  github_info: jasonjiajs
+- project_name: Citizen Data
+  student_name: Michael Wagner
+  github_info: wagnerlmichael
+- project_name: Invenergy
+  student_name: Kaveri Chhikara
+  github_info: kaveriC
+- project_name: Invenergy
+  student_name: Sophie Logan
+  github_info: sophielogan
+- project_name: Invenergy
+  student_name: David Bukowski
+  github_info: dtbukowski
+- project_name: Invenergy
+  student_name: Piper Kurtz
+  github_info: kurtzpuc
+- project_name: mBio
+  student_name: Xinyu He
+  github_info: Victoriaxinyu
+- project_name: mBio
+  student_name: Yuchen Zhou
+  github_info: yuchenzhou286
+- project_name: mBio
+  student_name: Shuyuan Wang
+  github_info: shuyuan-lily
+- project_name: mBio
+  student_name: Baotong Zhang
+  github_info: BaotongZh
+- project_name: Prudential
+  student_name: Cole Silva
+  github_info: silva-cole
+- project_name: Prudential
+  student_name: Daniel Gold
+  github_info: danielisaacgold
+- project_name: Prudential
+  student_name: Oishee Chakrabarti
+  github_info: chakraoishee
+- project_name: Prudential
+  student_name: Yujing Sun
+  github_info: yujing-syj
+- project_name: Prudential
+  student_name: Gillian Major
+  github_info: gillianmajor
+- project_name: Internet Equity
+  student_name: Sam Pavlekovsky
+  github_info: spavlekovsky
+- project_name: Internet Equity
+  student_name: Kamran Ahmed
+  github_info: kamranahmed08
+- project_name: Internet Equity
+  student_name: Maia Boyd
+  github_info: null
+- project_name: Internet Equity
+  student_name: Bruno Xie
+  github_info: brunoxie
+- project_name: Internet Equity
+  student_name: Kaya Borlase
+  github_info: borlasekn
+- project_name: Internet Equity
+  student_name: Christelle Inema
+  github_info: ChristelleInema

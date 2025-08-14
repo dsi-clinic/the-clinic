@@ -1,0 +1,216 @@
+quarter: Winter
+year: 2025
+name_map:
+  CMAP: Chicago Metropolitan Agency for Planning
+projects:
+- org_name: Argonne
+  description: Extending Argo with LLM-driven Agents and Workflows
+  project_url: https://www.anl.gov/
+  mentor: Bill Trok
+  ta: Cassie
+  github_link: https://github.com/dsi-clinic/2024-autumn-argonne
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Matthew Dearing
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Building Decarbonization Coalition
+  description: LLM/Chatbot for Thermal Energy Networks
+  project_url: https://buildingdecarb.org/
+  mentor: Satadisha Saha Bhowmick
+  ta: Harper
+  github_link: https://github.com/dsi-clinic/2024-autumn-building-decarbon
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'André Meurer'
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: CMAP
+  description: NE Illinois Stormwater Storage and Site-Scale Green Infrastructure
+    Inventory
+  project_url: https://cmap.illinois.gov/
+  mentor: Anna
+  ta: Cassie
+  github_link: https://github.com/dsi-clinic/CMAP
+  is_private_repo: false
+  has_one_pager: true
+  external_mentor_info: 'Holly Hudson'
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Center for Living Systems
+  description: AI and Cell Segmentation
+  project_url: ''
+  mentor: Liya
+  ta: Justin
+  github_link: https://github.com/dsi-clinic/2024-autumn-cls
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'Center for Living Systems'
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Data and Democracy
+  description: Mining Historic Election Data with LLMs
+  project_url: ''
+  mentor: Francesco Pinto
+  ta: Harper Schwab
+  github_link: https://github.com/dsi-clinic/2025-winter-data-and-democracy
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'Internal DSI Project'
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Fermi - GNN
+  description: Graph Neural Networks for Liquid Argon Time Projection Chambers
+  project_url: ''
+  mentor: Jie Jian
+  ta: Justin
+  github_link: https://github.com/dsi-clinic/2024-autumn-nugraph
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'Giuseppe Cerati'
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Fermi - Simulations
+  description: Improving ML-based simulations of particle physics experiments
+  project_url: ''
+  mentor: Owen & Alexander
+  ta: Harper
+  github_link: https://github.com/dsi-clinic/2023-Autumn-Clinic-Fermi-CaloDiffusionPaper
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'Oz Amram & Kevin Pedro'
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Food System 6
+  description: Visualizing the Economic Infrastructure of the US Poultry Industry
+  project_url: ''
+  mentor: Meghan
+  ta: Yukai
+  github_link: https://github.com/dsi-clinic/2024-autumn-FS6
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'Lauren Manning'
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: IDI - Grievances
+  description: Mapping Human Rights Violations in the Palm Oil Industry
+  project_url: ''
+  mentor: Jingchao
+  ta: Harper Schwab
+  github_link: https://github.com/dsi-clinic/2024-autumn-palmwatch-grievences
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'IDI'
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: International Rescue Committee
+  description: Malnutrition Prediction
+  project_url: ''
+  mentor: Seyed & Susan
+  ta: Yukai
+  github_link: https://github.com/dsi-clinic/2024-autumn-IRC
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'Zachary Tausanovitch'
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Internet Equity Initiative
+  description: Milwaukee Internet Equity and Device Testing
+  project_url: ''
+  mentor: Jonatas Marques
+  ta: Gayathri Jayaraman
+  github_link: https://github.com/dsi-clinic/2024-autumn-IEI
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'Alexis Schrubbe'
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Invenergy
+  description: Gen AI for Energy News
+  project_url: ''
+  mentor: Julia & Nick
+  ta: ''
+  github_link: https://github.com/dsi-clinic/2024-autumn-invenergy
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: <ul><li>Sophie Logan</li><li>Zoë Kimpel</li><li>Axel De Mendoza</li><li>Daniel Grunwald</li><li>Ross Nichols</li><li>Kenneth Parkhill</li><li>Michael Goldstein</li><li>Seth Zehler</li></ul>
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Kids First Chicago
+  description: 'Improving Data Accessibility and Transparency: Centralizing Chicago
+    Public Schools Education Data'
+  project_url: ''
+  mentor: Tim
+  ta: Jack Sanderson
+  github_link: https://github.com/dsi-clinic/2025-winter-kids-first-chicago
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'Kids First Chicago'
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Morningstar
+  description: Agentic Workflows for PEFT
+  project_url: ''
+  mentor: Tim & Patricia
+  ta: Grace
+  github_link: https://github.com/dsi-clinic/2024-autumn-morningstar
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: <ul><li>Josh Charney</li><li>Jazmin Melchor</li></ul>
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: RAFI - Grocery
+  description: MSA Analysis on Grocery Atlas
+  project_url: ''
+  mentor: Kelly
+  ta: Jack Sanderson
+  github_link: https://github.com/dsi-clinic/2024-autumn-rafi-grocery
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'RAFI'
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: RAFI - Poultry
+  description: Demographic overlay on Poultry Farms
+  project_url: ''
+  mentor: Kriti
+  ta: Polly Ren
+  github_link: https://github.com/dsi-clinic/2024-autumn-rafi-poultry
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'RAFI'
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: UChicago Library
+  description: Optimizing Library Storage
+  project_url: ''
+  mentor: Susanna
+  ta: Grace
+  github_link: https://github.com/dsi-clinic/2024-autumn-uchicago-library
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'David Bottorff'
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: University of Rwanda - Climate
+  description: Climate change-induced multi-hazard risks
+  project_url: ''
+  mentor: Nick
+  ta: Polly Ren
+  github_link: https://github.com/dsi-clinic/2025-winter-rwanda-climate
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'University of Rwanda'
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: University of Rwanda - Landslides
+  description: Landslides and Environmental Degradation in the Kaduha-Gitwe Corridor
+  project_url: ''
+  mentor: Ganghua
+  ta: Gayathri Jayaraman
+  github_link: https://github.com/dsi-clinic/2025-winter-rwanda-landslides
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'University of Rwanda'
+  project_url_valid: false
+  is_11th_hour: false

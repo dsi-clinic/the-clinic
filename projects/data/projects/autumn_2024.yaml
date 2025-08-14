@@ -1,0 +1,184 @@
+quarter: Autumn
+year: 2024
+name_map:
+  CMAP: Chicago Metropolitan Agency for Planning
+  Fermi-simulations: Fermilab Simulations
+  Fermi-gnn: Fermilab Graph Neural Networks
+projects:
+- org_name: Argonne
+  description: Extending Argo with LLM-driven Agents and Workflows
+  project_url: https://www.anl.gov/
+  mentor: Bill Trok
+  ta: Cassie
+  github_link: https://github.com/dsi-clinic/2024-autumn-argonne
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Matthew Dearing
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Fermi-simulations
+  description: Improving ML-based simulations of particle physics experiments
+  project_url: https://computing.fnal.gov/kevin-pedro/
+  mentor: Owen & Alexander
+  ta: Ian
+  github_link: https://github.com/dsi-clinic/2023-Autumn-Clinic-Fermi-CaloDiffusionPaper
+  is_private_repo: false
+  has_one_pager: true
+  external_mentor_info: Oz Amram & Kevin Pedro
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Fermi-gnn
+  description: Graph Neural Networks for Liquid Argon Time Projection Chambers
+  project_url: https://computing.fnal.gov/giuseppe-cerati/
+  mentor: Jie Jian
+  ta: Justin
+  github_link: https://github.com/dsi-clinic/2024-autumn-nugraph
+  is_private_repo: false
+  has_one_pager: true
+  external_mentor_info: Giuseppe Cerati
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: CMAP
+  description: NE Illinois Stormwater Storage and Site-Scale Green Infrastructure
+    Inventory
+  project_url: https://cmap.illinois.gov/
+  mentor: Anna
+  ta: Cassie
+  github_link: https://github.com/dsi-clinic/CMAP
+  is_private_repo: false
+  has_one_pager: true
+  external_mentor_info: Holly Hudson
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Internet Equity Initative
+  description: Patterns of FCC broadband challenges
+  project_url: https://internetequity.uchicago.edu/
+  mentor: Jonatas
+  ta: Stella
+  github_link: https://github.com/dsi-clinic/2024-autumn-IEI
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Alexis Schrubbe
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Center for Living Systems
+  description: AI and Cell Segmentation
+  project_url: ''
+  mentor: Liya
+  ta: Justin
+  github_link: https://github.com/dsi-clinic/2024-autumn-cls
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'Center for Living Systems'
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Morningstar
+  description: LLM Performance Improvements
+  project_url: https://www.morningstar.com
+  mentor: Tim & Patricia
+  ta: Grace
+  github_link: https://github.com/dsi-clinic/2024-autumn-morningstar
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: <ul><li>Josh Charney</li><li>Jazmin Melchor</li></ul>
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Invenergy
+  description: Gen AI for Energy News
+  project_url: https://www.invenergy.com
+  mentor: Julia & Nick
+  ta: ''
+  github_link: https://github.com/dsi-clinic/2024-autumn-invenergy
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: <ul><li>Sophie Logan</li><li>Zoë Kimpel</li><li>Axel De Mendoza</li><li>Daniel Grunwald</li><li>Ross Nichols</li><li>Kenneth Parkhill</li><li>Michael Goldstein</li><li>Seth Zehler</li></ul>
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Food System 6
+  description: Visualizing the Economic Infrastructure of the US Poultry Industry
+  project_url: https://www.foodsystem6.org/
+  mentor: Meghan
+  ta: Yukai
+  github_link: https://github.com/dsi-clinic/2024-autumn-FS6
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'Lauren Manning'
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: International Rescue Committee
+  description: Malnutrition Prediction
+  project_url: https://help.rescue.org
+  mentor: Seyed & Susan
+  ta: Yukai
+  github_link: https://github.com/dsi-clinic/2024-autumn-IRC
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'Zachary Tausanovitch'
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Building Decarbonization Coalition
+  description: LLM/Chatbot for Thermal Energy Networks
+  project_url: https://buildingdecarb.org/
+  mentor: Satadisha Saha Bhowmick
+  ta: Ian
+  github_link: https://github.com/dsi-clinic/2024-autumn-building-decarbon
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: 'André Meurer'
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: RAFI -- Grocery Atlas
+  description: MSA Analysis on Grocery Atlas
+  project_url: https://www.rafiusa.org/
+  mentor: Kelly
+  ta: Austin
+  github_link: https://github.com/dsi-clinic/2024-autumn-rafi-grocery
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Dylan Halpern
+  project_url_valid: true
+  is_11th_hour: true
+- org_name: UChicago Library
+  description: Optimizing Library Storage
+  project_url: https://www.lib.uchicago.edu/
+  mentor: Susanna
+  ta: Austin
+  github_link: https://github.com/dsi-clinic/2024-autumn-uchicago-library
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: David Bottorff
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: RAFI -- Demographic Overlay
+  description: Demographic overlay on Poultry Farms
+  project_url: https://www.rafiusa.org/
+  mentor: Kriti
+  ta: Stella
+  github_link: https://github.com/dsi-clinic/2024-autumn-rafi-poultry
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Trevor Spreadbury
+  project_url_valid: true
+  is_11th_hour: true
+- org_name: IDI -- Palm Industry Grievances
+  description: Mapping Human Rights Violations in the Palm Oil Industry
+  project_url: ''
+  mentor: Jingchao
+  ta: ''
+  github_link: https://github.com/dsi-clinic/2024-autumn-palmwatch-grievences
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Launa Greer
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: University of Northern Iowa
+  description: Characterizing Narrative Through Variations in Power Dynamics
+  project_url: ''
+  mentor: Ganghua
+  ta: Grace
+  github_link: https://github.com/dsi-clinic/2024-autumn-uni
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Taraneh Matloob
+  project_url_valid: false
+  is_11th_hour: false

@@ -1,0 +1,192 @@
+quarter: Autumn
+year: 2024
+students:
+- project_name: Argonne
+  student_name: Siya Kalra
+  github_info: siyakalra830
+- project_name: Argonne
+  student_name: Angela Liu
+  github_info: aliu65803
+- project_name: Argonne
+  student_name: Ana Carolina Pereira Guedes
+  github_info: anacpguedes
+- project_name: Argonne
+  student_name: Uday Malik
+  github_info: udaymalik12
+- project_name: Building Decarbonization Coalition
+  student_name: Jared Maksoud
+  github_info: jmakk123
+- project_name: Building Decarbonization Coalition
+  student_name: Victor Zhang
+  github_info: mondaiarimasen
+- project_name: Building Decarbonization Coalition
+  student_name: Andrew Kaboski
+  github_info: akaboski
+- project_name: Building Decarbonization Coalition
+  student_name: Andres A Guerrero
+  github_info: aguerrero0034
+- project_name: Center for Living Systems
+  student_name: Kruthi Gollapudi
+  github_info: kruthig03
+- project_name: Center for Living Systems
+  student_name: Eve Tanios
+  github_info: etanios03
+- project_name: Center for Living Systems
+  student_name: Jared Bendavid
+  github_info: jbendavid
+- project_name: Center for Living Systems
+  student_name: Victor Brown
+  github_info: victorfbrown
+- project_name: CMAP
+  student_name: Anna Poon
+  github_info: anna-poon
+- project_name: CMAP
+  student_name: Mohit Kumar Sathishkumar
+  github_info: ms475
+- project_name: CMAP
+  student_name: Collin Kim
+  github_info: collin-k
+- project_name: CMAP
+  student_name: Xiaoyue Wei
+  github_info: Wxy-23
+- project_name: Fermi-gnn
+  student_name: Meghane Saidenberg-Coriston
+  github_info: msaidenberg
+- project_name: Fermi-gnn
+  student_name: Yuze Gu
+  github_info: crimsondevil0929
+- project_name: Fermi-gnn
+  student_name: Alexander Bacro
+  github_info: alexbacro
+- project_name: Fermi-simulations
+  student_name: Kevin Lin
+  github_info: TangyKiwi
+- project_name: Fermi-simulations
+  student_name: Aaron Zhang
+  github_info: dcm9
+- project_name: Fermi-simulations
+  student_name: Isaac Harlem
+  github_info: isaacharlem
+- project_name: Fermi-simulations
+  student_name: Simon Katz
+  github_info: simonkatz88
+- project_name: Food System 6
+  student_name: Lila Weizer
+  github_info: lilaweizer
+- project_name: Food System 6
+  student_name: Yingrong Mao
+  github_info: MaoYingrong
+- project_name: Food System 6
+  student_name: Hayden Leiderman
+  github_info: hleiderman
+- project_name: Food System 6
+  student_name: Maxwell Resnick
+  github_info: maxwell-resnick
+- project_name: IDI -- Palm Industry Grievances
+  student_name: Harper Schwab
+  github_info: hwschwab
+- project_name: IDI -- Palm Industry Grievances
+  student_name: Osinachi Nkemdirim Nwosu
+  github_info: nwosuo
+- project_name: IDI -- Palm Industry Grievances
+  student_name: Emanda Bisrat
+  github_info: emandabisrat
+- project_name: IDI -- Palm Industry Grievances
+  student_name: Liam Starnes
+  github_info: liamstarnes
+- project_name: International Rescue Committee
+  student_name: Maya Umlauf
+  github_info: mlumlauf
+- project_name: International Rescue Committee
+  student_name: Belle Nahoom
+  github_info: bellegn1
+- project_name: International Rescue Committee
+  student_name: Alexandra Nehme
+  github_info: alexandranehme
+- project_name: International Rescue Committee
+  student_name: Emma Ricks
+  github_info: ' emmaricks'
+- project_name: Internet Equity Initative
+  student_name: Alexa Norman
+  github_info: normanalexa31
+- project_name: Internet Equity Initative
+  student_name: Haina Yu
+  github_info: Haina2004
+- project_name: Internet Equity Initative
+  student_name: Jack Chefetz
+  github_info: JackChefetz
+- project_name: Internet Equity Initative
+  student_name: Hing Yee Choy
+  github_info: chychoy
+- project_name: Invenergy
+  student_name: Anuj Agarwal
+  github_info: AMA7103
+- project_name: Invenergy
+  student_name: Edouard Gouilliard
+  github_info: egouilliard
+- project_name: Invenergy
+  student_name: Yanzhe Shi
+  github_info: yyyyyyyyyynot
+- project_name: Invenergy
+  student_name: Rain Liu
+  github_info: rainliu19
+- project_name: Morningstar
+  student_name: Jonathan Huang
+  github_info: jonathanhuang-bot
+- project_name: Morningstar
+  student_name: Aren Mizuno
+  github_info: arenmizuno
+- project_name: Morningstar
+  student_name: Henry Josephson
+  github_info: henryjosephson
+- project_name: Morningstar
+  student_name: Kevin Liu
+  github_info: Kev0208
+- project_name: RAFI -- Demographic Overlay
+  student_name: Sabrina Matsui
+  github_info: sabrinamatsui31
+- project_name: RAFI -- Demographic Overlay
+  student_name: Esther Goldberg
+  github_info: Estherg1
+- project_name: RAFI -- Demographic Overlay
+  student_name: Yue Pan
+  github_info: ypan02
+- project_name: RAFI -- Demographic Overlay
+  student_name: Yasmin Shalim
+  github_info: yasminshalim
+- project_name: RAFI -- Grocery Atlas
+  student_name: Khwaish Vohra
+  github_info: khwaishvohra
+- project_name: RAFI -- Grocery Atlas
+  student_name: Jennifer Spinoglio
+  github_info: jenspinoglio
+- project_name: RAFI -- Grocery Atlas
+  student_name: Adam Marchakitus
+  github_info: amarchakitus
+- project_name: RAFI -- Grocery Atlas
+  student_name: Joaquin Pinto
+  github_info: joaqpinto
+- project_name: UChicago Library
+  student_name: Seungwook (Sean) Won
+  github_info: seanwon1217
+- project_name: UChicago Library
+  student_name: Shailesh Bolduc
+  github_info: TheShai81
+- project_name: UChicago Library
+  student_name: Nitika Kurma
+  github_info: nitikakurma
+- project_name: UChicago Library
+  student_name: Kaitlyn Li
+  github_info: kaitlynli2025
+- project_name: University of Northern Iowa
+  student_name: Wina Aaron
+  github_info: WinaAar
+- project_name: University of Northern Iowa
+  student_name: Abigail Starr
+  github_info: abigailstarr
+- project_name: University of Northern Iowa
+  student_name: Sana Fessuh
+  github_info: shfessuh
+- project_name: University of Northern Iowa
+  student_name: Hanyun Liu
+  github_info: AnniiiinnA

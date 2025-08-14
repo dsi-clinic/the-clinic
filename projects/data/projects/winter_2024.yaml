@@ -1,0 +1,211 @@
+quarter: Winter
+year: 2024
+name_map:
+  CMAP: Chicago Metropolitan Agency for Planning
+  UNI: Taraneh Matloob Literature Lab
+  IRC: International Rescue Committee
+  Fermi-simulations: Fermilab Simulations
+  Fermi-gnn: Fermilab Graph Neural Networks
+  CREF: Compost Research & Education Foundation
+  CTC: Chicago Trading Company
+  RAFI: Rural Advancement Foundation International
+projects:
+- org_name: AmFam
+  description: Generative AI Models for housing images
+  project_url: https://www.amfam.com/
+  mentor: Anna
+  ta: Jessica J
+  github_link: https://github.com/dsi-clinic/2023-autumn-amfam
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: <ul><li>Tim Rouse</li><li>Jessie Zhu</li></ul>
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Argonne
+  description: Operational requirement management using graph based knowledge            networks
+  project_url: https://www.anl.gov/
+  mentor: Bill Trok & YJ Choe
+  ta: Victor
+  github_link: https://github.com/dsi-clinic/2023-clinic-Argonne
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Matthew Dearing
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Argonne-Fermi
+  description: AI to identify "lessons learned" in project documents
+  project_url: https://www.anl.gov/
+  mentor: Isaac
+  ta: Jessica J
+  github_link: https://github.com/dsi-clinic/2023-autumn-argonne-fermi
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Matthew Dearing
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: BankTrack
+  description: NLP to automate the extraction of commercial debt data
+  project_url: ''
+  mentor: Trevor
+  ta: Fei
+  github_link: https://github.com/dsi-clinic/2024-winter-clinic-banktrack
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Ryan Brightwell
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: CMAP
+  description: AI to recognize stormwater detention features
+  project_url: ''
+  mentor: Anna & Tim
+  ta: Victor
+  github_link: https://github.com/dsi-clinic/2024-winter-cmap
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Holly Hudson
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: CTC
+  description: Sentiment analysis of social media postings
+  project_url: https://www.chicagotrading.com/
+  mentor: David U. & Patricia
+  ta: Grant
+  github_link: https://github.com/dsi-clinic/2024-winter-ctc
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Natasha Pekelis
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Climate Cabinet
+  description: Campaign Finance Tracking
+  project_url: ''
+  mentor: Trevor
+  ta: Avery
+  github_link: https://github.com/dsi-clinic/2024-winter-climate-cabinet-campaign-finance-tracker
+  is_private_repo: false
+  has_one_pager: true
+  external_mentor_info: Caleb Braun
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: CREF
+  description: Disposable Packaging Disintegration Analysis
+  project_url: ''
+  mentor: Todd
+  ta: Rita
+  github_link: https://github.com/dsi-clinic/2024-winter-compostable
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Emily McGill
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: Fermi-simulations
+  description: AI Diffusion models for simulating particle physics experiments
+  project_url: https://computing.fnal.gov/kevin-pedro/
+  mentor: Rituparno Mandal & Peter
+  ta: Grant
+  github_link: https://github.com/dsi-clinic/2023-Autumn-Clinic-Fermi-CaloDiffusionPaper
+  is_private_repo: false
+  has_one_pager: true
+  external_mentor_info: Oz Amram & Kevin Pedro
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Fermi-gnn
+  description: GNNs for particle reconstruction in neutrino experiments
+  project_url: https://computing.fnal.gov/giuseppe-cerati/
+  mentor: Chong Liu
+  ta: Yiran
+  github_link: https://github.com/exatrkx/NuGraph
+  is_private_repo: false
+  has_one_pager: true
+  external_mentor_info: Giuseppe Cerati
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Internet Equity
+  description: Patterns of FCC broadband challenges
+  project_url: https://internetequity.uchicago.edu/
+  mentor: Tim & Jonatas Marques
+  ta: Soham
+  github_link: https://github.com/dsi-clinic/2023-autumn-internet-equity
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Alexis Schrubbe
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Invenergy
+  description: Modeling wind energy production using AI
+  project_url: https://invenergy.com/
+  mentor: Vasileios
+  ta: Avery
+  github_link: https://github.com/dsi-clinic/2024-winter-invenergy
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Zoe Kimpel
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: IRC
+  description: Mobile education app usage analysis
+  project_url: https://www.rescue.org/
+  mentor: Cristina
+  ta: Fei
+  github_link: https://github.com/dsi-clinic/2023-autumn-irc
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Atish Gonsalves
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Perpetual
+  description: Reusable foodware system design
+  project_url: ''
+  mentor: Launa
+  ta: Sarah
+  github_link: https://github.com/dsi-clinic/2024-winter-clinic-perpetual
+  is_private_repo: false
+  has_one_pager: true
+  external_mentor_info: Ellie Moss
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: Prudential
+  description: Sentiment Analysis in Stock Prediction
+  project_url: https://www.prudential.com
+  mentor: Nick
+  ta: Yiran
+  github_link: ''
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: <ul><li>Jyoti Singh</li><li>Dr. Mitchell Stern</li><li>Gavin Smith</li><li>William Liang</li><li>Leo Shen</li></ul>
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: RAFI
+  description: Poultry Packaging Consolidation
+  project_url: https://www.rafiusa.org
+  mentor: Todd
+  ta: Rita
+  github_link: https://github.com/dsi-clinic/2024-winter-rafi-poultry-cafos
+  is_private_repo: false
+  has_one_pager: true
+  external_mentor_info: Aaron Johnson
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: UNI
+  description: Using AI to quantify the emotional journey of protagonists in children's
+    literature
+  project_url: https://coe.uni.edu/curriculum-instruction/directory/taraneh-matloob-haghanikar-phd
+  mentor: Satadisha Saha Bhowmick
+  ta: Ridhi
+  github_link: https://github.com/dsi-clinic/2023-autumn-matloob-lab
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Taraneh Matloob
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: WBEZ
+  description: Demographic effects on traffic stops in Illinois
+  project_url: https://www.wbez.org/
+  mentor: Susanna
+  ta: Sarah
+  github_link: https://github.com/dsi-clinic/2024-winter-wbez
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Taraneh Matloob
+  project_url_valid: true
+  is_11th_hour: false

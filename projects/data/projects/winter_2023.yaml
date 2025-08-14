@@ -1,0 +1,181 @@
+quarter: Winter
+year: 2023
+name_map:
+  PCDC: Pediatric Cancer Data Commons
+projects:
+- org_name: Argonne
+  description: NLP models of policy and procedure documents
+  project_url: https://www.anl.gov/
+  mentor: Rahim & Trevor
+  ta: ''
+  github_link: https://github.com/dsi-clinic/2023-clinic-Argonne
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Matthew Dearing
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: BankTrack
+  description: NLP Models for identifying debt information in public financial documents
+  project_url: https://www.banktrack.org/
+  mentor: Trevor & Patricia
+  ta: ''
+  github_link: https://github.com/chicago-cdac/banktrack-loan-pipeline/
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: <ul><li>Ryan Brightwell</li><li>Dustin Roasa</li></ul>
+  project_url_valid: true
+  is_11th_hour: true
+- org_name: Blue Ocean Gear
+  description: Anomaly detection of fishing gear to detect lost equipment
+  project_url: https://www.blueoceangear.com/
+  mentor: Trevor
+  ta: Todd
+  github_link: https://github.com/chicago-cdac/bog-anomaly-mapping
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: <ul><li>Kortney Opshaug</li><li>Peter Macy</li><li>Will Morton</li></ul>
+  project_url_valid: true
+  is_11th_hour: true
+- org_name: BPI
+  description: Geospatial/demographic analysis of traffic stops in Chicago
+  project_url: https://www.impactforequity.org/
+  mentor: Riley
+  ta: Kenia
+  github_link: https://github.com/dsi-clinic/2022-bpi-clinic
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: <ul><li>Amy Thompson</li><li>Loren Jones</li></ul>
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: DRW
+  description: Realized volatility patterns and options prices
+  project_url: https://drw.com/
+  mentor: Nick
+  ta: ''
+  github_link: https://github.com/dsi-clinic/2023-clinic-drw
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: Ian Adam
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Fermi
+  description: Real-time Tagging with Deep Learning AI for particle imaging detectors
+  project_url: https://computing.fnal.gov/michael-kirby/
+  mentor: Peter
+  ta: Todd
+  github_link: https://github.com/dsi-clinic/2023-clinic-fermi-tag
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: <ul><li>Michael Kirby</li><li>Meghna Bhattacharya</li></ul>
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: First Republic Bank
+  description: Determinants of non-interest bearing deposit
+  project_url: https://www.firstrepublic.com/
+  mentor: Nick
+  ta: ''
+  github_link: https://github.com/dsi-clinic/2023-clinic-first-republic-bank
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: <ul><li>Chris Csiszar</li><li>Mark Woodworth</li></ul>
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: GreenWave
+  description: Image processing to measure kelp growth
+  project_url: https://www.greenwave.org/
+  mentor: Trevor
+  ta: ''
+  github_link: https://github.com/dsi-clinic/2023-clinic-greenwave
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Kendall Barbery
+  project_url_valid: true
+  is_11th_hour: true
+- org_name: Invenergy
+  description: Image segmentation to find turbines on drone footage
+  project_url: https://invenergy.com/
+  mentor: Anna
+  ta: Utkarsh
+  github_link: https://github.com/dsi-clinic/2022-Invenergy-clinic
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: "<ul><li>Zo\xEB Kimpel</li><li>Kenneth Parkhill</li></ul>"
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Morningstar
+  description: LLMs to generate analyst reports
+  project_url: https://www.morningstar.com/
+  mentor: David U. & Patricia
+  ta: Utkarsh
+  github_link: https://github.com/dsi-clinic/2023-clinic-morningstar
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: <ul><li>Josh Charney</li><li>Jazmin Melchor</li></ul>
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: PCDC
+  description: Design and implementation of disease taxonomies
+  project_url: https://commons.cri.uchicago.edu/pcdc/
+  mentor: Tim
+  ta: ''
+  github_link: https://github.com/chicago-cdac/2023-clinic-pcdc
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Michael Watkins
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Perpetual
+  description: Location optimizations for placement of foodware reuse systems
+  project_url: https://www.perpetualuse.org/
+  mentor: Rahim
+  ta: ''
+  github_link: https://github.com/dsi-clinic/2023-clinic-perpetual
+  is_private_repo: false
+  has_one_pager: true
+  external_mentor_info: Ellie Moss
+  project_url_valid: true
+  is_11th_hour: true
+- org_name: Prudential
+  description: Public company earnings prediction
+  project_url: https://www.prudential.com/
+  mentor: Nick
+  ta: ''
+  github_link: ''
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: Amol Tembe
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: RISC
+  description: Detecting electronic monitoring device shielding
+  project_url: https://risc.uchicago.edu/
+  mentor: Jeffrey
+  ta: Anthony K
+  github_link: https://github.com/dsi-clinic/2023-clinic-risc
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Noah Duncan
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Neurocritical Care
+  description: Determinants of traumatic brain injury outcomes
+  project_url: https://profiles.uchicago.edu/profiles/display/17338286
+  mentor: Yuetian
+  ta: Anthony K
+  github_link: https://github.com/dsi-clinic/2023-clinic-neurocritical-care
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Dr. Ali Mansour
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Internet Equity
+  description: Demographic characteristics and internet access
+  project_url: https://internetequity.uchicago.edu/
+  mentor: James Turk
+  ta: Kenia
+  github_link: https://github.com/chicago-cdac/broadbandequity
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: <ul><li>Nicole Marwell</li><li>Nick Feamster</li></ul>
+  project_url_valid: true
+  is_11th_hour: false

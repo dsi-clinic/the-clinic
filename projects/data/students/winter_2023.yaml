@@ -1,0 +1,171 @@
+quarter: Winter
+year: 2023
+students:
+- project_name: Argonne
+  student_name: Soren Dunn
+  github_info: https://github.com/sorendunn
+- project_name: Argonne
+  student_name: Richard Huang
+  github_info: https://github.com/rrhuang
+- project_name: Argonne
+  student_name: Grace Shao
+  github_info: https://github.com/graceshaoy
+- project_name: BankTrack
+  student_name: Nivedita Vatsa
+  github_info: https://github.com/nivedita-k-vatsa
+- project_name: BankTrack
+  student_name: Yifu Hou
+  github_info: https://github.com/yifu-hou
+- project_name: BankTrack
+  student_name: Grishma Bhattarai
+  github_info: https://github.com/grishmab
+- project_name: BankTrack
+  student_name: Gillian Major
+  github_info: https://github.com/gillianmajor
+- project_name: Blue Ocean Gear
+  student_name: Gautam Kapoor
+  github_info: https://github.com/grkapoor17
+- project_name: Blue Ocean Gear
+  student_name: Ming-Chieh Liu
+  github_info: https://github.com/ming-chieh-liu
+- project_name: Blue Ocean Gear
+  student_name: Henry herzog
+  github_info: https://github.com/hgherzog
+- project_name: BPI
+  student_name: Ashley Hitchings
+  github_info: https://github.com/ashleyhitchings
+- project_name: BPI
+  student_name: Justin Kim
+  github_info: https://github.com/jykim21
+- project_name: BPI
+  student_name: Akila Forde
+  github_info: https://github.com/aforde17
+- project_name: DRW
+  student_name: Mahnoor Khan
+  github_info: https://github.com/Mfk-han
+- project_name: DRW
+  student_name: Xin Li
+  github_info: https://github.com/xin2006
+- project_name: DRW
+  student_name: Jasmeet Singh Sandhu
+  github_info: https://github.com/jasmeeetSingh
+- project_name: DRW
+  student_name: Yulun Han
+  github_info: https://github.com/YLHan97
+- project_name: Fermi
+  student_name: Richard Zhang
+  github_info: null
+- project_name: Fermi
+  student_name: Yuxin Ji
+  github_info: https://github.com/Yuxin-Ji
+- project_name: Fermi
+  student_name: Jason Zhang
+  github_info: https://github.com/Zhang-QC
+- project_name: First Republic Bank
+  student_name: Zhiyun Hu
+  github_info: https://github.com/zhiyun0707
+- project_name: First Republic Bank
+  student_name: Guangbo Niu
+  github_info: https://github.com/ngbdsb
+- project_name: First Republic Bank
+  student_name: Yu-Hsuan Chou
+  github_info: https://github.com/yhchou0904
+- project_name: First Republic Bank
+  student_name: Ning Tang
+  github_info: https://github.com/tangn121
+- project_name: GreenWave
+  student_name: Cole von Glahn
+  github_info: https://github.com/cvg117
+- project_name: GreenWave
+  student_name: Piper Kurtz
+  github_info: https://github.com/kurtzpuc
+- project_name: GreenWave
+  student_name: Nico Vila Alarcon
+  github_info: https://github.com/niicovila
+- project_name: Invenergy
+  student_name: David Bukowski
+  github_info: https://github.com/dtbukowski
+- project_name: Invenergy
+  student_name: Daisuke Kageyama
+  github_info: https://github.com/daisukekageyama
+- project_name: Invenergy
+  student_name: Baichen Tan
+  github_info: https://github.com/BaichenTan
+- project_name: Invenergy
+  student_name: Suyash Lakhani
+  github_info: https://github.com/
+- project_name: Morningstar
+  student_name: Emily Yeh
+  github_info: https://github.com/Emily-fyeh
+- project_name: Morningstar
+  student_name: Ruiquan Chang
+  github_info: https://github.com/rqchang
+- project_name: Morningstar
+  student_name: Pedro Antonio Ramonetti Vega
+  github_info: https://github.com/PRAMONETTI
+- project_name: Morningstar
+  student_name: Nicole Li
+  github_info: https://github.com/linicoley
+- project_name: PCDC
+  student_name: Xuerong Shang
+  github_info: https://github.com/xuerong98
+- project_name: PCDC
+  student_name: Yu Zhou (Zoey)
+  github_info: https://github.com/zoeyzhou1296
+- project_name: PCDC
+  student_name: Shuhan Liu
+  github_info: https://github.com/ShannaLiu
+- project_name: Perpetual
+  student_name: Izzy Allum
+  github_info: https://github.com/iallum
+- project_name: Perpetual
+  student_name: Ziyu Ren
+  github_info: https://github.com/AshleyZR
+- project_name: Perpetual
+  student_name: Sandra Mauro
+  github_info: https://github.com/sandramauro
+- project_name: Perpetual
+  student_name: Yushu Qiu
+  github_info: https://github.com/yushuqiu1
+- project_name: Prudential
+  student_name: Yujing Sun
+  github_info: https://github.com/yujing-syj
+- project_name: Prudential
+  student_name: Cole Silva
+  github_info: https://github.com/silva-cole
+- project_name: Prudential
+  student_name: Nayna Pashilkar
+  github_info: https://github.com/npashilkar
+- project_name: RISC
+  student_name: Carolyn Liu
+  github_info: https://github.com/Crliu4
+- project_name: RISC
+  student_name: Avery Schoen
+  github_info: https://github.com/averyschoen
+- project_name: RISC
+  student_name: Adil Kassim
+  github_info: https://github.com/adilkassim
+- project_name: Neurocritical Care
+  student_name: Alexander Przybycin
+  github_info: https://github.com/AlexPrizzy
+- project_name: Neurocritical Care
+  student_name: Oishee Chakrabarti
+  github_info: https://github.com/chakraoishee
+- project_name: Neurocritical Care
+  student_name: Zachary Rothstein
+  github_info: https://github.com/Zacharyr41
+- project_name: Neurocritical Care
+  student_name: Jim Tinley
+  github_info: https://github.com/jtinley0
+- project_name: Internet Equity
+  student_name: Maia Boyd
+  github_info: https://github.com/maiaboyd
+- project_name: Internet Equity
+  student_name: Victoria Kielb
+  github_info: https://github.com/vkielb
+- project_name: Internet Equity
+  student_name: Kaya Borlase
+  github_info: https://github.com/borlasekn
+- project_name: Internet Equity
+  student_name: Brendon Krall
+  github_info: https://github.com/bkrall36

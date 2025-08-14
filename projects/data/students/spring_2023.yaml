@@ -1,0 +1,126 @@
+quarter: Spring
+year: 2023
+students:
+- project_name: Argonne
+  student_name: Ken Kliesner
+  github_info: https://github.com/kenkliesner
+- project_name: Argonne
+  student_name: Annabel Mendoza
+  github_info: https://github.com/amendoza5025
+- project_name: Argonne
+  student_name: Kekun Han
+  github_info: https://github.com/KekunH
+- project_name: Blue Ocean Gear
+  student_name: Gautam Kapoor
+  github_info: https://github.com/grkapoor17
+- project_name: Blue Ocean Gear
+  student_name: Henry Herzog
+  github_info: https://github.com/Hgherzog
+- project_name: Blue Ocean Gear
+  student_name: Irsa Ashraf
+  github_info: https://github.com/irsa-ashraf
+- project_name: Blue Ocean Gear
+  student_name: Katy Barone
+  github_info: https://github.com/kbarone
+- project_name: CRI-SET
+  student_name: Varun Mohan
+  github_info: https://github.com/vmohan96
+- project_name: CRI-SET
+  student_name: Jun Tan
+  github_info: https://github.com/JunTan2022
+- project_name: CRI-SET
+  student_name: Katherine Miao
+  github_info: https://github.com/Katherine-Miao
+- project_name: DRW
+  student_name: Mahnoor Khan
+  github_info: https://github.com/Mfk-han
+- project_name: DRW
+  student_name: Jasmeet Singh Sandhu
+  github_info: https://github.com/jasmeeetSingh
+- project_name: DRW
+  student_name: Yulun Han
+  github_info: https://github.com/YLHan97
+- project_name: Fermi
+  student_name: Richard Zhang
+  github_info: null
+- project_name: Fermi
+  student_name: Manuel Martinez
+  github_info: https://github.com/manmartgarc
+- project_name: Fermi
+  student_name: Mingyan Wang
+  github_info: https://github.com/wmingyan
+- project_name: Fermi
+  student_name: Tarun Arora
+  github_info: https://github.com/tarun2k
+- project_name: FRB
+  student_name: Guangbo Niu
+  github_info: https://github.com/ngbdsb
+- project_name: FRB
+  student_name: Zhiyun Hu
+  github_info: https://github.com/zhiyun0707
+- project_name: FRB
+  student_name: Yu-Hsuan Chou
+  github_info: https://github.com/yhchou0904
+- project_name: FRB
+  student_name: Ning Tang
+  github_info: https://github.com/tangn121
+- project_name: Hawaii
+  student_name: Ashley Hitchings
+  github_info: https://github.com/ashleyhitchings
+- project_name: Hawaii
+  student_name: Qingyi He
+  github_info: https://github.com/cindyheqy
+- project_name: Hawaii
+  student_name: Caleb Costa
+  github_info: https://github.com/calebcosta1
+- project_name: IE
+  student_name: Victoria Kielb
+  github_info: https://github.com/vkielb
+- project_name: IE
+  student_name: Chandler Hall
+  github_info: https://github.com/cgwhall
+- project_name: IE
+  student_name: Sarah Lueling
+  github_info: https://github.com/slueling
+- project_name: Morningstar
+  student_name: Rishabh Shastry
+  github_info: https://github.com/rishabhshastry
+- project_name: Morningstar
+  student_name: Dhairya Karna
+  github_info: https://github.com/DhairyaKarna
+- project_name: Morningstar
+  student_name: Max de Saint-Exupery
+  github_info: https://github.com/MaxSaint01
+- project_name: Neurocritical Care
+  student_name: Soren Dunn
+  github_info: https://github.com/sorendunn
+- project_name: Neurocritical Care
+  student_name: Alex Przybycin
+  github_info: https://github.com/AlexPrizzy
+- project_name: Neurocritical Care
+  student_name: Prashant Kumar
+  github_info: https://github.com/Prashant-Kumar700
+- project_name: Perpetual
+  student_name: Ziyu Ren
+  github_info: https://github.com/AshleyZR
+- project_name: Perpetual
+  student_name: Yushu Qiu
+  github_info: https://github.com/yushuqiu1
+- project_name: Perpetual
+  student_name: Avery Schoen
+  github_info: https://github.com/averyschoen
+- project_name: Perpetual
+  student_name: Ekansh Trivedi
+  github_info: https://github.com/ekanshtrivedi
+- project_name: Prudential
+  student_name: Sunvid Aneja
+  github_info: https://github.com/sunvidaneja
+- project_name: Prudential
+  student_name: Peihan Gao
+  github_info: https://github.com/peihan12
+- project_name: Prudential
+  student_name: Sai Omkar Kandukuri
+  github_info: https://github.com/S-Omkar-K
+- project_name: Prudential
+  student_name: Hantang Qin
+  github_info: https://github.com/jenniferqinnn

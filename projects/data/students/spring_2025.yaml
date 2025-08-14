@@ -1,0 +1,183 @@
+quarter: Spring
+year: 2025
+students:
+- project_name: Argonne
+  student_name: Alexander Mosher
+  github_info: amosheruc
+- project_name: Argonne
+  student_name: Mengyu (Rain) Xu
+  github_info: rainxu0909
+- project_name: Argonne
+  student_name: Qilin Zhou
+  github_info: QilinZhou56
+- project_name: Argonne
+  student_name: Uday Malik
+  github_info: udaymalik12
+- project_name: CMAP
+  student_name: Alan Cherman
+  github_info: alan-cherman
+- project_name: CMAP
+  student_name: Cassandra Haas
+  github_info: cassiehaas
+- project_name: CMAP
+  student_name: Collin Kim
+  github_info: collin-k
+- project_name: CMAP
+  student_name: Gregory Caesar
+  github_info: Aufsteyegen
+- project_name: Center for Living Systems
+  student_name: Katja Edwards
+  github_info: katjae113
+- project_name: Center for Living Systems
+  student_name: Lucas von Kapff
+  github_info: lvonkapff
+- project_name: Center for Living Systems
+  student_name: Zach Laurence
+  github_info: zachlaurence
+- project_name: Center for Living Systems
+  student_name: Zewei (Whiskey) Liao
+  github_info: whiskey0504
+- project_name: College Financial Health
+  student_name: Daniel Mendoza
+  github_info: dannymendoza1
+- project_name: College Financial Health
+  student_name: Disha Mohta
+  github_info: dishamohta124
+- project_name: College Financial Health
+  student_name: Jerald Shu
+  github_info: j-shu-uofc
+- project_name: College Financial Health
+  student_name: Yani Wu
+  github_info: 0theinfinite
+- project_name: DSI - Agents
+  student_name: "Andrei Th\xFCler"
+  github_info: athuler
+- project_name: DSI - Agents
+  student_name: Gabriel Diaz
+  github_info: gdiaz0618
+- project_name: DSI - Agents
+  student_name: Grace Rowan
+  github_info: gkrowan
+- project_name: DSI - Agents
+  student_name: Isabella Mercado
+  github_info: imercadouchicago
+- project_name: DSI - HPC
+  student_name: Keling Yue
+  github_info: keling888
+- project_name: DSI - HPC
+  student_name: Hieu Nguyen
+  github_info: quanghieu31
+- project_name: DSI - HPC
+  student_name: Vanessa Lois
+  github_info: vlois
+- project_name: DSI - HPC
+  student_name: Yu-Chan Jimmy Chien
+  github_info: jycc-267
+- project_name: Data and Democracy
+  student_name: Hoi Yuk Chui
+  github_info: jacobchuihyc
+- project_name: Data and Democracy
+  student_name: Klaudia Barbarossa
+  github_info: kbarbarossa
+- project_name: Data and Democracy
+  student_name: Lisa Raj Singh
+  github_info: lisarajsingh
+- project_name: Data and Democracy
+  student_name: Sally North
+  github_info: sallyjnorth
+- project_name: Food System 6
+  student_name: Beichi Wu
+  github_info: wilbur-wu
+- project_name: Food System 6
+  student_name: Yurou Li
+  github_info: yli-5490
+- project_name: Groundwork Bridgeport
+  student_name: Fang-Yu Hsu
+  github_info: hsufrancy
+- project_name: Groundwork Bridgeport
+  student_name: Fuyuki Tani
+  github_info: fuyukitn
+- project_name: Groundwork Bridgeport
+  student_name: Joseph De Leon
+  github_info: jmdeleon1110
+- project_name: IDI - Grievences
+  student_name: Michelangelo Pagan
+  github_info: michelangelopagan
+- project_name: IDI - Grievences
+  student_name: Tiwaa Bruks
+  github_info: tiwaab
+- project_name: IDI - Grievences
+  student_name: Vikram Ramaswamy
+  github_info: vikramr2025
+- project_name: IDI - Grievences
+  student_name: Woo Jae Kim
+  github_info: andrewkimm99
+- project_name: Internet Equity Initiative
+  student_name: Ethan Hochstim
+  github_info: eh18
+- project_name: Internet Equity Initiative
+  student_name: Yasmin Shalim
+  github_info: yasminshalim
+- project_name: Internet Equity Initiative
+  student_name: Harleen Kaur Buttar
+  github_info: hkbuttar
+- project_name: Internet Equity Initiative
+  student_name: Shishuo Wang
+  github_info: cwang436
+- project_name: Kids First Chicago
+  student_name: Dylan Danaie
+  github_info: ddanaie
+- project_name: Kids First Chicago
+  student_name: Mariam Raheem
+  github_info: mariamraheem
+- project_name: Kids First Chicago
+  student_name: Rachelle Cho
+  github_info: rachelle-cho21
+- project_name: Kids First Chicago
+  student_name: Robert Rodriguez
+  github_info: rdrodriguez0111
+- project_name: Pesticide Action Network
+  student_name: Emma Griffin
+  github_info: ecg1331
+- project_name: Pesticide Action Network
+  student_name: Jenny Yuening Li
+  github_info: jennyyueli
+- project_name: Pesticide Action Network
+  student_name: Jared Maksoud
+  github_info: jmakk123
+- project_name: Pesticide Action Network
+  student_name: Liam Starnes
+  github_info: liamstarnes
+- project_name: RAFI - Grocery
+  student_name: Arkadeep Bandyopadhyay
+  github_info: arkadeep
+- project_name: RAFI - Grocery
+  student_name: Dario Hinojosa Delgadillo
+  github_info: dariushinojosa
+- project_name: RAFI - Grocery
+  student_name: Ioanna Georgopoulou
+  github_info: igeorgop
+- project_name: RAFI - Grocery
+  student_name: Robert Ukrainsky
+  github_info: rukrainsky
+- project_name: UChicago Library
+  student_name: Emily Tong
+  github_info: emilytong123
+- project_name: UChicago Library
+  student_name: Ricardo Calderon
+  github_info: ric-calderon
+- project_name: UChicago Library
+  student_name: Seungwook (Sean) Won
+  github_info: seanwon1217
+- project_name: UChicago Transportation
+  student_name: Kristen Wallace
+  github_info: kwallace25
+- project_name: UChicago Transportation
+  student_name: Leah Dimsu
+  github_info: leahdimsu
+- project_name: UChicago Transportation
+  student_name: Minjae Joh
+  github_info: mjayjoh
+- project_name: UChicago Transportation
+  student_name: Yue (Luna) Jian
+  github_info: jiany1020

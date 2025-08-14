@@ -1,0 +1,103 @@
+quarter: Autumn
+year: 2022
+name_map: {}
+projects:
+- org_name: AmFam
+  description: Geospatial/time series analysis of extreme weather patterns
+  project_url: https://www.amfam.com/
+  mentor: Tim & Rahim & Yuetian
+  ta: Anthony K
+  github_link: https://github.com/chicago-cdac/2022-amfam-clinic/
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: Kayla Robinson
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: BankTrack
+  description: NLP Models for identifying debt information in public financial documents
+  project_url: ''
+  mentor: Launa
+  ta: Anthony K
+  github_link: ''
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: <ul><li>Ryan Brightwell</li><li>Dustin Roasa</li></ul>
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: Blue Ocean Gear
+  description: Anomaly detection of fishing gear to detect lost equipment
+  project_url: https://www.blueoceangear.com/
+  mentor: Launa & Susanna
+  ta: Todd
+  github_link: ''
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: <ul><li>Kortney Opshaug</li><li>Peter Macy</li><li>Will Morton</li></ul>
+  project_url_valid: true
+  is_11th_hour: true
+- org_name: BPI
+  description: Geospatial/demographic analysis of traffic stops in Chicago
+  project_url: https://www.impactforequity.org/
+  mentor: Amanda
+  ta: Kenia
+  github_link: https://github.com/dsi-clinic/2022-bpi-clinic
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: <ul><li>Amy Thompson</li><li>Loren Jones</li></ul>
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Citizen Data
+  description: Voter file analysis and prediction
+  project_url: ''
+  mentor: Jeffrey & Riley
+  ta: Todd
+  github_link: https://github.com/dsi-clinic/2022-citizendata-clinic
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: Kyle Redfield
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Internet Equity
+  description: Demographic characteristics and internet access
+  project_url: https://github.com/uchicago-dsi/broadbandequity
+  mentor: Nick & Evelyn
+  ta: Utkarsh
+  github_link: https://github.com/uchicago-dsi/broadbandequity
+  is_private_repo: false
+  has_one_pager: null
+  external_mentor_info: <ul><li>Nicole Marwell</li><li>Nick Feamster</li></ul>
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Invenergy
+  description: Image segmentation to find turbines on drone footage
+  project_url: https://invenergy.com/
+  mentor: Anna & Trevor & Peter
+  ta: Utkarsh
+  github_link: https://github.com/dsi-clinic/2022-Invenergy-clinic
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: "<ul><li>Zoë Kimpel</li><li>Kenneth Parkhill</li></ul>"
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: mBio
+  description: NLP for identification of GMO related information in public documents
+  project_url: ''
+  mentor: Trevor & Patricia
+  ta: Kenia
+  github_link: https://github.com/uchicago-dsi/mBio
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: ''
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: Prudential
+  description: Public company earnings prediction
+  project_url: https://www.prudential.com/
+  mentor: Nick
+  ta: Utkarsh
+  github_link: ''
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: Amol Tembe
+  project_url_valid: false
+  is_11th_hour: false

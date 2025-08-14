@@ -1,0 +1,177 @@
+quarter: Autumn
+year: 2023
+students:
+- project_name: AmFam
+  student_name: DB Christenson
+  github_info: https://github.com/dbchristenson
+- project_name: AmFam
+  student_name: Grace Wang
+  github_info: https://github.com/graceannwang
+- project_name: AmFam
+  student_name: Jennifer Yeaton
+  github_info: https://github.com/jkyeaton
+- project_name: AmFam
+  student_name: Leon (Lixin) Wang
+  github_info: https://github.com/leonwlx
+- project_name: Argonne
+  student_name: Yushu Qiu
+  github_info: https://github.com/yushuqiu1
+- project_name: Argonne
+  student_name: Jason Yu
+  github_info: https://github.com/JasonYUChicago
+- project_name: Argonne
+  student_name: Mayurakshi Ghosal
+  github_info: https://github.com/m-ghosal
+- project_name: Argonne
+  student_name: Yingzi Jin
+  github_info: https://github.com/jinyz1220
+- project_name: Argonne-Fermi
+  student_name: Nicholas Liagridonis
+  github_info: https://github.com/niclia
+- project_name: Argonne-Fermi
+  student_name: Foo Suon Chuang
+  github_info: https://github.com/foosuonchuang
+- project_name: Argonne-Fermi
+  student_name: Yuanning (Violet) Huang
+  github_info: https://github.com/yuanninghuang
+- project_name: Argonne-Fermi
+  student_name: Zihua Chen
+  github_info: https://github.com/zihua-uc
+- project_name: Climate Cabinet
+  student_name: Alan Mburu Kagiri
+  github_info: https://github.com/alankagiri
+- project_name: Climate Cabinet
+  student_name: "A\xEFcha Camara"
+  github_info: https://github.com/necabotheking
+- project_name: Climate Cabinet
+  student_name: Nicolas Posner
+  github_info: https://github.com/nrposner
+- project_name: Climate Cabinet
+  student_name: Yuzhou Wang
+  github_info: https://github.com/yuzhouw313
+- project_name: CPL
+  student_name: Anika Vyas
+  github_info: https://github.com/anikavyas
+- project_name: CPL
+  student_name: Jeremy Dumalig
+  github_info: https://github.com/jeremydumalig
+- project_name: CPL
+  student_name: Matthew Rubenstein
+  github_info: https://github.com/Rubemat20
+- project_name: CPL
+  student_name: Kristof Turan
+  github_info: https://github.com/kris057
+- project_name: Fermi-simulations
+  student_name: Keegan Ballantyne
+  github_info: https://github.com/kmballantyne
+- project_name: Fermi-simulations
+  student_name: Carina Kane
+  github_info: https://github.com/carinakane
+- project_name: Fermi-simulations
+  student_name: Douglas Williams
+  github_info: https://github.com/Douglasmsw
+- project_name: Fermi-gnn
+  student_name: Jihee You
+  github_info: https://github.com/jiheeyy
+- project_name: Fermi-gnn
+  student_name: Rohan Mehta
+  github_info: https://github.com/rohanmehtagithub
+- project_name: Fermi-gnn
+  student_name: Kate Habich
+  github_info: https://github.com/ehabich
+- project_name: Fermi-gnn
+  student_name: Shan Gao
+  github_info: https://github.com/shaangao
+- project_name: HAPA
+  student_name: Yangge Xu
+  github_info: https://github.com/ygxu01
+- project_name: HAPA
+  student_name: Chen Hui Wang (Fei)
+  github_info: https://github.com/chenhuifei01
+- project_name: HAPA
+  student_name: Jonathan Juarez
+  github_info: https://github.com/Nohakith
+- project_name: HAPA
+  student_name: Sam Corey
+  github_info: https://github.com/secorey
+- project_name: Internet Equity
+  student_name: Ridhi Purohit
+  github_info: https://github.com/ridhi96
+- project_name: Internet Equity
+  student_name: Neha Sadasivan
+  github_info: https://github.com/nehasadasivan
+- project_name: Internet Equity
+  student_name: Angelie Miranda
+  github_info: https://github.com/aemiranda
+- project_name: Internet Equity
+  student_name: Aaron Haefner
+  github_info: https://github.com/aaronhaefner
+- project_name: IRC
+  student_name: Helen Zhou
+  github_info: https://github.com/helenyxzhou
+- project_name: IRC
+  student_name: Annabel Mendoza
+  github_info: https://github.com/amendoza5025
+- project_name: IRC
+  student_name: Santiago Segovia
+  github_info: https://github.com/ssegovba
+- project_name: Morningstar
+  student_name: Rohan Mathur
+  github_info: https://github.com/rmathur1482
+- project_name: Morningstar
+  student_name: Kaya Lee
+  github_info: https://github.com/klee2024
+- project_name: Morningstar
+  student_name: Rishabh Shastry
+  github_info: https://github.com/rishabhshastry
+- project_name: Morningstar
+  student_name: Jihui Tan
+  github_info: https://github.com/JihuiTanUchicago
+- project_name: Perpetual
+  student_name: Jessica Cibrian
+  github_info: https://github.com/jescib
+- project_name: Perpetual
+  student_name: Huanlin Dai
+  github_info: https://github.com/HuanlinDai
+- project_name: Perpetual
+  student_name: Sarah Walker
+  github_info: https://github.com/sarahwalker10
+- project_name: Perpetual
+  student_name: Yifan Wu
+  github_info: https://github.com/genieugod
+- project_name: Prudential
+  student_name: Sirivanth Paladugu
+  github_info: https://github.com/Sirivanth16
+- project_name: Prudential
+  student_name: Connie Chen
+  github_info: https://github.com/kangyic
+- project_name: Prudential
+  student_name: Jiayan Li
+  github_info: null
+- project_name: Prudential
+  student_name: Qichang Zheng
+  github_info: https://github.com/QichangZheng
+- project_name: RAFI
+  student_name: Colin McLuckie
+  github_info: https://github.com/ColinMcLuckie
+- project_name: RAFI
+  student_name: Shishira Bhavimane
+  github_info: https://github.com/sbhavimane-22
+- project_name: RAFI
+  student_name: Fanghan Xu
+  github_info: https://github.com/catalystxu
+- project_name: RAFI
+  student_name: Yutong Jiang
+  github_info: https://github.com/essicaJ
+- project_name: UNI
+  student_name: Su Doga Karaca
+  github_info: https://github.com/sudogakrc
+- project_name: UNI
+  student_name: Maxine Ling Xu
+  github_info: https://github.com/mxu2000
+- project_name: UNI
+  student_name: Anna Moise
+  github_info: https://github.com/amoise16
+- project_name: UNI
+  student_name: Hantao Xiao
+  github_info: https://github.com/hantaoxiao

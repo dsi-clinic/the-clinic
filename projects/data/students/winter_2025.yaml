@@ -1,0 +1,240 @@
+quarter: Winter
+year: 2025
+students:
+- project_name: Argonne
+  student_name: Ana Guedes
+  github_info: anacpguedes
+- project_name: Argonne
+  student_name: Angela Liu
+  github_info: aliu65803
+- project_name: Argonne
+  student_name: Isaac Harlem
+  github_info: isaacharlem
+- project_name: Argonne
+  student_name: Siya Kalra
+  github_info: siyakalra830
+- project_name: Building Decarbonization Coalition
+  student_name: Andres Guerrero
+  github_info: aguerrero0034
+- project_name: Building Decarbonization Coalition
+  student_name: Andrew Kaboski
+  github_info: akaboski
+- project_name: Building Decarbonization Coalition
+  student_name: Jerald Shu
+  github_info: j-shu-uofc
+- project_name: Building Decarbonization Coalition
+  student_name: Abigail Starr
+  github_info: abigailstarr
+- project_name: Building Decarbonization Coalition
+  student_name: Isabella Mercado
+  github_info: imercadouchicago
+- project_name: CMAP
+  student_name: Alan Cherman
+  github_info: alan-cherman
+- project_name: CMAP
+  student_name: Anna Poon
+  github_info: anna-poon
+- project_name: CMAP
+  student_name: Gregory Caesar
+  github_info: Aufsteyegen
+- project_name: CMAP
+  student_name: Cassandra Haas
+  github_info: cassiehaas
+- project_name: Center for Living Systems
+  student_name: Jared Bendavid
+  github_info: jbendavid
+- project_name: Center for Living Systems
+  student_name: Kruthi Gollapudi
+  github_info: kruthig03
+- project_name: Center for Living Systems
+  student_name: Lucas von Kapff
+  github_info: lvonkapff
+- project_name: Center for Living Systems
+  student_name: Zach Laurence
+  github_info: zlaurence
+- project_name: Center for Living Systems
+  student_name: Katja Edwards
+  github_info: katjae113
+- project_name: Data and Democracy
+  student_name: Jacob Chui
+  github_info: jacobchuihyc
+- project_name: Data and Democracy
+  student_name: Sally North
+  github_info: sallyjnorth
+- project_name: Data and Democracy
+  student_name: Lisa Raj Singh
+  github_info: lisarajsingh
+- project_name: Fermi - GNN
+  student_name: Alexander Bacro
+  github_info: alexbacro
+- project_name: Fermi - GNN
+  student_name: Meghane Saidenberg-Coriston
+  github_info: msaidenberg
+- project_name: Fermi - GNN
+  student_name: Yuze (Edward) Gu
+  github_info: crimsondevil0929
+- project_name: Fermi - Simulations
+  student_name: Emily Tong
+  github_info: emilytong123
+- project_name: Fermi - Simulations
+  student_name: Kevin Lin
+  github_info: TangyKiwi
+- project_name: Fermi - Simulations
+  student_name: Kristen Wallace
+  github_info: kwallace25
+- project_name: Fermi - Simulations
+  student_name: Simon Katz
+  github_info: simonkatz88
+- project_name: Food System 6
+  student_name: Hayden Leiderman
+  github_info: hleiderman
+- project_name: Food System 6
+  student_name: Lila Weizer
+  github_info: lilaweizer
+- project_name: Food System 6
+  student_name: Maxwell Resnick
+  github_info: maxwell-resnick
+- project_name: Food System 6
+  student_name: Yurou Li
+  github_info: yli-5490
+- project_name: IDI - Grievances
+  student_name: Emanda Bisrat
+  github_info: emandabisrat
+- project_name: IDI - Grievances
+  student_name: Michelangelo Pagan
+  github_info: michelangelopagan
+- project_name: IDI - Grievances
+  student_name: Osinachi Nwosu
+  github_info: nwosuo
+- project_name: IDI - Grievances
+  student_name: Vikram Ramaswamy
+  github_info: vikramr2025
+- project_name: IDI - Grievances
+  student_name: Andrew Kim
+  github_info: andrewkimm99
+- project_name: International Rescue Committee
+  student_name: Belle Nahoom
+  github_info: bellegn1
+- project_name: International Rescue Committee
+  student_name: Daniel Mendoza
+  github_info: dannymendoza1
+- project_name: International Rescue Committee
+  student_name: Emma Ricks
+  github_info: emmaricks
+- project_name: International Rescue Committee
+  student_name: Maya Umlauf
+  github_info: mlumlauf
+- project_name: International Rescue Committee
+  student_name: Alexandra Nehme
+  github_info: alexandranehme
+- project_name: Internet Equity Initiative
+  student_name: Alexa Norman
+  github_info: normanalexa31
+- project_name: Internet Equity Initiative
+  student_name: Ethan Hochstim
+  github_info: eh18
+- project_name: Internet Equity Initiative
+  student_name: Harleen Buttar
+  github_info: hkbuttar
+- project_name: Internet Equity Initiative
+  student_name: Jack Chefetz
+  github_info: JackChefetz
+- project_name: Invenergy
+  student_name: Alexander Mosher
+  github_info: amosheruc
+- project_name: Invenergy
+  student_name: Ioanna Georgopoulou
+  github_info: igeorgop
+- project_name: Invenergy
+  student_name: Rain Liu
+  github_info: rainliu19
+- project_name: Invenergy
+  student_name: Vanessa Lois
+  github_info: vlois
+- project_name: Invenergy
+  student_name: Yanzhe (Tony) Shi
+  github_info: yyyyyyyyyynot
+- project_name: Kids First Chicago
+  student_name: Dylan Danaie
+  github_info: ddanaie
+- project_name: Kids First Chicago
+  student_name: Klaudia Barbarossa
+  github_info: kbarbarossa
+- project_name: Kids First Chicago
+  student_name: Robert Rodriguez
+  github_info: rdrodriguez0111
+- project_name: Kids First Chicago
+  student_name: Wanni Yang
+  github_info: WanniiY
+- project_name: Morningstar
+  student_name: "Andrei Th\xFCler"
+  github_info: athuler
+- project_name: Morningstar
+  student_name: Aren Mizuno
+  github_info: arenmizuno
+- project_name: Morningstar
+  student_name: Henry Josephson
+  github_info: henryjosephson
+- project_name: Morningstar
+  student_name: Kevin Liu
+  github_info: Kev0208
+- project_name: RAFI - Grocery
+  student_name: Adam Marchakitus
+  github_info: amarchakitus
+- project_name: RAFI - Grocery
+  student_name: Jennifer Spinoglio
+  github_info: jenspinoglio
+- project_name: RAFI - Grocery
+  student_name: Khwaish Vohra
+  github_info: khwaishvohra
+- project_name: RAFI - Grocery
+  student_name: Robert Ukrainsky
+  github_info: rukrainsky
+- project_name: RAFI - Poultry
+  student_name: Disha Mohta
+  github_info: dishamohta124
+- project_name: RAFI - Poultry
+  student_name: Esther Goldberg
+  github_info: Estherg1
+- project_name: RAFI - Poultry
+  student_name: Sabrina Matsui
+  github_info: sabrinamatsui31
+- project_name: RAFI - Poultry
+  student_name: Yue (Patty) Pan
+  github_info: ypan02
+- project_name: UChicago Library
+  student_name: Kaitlyn Li
+  github_info: kaitlynli2025
+- project_name: UChicago Library
+  student_name: Nitika Kurma
+  github_info: nitikakurma
+- project_name: UChicago Library
+  student_name: Ricardo Calderon
+  github_info: ric-calderon
+- project_name: UChicago Library
+  student_name: Shailesh Bolduc
+  github_info: TheShai81
+- project_name: University of Rwanda - Climate
+  student_name: Dario Hinojosa Delgadillo
+  github_info: dariushinojosa
+- project_name: University of Rwanda - Climate
+  student_name: Joseph De Leon
+  github_info: jmdeleon1110
+- project_name: University of Rwanda - Climate
+  student_name: Wina Aaron
+  github_info: WinaAar
+- project_name: University of Rwanda - Climate
+  student_name: Charles Eden
+  github_info: ceden26
+- project_name: University of Rwanda - Landslides
+  student_name: Grace Rowan
+  github_info: gkrowan
+- project_name: University of Rwanda - Landslides
+  student_name: Jenny Li
+  github_info: jennyyueli
+- project_name: University of Rwanda - Landslides
+  student_name: Rachelle Cho
+  github_info: rachelle-cho21
+- project_name: University of Rwanda - Landslides
+  student_name: Sana Fessuh
+  github_info: shfessuh

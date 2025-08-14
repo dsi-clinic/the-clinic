@@ -1,0 +1,153 @@
+quarter: Spring
+year: 2024
+name_map:
+  CIR: Center for Investigative Reporting
+  CMAP: Chicago Metropolitan Agency for Planning
+  Fermi-simulations: Fermilab Simulations
+  Fermi-gnn: Fermilab Graph Neural Networks
+  CTC: Chicago Trading Company
+  RAFI: Rural Advancement Foundation International
+projects:
+- org_name: Argonne
+  description: Operational requirement management using graph based knowledge            networks
+  project_url: https://www.anl.gov/
+  mentor: Bill Trok & YJ Choe
+  ta: Victor
+  github_link: https://github.com/dsi-clinic/2023-clinic-Argonne
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Matthew Dearing
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Argonne-Fermi
+  description: AI to identify "lessons learned" in project documents
+  project_url: https://www.anl.gov/
+  mentor: Isaac
+  ta: Jessica J
+  github_link: https://github.com/dsi-clinic/2023-autumn-argonne-fermi
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Matthew Dearing
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: CIR
+  description: OSHA Workplace Injuries
+  project_url: https://revealnews.org/
+  mentor: Nick
+  ta: ''
+  github_link: https://github.com/dsi-clinic/2024-spring-cir
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Melissa Lewis
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: CMAP
+  description: AI to recognize stormwater detention features
+  project_url: ''
+  mentor: Anna & Tim
+  ta: Victor
+  github_link: https://github.com/dsi-clinic/2024-winter-cmap
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Holly Hudson
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: CTC
+  description: Sentiment analysis of social media postings
+  project_url: https://www.chicagotrading.com/
+  mentor: David U. & Patricia
+  ta: Rishabh
+  github_link: https://github.com/dsi-clinic/2024-winter-ctc
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: Natasha Pekelis
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Climate Cabinet
+  description: Campaign Finance Tracking
+  project_url: ''
+  mentor: Trevor
+  ta: Sarah
+  github_link: https://github.com/dsi-clinic/2024-winter-climate-cabinet-campaign-finance-tracker
+  is_private_repo: false
+  has_one_pager: true
+  external_mentor_info: Caleb Braun
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: Fermi-simulations
+  description: AI Diffusion models for simulating particle physics experiments
+  project_url: https://computing.fnal.gov/kevin-pedro/
+  mentor: Peter
+  ta: Fei
+  github_link: https://github.com/dsi-clinic/2023-Autumn-Clinic-Fermi-CaloDiffusionPaper
+  is_private_repo: false
+  has_one_pager: true
+  external_mentor_info: Oz Amram & Kevin Pedro
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Fermi-gnn
+  description: GNNs for particle reconstruction in neutrino experiments
+  project_url: https://computing.fnal.gov/giuseppe-cerati/
+  mentor: Chong Liu
+  ta: Yiran
+  github_link: https://github.com/exatrkx/NuGraph
+  is_private_repo: false
+  has_one_pager: true
+  external_mentor_info: Giuseppe Cerati
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Internet Equity
+  description: Patterns of FCC broadband challenges
+  project_url: https://internetequity.uchicago.edu/
+  mentor: Tim & Jonatas Marques
+  ta: Ridhi
+  github_link: https://github.com/dsi-clinic/2023-autumn-internet-equity
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Alexis Schrubbe
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Invenergy
+  description: Modeling wind energy production using AI
+  project_url: https://invenergy.com/
+  mentor: Vasileios
+  ta: Yiran
+  github_link: https://github.com/dsi-clinic/2024-winter-invenergy
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: Zoe Kimpel
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Morningstar
+  description: Codebase optimization with LLMs
+  project_url: https://www.morningstar.com/
+  mentor: Satadisha Saha Bhowmick
+  ta: Rishabh
+  github_link: https://github.com/dsi-clinic/2024-spring-morningstar
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: <ul><li>Josh Charney</li><li>Jazmin Melchor</li></ul>
+  project_url_valid: true
+  is_11th_hour: false
+- org_name: Perpetual
+  description: Location optimizations for placement of foodware reuse systems
+  project_url: https://www.perpetualuse.org/
+  mentor: Launa
+  ta: Sarah
+  github_link: https://github.com/dsi-clinic/2023-clinic-perpetual
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Ellie Moss
+  project_url_valid: true
+  is_11th_hour: true
+- org_name: RAFI
+  description: Poultry Packaging Consolidation
+  project_url: https://www.rafiusa.org
+  mentor: Todd
+  ta: Rita
+  github_link: https://github.com/dsi-clinic/2024-winter-rafi-poultry-cafos
+  is_private_repo: false
+  has_one_pager: true
+  external_mentor_info: Aaron Johnson
+  project_url_valid: false
+  is_11th_hour: true
