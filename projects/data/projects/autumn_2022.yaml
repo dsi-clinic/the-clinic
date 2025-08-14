@@ -87,7 +87,7 @@ projects:
   github_link: https://github.com/uchicago-dsi/mBio
   is_private_repo: true
   has_one_pager: null
-  external_mentor_info: ''
+  external_mentor_info: '<ul><li>Joeva Rock</li><li>Brian Dowd-Uribe</li></ul>'
   project_url_valid: false
   is_11th_hour: true
 - org_name: Prudential

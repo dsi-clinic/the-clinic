@@ -30,27 +30,6 @@ markdown-link-check-disable -->\
 ---
 """
 
-# Project data field indices for legacy compatibility
-PROJECT_FIELDS = {
-    'ORG_NAME': 0,
-    'DESCRIPTION': 1,
-    'PROJECT_URL': 2,
-    'MENTOR': 3,
-    'TA': 4,
-    'GITHUB_LINK': 5,
-    'IS_PRIVATE': 6,
-    'HAS_ONE_PAGER': 7,
-    'EXTERNAL_MENTOR': 8,
-    'PROJECT_URL_VALID': 9,
-    'IS_11TH_HOUR': 10
-}
-
-# Student data field indices
-STUDENT_FIELDS = {
-    'PROJECT_NAME': 0,
-    'STUDENT_NAME': 1,
-    'GITHUB_INFO': 2
-}
 
 # Supported quarters configuration
 ALL_QUARTERS = [
@@ -164,36 +143,12 @@ def create_single_quarter_table(
     # Load both student and project data from YAML
     if use_yaml_data:
         try:
-            yaml_students = load_students_for_quarter(quarter, year)
-            # Convert to legacy format for compatibility with existing code
-            student_info_list = [
-                [student.project_name, student.student_name, student.github_info]
-                for student in yaml_students
-            ]
-            
-            # Load project data from YAML
-            yaml_projects, name_map = load_projects_for_quarter(quarter, year)
-            # Convert to legacy format for compatibility with existing code
-            project_map = [
-                [
-                    project.org_name,
-                    project.description,
-                    project.project_url,
-                    project.mentor,
-                    project.ta,
-                    project.github_link,
-                    project.is_private_repo,
-                    project.has_one_pager,
-                    project.external_mentor_info,
-                    project.project_url_valid,
-                    project.is_11th_hour,
-                ]
-                for project in yaml_projects
-            ]
+            students = load_students_for_quarter(quarter, year)
+            projects, name_map = load_projects_for_quarter(quarter, year)
         except Exception as e:
             print(f"Warning: Failed to load YAML data for {quarter} {year}: {e}")
-            student_info_list = []
-            project_map = []
+            students = []
+            projects = []
             name_map = {}
     else:
         raise ValueError("Legacy data loading not supported in this version")
@@ -214,19 +169,19 @@ def create_single_quarter_table(
         <tbody>
     """
 
-    for project_info in project_map:
-        # Extract project fields using constants for clarity
-        project_link = project_info[PROJECT_FIELDS['ORG_NAME']]
-        project_description = project_info[PROJECT_FIELDS['DESCRIPTION']] 
-        project_url = project_info[PROJECT_FIELDS['PROJECT_URL']]
-        mentor_link = project_info[PROJECT_FIELDS['MENTOR']]
-        ta_link = project_info[PROJECT_FIELDS['TA']]
-        github_link = project_info[PROJECT_FIELDS['GITHUB_LINK']]
-        is_private_repo = project_info[PROJECT_FIELDS['IS_PRIVATE']]
-        has_one_pager = project_info[PROJECT_FIELDS['HAS_ONE_PAGER']]
-        external_mentor_info = project_info[PROJECT_FIELDS['EXTERNAL_MENTOR']]
-        project_url_valid = project_info[PROJECT_FIELDS['PROJECT_URL_VALID']]
-        is_11th_hour = project_info[PROJECT_FIELDS['IS_11TH_HOUR']]
+    for project in projects:
+        # Extract project fields directly from Pydantic model
+        project_link = project.org_name
+        project_description = project.description
+        project_url = project.project_url
+        mentor_link = project.mentor
+        ta_link = project.ta
+        github_link = project.github_link
+        is_private_repo = project.is_private_repo
+        has_one_pager = project.has_one_pager
+        external_mentor_info = project.external_mentor_info
+        project_url_valid = project.project_url_valid
+        is_11th_hour = project.is_11th_hour
 
         # Project name -- replace with what is in name map if it exists
         project_name = name_map.get(project_link, project_link)
@@ -265,13 +220,15 @@ def create_single_quarter_table(
 
         # Student info - build HTML list
         student_info = "<ul>"
-        student_project_list = [
-            x for x in student_info_list if x[STUDENT_FIELDS['PROJECT_NAME']] == project_link
+        project_students = [
+            student for student in students if student.project_name == project_link
         ]
-        if not student_project_list:
+        if not project_students:
             raise ValueError(f"No Students found for project {project_link}")
-        for student in student_project_list:
-            student_info += f"<li>{create_link_for_student(student)}</li>"
+        for student in project_students:
+            # Convert to legacy format for create_link_for_student function
+            student_legacy = [student.project_name, student.student_name, student.github_info]
+            student_info += f"<li>{create_link_for_student(student_legacy)}</li>"
         student_info += "</ul>"
 
         # TA -- same logic as above, but handle the case with no TA
