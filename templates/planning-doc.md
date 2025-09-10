@@ -17,7 +17,7 @@ The report deadlines are based on the day of the mentor meeting. The planning re
 ## Grading 
 Grades are assigned on a scale of 0-5 points and each student in the group may receive a different grade. 
 
-Tasks should be assigned to a single individual. If the same task is repeated multiple times, the task should be broken up into smaller individual tasks each assigned to a single person,
+Tasks should be assigned to a single individual. If the same task is repeated multiple times, the task should be broken up into smaller individual tasks, each assigned to a single person.
 
 Mentors may apply additional grading standards to the rubrics below.
 
@@ -39,7 +39,7 @@ Late submissions made within 24 hours of the deadline will automatically be dock
 
 |  |  | 
 | --- | --- |  
-| Clinic Project Information |  |
+| Data Science Clinic Project Information |  |
 | Project Name | |
 | Mentor Meeting Date and Time | |
 | TA Name | |
@@ -48,7 +48,7 @@ Late submissions made within 24 hours of the deadline will automatically be dock
 
 Are there any plans to meet with the external mentor? If so, please provide the logistics of the meeting (meeting start and end time, in-person? Zoom? Who on both sides will be attending – to the best of your knowledge).
 
-As a reminder that if you meet with an external mentor you need to fill out the external mentor meeting notes template that can be found on the DSI clinic web site. This information should then be put in the repo.
+As a reminder, if you meet with an external mentor you need to fill out the [external mentor meeting notes template](../templates/mentor-meeting.md). This information should then be put in the repo.
  
 
 | External Mentor Meeting | Write information here | 

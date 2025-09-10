@@ -36,7 +36,7 @@ Late submissions made within 24 hours of the deadline will automatically be dock
 
 |  |  | 
 | --- | --- |  
-| Clinic Project Information |  |
+| Data Science Clinic Project Information |  |
 | Project Name | |
 | Mentor Meeting Date and Time | |
 | TA Name | |

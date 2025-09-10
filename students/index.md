@@ -31,17 +31,17 @@ You can find a weekly calendar [here](../syllabus/weekly-plan.md).
 ## Logistics
 ### Meeting times / Simultaneous Enrollment
 
-During the first week of clinic students are expected to meet at the time specified in the schedule, commonly TuTh 5-6:20, for orientation and introduction activities. 
+During the first week of the Data Science Clinic students are expected to meet at the time specified in the schedule, commonly TuTh 5-6:20, for orientation and introduction activities. 
 
-During the first week, each project will identify meeting times specific to their project (two TA sessions and one mentor sessions). These meeting times are dependent on the TA, Mentor(s) and students schedule. These meeting times will be used for the rest of the quarter.
+During the first week, each project will identify meeting times specific to their project (two TA sessions and one mentor session). These meeting times are dependent on the TA, Mentor(s) and students' schedules. These meeting times will be used for the rest of the quarter.
 
 During the sixth week of the quarter there are a set of mid-quarter presentations. These presentations are not required for all team members -- though failing to support your team is a bad signal. The mid-quarter presentations are in-person and in the room scheduled for the class.
 
-Since outside the times listed above we do not meet during the scheduled time it is not uncommon for students to enroll in a class with some overlap. If you do have a course which has some overlap or conflict with the scheduled time you may need to fill out a "Simultaneous Enrollment" form with your advisor. If this is the case please send an email to the clinic director stating that you will be doing this.
+Since outside the times listed above we do not meet during the scheduled time it is not uncommon for students to enroll in a class with some overlap. If you do have a course which has some overlap or conflict with the scheduled time you may need to fill out a "Simultaneous Enrollment" form with your advisor. If this is the case please send an email to the Data Science Clinic director stating that you will be doing this.
 
 ### In-person requirements
 
-We expect all TA sessions and mentor meetings (unless the mentor chooses otherwise) to be done _in-person_ during normal business hours. If your schedule makes it difficult to be on the Hyde Park Campus during normal business hours, such as being in a program based down town or another commitment which takes you off campus for significant time then we recommend _not_ taking this course.
+We expect all TA sessions and mentor meetings (unless the mentor chooses otherwise) to be done _in-person_ during normal business hours. If your schedule makes it difficult to be on the Hyde Park Campus during normal business hours, such as being in a program based downtown or another commitment which takes you off campus for significant time, then we recommend _not_ taking this course.
 
 
 ## People
@@ -51,7 +51,7 @@ The Data Science Clinic is administered by [Nick Ross](https://nickross.site) an
 
 ## Documents 
 
-This section contains links to many of the important documents used in the clinic. 
+This section contains links to many of the important documents used in the Data Science Clinic. 
 
 
 ### Progress and Planning Docs
@@ -72,11 +72,11 @@ The first week org report can also be found in the `templates` directory in a MS
 
 Each time you meet with your external mentors you need to designate someone to be the note-taker. This person will write up the notes during the meeting making sure to include the information in the [mentor meeting template](../templates/mentor-meeting.md).
 
-Mentor meeting notes needs to be committed to the repo in either a `docs` or `meetings` directory.
+Mentor meeting notes need to be committed to the repo in either a `docs` or `meetings` directory.
 
 ### Mid-quarter presentation
 
-In week 6 of the clinic students will be required to complete a short mid-quarter presentation. There is a template for the presentation in the directory `templates`. 
+In week 6 of the Data Science Clinic students will be required to complete a short mid-quarter presentation. There is a template for the presentation in the directory `templates`. 
 
 If you want to receive an "A" on this assignment, _make sure to follow the [rubric](../rubrics/mid-quarter-presentation-rubric.md) precisely_.
 
