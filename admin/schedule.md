@@ -137,7 +137,7 @@ Mentors-TA Slack Message:
 - Students are required to submit their planning document this week after meeting with you.
 - Please make sure to follow the best practices outlined in in the "How to run a mentor meeting" and "Mentor Expectations" docs linked below.
 - There is quite a bit of documentation in the TA and Mentor Section of the GitHub repo. If you have any questions, please let us know.
-https://github.com/dsi-clinic/the-clinic/blob/main/mentor-ta/mentor-ta-info.md
+https://github.com/dsi-clinic/the-clinic/blob/main/mentor-ta/index.md
 
 ```
 
