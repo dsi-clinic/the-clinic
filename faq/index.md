@@ -23,6 +23,7 @@
 - [I am a Master's student and I was not selected, can I get a specific reason for why?](#masters-rejection-reason)
 
 ### Scheduling and Attendance
+- [Can the clinic be done remotely?](#remote-participation)
 - [What if I have time conflicts with the scheduled time?](#time-conflicts)
 
 ### Contact Information
@@ -91,6 +92,9 @@ The Data Science Clinic at the University of Chicago is committed to providing a
   * Our priority is to serve data science majors, who are required to take this for graduation, followed by as many 2nd year masters students as we can reasonably accommodate.
 
 ## Scheduling and Attendance {#scheduling-and-attendance}
+
+### Can the clinic be done remotely? {#remote-participation}
+No, the clinic is a primarily in-person experience where students work closely with mentors, TAs, and project partners. The collaborative nature of real-world data science projects requires regular face-to-face interaction for effective teamwork and learning.
 
 ### What if I have time conflicts with the scheduled time? {#time-conflicts}
 During the first week of clinic students are expected to meet at the time specified in the schedule, commonly TuTh 5-6:20, for orientation and introduction activities. At this time each project will identify meeting times specific to their project (two TA sessions and one mentor sessions). These meeting times are dependent on the TA, Mentor(s) and students schedule. These meeting times will be used for the rest of the quarter.
