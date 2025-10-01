@@ -7,6 +7,8 @@ title: "TA Expectations"
 ### Overview
 This document outlines the standard responsibilities of a Teaching Assistant (TA) in the Data Science Clinic. Please note that specific duties may vary as different mentors might request additional tasks. The responsibilities listed here form the baseline expectations.
 
+**Important**: All TAs should review the [TA Training Repository](https://github.com/dsi-clinic/ta-training) and complete the [TA Training Presentation](https://dsi-clinic.github.io/ta-training/) before beginning their duties. These resources provide essential guidance on technical standards, pedagogical approaches, and professional practices.
+
 ### Core Responsibilities
 TAs are expected to:
 

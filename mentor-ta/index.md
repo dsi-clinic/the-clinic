@@ -31,6 +31,8 @@ The following documents outline the core responsibilities of each position.
 ## How to
 * [How to run a Mentor Meeting](./how-to-run-a-meeting.md)
 * [How to run a TA Session](./how-to-run-a-ta-session.md)
+* [TA Training Repository](https://github.com/dsi-clinic/ta-training) - Comprehensive training materials and technical standards
+* [TA Training Presentation](https://dsi-clinic.github.io/ta-training/) - Interactive training slides
 
 ## Rubrics
   * [Progress Report](../rubrics/progress-doc-rubric.md)
