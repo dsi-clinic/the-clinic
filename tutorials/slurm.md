@@ -41,30 +41,33 @@ A common use of the cluster is running code from a github repository on it. If y
 4. Go to the repository github page, click the dropdown on the green button that says 'Code', select 'SSH' and copy the value.
 5. Type in `git clone COPIED_VALUE` to clone the repo to your home directory. Verify that there were no errors printed and that the repo was properly cloned.
 
-## Install Conda for Environment Management
+## Install Micromamba for Environment Management
 
 1. Connect to cluster via `ssh`
 2. In a terminal on the cluster:
 
 ```bash
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
-bash ~/miniconda.sh
+cd ~
+curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/micromamba
+./bin/micromamba shell init -s bash -r ~/micromamba
+source ~/.bashrc
+micromamba config append channels conda-forge
 ```
-You can accept the defaults. Make sure you select yes when it asks to run conda init. This will ensure conda is activated by default. re-open and close your terminal.
+You can accept the defaults. Make sure you select yes when it asks to run conda init. This will ensure micromamba is activated by default. Re-open and close your terminal.
 
 3. Create a new environment
 ```bash
-conda create --name PROJECT_NAME python=3.11
-conda activate PROJECT_NAME
+micromamba create -y --name PROJECT_NAME python=3.13
+micromamba activate PROJECT_NAME
 pip install -r requirements.txt
 ```
 Where `PROJECT_NAME` is the name of the project you are working on. Now when you log into ai cluster, just make sure you run `conda activate PROJECT_NAME`.
 
-4. Ensure VS Code uses the correct python environment. When a python file is open and selected, click the Python version number on the bottom right and select the interpreter for PROJECT_NAME. If it is not listed, the path is: `/home/USERNAME/miniconda3/envs/PROJECT_NAME/bin/python` where `USERNAME` is your CNET ID. 
+4. Ensure VS Code uses the correct python environment. When a python file is open and selected, click the Python version number on the bottom right and select the interpreter for PROJECT_NAME. If it is not listed, the path is: `/home/USERNAME/micromamba/envs/PROJECT_NAME/bin/python` where `USERNAME` is your CNET ID. 
 
 5. Ensure VS Code uses the correct kernel for Jupyter notebooks. First, install `ipykernel` in the `PROJECT_NAME` environment:
 ```bash
-conda install -n PROJECT_NAME ipykernel --update-deps --force-reinstall
+micromamba install -n PROJECT_NAME ipykernel --update-deps --force-reinstall
 ```
 With a Jupyter notebook open, click the Python version number in the upper right and select the kernel for `PROJECT_NAME`. You may need to refresh the list of available kernels using the icon in the upper right of the menu.
 
