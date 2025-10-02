@@ -59,7 +59,6 @@ You can accept the defaults. Make sure you select yes when it asks to run conda 
 ```bash
 micromamba create -y --name PROJECT_NAME python=3.13
 micromamba activate PROJECT_NAME
-pip install -r requirements.txt
 ```
 Where `PROJECT_NAME` is the name of the project you are working on. Now when you log into ai cluster, just make sure you run `conda activate PROJECT_NAME`.
 
