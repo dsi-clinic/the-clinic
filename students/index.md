@@ -100,6 +100,7 @@ We keep a list of frequently asked questions and answers as well as "How-to"'s f
 
 * [How to set up your computer](../tutorials/clinic-computer-setup.md)
 * [SSH to Github and the Cluster](../tutorials/ssh_github_cluster.md)
+* [Using jupyter on the cluster](../tutorials/get-jupyter-working.md)
 * [Slurm](../tutorials/slurm.md)
 * [Using Submitit on the cluster](../tutorials/submit-it.md)
 * [Writing well-documented code](../coding-standards/code-example.md)
