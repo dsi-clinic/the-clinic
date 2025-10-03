@@ -2,6 +2,8 @@ quarter: Spring
 year: 2025
 name_map:
   CMAP: Chicago Metropolitan Agency for Planning
+  IDIGrievances: IDI - Grievances
+  KidsFirstChicago: Kids First Chicago
 projects:
 - org_name: Argonne
   description: Extending Argo with LLM-driven Agents and Workflows
