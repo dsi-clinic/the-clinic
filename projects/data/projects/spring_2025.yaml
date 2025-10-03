@@ -2,6 +2,8 @@ quarter: Spring
 year: 2025
 name_map:
   CMAP: Chicago Metropolitan Agency for Planning
+  IDIGrievances: IDI - Grievances
+  KidsFirstChicago: Kids First Chicago
 projects:
 - org_name: Argonne
   description: Extending Argo with LLM-driven Agents and Workflows
@@ -103,7 +105,7 @@ projects:
   external_mentor_info: 'Internal DSI Project'
   project_url_valid: false
   is_11th_hour: true
-- org_name: IDI - Grievances
+- org_name: IDIGrievances
   description: Mapping Human Rights Violations in the Palm Oil Industry
   project_url: ''
   mentor: Jingchao
@@ -125,7 +127,7 @@ projects:
   external_mentor_info: 'UChicago Internet Equity Initiative'
   project_url_valid: false
   is_11th_hour: false
-- org_name: Kids First Chicago
+- org_name: KidsFirstChicago
   description: Centralizing Chicago Public Schools Education Data
   project_url: ''
   mentor: Tim
