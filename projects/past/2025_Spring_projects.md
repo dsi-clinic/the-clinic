@@ -54,9 +54,9 @@ One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2025-spri
 Mentor: Jie Jian
 Students: Fang-Yu Hsu, Fuyuki Tani, Joseph De Leon
 
-## IDI - Grievences (11th Hour Sponsored)
+## IDI - Grievances (11th Hour Sponsored)
 Description: Mapping Human Rights Violations in the Palm Oil Industry
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2025-spring/IDI%20-%20Grievences.pdf
+One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2025-spring/IDIGrievances.pdf
 Mentor: Jingchao Fang
 Students: Michelangelo Pagan, Tiwaa Bruks, Vikram Ramaswamy, Woo Jae Kim
 
@@ -68,7 +68,7 @@ Students: Ethan Hochstim, Yasmin Shalim, Harleen Kaur Buttar, Shishuo Wang
 
 ## Kids First Chicago
 Description: Centralizing Chicago Public Schools Education Data
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2025-spring/Kids%20First%20Chicago.pdf
+One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2025-spring/KidsFirstChicago.pdf
 Mentor: Tim Hannifan
 Students: Dylan Danaie, Mariam Raheem, Rachelle Cho, Robert Rodriguez
 
