@@ -81,6 +81,7 @@ Our lecture is in: Eckhart Hall 133
 
 
 ### Week 1
+- Get NDAs signed by students and TAs
 - Set up badge access for the clinic rooms by sending a list of registered student names, emails, and ChicagoID numbers to DSI operations.
 - Create when2meet links and put them in the project Slack channels
 - Notify the groups that will need to complete step 6 of the computer setup (SSH/Cluster)
