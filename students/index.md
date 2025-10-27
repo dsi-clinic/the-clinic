@@ -76,7 +76,7 @@ Mentor meeting notes need to be committed to the repo in either a `docs` or `mee
 
 ### Mid-quarter presentation
 
-In week 6 of the Data Science Clinic students will be required to complete a short mid-quarter presentation. There is a template for the presentation in the directory `templates`. 
+In week 6 of the Data Science Clinic students will be required to complete a short mid-quarter presentation. There is a [template](../templates/midquarter-presentation-template.pptx) for the presentation. 
 
 If you want to receive an "A" on this assignment, _make sure to follow the [rubric](../rubrics/mid-quarter-presentation-rubric.md) precisely_.
 
