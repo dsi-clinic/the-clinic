@@ -15,6 +15,6 @@ This webpage contains everything there is to know about the Data Science Clinic:
 - **[Previous Projects](projects/)** - Showcase of completed Data Science Clinic projects
 - **[FAQ](faq/)** - A list of frequently asked questions. Please start here if you do not find the answer to your question.
 
-{% include info_session.html %}
+{% include application.html %}
 
 
