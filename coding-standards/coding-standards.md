@@ -53,10 +53,10 @@ Requirements
 1. Notebooks should generally _not_ contain function definitions.
 1. Notebooks should have less than 10 cells and all cells should be 10 lines of code or less.
 1. Notebooks should have documentation (preferably markdown) which describes the purpose of them.
-1. There should be no `! pip install XXX` in any notebooks. All environment requirements should be handled using a `requirements.txt` file.
+1. There should be no `! pip install XXX` in any notebooks. All environment requirements should be handled using the `pyproject.toml` file.
 1. Documentation should include (at a _minimum_):
     * Doc strings on all functions
-    * README files in directories specifying the contents.
+    * README files in directories specifying the contents (if not described in the main README or if it is not obvious).
     * README file in the root directory describing the purpose of the code, where to look for things, and how to run the code. If there are other locations for information regarding this project, links should be provided.
     * README file should describe your development process (e.g., how you did branches)
 
@@ -69,15 +69,19 @@ Requirements
 ### Git
 1. Working branches need to be up to date with _main_ upon completion of task/code review and should not stray behind _main_ for more than a day.
 
-### Docker
-1. Repos should contain a Dockerfile:
+### Environment
+
+All code needs to have a well-specified environment. 
+
+If the code runs locally (the most common situation), this means:
+
+* Repos should contain a Dockerfile and `pyproject.toml` file
     * Clear Instructions on how to run the code (via docker) in the main README.md file.
     * All code in the repo should be executable via docker.
-    * The Dockerfile should use a `requirements.txt` to manage modules and should have versions on all modules.
+    * The Dockerfile should use a `pyproject.toml` to manage modules and should have versions on all modules.
     * There should be _no_ conda / pyenv etc.
 
-### DSI Cluster
-1. Include a conda recipe or micromamba to manage the environment.
+If the code is supposed to run on the cluster, this means that there needs to be a well-specified conda or micromamba recipe to manage the environment. 
 
 
 FAQ
@@ -101,7 +105,7 @@ Notebooks, just like any other piece of code need to be well documented and read
 * Are Python module imports located together near the top of the notebook, following PEP 8, rather than scattered throughout many cells? 
     * Are all cells 15 lines of code or less? 
     * Do notebooks have less than 10 cells?
-    * Are `pyflakes` and `black` being run on the code for standardization.
+    * Are linting tools (`ruff`, etc.)
 
 #### What about Docker README.md information?
 
@@ -152,6 +156,6 @@ If you are doing work outside of python it still requires documentation. There s
 #### What should a docstring look like?
 
 Docstrings should contain, at a minimum:
-- A brief description of what the function does (if you are finding it difficult to breifly describe it, consider whether your function is too big)
-- Requirements of intput parameters. What types are expected? Does your function make any assumptions about the inputs (i.e. that an input dictionary has a 'results' key)? Document it!
+- A brief description of what the function does (if you are finding it difficult to briefly describe it, consider whether your function is too big)
+- Requirements of input parameters. What types are expected? Does your function make any assumptions about the inputs (i.e. that an input dictionary has a 'results' key)? Document it!
 Docstring format should be consistent across a repository. Google has a popular format, described [here](https://google.github.io/styleguide/pyguide.html#383-functions-and-methods). 
