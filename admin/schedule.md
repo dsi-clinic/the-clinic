@@ -188,10 +188,8 @@ There are four final deliverables:
 	(4) Technical Submission due 5/28
 
 Rubrics can be found here:
-	a. Video https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-video.md
-	b. One Pager: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/one-pager.md
-	c. Email: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-email.md
-	d. Technical Submission: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-technical-cleanup.md
+
+https://clinic.ds.uchicago.edu/students/#finals-week-deliverables
 
 Please read the rubrics carefully in order to receive full credit.
 ```
