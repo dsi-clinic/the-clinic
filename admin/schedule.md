@@ -205,7 +205,7 @@ Mentor/TA message:
 ```
 @here Just a reminder about your responsibilities as we head into the final weeks of the quarter.
 Mentors: Provide written feedback on student drafts within 24 hours of submission. For examples, please see the rubrics below. Students will submit drafts at the following times:
-1. 5/21 at 1pm (video draft 1)
+1. Dec 3rd @1pm (video draft 1)
 2. 5/23 at 1pm (video draft 2 and one-pager)
 
 TAs: Complete the technical rubric checklist for three files in two repositories within 24 hours of submission. You will be assigned two repositories to grade during tenth week. Students will submit their repositories on 5/28 at 5pm.

@@ -4,15 +4,19 @@ This document outlines the requirements for the final video presentation for the
 
 The audience of this presentation is your peers. They are smart and knowledgeable about data science but are by no means experts in the field. The aim of this communication exercise is to create a record of what you did that is accessible, interesting and provides a high-level overview and summary of your work. It isn’t supposed to be complete or provide enough detail on how to replicate your work. 
 
-The following presentations are high quality examples from previous years. This should give you a sense of the level of effort that is expected (Note that some of the requirements have changed from previous years, so these would not be considered “A+” under this year’s rubric).
+Your target audience should consist of people who are generally interested in this topic, so it is important to keep this light and interesting rather than focus on specific details. This should be closer to "TED talk" than "Academic talk". A presentation that frames up the problem and goal really well, highlights 2-3 interesting aspects in a focused way (explaining why they are interesting and how they fit into the problem), and is well presented will receive a higher grade than a presentation that goes to the full 12 minutes and tries to cover everything that occurred during the quarter.
+
+Finally, remember to read over the Do's and Don't's section below. There is a lot of useful advice there on problems we have seen in the past.
+
+The following are high-quality example presentations from previous years. This should give you a sense of the level of effort that is expected (Note that some of the requirements have changed from previous years, so these would not be considered "A+" under this year's rubric).
 
 You can find [example presentations here.](https://drive.google.com/drive/folders/1cxy5_prBoNhN0uCNokUjOPBP5vi1X6O3?usp=drive_link)
 
 ## Requirements 
 
-* The video presentation should be between 8-12 minutes in length. This is a hard limit and the best presentations tend to clock in around 9-10 minutes.
+* The video presentation must be between 8-12 minutes in length (hard limit). Note that the best presentations typically clock in under 10 minutes. 
 * The video must be uploaded to Canvas. No links to YouTube, Google Drive, Dropbox, etc. 
-    * Canvas submissions are limited to < 75MB. Reduce the quality of the video to reduce the file size. Leave time to upload to Canvas before the deadline. Failing to meet the deadline or not uploading due to file size problems will negatively impact your grade.
+    * Canvas submissions are limited to less than 75MB. Reduce the quality of the video to reduce the file size. Leave time to upload to Canvas before the deadline. Failing to meet the deadline or not uploading due to file size problems will negatively impact your grade.
 * The presentation needs to convey: 
     * The purpose and importance of the project. 
     * The contribution that you made.
@@ -38,7 +42,7 @@ Your group will receive a separate grade for each draft and the final video. Eac
     * Is the presentation well-organized?
     * Does it follow an obvious pattern that the audience can follow?
 
-Draft videos should demonstrate a significant level of effort. Each draft should satisfy the requirements listed above and avoid any placeholder slides/graphs/tables. The second and final drafts will be graded on if you responded to the feedback from your mentor.
+Draft videos should demonstrate a significant level of effort. Each draft should satisfy the requirements listed above and avoid any placeholder slides/graphs/tables. The second and final drafts will be graded on whether you responded to the feedback from your mentor.
 
 <u>First Draft Video (30 Points)</u>
 * 15 Points: Presentation
@@ -59,10 +63,10 @@ Draft videos should demonstrate a significant level of effort. Each draft should
 ### Dos and Don'ts 
 * Do not speed up / slow down the presentation using software tools
 * Presentations which are stitched together from multiple videos in obvious ways will be heavily penalized. It is distracting to the audience when things like resolution, screen focus, etc. change.
-* Before submitting make sure that all plot axis are labelled and formatted properly for a high-level presentation. For example if you are using a percent turn it into a percent, rather than leaving as a decimal. Make sure that when presenting large numbers your plot doesn't say "1e6" or the like at the top.
+* Before submitting make sure that all plot axes are labelled and formatted properly for a high-level presentation. For example, if you are displaying percentages, format them as percentages (e.g., 45%) rather than decimals (e.g., 0.45). Make sure that when presenting large numbers your plot doesn't say "1e6" or the like at the top.
 * The _size_ of all axis labels and titles should all be large enough to read and understand. 
 * Make sure that plots have titles and that they are easy to read.
-* You should not try to be comprehensive of your activities. The goal of this presentation is NOT to cover everything, but to provide a short introduction to and results of your work. In general shorter presentations are usually stronger.
+* You should not try to comprehensively cover all your activities. The goal of this presentation is NOT to cover everything, but to provide a short introduction to and results of your work. In general shorter presentations are usually stronger.
 * Use a microphone. The presentation audio needs to be well recorded. There should be no background noise, difficult to understand speakers, audio that goes in and out, etc.
 * Avoid using terms which are specific to your project or technical jargon.
 * The presentation should not contain screenshots of Jupyter Notebooks or other code. 
@@ -71,7 +75,7 @@ Draft videos should demonstrate a significant level of effort. Each draft should
 * Every project has interesting and unexpected aspects – you want to highlight those. Are there any cool visualizations? What about results?
 * Do not violate any NDA/share any special sauce.
 * Do not read lists of numbers from the slides.
-* Specific descriptions of technology tend to be low information and should be avoided. It’s okay to have a system diagram if the project has a large engineering component and the presentation of that system diagram is key to understanding the work. Simply stating "Here is the system we built" and walking through the diagram without additional context is not useful for this presentation.
+* Overly specific technical descriptions tend to provide little value and should be avoided. It's okay to have a system diagram if the project has a large engineering component and the presentation of that system diagram is key to understanding the work. Simply stating "Here is the system we built" and walking through the diagram without additional context is not useful for this presentation.
 * No meta-editorializing like “Hmmm.. Let's fix this next time” or “ummm… I think we should change the order of the slides in the next draft”. Each video should be treated as a final version.
 * Keep the mouse icon steady, do not block text or graphics or move it around the screen. It is distracting.
 * Make sure that all presentation materials are visible in the window being used. 
@@ -86,14 +90,14 @@ The following are a list of best practices that improve the quality of the video
 * Use a real webcam, rather than your computer.
 * Do not blur your background. If you wish to block out what is behind you, please use a background image.
 * Frame yourself in the center of the web camera, rather than having your face be off to one side or another.
-* Consider the lightning in your recording area:
+* Consider the lighting in your recording area:
     1. Do not have a window in the background as it will shadow your face.
     2. Use a bright light in front of you.
 * When using Zoom:
     * Check "Record video during screen recording" to make sure your webcam video is included,
     * Check "Place video next to the shared screen in the recording" so as not to block the presentation
 * Record your video in 1920x1080.
-* We recommend using _text_ animations to avoid having an entire slide of text show up at once.
+* We recommend using text animations (e.g., bullet points appearing one at a time) to avoid having an entire slide of text show up at once.
 
 ### F.A.Q.
 
@@ -114,7 +118,7 @@ The following are a list of best practices that improve the quality of the video
 
 ### Grader Notes
 
-The draft and second draft of the presentation are done by the faculty mentor while the final video is graded by the Director and Asst. Director of the Clinic. Students are required to upload the video to Canvas, so make sure to give feedback and grades in Canvas. The Rubric above which describes how many points should be awarded to each section should be followed. An example assessment can be found after this section.
+The first draft and second draft of the presentation are graded by the faculty mentor while the final video is graded by the Director and Asst. Director of the Clinic. Students are required to upload the video to Canvas, so make sure to give feedback and grades in Canvas. The Rubric above which describes how many points should be awarded to each section should be followed. An example assessment can be found after this section.
 
 The videos should be graded according to the following point assignment:
 * Slide quality (10 Points)
@@ -162,7 +166,7 @@ Overall – very solid. There are a few overarching things that need to be chang
 * “Neutrino Event Interactions” – what are these? You state them in the intro. What does this mean? Gold coin!
 * For the model section, a similar set of changes you should consider:
     * CNN, U-Net, OOP, “run files”, “HDF5”, “CSV”, “weighted loss”, “PyTorch”, “overfitting”, “Percentile Model” all of this language appears in either your slides or verbal description, and all of it is technical and most of it can be avoided. These are all gold coins!
-    * As an example, consider when you describe the data loader. Simply stating “We wrote software which allowed us to load images in parallel using a more efficient format preferred by Fermi, rather than other common images formats” <- is way more useful then ever saying “HDF5” and doesn’t cost a gold coin!
+    * As an example, consider when you describe the data loader. Simply stating "We wrote software which allowed us to load images in parallel using a more efficient format preferred by Fermi, rather than other common images formats" <- is way more useful than ever saying "HDF5" and doesn't cost a gold coin!
 * The slide organization needs a bit of work, I got confused about the regression model (it’s not a contribution?) vs. the other models. At the start of the presentation when you lay things out you need to be more explicit with what you are doing so the audience can follow along.
 * You repeated the explanation of the image colors on the slide from the 2nd to the 4th speaker. Better coordination! Is there a reason to show the same style of images twice?
 * The format of the slides changed throughout the presentation – create a single style and everyone use it. Every time you switch styles it distracts the audience.
