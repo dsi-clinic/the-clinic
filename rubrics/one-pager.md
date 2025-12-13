@@ -83,7 +83,10 @@ Because of this we try to make the style as uniform as possible and the writing 
 
 When grading the draft presentation, please make sure that the requirements below are followed explicitly and aggressively knock points off for failing to fulfill them. In terms of grading standards, generally speaking we expect that most of the submissions will fall within a band 23-28 points (out of the 30 possible), with occasional really good ones hitting higher marks.
 
-Assuming that a student group follows nearly all the requirements and the Do’s and Don’t below, there are no significant grammar or formatting issues and the writing only needs slight improvement, the grade would be about a 27/30.
+In terms of grades most of the initial one pagers tend to be in the "C+/B" grade range (75%-90%) as they tend to over explain, go into unnecessary details and have plots that are poorly formatted. Students tend to try to use the maximum number of words rather than focusing on exactly what they want to communicate and why. Students groups who have a strategy around what they are saying and why tend to do much better (A-range).
+
+If you are considering giving a grade less than 75% please speak to the clinic administration first!
+
 
 ### Example 
 

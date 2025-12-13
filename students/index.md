@@ -80,6 +80,10 @@ In week 6 of the Data Science Clinic students will be required to complete a sho
 
 If you want to receive an "A" on this assignment, _make sure to follow the [rubric](../rubrics/mid-quarter-presentation-rubric.md) precisely_.
 
+### Peer Review
+
+During the quarter you will be asked to complete peer review exercises (due at the end of weeks 3, 6, and 10) where you provide feedback to your team about the level of effort you have observed. There are **no make-up peer reviews**, so please check Canvas for due dates and complete them on time. The [peer review rubric](../rubrics/peer-review.md) explains the grading criteria and the importance of this feedback.
+
 ## Finals Week Deliverables
 
 As this is a projects based course most of the work is designed around a set of final deliverables. There are four set of requirements, each with their own rubric that you can find in the table below. These are to be completed during the last week of the quarter and finals week.

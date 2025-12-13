@@ -49,11 +49,10 @@ Draft videos should demonstrate a significant level of effort. Each draft should
 * 5 Points: Organization
 * 10 Points: Slides
 
-<u>Second Draft Video (40 Points)</u>
+<u>Second Draft Video (30 Points)</u>
 * 15 Points: Presentation
 * 5 Points: Organization
 * 10 Points: Slides
-* 10 Points: Updates, changes and issue correction based on feedback
 
 <u>Final Video (60 Points)</u>
 * 20 Points: Presentation
@@ -85,7 +84,7 @@ Assignments submitted after the due date will receive a grade of zero.
 
 ### Best Practices
 
-The following are a list of best practices that improve the quality of the video. Since these videos are shared via social media we strongly encourage following these practices if you have the necessary equipment.
+The following are a list of best practices that improve the quality of the video. Since these videos are shared via social media we strongly encourage following these practices if you have the necessary equipment. These are _not_ required, but recommended. 
 
 * Use a real webcam, rather than your computer.
 * Do not blur your background. If you wish to block out what is behind you, please use a background image.
@@ -135,10 +134,13 @@ The videos should be graded according to the following point assignment:
 * Feedback changes (10 points, second video only)
     * Did the students implement changes and correct issues based on feedback?
 
-
 Remember that most of the grade for the presentation is weighted to the "final" deliverable. The goal for grading the drafts is to get the final deliverable into as strong a place as can be. 
 
-Generally the first video will need significant work, so make sure that the grading reflects that. It is not uncommon to give 50% or less of the points in a specific category if the students fail to meet the basic requirements (and specifically the "Dos" and "Don't" section).
+For the first draft grades tend to fall in the 70%-90% range. The groups tend to lack a strategy around what and why they are saying what they are saying, spending time on details that don't advance their narrative. There tends to be multiple grammar, formatting and consistency errors on slides (keep a look out for bullet point punctuation and structure).
+
+For the second draft grades usually fall into the 80%-100% range as students both address issues found in the first draft and understand a bit more about the requirements.
+
+**Note:** If you are considering giving a grade lower than 70% please consultant with a clinic administrator first. It's not common but does happen on the first draft.
 
 Things that are particularly irksome: if a student says “I’ll fix this next time” in the video recording or otherwise engages in meta-editorializing. This should be penalized harshly. 
 
@@ -147,7 +149,6 @@ Do not be scared to be aggressive with your comments if there is behavior that y
 We require two drafts because, historically, they get much better each time. By the final video the quality is usually pretty good.
 
 If you have any specific questions feel free to reach out by Slack.
-
 
 ### Example Assessment
 

@@ -37,6 +37,7 @@ The following documents outline the core responsibilities of each position.
 ## Rubrics
   * [Progress Report](../rubrics/progress-doc-rubric.md)
   * [Planning Report](../rubrics/planning-doc-rubric.md)
+  * [Peer Review](../rubrics/peer-review.md)
   * [Final Email](../rubrics/final-email.md)
   * [Mid-quarter presentation](../rubrics/mid-quarter-presentation-rubric.md) 
   * [Draft/Final Videos](../rubrics/final-video.md)
