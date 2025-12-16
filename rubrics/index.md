@@ -18,6 +18,11 @@ Used to evaluate team presentations given during Week 6 of each quarter. Covers 
 ### [One-Pager Rubric](./one-pager.md)
 Used to evaluate the one-page project summaries that teams create for external distribution. Focuses on clarity, technical accuracy, and audience appropriateness.
 
+## Team Assessment Rubrics
+
+### [Peer Review Rubric](./peer-review.md)
+Used to evaluate team member contributions and effort throughout the quarter. Peer reviews are conducted at weeks 3, 6, and 10, providing feedback on workload distribution, professionalism, and team collaboration.
+
 ## Final Deliverable Rubrics
 
 ### [Final Video Rubric](./final-video.md)
