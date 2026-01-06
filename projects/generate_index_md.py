@@ -24,7 +24,7 @@ NDAs or other specifications (such as UChicago not hosting the repo).
 sometimes project specific.
 * Projects designated by a "&#8224;" were funded by <!-- \
 markdown-link-check-disable -->\
-[The 11th hour foundation](https://11thhourproject.org/)\
+[The 11th hour foundation](https://datascience.uchicago.edu/outreach/11th-hour-project/)\
 <!-- markdown-link-check-enable -->.
 
 ---
@@ -33,6 +33,7 @@ markdown-link-check-disable -->\
 
 # Supported quarters configuration
 ALL_QUARTERS = [
+    {"quarter": "Autumn", "year": 2025},
     {"quarter": "Spring", "year": 2025},
     {"quarter": "Winter", "year": 2025},
     {"quarter": "Autumn", "year": 2024},

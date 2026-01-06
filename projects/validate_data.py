@@ -69,6 +69,7 @@ def validate_all_quarters(print_warnings: bool = True) -> Dict[str, QuarterData]
     """
     # Define all quarters (both projects and students now come from YAML)
     quarters_data = [
+        ("Autumn", 2025),
         ("Spring", 2025),
         ("Winter", 2025),
         ("Autumn", 2024),

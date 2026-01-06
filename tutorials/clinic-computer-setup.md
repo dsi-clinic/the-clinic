@@ -64,7 +64,7 @@ On Windows you will need to follow the instructions [here](https://docs.docker.c
 
 ## 5. Make
 
-Many projects use [make](https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/aixprggd/genprogc/make.htm) as a way to simplify project development. 
+Many projects use [make](https://www.gnu.org/software/make/manual/make.html) as a way to simplify project development. 
 
 On both Mac and WSL systems with Ubuntu make (should) be installed by default. To verify _check the instructions at the end of this section_.
 
