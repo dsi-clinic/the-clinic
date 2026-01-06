@@ -1,0 +1,202 @@
+quarter: Autumn
+year: 2025
+name_map: {}
+projects:
+- org_name: "AICE: AI for Climate"
+  description: Indian Monsoon Forecasting Benchmark
+  project_url: ''
+  mentor: Justin Finkel
+  ta: Anusha Bhat
+  github_link: https://github.com/dsi-clinic/2025-autumn-aice
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Adam Marchakitus
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Apollo Care
+  description: Patient Deductible Estimation Algorithm
+  project_url: ''
+  mentor: Nick
+  ta: Anusha Bhat
+  github_link: https://github.com/dsi-clinic/2025-autumn-apollocare
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Austin Nafziger
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Argonne
+  description: Generative AI for Scientific Discovery
+  project_url: ''
+  mentor: Tim
+  ta: Justin
+  github_link: https://github.com/dsi-clinic/2025-autumn-argonne
+  is_private_repo: true
+  has_one_pager: null
+  external_mentor_info: Matthew Dearing
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Becker Friedman Institute
+  description: Healthcare Employment Geography Dashboard
+  project_url: ''
+  mentor: Jonatas Marques
+  ta: Jack Luo
+  github_link: https://github.com/dsi-clinic/2025-autumn-bfi
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Eric Hernandez/Josh Gottlieb
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Chicago Blackhawks
+  description: Business Intelligence and Analytics
+  project_url: ''
+  mentor: Jonatas Marques&Jeffrey Zhang
+  ta: Harleen Buttar
+  github_link: https://github.com/dsi-clinic/2025-autumn-blackhawks
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Paulino Diaz
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: City of Chicago - Energy
+  description: Energy Benchmarking Policy Analysis
+  project_url: ''
+  mentor: David Jacobson
+  ta: Carter Tran
+  github_link: https://github.com/dsi-clinic/2025-autumn-city-of-chicago-energy
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Candice Stauffer
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: City of Chicago - Housing
+  description: Short-Term Rental Policy Analysis
+  project_url: ''
+  mentor: Tim
+  ta: Andres Camacho Baquero
+  github_link: https://github.com/dsi-clinic/2025-autumn-city-of-chicago-housing
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Candice Stauffer
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Cook County Justice Advisory Council
+  description: Criminal Charge Analysis and Visualization
+  project_url: ''
+  mentor: Min Jae Song
+  ta: Justin
+  github_link: https://github.com/dsi-clinic/2025-autumn-justice-advisory-council
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Whitney Keytowey
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Data Science Institute - MCP Tools
+  description: Model Context Protocol Tools
+  project_url: ''
+  mentor: Tim
+  ta: Alex Fan
+  github_link: https://github.com/dsi-clinic/2025-autumn-mcp
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Nick Ross
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Data, Policy, and Innovation Centre
+  description: Citizen Grievance Processing and Analysis
+  project_url: ''
+  mentor: Satadisha Saha Bhowmick
+  ta: Jiayuan Dou
+  github_link: https://github.com/dsi-clinic/2025-autumn-dpic
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Dr. Urmila Chatterjee, Yashaswi Mohanty
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Fermi National Accelerator Laboratory
+  description: Particle Clustering for Neutrino Detection
+  project_url: ''
+  mentor: Jonier Antunes
+  ta: Noah Geller
+  github_link: ''
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Giuseppe Cerati
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Impact Project
+  description: Government Funding Impact Visualization
+  project_url: ''
+  mentor: Lindsay House
+  ta: Carter Tran
+  github_link: https://github.com/dsi-clinic/2025-autumn-impact
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Dylan Halpern, Abby André, Jonathan Gilmour
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: Invenergy
+  description: Public Comment Analysis for Energy Permits
+  project_url: ''
+  mentor: Satadisha Saha Bhowmick
+  ta: Lam Tran
+  github_link: https://github.com/dsi-clinic/2025-autumn-invenergy
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Sophie Logan
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Karczmar Lab
+  description: Breast Cancer Treatment Response Prediction
+  project_url: ''
+  mentor: Anna&Jim Pavarski
+  ta: Alex Fan
+  github_link: https://github.com/dsi-clinic/vanguard
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Dr. Gregory Karczmar, Dr. Milica Medved, Dr. Zhen Ren
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Mothers Out Front
+  description: School Environmental Data Dashboard
+  project_url: ''
+  mentor: Kelly
+  ta: Jiayuan Dou
+  github_link: https://github.com/dsi-clinic/2025-autumn-mothers-out-front
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: David Jacobson, Camille Greer
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: Promega
+  description: Organoid Growth Failure Detection
+  project_url: ''
+  mentor: Liya&Nick
+  ta: Andres Camacho Baquero
+  github_link: https://github.com/dsi-clinic/2025-autumn-promega
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Thomas Kirkland
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: UChicago Transportation
+  description: Campus Transportation Analytics
+  project_url: ''
+  mentor: Jennifer Blanc
+  ta: Lam Tran
+  github_link: https://github.com/dsi-clinic/2025-autumn-uchicago-transportation
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Beth Tindel
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: University of Northern Iowa
+  description: Emotional Representation in Literature Analysis
+  project_url: ''
+  mentor: Connor Scully-Allison
+  ta: Harleen Buttar
+  github_link: https://github.com/dsi-clinic/2025-autumn-uni
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Taraneh Matloob
+  project_url_valid: false
+  is_11th_hour: false

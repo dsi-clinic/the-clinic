@@ -33,6 +33,7 @@ markdown-link-check-disable -->\
 
 # Supported quarters configuration
 ALL_QUARTERS = [
+    {"quarter": "Autumn", "year": 2025},
     {"quarter": "Spring", "year": 2025},
     {"quarter": "Winter", "year": 2025},
     {"quarter": "Autumn", "year": 2024},
