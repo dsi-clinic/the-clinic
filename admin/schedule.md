@@ -226,6 +226,28 @@ As a reminder, you are responsible for grading two repositories this week after 
 For each repo send me one readme file using the technical grading rubric by Friday at 5pm. This should contain an evaluation of the overall repo condition as well as assessments of three files that have been edited by the team in this quarter. If you have questions about the repository or the correct files to grade, please reach out to the "Original TA" listed in the spreadsheet above
 ```
 
+```
+@here I've been getting several questions about grades and how they work in the clinic. Here are a few important things to keep in mind:
+
+Grading Process:
+
+- The course is curved. Different mentors have different grading standards, but before final grades are finalized, a normalization process occurs to ensure standards are applied consistently across all sections.
+
+- Final grades are assigned by me personally to maintain fairness and consistency across different mentors.
+
+Draft Submissions:
+
+- Please make sure to carefully address the feedback provided by your mentors on drafts. While some mentors may be stricter than others in their grading, all the feedback I've reviewed has been professional and constructive.
+
+Final Deliverables:
+
+- Client deliverables carry the most weight in your final grade.
+We place significant value on professionalism, improvement over the quarter, and effort throughout the project.
+
+**Finally** -- it is finals week and everyone is a bit stressed. Make sure to work through the feedback, be professional in your dealings with others. I have seen really strong work all quarter and the grades will reflect that.
+
+```
+
 ### Week 11
 - Turn off the peer review
 - Remove all students and TAs from GitHub repositories
