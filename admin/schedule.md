@@ -17,7 +17,7 @@ The purpose of this document is to centralize resources and create a timeline of
 - Create a Matching Spreadsheet.
 - Share the information session registration link with this [list of people](https://docs.google.com/spreadsheets/d/1w_XWoo1csw0A916N6rif86VoGKuOdS3f5U7s59Ym8Yk/edit#gid=0). You can find an email template [here](email_templates.md#registration-initial-outreach).
 - Share [TA job description](TA_job_description.md) with appropriate list including DSI Operations team to post on website.
-- Ask TAs about continuining into next quarter.
+- Ask TAs about continuing into next quarter.
 
 ### Week -5
 Everything below depends upon having a list of projects.
@@ -143,19 +143,37 @@ https://github.com/dsi-clinic/the-clinic/blob/main/mentor-ta/index.md
 ```
 
 ### Week 3
-- Turn on the [peer review form](https://docs.google.com/forms/d/1Ls_YnQQ72J83WqE-7XPMPbC6TtrpXJcdArA0wmdSIOA/edit). Notify students via Canvas that the peer review is available
+- Turn on the [peer review form](https://docs.google.com/forms/d/1Ls_YnQQ72J83WqE-7XPMPbC6TtrpXJcdArA0wmdSIOA/edit). 
+  - Notify students via Canvas that the peer review is available.
+  - Note that in Week 3 you will need to set this up for the specific project list. 
 
 ### Week 4 (Note this is Week -6 for the forthcoming quarter)
 - Turn off the peer review
 
 ### Week 5
-Monday message:
+
+- Email re:Getting Rooms for next quarter for first week + mid quarter presentations	
+
+- Monday message to all groups doing the mid quarter presentation
 ```
 @here Quick reminder that next week is the mid quarter presentations! The date of your presentation can be found on canvas. A template, grading rubric and more information can be found on our github. Please read the rubric. https://github.com/dsi-clinic/the-clinic
 ```
 
+- Also notify the TA and Mentor Channel:
+
+```
+Hey everyone -- next week is the mid-quarter presentation (Tuesday).
+
+These are short lightning talks by the students. A few notes: Mentors and TAs are not on the hook for grading anything for this. However you may receive questions. You should refer students to the best practices and rubric online.
+[7:55 AM]If you can impart one thing to the students is that focus and interpretability are the keys here. A short presentation that covers the core tensions/results/goals of the project in a language that a non-expert can understand is an "A". A presentation that goes to the limit of 5 minutes and tries to covers too much = bad grade.
+
+Simplify, simplify, simplify.
+```
+
 ### Week 6
-- Turn on the [peer review form](https://docs.google.com/forms/d/1Ls_YnQQ72J83WqE-7XPMPbC6TtrpXJcdArA0wmdSIOA/edit). Notify students via Canvas that the peer review is available
+- Turn on the [peer review form](https://docs.google.com/forms/d/1Ls_YnQQ72J83WqE-7XPMPbC6TtrpXJcdArA0wmdSIOA/edit). 
+    - Notify students via Canvas & Slack that the peer review is available
+	- For this time, you can keep the same form as week 3, just change the output location. To do this click on "Response" on the form, enter the hamburger menu and then "Select Destination for responses"
 
 ### Week 7
 - Turn off the peer review
