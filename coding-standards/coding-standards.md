@@ -56,7 +56,7 @@ Requirements
 1. There should be no `! pip install XXX` in any notebooks. All environment requirements should be handled using the `pyproject.toml` file.
 1. Documentation should include (at a _minimum_):
     * Doc strings on all functions
-    * README files in directories specifying the contents (if not described in the main README or if it is not obvious).
+    * All files and directories must be explained in README files. You can either describe everything in the root README or use README files in subdirectories — both approaches are fine, but pick one style and be consistent.
     * README file in the root directory describing the purpose of the code, where to look for things, and how to run the code. If there are other locations for information regarding this project, links should be provided.
     * README file should describe your development process (e.g., how you did branches)
 
