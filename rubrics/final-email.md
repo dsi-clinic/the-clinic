@@ -1,5 +1,7 @@
 # Final Email
 
+> **Note:** Every group is required to send a final email. You should coordinate with your internal mentor on the contents of this email to ensure it aligns with what the external group expects. In most cases, the template described below is appropriate, but you must confirm with your mentor before sending. Your mentor can help you determine if any project-specific adjustments are needed (e.g., NDA considerations, additional deliverables requested by the partner, or tone and emphasis).
+
 Upon finishing the video, one-pager and code requirements, all groups need to send a summary email to their external mentors, TAs, students and clinic administrators. Each project should send a single email (as a group).
 
 This is a professionally written email thanking them for the opportunity to work on the project as well as information on the final results.
