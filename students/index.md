@@ -66,7 +66,7 @@ Note that in the `templates` directory you can also find MS-word versions of the
 
 ### First Week Org Report
 
-The first week org report can also be found in the `templates` directory in a MS-WORD format. There is a markdown version [here](../templates/week-1-org-report.md). Grading for this is simple: if it is turned in on time and complete it receives full credit, otherwise zero.
+The first week org report can also be found in the `templates` directory in a [MS-WORD format](../templates/week-1-org-report.docx). There is a markdown version [here](../templates/week-1-org-report.md). Grading for this is simple: if it is turned in on time and complete it receives full credit, otherwise zero.
 
 ### Meeting with External Mentors
 
