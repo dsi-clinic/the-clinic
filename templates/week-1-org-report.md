@@ -7,7 +7,7 @@ To receive full credit for this week’s report, please fill out the following i
 
 Note that this report can be filled out either in Markdown or using the Microsoft word template [in this same directory](./week-1-org-report.docx).
 
-Note that if there are any issues filling this out with unresponsive group mates, TA or mentor, please DM either Nick Ross or Tim Hannifan. 
+Note that if there are any issues filling this out with unresponsive group mates, TA, or mentor, please DM Nick Ross. 
 
 | | | 
 | --- | --- | 
@@ -62,5 +62,4 @@ There are two types of meetings that you need to schedule: Your Weekly Mentor me
 | --- | --- | 
 | Meeting Day | | 
 | Meeting Time | | 
-
 

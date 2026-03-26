@@ -44,7 +44,6 @@ ENV PYTHONPATH=/site/src
 
 COPY pyproject.toml ./
 
-RUN /root/.local/bin/uv venv
 RUN /root/.local/bin/uv sync
 
 EXPOSE 4000

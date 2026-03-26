@@ -1,0 +1,234 @@
+quarter: Winter
+year: 2026
+students:
+- project_name: 'AICE: AI for Climate'
+  student_name: Charles Eden
+  github_info: ceden26
+- project_name: 'AICE: AI for Climate'
+  student_name: Christopher Frazer
+  github_info: ChrisFrazer04
+- project_name: 'AICE: AI for Climate'
+  student_name: Peiyu Chen
+  github_info: Jalkey-Chen
+- project_name: 'AICE: AI for Climate'
+  student_name: Christine Tsai
+  github_info: christinetsai
+- project_name: Accountability Counsel
+  student_name: Cielo Martinez Flores
+  github_info: c-ielo
+- project_name: Accountability Counsel
+  student_name: Jessica Ortiz Garcia
+  github_info: ortizjessica
+- project_name: Accountability Counsel
+  student_name: Leja Ejury
+  github_info: lej-ej
+- project_name: Accountability Counsel
+  student_name: Mekdes Woldesunbet
+  github_info: Mekdes730
+- project_name: Apollo Care
+  student_name: Alessandro Lecavalier
+  github_info: alecavalier22
+- project_name: Apollo Care
+  student_name: Clare Malhotra
+  github_info: claremalhotra
+- project_name: Apollo Care
+  student_name: Feng Lin Cyrus Leung
+  github_info: cyrusleung27
+- project_name: Apollo Care
+  student_name: Tejaswini Shashidhar
+  github_info: TejaswiniS1506
+- project_name: Argonne
+  student_name: Bernardo Kimaid de Araujo
+  github_info: bekim-araujo
+- project_name: Argonne
+  student_name: Jake Cardonick
+  github_info: PJakeCar120
+- project_name: Argonne
+  student_name: Lela Ellis
+  github_info: lelae2024
+- project_name: Argonne
+  student_name: Lucas Kopinski
+  github_info: LKopinski
+- project_name: Becker Friedman Institute
+  student_name: Cynthia Zeng
+  github_info: cyn-zeng
+- project_name: Becker Friedman Institute
+  student_name: Isabella Trainor
+  github_info: trainori
+- project_name: Becker Friedman Institute
+  student_name: Nandi Xu
+  github_info: TGPD5
+- project_name: Becker Friedman Institute
+  student_name: Ryan Lee
+  github_info: Rjlee22
+- project_name: Chicago Blackhawks
+  student_name: Adam Tuchler
+  github_info: atuchler
+- project_name: Chicago Blackhawks
+  student_name: Leon Lee Zhou
+  github_info: enzZLeon
+- project_name: Chicago Blackhawks
+  student_name: Rocio Jerez
+  github_info: rocio-jerez
+- project_name: Chicago Blackhawks
+  student_name: Zhang (Helen) Hua
+  github_info: HelenHua0323
+- project_name: City of Chicago - Energy
+  student_name: Alejandro Orellana
+  github_info: AleOre27
+- project_name: City of Chicago - Energy
+  student_name: Han Zhang
+  github_info: hanzhang1
+- project_name: City of Chicago - Energy
+  student_name: Mira Shi
+  github_info: Fgt034
+- project_name: City of Chicago - Energy
+  student_name: Yueqi Mei
+  github_info: KikiMei09
+- project_name: City of Chicago - Housing
+  student_name: Annie Reynolds
+  github_info: annie-rey
+- project_name: City of Chicago - Housing
+  student_name: Audrey Zhang
+  github_info: ayzhang8
+- project_name: City of Chicago - Housing
+  student_name: Claire Huang
+  github_info: Claiirehuang
+- project_name: City of Chicago - Housing
+  student_name: Joseph Gorman
+  github_info: joey-gorman
+- project_name: Cook County Justice Advisory Council
+  student_name: Annika Naramreddy
+  github_info: anaramreddy
+- project_name: Cook County Justice Advisory Council
+  student_name: Avital Mintz
+  github_info: avitalmintz
+- project_name: Cook County Justice Advisory Council
+  student_name: Joyce Qi
+  github_info: jq25
+- project_name: Cook County Justice Advisory Council
+  student_name: Madison Lee
+  github_info: mlee222
+- project_name: Data, Policy, and Innovation Centre
+  student_name: Ashley Charles
+  github_info: aicharles-141
+- project_name: Data, Policy, and Innovation Centre
+  student_name: Harlan Switzer
+  github_info: hdiggity
+- project_name: Data, Policy, and Innovation Centre
+  student_name: Jesenia Parthasarathy
+  github_info: jeseniapar
+- project_name: Data, Policy, and Innovation Centre
+  student_name: Matias Camp
+  github_info: matiascamp16
+- project_name: Ecdysis
+  student_name: Annette Mehta
+  github_info: annettemehta28
+- project_name: Ecdysis
+  student_name: Ishi Sood
+  github_info: ishiii-s
+- project_name: Ecdysis
+  student_name: Neil Pandya
+  github_info: neilpandya05
+- project_name: Ecdysis
+  student_name: Srusti Donapati
+  github_info: srusti-d
+- project_name: Fermi National Accelerator Laboratory
+  student_name: Aidan Long
+  github_info: ajace13
+- project_name: Fermi National Accelerator Laboratory
+  student_name: Erik Nystedt
+  github_info: Gustavasa123
+- project_name: Fermi National Accelerator Laboratory
+  student_name: Manya Lalwani
+  github_info: manya-lalwani
+- project_name: Fermi National Accelerator Laboratory
+  student_name: Ness Kobjerowski
+  github_info: nesskobjer04
+- project_name: Impact Project
+  student_name: Christopher Nowak
+  github_info: ChNowak
+- project_name: Impact Project
+  student_name: Nathan Alanmanou
+  github_info: NathanAlanmanou
+- project_name: Impact Project
+  student_name: Sophia Paesano
+  github_info: sophiapae
+- project_name: Invenergy
+  student_name: Justin Meng
+  github_info: JustinMeng2004
+- project_name: Invenergy
+  student_name: Katia Sergeeva
+  github_info: katia-sergeeva
+- project_name: Invenergy
+  student_name: Liam Matney
+  github_info: lmatney
+- project_name: Invenergy
+  student_name: Yannick Tanyi
+  github_info: Yanntanyi
+- project_name: Karczmar Lab
+  student_name: Daniel Luna
+  github_info: danielluna90
+- project_name: Karczmar Lab
+  student_name: Isabella Summe
+  github_info: isumme
+- project_name: Karczmar Lab
+  student_name: Daniel Gong
+  github_info: null
+- project_name: Karczmar Lab
+  student_name: Julia Luo
+  github_info: julialuo02
+- project_name: Metropolitan Water Reclamation District of Greater Chicago
+  student_name: Xiangming Liao
+  github_info: Sammi-Liao
+- project_name: Metropolitan Water Reclamation District of Greater Chicago
+  student_name: Yuliia Ihnatesku
+  github_info: ihnateskuyuliia
+- project_name: Metropolitan Water Reclamation District of Greater Chicago
+  student_name: Tumininu Onabanjo
+  github_info: Tumininu-Onabanjo
+- project_name: Mothers Out Front
+  student_name: Deem Alothaimeen
+  github_info: null
+- project_name: Mothers Out Front
+  student_name: Evan Fantozzi
+  github_info: evanfantozzi
+- project_name: Mothers Out Front
+  student_name: Ryan Guthrie
+  github_info: PeriodiclyFir
+- project_name: Promega
+  student_name: Ethan Waggoner
+  github_info: Edubs2003
+- project_name: Promega
+  student_name: Harriet (Wenxu) Zu
+  github_info: wenxu32
+- project_name: Promega
+  student_name: Lucy Li
+  github_info: lucyli24
+- project_name: Promega
+  student_name: Tony Luo
+  github_info: tonyluocpu
+- project_name: UChicago Library
+  student_name: Alicia Li Ann Soosai
+  github_info: liannsoo
+- project_name: UChicago Library
+  student_name: Caitlin Hamer
+  github_info: cbhamer
+- project_name: UChicago Library
+  student_name: Raphael Bitton
+  github_info: rbitton1729
+- project_name: UChicago Library
+  student_name: Vishal Potineni
+  github_info: vpotineni1
+- project_name: UChicago Transportation
+  student_name: Ben Brink
+  github_info: benbrink1
+- project_name: UChicago Transportation
+  student_name: Dariel Cruz Rodriguez
+  github_info: cruzdariel
+- project_name: UChicago Transportation
+  student_name: Leah Dimsu
+  github_info: leahdimsu
+- project_name: UChicago Transportation
+  student_name: Nicholas Emerton
+  github_info: ne0npink

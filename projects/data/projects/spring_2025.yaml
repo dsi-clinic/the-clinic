@@ -9,7 +9,7 @@ projects:
   description: Extending Argo with LLM-driven Agents and Workflows
   project_url: https://www.anl.gov/
   mentor: Bill Trok
-  ta: Cassie
+  ta: Cassie Tang
   github_link: https://github.com/dsi-clinic/2024-autumn-argonne
   is_private_repo: true
   has_one_pager: true
@@ -19,101 +19,101 @@ projects:
 - org_name: Center for Living Systems
   description: AI and Cell Segmentation
   project_url: ''
-  mentor: Liya
-  ta: Justin
+  mentor: Liya Ding
+  ta: Justin Wang
   github_link: https://github.com/dsi-clinic/2024-autumn-cls
   is_private_repo: true
   has_one_pager: true
-  external_mentor_info: 'Center for Living Systems'
+  external_mentor_info: Center for Living Systems
   project_url_valid: false
   is_11th_hour: false
 - org_name: CMAP
   description: NE Illinois Stormwater Storage and Site-Scale Green Infrastructure
     Inventory
   project_url: https://cmap.illinois.gov/
-  mentor: Anna
-  ta: Cassie
+  mentor: Anna Woodard
+  ta: Cassie Tang
   github_link: https://github.com/dsi-clinic/CMAP
   is_private_repo: false
   has_one_pager: true
-  external_mentor_info: 'Holly Hudson'
+  external_mentor_info: Holly Hudson
   project_url_valid: true
   is_11th_hour: false
 - org_name: College Financial Health
   description: Higher Education Financial Health Dashboard
   project_url: ''
-  mentor: Alexander
+  mentor: Alexander Bogatskiy
   ta: Polly Ren
   github_link: https://github.com/dsi-clinic/2025-spring-college-financial-health
   is_private_repo: true
   has_one_pager: true
-  external_mentor_info: 'Internal DSI Project'
+  external_mentor_info: Internal DSI Project
   project_url_valid: false
   is_11th_hour: false
 - org_name: Data and Democracy
   description: Historical Election Datahub
   project_url: ''
-  mentor: Julia
+  mentor: Julia Mendelsohn
   ta: Harper Schwab
   github_link: https://github.com/dsi-clinic/2025-winter-data-and-democracy
-  is_private_repo: true
+  is_private_repo: false
   has_one_pager: true
-  external_mentor_info: 'Internal DSI Project'
+  external_mentor_info: Internal DSI Project
   project_url_valid: false
   is_11th_hour: false
 - org_name: DSI - Agents
   description: Agents on a Budget
   project_url: ''
-  mentor: Tim
-  ta: Harper
+  mentor: Tim Hannifan
+  ta: Harper Lyu
   github_link: https://github.com/dsi-clinic/2025-spring-dsi-agents
   is_private_repo: true
   has_one_pager: true
-  external_mentor_info: 'Internal DSI Project'
+  external_mentor_info: Internal DSI Project
   project_url_valid: false
   is_11th_hour: false
 - org_name: DSI - HPC
   description: HPC Cluster Performance Monitoring
   project_url: ''
-  mentor: Nick
-  ta: Justin
+  mentor: Nick Ross
+  ta: Justin Wang
   github_link: https://github.com/dsi-clinic/2025-spring-dsi-hpc
   is_private_repo: true
   has_one_pager: true
-  external_mentor_info: 'Internal DSI Project'
+  external_mentor_info: Internal DSI Project
   project_url_valid: false
   is_11th_hour: false
 - org_name: Food System 6
   description: Visualizing the Economic Infrastructure of the US Poultry Industry
   project_url: ''
-  mentor: Meghan
+  mentor: Meghan Hutch
   ta: Gayathri Jayaraman
   github_link: https://github.com/dsi-clinic/2024-autumn-FS6
   is_private_repo: true
   has_one_pager: true
-  external_mentor_info: 'Lauren Manning'
+  external_mentor_info: Lauren Manning
   project_url_valid: false
   is_11th_hour: true
 - org_name: Groundwork Bridgeport
   description: Computer Vision for Urban Green Spaces
   project_url: ''
   mentor: Jie Jian
-  ta: Harper
+  ta: Harper Lyu
   github_link: https://github.com/dsi-clinic/2025-spring-groundwork-bridgeport
   is_private_repo: true
   has_one_pager: true
-  external_mentor_info: 'Internal DSI Project'
+  external_mentor_info: Internal DSI Project
   project_url_valid: false
   is_11th_hour: true
 - org_name: IDIGrievances
   description: Mapping Human Rights Violations in the Palm Oil Industry
   project_url: ''
-  mentor: Jingchao
+  mentor: Jingchao Fang
   ta: Harper Schwab
   github_link: https://github.com/dsi-clinic/2024-autumn-palmwatch-grievences
   is_private_repo: true
   has_one_pager: true
-  external_mentor_info: 'Internal DSI Project'
+  external_mentor_info: Internal DSI Project
   project_url_valid: false
   is_11th_hour: true
 - org_name: Internet Equity Initiative
@@ -124,61 +124,61 @@ projects:
   github_link: https://github.com/dsi-clinic/2024-autumn-IEI
   is_private_repo: true
   has_one_pager: true
-  external_mentor_info: 'UChicago Internet Equity Initiative'
+  external_mentor_info: UChicago Internet Equity Initiative
   project_url_valid: false
   is_11th_hour: false
 - org_name: KidsFirstChicago
   description: Centralizing Chicago Public Schools Education Data
   project_url: ''
-  mentor: Tim
+  mentor: Tim Hannifan
   ta: Jack Sanderson
   github_link: https://github.com/dsi-clinic/2025-winter-kids-first-chicago
   is_private_repo: true
   has_one_pager: true
-  external_mentor_info: 'Kids First Chicago'
+  external_mentor_info: Kids First Chicago
   project_url_valid: false
   is_11th_hour: false
 - org_name: Pesticide Action Network
   description: Mapping harmful pesticide use in vulnerable communities
   project_url: ''
-  mentor: Kriti
+  mentor: Kriti Sehgal
   ta: Cissy Choy
   github_link: https://github.com/dsi-clinic/2025-spring-pesticide-action-network
   is_private_repo: true
   has_one_pager: true
-  external_mentor_info: 'Internal DSI Project'
+  external_mentor_info: Internal DSI Project
   project_url_valid: false
   is_11th_hour: true
 - org_name: RAFI - Grocery
   description: MSA Analysis on Grocery Atlas
   project_url: ''
-  mentor: Kelly
+  mentor: Kelly Smalenberger
   ta: Jack Sanderson
   github_link: https://github.com/dsi-clinic/2024-autumn-rafi-grocery
   is_private_repo: true
   has_one_pager: true
-  external_mentor_info: 'RAFI'
+  external_mentor_info: RAFI
   project_url_valid: false
   is_11th_hour: true
 - org_name: UChicago Library
   description: Optimizing Library Storage
   project_url: ''
-  mentor: Susanna
+  mentor: Susanna Lange
   ta: Cissy Choy
   github_link: https://github.com/dsi-clinic/2024-autumn-uchicago-library
   is_private_repo: true
   has_one_pager: true
-  external_mentor_info: 'David Bottorff'
+  external_mentor_info: David Bottorff
   project_url_valid: false
   is_11th_hour: false
 - org_name: UChicago Transportation
   description: UGo Shuttle Analysis
   project_url: ''
-  mentor: Nick
+  mentor: Nick Ross
   ta: Polly Ren
   github_link: https://github.com/dsi-clinic/2025-spring-uchicago-transportation
-  is_private_repo: true
+  is_private_repo: false
   has_one_pager: true
-  external_mentor_info: 'Beth Tindel'
+  external_mentor_info: Beth Tindel
   project_url_valid: false
   is_11th_hour: false

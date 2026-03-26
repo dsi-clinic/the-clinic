@@ -13,8 +13,8 @@ projects:
 - org_name: AmFam
   description: Generative AI Models for housing images
   project_url: https://www.amfam.com/
-  mentor: Anna
-  ta: Jessica J
+  mentor: Anna Woodard
+  ta: Yuxin Ji (Jessica)
   github_link: https://github.com/dsi-clinic/2023-autumn-amfam
   is_private_repo: true
   has_one_pager: true
@@ -25,7 +25,7 @@ projects:
   description: Operational requirement management using graph based knowledge            networks
   project_url: https://www.anl.gov/
   mentor: Bill Trok & YJ Choe
-  ta: Victor
+  ta: Victor Perez Martin
   github_link: https://github.com/dsi-clinic/2023-clinic-Argonne
   is_private_repo: true
   has_one_pager: true
@@ -35,8 +35,8 @@ projects:
 - org_name: Argonne-Fermi
   description: AI to identify "lessons learned" in project documents
   project_url: https://www.anl.gov/
-  mentor: Isaac
-  ta: Jessica J
+  mentor: Isaac Mehlhaff
+  ta: Yuxin Ji (Jessica)
   github_link: https://github.com/dsi-clinic/2023-autumn-argonne-fermi
   is_private_repo: true
   has_one_pager: true
@@ -46,8 +46,8 @@ projects:
 - org_name: BankTrack
   description: NLP to automate the extraction of commercial debt data
   project_url: ''
-  mentor: Trevor
-  ta: Fei
+  mentor: Trevor Spreadbury
+  ta: Fei Wang
   github_link: https://github.com/dsi-clinic/2024-winter-clinic-banktrack
   is_private_repo: true
   has_one_pager: true
@@ -57,8 +57,8 @@ projects:
 - org_name: CMAP
   description: AI to recognize stormwater detention features
   project_url: ''
-  mentor: Anna & Tim
-  ta: Victor
+  mentor: Anna Woodard & Tim Hannifan
+  ta: Victor Perez Martin
   github_link: https://github.com/dsi-clinic/2024-winter-cmap
   is_private_repo: true
   has_one_pager: true
@@ -68,8 +68,8 @@ projects:
 - org_name: CTC
   description: Sentiment analysis of social media postings
   project_url: https://www.chicagotrading.com/
-  mentor: David U. & Patricia
-  ta: Grant
+  mentor: David Uminsky & Patricia Chiril
+  ta: Yuwei (Grant) Chen
   github_link: https://github.com/dsi-clinic/2024-winter-ctc
   is_private_repo: true
   has_one_pager: true
@@ -79,8 +79,8 @@ projects:
 - org_name: Climate Cabinet
   description: Campaign Finance Tracking
   project_url: ''
-  mentor: Trevor
-  ta: Avery
+  mentor: Trevor Spreadbury
+  ta: Avery Schoen
   github_link: https://github.com/dsi-clinic/2024-winter-climate-cabinet-campaign-finance-tracker
   is_private_repo: false
   has_one_pager: true
@@ -90,8 +90,8 @@ projects:
 - org_name: CREF
   description: Disposable Packaging Disintegration Analysis
   project_url: ''
-  mentor: Todd
-  ta: Rita
+  mentor: Todd Nief
+  ta: Rita Xu
   github_link: https://github.com/dsi-clinic/2024-winter-compostable
   is_private_repo: true
   has_one_pager: true
@@ -101,8 +101,8 @@ projects:
 - org_name: Fermi-simulations
   description: AI Diffusion models for simulating particle physics experiments
   project_url: https://computing.fnal.gov/kevin-pedro/
-  mentor: Rituparno Mandal & Peter
-  ta: Grant
+  mentor: Rituparno Mandal & Peter Lu
+  ta: Yuwei (Grant) Chen
   github_link: https://github.com/dsi-clinic/2023-Autumn-Clinic-Fermi-CaloDiffusionPaper
   is_private_repo: false
   has_one_pager: true
@@ -113,7 +113,7 @@ projects:
   description: GNNs for particle reconstruction in neutrino experiments
   project_url: https://computing.fnal.gov/giuseppe-cerati/
   mentor: Chong Liu
-  ta: Yiran
+  ta: Yiran Hao
   github_link: https://github.com/exatrkx/NuGraph
   is_private_repo: false
   has_one_pager: true
@@ -123,8 +123,8 @@ projects:
 - org_name: Internet Equity
   description: Patterns of FCC broadband challenges
   project_url: https://internetequity.uchicago.edu/
-  mentor: Tim & Jonatas Marques
-  ta: Soham
+  mentor: Tim Hannifan & Jonatas Marques
+  ta: Soham Gurjar
   github_link: https://github.com/dsi-clinic/2023-autumn-internet-equity
   is_private_repo: true
   has_one_pager: true
@@ -134,8 +134,8 @@ projects:
 - org_name: Invenergy
   description: Modeling wind energy production using AI
   project_url: https://invenergy.com/
-  mentor: Vasileios
-  ta: Avery
+  mentor: Vasileios Charisopoulos
+  ta: Avery Schoen
   github_link: https://github.com/dsi-clinic/2024-winter-invenergy
   is_private_repo: true
   has_one_pager: true
@@ -145,8 +145,8 @@ projects:
 - org_name: IRC
   description: Mobile education app usage analysis
   project_url: https://www.rescue.org/
-  mentor: Cristina
-  ta: Fei
+  mentor: Cristina Garbacea
+  ta: Fei Wang
   github_link: https://github.com/dsi-clinic/2023-autumn-irc
   is_private_repo: true
   has_one_pager: true
@@ -156,8 +156,8 @@ projects:
 - org_name: Perpetual
   description: Reusable foodware system design
   project_url: ''
-  mentor: Launa
-  ta: Sarah
+  mentor: Launa Greer
+  ta: Sarah Walker
   github_link: https://github.com/dsi-clinic/2024-winter-clinic-perpetual
   is_private_repo: false
   has_one_pager: true
@@ -167,19 +167,20 @@ projects:
 - org_name: Prudential
   description: Sentiment Analysis in Stock Prediction
   project_url: https://www.prudential.com
-  mentor: Nick
-  ta: Yiran
+  mentor: Nick Ross
+  ta: Yiran Hao
   github_link: ''
   is_private_repo: true
   has_one_pager: null
-  external_mentor_info: <ul><li>Jyoti Singh</li><li>Dr. Mitchell Stern</li><li>Gavin Smith</li><li>William Liang</li><li>Leo Shen</li></ul>
+  external_mentor_info: <ul><li>Jyoti Singh</li><li>Dr. Mitchell Stern</li><li>Gavin
+    Smith</li><li>William Liang</li><li>Leo Shen</li></ul>
   project_url_valid: false
   is_11th_hour: false
 - org_name: RAFI
   description: Poultry Packaging Consolidation
   project_url: https://www.rafiusa.org
-  mentor: Todd
-  ta: Rita
+  mentor: Todd Nief
+  ta: Rita Xu
   github_link: https://github.com/dsi-clinic/2024-winter-rafi-poultry-cafos
   is_private_repo: false
   has_one_pager: true
@@ -191,7 +192,7 @@ projects:
     literature
   project_url: https://coe.uni.edu/curriculum-instruction/directory/taraneh-matloob-haghanikar-phd
   mentor: Satadisha Saha Bhowmick
-  ta: Ridhi
+  ta: Ridhi Purohit
   github_link: https://github.com/dsi-clinic/2023-autumn-matloob-lab
   is_private_repo: true
   has_one_pager: true
@@ -201,8 +202,8 @@ projects:
 - org_name: WBEZ
   description: Demographic effects on traffic stops in Illinois
   project_url: https://www.wbez.org/
-  mentor: Susanna
-  ta: Sarah
+  mentor: Susanna Lange
+  ta: Sarah Walker
   github_link: https://github.com/dsi-clinic/2024-winter-wbez
   is_private_repo: true
   has_one_pager: true

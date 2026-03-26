@@ -12,7 +12,7 @@ projects:
   description: Operational requirement management using graph based knowledge            networks
   project_url: https://www.anl.gov/
   mentor: Bill Trok & YJ Choe
-  ta: Victor
+  ta: Victor Perez Martin
   github_link: https://github.com/dsi-clinic/2023-clinic-Argonne
   is_private_repo: true
   has_one_pager: true
@@ -22,8 +22,8 @@ projects:
 - org_name: Argonne-Fermi
   description: AI to identify "lessons learned" in project documents
   project_url: https://www.anl.gov/
-  mentor: Isaac
-  ta: Jessica J
+  mentor: Isaac Mehlhaff
+  ta: Yuxin Ji (Jessica)
   github_link: https://github.com/dsi-clinic/2023-autumn-argonne-fermi
   is_private_repo: true
   has_one_pager: true
@@ -33,7 +33,7 @@ projects:
 - org_name: CIR
   description: OSHA Workplace Injuries
   project_url: https://revealnews.org/
-  mentor: Nick
+  mentor: Nick Ross
   ta: ''
   github_link: https://github.com/dsi-clinic/2024-spring-cir
   is_private_repo: true
@@ -44,10 +44,10 @@ projects:
 - org_name: CMAP
   description: AI to recognize stormwater detention features
   project_url: ''
-  mentor: Anna & Tim
-  ta: Victor
+  mentor: Anna Woodard & Tim Hannifan
+  ta: Victor Perez Martin
   github_link: https://github.com/dsi-clinic/2024-winter-cmap
-  is_private_repo: true
+  is_private_repo: false
   has_one_pager: true
   external_mentor_info: Holly Hudson
   project_url_valid: false
@@ -55,8 +55,8 @@ projects:
 - org_name: CTC
   description: Sentiment analysis of social media postings
   project_url: https://www.chicagotrading.com/
-  mentor: David U. & Patricia
-  ta: Rishabh
+  mentor: David Uminsky & Patricia Chiril
+  ta: Rishabh Shastry
   github_link: https://github.com/dsi-clinic/2024-winter-ctc
   is_private_repo: true
   has_one_pager: null
@@ -66,8 +66,8 @@ projects:
 - org_name: Climate Cabinet
   description: Campaign Finance Tracking
   project_url: ''
-  mentor: Trevor
-  ta: Sarah
+  mentor: Trevor Spreadbury
+  ta: Sarah Walker
   github_link: https://github.com/dsi-clinic/2024-winter-climate-cabinet-campaign-finance-tracker
   is_private_repo: false
   has_one_pager: true
@@ -77,8 +77,8 @@ projects:
 - org_name: Fermi-simulations
   description: AI Diffusion models for simulating particle physics experiments
   project_url: https://computing.fnal.gov/kevin-pedro/
-  mentor: Peter
-  ta: Fei
+  mentor: Peter Lu
+  ta: Fei Wang
   github_link: https://github.com/dsi-clinic/2023-Autumn-Clinic-Fermi-CaloDiffusionPaper
   is_private_repo: false
   has_one_pager: true
@@ -89,7 +89,7 @@ projects:
   description: GNNs for particle reconstruction in neutrino experiments
   project_url: https://computing.fnal.gov/giuseppe-cerati/
   mentor: Chong Liu
-  ta: Yiran
+  ta: Yiran Hao
   github_link: https://github.com/exatrkx/NuGraph
   is_private_repo: false
   has_one_pager: true
@@ -99,8 +99,8 @@ projects:
 - org_name: Internet Equity
   description: Patterns of FCC broadband challenges
   project_url: https://internetequity.uchicago.edu/
-  mentor: Tim & Jonatas Marques
-  ta: Ridhi
+  mentor: Tim Hannifan & Jonatas Marques
+  ta: Ridhi Purohit
   github_link: https://github.com/dsi-clinic/2023-autumn-internet-equity
   is_private_repo: true
   has_one_pager: true
@@ -110,8 +110,8 @@ projects:
 - org_name: Invenergy
   description: Modeling wind energy production using AI
   project_url: https://invenergy.com/
-  mentor: Vasileios
-  ta: Yiran
+  mentor: Vasileios Charisopoulos
+  ta: Yiran Hao
   github_link: https://github.com/dsi-clinic/2024-winter-invenergy
   is_private_repo: true
   has_one_pager: null
@@ -122,7 +122,7 @@ projects:
   description: Codebase optimization with LLMs
   project_url: https://www.morningstar.com/
   mentor: Satadisha Saha Bhowmick
-  ta: Rishabh
+  ta: Rishabh Shastry
   github_link: https://github.com/dsi-clinic/2024-spring-morningstar
   is_private_repo: true
   has_one_pager: null
@@ -132,8 +132,8 @@ projects:
 - org_name: Perpetual
   description: Location optimizations for placement of foodware reuse systems
   project_url: https://www.perpetualuse.org/
-  mentor: Launa
-  ta: Sarah
+  mentor: Launa Greer
+  ta: Sarah Walker
   github_link: https://github.com/dsi-clinic/2023-clinic-perpetual
   is_private_repo: true
   has_one_pager: true
@@ -143,8 +143,8 @@ projects:
 - org_name: RAFI
   description: Poultry Packaging Consolidation
   project_url: https://www.rafiusa.org
-  mentor: Todd
-  ta: Rita
+  mentor: Todd Nief
+  ta: Rita Xu
   github_link: https://github.com/dsi-clinic/2024-winter-rafi-poultry-cafos
   is_private_repo: false
   has_one_pager: true
