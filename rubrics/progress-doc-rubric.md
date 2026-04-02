@@ -53,6 +53,7 @@ Mentors may apply additional grading standards to the rubrics below.
           <li>All information present, but the task description has presentation issues which affect its readability (grammar / inconsistent style or formatting). Student did not complete their work due to planning (procrastination) or not getting in touch with the TA or Mentor in a timely manner.</li>
           <li>Any code produced requires back-and-forth with student in order to obtain or reproduce.</li>
           <li><strong>Student got "stuck" on an area and raised the concern during the mentor meeting, rather than beforehand.</strong></li>
+          <li>Student is not attending meetings on time, is not contributing their fair share of the work, is not putting code into GitHub, or is otherwise not meeting expectations for effort and participation.</li>
         </ul>
       </td>
     </tr>
