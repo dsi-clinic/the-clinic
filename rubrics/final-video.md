@@ -110,9 +110,26 @@ The following are a list of best practices that improve the quality of the video
 | Zoom, Canva (and even Microsoft PowerPoint) provide tools to be able to create a high-quality video. From our experience, Zoom has consistently been the easiest for groups to use, so that is our default recommendation. |
 
 
-| What if my presentation video isn’t uploading to Canvas? | 
-| ----------- | 
-| If you are struggling to upload your presentation, there are a few solutions that we have found to work: <ul><li>Make the video smaller (you can google different techniques for this depending on if you are on Mac or Windows).</li><li>You can try to zip your video.</li> <li>Make sure that you are on a high-quality internet connection.</li> <li>Try a different group member's computer.</li></ul> | 
+<table>
+  <thead>
+    <tr>
+      <th>What if my presentation video isn’t uploading to Canvas?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        If you are struggling to upload your presentation, there are a few solutions that we have found to work:
+        <ul>
+          <li>Make the video smaller (you can google different techniques for this depending on if you are on Mac or Windows).</li>
+          <li>You can try to zip your video.</li>
+          <li>Make sure that you are on a high-quality internet connection.</li>
+          <li>Try a different group member’s computer.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 
 ### Grader Notes
