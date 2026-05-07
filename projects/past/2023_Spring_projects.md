@@ -2,19 +2,19 @@
 This is a list of projects run during the quarter, along with their relevant details.
 ## Argonne Knowledge Graph
 Description: NLP models of policy and procedure documents
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/Argonne.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/Argonne.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/Argonne.pdf</a>
 Mentor: Rahim Rasool
 Students: Ken Kliesner, Annabel Mendoza, Kekun Han
 
 ## Blue Ocean Gear (11th Hour Sponsored)
 Description: Anomaly detection of fishing gear to detect lost equipment
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/Blue%20Ocean%20Gear.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/Blue%20Ocean%20Gear.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/Blue%20Ocean%20Gear.pdf</a>
 Mentor: Launa Greer
 Students: Gautam Kapoor, Henry Herzog, Irsa Ashraf, Katy Barone
 
 ## CRI-SET
 Description: ML on MRI images to predict infant seizure behavior
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/CRI-SET.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/CRI-SET.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/CRI-SET.pdf</a>
 Mentor: Anna Woodard, Dan Nicolae
 Students: Varun Mohan, Jun Tan, Katherine Miao
 
@@ -26,7 +26,7 @@ Students: Mahnoor Khan, Jasmeet Singh Sandhu, Yulun Han
 
 ## Fermi: Kirby Lab
 Description: Real-time Tagging with Deep Learning AI for particle imagingdetectors
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/Fermi.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/Fermi.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/Fermi.pdf</a>
 Mentor: Peter Lu
 Students: Richard Zhang, Manuel Martinez, Mingyan Wang, Tarun Arora
 
@@ -38,13 +38,13 @@ Students: Guangbo Niu, Zhiyun Hu, Yu-Hsuan Chou, Ning Tang
 
 ##  Hawaii Alliance for Progressive Action (11th Hour Sponsored)
 Description: Geospatial analysis of pesticide use in Hawaii
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/Hawaii.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/Hawaii.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/Hawaii.pdf</a>
 Mentor: Launa Greer
 Students: Ashley Hitchings, Qingyi He, Caleb Costa
 
 ## Internet Equity
 Description: Demographic characteristics and internet access
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/IE.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/IE.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/IE.pdf</a>
 Mentor: James Turk
 Students: Victoria Kielb, Chandler Hall, Sarah Lueling
 
@@ -56,13 +56,13 @@ Students: Rishabh Shastry, Dhairya Karna, Max de Saint-Exupery
 
 ## Neurocritical Care
 Description: Determinants of traumatic brain injury outcomes
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/Neurocritical%20Care.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/Neurocritical%20Care.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/Neurocritical%20Care.pdf</a>
 Mentor: Yuetian Luo
 Students: Soren Dunn, Alex Przybycin, Prashant Kumar
 
 ## Perpetual (11th Hour Sponsored)
 Description: Location optimizations for placement of foodware reuse systems
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/Perpetual.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/Perpetual.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-spring/Perpetual.pdf</a>
 Mentor: Rahim Rasool
 Students: Ziyu Ren, Yushu Qiu, Avery Schoen, Ekansh Trivedi
 

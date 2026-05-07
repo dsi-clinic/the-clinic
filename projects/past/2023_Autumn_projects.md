@@ -8,55 +8,55 @@ Students: DB Christenson, Grace Wang, Jennifer Yeaton, Leon (Lixin) Wang
 
 ## Argonne
 Description: Operational requirement management using graph based knowledge            networks
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Argonne.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Argonne.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Argonne.pdf</a>
 Mentor: Bill Trok, YJ Choe
 Students: Yushu Qiu, Jason Yu, Mayurakshi Ghosal, Yingzi Jin
 
 ## Argonne-Fermi
 Description: AI to identify "lessons learned" in project documents
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Argonne-Fermi.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Argonne-Fermi.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Argonne-Fermi.pdf</a>
 Mentor: Isaac Mehlhaff
 Students: Nicholas Liagridonis, Foo Suon Chuang, Yuanning (Violet) Huang, Zihua Chen
 
 ## Climate Cabinet (11th Hour Sponsored)
 Description: Creation of a searchable database of campaign contributions
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Climate%20Cabinet.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Climate%20Cabinet.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Climate%20Cabinet.pdf</a>
 Mentor: Trevor Spreadbury
 Students: Alan Mburu Kagiri, Aïcha Camara, Nicolas Posner, Yuzhou Wang
 
 ## Chicago Public Library
 Description: Determinants of library branch usage
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/CPL.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/CPL.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/CPL.pdf</a>
 Mentor: Tim Hannifan
 Students: Anika Vyas, Jeremy Dumalig, Matthew Rubenstein, Kristof Turan
 
 ## Fermilab Simulations
 Description: AI Diffusion models for simulating particle physics experiments
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Fermi-simulations.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Fermi-simulations.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Fermi-simulations.pdf</a>
 Mentor: Rituparno Mandal, Peter Lu
 Students: Keegan Ballantyne, Carina Kane, Douglas Williams
 
 ## Fermilab Graph Neural Networks
 Description: GNNs for particle reconstruction in neutrino experiments
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Fermi-gnn.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Fermi-gnn.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Fermi-gnn.pdf</a>
 Mentor: Chong Liu
 Students: Jihee You, Rohan Mehta, Kate Habich, Shan Gao
 
 ## Hawaii Alliance for Progressive Action (11th Hour Sponsored)
 Description: Geospatial analysis of pesticide use in Hawaii
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/HAPA.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/HAPA.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/HAPA.pdf</a>
 Mentor: Rahim Rasool, Trevor Spreadbury
 Students: Yangge Xu, Chen Hui Wang (Fei), Jonathan Juarez, Sam Corey
 
 ## Internet Equity
 Description: Patterns of FCC broadband challenges
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Internet%20Equity.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Internet%20Equity.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Internet%20Equity.pdf</a>
 Mentor: Tim Hannifan, Jonatas Marques
 Students: Ridhi Purohit, Neha Sadasivan, Angelie Miranda, Aaron Haefner
 
 ## International Rescue Committee
 Description: Mobile education app usage analysis
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/IRC.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/IRC.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/IRC.pdf</a>
 Mentor: Rahim Rasool
 Students: Helen Zhou, Annabel Mendoza, Santiago Segovia
 
@@ -68,7 +68,7 @@ Students: Rohan Mathur, Kaya Lee, Rishabh Shastry, Jihui Tan
 
 ## Perpetual (11th Hour Sponsored)
 Description: Location optimizations for placement of foodware reuse systems
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Perpetual.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Perpetual.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/Perpetual.pdf</a>
 Mentor: Rahim Rasool
 Students: Jessica Cibrian, Huanlin Dai, Sarah Walker, Yifan Wu
 
@@ -80,13 +80,13 @@ Students: Sirivanth Paladugu, Connie Chen, Jiayan Li, Qichang Zheng
 
 ## RAFI (11th Hour Sponsored)
 Description: Geosptaial analysis of poultry package industry consolidation
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/RAFI.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/RAFI.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/RAFI.pdf</a>
 Mentor: Todd Nief, Chris Redmond
 Students: Colin McLuckie, Shishira Bhavimane, Fanghan Xu, Yutong Jiang
 
 ## Taraneh Matloob Literature Lab
 Description: Using AI to quantify the emotional journey of protagonists in children's literature
-One-pager: https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/UNI.pdf
+One-pager: <a href="https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/UNI.pdf" target="_blank" rel="noopener">https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2023-autumn/UNI.pdf</a>
 Mentor: Satadisha Saha Bhowmick
 Students: Su Doga Karaca, Maxine Ling Xu, Anna Moise, Hantao Xiao
 
