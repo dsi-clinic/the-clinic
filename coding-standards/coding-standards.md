@@ -56,7 +56,7 @@ Requirements
 1. There should be no `! pip install XXX` in any notebooks. All environment requirements should be handled using the `pyproject.toml` file.
 1. Documentation should include (at a _minimum_):
     * Doc strings on all functions
-    * All files and directories must be explained in README files. You can either describe everything in the root README or use README files in subdirectories — both approaches are fine, but pick one style and be consistent.
+    * The repo must contain a well-defined explanation of the files in it. This can live in the root README or be split across subdirectory READMEs — pick one style and be consistent. Any non-code files that are committed (e.g., configuration, exported metadata, human-in-the-loop annotations, labeling spreadsheets) must be listed individually and explained: what the file is, where it came from, and how it is used.
     * README file in the root directory describing the purpose of the code, where to look for things, and how to run the code. If there are other locations for information regarding this project, links should be provided.
     * README file should describe your development process (e.g., how you did branches)
 
@@ -126,27 +126,23 @@ as you can see we are running the [project-name] image.
 ```
 #### What is a good folder structure?
 
-For the simplest projects something like the below should work:
+For the simplest projects something like the below should work. Per-subdirectory README files are optional — if every file is already explained in the root README, you do not need them.
 ```
 .
 ├── README.md
 ├── .gitignore
 ├── Dockerfile
 ├── notebooks/
-│   ├── README.md
 │   └── notebook Files
 ├── utils/
-│   ├── README.md
 │   ├── __init__.py
 │   └── python utility files
 ├── data/
-│   ├── README.md (or SOURCES.md)
+│   ├── SOURCES.md
 │   └── Data files
 ├── output/
-│   ├── README.md
 │   └── output images, tables, etc.
 └── documentation/
-    └── README.md
 ```
 
 #### What if I'm doing work outside of traditional python code?

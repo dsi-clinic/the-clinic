@@ -59,7 +59,8 @@ For each of the items below, please fill in the checkmark [X] if it is satisfied
 - [ ] All contributors have added their names to the main README.md file.
 - [ ] All documentation is in markdown format.
 - [ ] The repository is easy to read and there are no grammar/syntax/formatting issues which impede comprehension.
-- [ ] There are descriptions of all files and their purpose in the README.
+- [ ] The repo contains a well-defined explanation of the files in it, in the root README or subdirectory READMEs.
+- [ ] Any committed non-code files (metadata, configuration, human-in-the-loop or labeling artifacts, etc.) are listed individually and explained.
 - [ ] All data has a description and source. This may be in a separate file in a `/data` directory or the main README.
 - [ ] Environment information (usually `make`, `docker` or `conda`) is specified.
 - [ ] All boilerplate language has been removed or updated. 
