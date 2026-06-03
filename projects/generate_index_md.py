@@ -66,7 +66,7 @@ def render_one_pager_info(has_one_pager: Optional[bool], year: int, quarter: str
         # Has a confirmed one-pager - create link
         one_pager_location = f"./one-pagers/{format_quarter_year_path(year, quarter)}/"
         file_info = one_pager_location + project_link + ".pdf"
-        return f'<a href="{file_info.replace(" ", "%20")}">One-Pager</a>'
+        return f'<a href="{file_info.replace(" ", "%20")}" target="_blank" rel="noopener">One-Pager</a>'
     else:
         # Either explicitly no one-pager (False) or unknown status (None)
         # Both render as empty string
