@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install Chrome for Puppeteer
-        run: npx --yes puppeteer browsers install chrome
+        run: npx --yes @puppeteer/browsers install chrome@148.0.7778.97
       - name: Run linkspector
         uses: umbrelladocs/action-linkspector@v1
         with:
