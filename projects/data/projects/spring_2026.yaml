@@ -98,7 +98,7 @@ projects:
   github_link: https://github.com/dsi-clinic/2026-winter-mwrd-chicago
   is_private_repo: true
   has_one_pager: true
-  external_mentor_info: ''
+  external_mentor_info: Catherine O'Connor & Richard Fisher
   project_url_valid: false
   is_11th_hour: true
 - org_name: PalmWatch
@@ -120,7 +120,7 @@ projects:
   github_link: https://github.com/dsi-clinic/2025-promega-mini-test
   is_private_repo: true
   has_one_pager: false
-  external_mentor_info: ''
+  external_mentor_info: Thomas Kirkland
   project_url_valid: false
   is_11th_hour: false
 - org_name: Syllabus Project
