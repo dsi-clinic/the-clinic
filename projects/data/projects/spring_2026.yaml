@@ -1,0 +1,158 @@
+quarter: Spring
+year: 2026
+name_map: {}
+projects:
+- org_name: 'AICE: AI for Climate'
+  description: MonsoonBench
+  project_url: ''
+  mentor: Justin Finkel
+  ta: César Nuñez Huaman
+  github_link: https://github.com/dsi-clinic/monsoon-bench/
+  is_private_repo: false
+  has_one_pager: true
+  external_mentor_info: Adam Marchakitus
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Accountability Counsel
+  description: AI for Human Rights
+  project_url: ''
+  mentor: Xiao Liu
+  ta: Minjae Joh
+  github_link: https://github.com/dsi-clinic/2026-winter-accountability-counsel
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: ''
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: Becker Friedman Institute
+  description: Healthcare Employment Geography Data Studio
+  project_url: ''
+  mentor: Arna Woemmel
+  ta: Jack Luo
+  github_link: https://github.com/dsi-clinic/2026-spring-bfi
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Eric Hernandez & Josh Gottlieb
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Cook County Justice Advisory Council
+  description: 'Labeling the Law: Illinois Criminal Statute Data Enhancement'
+  project_url: ''
+  mentor: Min Jae Song
+  ta: Pablo Hernandez Pedraza
+  github_link: https://github.com/dsi-clinic/2025-autumn-justice-advisory-council
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Whitney Keytowey
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Data, Policy, and Innovation Centre
+  description: AI-Enabled Grievance Redressal
+  project_url: ''
+  mentor: Satadisha Saha Bhowmick
+  ta: César Nuñez Huaman
+  github_link: https://github.com/dsi-clinic/2025-autumn-dpic
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Dr. Urmila Chatterjee & Yashaswi Mohanty
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Ecdysis
+  description: Deep Learning to Characterize Species Diversity
+  project_url: ''
+  mentor: Teresa Flanagan
+  ta: Yichen Ding
+  github_link: https://github.com/dsi-clinic/2026-winter-ecdysis
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: ''
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: Impact Project
+  description: NLP for Federal Government Impact Mapping
+  project_url: ''
+  mentor: Lindsay House
+  ta: Harleen Buttar
+  github_link: https://github.com/dsi-clinic/2026-spring-impact
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Abby André & Jonathan Gilmour
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: Karczmar Lab
+  description: Predicting Breast Cancer Treatment Response Using Blood Vessel Networks
+  project_url: ''
+  mentor: Anna Woodard & Jim Pivarski
+  ta: Andres Camacho Baquero
+  github_link: https://github.com/dsi-clinic/vanguard
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Dr. Gregory Karczmar & Dr. Milica Medved & Dr. Zhen Ren
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Metropolitan Water Reclamation District of Greater Chicago
+  description: Oak Park Roof Analysis for Stormwater Management
+  project_url: ''
+  mentor: Bill Trok
+  ta: Lam Tran
+  github_link: https://github.com/dsi-clinic/2026-winter-mwrd-chicago
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: ''
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: PalmWatch
+  description: Palm Oil Supply Chain Disclosure Extraction
+  project_url: ''
+  mentor: Varada Shevade
+  ta: Harleen Buttar
+  github_link: https://github.com/dsi-clinic/2026-spring-palmwatch
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: ''
+  project_url_valid: false
+  is_11th_hour: true
+- org_name: Promega
+  description: Biological Organoid Development
+  project_url: ''
+  mentor: Nick Ross & Liya Ding
+  ta: Yichen Ding
+  github_link: https://github.com/dsi-clinic/2025-promega-mini-test
+  is_private_repo: true
+  has_one_pager: false
+  external_mentor_info: ''
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Syllabus Project
+  description: Syllabus Policy Classification and Analysis
+  project_url: ''
+  mentor: Bill Trok
+  ta: Lam Tran
+  github_link: https://github.com/dsi-clinic/2026-spring-syllabus
+  is_private_repo: true
+  has_one_pager: true
+  external_mentor_info: Amanda Jungels
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: University of Chicago Library
+  description: Optimizing Library Storage
+  project_url: ''
+  mentor: Kelly Smalenberger
+  ta: Jack Luo
+  github_link: https://github.com/dsi-clinic/2026-winter-uchicago-library
+  is_private_repo: true
+  has_one_pager: false
+  external_mentor_info: ''
+  project_url_valid: false
+  is_11th_hour: false
+- org_name: Zero Foodprint
+  description: Parcel-Level Candidate Scoring for Regenerative Agriculture
+  project_url: ''
+  mentor: Varada Shevade
+  ta: Minjae Joh
+  github_link: https://github.com/dsi-clinic/2026-spring-zero-foodprint
+  is_private_repo: true
+  has_one_pager: false
+  external_mentor_info: ''
+  project_url_valid: false
+  is_11th_hour: true

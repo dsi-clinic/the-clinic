@@ -1,0 +1,162 @@
+quarter: Spring
+year: 2026
+students:
+- project_name: 'AICE: AI for Climate'
+  student_name: Alexander Baumgartner
+  github_info: swisski
+- project_name: 'AICE: AI for Climate'
+  student_name: Charles Eden
+  github_info: ceden26
+- project_name: 'AICE: AI for Climate'
+  student_name: Christopher Frazer
+  github_info: ChrisFrazer04
+- project_name: 'AICE: AI for Climate'
+  student_name: Giovanni Maya
+  github_info: giomhern
+- project_name: Accountability Counsel
+  student_name: Hunter Wang
+  github_info: AlpacaWang
+- project_name: Accountability Counsel
+  student_name: Jessica Ortiz Garcia
+  github_info: ortizjessica
+- project_name: Accountability Counsel
+  student_name: Leja Ejury
+  github_info: lej-ej
+- project_name: Accountability Counsel
+  student_name: River Wang
+  github_info: zhiyu118
+- project_name: Becker Friedman Institute
+  student_name: Hwan Bin (Henry) Choi
+  github_info: choi-henry
+- project_name: Becker Friedman Institute
+  student_name: Isabella Trainor
+  github_info: trainori
+- project_name: Becker Friedman Institute
+  student_name: Kazuya Shimada
+  github_info: kshimada17
+- project_name: Becker Friedman Institute
+  student_name: Oladayo Oladitan
+  github_info: dyyolayo
+- project_name: Cook County Justice Advisory Council
+  student_name: Dokyong Ryoo
+  github_info: dokyongryoo
+- project_name: Cook County Justice Advisory Council
+  student_name: Helen (Zhang) Hua
+  github_info: HelenHua0323
+- project_name: Cook County Justice Advisory Council
+  student_name: Leon Lee Zhou
+  github_info: enzZLeon
+- project_name: Cook County Justice Advisory Council
+  student_name: Rocio Jerez
+  github_info: rocio-jerez
+- project_name: Data, Policy, and Innovation Centre
+  student_name: Jesenia Parthasarathy
+  github_info: jeseniapar
+- project_name: Data, Policy, and Innovation Centre
+  student_name: Jose Pajuelo
+  github_info: JosePT16
+- project_name: Data, Policy, and Innovation Centre
+  student_name: Justin Meng
+  github_info: JustinMeng2004
+- project_name: Data, Policy, and Innovation Centre
+  student_name: Matias Camp
+  github_info: matiascamp16
+- project_name: Ecdysis
+  student_name: Annette Mehta
+  github_info: annettemehta28
+- project_name: Ecdysis
+  student_name: Ishita Sood
+  github_info: ishiii-s
+- project_name: Ecdysis
+  student_name: Neil Pandya
+  github_info: neilpandya01
+- project_name: Ecdysis
+  student_name: Srusti Donapati
+  github_info: srusti-d
+- project_name: Impact Project
+  student_name: Abraham Sadat
+  github_info: abrahamsadat96
+- project_name: Impact Project
+  student_name: Claire Huang
+  github_info: claiirehuang
+- project_name: Impact Project
+  student_name: Lela Ellis
+  github_info: lelae2024
+- project_name: Karczmar Lab
+  student_name: Daniel Gong
+  github_info: danielgong1
+- project_name: Karczmar Lab
+  student_name: Daniel Luna
+  github_info: danielluna90
+- project_name: Karczmar Lab
+  student_name: Kaden Hyatt
+  github_info: Nedak23
+- project_name: Karczmar Lab
+  student_name: Ruochun Wu
+  github_info: RebeccaRuochunWu
+- project_name: Metropolitan Water Reclamation District of Greater Chicago
+  student_name: Hailey Hansen
+  github_info: hailhan
+- project_name: Metropolitan Water Reclamation District of Greater Chicago
+  student_name: Manya Lalwani
+  github_info: manya-lalwani
+- project_name: Metropolitan Water Reclamation District of Greater Chicago
+  student_name: Tumininu Onabanjo
+  github_info: Tumininu-Onabanjo
+- project_name: Metropolitan Water Reclamation District of Greater Chicago
+  student_name: Yuliia Ihnatesku
+  github_info: ihnateskuyuliia
+- project_name: PalmWatch
+  student_name: Jiayu Zhao
+  github_info: jiayuzhao05
+- project_name: PalmWatch
+  student_name: Vyshnavi Voleti
+  github_info: vyshnaviv13
+- project_name: PalmWatch
+  student_name: Yuxuan Hu
+  github_info: berylhu43
+- project_name: Promega
+  student_name: Lucy Li
+  github_info: lucyli24
+- project_name: Promega
+  student_name: Sophie Feng
+  github_info: fenghq27
+- project_name: Promega
+  student_name: Summer Han
+  github_info: hangoeun16
+- project_name: Promega
+  student_name: Wenxu Zu
+  github_info: wenxu32
+- project_name: Syllabus Project
+  student_name: Gio Choi
+  github_info: gio-choi
+- project_name: Syllabus Project
+  student_name: Jake Cardonick
+  github_info: PJakeCar120
+- project_name: Syllabus Project
+  student_name: Lucas Kopinski
+  github_info: lkopinski
+- project_name: Syllabus Project
+  student_name: Will Yan
+  github_info: willyan041107
+- project_name: University of Chicago Library
+  student_name: Alicia Li Ann Soosai
+  github_info: liannsoo
+- project_name: University of Chicago Library
+  student_name: Caitlin Hamer
+  github_info: cbhamer
+- project_name: University of Chicago Library
+  student_name: Raphael Bitton
+  github_info: rbitton
+- project_name: University of Chicago Library
+  student_name: Vishal Potineni
+  github_info: vpotineni1
+- project_name: Zero Foodprint
+  student_name: Cameron Diwa
+  github_info: camerondiwa
+- project_name: Zero Foodprint
+  student_name: Enrico Madani
+  github_info: Enrico-Madani1
+- project_name: Zero Foodprint
+  student_name: Maxwell Buford
+  github_info: mwbuford
