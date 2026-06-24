@@ -36,7 +36,7 @@ Hi,
  
 I’m pleased to inform you that you have been matched with a project for the Winter 2025 Data Science Clinic. Based on your preferences, you have been selected for {{ project }}.
 
-If you would like to confirm your seat on the project, please let me know by responding to this email by Friday, December 13 at 5pm. This course is over-subscribed. If you are unsure or cannot commit to taking this course next quarter, please let me know so that I can give the spot to one of the students on the waiting list. If we do not hear from you confirming your acceptance by this time you may lose your spot.
+If you would like to confirm your seat on the project, please let me know by responding to this email by XXX at 5pm. This course is over-subscribed. If you are unsure or cannot commit to taking this course next quarter, please let me know so that I can give the spot to one of the students on the waiting list. If we do not hear from you confirming your acceptance by this time you may lose your spot.
 
 During add/drop period, you should register for the course. Undergraduates should request the course via my.uchicago.edu. Graduate students should contact their advisor and use this email as proof of instructor consent to enroll in the course.
 
@@ -44,6 +44,20 @@ Looking forward to working with you in the upcoming quarter.
 
 Best,
 [NAME]
+---
+
+### Confirmation to Registration Email
+
+All --
+
+If you are receiving this email you have confirmed your spot in the clinic and you are good to go to complete registration! Registration needs to be complete by 3/13.
+
+For undergraduate students: Please submit a consent form online via the registration portal once registration opens.
+
+For graduate students: Please speak to your advisor about the specifics of how to register. You may treat this email as consent to register. Please complete this as soon as possible and before the registration window closes.
+
+-nick
+
 ---
 
 ### Rejection Email
@@ -56,8 +70,9 @@ We encourage you to apply again in the future, and wish you the best of luck in 
 
 -nick
 
+---
 
-###  TA position rejection
+### TA position rejection
 Dear [CANDIDATE],
  
 I am writing to inform you that we have decided not to move forward with your application for the TA position. We received many qualified candidates for this position and after careful review, we decided to go with another candidate whose skills and experience better fit our needs.

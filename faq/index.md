@@ -82,7 +82,7 @@ The information session will be recorded. Find recordings of past sessions [here
 Nearly all notification of placements occurs during the week after the applications are due. However the process takes some time and is usually not fully complete until the week before the quarter starts.
 
 ### Will I be notified if I am not placed? {#not-placed-notification}
-Yes. Once placements are settled, all students not placed will be sent an notification via email.
+Yes. Once placements are settled, all students not placed will be sent a notification via email.
 
 ### I am a Master's student and I was not selected, can I get a specific reason for why? {#masters-rejection-reason}
 The Data Science Clinic at the University of Chicago is committed to providing as many students as possible with meaningful, hands-on experience in real-world data science projects. Due to high demand, we carefully consider each application but cannot guarantee placement for all applicants.
@@ -97,7 +97,7 @@ The Data Science Clinic at the University of Chicago is committed to providing a
 No, the clinic is a primarily in-person experience where students work closely with mentors, TAs, and project partners. The collaborative nature of real-world data science projects requires regular face-to-face interaction for effective teamwork and learning.
 
 ### What if I have time conflicts with the scheduled time? {#time-conflicts}
-During the first week of clinic students are expected to meet at the time specified in the schedule, commonly TuTh 5-6:20, for orientation and introduction activities. At this time each project will identify meeting times specific to their project (two TA sessions and one mentor sessions). These meeting times are dependent on the TA, Mentor(s) and students schedule. These meeting times will be used for the rest of the quarter.
+During the first week of clinic students are expected to meet at the time specified in the schedule, commonly TuTh 5-6:20, for orientation and introduction activities. At this time each project will identify meeting times specific to their project (two TA sessions and one mentor session). These meeting times are dependent on the TA, Mentor(s) and students' schedule. These meeting times will be used for the rest of the quarter.
 
 During the sixth week of the quarter there are a set of mid-quarter presentations. These presentations are not required for all team members -- though failing to support your team is a bad signal. The mid-quarter presentations are in-person and in the room scheduled for the class.
 
